@@ -1,0 +1,14 @@
+---
+- name: Styleguide | Install Gulp globally
+  sudo: yes
+  command: npm install --global gulp-cli
+  args:
+    creates: /usr/bin/gulp
+  tags: styleguide
+
+- name: Install butler
+  command: npm install
+  args:
+    chdir: /var/www/{{ hostname }}
+    creates: /var/www/{{ hostname }}/node_modules
+  tags: styleguide
