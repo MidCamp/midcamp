@@ -1,4 +1,4 @@
-  <?php
+<?php
 
 $databases = array();
 $databases['default']['default'] = array(

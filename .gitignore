@@ -13,6 +13,7 @@ web/sites/*/files
 # Ignore virtual environment and artifacts
 .vagrant/
 /artifacts/
+conf/provision-user
 
 # Ignore Drupal contrib downloaded by Composer
 drush/contrib
