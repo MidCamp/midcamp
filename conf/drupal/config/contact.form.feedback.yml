@@ -1,0 +1,12 @@
+uuid: 7a161f0a-7f78-4e92-bd70-fde27c7224ce
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: c4zaT5cyPxuTXI6JOWt3qRtMvICT9tHB6d9a5VG-CmQ
+id: feedback
+label: 'Website feedback'
+recipients:
+  - info@midcamp.org
+reply: ''
+weight: 0

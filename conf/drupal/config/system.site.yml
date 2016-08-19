@@ -1,0 +1,14 @@
+uuid: 4e8b0d7f-53e9-45f1-9a7c-7188d45194bd
+name: midcamp
+mail: info@midcamp.org
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
