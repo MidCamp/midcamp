@@ -1,0 +1,141 @@
+/**
+ * @file
+ * Define your custom Sass mixins and extends here.
+ * @see http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#defining_a_mixin
+ */
+
+/* ==========================================================================
+   Typography grooming extends
+   ========================================================================== */
+
+/* Tight tracking */
+%track-in {
+  letter-spacing: -.0125em;
+}
+
+/* Open tracking */
+%track-out {
+  letter-spacing: .1em;
+}
+
+/* Style larger text with a tighter tracking, change weight, etc.  */
+%display-type {
+  @extend %track-in;
+  font-weight: 700;
+}
+
+/* Style all caps with a slightly open tracking. */
+%allcaps {
+  @extend %track-out;
+  text-transform: uppercase;
+}
+
+/* Unstyle a list */
+%list--simple {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+/* ==========================================================================
+   Clearfix extend
+   ========================================================================== */
+
+/**
+ * Applies a clearfix ruleset using a placeholder selector. Placeholder selectors
+ * do not get compiled uless they are called - removing the nesting issues that
+ * can otherwise occur with extends.
+ */
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+/* ==============================================================
+   Visually hidden extend
+   ============================================================== */
+
+/**
+ * Element-invisible as defined by snook.ca
+ * @see http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.element-invisible,
+%element-invisible {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+    clip: rect(1px 1px 1px 1px); // IE6 and IE7 use the wrong syntax.
+  }
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Turns off the element-invisible effect. */
+%element-invisible-off {
+  position: static !important;
+  clip: auto;
+  height: auto;
+  width: auto;
+  overflow: auto;
+}
+
+.element-focusable,
+%element-focusable {
+  @extend %element-invisible;
+
+  &:active,
+  &:focus {
+    @extend %element-invisible-off;
+  }
+}
+
+/* ==============================================================
+   Custom Vertical Rhythm Mixin
+
+   This mixin uses the new font size to determine font size and
+   line height based on the ratio determined from the base font
+   size. The line height mixin is optional, but available to allow
+   for minor adjustments.
+
+   1.12 and 1.24 is based on the percentages applied to the base html
+   in the normalize file.
+   ============================================================== */
+
+@mixin adjust-font-size-to($to-size, $line-height:1) {
+  font-size: $to-size;
+  line-height: (($to-size * $base-line-height)/$base-font-size) * $line-height;
+
+  @include breakpoint($bp2) {
+    font-size: $to-size * 1.12;
+    line-height: ((($to-size * $base-line-height)/$base-font-size) * $line-height) * 1.12;
+  }
+
+  @include breakpoint($bp3) {
+    font-size: $to-size * 1.24;
+    line-height: ((($to-size * $base-line-height)/$base-font-size) * $line-height) * 1.24;
+  }
+}
+
+/* ==============================================================
+   Vertical Rhythm Mixin
+
+   This mixin adds margin to the top or bottom of an element based
+   on the base font size (or an included font size adjustment), and
+   the base line height.
+   ============================================================== */
+
+@mixin leader($leader, $font-size:$base-font-size) {
+  margin-top: (($font-size)/$base-font-size) * ($leader * $base-line-height);
+}
+
+@mixin trailer($trailer, $font-size:$base-font-size) {
+  margin-bottom: (($font-size)/$base-font-size) * ($trailer * $base-line-height);
+}
