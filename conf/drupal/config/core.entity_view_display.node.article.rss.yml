@@ -4,7 +4,9 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.rss
+    - field.field.node.article.field_article_news
     - field.field.node.article.field_article_paragraphs
+    - field.field.node.article.field_article_summary
     - field.field.node.article.field_tags
     - node.type.article
   module:
@@ -19,5 +21,7 @@ content:
   links:
     weight: 100
 hidden:
+  field_article_news: true
   field_article_paragraphs: true
+  field_article_summary: true
   field_tags: true

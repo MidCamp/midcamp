@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.field.paragraph.paragraphs_text.field_paragraph_text
     - paragraphs.paragraphs_type.paragraphs_text
+  module:
+    - text
 id: paragraph.paragraphs_text.default
 targetEntityType: paragraph
 bundle: paragraphs_text
@@ -16,7 +18,7 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
+    type: text_textarea
 hidden:
   created: true
   status: true

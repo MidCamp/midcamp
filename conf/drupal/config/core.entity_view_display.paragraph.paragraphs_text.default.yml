@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.field.paragraph.paragraphs_text.field_paragraph_text
     - paragraphs.paragraphs_type.paragraphs_text
+  module:
+    - text
 id: paragraph.paragraphs_text.default
 targetEntityType: paragraph
 bundle: paragraphs_text
@@ -12,10 +14,10 @@ mode: default
 content:
   field_paragraph_text:
     weight: 0
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    type: text_default
 hidden:
   created: true
   uid: true
