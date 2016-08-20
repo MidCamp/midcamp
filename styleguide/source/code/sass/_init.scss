@@ -96,7 +96,7 @@ $yellow: #ff0;
 
 // colors
 $blue: #569ED6;
-$blue-dark: #1871B6;
+$blue-dark: #0961A5;
 $magenta: #D95DA2;
 $yellow: #E2D030;
 $green: #61BC58;
@@ -113,13 +113,13 @@ $background-color: $white;
 $link-color: $blue-dark;
 $link-hover: $magenta;
 /* Blockquote*/
-$blockquote-color: $gray-medium;
+$blockquote-color: $purple;
 /* Figcaption */
 $figcaption-color: $gray-medium;
 /* forms */
 $form-text: $gray-medium;
-$input-border-color: $gray-light;
-$input-border-hover: $gray-dark;
+$input-border-color: $magenta;
+$input-border-hover: $purple;
 $input-not: $gray-medium;
 $input-not-background: $gray-light;
 $input-not-border: $gray-medium;
@@ -132,18 +132,18 @@ $input-disabled-not-text: $gray-medium;
 $input-readonly-text: $gray-medium;
 $input-readonly-background: $gray-light;
 $input-readonly-border: $gray-medium;
-$input-invalid-text: #b94a48;
-$input-invalid-border: #ee5f5b;
-$input-invalid-border-focus: #e9322d;
-$input-check-outline: #e9322d;
+$input-invalid-text: $red;
+$input-invalid-border: $red;
+$input-invalid-border-focus: $red;
+$input-check-outline: $gray-medium;
 $select-background: $white;
-$select-border: $gray-light;
-$select-border-hover: $gray-medium;
+$select-border: $magenta;
+$select-border-hover: $purple;
 $placeholder-text: $gray-light;
 /* Buttons */
-$button-background: $gray-medium;
+$button-background: $purple;
 $button-text: $white;
-$button-hover-background: $gray-dark;
+$button-hover-background: $magenta;
 $button-hover-text: $white;
 $button-focus-outline: $gray-dark;
 $button-reset-text: $gray-medium;

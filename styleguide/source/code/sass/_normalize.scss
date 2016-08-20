@@ -844,38 +844,6 @@ select + input {
   margin-top: .5em;
 }
 
-button:not(.toolbar-icon) {
-  margin: 1em 0;
-  padding: 1em;
-  border: 1px solid transparent;
-  background: $button-background;
-  color: $button-text;
-}
-
-button:hover {
-  background: $button-hover-background;
-  color: $button-hover-text;
-}
-
-button:focus {
-  outline-style: dotted;
-  outline-color: $button-focus-outline;
-  outline-width: 1px;
-}
-
-button[type="reset"] {
-  padding: 1em;
-  border: none;
-  background: transparent;
-  color: $button-reset-text;
-  text-decoration: underline;
-  font-size: 14px;
-}
-
-button[type="reset"]:hover {
-  color: $button-reset-text-hover;
-}
-
 // Styles for placeholder text
 /* stylelint-disable */
 ::-webkit-input-placeholder {
