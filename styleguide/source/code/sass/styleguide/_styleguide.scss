@@ -83,9 +83,16 @@
   color: $gray-medium;
 }
 
+%styleguide-swatch,
 .styleguide-swatch {
-  width: 50%;
+  box-sizing: border-box;
   padding: 25px;
+  margin: .5em 0;
+
+  & + code {
+    display: block;
+    margin-bottom: 2em;
+  }
 }
 
 .styleguide-body {
