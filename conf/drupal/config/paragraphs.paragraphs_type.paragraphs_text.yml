@@ -1,0 +1,6 @@
+uuid: bfbcf7fa-394c-42fb-8c29-699f99f61bc0
+langcode: en
+status: true
+dependencies: {  }
+id: paragraphs_text
+label: Text

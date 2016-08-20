@@ -38,6 +38,7 @@
         "drupal-composer/drupal-scaffold": "^1.0",
         "drupal/config_installer": "^8.1",
         "drupal/core": "^8.0",
+        "drupal/paragraphs": "^8.1",
         "palantirnet/the-build": "dev-master"
     },
     "require-dev": {

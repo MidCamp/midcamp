@@ -1,0 +1,19 @@
+uuid: ccb6e9f3-1f27-4459-b3a8-0a7692803b2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_article_summary
+    - node.type.article
+id: node.article.field_article_summary
+field_name: field_article_summary
+entity_type: node
+bundle: article
+label: Summary
+description: 'For news articles, include a summary.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
