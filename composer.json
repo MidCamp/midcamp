@@ -16,13 +16,17 @@
         "sort-packages": "true"
     },
     "repositories": {
-        "0": {
+        "build": {
             "type": "vcs",
-            "url": "git@github.com:palantirnet/the-build.git"
+            "url": "https://github.com/palantirnet/the-build.git"
         },
-        "1": {
+        "vagrant": {
             "type": "vcs",
-            "url": "git@github.com:palantirnet/the-vagrant.git"
+            "url": "https://github.com/palantirnet/the-vagrant.git"
+        },
+        "palantir-behat-extension": {
+            "type": "vcs",
+            "url": "https://github.com/palantirnet/palantir-behat-extension.git"
         },
         "drupal": {
             "type": "composer",
@@ -47,6 +51,7 @@
         "drupal/console": "^0.11.3",
         "drupal/drupal-extension": "^3.1",
         "drush/drush": "^8.0",
+        "palantirnet/palantir-behat-extension": "dev-drupal8-file-revisited",
         "palantirnet/the-vagrant": "dev-master",
         "sculpin/sculpin": "~2.0",
         "sculpin/sculpin-theme-composer-plugin": "dev-master as 1.0.0"
