@@ -1,0 +1,35 @@
+uuid: c8cfbf2e-b789-45a9-9c3a-36d9fc81b79e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_article_paragraphs
+    - node.type.article
+    - paragraphs.paragraphs_type.paragraphs_image
+    - paragraphs.paragraphs_type.paragraphs_text
+  module:
+    - entity_reference_revisions
+id: node.article.field_article_paragraphs
+field_name: field_article_paragraphs
+entity_type: node
+bundle: article
+label: Paragraphs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      paragraphs_image: paragraphs_image
+      paragraphs_text: paragraphs_text
+    target_bundles_drag_drop:
+      paragraphs_image:
+        enabled: true
+        weight: 3
+      paragraphs_text:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

@@ -1,0 +1,21 @@
+uuid: 1f1703aa-2d50-4362-887d-5adb9ada7942
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_skill_level
+    - node.type.job
+  module:
+    - options
+id: node.job.field_job_skill_level
+field_name: field_job_skill_level
+entity_type: node
+bundle: job
+label: 'Skill Level'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

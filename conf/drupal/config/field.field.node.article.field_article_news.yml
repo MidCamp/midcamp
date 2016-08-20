@@ -1,0 +1,23 @@
+uuid: c3592c39-0677-4e12-988e-eddbf4cc3991
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_article_news
+    - node.type.article
+id: node.article.field_article_news
+field_name: field_article_news
+entity_type: node
+bundle: article
+label: News
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'News?'
+  off_label: 'Off'
+field_type: boolean

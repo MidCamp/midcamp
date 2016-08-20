@@ -1,0 +1,6 @@
+uuid: 0179910f-63a7-4e9f-843d-c7218c00dbe8
+langcode: en
+status: true
+dependencies: {  }
+id: paragraphs_image
+label: Image

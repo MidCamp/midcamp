@@ -1,20 +1,18 @@
-uuid: dadbd2ae-5d0d-47e3-8090-3aed6c48fba3
+uuid: 0ac85c30-f5a4-41b4-be10-589c9ea0b24e
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.article
+    - node.type.sponsor
   module:
     - text
-_core:
-  default_config_hash: Ay3b2hq42cpQTFB_lNu8S2ZxuVIY6-dlBsc7vLeJ-YY
-id: node.article.body
+id: node.sponsor.body
 field_name: body
 entity_type: node
-bundle: article
-label: Body
-description: ''
+bundle: sponsor
+label: Description
+description: 'Information about the sponsor.'
 required: false
 translatable: true
 default_value: {  }

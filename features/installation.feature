@@ -4,10 +4,9 @@ Feature: Installation
   I want Drupal to be installed
   So that I can rely on the build for my project.
 
-  Scenario: Verify that user 1 can log into the site.
+  Scenario: Verify The site has a login page with user and pass fields.
     Given I am not logged in
-    When I visit "user/login"
-    And I fill in "name" with "admin"
-    And I fill in "pass" with "admin"
-    And I press "Log in"
-    Then I should see the link "Log out"
+    Then the form at "user/login" has the expected fields:
+      | field | tag   | type     |
+      | name  | input | text     |
+      | pass  | input | password |
