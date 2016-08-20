@@ -12,7 +12,7 @@ if (!empty($output)) {
 
   # Configure Drush for the current project.
   $options['root'] = "{$repo}/web";
-  $options['uri'] = "http://Drupal.local";
+  $options['uri'] = "http://midcamp.local";
 }
 
 /**
