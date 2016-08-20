@@ -207,7 +207,7 @@ dfn {
 h1 {
   @extend %display-type;
   // Set the font-size and line-height while keeping a proper vertical rhythm.
-  @include adjust-font-size-to($h1-font-size, 2);
+  @include adjust-font-size-to($h1-font-size, 1.5);
   // Set 1 unit of vertical rhythm on the top and bottom margins.
   @include leader(1.25, $h1-font-size);
   @include trailer(.5, $h1-font-size);
@@ -215,34 +215,34 @@ h1 {
 
 h2 {
   @extend %display-type;
-  @include adjust-font-size-to($h2-font-size, 1.5);
+  @include adjust-font-size-to($h2-font-size, 1.25);
   @include leader(1.25, $h2-font-size);
   @include trailer(.5, $h2-font-size);
 }
 
 h3 {
   @extend %display-type;
-  @include adjust-font-size-to($h3-font-size, 1.25);
+  @include adjust-font-size-to($h3-font-size, 1.1);
   @include leader(1, $h3-font-size);
   @include trailer(.5, $h3-font-size);
 }
 
 h4 {
-  @include adjust-font-size-to($h4-font-size, 1.25);
+  @include adjust-font-size-to($h4-font-size, 1);
   @include leader(1, $h4-font-size);
   @include trailer(.5, $h4-font-size);
 }
 
 h5 {
   @extend %allcaps;
-  @include adjust-font-size-to($h5-font-size, 1);
+  @include adjust-font-size-to($h5-font-size, .8);
   @include leader(.75, $h5-font-size);
   @include trailer(.25, $h5-font-size);
 }
 
 h6 {
   @extend %allcaps;
-  @include adjust-font-size-to($h6-font-size, 1);
+  @include adjust-font-size-to($h6-font-size, .8);
   @include leader(.75, $h6-font-size);
   @include trailer(.25, $h6-font-size);
   font-weight: 400;
