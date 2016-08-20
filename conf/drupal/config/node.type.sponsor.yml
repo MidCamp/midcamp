@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 name: Sponsor
 type: sponsor
-description: ''
+description: 'An individual or organization helping support MidCamp efforts.'
 help: ''
 new_revision: false
 preview_mode: 1

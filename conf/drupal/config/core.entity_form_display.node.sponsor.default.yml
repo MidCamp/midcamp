@@ -5,8 +5,8 @@ dependencies:
   config:
     - field.field.node.sponsor.body
     - field.field.node.sponsor.field_image
-    - field.field.node.sponsor.field_sponsor_level
-    - field.field.node.sponsor.field_sponsor_link
+    - field.field.node.sponsor.field_level
+    - field.field.node.sponsor.field_link
     - image.style.thumbnail
     - node.type.sponsor
   module:
@@ -39,12 +39,12 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
-  field_sponsor_level:
+  field_level:
     weight: 34
     settings: {  }
     third_party_settings: {  }
     type: options_select
-  field_sponsor_link:
+  field_link:
     weight: 33
     settings:
       placeholder_url: ''

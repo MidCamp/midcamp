@@ -12,7 +12,7 @@ field_name: body
 entity_type: node
 bundle: sponsor
 label: Description
-description: ''
+description: 'Information about the sponsor.'
 required: false
 translatable: true
 default_value: {  }

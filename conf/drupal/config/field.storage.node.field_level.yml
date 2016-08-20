@@ -1,12 +1,12 @@
-uuid: 0ded0aaf-90e7-40fd-affb-4a503e116de4
+uuid: 83fd81cd-9a04-4ef6-9494-adc19f1b6693
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - options
-id: node.field_sponsor_level
-field_name: field_sponsor_level
+id: node.field_level
+field_name: field_level
 entity_type: node
 type: list_string
 settings:
@@ -17,6 +17,18 @@ settings:
     -
       value: Gold
       label: Gold
+    -
+      value: Silver
+      label: Silver
+    -
+      value: Bronze
+      label: Bronze
+    -
+      value: On-site
+      label: On-site
+    -
+      value: Individual
+      label: Individual
   allowed_values_function: ''
 module: options
 locked: false

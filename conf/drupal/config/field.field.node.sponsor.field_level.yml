@@ -1,14 +1,14 @@
-uuid: 1cd6dc36-e442-4ba2-a83f-825053c8265e
+uuid: 756168c4-6c10-4d43-9408-1778ecbf3a55
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_sponsor_level
+    - field.storage.node.field_level
     - node.type.sponsor
   module:
     - options
-id: node.sponsor.field_sponsor_level
-field_name: field_sponsor_level
+id: node.sponsor.field_level
+field_name: field_level
 entity_type: node
 bundle: sponsor
 label: Level
