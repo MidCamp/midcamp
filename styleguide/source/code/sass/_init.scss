@@ -96,6 +96,7 @@ $yellow: #ff0;
 
 // colors
 $blue: #569ED6;
+$blue-dark: #1871B6;
 $magenta: #D95DA2;
 $yellow: #E2D030;
 $green: #61BC58;
@@ -109,8 +110,8 @@ $orange: #F5861F;
 $text-color: $gray-dark;
 $background-color: $white;
 /* Link (a:) */
-$link-color: $gray-medium;
-$link-hover: $gray-dark;
+$link-color: $blue-dark;
+$link-hover: $magenta;
 /* Blockquote*/
 $blockquote-color: $gray-medium;
 /* Figcaption */
