@@ -16,28 +16,11 @@
 // Variables
 // =============================================================================
 
-//
-// Legacy IE support
-//
-// These variables are used by many mixins to add additional CSS to support
-// specific versions of IE or specific vendor prefixes.
-//
-// IE6-7 don't support box-sizing: border-box. We can fix this in 1 of 3 ways:
-// - Drop support for IE 6/7. :-) Set $legacy-support-for-ie6
-//   and $legacy-support-for-ie7 to false.
-// - (Preferred) Install the box-sizing polyfill and set the variable below to
-//   the absolute path URL to the boxsizing.htc file.
-//   @see https://github.com/Schepp/box-sizing-polyfill
-//   $box-sizing-polyfill-path: "/path/to/boxsizing.htc";
-// - Use the same CSS unit for grid and gutter width in resonsive-sidebars.scss
-//   (use px for both or use % for both) and set the box-sizing variable to content-box.
-//
-// Zen does not require special handling for IE8 or later. But Compass uses that
-// variable for a couple edge cases. We include it for completeness sake. See
-// the documentation at http://compass-style.org/reference/compass/support/
-$legacy-support-for-ie6: false;
-$legacy-support-for-ie7: false;
-$legacy-support-for-ie8: true;
+// Support the same browsers as normalize.css v3.
+$support-for: (
+  ie:      9,
+  '*':     -4,
+);
 
 
 //
@@ -49,8 +32,8 @@ $legacy-support-for-ie8: true;
 // use in the normalize.scss file.
 // @see http://compass-style.org/reference/compass/typography/vertical_rhythm/
 
-$base-font-size: 15px; // The font size set on the root html element.
-$base-line-height: 18px; // This line-height determines the basic unit of vertical rhythm.
+$base-font-size: 16px; // The font size set on the root html element.
+$base-line-height: 24px; // This line-height determines the basic unit of vertical rhythm.
 
 // Modular Scale
 // Major Third: 16px @ 1:1.25
@@ -88,13 +71,16 @@ $verdana: Verdana, Tahoma, "DejaVu Sans", sans-serif;
 $tahoma: Tahoma, Verdana, "DejaVu Sans", sans-serif;
 $helvetica: Helvetica, Arial, "Nimbus Sans L", sans-serif;
 $arial: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+$sans: 'Poppins', $helvetica;
+$serif: 'Lobster Two', $georgia;
+$serif-2: 'Averia Serif Libre', $georgia;
 
 // For an explanation of why "sans-serif" is at the end of this list, see
 // http://meyerweb.com/eric/thoughts/2510/02/12/fixed-monospace-sizing/
 $courier: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
 
 // Now create some variables for the font stacks we want to use on this site.
-$base-font-family: $helvetica; // The font family set on the html element.
+$base-font-family: $sans; // The font family set on the html element.
 $font-monospace: $courier;
 
 // Sass color variables, etc.
@@ -106,6 +92,7 @@ $off-white: #fbfbfb;
 $white: #ffffff;
 $white-60: rgba($white, .6);
 $white-30: rgba($white, .3);
+$yellow: #ff0;
 
 // Use above sass variables to define defaults in normalize.scss
 /* body */
@@ -162,24 +149,15 @@ $bp3: 1100px;
 $slug: rhythm(8);
 
 // The amount lists, blockquotes and comments are indented.
-$indent-amount: rhythm(1);
-
-// Hover state effects
-$timing: .5s;
-$easing: ease-out;
-
-
+$indent-amount: 1em;
 
 
 // =============================================================================
 // Partials to be shared with all .scss files.
 // =============================================================================
 
-// Add the Zen Grids responsive layout mixins.
-@import "../../../../node_modules/butler/node_modules/zen-grids/sass/zen-grids";
-@import "../../../../node_modules/butler/node_modules/zen-grids/sass/zen-grids/functions";
-@import "../../../../node_modules/butler/node_modules/zen-grids/sass/zen-grids/background";
-@import "../../../../node_modules/butler/node_modules/zen-grids/sass/zen-grids/flow";
+// Add the Singularity Grids responsive layout mixins.
+@import "../../../../node_modules/butler/node_modules/singularitygs/stylesheets/singularitygs";
 // Add the Breakpoint mixin.
 @import "../../../../node_modules/butler/node_modules/breakpoint-sass/stylesheets/breakpoint";
 
