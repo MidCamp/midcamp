@@ -4,10 +4,10 @@
   "description": "styleguide for MidCamp.org",
   "main": "index.js",
   "scripts": {
-  "butler": "node_modules/butler/node_modules/.bin/gulp --gulpfile node_modules/butler/Gulpfile.js",
-  "develop": "node_modules/butler/node_modules/.bin/gulp --gulpfile node_modules/butler/Gulpfile.js develop",
-  "linting": "node_modules/butler/node_modules/.bin/gulp --gulpfile node_modules/butler/Gulpfile.js test",
-  "deploy": "node_modules/butler/node_modules/.bin/gulp --gulpfile node_modules/butler/Gulpfile.js deploy"
+    "butler": "node_modules/butler/node_modules/.bin/gulp --gulpfile node_modules/butler/Gulpfile.js",
+    "develop": "node_modules/butler/node_modules/.bin/gulp --gulpfile node_modules/butler/Gulpfile.js develop",
+    "linting": "node_modules/butler/node_modules/.bin/gulp --gulpfile node_modules/butler/Gulpfile.js test",
+    "deploy": "node_modules/butler/node_modules/.bin/gulp --gulpfile node_modules/butler/Gulpfile.js deploy"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/MidCamp/midcamp#readme",
   "dependencies": {
-    "butler": "github:palantirnet/butler#sculpin-run"
+    "butler": "github:palantirnet/butler#singularity-gs"
   }
 }
