@@ -16,7 +16,7 @@ settings:
       label: Novice/Beginner
     -
       value: intermediate
-      label: intermediate/Proficient
+      label: Intermediate/Proficient
     -
       value: expert
       label: Expert/Advanced
