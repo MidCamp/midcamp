@@ -158,4 +158,4 @@ class DrupalFieldContext extends SharedDrupalContext {
       throw new Exception(sprintf("Couldn't find %s of paragraph type %s", $field, $field . '-add-more-add-more-button-' . $expectedType));
     }
   }
-}/
+}
