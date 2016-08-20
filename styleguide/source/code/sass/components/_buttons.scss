@@ -39,6 +39,9 @@ input[type="button"] {
   &:active,
   &:hover,
   &:focus {
+    background: url('../imgs/crosshatch--blue.svg') no-repeat;
+    background-size: cover;
+    background-position: center;
     background-color: $button-hover-background;
     color: $button-hover-text;
     text-decoration: none;
@@ -75,6 +78,9 @@ input[type="reset"] {
   &:active,
   &:hover,
   &:focus {
+    background: url('../imgs/crosshatch--blue-light.svg') no-repeat;
+    background-size: cover;
+    background-position: center;
     background-color: transparent;
     border: 1px solid $button-hover-background;
     color: $button-hover-background;
