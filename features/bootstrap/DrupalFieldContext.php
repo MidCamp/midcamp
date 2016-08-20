@@ -80,7 +80,7 @@ class DrupalFieldContext extends SharedDrupalContext {
    */
   public function assertTextarea($field, $expectedType) {
     $element = $this->getSession()->getPage()->find('css', $field . '-wrapper');
-    if (NULL == $element->find('css', 'textarea.form-textarea')) {
+    if (NULL == $element || NULL == $element->find('css', 'textarea.form-textarea')) {
       throw new Exception(sprintf("Couldn't find %s of type textarea.", $field));
     }
   }
@@ -136,7 +136,7 @@ class DrupalFieldContext extends SharedDrupalContext {
    */
   public function assertSelect($field, $expectedType) {
     $element = $this->getSession()->getPage()->find('css', $field);
-    if (NULL == $element->find('css', 'select.form-select')) {
+    if (NULL == $element || NULL == $element->find('css', 'select.form-select')) {
       throw new Exception(sprintf("Couldn't find %s of type select.", $field));
     }
     // Verify that the select list is not part of a multivalue widget.
