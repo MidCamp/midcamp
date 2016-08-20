@@ -1,0 +1,19 @@
+uuid: 8ba0fc15-cd0d-4715-b438-c9dc56b09ac2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.job.field_job_location
+    - node.type.job
+  module:
+    - user
+id: node.job.teaser
+targetEntityType: node
+bundle: job
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_job_location: true

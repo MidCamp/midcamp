@@ -1,0 +1,30 @@
+uuid: d1e71c24-89ce-4c4b-9d7e-46ab1bd3a294
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_job_skill_level
+field_name: field_job_skill_level
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: novice
+      label: Novice/Beginner
+    -
+      value: intermediate
+      label: Intermediate/Proficient
+    -
+      value: expert
+      label: Expert/Advanced
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
