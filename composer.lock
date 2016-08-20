@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "17d3070a3952043fab4307fc185dee92",
-    "content-hash": "6044eeb12a978cb25c5ba7914d9466ad",
+    "hash": "789c0d6b9442ec545ebdc4398d43cc60",
+    "content-hash": "eecc7eec7c2d69a06a3daa5d5979a266",
     "packages": [
         {
             "name": "codegyre/robo",
@@ -6092,6 +6092,66 @@
             "time": "2016-01-05 23:08:01"
         },
         {
+            "name": "palantirnet/palantir-behat-extension",
+            "version": "dev-drupal8-file-revisited",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:palantirnet/palantir-behat-extension.git",
+                "reference": "ffd260ca93f1724ae0c9887749eb736346cd2aa5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/palantirnet/palantir-behat-extension/zipball/ffd260ca93f1724ae0c9887749eb736346cd2aa5",
+                "reference": "ffd260ca93f1724ae0c9887749eb736346cd2aa5",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/drupal-extension": "3.*"
+            },
+            "require-dev": {
+                "leaphub/phpcs-symfony2-standard": "^2.0",
+                "squizlabs/php_codesniffer": "^2.4"
+            },
+            "type": "behat-extension",
+            "autoload": {
+                "psr-0": {
+                    "Palantirnet\\PalantirBehatExtension\\": "src/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Palantir.net",
+                    "email": "white@palantir.net",
+                    "homepage": "https://palantir.net",
+                    "role": "Company"
+                },
+                {
+                    "name": "Bec White",
+                    "email": "white@palantir.net",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Kelsey Bentham",
+                    "email": "bentham@palantir.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Additional step definitions for testing Drupal sites using Behat.",
+            "homepage": "https://github.com/palantirnet/palantir-behat-extension",
+            "keywords": [
+                "behat",
+                "drupal"
+            ],
+            "support": {
+                "source": "https://github.com/palantirnet/palantir-behat-extension/tree/drupal8-file-revisited",
+                "issues": "https://github.com/palantirnet/palantir-behat-extension/issues"
+            },
+            "time": "2016-08-10 14:27:16"
+        },
+        {
             "name": "palantirnet/the-vagrant",
             "version": "dev-master",
             "source": {
@@ -7070,6 +7130,7 @@
         "composer/composer": 20,
         "dflydev/embedded-composer-console": 20,
         "dflydev/embedded-composer-core": 20,
+        "palantirnet/palantir-behat-extension": 20,
         "palantirnet/the-vagrant": 20,
         "sculpin/sculpin-theme-composer-plugin": 20
     },
