@@ -22,7 +22,7 @@ input[type="button"] {
   outline: none;
   border: 0;
   text-transform: uppercase;
-  background: url('../imgs/crosshatch--purple.svg') no-repeat;
+  background: url("../imgs/crosshatch--purple.svg") no-repeat;
   background-size: cover;
   background-position: center;
   background-color: $button-background;
@@ -39,7 +39,7 @@ input[type="button"] {
   &:active,
   &:hover,
   &:focus {
-    background: url('../imgs/crosshatch--blue.svg') no-repeat;
+    background: url("../imgs/crosshatch--blue.svg") no-repeat;
     background-size: cover;
     background-position: center;
     background-color: $button-hover-background;
@@ -61,7 +61,7 @@ input[type="reset"] {
 .button--outline[type="submit"],
 .button--outline[type="button"] {
   @extend %button;
-  background: url('../imgs/crosshatch--purple-light.svg') no-repeat;
+  background: url("../imgs/crosshatch--purple-light.svg") no-repeat;
   background-size: cover;
   background-position: center;
   background-color: transparent;
@@ -78,7 +78,7 @@ input[type="reset"] {
   &:active,
   &:hover,
   &:focus {
-    background: url('../imgs/crosshatch--blue-light.svg') no-repeat;
+    background: url("../imgs/crosshatch--blue-light.svg") no-repeat;
     background-size: cover;
     background-position: center;
     background-color: transparent;
@@ -92,7 +92,7 @@ input[type="reset"] {
 .button--primary[type="submit"],
 .button--primary[type="button"] {
   @extend %button;
-  background: url('../imgs/crosshatch--blue.svg') no-repeat;
+  background: url("../imgs/crosshatch--blue.svg") no-repeat;
   background-size: cover;
   background-position: center;
   background-color: $blue-dark;
@@ -106,7 +106,7 @@ input[type="reset"] {
   &:active,
   &:hover,
   &:focus {
-    background: url('../imgs/crosshatch--purple.svg') no-repeat;
+    background: url("../imgs/crosshatch--purple.svg") no-repeat;
     background-size: cover;
     background-position: center;
     background-color: $purple;
@@ -118,7 +118,7 @@ input[type="reset"] {
 .button--primary-outline[type="submit"],
 .button--primary-outline[type="button"] {
   @extend %button;
-  background: url('../imgs/crosshatch--blue-light.svg') no-repeat;
+  background: url("../imgs/crosshatch--blue-light.svg") no-repeat;
   background-size: cover;
   background-position: center;
   background-color: transparent;
@@ -135,7 +135,7 @@ input[type="reset"] {
   &:active,
   &:hover,
   &:focus {
-    background: url('../imgs/crosshatch--purple-light.svg') no-repeat;
+    background: url("../imgs/crosshatch--purple-light.svg") no-repeat;
     background-size: cover;
     background-position: center;
     background-color: transparent;
@@ -149,7 +149,7 @@ input[type="reset"] {
 .button--secondary[type="submit"],
 .button--secondary[type="button"] {
   @extend %button;
-  background: url('../imgs/crosshatch--gray.svg') no-repeat;
+  background: url("../imgs/crosshatch--gray.svg") no-repeat;
   background-size: cover;
   background-position: center;
   background-color: $gray-medium;
@@ -164,7 +164,7 @@ input[type="reset"] {
   &:active,
   &:hover,
   &:focus {
-    background: url('../imgs/crosshatch--purple.svg') no-repeat;
+    background: url("../imgs/crosshatch--purple.svg") no-repeat;
     background-size: cover;
     background-position: center;
     background-color: $purple;
@@ -176,7 +176,7 @@ input[type="reset"] {
 .button--secondary-outline[type="submit"],
 .button--secondary-outline[type="button"] {
   @extend %button;
-  background: url('../imgs/crosshatch--gray-light.svg') no-repeat;
+  background: url("../imgs/crosshatch--gray-light.svg") no-repeat;
   background-size: cover;
   background-position: center;
   background-color: transparent;
@@ -193,7 +193,7 @@ input[type="reset"] {
   &:active,
   &:hover,
   &:focus {
-    background: url('../imgs/crosshatch--purple-light.svg') no-repeat;
+    background: url("../imgs/crosshatch--purple-light.svg") no-repeat;
     background-size: cover;
     background-position: center;
     background-color: transparent;
