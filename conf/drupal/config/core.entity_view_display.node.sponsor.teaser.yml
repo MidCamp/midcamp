@@ -25,5 +25,7 @@ content:
     weight: 100
 hidden:
   field_image: true
+  field_level: true
+  field_link: true
   field_sponsor_level: true
   field_sponsor_link: true

@@ -16,4 +16,8 @@ content:
   links:
     weight: 100
 hidden:
+  field_job_description: true
+  field_job_link: true
   field_job_location: true
+  field_job_skill_level: true
+  field_job_type: true
