@@ -1,0 +1,27 @@
+uuid: 0ded0aaf-90e7-40fd-affb-4a503e116de4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_sponsor_level
+field_name: field_sponsor_level
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Platinum
+      label: Platinum
+    -
+      value: Gold
+      label: Gold
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
