@@ -1,0 +1,101 @@
+@import url(lewiscarroll/stylesheet.css);
+html {
+  font-size: 1em; }
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 0.8em; } }
+
+body {
+  -webkit-animation: colorchange 90s infinite;
+          animation: colorchange 90s infinite;
+  /* animation-name followed by duration in seconds*/
+  /* you could also use milliseconds (ms) or something like 2.5s */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  font-weight: 400;
+  line-height: 1.45;
+  font-family: 'lewiscarrollregular', serif; }
+
+@-webkit-keyframes colorchange {
+  0% {
+    background: #e2d131; }
+  16% {
+    background: #60bd58; }
+  32% {
+    background: #ee3340; }
+  48% {
+    background: #963c97; }
+  64% {
+    background: #f6871f; }
+  80% {
+    background: #da5ca3; }
+  100% {
+    background: #e2d131; } }
+
+@keyframes colorchange {
+  0% {
+    background: #e2d131; }
+  16% {
+    background: #60bd58; }
+  32% {
+    background: #ee3340; }
+  48% {
+    background: #963c97; }
+  64% {
+    background: #f6871f; }
+  80% {
+    background: #da5ca3; }
+  100% {
+    background: #e2d131; } }
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: inherit;
+  line-height: 1.2;
+  text-align: center; }
+
+h1 {
+  margin-top: 1em;
+  font-size: 3.998em; }
+  @media screen and (max-width: 768px) {
+    h1 {
+      margin-top: 0.5em; } }
+
+h2 {
+  font-size: 2.827em; }
+
+h3 {
+  font-size: 1.999em; }
+
+h4 {
+  font-size: 1.414em; }
+
+p {
+  margin-bottom: 1.3em; }
+
+a {
+  color: black; }
+
+small, .font_small {
+  font-size: 0.707em; }
+
+img.hatter {
+  height: 50vh;
+  width: auto;
+  text-align: center; }
+  @media screen and (max-width: 767px) {
+    img.hatter {
+      height: 40vh; } }
