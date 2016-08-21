@@ -1,0 +1,64 @@
+/**
+ * @file
+ * Define the styles for the site header Component
+ */
+
+.site-header {
+  background: url("../imgs/dots--blue.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: $blue-dark;
+  padding: rhythm(1) 0;
+  border-bottom: 4px solid $magenta;
+  box-shadow: 0px 4px 5px $gray-light;
+}
+
+.branding {
+  @include adjust-font-size-to($xl-heading, 1.8);
+  @include leader(0);
+  @include trailer(0);
+  font-family: $serif;
+
+  a:link,
+  a:visited {
+    color: $white;
+  }
+
+  a:active,
+  a:hover,
+  a:focus {
+    color: $yellow;
+    text-decoration: none;
+  }
+}
+
+.primary-nav {
+  width: 100%;
+}
+
+.primary-nav__list {
+  @extend %list--simple;
+}
+
+.primary-nav__item {
+  display: block;
+  float: left;
+  width: 20%;
+  margin-bottom: rhythm(-1);
+  text-align: center;
+
+  a:link,
+  a:visited {
+    display: block;
+    margin: 0 rhythm(.15);
+    padding: rhythm(.5) rhythm(.5) rhythm(1.5) rhythm(.5);
+    color: $white;
+  }
+
+  a:active,
+  a:hover,
+  a:focus {
+    background-color: $magenta;
+    text-decoration: none;
+  }
+}
