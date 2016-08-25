@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/MidCamp/midcamp#readme",
   "dependencies": {
-    "butler": "github:palantirnet/butler#singularity-gs-update"
+    "butler": "git://github.com/palantirnet/butler.git#singularity-gs-update"
   }
 }
