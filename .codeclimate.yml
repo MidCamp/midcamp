@@ -1,0 +1,34 @@
+---
+# @todo insert things for the theme
+engines:
+  phpmd:
+    enabled: true
+    config:
+      file_extensions: "php,inc,module,install"
+      rulesets: ".phpmd.xml"
+  phpcodesniffer:
+    enabled: true
+    config:
+      file_extensions: "php,inc,module,install"
+      encoding: utf-8
+      standard: "Drupal"
+      ignore_warnings: true
+ratings:
+  paths:
+  - "features/bootstrap/**.php"
+  - "web/modules/custom/**.php"
+  - "web/modules/custom/**.inc"
+  - "web/modules/custom/**.module"
+  - "web/modules/custom/**.install"
+exclude_paths:
+- .vagrant
+- conf
+- features/**.feature
+- provisioning
+- styleguide
+- web/core
+- web/modules/contrib
+- web/profiles
+- web/sites
+- web/themes
+- web/*.php
