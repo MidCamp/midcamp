@@ -36,3 +36,8 @@ test:
   override:
     - mkdir -p $CIRCLE_TEST_REPORTS/behat
     - vendor/bin/behat --strict --format=junit --out=$CIRCLE_TEST_REPORTS/behat --format=pretty --out=std
+
+general:
+  branches:
+    ignore:
+      - gh-pages
