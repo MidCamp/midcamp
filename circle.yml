@@ -10,9 +10,6 @@ machine:
 
 dependencies:
   pre:
-    - echo "sendmail_path=/bin/true" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
-    - echo "memory_limit=256M" > ~/.phpenv/versions/$(phpenv global)/etc/conf.d/memory.ini
-    - sudo service apache2 restart
     - composer config --global github-oauth.github.com $GITHUB_TOKEN
     - export PATH="$PATH:~/midcamp/vendor/bin"
 
