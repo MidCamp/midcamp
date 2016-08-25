@@ -28,4 +28,5 @@ test:
     - vendor/bin/phing build install
 
   override:
-    - vendor/bin/phing test
+    - mkdir -p $CIRCLE_TEST_REPORTS/behat
+    - vendor/bin/behat --strict --format=junit --out=$CIRCLE_TEST_REPORTS/behat --format=pretty --out=std

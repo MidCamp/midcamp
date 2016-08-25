@@ -28,13 +28,6 @@
         <echo>Configure this target to load sample data and run the migrations.</echo>
     </target>
 
-
-    <!-- Target: test -->
-    <target name="test" description="Run all the tests.">
-        <echo>Configure this target to run the tests.</echo>
-    </target>
-
-
     <!-- Target: deploy -->
     <target name="deploy" description="Build and deploy the application.">
         <echo>Configure this target to build the production artifact; see the `deploy-to-acquia` target for an example.</echo>

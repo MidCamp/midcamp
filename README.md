@@ -80,7 +80,7 @@ Sometimes it is appropriate to configure specific Drupal variables in Drupal's `
 
 ### Behat
 
-Run `vendor/bin/phing test` or `vendor/bin/behat features/installation.feature`.
+Run `vendor/bin/behat features/installation.feature`.
 
 ## What does this Butler do?
 
