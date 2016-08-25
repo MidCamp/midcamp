@@ -25,7 +25,7 @@ dependencies:
 
 test:
   pre:
-    - vendor/bin/phing build install migrate
+    - vendor/bin/phing build install
 
   override:
     - vendor/bin/phing test
