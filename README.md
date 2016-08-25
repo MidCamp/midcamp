@@ -1,5 +1,6 @@
 # MidCamp
 ## The Drupal 8 website for midcamp.org
+[![CircleCI](https://circleci.com/gh/MidCamp/midcamp.svg?style=shield)](https://circleci.com/gh/MidCamp/midcamp)
 
 ## Requirements
 
