@@ -139,10 +139,6 @@ class DrupalFieldContext extends SharedDrupalContext {
     if (NULL == $element || NULL == $element->find('css', 'select.form-select')) {
       throw new Exception(sprintf("Couldn't find %s of type select.", $field));
     }
-    // Verify that the select list is not part of a multivalue widget.
-    if (!$element->find('css', 'select.form-select')->isVisible()) {
-      throw new Exception(sprintf("Couldn't find %s of type select.", $field));
-    }
   }
 
   /**
