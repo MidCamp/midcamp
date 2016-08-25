@@ -16,28 +16,11 @@
 // Variables
 // =============================================================================
 
-//
-// Legacy IE support
-//
-// These variables are used by many mixins to add additional CSS to support
-// specific versions of IE or specific vendor prefixes.
-//
-// IE6-7 don't support box-sizing: border-box. We can fix this in 1 of 3 ways:
-// - Drop support for IE 6/7. :-) Set $legacy-support-for-ie6
-//   and $legacy-support-for-ie7 to false.
-// - (Preferred) Install the box-sizing polyfill and set the variable below to
-//   the absolute path URL to the boxsizing.htc file.
-//   @see https://github.com/Schepp/box-sizing-polyfill
-//   $box-sizing-polyfill-path: "/path/to/boxsizing.htc";
-// - Use the same CSS unit for grid and gutter width in resonsive-sidebars.scss
-//   (use px for both or use % for both) and set the box-sizing variable to content-box.
-//
-// Zen does not require special handling for IE8 or later. But Compass uses that
-// variable for a couple edge cases. We include it for completeness sake. See
-// the documentation at http://compass-style.org/reference/compass/support/
-$legacy-support-for-ie6: false;
-$legacy-support-for-ie7: false;
-$legacy-support-for-ie8: true;
+// Support the same browsers as normalize.css v3.
+$support-for: (
+  ie:      9,
+  '*':     -4,
+);
 
 
 //
@@ -49,8 +32,8 @@ $legacy-support-for-ie8: true;
 // use in the normalize.scss file.
 // @see http://compass-style.org/reference/compass/typography/vertical_rhythm/
 
-$base-font-size: 15px; // The font size set on the root html element.
-$base-line-height: 18px; // This line-height determines the basic unit of vertical rhythm.
+$base-font-size: 16px; // The font size set on the root html element.
+$base-line-height: 24px; // This line-height determines the basic unit of vertical rhythm.
 
 // Modular Scale
 // Major Third: 16px @ 1:1.25
@@ -88,13 +71,15 @@ $verdana: Verdana, Tahoma, "DejaVu Sans", sans-serif;
 $tahoma: Tahoma, Verdana, "DejaVu Sans", sans-serif;
 $helvetica: Helvetica, Arial, "Nimbus Sans L", sans-serif;
 $arial: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+$sans: 'Poppins', $helvetica;
+$serif: 'Averia Serif Libre', $georgia;
 
 // For an explanation of why "sans-serif" is at the end of this list, see
 // http://meyerweb.com/eric/thoughts/2510/02/12/fixed-monospace-sizing/
 $courier: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
 
 // Now create some variables for the font stacks we want to use on this site.
-$base-font-family: $helvetica; // The font family set on the html element.
+$base-font-family: $sans; // The font family set on the html element.
 $font-monospace: $courier;
 
 // Sass color variables, etc.
@@ -104,24 +89,34 @@ $gray-medium: #888888;
 $gray-light: #F0F0F0;
 $off-white: #fbfbfb;
 $white: #ffffff;
-$white-60: rgba($white, .6);
-$white-30: rgba($white, .3);
+$yellow: #ff0;
+
+// colors
+$blue: #569ED6;
+$blue-dark: #0961A5;
+$magenta: #D95DA2;
+$yellow: #E2D030;
+$green: #61BC58;
+$red: #EE373F;
+$purple: #953C96;
+$orange: #F5861F;
+
 
 // Use above sass variables to define defaults in normalize.scss
 /* body */
 $text-color: $gray-dark;
 $background-color: $white;
 /* Link (a:) */
-$link-color: $gray-medium;
-$link-hover: $gray-dark;
+$link-color: $blue-dark;
+$link-hover: $magenta;
 /* Blockquote*/
-$blockquote-color: $gray-medium;
+$blockquote-color: $purple;
 /* Figcaption */
 $figcaption-color: $gray-medium;
 /* forms */
 $form-text: $gray-medium;
-$input-border-color: $gray-light;
-$input-border-hover: $gray-dark;
+$input-border-color: $blue;
+$input-border-hover: $purple;
 $input-not: $gray-medium;
 $input-not-background: $gray-light;
 $input-not-border: $gray-medium;
@@ -134,18 +129,18 @@ $input-disabled-not-text: $gray-medium;
 $input-readonly-text: $gray-medium;
 $input-readonly-background: $gray-light;
 $input-readonly-border: $gray-medium;
-$input-invalid-text: #b94a48;
-$input-invalid-border: #ee5f5b;
-$input-invalid-border-focus: #e9322d;
-$input-check-outline: #e9322d;
+$input-invalid-text: $red;
+$input-invalid-border: $red;
+$input-invalid-border-focus: $red;
+$input-check-outline: $gray-medium;
 $select-background: $white;
-$select-border: $gray-light;
-$select-border-hover: $gray-medium;
+$select-border: $magenta;
+$select-border-hover: $purple;
 $placeholder-text: $gray-light;
 /* Buttons */
-$button-background: $gray-medium;
+$button-background: $purple;
 $button-text: $white;
-$button-hover-background: $gray-dark;
+$button-hover-background: $blue-dark;
 $button-hover-text: $white;
 $button-focus-outline: $gray-dark;
 $button-reset-text: $gray-medium;
@@ -162,24 +157,15 @@ $bp3: 1100px;
 $slug: rhythm(8);
 
 // The amount lists, blockquotes and comments are indented.
-$indent-amount: rhythm(1);
-
-// Hover state effects
-$timing: .5s;
-$easing: ease-out;
-
-
+$indent-amount: 1em;
 
 
 // =============================================================================
 // Partials to be shared with all .scss files.
 // =============================================================================
 
-// Add the Zen Grids responsive layout mixins.
-@import "../../../../node_modules/butler/node_modules/zen-grids/sass/zen-grids";
-@import "../../../../node_modules/butler/node_modules/zen-grids/sass/zen-grids/functions";
-@import "../../../../node_modules/butler/node_modules/zen-grids/sass/zen-grids/background";
-@import "../../../../node_modules/butler/node_modules/zen-grids/sass/zen-grids/flow";
+// Add the Singularity Grids responsive layout mixins.
+@import "../../../../node_modules/butler/node_modules/singularitygs/stylesheets/singularitygs";
 // Add the Breakpoint mixin.
 @import "../../../../node_modules/butler/node_modules/breakpoint-sass/stylesheets/breakpoint";
 
