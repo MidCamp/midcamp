@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{{ page.title }}{% endblock %} | {{ site.title }}</title>
-    <!-- inject:css -->
-    <link rel="stylesheet" href="/code/css/styles.css">
-    <!-- endinject -->
-    <link rel="shortcut icon" href="{{ site.url }}assets/images/global/palantir-favicon.png?v=2" type="image/x-icon" />
+    <link rel="stylesheet" href="{{ site.url }}/code/css/styles.css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre:400,400i,700,700i|Poppins:400,700" rel="stylesheet">
+     <!-- favicon -->
+    <link rel="shortcut icon" href="{{site.url}}/code/imgs/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-       {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
+    {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
   </body>
 </html>
