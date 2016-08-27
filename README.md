@@ -83,6 +83,12 @@ Sometimes it is appropriate to configure specific Drupal variables in Drupal's `
 
 Run `vendor/bin/behat features/installation.feature`.
 
+### Static Analysis
+
+Run `vendor/bin/phing analyze`.
+
+This should be configured to show the same errors triggered by Code Climate that you see on the Pull Request.
+
 ## What does this Butler do?
 
 * `npm run butler`
