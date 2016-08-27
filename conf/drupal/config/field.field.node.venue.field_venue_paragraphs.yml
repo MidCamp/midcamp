@@ -1,0 +1,35 @@
+uuid: 941e5dec-607f-4037-84da-83dabebfe960
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_venue_paragraphs
+    - node.type.venue
+    - paragraphs.paragraphs_type.paragraphs_image
+    - paragraphs.paragraphs_type.paragraphs_text
+  module:
+    - entity_reference_revisions
+id: node.venue.field_venue_paragraphs
+field_name: field_venue_paragraphs
+entity_type: node
+bundle: venue
+label: Paragraphs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      paragraphs_image: paragraphs_image
+      paragraphs_text: paragraphs_text
+    target_bundles_drag_drop:
+      paragraphs_image:
+        enabled: true
+        weight: 3
+      paragraphs_text:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

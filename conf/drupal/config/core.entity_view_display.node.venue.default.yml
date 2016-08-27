@@ -3,14 +3,32 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.venue.field_venue_events
+    - field.field.node.venue.field_venue_paragraphs
     - node.type.venue
   module:
+    - entity_reference_revisions
     - user
 id: node.venue.default
 targetEntityType: node
 bundle: venue
 mode: default
 content:
+  field_venue_events:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_venue_paragraphs:
+    type: entity_reference_revisions_entity_view
+    weight: 101
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
   links:
     weight: 100
 hidden: {  }
