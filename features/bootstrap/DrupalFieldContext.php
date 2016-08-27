@@ -1,7 +1,7 @@
 <?php
-
 /**
  * @file
+ * A Behat context for Drupal fields.
  *
  * @copyright Copyright (c) 2016 Palantir.net
  */
@@ -9,11 +9,15 @@
 use Behat\Gherkin\Node\TableNode;
 use Palantirnet\PalantirBehatExtension\Context\SharedDrupalContext;
 
+/**
+ * A Behat context for Drupal fields.
+ */
 class DrupalFieldContext extends SharedDrupalContext {
 
-
   /**
-   * Asserts a page has fields provided in the form of a given type:
+   * Asserts a page has fields provided in the form of a given type.
+   *
+   * Example of type checks:
    * | field               | tag      | type  |
    * | title               | input    | text  |
    * | body                | textarea |       |
@@ -27,21 +31,29 @@ class DrupalFieldContext extends SharedDrupalContext {
    * "body" checks for the existence of the element, "#edit-body". Note, for
    * almost everything this will begin with "field-", like "field-tags".
    *
+   * @param string $path
+   *   The URL path.
+   * @param string $content_type
+   *   The machine name of the content type.
+   * @param Behat\Gherkin\Node\TableNode $fieldsTable
+   *   A Behat table.
+   *
+   * @throws \Exception
+   *
    * @Then the form at :path has the expected fields:
    * @Then the content type :type has the expected fields:
-   *
-   * @param String $path
-   * @param TableNode $fieldsTable
-   * @param String $content_type
-   * @throws \Exception
    */
-  public function assertFields($path = '', $content_type = '', TableNode $fieldsTable) {
+  public function assertFields($path = '', $content_type = '', TableNode $fieldsTable = NULL) {
     // Load the page with the form on it.
     if (empty($path)) {
       $path = 'node/add/' . $content_type;
     }
     $this->getSession()->visit($this->locatePath($path));
     $page = $this->getSession()->getPage();
+
+    if (NULL == $fieldsTable) {
+      throw new \Exception('You must use the field assertion with a list of fields.');
+    }
 
     foreach ($fieldsTable->getHash() as $row) {
       $fieldSelector = '#edit-' . $row['field'] . '-0-value';
@@ -51,16 +63,19 @@ class DrupalFieldContext extends SharedDrupalContext {
   }
 
   /**
-   * Test a field on the current page to see if it matches
-   * the expected HTML field type.
+   * Test a field on the current page to see if it matches the field type.
+   *
+   * @param string $field
+   *   The field's input name.
+   * @param string $expectedTag
+   *   The field's tag name.
+   * @param string $expectedType
+   *   The type of field.
+   *
+   * @throws \Exception
    *
    * @Then the ":field" field is ":tag"
    * @Then the ":field" field is ":tag" with type ":type"
-   *
-   * @param string $field
-   * @param string $expectedTag
-   * @param string $expectedType
-   * @throws Exception
    */
   public function assertFieldType($field, $expectedTag, $expectedType = '') {
     $callback = 'assert' . ucfirst($expectedTag);
@@ -74,9 +89,12 @@ class DrupalFieldContext extends SharedDrupalContext {
   /**
    * Verify the field is a textarea.
    *
-   * @param $field
-   * @param $expectedType
-   * @throws Exception
+   * @param string $field
+   *   The field's input name.
+   * @param string $expectedType
+   *   The type of field.
+   *
+   * @throws \Exception
    */
   public function assertTextarea($field, $expectedType) {
     $element = $this->getSession()->getPage()->find('css', $field . '-wrapper');
@@ -88,9 +106,12 @@ class DrupalFieldContext extends SharedDrupalContext {
   /**
    * Verify the field is an input field of the given type.
    *
-   * @param $field
-   * @param $expectedType
-   * @throws Exception
+   * @param string $field
+   *   The field's input name.
+   * @param string $expectedType
+   *   The type of field.
+   *
+   * @throws \Exception
    */
   public function assertInput($field, $expectedType) {
     $element = $this->getSession()->getPage()->find('css', $field);
@@ -102,9 +123,12 @@ class DrupalFieldContext extends SharedDrupalContext {
   /**
    * Verify the field is an input field of the given type.
    *
-   * @param $field
-   * @param $expectedType
-   * @throws Exception
+   * @param string $field
+   *   The field's input name.
+   * @param string $expectedType
+   *   The type of field.
+   *
+   * @throws \Exception
    */
   public function assertTextfield($field, $expectedType) {
     $element = $this->getSession()->getPage()->find('css', $field . '-wrapper');
@@ -116,9 +140,12 @@ class DrupalFieldContext extends SharedDrupalContext {
   /**
    * Verify the field is an input field of the given type.
    *
-   * @param $field
-   * @param $expectedType
-   * @throws Exception
+   * @param string $field
+   *   The field's input name.
+   * @param string $expectedType
+   *   The type of field.
+   *
+   * @throws \Exception
    */
   public function assertFile($field, $expectedType) {
     $element = $this->getSession()->getPage()->find('css', $field . '-wrapper');
@@ -130,9 +157,12 @@ class DrupalFieldContext extends SharedDrupalContext {
   /**
    * Verify the field is a select list.
    *
-   * @param $field
-   * @param $expectedType
-   * @throws Exception
+   * @param string $field
+   *   The field's input name.
+   * @param string $expectedType
+   *   The type of field.
+   *
+   * @throws \Exception
    */
   public function assertSelect($field, $expectedType) {
     $element = $this->getSession()->getPage()->find('css', $field);
@@ -144,9 +174,12 @@ class DrupalFieldContext extends SharedDrupalContext {
   /**
    * Verify the field is a paragraph field.
    *
-   * @param $field
-   * @param $expectedType
-   * @throws Exception
+   * @param string $field
+   *   The field's input name.
+   * @param string $expectedType
+   *   The type of field.
+   *
+   * @throws \Exception
    */
   public function assertParagraphs($field, $expectedType = '') {
     $element = $this->getSession()->getPage()->find('css', $field . '-wrapper');
@@ -154,4 +187,5 @@ class DrupalFieldContext extends SharedDrupalContext {
       throw new Exception(sprintf("Couldn't find %s of paragraph type %s", $field, $field . '-add-more-add-more-button-' . $expectedType));
     }
   }
+
 }
