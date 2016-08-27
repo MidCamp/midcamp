@@ -1,0 +1,9 @@
+uuid: 29d28279-063a-45d0-b267-6a29c485227f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Topic Type'
+vid: topic_type
+description: ''
+hierarchy: 0
+weight: 0

@@ -1,0 +1,28 @@
+uuid: 0221ebb3-18cd-4aa1-be66-45997252d47b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_people
+    - node.type.topic
+id: node.topic.field_people
+field_name: field_people
+entity_type: node
+bundle: topic
+label: People
+description: 'The presenter(s), organizer(s), trainer(s), etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference
