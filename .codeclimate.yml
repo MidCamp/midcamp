@@ -1,5 +1,4 @@
 ---
-# @todo insert things for the theme
 engines:
   phpmd:
     enabled: true
