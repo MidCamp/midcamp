@@ -13,13 +13,13 @@
     "type": "git",
     "url": "git+https://github.com/MidCamp/midcamp.git"
   },
-  "author": "Michellanne Li",
+  "author": "Ashley Cyborski",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MidCamp/midcamp/issues"
   },
   "homepage": "https://github.com/MidCamp/midcamp#readme",
   "dependencies": {
-    "butler": "github:palantirnet/butler#singularity-gs"
+    "butler": "git://github.com/palantirnet/butler.git#singularity-gs-update"
   }
 }

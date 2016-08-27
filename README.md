@@ -1,5 +1,6 @@
 # MidCamp
 ## The Drupal 8 website for midcamp.org
+[![CircleCI](https://circleci.com/gh/MidCamp/midcamp.svg?style=shield)](https://circleci.com/gh/MidCamp/midcamp)
 
 ## Requirements
 
@@ -80,7 +81,7 @@ Sometimes it is appropriate to configure specific Drupal variables in Drupal's `
 
 ### Behat
 
-Run `vendor/bin/phing test` or `vendor/bin/behat features/installation.feature`.
+Run `vendor/bin/behat features/installation.feature`.
 
 ## What does this Butler do?
 
