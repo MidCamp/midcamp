@@ -33,6 +33,13 @@
         <echo>Configure this target to build the production artifact; see the `deploy-to-acquia` target for an example.</echo>
     </target>
 
+    <!-- Target: analyze -->
+    <target name="analyze" description="Run static analysis.">
+        <exec command="vendor/bin/phpcs --standard=vendor/drupal/coder/coder_sniffer/Drupal features/bootstrap web/modules/custom" passthru="true" />
+        <exec command="vendor/bin/phpmd web/modules/custom text .phpmd.xml" passthru="true" />
+        <exec command="vendor/bin/phpmd features/bootstrap text .phpmd.xml" passthru="true" />
+    </target>
+
 
     <!-- Target: deploy-to-acquia -->
     <target name="deploy-to-acquia">
