@@ -1,0 +1,25 @@
+uuid: c3742a59-ef37-46b8-bba2-647acb2cf6fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hatter
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: hatter_branding
+theme: hatter
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }
