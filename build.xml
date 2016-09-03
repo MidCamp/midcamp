@@ -4,16 +4,35 @@
 
 
     <import file="vendor/palantirnet/the-build/tasks/boilerplate.xml" />
+    <import file="build/styleguide.xml" />
 
 
     <!-- Make these commands available by default. -->
     <import file="vendor/palantirnet/the-build/tasks/drupal.xml" />
     <import file="vendor/palantirnet/the-build/tasks/acquia.xml" />
 
-
     <!-- Default target: build -->
     <target name="build" description="Build the application.">
         <phingcall target="drupal-build" />
+        <resolvepath propertyName="styleguide.dir.absolute_path" file="${styleguide.dir}" />
+
+        <resolvepath propertyname="styleguide_code" file="${styleguide.dir}/source/code" />
+
+        <!-- Define custom theme -->
+        <resolvepath propertyname="custom_theme" file="${drupal.root}/themes/custom/hatter" />
+        <phingcall target="styleguide-link">
+            <property name="css_source" value="${styleguide_code}/css" />
+            <property name="css_dest" value="${custom_theme}/css" />
+
+            <property name="svg_source" value="${styleguide_code}/_views/includes/svg" />
+            <property name="svg_dest" value="${custom_theme}/svg" />
+
+            <property name="js_source" value="${styleguide_code}/js" />
+            <property name="js_dest" value="${custom_theme}/js" />
+
+            <property name="imgs_source" value="${styleguide_code}/imgs" />
+            <property name="imgs_dest" value="${custom_theme}/imgs" />
+        </phingcall>
     </target>
 
 
