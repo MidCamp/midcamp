@@ -188,4 +188,21 @@ class DrupalFieldContext extends SharedDrupalContext {
     }
   }
 
+  /**
+   * Verify the field is an address field.
+   *
+   * @param string $field
+   *   The field's input name.
+   * @param string $expectedType
+   *   The type of field.
+   *
+   * @throws \Exception
+   */
+  public function assertAddress($field, $expectedType = '') {
+    $element = $this->getSession()->getPage()->find('css', $field . '-wrapper');
+    if (NULL == $element) {
+      throw new Exception(sprintf("Couldn't find %s address field", $field . '-wrapper'));
+    }
+  }
+
 }
