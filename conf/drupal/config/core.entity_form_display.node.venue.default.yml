@@ -3,10 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.venue.field_address
     - field.field.node.venue.field_venue_events
     - field.field.node.venue.field_venue_paragraphs
     - node.type.venue
   module:
+    - address
     - paragraphs
     - path
 id: node.venue.default
@@ -16,11 +18,17 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 2
     settings: {  }
     third_party_settings: {  }
+  field_address:
+    weight: 6
+    settings:
+      default_country: null
+    third_party_settings: {  }
+    type: address_default
   field_venue_events:
-    weight: 32
+    weight: 8
     settings:
       match_operator: CONTAINS
       size: 60
@@ -29,7 +37,7 @@ content:
     type: entity_reference_autocomplete
   field_venue_paragraphs:
     type: entity_reference_paragraphs
-    weight: 31
+    weight: 7
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -39,31 +47,31 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 5
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 3
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 4
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 1
     settings:
       match_operator: CONTAINS
       size: 60

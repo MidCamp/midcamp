@@ -4,6 +4,9 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.venue.field_address
+    - field.field.node.venue.field_venue_events
+    - field.field.node.venue.field_venue_paragraphs
     - node.type.venue
   module:
     - user
@@ -15,5 +18,6 @@ content:
   links:
     weight: 100
 hidden:
+  field_address: true
   field_venue_events: true
   field_venue_paragraphs: true
