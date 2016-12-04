@@ -1,0 +1,20 @@
+uuid: aac24197-d8dc-478c-9ff0-e54ac83fdc2d
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_sponsor_package_qty_avail
+field_name: field_sponsor_package_qty_avail
+entity_type: taxonomy_term
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

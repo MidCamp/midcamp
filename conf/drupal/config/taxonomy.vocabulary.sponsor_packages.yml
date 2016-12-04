@@ -1,0 +1,9 @@
+uuid: acb69a0e-2219-4979-816a-c74bca0f8178
+langcode: en
+status: true
+dependencies: {  }
+name: 'Sponsor Packages'
+vid: sponsor_packages
+description: 'Available 2017 MidCamp Sponsorship packages'
+hierarchy: 0
+weight: 0

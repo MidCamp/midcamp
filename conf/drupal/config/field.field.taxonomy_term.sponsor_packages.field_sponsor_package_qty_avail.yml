@@ -1,0 +1,23 @@
+uuid: 5edd6588-61e3-4f43-a74d-1fef0a9c476a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_sponsor_package_qty_avail
+    - taxonomy.vocabulary.sponsor_packages
+id: taxonomy_term.sponsor_packages.field_sponsor_package_qty_avail
+field_name: field_sponsor_package_qty_avail
+entity_type: taxonomy_term
+bundle: sponsor_packages
+label: 'Quantity Available'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ' Available'
+field_type: integer
