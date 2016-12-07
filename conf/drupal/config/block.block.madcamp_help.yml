@@ -1,0 +1,22 @@
+uuid: b0a1d6dc-78fb-41df-9c5d-1ef637b03031
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - madcamp
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: madcamp_help
+theme: madcamp
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 7e76f624-6c93-4441-a422-037d22729f82
+langcode: en
+status: true
+dependencies:
+  theme:
+    - madcamp
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: madcamp_local_actions
+theme: madcamp
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

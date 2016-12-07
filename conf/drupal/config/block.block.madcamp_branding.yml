@@ -1,0 +1,25 @@
+uuid: 2ce9b461-bcf2-4676-9ca0-0a53962f6122
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - madcamp
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: madcamp_branding
+theme: madcamp
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

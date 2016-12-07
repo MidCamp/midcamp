@@ -1,0 +1,22 @@
+uuid: 12d5301d-f837-4d8b-8f3f-bf9ce588c77f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - madcamp
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: madcamp_powered
+theme: madcamp
+region: footer_fifth
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }
