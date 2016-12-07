@@ -28,8 +28,12 @@
 @import "layouts/l-6up";
 
 /* Component (SMACSS module) rules */
+@import "components/banners";
 @import "components/buttons";
+@import "components/event-banner";
 @import "components/forms";
+@import "components/header";
+@import "components/speaker-list";
 
 /* Styleguide Specific rules */
 @import "styleguide/styleguide";
