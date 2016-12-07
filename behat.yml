@@ -8,6 +8,8 @@ default:
         - Drupal\DrupalExtension\Context\MessageContext
         - Drupal\DrupalExtension\Context\DrushContext
         - DrupalFieldContext
+        - FailureContext
+      failure_path: '%paths.base%/features/failures'
       filters:
         tags: "~@skipci"
   extensions:

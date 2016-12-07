@@ -1,6 +1,7 @@
 # MidCamp
 ## The Drupal 8 website for midcamp.org
 [![CircleCI](https://circleci.com/gh/MidCamp/midcamp.svg?style=shield)](https://circleci.com/gh/MidCamp/midcamp)
+[![Code Climate](https://codeclimate.com/github/MidCamp/midcamp/badges/gpa.svg)](https://codeclimate.com/github/MidCamp/midcamp)
 
 ## Requirements
 
