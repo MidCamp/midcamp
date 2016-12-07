@@ -1,0 +1,18 @@
+uuid: d61a11c5-dac8-45e1-b0d5-fec29b9584c8
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Venue
+type: venue
+description: 'Use <em>venue</em> for a location hosting a camp.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true
