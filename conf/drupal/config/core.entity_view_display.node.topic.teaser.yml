@@ -23,4 +23,7 @@ content:
     third_party_settings: {  }
   links:
     weight: 100
-hidden: {  }
+hidden:
+  field_event: true
+  field_people: true
+  field_topic_type: true
