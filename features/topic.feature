@@ -11,5 +11,5 @@ Feature: Topic Content Type
       | title             | textfield | text  |
       | field-topic-type  | input     | radio |
       | field-event       | select    |       |
-      | field-people      | input     | text  |
+      | field-people      | textfield | text  |
       | body              | textarea  |       |
