@@ -10,6 +10,6 @@ Feature: Event Taxonomy
       | field             | tag       | type  |
       | name              | textfield | text  |
       | description       | textarea  |       |
-      | field-date        | textfield | text  |
-      | field-social-media| textfield | text  |
+      | field-date        | textfield | date  |
+      | field-social-media| textfield | url   |
       | parent            | select    |       |
