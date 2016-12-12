@@ -20,6 +20,7 @@ title: Homepage
     </div>
   </div>
 </section>
+
 <header class="site-header">
   <nav class="site-header__nav">
     <div class="container">
@@ -45,6 +46,7 @@ title: Homepage
     </div>
   </nav>
 </header>
+
 <section class="banner">
   <div class="container">
     <h1 class="banner-title">Featured Speakers</h1>
@@ -80,3 +82,17 @@ title: Homepage
     </div>
   </div>
 </section>
+
+<section class="map-banner">
+  <div id='map' class="map"></div>
+</section>
+
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoibWlkY2FtcCIsImEiOiJjaXV2czRteHQwNGhkMm9zNWp4bWhndTk0In0.F5jwcKus8Rzx5r8Ga-CRQA';
+  var map = new mapboxgl.Map({
+      container: 'map', // container id
+      style: 'mapbox://styles/midcamp/ciuvsjxje00312ipqrfyxm4di', //stylesheet location
+      center: [-87.64, 41.87], // starting position
+      zoom: 13.4 // starting zoom
+  });
+</script>

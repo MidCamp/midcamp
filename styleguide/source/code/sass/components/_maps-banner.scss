@@ -1,0 +1,12 @@
+/**
+ * @file
+ * Define the styles for the maps Component
+ */
+
+.map {
+  height: 300px;
+
+  @include breakpoint($bp2) {
+    height: 550px;
+  }
+}
