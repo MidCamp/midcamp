@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "096fc71acc1c3d6e32d4e3fdc42b550d",
-    "content-hash": "1173383bba9bf9ea25a7fa29a20c0c0f",
+    "hash": "dc902b6c95e736d83544ded908c42a23",
+    "content-hash": "f4bd1a19fdeaaa3ddd6f57764de0af0d",
     "packages": [
         {
             "name": "codegyre/robo",
@@ -1097,7 +1097,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/config_installer-8.x-1.3.zip",
-                "reference": null,
+                "reference": "071213c9a7507bddcd6f6018d3f24217c13bb9d7",
                 "shasum": null
             },
             "require": {
@@ -1351,7 +1351,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.0-alpha4",
-                    "datestamp": "1464192245"
+                    "datestamp": "1481538483"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1416,7 +1416,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.0-alpha4",
-                    "datestamp": "1464192245"
+                    "datestamp": "1481538483"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1483,7 +1483,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.0-alpha4",
-                    "datestamp": "1464192245"
+                    "datestamp": "1481538483"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1664,6 +1664,50 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/geolocation"
             }
+        },
+        {
+            "name": "drupal/linkicon",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/linkicon",
+                "reference": "80cc8a4329d21f7cd45c1f9cb4d552f31a0f75b8"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.4+2-dev",
+                    "datestamp": "1480435083"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "gausarts",
+                    "homepage": "https://www.drupal.org/u/gausarts",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Committers for linkicon",
+                    "homepage": "https://www.drupal.org/node/2208459/committers"
+                }
+            ],
+            "description": "A link field formatter to create icon classes based on predefined titles.",
+            "homepage": "https://www.drupal.org/project/linkicon",
+            "support": {
+                "source": "http://cgit.drupalcode.org/linkicon",
+                "issues": "https://www.drupal.org/project/issues/linkicon"
+            },
+            "time": "2016-11-29 08:54:34"
         },
         {
             "name": "drupal/paragraphs",
