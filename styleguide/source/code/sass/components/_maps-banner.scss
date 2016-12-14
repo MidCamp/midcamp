@@ -8,7 +8,6 @@
 }
 
 .map-overlay {
-  box-shadow: 2px 2px 5px $gray-dark;
   background-color: $blue-dark;
   padding: 0 2em 2em;
 
@@ -18,7 +17,7 @@
     left: 0;
     width: 400px;
     z-index: 9999;
-    box-shadow: none;
+    box-shadow: 2px 2px 5px $gray-dark;
   }
 
   @include breakpoint($bp2) {
@@ -48,7 +47,6 @@
   box-shadow: 2px 2px 5px $gray-dark;
   padding: 8px 15px;
   text-transform: uppercase;
-  font-family: $serif;
   font-weight: 600;
   color: $white;
 }
