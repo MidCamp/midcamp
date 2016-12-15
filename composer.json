@@ -41,6 +41,7 @@
         "drupal/core": "^8.0",
         "drupal/geocoder_geofield": "^2.0@alpha",
         "drupal/geolocation": "^1.8",
+        "drupal/linkicon": "^1.4",
         "drupal/paragraphs": "^8.1",
         "palantirnet/the-build": "dev-master"
     },

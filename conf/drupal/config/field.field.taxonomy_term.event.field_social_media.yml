@@ -1,0 +1,24 @@
+uuid: f2f7c2b2-6c48-4df0-9694-7ee683fb23cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_social_media
+    - taxonomy.vocabulary.event
+  module:
+    - link
+id: taxonomy_term.event.field_social_media
+field_name: field_social_media
+entity_type: taxonomy_term
+bundle: event
+label: 'Social Media'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 5
+  title_predefined: "facebook|Facebook\r\ntwitter|Twitter\r\ngoogle-plus|Google+\r\nyoutube|Youtube"
+field_type: link

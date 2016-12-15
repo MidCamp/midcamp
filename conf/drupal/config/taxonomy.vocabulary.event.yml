@@ -1,0 +1,9 @@
+uuid: e02dee6a-4a16-494a-a3d9-d45fd77a3b17
+langcode: en
+status: true
+dependencies: {  }
+name: Event
+vid: event
+description: 'A hierarchical vocabulary for organizing events.'
+hierarchy: 0
+weight: 0
