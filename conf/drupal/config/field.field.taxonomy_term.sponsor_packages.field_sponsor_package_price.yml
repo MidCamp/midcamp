@@ -1,0 +1,23 @@
+uuid: 5777ce76-6b38-4734-a7d7-e01783f7a7fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_sponsor_package_price
+    - taxonomy.vocabulary.sponsor_packages
+id: taxonomy_term.sponsor_packages.field_sponsor_package_price
+field_name: field_sponsor_package_price
+entity_type: taxonomy_term
+bundle: sponsor_packages
+label: Price
+description: 'Price in US dollars.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: $
+  suffix: ''
+field_type: decimal

@@ -1,0 +1,48 @@
+uuid: 9c07edd9-d39c-44ab-8312-7275da33e830
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.sponsor_packages.field_sponsor_package_price
+    - field.field.taxonomy_term.sponsor_packages.field_sponsor_package_qty_avail
+    - taxonomy.vocabulary.sponsor_packages
+  module:
+    - path
+    - text
+id: taxonomy_term.sponsor_packages.default
+targetEntityType: taxonomy_term
+bundle: sponsor_packages
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 3
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_sponsor_package_price:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+  field_sponsor_package_qty_avail:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+  name:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
