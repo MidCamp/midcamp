@@ -39,6 +39,7 @@
         "drupal/address": "1.x-dev",
         "drupal/config_installer": "^8.1",
         "drupal/core": "^8.0",
+        "drupal/devel": "^1.0@beta",
         "drupal/geocoder_geofield": "^2.0@alpha",
         "drupal/geolocation": "^1.8",
         "drupal/linkicon": "^1.4",
