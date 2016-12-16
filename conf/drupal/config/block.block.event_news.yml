@@ -1,0 +1,30 @@
+uuid: f159c41d-b79f-431c-8594-46ad1965d786
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.event_news
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: event_news
+theme: bartik
+region: content
+weight: null
+provider: null
+plugin: 'views_block:event_news-block_1'
+settings:
+  id: 'views_block:event_news-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: 'taxonomy/term/*'
+    negate: false
+    context_mapping: {  }
