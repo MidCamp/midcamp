@@ -25,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: 'taxonomy/term/*'
+    pages: '/taxonomy/term/*'
     negate: false
     context_mapping: {  }
