@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_article_paragraphs
     - node.type.article
+    - paragraphs.paragraphs_type.paragraphs_columns_even
     - paragraphs.paragraphs_type.paragraphs_image
     - paragraphs.paragraphs_type.paragraphs_text
   module:
@@ -25,11 +26,15 @@ settings:
     target_bundles:
       paragraphs_image: paragraphs_image
       paragraphs_text: paragraphs_text
+      paragraphs_columns_even: paragraphs_columns_even
     target_bundles_drag_drop:
       paragraphs_image:
         enabled: true
         weight: 3
       paragraphs_text:
+        enabled: true
+        weight: 4
+      paragraphs_columns_even:
         enabled: true
         weight: 4
 field_type: entity_reference_revisions
