@@ -26,5 +26,11 @@
 
   svg {
     fill: $yellow;
+
+    .cta-link--yellow:active &,
+    .cta-link--yellow:hover &,
+    .cta-link--yellow:focus & {
+      fill: $magenta;
+    }
   }
 }

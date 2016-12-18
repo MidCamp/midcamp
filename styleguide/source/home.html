@@ -89,8 +89,8 @@ title: Homepage
 <section class="map-banner">
   <div class="map-overlay">
     <span class="map__label">Location</span>
-    <h2 class="map__title">Some Really Great Location!</h2>
-    <p class="map__address">1234 Street Rd.</p>
+    <h2 class="map__title">DePaul Lincoln Park Campus, Chicago</h2>
+    <p class="map__address">2320 N Kenmore Ave, <br/>Chicago, IL 60614</p>
     <a href="#" class="cta-link--yellow">Book your Hotel  <span class="cta-arrow">{% include 'includes/svg/arrow.svg' %}</span></a>
   </div>
   <div id='map' class="map"></div>
@@ -104,4 +104,7 @@ title: Homepage
       center: [-87.64, 41.87], // starting position
       zoom: 13.4 // starting zoom
   });
+
+  // disable map zoom when using scroll
+  map.scrollZoom.disable();
 </script>
