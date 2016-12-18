@@ -25,6 +25,10 @@ module:
   image: 0
   link: 0
   linkicon: 0
+  mailchimp: 0
+  mailchimp_campaign: 0
+  mailchimp_lists: 0
+  mailchimp_signup: 0
   menu_ui: 0
   node: 0
   options: 0
