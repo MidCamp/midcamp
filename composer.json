@@ -44,6 +44,7 @@
         "drupal/entity_embed": "^1.0@beta",
         "drupal/geocoder_geofield": "^2.0@alpha",
         "drupal/geolocation": "^1.8",
+        "drupal/inline_entity_form": "^1.0@beta",
         "drupal/linkicon": "^1.4",
         "drupal/mailchimp": "^1.2",
         "drupal/paragraphs": "^8.1",

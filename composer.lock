@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d95c4fe59d8829416d7fa9e4d8846838",
-    "content-hash": "275688a7be31f0bdd39842a4c86d699b",
+    "hash": "3dfba2b797445a53cea625ecdcf38125",
+    "content-hash": "6f70bce5097417bc6f43d6572ada854f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2026,6 +2026,68 @@
             "homepage": "https://www.drupal.org/project/geolocation",
             "support": {
                 "source": "http://cgit.drupalcode.org/geolocation"
+            }
+        },
+        {
+            "name": "drupal/inline_entity_form",
+            "version": "1.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/inline_entity_form",
+                "reference": "8.x-1.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-beta1.zip",
+                "reference": null,
+                "shasum": "185ffc28a7b68d19cce057855d1c111f1741a3ea"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "suggest": {
+                "drupal/entity_reference_revisions": "Required by drupal/inline_entity_form"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta1",
+                    "datestamp": "1477868343"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "dawehner",
+                    "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                },
+                {
+                    "name": "webflo",
+                    "homepage": "https://www.drupal.org/user/254778"
+                }
+            ],
+            "description": "Provides a widget for inline management (creation, modification, removal) of referenced entities.",
+            "homepage": "https://www.drupal.org/project/inline_entity_form",
+            "support": {
+                "source": "http://cgit.drupalcode.org/inline_entity_form"
             }
         },
         {
@@ -8906,6 +8968,7 @@
         "drupal/entity_browser": 10,
         "drupal/entity_embed": 10,
         "drupal/geocoder_geofield": 15,
+        "drupal/inline_entity_form": 10,
         "palantirnet/the-build": 20,
         "composer/composer": 20,
         "dflydev/embedded-composer-console": 20,
