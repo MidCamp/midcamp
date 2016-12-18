@@ -1,0 +1,6 @@
+uuid: f2cd694e-5648-4f1c-859a-52ea50009c16
+langcode: en
+status: true
+dependencies: {  }
+id: paragraphs_columns_even
+label: 'Columns (Even)'
