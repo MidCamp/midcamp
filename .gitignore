@@ -35,6 +35,12 @@ npm-debug.log
 styleguide/*.sass-cache/
 styleguide/source/code/css/*.css
 
+# Ignore styleguide generated components
+web/themes/custom/hatter/css/
+web/themes/custom/hatter/imgs/
+web/themes/custom/hatter/svg/
+web/themes/custom/js/
+
 # Ignore sculpin output
 styleguide/output_dev/
 styleguide/output_prod/
