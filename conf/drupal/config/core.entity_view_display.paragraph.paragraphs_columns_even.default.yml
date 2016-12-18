@@ -1,0 +1,25 @@
+uuid: ed654a13-0f50-419e-9346-b2fd577021bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraphs_columns_even.field_column_content
+    - paragraphs.paragraphs_type.paragraphs_columns_even
+  module:
+    - entity_reference_revisions
+id: paragraph.paragraphs_columns_even.default
+targetEntityType: paragraph
+bundle: paragraphs_columns_even
+mode: default
+content:
+  field_column_content:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

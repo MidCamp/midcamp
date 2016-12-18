@@ -1,20 +1,19 @@
-uuid: 8d3f18c4-9067-4454-b4f3-ce1caa38bc31
+uuid: 34896b02-0307-4300-aea5-99335076fbd5
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_page_paragraphs
-    - node.type.page
+    - field.storage.paragraph.field_column_content
     - paragraphs.paragraphs_type.paragraphs_columns_even
     - paragraphs.paragraphs_type.paragraphs_image
     - paragraphs.paragraphs_type.paragraphs_text
   module:
     - entity_reference_revisions
-id: node.page.field_page_paragraphs
-field_name: field_page_paragraphs
-entity_type: node
-bundle: page
-label: Paragraphs
+id: paragraph.paragraphs_columns_even.field_column_content
+field_name: field_column_content
+entity_type: paragraph
+bundle: paragraphs_columns_even
+label: 'Column Content'
 description: ''
 required: false
 translatable: false
@@ -26,15 +25,14 @@ settings:
     target_bundles:
       paragraphs_image: paragraphs_image
       paragraphs_text: paragraphs_text
-      paragraphs_columns_even: paragraphs_columns_even
     target_bundles_drag_drop:
       paragraphs_image:
         enabled: true
-        weight: 3
+        weight: -7
       paragraphs_text:
         enabled: true
-        weight: 4
+        weight: -6
       paragraphs_columns_even:
-        enabled: true
-        weight: 4
+        weight: -5
+        enabled: false
 field_type: entity_reference_revisions
