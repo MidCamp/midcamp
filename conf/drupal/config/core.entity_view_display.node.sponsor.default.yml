@@ -5,13 +5,12 @@ dependencies:
   config:
     - field.field.node.sponsor.body
     - field.field.node.sponsor.field_image
-    - field.field.node.sponsor.field_level
     - field.field.node.sponsor.field_link
+    - field.field.node.sponsor.field_sponsor_level
     - node.type.sponsor
   module:
     - image
     - link
-    - options
     - text
     - user
 id: node.sponsor.default
@@ -22,34 +21,34 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 3
     settings: {  }
     third_party_settings: {  }
   field_image:
-    weight: 102
-    label: above
+    weight: 0
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
     type: image
-  field_level:
-    weight: 104
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
   field_link:
-    weight: 103
-    label: above
+    type: link
+    weight: 1
+    label: hidden
     settings:
       trim_length: 80
-      url_only: false
+      target: _blank
+      url_only: true
       url_plain: false
-      rel: ''
-      target: ''
+      rel: '0'
     third_party_settings: {  }
-    type: link
-  links:
-    weight: 100
-hidden: {  }
+  field_sponsor_level:
+    weight: 2
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+hidden:
+  links: true

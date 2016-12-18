@@ -1,0 +1,17 @@
+uuid: e17155e5-4ee5-4c7a-91bf-86fb1e82d8fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Topic
+type: topic
+description: 'Use <em>topic</em> for individual session, keynote, BoF, etc.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

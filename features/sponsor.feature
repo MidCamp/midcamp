@@ -9,5 +9,5 @@ Feature: Sponsor Content Type
     Then the form at "node/add/sponsor" has the expected fields:
       | field       | tag       | type |
       | title       | textfield | text |
+      | field-link  | textfield | text |
       | body        | textarea  |      |
-      | field-level | select    |      |

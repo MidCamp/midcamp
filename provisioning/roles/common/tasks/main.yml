@@ -7,7 +7,7 @@
 - name: Install System Packages
   sudo: yes
   apt: pkg={{ item }} state=installed
-  with_items: system_packages
+  with_items: '{{system_packages}}'
   tags: common
 
 - name: Configure PALANTIR_ENVIRONMENT variable

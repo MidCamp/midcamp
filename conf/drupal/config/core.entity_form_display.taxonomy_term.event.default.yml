@@ -1,0 +1,50 @@
+uuid: 9634c49b-108f-4c61-b7c6-208e076ebf16
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.event.field_date
+    - field.field.taxonomy_term.event.field_social_media
+    - taxonomy.vocabulary.event
+  module:
+    - datetime
+    - link
+    - path
+    - text
+id: taxonomy_term.event.default
+targetEntityType: taxonomy_term
+bundle: event
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 2
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_date:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+  field_social_media:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  name:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,6 +1,7 @@
 # MidCamp
 ## The Drupal 8 website for midcamp.org
 [![CircleCI](https://circleci.com/gh/MidCamp/midcamp.svg?style=shield)](https://circleci.com/gh/MidCamp/midcamp)
+[![Code Climate](https://codeclimate.com/github/MidCamp/midcamp/badges/gpa.svg)](https://codeclimate.com/github/MidCamp/midcamp)
 
 ## Requirements
 
@@ -82,6 +83,12 @@ Sometimes it is appropriate to configure specific Drupal variables in Drupal's `
 ### Behat
 
 Run `vendor/bin/behat features/installation.feature`.
+
+### Static Analysis
+
+Run `vendor/bin/phing analyze`.
+
+This should be configured to show the same errors triggered by Code Climate that you see on the Pull Request.
 
 ## What does this Butler do?
 

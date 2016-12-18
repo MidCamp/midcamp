@@ -5,6 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.sponsor.body
+    - field.field.node.sponsor.field_image
+    - field.field.node.sponsor.field_link
+    - field.field.node.sponsor.field_sponsor_level
     - node.type.sponsor
   module:
     - text
