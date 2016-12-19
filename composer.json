@@ -40,6 +40,7 @@
         "drupal/admin_toolbar": "^1.18",
         "drupal/config_installer": "^8.1",
         "drupal/core": "^8.0",
+        "drupal/ctools": "^3.0@alpha",
         "drupal/entity_browser": "^1.0@beta",
         "drupal/entity_embed": "^1.0@beta",
         "drupal/geocoder_geofield": "^2.0@alpha",
