@@ -1,0 +1,25 @@
+uuid: 94a874ad-1c54-4e46-8719-7fe5c2f8ffb5
+langcode: en
+status: true
+dependencies: {  }
+name: default_browser
+label: 'Default Entity Browser'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  dec24229-3ff6-40b0-9486-9171ea3c03b5:
+    settings:
+      upload_location: 'public://'
+      submit_text: 'Select files'
+    uuid: dec24229-3ff6-40b0-9486-9171ea3c03b5
+    weight: 1
+    label: upload
+    id: upload
