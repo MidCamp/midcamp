@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0bfae3473e8a194d94ac2669ff9faa1d",
-    "content-hash": "c9b623b1b2ad2734a17aa11644079b5b",
+    "hash": "5fd64dc8b6db29aaa7cb72e988e16f55",
+    "content-hash": "be92a8da24154d808a4138750da9f795",
     "packages": [
         {
             "name": "codegyre/robo",
@@ -1866,7 +1866,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/mailchimp-8.x-1.2.zip",
-                "reference": null,
+                "reference": "8.x-1.2",
                 "shasum": "01ffed8a4a1b9ecf0c4967afd74e3d7196ecfb72"
             },
             "require": {
