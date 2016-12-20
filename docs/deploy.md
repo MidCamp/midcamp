@@ -7,15 +7,13 @@ This document describes the process of deploying changes to Pantheon.
 1. Cut a tag on master
 1. Run the build
 1. Review changes
-1. Generate a database artifact and install on Acquia
-1. Sync files
 1. Deploy the code
 
 **If there are configuration changes**, you MUST download, review, and incorporate the current production configuration.
 
 ## Cut a tag
 
-For your latest code changes, cut a tag: https://github.com/palantirnet/harris/releases
+For your latest code changes, cut a tag: https://github.com/MidCamp/midcamp/releases
 
 ## Run the build
 
@@ -32,9 +30,9 @@ Run `git status`; it should say `nothing to commit, working directory clean`. If
 ## Deploy the code
 
 ### SSH key forwarding
-In order to deploy, you need SSH access to the site on Acquia. To set this up, add your public key to your Acquia account; this will grant you SSH access to *all* of your Acquia projects.
+In order to deploy, you need SSH access to the site on Pantheon. To set this up, add your public key to your Pantheon account; this will grant you SSH access to *all* of your Pantheon projects.
 
-You also need to make sure that SSH forwarding is set up for your Vagrant environment, since the `deploy` phing script needs to push code to Acquia using your SSH credentials.
+You also need to make sure that SSH forwarding is set up for your Vagrant environment, since the `deploy` phing script needs to push code to Pantheon using your SSH credentials.
 
 To set up forwarding:
 
@@ -56,7 +54,7 @@ vendor/bin/phing deploy -Dpush=n
 Verify that the changes included in this build are expected. Try running `git diff HEAD^ --stat` to show affected files.
 
 ### Push the build
-You may manually push the build with `cd artifacts/acquia; git push`
+You may manually push the build with `cd artifacts/pantheon; git push`
 
 You may also skip the review and push steps by running the deployment using the `push=y` property:
 
