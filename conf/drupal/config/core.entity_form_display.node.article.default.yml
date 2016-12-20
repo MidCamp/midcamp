@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.article.field_article_news
     - field.field.node.article.field_article_paragraphs
     - field.field.node.article.field_article_summary
+    - field.field.node.article.field_event
     - field.field.node.article.field_tags
     - node.type.article
   module:
@@ -46,6 +47,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textarea
+  field_event:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
   field_tags:
     type: entity_reference_autocomplete_tags
     weight: 4
