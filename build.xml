@@ -51,7 +51,6 @@
     </target>
 
     <!-- Target: deploy -->
-    <!-- Target: deploy -->
     <target name="deploy" description="Deploy the code to Pantheon.">
         <phingcall target="madcamp-init-artifact-repository" />
         <phingcall target="madcamp-copy-files-to-artifact" />
@@ -66,8 +65,8 @@
     </target>
 
 
-    <!-- Target: deploy-to-acquia -->
-    <target name="deploy-to-acquia">
+    <!-- Target: deploy-to-pantheon -->
+    <target name="deploy-to-pantheon">
         <phingcall target="check-deploy-env" />
         <phingcall target="acquia-build" />
         <phingcall target="build" />
