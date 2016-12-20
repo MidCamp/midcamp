@@ -7,7 +7,7 @@
     <import file="build/styleguide.xml" />
 
     <!-- Custom targets for this project. -->
-    <import file="build/stanford-ehs.xml" />
+    <import file="build/madcamp.xml" />
 
 
     <!-- Make these commands available by default. -->
