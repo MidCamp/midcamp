@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5fd64dc8b6db29aaa7cb72e988e16f55",
-    "content-hash": "be92a8da24154d808a4138750da9f795",
+    "hash": "eb499acaadab20bbf274c6cbd011b158",
+    "content-hash": "35a5f8e245d582a648d08e4ab106c24b",
     "packages": [
         {
             "name": "codegyre/robo",
@@ -1178,6 +1178,65 @@
             "time": "2016-05-05 16:43:19"
         },
         {
+            "name": "drupal/contact_formatter",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/contact_formatter",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/contact_formatter-8.x-1.0.zip",
+                "reference": null,
+                "shasum": "f8382ce1d9ee5992bb043c96347028db9003262e"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1470411844"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Caffeinated",
+                    "homepage": "https://www.drupal.org/user/2507260"
+                },
+                {
+                    "name": "albertski",
+                    "homepage": "https://www.drupal.org/user/1327432"
+                },
+                {
+                    "name": "michaelpporter",
+                    "homepage": "https://www.drupal.org/user/845350"
+                },
+                {
+                    "name": "mikeacklin",
+                    "homepage": "https://www.drupal.org/user/1198900"
+                }
+            ],
+            "description": "Field Formatter for Contact Forms",
+            "homepage": "https://www.drupal.org/project/contact_formatter",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/contact_formatter",
+                "issues": "https://www.drupal.org/project/issues/contact_formatter"
+            }
+        },
+        {
             "name": "drupal/core",
             "version": "8.1.8",
             "source": {
@@ -1986,6 +2045,81 @@
             "description": "Enables the creation of paragraphs entities. To safely uninstall, go first to Structure > Paragraphs types > Settings.",
             "homepage": "https://www.drupal.org/project/paragraphs",
             "time": "2016-07-23 11:51:27"
+        },
+        {
+            "name": "drupal/viewsreference",
+            "version": "1.0.0-alpha1",
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/viewsreferennce": "self.version"
+            },
+            "type": "metapackage",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1481323083"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "New Zeal",
+                    "homepage": "https://www.drupal.org/user/93571"
+                }
+            ],
+            "description": "Enables Views to be embedded in an entity reference field",
+            "homepage": "https://www.drupal.org/project/viewsreferennce",
+            "support": {
+                "source": "http://cgit.drupalcode.org/viewsreferennce"
+            }
+        },
+        {
+            "name": "drupal/viewsreferennce",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/viewsreferennce",
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/viewsreferennce-8.x-1.0-alpha1.zip",
+                "reference": null,
+                "shasum": "fc561d86eb8ed9043a6e33c0f1fd44a2b1eb0485"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1481323083"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "New Zeal",
+                    "homepage": "https://www.drupal.org/user/93571"
+                }
+            ],
+            "homepage": "https://www.drupal.org/project/viewsreferennce",
+            "support": {
+                "source": "http://cgit.drupalcode.org/viewsreferennce"
+            }
         },
         {
             "name": "drush/drush",
@@ -2809,12 +2943,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:palantirnet/the-build.git",
-                "reference": "de0590b7d6b5a6e2b7d517d11a61921762d66cd2"
+                "reference": "7a5bd71dbf11256f44638059bc9a1c600edb81c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/palantirnet/the-build/zipball/de0590b7d6b5a6e2b7d517d11a61921762d66cd2",
-                "reference": "de0590b7d6b5a6e2b7d517d11a61921762d66cd2",
+                "url": "https://api.github.com/repos/palantirnet/the-build/zipball/7a5bd71dbf11256f44638059bc9a1c600edb81c2",
+                "reference": "7a5bd71dbf11256f44638059bc9a1c600edb81c2",
                 "shasum": ""
             },
             "require": {
@@ -2837,7 +2971,7 @@
                 "source": "https://github.com/palantirnet/the-build/tree/master",
                 "issues": "https://github.com/palantirnet/the-build/issues"
             },
-            "time": "2016-12-12 18:00:44"
+            "time": "2016-12-21 07:24:07"
         },
         {
             "name": "paragonie/random_compat",
@@ -7354,12 +7488,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:palantirnet/the-vagrant.git",
-                "reference": "9a8f954a26355f13f8d69d6bcb8b7929528859fd"
+                "reference": "52b6015072798a9c4bf6a852e132f64074841f1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/palantirnet/the-vagrant/zipball/9a8f954a26355f13f8d69d6bcb8b7929528859fd",
-                "reference": "9a8f954a26355f13f8d69d6bcb8b7929528859fd",
+                "url": "https://api.github.com/repos/palantirnet/the-vagrant/zipball/52b6015072798a9c4bf6a852e132f64074841f1d",
+                "reference": "52b6015072798a9c4bf6a852e132f64074841f1d",
                 "shasum": ""
             },
             "require": {
@@ -7380,7 +7514,7 @@
                 "source": "https://github.com/palantirnet/the-vagrant/tree/master",
                 "issues": "https://github.com/palantirnet/the-vagrant/issues"
             },
-            "time": "2016-12-01 19:32:09"
+            "time": "2016-12-21 07:15:11"
         },
         {
             "name": "pdepend/pdepend",
@@ -8509,6 +8643,7 @@
         "drupal/address": 20,
         "drupal/devel": 10,
         "drupal/geocoder_geofield": 15,
+        "drupal/viewsreference": 15,
         "palantirnet/the-build": 20,
         "composer/composer": 20,
         "dflydev/embedded-composer-console": 20,
