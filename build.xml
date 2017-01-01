@@ -53,7 +53,7 @@
     <!-- Target: deploy -->
     <target name="deploy" description="Deploy the code to Pantheon.">
         <phingcall target="madcamp-init-artifact-repository" />
-        <phingcall target="madcamp-copy-files-to-artifact" />
+        <phingcall target="madcamp-compose-artifact-files" />
         <phingcall target="madcamp-commit-artifact-changes" />
     </target>
 

@@ -45,7 +45,7 @@
         "drupal/linkicon": "^1.4",
         "drupal/mailchimp": "^1.2",
         "drupal/paragraphs": "^8.1",
-        "palantirnet/the-build": "dev-master"
+        "palantirnet/the-build": "dev-composer-install-elsewhere-flexibility"
     },
     "require-dev": {
         "behat/behat": "^3.1",
