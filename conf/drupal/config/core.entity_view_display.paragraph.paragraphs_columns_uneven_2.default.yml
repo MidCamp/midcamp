@@ -1,0 +1,33 @@
+uuid: 6395cf20-1f2c-4105-a3fd-91e1416e7485
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraphs_columns_uneven_2.field_column_content_2
+    - field.field.paragraph.paragraphs_columns_uneven_2.field_grid_style
+    - paragraphs.paragraphs_type.paragraphs_columns_uneven_2
+  module:
+    - entity_reference_revisions
+    - options
+id: paragraph.paragraphs_columns_uneven_2.default
+targetEntityType: paragraph
+bundle: paragraphs_columns_uneven_2
+mode: default
+content:
+  field_column_content_2:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_grid_style:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+hidden:
+  created: true
+  uid: true

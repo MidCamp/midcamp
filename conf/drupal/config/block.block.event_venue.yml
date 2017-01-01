@@ -1,0 +1,30 @@
+uuid: 40c379aa-354d-4be8-9ced-bcf1e0883d68
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.event_venue
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: event_venue
+theme: bartik
+region: content
+weight: -1
+provider: null
+plugin: 'views_block:event_venue-block_1'
+settings:
+  id: 'views_block:event_venue-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/taxonomy/term/*'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,30 @@
+uuid: b3e62917-00d7-4707-97c9-3829a846afa5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.event_sponsors
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: event_sponsors
+theme: bartik
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:event_sponsors-block_1'
+settings:
+  id: 'views_block:event_sponsors-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/taxonomy/term/*'
+    negate: false
+    context_mapping: {  }

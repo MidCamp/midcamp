@@ -1,0 +1,23 @@
+uuid: bb061da2-cd44-4d48-a93d-3fe5febff20a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_form.field_contact
+    - paragraphs.paragraphs_type.contact_form
+  module:
+    - contact_formatter
+id: paragraph.contact_form.default
+targetEntityType: paragraph
+bundle: contact_form
+mode: default
+content:
+  field_contact:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: contact_field_formatter
+hidden:
+  created: true
+  uid: true

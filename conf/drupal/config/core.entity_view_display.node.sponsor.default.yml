@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.sponsor.body
+    - field.field.node.sponsor.field_event
     - field.field.node.sponsor.field_image
     - field.field.node.sponsor.field_link
     - field.field.node.sponsor.field_sponsor_level
@@ -24,6 +25,13 @@ content:
     weight: 3
     settings: {  }
     third_party_settings: {  }
+  field_event:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
   field_image:
     weight: 0
     label: hidden

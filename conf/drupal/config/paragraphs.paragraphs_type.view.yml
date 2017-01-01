@@ -1,0 +1,6 @@
+uuid: 112954a8-c687-4601-b43c-77043bff4be3
+langcode: en
+status: true
+dependencies: {  }
+id: view
+label: View

@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.article.field_article_news
     - field.field.node.article.field_article_paragraphs
     - field.field.node.article.field_article_summary
+    - field.field.node.article.field_event
     - field.field.node.article.field_tags
     - node.type.article
   module:
@@ -26,6 +27,13 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
+  field_event:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
   field_tags:
     type: entity_reference_label
     weight: 1

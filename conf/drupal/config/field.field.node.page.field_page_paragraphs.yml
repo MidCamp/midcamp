@@ -5,9 +5,12 @@ dependencies:
   config:
     - field.storage.node.field_page_paragraphs
     - node.type.page
+    - paragraphs.paragraphs_type.contact_form
     - paragraphs.paragraphs_type.paragraphs_columns_even
+    - paragraphs.paragraphs_type.paragraphs_columns_uneven_2
     - paragraphs.paragraphs_type.paragraphs_image
     - paragraphs.paragraphs_type.paragraphs_text
+    - paragraphs.paragraphs_type.view
   module:
     - entity_reference_revisions
 id: node.page.field_page_paragraphs
@@ -24,17 +27,29 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      paragraphs_image: paragraphs_image
       paragraphs_text: paragraphs_text
+      paragraphs_image: paragraphs_image
       paragraphs_columns_even: paragraphs_columns_even
+      paragraphs_columns_uneven_2: paragraphs_columns_uneven_2
+      contact_form: contact_form
+      view: view
     target_bundles_drag_drop:
-      paragraphs_image:
-        enabled: true
-        weight: 3
       paragraphs_text:
         enabled: true
-        weight: 4
+        weight: -9
+      paragraphs_image:
+        enabled: true
+        weight: -8
       paragraphs_columns_even:
         enabled: true
-        weight: 4
+        weight: -7
+      paragraphs_columns_uneven_2:
+        enabled: true
+        weight: -6
+      contact_form:
+        enabled: true
+        weight: 7
+      view:
+        enabled: true
+        weight: 12
 field_type: entity_reference_revisions

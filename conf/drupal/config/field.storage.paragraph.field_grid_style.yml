@@ -1,0 +1,27 @@
+uuid: 697793e7-0bd7-491c-a7cc-9b5acd2a8c58
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_grid_style
+field_name: field_grid_style
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: l-66-33
+      label: '66% - 33%'
+    -
+      value: l-33-66
+      label: '33% - 66%'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

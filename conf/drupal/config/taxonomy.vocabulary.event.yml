@@ -5,5 +5,5 @@ dependencies: {  }
 name: Event
 vid: event
 description: 'A hierarchical vocabulary for organizing events.'
-hierarchy: 0
+hierarchy: 1
 weight: 0
