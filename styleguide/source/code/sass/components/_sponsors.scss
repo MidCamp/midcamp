@@ -1,0 +1,22 @@
+/**
+ * @file
+ * Define the styles for sponsor items Component
+ */
+
+.sponsor-item {
+	display: block;
+	margin: 1em 0 2em;
+	padding: 1em;
+	border-radius: 200px;
+	border: 4px dotted transparent;
+
+	img {
+	  display: block;
+	}
+
+	&:active,
+	&:hover,
+	&:focus {
+		border: 4px dotted $blue-dark;
+	}
+}

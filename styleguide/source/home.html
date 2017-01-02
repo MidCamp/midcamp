@@ -49,13 +49,13 @@ title: Homepage
 
 <section class="banner">
   <div class="container">
-    <h1 class="banner-title">Featured Speakers</h1>
+    <h2 class="banner-title">Featured Speakers</h2>
 
     <div class="l-3up">
       <div class="speaker-item">
         <div class="speaker-image" style="background-image: url({{site.url}}/code/imgs/speaker-sprite.png)"><span class="element-invisible">Ashley Cyborski</span></div>
         <div class="speaker-item__block">
-          <h2 class="speaker-item__title"><a href="#">Ashley Cyborski</a></h2>
+          <h3 class="speaker-item__title"><a href="#">Ashley Cyborski</a></h3>
           <p class="speaker-item__subtitle">Senior Designer @ <a href="#">Palantir.net</a></p>
         </div>
       </div>
@@ -65,7 +65,7 @@ title: Homepage
       <div class="speaker-item">
         <div class="speaker-image" style="background-image: url({{site.url}}/code/imgs/speaker-sprite.png)"><span class="element-invisible">Jim Bean</span></div>
         <div class="speaker-item__block">
-          <h2 class="speaker-item__title"><a href="#">Jim Bean</a></h2>
+          <h3 class="speaker-item__title"><a href="#">Jim Bean</a></h3>
           <p class="speaker-item__subtitle">Brewer @ <a href="#">Some Alcohol Company</a></p>
         </div>
       </div>
@@ -75,12 +75,12 @@ title: Homepage
       <div class="speaker-item">
         <div class="speaker-image" style="background-image: url({{site.url}}/code/imgs/speaker-sprite.png)"><span class="element-invisible">Ashley Cyborski</span></div>
         <div class="speaker-item__block">
-          <h2 class="speaker-item__title"><a href="#">Ashley Cyborski</a></h2>
+          <h3 class="speaker-item__title"><a href="#">Ashley Cyborski</a></h3>
           <p class="speaker-item__subtitle">Senior Designer @ <a href="#">Palantir.net</a></p>
         </div>
       </div>
     </div>
-    <div class="button--center-container">
+    <div class="l-1up button--center-container">
       <a href="#" class="cta-link">See all Speakers  <span class="cta-arrow">{% include 'includes/svg/arrow.svg' %}</span></a>
     </div>
   </div>
@@ -89,12 +89,69 @@ title: Homepage
 <section class="map-banner">
   <div class="map-overlay">
     <span class="map__label">Location</span>
-    <h2 class="map__title">DePaul Lincoln Park Campus, Chicago</h2>
-    <p class="map__address">2320 N Kenmore Ave, <br/>Chicago, IL 60614</p>
+    <h2 class="map__title">DePaul Lincoln Park Campus</h2>
+    <p class="map__address"><a href="#">2320 N Kenmore Ave, <br/>Chicago, IL 60614</a></p>
     <a href="#" class="cta-link--yellow">Book your Hotel  <span class="cta-arrow">{% include 'includes/svg/arrow.svg' %}</span></a>
   </div>
   <div id='map' class="map"></div>
 </section>
+<section class="banner">
+  <div class="container">
+    <h2 class="banner-title">Thank you to our Sponsors</h2>
+    <div class="l-3up">
+      <a class="sponsor-item" href="#">
+        <img src="{{site.url}}/code/imgs/palantirnet-logo.png" alt="Palantir.net">
+      </a>
+    </div>
+    <div class="l-3up">
+      <a class="sponsor-item" href="#">
+        <img src="{{site.url}}/code/imgs/palantirnet-logo.png" alt="Palantir.net">
+      </a>
+    </div>
+    <div class="l-3up">
+      <a class="sponsor-item" href="#">
+        <img src="{{site.url}}/code/imgs/palantirnet-logo.png" alt="Palantir.net">
+      </a>
+    </div>
+    <div class="l-1up button--center-container">
+      <a href="#" class="cta-link">Become a Sponsor<span class="cta-arrow">{% include 'includes/svg/arrow.svg' %}</span></a>
+
+      <a href="#" class="cta-link">See all Sponsors<span class="cta-arrow">{% include 'includes/svg/arrow.svg' %}</span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="l-2up">
+      <h3 class="footer-title"><a href="#">Midcamp</a></h3>
+      <div class="footer-description">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <p>For more information email us at <a href="mailto:info@midcamp.org">info@midcamp.org</a></p>
+      </div>
+      <ul class="social--footer">
+        <li class="social__item--footer"><a href="#">{% include 'includes/svg/social-twitter.svg' %} <span>Twitter</span></a></li>
+        <li class="social__item--footer"><a href="#">{% include 'includes/svg/social-facebook.svg' %} <span>Facebook</span></a></li>
+        <li class="social__item--footer"><a href="#">{% include 'includes/svg/social-youtube.svg' %} <span>YouTube</span></a></li>
+      </ul>
+    </div> 
+    <div class="l-2up">
+      <nav class="footer-nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__list-item"><a href="#">About</a></li>
+          <li class="footer-nav__list-item"><a href="#">Events</a></li>
+          <li class="footer-nav__list-item"><a href="#">Blog</a></li>
+          <li class="footer-nav__list-item"><a href="#">Volunteer</a></li>
+          <li class="footer-nav__list-item"><a href="#">Code of Conduct</a></li>
+        </ul>
+      </nav>
+    </div> 
+    <div class="l-1up">
+    <small class="footer-copyright">Copyright 2017 Midcamp Lorem ipsum dolor sit amet, consectetur adipisicing.</small>
+    </div>   
+  </div>
+</footer>
 
 <script>
   mapboxgl.accessToken = 'pk.eyJ1IjoibWlkY2FtcCIsImEiOiJjaXV2czRteHQwNGhkMm9zNWp4bWhndTk0In0.F5jwcKus8Rzx5r8Ga-CRQA';

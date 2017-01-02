@@ -8,8 +8,12 @@
 }
 
 .button--center-container {
-  margin: rhythm(1) 0;
   text-align: center;
+
+  .cta-link,
+  .button {
+    padding: 0 10px;
+  }
 }
 
 %button,
