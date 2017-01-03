@@ -7,6 +7,11 @@
   margin: rhythm(1) 0;
 }
 
+.button--center-container {
+  margin: rhythm(1) 0;
+  text-align: center;
+}
+
 %button,
 .button,
 button,
@@ -199,5 +204,34 @@ input[type="reset"] {
     background-color: transparent;
     border: 1px solid $purple;
     color: $purple;
+  }
+}
+
+%button--tertiary,
+.button--tertiary,
+.button--tertiary[type="submit"],
+.button--tertiary[type="button"] {
+  @extend %button;
+  background: url("../imgs/crosshatch--yellow.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: $yellow;
+  color: $blue-dark;
+
+
+  &:link,
+  &:visited {
+    background-color: $yellow;
+    color: $blue-dark;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    background: url("../imgs/crosshatch--purple.svg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: $purple;
+    color: $white;
   }
 }
