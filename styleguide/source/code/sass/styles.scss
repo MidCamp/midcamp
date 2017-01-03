@@ -30,10 +30,15 @@
 /* Component (SMACSS module) rules */
 @import "components/banners";
 @import "components/buttons";
+@import "components/cta";
 @import "components/event-banner";
+@import "components/footer";
 @import "components/forms";
 @import "components/header";
+@import "components/maps-banner";
+@import "components/social";
 @import "components/speaker-list";
+@import "components/sponsors";
 
 /* Styleguide Specific rules */
 @import "styleguide/styleguide";
