@@ -58,4 +58,16 @@
 
 .map__address {
   color: $white;
+
+  a:link,
+  a:visited {
+    color: $white;
+    text-decoration: underline;
+  }
+
+  a:active,
+  a:hover,
+  a:focus {
+    color: $magenta;
+  }
 }
