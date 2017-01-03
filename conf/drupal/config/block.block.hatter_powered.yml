@@ -1,6 +1,6 @@
 uuid: f49697d5-9c13-453b-b2d4-e1a69c5ae306
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
 id: hatter_powered
 theme: hatter
-region: header
-weight: 10
+region: '-1'
+weight: -6
 provider: null
 plugin: system_powered_by_block
 settings:
