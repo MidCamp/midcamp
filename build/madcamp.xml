@@ -1,0 +1,57 @@
+<project name="madcamp-lib" default="hello">
+
+  <fail unless="projectname" />
+  <fail unless="build.dir" />
+  <fail unless="build.env" />
+
+
+  <target name="hello">
+    <echo>Hello, world.</echo>
+  </target>
+
+
+  <target name="madcamp-init-artifact-repository">
+      <phing target="init-repository" phingfile="vendor/palantirnet/the-build/tasks/lib/repositories.xml" inheritAll="false" dir=".">
+          <property name="repo.dir" value="${pantheon.repo.dir}" />
+          <property name="repo.source" value="${pantheon.repo.source}" />
+      </phing>
+
+      <phing target="init-branch" phingfile="vendor/palantirnet/the-build/tasks/lib/repositories.xml" inheritAll="false" dir=".">
+          <property name="repo.dir" value="${pantheon.repo.dir}" />
+          <property name="repo.branch" value="${pantheon.repo.branch}" />
+      </phing>
+  </target>
+
+
+  <!-- @see the-build/tasks/lib/artifacts.xml:run-composer-elsewhere -->
+  <target name="madcamp-compose-artifact-files">
+      <phing target="run-composer-elsewhere" phingfile="vendor/palantirnet/the-build/tasks/lib/artifacts.xml" inheritAll="false" dir=".">
+          <property name="install_dir" value="${pantheon.repo.dir}" />
+          <property name="build.dir" value="${build.dir}" />
+          <property name="drupal.root" value="${pantheon.repo.dir}" />
+          <property name="drupal.sites_subdir" value="${drupal.sites_subdir}" />
+
+          <property name="drupal.root_name" value="" />
+          <property name="install_conf_dir" value="${install_dir}/private" />
+      </phing>
+  </target>
+
+
+  <target name="madcamp-commit-artifact-changes">
+      <phing target="commit" phingfile="vendor/palantirnet/the-build/tasks/lib/repositories.xml" inheritAll="false" dir=".">
+          <property name="build.dir" value="${build.dir}" />
+          <property name="repo.dir" value="${pantheon.repo.dir}" />
+          <property name="tag_prefix" value="${pantheon.repo.tag_prefix}" />
+          <property name="message" value="Drupal artifact." />
+      </phing>
+
+<!--
+      <phing target="push" phingfile="vendor/palantirnet/the-build/tasks/lib/repositories.xml" inheritAll="false" dir=".">
+          <property name="repo.dir" value="pantheon.repo.dir" />
+          <property name="repo.branch" value="pantheon.repo.branch" />
+      </phing>
+      -->
+  </target>
+
+
+</project>

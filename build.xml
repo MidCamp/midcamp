@@ -6,6 +6,9 @@
     <import file="vendor/palantirnet/the-build/tasks/boilerplate.xml" />
     <import file="build/styleguide.xml" />
 
+    <!-- Custom targets for this project. -->
+    <import file="build/madcamp.xml" />
+
 
     <!-- Make these commands available by default. -->
     <import file="vendor/palantirnet/the-build/tasks/drupal.xml" />
@@ -48,8 +51,10 @@
     </target>
 
     <!-- Target: deploy -->
-    <target name="deploy" description="Build and deploy the application.">
-        <echo>Configure this target to build the production artifact; see the `deploy-to-acquia` target for an example.</echo>
+    <target name="deploy" description="Deploy the code to Pantheon.">
+        <phingcall target="madcamp-init-artifact-repository" />
+        <phingcall target="madcamp-compose-artifact-files" />
+        <phingcall target="madcamp-commit-artifact-changes" />
     </target>
 
     <!-- Target: analyze -->
@@ -60,8 +65,8 @@
     </target>
 
 
-    <!-- Target: deploy-to-acquia -->
-    <target name="deploy-to-acquia">
+    <!-- Target: deploy-to-pantheon -->
+    <target name="deploy-to-pantheon">
         <phingcall target="check-deploy-env" />
         <phingcall target="acquia-build" />
         <phingcall target="build" />
