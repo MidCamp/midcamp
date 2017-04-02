@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.job.field_job_location
     - field.field.node.job.field_job_skill_level
     - field.field.node.job.field_job_type
+    - field.field.node.job.field_sponsor_company
     - node.type.job
   module:
     - link
@@ -20,14 +21,14 @@ bundle: job
 mode: default
 content:
   field_job_description:
-    weight: 105
-    label: above
+    weight: 4
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
   field_job_link:
-    weight: 108
-    label: above
+    weight: 5
+    label: inline
     settings:
       trim_length: 80
       url_only: false
@@ -37,24 +38,30 @@ content:
     third_party_settings: {  }
     type: link
   field_job_location:
-    weight: 102
-    label: above
+    weight: 1
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
   field_job_skill_level:
-    weight: 106
-    label: above
+    weight: 3
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
   field_job_type:
-    weight: 103
-    label: above
+    weight: 2
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
-  links:
-    weight: 100
-hidden: {  }
+  field_sponsor_company:
+    weight: 0
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+hidden:
+  links: true
