@@ -1,11 +1,11 @@
 global-css:
   css:
     theme:
+      css/print.css:
+        media: print
       css/styles.css: {}
-      css/print.css: { media:print }
-
 global-js:
-  js:
-    js/script.js: {}
   dependencies:
     - core/jquery
+  js:
+    js/script.js: {}
