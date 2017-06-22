@@ -20,7 +20,7 @@ Vagrant.configure(2) do |config|
     config.vm.define "#{project}" do |box|
 
         box.vm.box = "palantir/drupalbox"
-        box.vm.box_version = ">= 0.0.6, < 1.0.0"
+        box.vm.box_version = ">= 0.2.3, < 1.0.0"
 
         box.vm.provider "vmware_fusion" do |v|
             v.vmx["memsize"] = "2048"
