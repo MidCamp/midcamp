@@ -1,29 +1,29 @@
 ---
-- name: Update apt cache
-  sudo: yes
+- name: Common | Update apt cache
+  become: true
   apt: update-cache=yes
   tags: common
 
-- name: Install System Packages
-  sudo: yes
+- name: Common | Install System Packages
+  become: true
   apt: pkg={{ item }} state=installed
-  with_items: '{{system_packages}}'
+  with_items: "{{ system_packages }}"
   tags: common
 
-- name: Configure PALANTIR_ENVIRONMENT variable
+- name: Common | Configure PALANTIR_ENVIRONMENT variable
   lineinfile: dest=/home/vagrant/.profile state=present line='export PALANTIR_ENVIRONMENT="vagrant"'
   tags: common
 
-- name: Copy gitignore
+- name: Common | Copy gitignore
   copy: src=roles/common/templates/gitignore dest=/home/vagrant/.gitignore
   tags: common
 
-- name: Configure global gitignore
+- name: Common | Configure global gitignore
   command: /usr/bin/git config --global core.excludesfile ~/.gitignore
   tags: common
 
-- name: Set path to include vendor/bin
-  lineinfile: dest=/home/vagrant/.profile state=present line='export PATH="$PATH:$REPO/vendor/bin"'
+- name: Common | Set path to include vendor/bin
+  lineinfile: dest=/home/vagrant/.profile state=present line='export PATH="$PATH:/var/www/{{ hostname }}/vendor/bin"'
   tags: common
 
 - name: Check for user-specific provisioning script
@@ -35,6 +35,10 @@
   when: provision_user.stat.exists
   tags: common
 
-- name: Set path to include vendor/bin for zsh too
+- name: Set path to include $HOME/bin for zsh too
   lineinfile: dest=/home/vagrant/.zshrc state=present line='export PATH="$PATH:/var/www/{{ hostname }}/vendor/bin:$HOME/bin"'
+  tags: common
+
+- name: Change directory into the project root on login
+  lineinfile: dest=/home/vagrant/.profile state=present line='cd /var/www/{{ hostname }}'
   tags: common

@@ -1,24 +1,34 @@
 ---
 - name: PHP | Adjust php.ini memory_limit
-  sudo: yes
+  become: true
   lineinfile: dest={{ item }}
               regexp='memory_limit'
               line='memory_limit = {{ php_ini_memory_limit }}'
   with_items:
-    - /etc/php5/apache2/php.ini
-    - /etc/php5/cli/php.ini
+    - /etc/php/5.6/apache2/php.ini
+    - /etc/php/5.6/cli/php.ini
   tags: PHP
 
 - name: PHP | Enable PHP error display
-  sudo: yes
+  become: true
   lineinfile: dest={{ item.file }}
               regexp='^{{ item.key }}'
               line='{{ item.key }} = {{ item.value }}'
   with_items:
-    - { file: '/etc/php5/apache2/php.ini', key: 'error_reporting', value: "{{ php_ini_error_reporting }}" }
-    - { file: '/etc/php5/apache2/php.ini', key: 'display_errors', value: "{{ php_ini_display_errors }}" }
-    - { file: '/etc/php5/cli/php.ini', key: 'error_reporting', value: "{{ php_ini_error_reporting }}" }
-    - { file: '/etc/php5/cli/php.ini', key: 'display_errors', value: "{{ php_ini_display_errors }}" }
+    - { file: '/etc/php/5.6/apache2/php.ini', key: 'error_reporting', value: "{{ php_ini_error_reporting }}" }
+    - { file: '/etc/php/5.6/apache2/php.ini', key: 'display_errors', value: "{{ php_ini_display_errors }}" }
+    - { file: '/etc/php/5.6/cli/php.ini', key: 'error_reporting', value: "{{ php_ini_error_reporting }}" }
+    - { file: '/etc/php/5.6/cli/php.ini', key: 'display_errors', value: "{{ php_ini_display_errors }}" }
+  tags: PHP
+
+- name: PHP | Adjust php.ini upload_max_filesize
+  become: true
+  lineinfile: dest={{ item }}
+              regexp='^upload_max_filesize'
+              line='upload_max_filesize = {{ php_ini_upload_max_filesize }}'
+  with_items:
+    - /etc/php/5.6/apache2/php.ini
+    - /etc/php/5.6/cli/php.ini
   tags: PHP
 
 - name: Composer install
