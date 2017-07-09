@@ -1,5 +1,5 @@
 ---
 - name: Gulp | Install Gulp globally
-  sudo: yes
+  become: true
   command: npm install --global gulp-cli
   tags: gulp
