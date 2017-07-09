@@ -25,6 +25,9 @@ If you have been running a previous version of Vagrant you may need to do: `vagr
     vagrant ssh
     cd /var/www/midcamp.local
     vendor/bin/phing build install migrate
+    cd web
+    npm install
+    npm run butler
   ```
 
 1. Visit [midcamp.local](http://midcamp.local) in your browser of choice.
