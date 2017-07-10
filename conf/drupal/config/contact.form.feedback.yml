@@ -10,3 +10,5 @@ recipients:
   - info@midcamp.org
 reply: ''
 weight: 0
+message: null
+redirect: null
