@@ -25,6 +25,7 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
   field_job_link:
     weight: 108
     label: above
@@ -36,6 +37,7 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+    region: content
   field_job_location:
     weight: 102
     label: above
@@ -43,18 +45,22 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
   field_job_skill_level:
     weight: 106
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
+    region: content
   field_job_type:
     weight: 103
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
+    region: content
   links:
     weight: 100
+    region: content
 hidden: {  }

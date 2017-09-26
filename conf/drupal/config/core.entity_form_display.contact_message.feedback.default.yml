@@ -13,10 +13,12 @@ content:
     weight: 50
     settings: {  }
     third_party_settings: {  }
+    region: content
   mail:
     weight: -40
     settings: {  }
     third_party_settings: {  }
+    region: content
   message:
     type: string_textarea
     weight: 0
@@ -24,10 +26,15 @@ content:
       rows: 12
       placeholder: ''
     third_party_settings: {  }
+    region: content
   name:
     weight: -50
     settings: {  }
     third_party_settings: {  }
+    region: content
+  preview:
+    weight: 40
+    region: content
   subject:
     type: string_textfield
     weight: -10
@@ -35,4 +42,5 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
 hidden: {  }
