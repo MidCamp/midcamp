@@ -40,7 +40,7 @@
         "drupal/admin_toolbar": "^1.18",
         "drupal/config_installer": "^8.1",
         "drupal/contact_formatter": "^1.0",
-        "drupal/core": "^8.0",
+        "drupal/core": "^8.3",
         "drupal/devel": "^1.0@beta",
         "drupal/geocoder_geofield": "^2.0@alpha",
         "drupal/geolocation": "^1.8",
