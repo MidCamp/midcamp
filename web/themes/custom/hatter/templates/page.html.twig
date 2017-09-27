@@ -45,24 +45,25 @@
 * @copyright Copyright (c) 2017 Palantir.net
 */
 #}
-<section class="event-banner__wrapper">
-  <div class="event-banner">
-    <div class="container">
-      <div class="l-1up">
-        <div class="event-banner__block">
-          <img class="event__druplicon" src="https://MidCamp.github.io/Hatter//assets/imgs/druplicon.png" alt="Druplicon wearing a Hatter's Hat">
-          <h1 class="event__title">Midcamp 2018</h1>
-          <h2 class="event__subtitle">March 8 — 11, 2018</h2>
-          <a href="#" class="event__button button--primary">Register</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{#<section class="event-banner__wrapper">#}
+  {#<div class="event-banner">#}
+    {#<div class="container">#}
+      {#<div class="l-1up">#}
+        {#<div class="event-banner__block">#}
+          {#<img class="event__druplicon" src="https://MidCamp.github.io/Hatter//assets/imgs/druplicon.png" alt="Druplicon wearing a Hatter's Hat">#}
+          {#<h1 class="event__title">Midcamp 2018</h1>#}
+          {#<h2 class="event__subtitle">March 8 — 11, 2018</h2>#}
+          {#<a href="#" class="event__button button--primary">Register</a>#}
+        {#</div>#}
+      {#</div>#}
+    {#</div>#}
+  {#</div>#}
+{#</section>#}
 
-{% if page.primary_menu|render|trim is not empty %}
+  {{ page.branding }}
+{% if (page.header|render|trim is not empty) or (page.primary_menu|render|trim is not empty)  %}
   <header class="site-header">
-    {{ page.primary_menu }}
+    {{ page.header }}
   </header>
 {% endif %}
 
