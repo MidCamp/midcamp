@@ -1,14 +1,8 @@
 {
-    "name": "palantirnet/drupal-skeleton",
-    "description": "A Drupal 8 project template.",
+    "name": "midcamp/midcamp",
+    "description": "The MidCamp website.",
     "type": "project",
     "license": "proprietary",
-    "authors": [
-        {
-            "name": "Palantir.net",
-            "email": "info@palantir.net"
-        }
-    ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "preferred-install": "dist",
@@ -16,13 +10,9 @@
         "sort-packages": "true"
     },
     "repositories": {
-        "build": {
+        "hatter-styleguide": {
             "type": "vcs",
-            "url": "https://github.com/palantirnet/the-build.git"
-        },
-        "vagrant": {
-            "type": "vcs",
-            "url": "https://github.com/palantirnet/the-vagrant.git"
+            "url": "https://github.com/midcamp/hatter.git"
         },
         "palantir-behat-extension": {
             "type": "vcs",
@@ -35,6 +25,7 @@
     },
     "require": {
         "composer/installers": "^1.0",
+        "cweagans/composer-patches": "~1.0",
         "drupal-composer/drupal-scaffold": "^1.0",
         "drupal/address": "1.x-dev",
         "drupal/admin_toolbar": "^1.18",
@@ -62,9 +53,7 @@
         "drupal/drupal-extension": "^3.1",
         "drush/drush": "^8.0",
         "palantirnet/palantir-behat-extension": "dev-drupal8-file-revisited",
-        "phpmd/phpmd": "^2.4",
-        "sculpin/sculpin": "~2.0",
-        "sculpin/sculpin-theme-composer-plugin": "dev-master as 1.0.0"
+        "phpmd/phpmd": "^2.4"
     },
     "suggest": {
         "cweagans/composer-patches": "Try ^1.0. Apply patches to packages, especially Drupal.org contrib."
@@ -78,21 +67,11 @@
     },
     "extra": {
         "installer-paths": {
-            "web/core": [
-                "type:drupal-core"
-            ],
-            "web/modules/contrib/{$name}": [
-                "type:drupal-module"
-            ],
-            "web/profiles/contrib/{$name}": [
-                "type:drupal-profile"
-            ],
-            "web/themes/contrib/{$name}": [
-                "type:drupal-theme"
-            ],
-            "drush/contrib/{$name}": [
-                "type:drupal-drush"
-            ]
+            "web/core": ["type:drupal-core"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/contrib/{$name}": ["type:drupal-drush"]
         }
     }
 }
