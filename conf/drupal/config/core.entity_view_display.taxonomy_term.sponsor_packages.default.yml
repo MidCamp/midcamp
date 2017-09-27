@@ -19,6 +19,7 @@ content:
     weight: 2
     settings: {  }
     third_party_settings: {  }
+    region: content
   field_sponsor_package_price:
     weight: 0
     label: inline
@@ -29,6 +30,7 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_decimal
+    region: content
   field_sponsor_package_qty_avail:
     weight: 1
     label: hidden
@@ -37,4 +39,5 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_integer
+    region: content
 hidden: {  }

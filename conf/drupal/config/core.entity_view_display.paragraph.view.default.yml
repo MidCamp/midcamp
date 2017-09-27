@@ -19,6 +19,7 @@ content:
       render_view: true
     third_party_settings: {  }
     type: viewsreference_formatter
+    region: content
 hidden:
   created: true
   uid: true
