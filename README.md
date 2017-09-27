@@ -11,14 +11,14 @@ This site uses the Amazee.io Drupal Docker development environment. If you alrea
 
 ```
 brew tap amazeeio/cachalot
-brew install docker docker-machine cachalot
+brew install docker docker-machine docker-compose cachalot
 cachalot create --provider virtualbox
 ```
 You will be prompted to provide the passphrase for your ssh key. Comply.
 Next, we need to make sure your shell knows about some Docker environment variables:
 
 ```
-eval(cachalot env)
+eval $(cachalot env)
 ```
 So your shell remembers next time you log in, use one of these commands:
 * Bash users, add it to your bash_profile with: `echo "eval \$(cachalot env)" >> ~/.bash_profile`
@@ -120,4 +120,4 @@ This should be configured to show the same errors triggered by Code Climate that
 If you get the following error:
 > Cannot connect to the Docker daemon. Is the docker daemon running?
 
-Make sure your environment variables are set. `eval(cachalot env)` Maybe you didn't add that to your bash_profile or zshrc as suggested?
+Make sure your environment variables are set. `eval $(cachalot env)` Maybe you didn't add that to your bash_profile or zshrc as suggested?
