@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2612c7267c87d87fd18cf87707c6b66e",
+    "content-hash": "74778656afe3947188bff57febf1d2e7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -8853,8 +8853,6 @@
         "drupal/geocoder_geofield": 15,
         "drupal/viewsreference": 15,
         "composer/composer": 20,
-        "dflydev/embedded-composer-console": 20,
-        "dflydev/embedded-composer-core": 20,
         "palantirnet/palantir-behat-extension": 20
     },
     "prefer-stable": true,

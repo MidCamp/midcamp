@@ -46,8 +46,6 @@
         "behat/mink-extension": "^2.2",
         "behat/mink-goutte-driver": "^1.2",
         "composer/composer": "@dev",
-        "dflydev/embedded-composer-console": "@dev",
-        "dflydev/embedded-composer-core": "@dev",
         "drupal/coder": "^8.2",
         "drupal/console": "^0.11.3",
         "drupal/drupal-extension": "^3.1",
