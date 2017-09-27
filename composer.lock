@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "560f20a5f61837bc81e70603a511fa82",
+    "content-hash": "2612c7267c87d87fd18cf87707c6b66e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -437,6 +437,50 @@
                 "versioning"
             ],
             "time": "2016-08-30T16:08:34+00:00"
+        },
+        {
+            "name": "cweagans/composer-patches",
+            "version": "1.6.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cweagans/composer-patches.git",
+                "reference": "014e968ca2ce4342476b3f2f6779b274fff8ae9e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/014e968ca2ce4342476b3f2f6779b274fff8ae9e",
+                "reference": "014e968ca2ce4342476b3f2f6779b274fff8ae9e",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "composer/composer": "~1.0",
+                "phpunit/phpunit": "~4.6"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "cweagans\\Composer\\Patches"
+            },
+            "autoload": {
+                "psr-4": {
+                    "cweagans\\Composer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Cameron Eagans",
+                    "email": "me@cweagans.net"
+                }
+            ],
+            "description": "Provides a way to patch Composer packages.",
+            "time": "2017-08-30T16:41:23+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -8801,14 +8845,7 @@
             "time": "2015-12-17T08:42:14+00:00"
         }
     ],
-    "aliases": [
-        {
-            "alias": "1.0.0",
-            "alias_normalized": "1.0.0.0",
-            "version": "9999999-dev",
-            "package": "sculpin/sculpin-theme-composer-plugin"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/address": 20,
@@ -8818,8 +8855,7 @@
         "composer/composer": 20,
         "dflydev/embedded-composer-console": 20,
         "dflydev/embedded-composer-core": 20,
-        "palantirnet/palantir-behat-extension": 20,
-        "sculpin/sculpin-theme-composer-plugin": 20
+        "palantirnet/palantir-behat-extension": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
