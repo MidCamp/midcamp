@@ -31,7 +31,7 @@ dependencies:
 
 test:
   pre:
-    - vendor/bin/phing build install
+    - drush si --sites-subdir=default --account-pass="admin"  config_installer
 
   override:
     - mkdir -p $CIRCLE_TEST_REPORTS/behat
