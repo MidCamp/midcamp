@@ -14,6 +14,9 @@ brew tap amazeeio/cachalot
 brew install docker docker-machine docker-compose cachalot
 cachalot create --provider virtualbox
 ```
+
+If you aren't running `virtualbox`, substitute your provider above. Valid values are: `'virtualbox', 'vmware', 'xhyve', or 'parallels'`.
+
 You will be prompted to provide the passphrase for your ssh key. Comply.
 Next, we need to make sure your shell knows about some Docker environment variables:
 
