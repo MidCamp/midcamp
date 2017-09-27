@@ -58,7 +58,9 @@ You can run `drush` commands from anywhere within the repository, as long as you
 
 ### Installing and reinstalling Drupal
 
-Run `composer install && vendor/bin/phing build install migrate`
+```
+drush si --sites-subdir=default --account-pass="admin"  config_installer
+```
 
 ### Adding modules
 
@@ -71,26 +73,11 @@ Run `composer install && vendor/bin/phing build install migrate`
 
 Sometimes we need to apply patches from the Drupal.org issue queues. These patches should be applied using composer using the [Composer Patches](https://github.com/cweagans/composer-patches) composer plugin.
 
-### Configuring Drupal
-
-Sometimes it is appropriate to configure specific Drupal variables in Drupal's `settings.php` file. Our `settings.php` file is built from a template found at `conf/drupal/settings.php` during the phing build.
-
-* Add your appropriately named values to `conf/build.default.properties` (like `drupal.my_setting=example`)
-* Update `conf/drupal/settings.php` to use your new variable (like `$conf['my_setting'] = '${drupal.my_setting}';`)
-* Run `vendor/bin/phing build`
-* Test
-* If the variable requires different values in different environments, add those to the appropriate properties files (`conf/build.vagrant.properties`, `conf/build.circle.properties`, `conf/build.acquia.properties`). Note that you may reference environment variables with `drupal.my_setting=${env.DRUPAL_MY_SETTING}`.
-* Finally, commit your changes.
-
 ## How do I run tests?
 
 ### Behat
 
 Run `vendor/bin/behat features/installation.feature`.
-
-### Static Analysis
-
-Run `vendor/bin/phing analyze`.
 
 This should be configured to show the same errors triggered by Code Climate that you see on the Pull Request.
 
