@@ -26,18 +26,18 @@
     "require": {
         "composer/installers": "^1.0",
         "cweagans/composer-patches": "~1.0",
-        "drupal-composer/drupal-scaffold": "^1.0",
+        "drupal-composer/drupal-scaffold": "^2.3",
         "drupal/address": "1.x-dev",
         "drupal/admin_toolbar": "^1.18",
-        "drupal/config_installer": "^8.1",
+        "drupal/config_installer": "^1.5",
         "drupal/contact_formatter": "^1.0",
-        "drupal/core": "^8.3",
+        "drupal/core": "^8.4",
         "drupal/devel": "^1.0@beta",
         "drupal/geocoder_geofield": "^2.0@alpha",
         "drupal/geolocation": "^1.8",
         "drupal/linkicon": "^1.4",
         "drupal/mailchimp": "^1.2",
-        "drupal/paragraphs": "^8.1",
+        "drupal/paragraphs": "^1.2",
         "drupal/viewsreference": "^1.0@alpha"
     },
     "require-dev": {
@@ -47,14 +47,11 @@
         "behat/mink-goutte-driver": "^1.2",
         "composer/composer": "@dev",
         "drupal/coder": "^8.2",
-        "drupal/console": "^0.11.3",
+        "drupal/console": "^1.0",
         "drupal/drupal-extension": "^3.1",
-        "drush/drush": "^8.0",
+        "drush/drush": "^9.0",
         "palantirnet/palantir-behat-extension": "dev-drupal8-file-revisited",
         "phpmd/phpmd": "^2.4"
-    },
-    "suggest": {
-        "cweagans/composer-patches": "Try ^1.0. Apply patches to packages, especially Drupal.org contrib."
     },
     "conflict": {
         "drupal/drupal": "*"
