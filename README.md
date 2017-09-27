@@ -75,35 +75,10 @@ Sometimes we need to apply patches from the Drupal.org issue queues. These patch
 
 ## How do I run tests?
 
-### Behat
-
-Run `vendor/bin/behat features/installation.feature`.
-
-This should be configured to show the same errors triggered by Code Climate that you see on the Pull Request.
-
-## What does this Butler do?
-
-* `npm run butler`
-
-  This is the default task. This will watch your sass/sculpin files for changes and compile/build accordingly. It will also flag any sass linting errors before compiling. It will output CSS that has been been minified and optimized.
-
-* `npm run butler -- sass`
-
-  Just compile the sass. You can also use this syntax to run any task from the Gulpfile.
-
-* `npm run linting`
-
-  This is the testing task it will run linters as their own tasks. To learn more about configuring and customizing the linters for Butler check the [linters documentation](/docs/LINTERS.md).
-
-* `npm run deploy`
-
-  This is a task to deploy the static styleguide to GitHub pages.
-
-  Butler will build a Sculpin production artifact to `styleguide/output_prod` and deploy the production artifact to `gh-pages` branch of the repo defined in the `conf/butler.defaults.js`. Each commit for this process will default to the message: "Updated with Butler - [timestamp]".
-
-  You may want to create a `sculpin_site_prod.yml` to define the site URL once deployed. You can find out more information about environment aware configuration for Sculpin [here](https://sculpin.io/documentation/configuration/).
-
-  * Note: When you are deploying, Butler will ask you for your GitHub credentials at least once, possibly multiple times. Enter your own GitHub credentials as prompted. *
+* `vendor/bin/behat`
+* `vendor/bin/phpcs --standard=vendor/drupal/coder/coder_sniffer/Drupal features/bootstrap web/modules/custom`
+* `vendor/bin/phpmd web/modules/custom text .phpmd.xml` 
+  * This should be configured to show the same errors triggered by Code Climate that you see on the Pull Request.
 
 ## Troubleshooting
 
