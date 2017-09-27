@@ -19,5 +19,6 @@ regions:
   sidebar_second: 'Sidebar second'
   featured_bottom_first: 'Featured bottom first'
   featured_bottom_second: 'Featured bottom second'
-  footer: 'Footer'
+  footer_left: 'Footer Left'
+  footer_right: 'Footer Right'
   page_bottom: 'Page bottom'

@@ -46,16 +46,17 @@
 */
 #}
 
-  {{ page.branding }}
-{% if (page.header|render|trim is not empty) or (page.primary_menu|render|trim is not empty)  %}
+{{ page.branding }}
+
+{% if page.header|render|trim is not empty  %}
   <header class="site-header">
-    {{ page.header }}
+    <div class="container">{{ page.header }}</div>
   </header>
 {% endif %}
 
 {% if page.content|render|trim is not empty %}
   <section class="banner">
-    {{ page.content }}
+    <div class="container">{{ page.content }}</div>
   </section>
 {% endif %}
 
@@ -71,8 +72,14 @@
   </section>
 {% endif %}
 
-{% if page.footer|render|trim is not empty %}
+{% if page.footer_left or page.footer_right %}
   <footer class="site-footer">
-    {{ page.footer }}
+    <div class="container">
+      <div class="l-2up--1">{{ page.footer_left }}</div>
+      <div class="l-2up--2">{{ page.footer_right }}</div>
+      <div class="l-1up">
+        <small class="footer-copyright">Copyright 2017 Midcamp Lorem ipsum dolor sit amet, consectetur adipisicing.</small>
+      </div>
+    </div>
   </footer>
 {% endif %}
