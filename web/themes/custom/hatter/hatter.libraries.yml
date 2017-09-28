@@ -8,4 +8,4 @@ global-js:
   dependencies:
     - core/jquery
   js:
-    js/script.js: {}
+    js/map.js: {}
