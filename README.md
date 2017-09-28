@@ -59,7 +59,7 @@ You can run `drush` commands from anywhere within the repository, as long as you
 ### Installing and reinstalling Drupal
 
 ```
-drush si --sites-subdir=default --account-pass="admin"  config_installer
+drush si --sites-subdir=default --account-name="admin" --account-pass="admin" --y config_installer
 ```
 
 ### Adding modules
