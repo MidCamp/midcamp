@@ -4,6 +4,10 @@ global-css:
       css/print.css:
         media: print
       css/styles.css: {}
+fonts:
+  css:
+    theme:
+      '//fonts.googleapis.com/css?family=Averia+Serif+Libre:400,400i,700,700i|Poppins:400,700': { type: external, minified: true }
 mapbox:
   css:
     theme:

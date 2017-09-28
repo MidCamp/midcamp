@@ -5,7 +5,7 @@ core: 8.x
 base theme: stable
 libraries:
   - hatter/global-css
-  - hatter/global-js
+  - hatter/fonts
 regions:
   page_top: 'Page top'
   branding: 'Branding'
