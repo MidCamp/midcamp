@@ -8,6 +8,7 @@ global-css:
 global-js:
   dependencies:
     - core/jquery
+    - core/drupal
   js:
     //api.tiles.mapbox.com/mapbox-gl-js/v0.26.0/mapbox-gl.js: { type: external }
     js/map.js: {}
