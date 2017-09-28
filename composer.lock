@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b7ae5dcd6cb88000be5b52a37b8b47fa",
+    "content-hash": "70f00bdfaf0ff6eba6793ddc35141ca4",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -916,7 +916,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/address"
             },
-            "time": "2017-09-14 14:03:30"
+            "time": "2017-09-14T14:03:30+00:00"
         },
         {
             "name": "drupal/admin_toolbar",
@@ -1056,7 +1056,11 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0",
-                    "datestamp": "1470411844"
+                    "datestamp": "1470411844",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1064,10 +1068,6 @@
                 "GPL-2.0+"
             ],
             "authors": [
-                {
-                    "name": "Caffeinated",
-                    "homepage": "https://www.drupal.org/user/2507260"
-                },
                 {
                     "name": "albertski",
                     "homepage": "https://www.drupal.org/user/1327432"
@@ -1079,6 +1079,10 @@
                 {
                     "name": "mikeacklin",
                     "homepage": "https://www.drupal.org/user/1198900"
+                },
+                {
+                    "name": "thejimbirch",
+                    "homepage": "https://www.drupal.org/user/2507260"
                 }
             ],
             "description": "Field Formatter for Contact Forms",
@@ -1255,6 +1259,11 @@
                 "symfony/phpunit-bridge": "~3.2.8"
             },
             "type": "drupal-core",
+            "extra": {
+                "patches_applied": {
+                    "Fix 8.4-rc1 install issue (https://www.drupal.org/node/2907654)": "https://www.drupal.org/files/issues/2907654-3-display-mode-url-route-parameters.patch"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Drupal\\Core\\": "lib/Drupal/Core",
@@ -1831,7 +1840,7 @@
                 "source": "http://cgit.drupalcode.org/linkicon",
                 "issues": "https://www.drupal.org/project/issues/linkicon"
             },
-            "time": "2017-04-07 14:57:42"
+            "time": "2017-04-07T14:57:42+00:00"
         },
         {
             "name": "drupal/mailchimp",
@@ -2626,7 +2635,7 @@
             ],
             "description": "GeoPHP is a open-source native PHP library for doing geometry operations. It is written entirely in PHP and can therefore run on shared hosts. It can read and write a wide variety of formats: WKT (including EWKT), WKB (including EWKB), GeoJSON, KML, GPX, GeoRSS). It works with all Simple-Feature geometries (Point, LineString, Polygon, GeometryCollection etc.) and can be used to get centroids, bounding-boxes, area, and a wide variety of other useful information.",
             "homepage": "https://github.com/phayes/geoPHP",
-            "time": "2016-03-04 05:42:29"
+            "time": "2016-03-04T05:42:29+00:00"
         },
         {
             "name": "psr/http-message",
@@ -6562,7 +6571,7 @@
                 "source": "https://github.com/palantirnet/palantir-behat-extension/tree/drupal8-file-revisited",
                 "issues": "https://github.com/palantirnet/palantir-behat-extension/issues"
             },
-            "time": "2016-08-10 14:27:16"
+            "time": "2016-08-10T14:27:16+00:00"
         },
         {
             "name": "pdepend/pdepend",

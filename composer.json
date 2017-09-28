@@ -61,6 +61,11 @@
         "post-create-project-cmd": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
     },
     "extra": {
+        "patches": {
+            "drupal/core": {
+                "Fix 8.4-rc1 install issue (https://www.drupal.org/node/2907654)": "https://www.drupal.org/files/issues/2907654-3-display-mode-url-route-parameters.patch"
+            }
+        },
         "installer-paths": {
             "web/core": ["type:drupal-core"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
