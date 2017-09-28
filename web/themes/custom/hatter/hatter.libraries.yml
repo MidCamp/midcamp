@@ -4,8 +4,10 @@ global-css:
       css/print.css:
         media: print
       css/styles.css: {}
-global-js:
-  dependencies:
-    - core/jquery
+mapbox:
+  css:
+    theme:
+      https://api.tiles.mapbox.com/mapbox-gl-js/v0.26.0/mapbox-gl.css: { type: external, minified: false }
   js:
+    https://api.tiles.mapbox.com/mapbox-gl-js/v0.26.0/mapbox-gl.js: { type: external, minified: false }
     js/map.js: {}
