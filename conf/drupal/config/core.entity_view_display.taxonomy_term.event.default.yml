@@ -7,8 +7,6 @@ dependencies:
     - field.field.taxonomy_term.event.field_social_media
     - taxonomy.vocabulary.event
   module:
-    - datetime
-    - link
     - text
 id: taxonomy_term.event.default
 targetEntityType: taxonomy_term
@@ -22,25 +20,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_date:
-    weight: 1
-    label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
-  field_social_media:
-    weight: 2
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
-hidden: {  }
+hidden:
+  field_date: true
+  field_social_media: true
