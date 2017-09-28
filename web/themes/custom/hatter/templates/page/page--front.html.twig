@@ -46,8 +46,6 @@
 */
 #}
 
-{{ attach_library('hatter/mapbox') }}
-
 {{ page.branding }}
 
 {% if page.header|render|trim is not empty  %}
@@ -62,15 +60,11 @@
   </section>
 {% endif %}
 
-<section class="map-banner">
-  <div class="map-overlay">
-    <span class="map__label">Location</span>
-    <h2 class="map__title">DePaul Lincoln Park Campus</h2>
-    <p class="map__address"><a href="#">2320 N Kenmore Ave, <br/>Chicago, IL 60614</a></p>
-    <a href="#" class="cta-link--yellow">Book your Hotel  <span class="cta-arrow">{# include 'includes/svg/arrow.svg' #}</span></a>
-  </div>
-  <div id='map' class="map"></div>
-</section>
+{% if page.featured_bottom_first|render|trim is not empty %}
+  <section class="map-banner">
+    {{ page.featured_bottom_first }}
+  </section>
+{% endif %}
 
 {% if page.featured_bottom_second|render|trim is not empty %}
   <section class="banner">
