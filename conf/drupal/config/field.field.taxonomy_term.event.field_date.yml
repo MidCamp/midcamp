@@ -1,4 +1,4 @@
-uuid: 8488bdac-6ec8-4c2b-b836-cc4a25d914d6
+uuid: b649ef53-7eb9-4425-a91d-4a4786a14898
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - field.storage.taxonomy_term.field_date
     - taxonomy.vocabulary.event
   module:
-    - datetime
+    - datetime_range
 id: taxonomy_term.event.field_date
 field_name: field_date
 entity_type: taxonomy_term
@@ -18,4 +18,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: datetime
+field_type: daterange

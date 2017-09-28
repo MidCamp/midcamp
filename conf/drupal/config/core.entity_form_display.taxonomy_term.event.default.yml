@@ -7,7 +7,7 @@ dependencies:
     - field.field.taxonomy_term.event.field_social_media
     - taxonomy.vocabulary.event
   module:
-    - datetime
+    - datetime_range
     - link
     - path
     - text
@@ -28,7 +28,7 @@ content:
     weight: 1
     settings: {  }
     third_party_settings: {  }
-    type: datetime_default
+    type: daterange_default
     region: content
   field_social_media:
     weight: 4
