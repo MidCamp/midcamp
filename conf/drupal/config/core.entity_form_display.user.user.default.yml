@@ -3,10 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_mailing_list
+    - field.field.user.user.field_name
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
     - image
+    - mailchimp_lists
+    - name
     - user
 _core:
   default_config_hash: LLAieeozVsoZDb-2PbFxRJpQqnKmpR7-4OoRJnduz-U
@@ -20,6 +24,18 @@ content:
     region: content
   contact:
     weight: 5
+    region: content
+  field_mailing_list:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: mailchimp_lists_select
+    region: content
+  field_name:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: name_default
     region: content
   language:
     weight: 0
