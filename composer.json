@@ -39,7 +39,7 @@
         "drupal/mailchimp": "^1.2",
         "drupal/paragraphs": "^1.2",
         "drupal/viewsreference": "^1.0@alpha",
-        "midcamp/hatter": "dev-install-scripts"
+        "midcamp/hatter": "dev-master"
     },
     "require-dev": {
         "behat/behat": "^3.1",

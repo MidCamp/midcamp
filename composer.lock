@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "02fb045d61662a402aabed92780aad69",
+    "content-hash": "58d2861b9137378cde926d3e2fdfa01e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3059,16 +3059,16 @@
         },
         {
             "name": "midcamp/hatter",
-            "version": "dev-install-scripts",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MidCamp/Hatter.git",
-                "reference": "3b601bf0ee9d840ba37d5fcf6bb2fcc1f8323295"
+                "reference": "30b0b213a426eeb94a109312ad032aa15be180fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MidCamp/Hatter/zipball/3b601bf0ee9d840ba37d5fcf6bb2fcc1f8323295",
-                "reference": "3b601bf0ee9d840ba37d5fcf6bb2fcc1f8323295",
+                "url": "https://api.github.com/repos/MidCamp/Hatter/zipball/30b0b213a426eeb94a109312ad032aa15be180fd",
+                "reference": "30b0b213a426eeb94a109312ad032aa15be180fd",
                 "shasum": ""
             },
             "require": {
@@ -3092,10 +3092,10 @@
                 "MIT"
             ],
             "support": {
-                "source": "https://github.com/MidCamp/Hatter/tree/install-scripts",
+                "source": "https://github.com/MidCamp/Hatter/tree/master",
                 "issues": "https://github.com/MidCamp/Hatter/issues"
             },
-            "time": "2017-09-29 22:03:02"
+            "time": "2017-09-29 22:36:37"
         },
         {
             "name": "paragonie/random_compat",
