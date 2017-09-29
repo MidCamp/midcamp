@@ -1,0 +1,40 @@
+version: 2
+jobs:
+  build:
+    working_directory: /var/www/drupal/public_html
+
+    docker:
+      - image: amazeeio/drupal:php70-basic
+        user: drupal
+    environment:
+          TEST_RESULTS: /tmp/test-results
+
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - composer-v1-{{ checksum "composer.json" }}
+            - composer-v1-
+      - run: composer install --no-interaction
+      - save_cache:
+          key: composer-v1-{{ checksum "composer.json" }}
+          paths:
+            - vendor
+
+      - store_artifacts:
+          path: $TEST_RESULTS
+          destination: raw-test-output
+
+      - store_test_results:
+          path: $TEST_RESULTS
+
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+    filters:
+      branches:
+          ignore:
+            - gh-pages
