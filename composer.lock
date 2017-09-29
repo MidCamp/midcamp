@@ -3063,12 +3063,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MidCamp/Hatter.git",
-                "reference": "b98f6cc8c9a7c906b7ddeae531b2139f174fde8d"
+                "reference": "f065b6cc72a62029eba818fe28548338aaf609b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MidCamp/Hatter/zipball/b98f6cc8c9a7c906b7ddeae531b2139f174fde8d",
-                "reference": "b98f6cc8c9a7c906b7ddeae531b2139f174fde8d",
+                "url": "https://api.github.com/repos/MidCamp/Hatter/zipball/f065b6cc72a62029eba818fe28548338aaf609b6",
+                "reference": "f065b6cc72a62029eba818fe28548338aaf609b6",
                 "shasum": ""
             },
             "require": {
@@ -3079,10 +3079,10 @@
                 "MIT"
             ],
             "support": {
-                "source": "https://github.com/MidCamp/Hatter/tree/master",
+                "source": "https://github.com/MidCamp/Hatter/tree/develop",
                 "issues": "https://github.com/MidCamp/Hatter/issues"
             },
-            "time": "2017-09-28 22:13:21"
+            "time": "2017-09-29 12:49:45"
         },
         {
             "name": "paragonie/random_compat",
