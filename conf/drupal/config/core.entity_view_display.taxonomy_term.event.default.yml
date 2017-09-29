@@ -5,9 +5,12 @@ dependencies:
   config:
     - field.field.taxonomy_term.event.field_date
     - field.field.taxonomy_term.event.field_image
+    - field.field.taxonomy_term.event.field_date_has_time
     - field.field.taxonomy_term.event.field_social_media
     - taxonomy.vocabulary.event
   module:
+    - datetime_range
+    - link
     - image
     - text
 id: taxonomy_term.event.default
@@ -30,6 +33,25 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+  field_date:
+    weight: 3
+    label: above
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_date_has_time:
+    weight: 4
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
 hidden:
   field_date: true

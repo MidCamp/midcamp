@@ -7,7 +7,7 @@ dependencies:
     - field.storage.taxonomy_term.field_date
     - taxonomy.vocabulary.event
   module:
-    - datetime
+    - datetime_range
     - taxonomy
     - user
 id: event_sub_events
@@ -164,10 +164,11 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: datetime_default
+          type: daterange_default
           settings:
             timezone_override: ''
             format_type: html_yearless_date
+            separator: '-'
           group_column: value
           group_columns: {  }
           group_rows: true
