@@ -12,6 +12,7 @@ module:
   config: 0
   contact: 0
   contact_formatter: 0
+  content_moderation: 0
   contextual: 0
   datetime: 0
   datetime_range: 0
@@ -32,6 +33,7 @@ module:
   mailchimp_campaign: 0
   mailchimp_lists: 0
   mailchimp_signup: 0
+  masquerade: 0
   menu_ui: 0
   node: 0
   options: 0
@@ -50,6 +52,7 @@ module:
   user: 0
   views_ui: 0
   viewsreference: 0
+  workflows: 0
   menu_link_content: 1
   views: 10
   paragraphs: 11
