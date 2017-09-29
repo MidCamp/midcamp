@@ -22,6 +22,7 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+    region: content
   field_event:
     weight: 102
     label: above
@@ -29,6 +30,7 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
   field_people:
     weight: 104
     label: above
@@ -36,6 +38,7 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
   field_topic_type:
     weight: 103
     label: above
@@ -43,6 +46,8 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
   links:
     weight: 100
+    region: content
 hidden: {  }

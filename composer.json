@@ -1,14 +1,8 @@
 {
-    "name": "palantirnet/drupal-skeleton",
-    "description": "A Drupal 8 project template.",
+    "name": "midcamp/midcamp",
+    "description": "The MidCamp website.",
     "type": "project",
     "license": "proprietary",
-    "authors": [
-        {
-            "name": "Palantir.net",
-            "email": "info@palantir.net"
-        }
-    ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "preferred-install": "dist",
@@ -16,13 +10,9 @@
         "sort-packages": "true"
     },
     "repositories": {
-        "build": {
+        "hatter-styleguide": {
             "type": "vcs",
-            "url": "https://github.com/palantirnet/the-build.git"
-        },
-        "vagrant": {
-            "type": "vcs",
-            "url": "https://github.com/palantirnet/the-vagrant.git"
+            "url": "https://github.com/midcamp/hatter.git"
         },
         "palantir-behat-extension": {
             "type": "vcs",
@@ -35,20 +25,21 @@
     },
     "require": {
         "composer/installers": "^1.0",
-        "drupal-composer/drupal-scaffold": "^1.0",
+        "cweagans/composer-patches": "~1.0",
+        "drupal-composer/drupal-scaffold": "^2.3",
         "drupal/address": "1.x-dev",
         "drupal/admin_toolbar": "^1.18",
-        "drupal/config_installer": "^8.1",
+        "drupal/config_installer": "^1.5",
         "drupal/contact_formatter": "^1.0",
-        "drupal/core": "^8.0",
+        "drupal/core": "^8.4",
         "drupal/devel": "^1.0@beta",
         "drupal/geocoder_geofield": "^2.0@alpha",
         "drupal/geolocation": "^1.8",
         "drupal/linkicon": "^1.4",
         "drupal/mailchimp": "^1.2",
-        "drupal/paragraphs": "^8.1",
-        "palantirnet/the-build": "dev-composer-install-elsewhere-flexibility",
-        "drupal/viewsreference": "^1.0@alpha"
+        "drupal/paragraphs": "^1.2",
+        "drupal/viewsreference": "^1.0@alpha",
+        "midcamp/hatter": "dev-master"
     },
     "require-dev": {
         "behat/behat": "^3.1",
@@ -56,20 +47,12 @@
         "behat/mink-extension": "^2.2",
         "behat/mink-goutte-driver": "^1.2",
         "composer/composer": "@dev",
-        "dflydev/embedded-composer-console": "@dev",
-        "dflydev/embedded-composer-core": "@dev",
         "drupal/coder": "^8.2",
-        "drupal/console": "^0.11.3",
+        "drupal/console": "^1.0",
         "drupal/drupal-extension": "^3.1",
-        "drush/drush": "^8.0",
+        "drush/drush": "^9.0",
         "palantirnet/palantir-behat-extension": "dev-drupal8-file-revisited",
-        "palantirnet/the-vagrant": "dev-master",
-        "phpmd/phpmd": "^2.4",
-        "sculpin/sculpin": "~2.0",
-        "sculpin/sculpin-theme-composer-plugin": "dev-master as 1.0.0"
-    },
-    "suggest": {
-        "cweagans/composer-patches": "Try ^1.0. Apply patches to packages, especially Drupal.org contrib."
+        "phpmd/phpmd": "^2.4"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -79,22 +62,17 @@
         "post-create-project-cmd": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
     },
     "extra": {
+        "patches": {
+            "drupal/core": {
+                "Fix 8.4-rc1 install issue (https://www.drupal.org/node/2907654)": "https://www.drupal.org/files/issues/2907654-3-display-mode-url-route-parameters.patch"
+            }
+        },
         "installer-paths": {
-            "web/core": [
-                "type:drupal-core"
-            ],
-            "web/modules/contrib/{$name}": [
-                "type:drupal-module"
-            ],
-            "web/profiles/contrib/{$name}": [
-                "type:drupal-profile"
-            ],
-            "web/themes/contrib/{$name}": [
-                "type:drupal-theme"
-            ],
-            "drush/contrib/{$name}": [
-                "type:drupal-drush"
-            ]
+            "web/core": ["type:drupal-core"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/contrib/{$name}": ["type:drupal-drush"]
         }
     }
 }
