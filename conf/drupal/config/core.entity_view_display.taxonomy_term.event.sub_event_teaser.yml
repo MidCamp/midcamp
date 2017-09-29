@@ -5,11 +5,13 @@ dependencies:
   config:
     - core.entity_view_mode.taxonomy_term.sub_event_teaser
     - field.field.taxonomy_term.event.field_date
+    - field.field.taxonomy_term.event.field_date_has_time
     - field.field.taxonomy_term.event.field_image
     - field.field.taxonomy_term.event.field_social_media
+    - image.style.sub_event_teaser_600x400
     - taxonomy.vocabulary.event
   module:
-    - datetime
+    - datetime_range
     - image
     - text
 id: taxonomy_term.event.sub_event_teaser
@@ -25,19 +27,29 @@ content:
     third_party_settings: {  }
     region: content
   field_date:
-    type: datetime_default
+    type: daterange_plain
     weight: 2
     region: content
     label: hidden
     settings:
-      format_type: medium
       timezone_override: ''
+      separator: '-'
+    third_party_settings: {  }
+  field_date_has_time:
+    type: boolean
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
     third_party_settings: {  }
   field_image:
     weight: 1
     label: hidden
     settings:
-      image_style: ''
+      image_style: sub_event_teaser_600x400
       image_link: ''
     third_party_settings: {  }
     type: image

@@ -1,7 +1,7 @@
 <a href="{{ url }}" class="sub-event">
   {% if content.field_image|render|trim is not empty %}
     <div class="sub-event__bg-img">
-      {{ content.field_image }}
+      {{ content.field_image.0 }}
     </div>
   {% else %}
     <div class="sub-event__bg-img">
