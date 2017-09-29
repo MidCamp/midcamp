@@ -39,7 +39,8 @@ styleguide/source/code/css/*.css
 web/themes/custom/hatter/css/
 web/themes/custom/hatter/imgs/
 web/themes/custom/hatter/svg/
-web/themes/custom/js/
+web/themes/custom/hatter/js/
+web/themes/custom/hatter/libraries
 
 # Ignore sculpin output
 styleguide/output_dev/
