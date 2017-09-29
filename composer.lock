@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9f92a5505fdd8de333e5b09e3be9f82d",
+    "content-hash": "58d2861b9137378cde926d3e2fdfa01e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3127,26 +3127,39 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MidCamp/Hatter.git",
-                "reference": "f065b6cc72a62029eba818fe28548338aaf609b6"
+                "reference": "30b0b213a426eeb94a109312ad032aa15be180fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MidCamp/Hatter/zipball/f065b6cc72a62029eba818fe28548338aaf609b6",
-                "reference": "f065b6cc72a62029eba818fe28548338aaf609b6",
+                "url": "https://api.github.com/repos/MidCamp/Hatter/zipball/30b0b213a426eeb94a109312ad032aa15be180fd",
+                "reference": "30b0b213a426eeb94a109312ad032aa15be180fd",
                 "shasum": ""
             },
             "require": {
                 "spress/spress": "^2.1"
             },
             "type": "spress-theme",
+            "autoload": {
+                "psr-0": {
+                    "MidCamp\\": "src/"
+                }
+            },
+            "scripts": {
+                "post-install-cmd": [
+                    "MidCamp\\Hatter::installAssets"
+                ],
+                "post-update-cmd": [
+                    "MidCamp\\Hatter::installAssets"
+                ]
+            },
             "license": [
                 "MIT"
             ],
             "support": {
-                "source": "https://github.com/MidCamp/Hatter/tree/develop",
+                "source": "https://github.com/MidCamp/Hatter/tree/master",
                 "issues": "https://github.com/MidCamp/Hatter/issues"
             },
-            "time": "2017-09-29 12:49:45"
+            "time": "2017-09-29 22:36:37"
         },
         {
             "name": "paragonie/random_compat",
