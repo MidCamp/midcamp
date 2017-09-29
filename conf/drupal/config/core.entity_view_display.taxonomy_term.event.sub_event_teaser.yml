@@ -41,9 +41,9 @@ content:
     region: content
     label: hidden
     settings:
-      format: default
-      format_custom_false: ''
+      format: boolean
       format_custom_true: ''
+      format_custom_false: ''
     third_party_settings: {  }
   field_image:
     weight: 1
