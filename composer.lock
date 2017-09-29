@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e42bb3dd904079802ac49972ad28c6bd",
+    "content-hash": "02fb045d61662a402aabed92780aad69",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3059,30 +3059,43 @@
         },
         {
             "name": "midcamp/hatter",
-            "version": "dev-master",
+            "version": "dev-install-scripts",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MidCamp/Hatter.git",
-                "reference": "f065b6cc72a62029eba818fe28548338aaf609b6"
+                "reference": "3b601bf0ee9d840ba37d5fcf6bb2fcc1f8323295"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MidCamp/Hatter/zipball/f065b6cc72a62029eba818fe28548338aaf609b6",
-                "reference": "f065b6cc72a62029eba818fe28548338aaf609b6",
+                "url": "https://api.github.com/repos/MidCamp/Hatter/zipball/3b601bf0ee9d840ba37d5fcf6bb2fcc1f8323295",
+                "reference": "3b601bf0ee9d840ba37d5fcf6bb2fcc1f8323295",
                 "shasum": ""
             },
             "require": {
                 "spress/spress": "^2.1"
             },
             "type": "spress-theme",
+            "autoload": {
+                "psr-0": {
+                    "MidCamp\\": "src/"
+                }
+            },
+            "scripts": {
+                "post-install-cmd": [
+                    "MidCamp\\Hatter::installAssets"
+                ],
+                "post-update-cmd": [
+                    "MidCamp\\Hatter::installAssets"
+                ]
+            },
             "license": [
                 "MIT"
             ],
             "support": {
-                "source": "https://github.com/MidCamp/Hatter/tree/develop",
+                "source": "https://github.com/MidCamp/Hatter/tree/install-scripts",
                 "issues": "https://github.com/MidCamp/Hatter/issues"
             },
-            "time": "2017-09-29 12:49:45"
+            "time": "2017-09-29 22:03:02"
         },
         {
             "name": "paragonie/random_compat",
