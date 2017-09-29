@@ -1,0 +1,18 @@
+uuid: 4a37efe1-1826-43da-b65b-a7e6c62f7aa3
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_date_has_time
+field_name: field_date_has_time
+entity_type: taxonomy_term
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

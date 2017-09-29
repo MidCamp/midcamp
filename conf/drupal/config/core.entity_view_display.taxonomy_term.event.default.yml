@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.taxonomy_term.event.field_date
+    - field.field.taxonomy_term.event.field_date_has_time
     - field.field.taxonomy_term.event.field_social_media
     - taxonomy.vocabulary.event
   module:
@@ -31,6 +32,16 @@ content:
       timezone_override: ''
     third_party_settings: {  }
     type: daterange_default
+    region: content
+  field_date_has_time:
+    weight: 4
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   field_social_media:
     weight: 2

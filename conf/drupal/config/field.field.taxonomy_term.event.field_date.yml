@@ -12,7 +12,7 @@ field_name: field_date
 entity_type: taxonomy_term
 bundle: event
 label: Date
-description: 'Enter the event start date and end date. If the event is a single day, the start and end date should be the same. If the event does not have a time, please set the time to something then check the "Don''t show time" box below.'
+description: 'Enter the event start date and end date. If the event is a single day, the start and end date should be the same. If the event includes a time, check the "Date has time?" box below. If the event does not have a time, set the time fields to any value then leave "Date has time?" unchecked. '
 required: false
 translatable: false
 default_value: {  }
