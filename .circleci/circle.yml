@@ -5,32 +5,21 @@ jobs:
 
     docker:
       - image: amazeeio/drupal:php70-basic
-      - image: amazeeio/solr:6
     environment:
           TEST_RESULTS: /tmp/test-results
 
     steps:
-      - run: echo $AMAZEEIO_SITENAME
-      - run: echo $AMAZEEIO_SITE_ENVIRONMENT
       - checkout
+      - run: composer self-update
+      - restore_cache:
+          keys:
+            - composer-v1-{{ checksum "composer.json" }}
+            - composer-v1-
       - run: composer install --no-interaction
-
-      - run:
-          working_directory: ~/midcamp/web
-          name: Install Drupal
-          command: |
-            set -ou pipefail
-            drush si  --yes --sites-subdir=default config_installer
-
-      - run:
-          name: Create behat test report directory.
-          command: mkdir -p $TEST_RESULTS
-
-      - run:
-          name: Run Tests
-          command: |
-            set -ou pipefail
-            vendor/bin/behat | tee $TEST_RESULTS/behat.out
+      - save_cache:
+          key: composer-v1-{{ checksum "composer.json" }}
+          paths:
+            - vendor
 
       - store_artifacts:
           path: $TEST_RESULTS
