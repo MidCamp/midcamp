@@ -20,4 +20,7 @@ default_value_callback: ''
 settings:
   handler: 'default:view'
   handler_settings: {  }
+  plugin_types:
+    block: block
+  preselect_views: {  }
 field_type: viewsreference

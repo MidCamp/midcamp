@@ -23,11 +23,13 @@ content:
       placeholder: ''
       rows: 5
     third_party_settings: {  }
+    region: content
   field_date:
     weight: 1
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+    region: content
   field_social_media:
     weight: 4
     settings:
@@ -35,6 +37,7 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
   name:
     type: string_textfield
     weight: 0
@@ -42,9 +45,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
   path:
     type: path
     weight: 3
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden: {  }

@@ -1,5 +1,0 @@
----
-- name: Gulp | Install Gulp globally
-  become: true
-  command: npm install --global gulp-cli
-  tags: gulp

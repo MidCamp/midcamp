@@ -26,6 +26,7 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
   field_job_link:
     weight: 5
     label: inline
@@ -37,6 +38,7 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+    region: content
   field_job_location:
     weight: 1
     label: inline
@@ -44,18 +46,21 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
   field_job_skill_level:
     weight: 3
     label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
+    region: content
   field_job_type:
     weight: 2
     label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
+    region: content
   field_sponsor_company:
     weight: 0
     label: inline
@@ -63,5 +68,8 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-hidden:
-  links: true
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

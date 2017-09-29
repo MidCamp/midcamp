@@ -21,6 +21,7 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
+    region: content
   field_date:
     weight: 1
     label: above
@@ -29,6 +30,7 @@ content:
       timezone_override: ''
     third_party_settings: {  }
     type: datetime_default
+    region: content
   field_social_media:
     weight: 2
     label: above
@@ -40,4 +42,5 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+    region: content
 hidden: {  }

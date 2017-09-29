@@ -20,6 +20,7 @@ mode: rss
 content:
   links:
     weight: 100
+    region: content
 hidden:
   field_article_news: true
   field_article_paragraphs: true
