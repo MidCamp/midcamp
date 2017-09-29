@@ -1,21 +1,21 @@
-uuid: cfaa6a3b-4d02-4181-ad00-57710c2e0091
+uuid: 6eb269a5-d30b-4896-a7a5-5ed7072b3e0f
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.event_sponsors
+    - views.view.event_sub_events
   module:
     - views
   theme:
     - hatter
-id: views_block__event_sponsors_block_1
+id: views_block__event_sub_events_block_1
 theme: hatter
 region: featured_bottom_second
-weight: -8
+weight: -9
 provider: null
-plugin: 'views_block:event_sponsors-block_1'
+plugin: 'views_block:event_sub_events-block_1'
 settings:
-  id: 'views_block:event_sponsors-block_1'
+  id: 'views_block:event_sub_events-block_1'
   label: ''
   provider: views
   label_display: visible

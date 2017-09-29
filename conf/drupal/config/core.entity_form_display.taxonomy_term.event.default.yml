@@ -4,10 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.taxonomy_term.event.field_date
+    - field.field.taxonomy_term.event.field_image
     - field.field.taxonomy_term.event.field_social_media
+    - image.style.thumbnail
     - taxonomy.vocabulary.event
   module:
     - datetime
+    - image
     - link
     - path
     - text
@@ -29,6 +32,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_image:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   field_social_media:
     weight: 4

@@ -1,19 +1,21 @@
-uuid: 9880ca58-79f3-4f0c-a2f6-69671a5ea4d3
+uuid: bbf79380-0544-4117-aa3f-538cdfaff073
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.taxonomy_term.sub_event_teaser
     - field.field.taxonomy_term.event.field_date
     - field.field.taxonomy_term.event.field_image
     - field.field.taxonomy_term.event.field_social_media
     - taxonomy.vocabulary.event
   module:
+    - datetime
     - image
     - text
-id: taxonomy_term.event.default
+id: taxonomy_term.event.sub_event_teaser
 targetEntityType: taxonomy_term
 bundle: event
-mode: default
+mode: sub_event_teaser
 content:
   description:
     label: hidden
@@ -22,9 +24,18 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_date:
+    type: datetime_default
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
   field_image:
     weight: 1
-    label: above
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
@@ -32,5 +43,4 @@ content:
     type: image
     region: content
 hidden:
-  field_date: true
   field_social_media: true

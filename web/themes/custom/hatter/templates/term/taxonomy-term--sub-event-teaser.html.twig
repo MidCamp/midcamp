@@ -1,0 +1,18 @@
+<a href="{{ url }}" class="sub-event">
+  {% if content.field_image|render|trim is not empty %}
+    <div class="sub-event__bg-img">
+      {{ content.field_image }}
+    </div>
+  {% else %}
+    <div class="sub-event__bg-img">
+      {% include active_theme_path() ~ '/imgs/dots--blue.svg' %}
+    </div>
+  {% endif %}
+  <div class="sub-event__inner">
+    {% if content.field_date|render|trim is not empty %}
+      <div class="sub-event__date">{{ content.field_date }}</div>
+    {% endif %}
+    <h3>{{ name }}</h3>
+    <small class="sub-event__link-text">{% trans %}Learn More<span class="element-invisible"> about {{ name }}</span>{% endtrans %}</small>
+  </div>
+</a>
