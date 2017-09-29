@@ -1,16 +1,16 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/midcamp
+    working_directory: /var/www/drupal/public_html
 
     docker:
       - image: amazeeio/drupal:php70-basic
+        user: drupal
     environment:
           TEST_RESULTS: /tmp/test-results
 
     steps:
       - checkout
-      - run: composer self-update
       - restore_cache:
           keys:
             - composer-v1-{{ checksum "composer.json" }}
