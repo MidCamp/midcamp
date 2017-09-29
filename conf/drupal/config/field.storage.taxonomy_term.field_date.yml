@@ -10,7 +10,7 @@ field_name: field_date
 entity_type: taxonomy_term
 type: daterange
 settings:
-  datetime_type: date
+  datetime_type: datetime
 module: datetime_range
 locked: false
 cardinality: 1
