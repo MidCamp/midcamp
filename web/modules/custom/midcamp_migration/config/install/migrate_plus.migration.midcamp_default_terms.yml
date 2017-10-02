@@ -1,0 +1,27 @@
+id: midcamp_default_terms
+label: Default Terms
+
+migration_group: midcamp_default
+
+source:
+  plugin: embedded_data
+  data_rows:
+    -
+      vocab: tags
+      name: Planet Drupal
+      uuid: 85a7b055-8ad6-49a5-984d-47064d30069b
+  ids:
+    uuid:
+      type: string
+
+process:
+  vid: vocab
+  name: name
+  uuid: uuid
+
+destination:
+  plugin: entity:taxonomy_term
+
+migration_dependencies:
+  required:
+    - vocabularies

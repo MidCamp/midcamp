@@ -89,6 +89,13 @@ content:
     weight: 121
     third_party_settings: {  }
     region: content
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+  scheduler_settings:
+    weight: 20
   sticky:
     type: boolean_checkbox
     settings:
@@ -113,4 +120,9 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }

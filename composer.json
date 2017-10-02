@@ -39,6 +39,7 @@
         "drupal/mailchimp": "^1.2",
         "drupal/masquerade": "^2.0@beta",
         "drupal/paragraphs": "^1.2",
+        "drupal/scheduler": "^1.0@RC",
         "drupal/viewsreference": "^1.0@alpha",
         "midcamp/hatter": "dev-master"
     },
@@ -60,7 +61,9 @@
     },
     "scripts": {
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-        "post-create-project-cmd": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+        "post-create-project-cmd": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+        "post-install-cmd": "MidCamp\\Hatter::installAssets",
+        "post-update-cmd": "MidCamp\\Hatter::installAssets"
     },
     "extra": {
         "patches": {
@@ -74,6 +77,9 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "styleguide": {
+            "theme-path": "web/themes/custom/hatter/"
         }
     }
 }

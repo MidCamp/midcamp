@@ -1,0 +1,9 @@
+name: midcamp_migration
+type: module
+description: MidCamp Migrations module to import content.
+core: 8.x
+package: MidCamp
+dependencies:
+  - migrate
+  - migrate_plus
+  - migrate_tools
