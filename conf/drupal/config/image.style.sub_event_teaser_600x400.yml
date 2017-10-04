@@ -1,0 +1,14 @@
+uuid: f7390eec-ad5b-4891-9d25-4130fbfa6865
+langcode: en
+status: true
+dependencies: {  }
+name: sub_event_teaser_600x400
+label: 'Sub-Event Teaser (600x400)'
+effects:
+  7d70260a-452f-4ad7-9fd5-a3f02670b395:
+    uuid: 7d70260a-452f-4ad7-9fd5-a3f02670b395
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 400

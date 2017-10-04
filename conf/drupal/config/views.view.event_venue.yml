@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.map
     - field.storage.node.field_address
     - node.type.venue
     - taxonomy.vocabulary.event
@@ -59,7 +60,10 @@ display:
       style:
         type: default
       row:
-        type: fields
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: map
       fields:
         title:
           id: title

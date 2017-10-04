@@ -12,8 +12,8 @@ _core:
   default_config_hash: rx9IrdDv7Ldc4kpalZAxdhIPZfYIeOMh1N-qKoQZwHo
 id: hatter_main_menu
 theme: hatter
-region: primary_menu
-weight: 0
+region: header
+weight: -8
 provider: null
 plugin: 'system_menu_block:main'
 settings:
