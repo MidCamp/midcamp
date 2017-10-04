@@ -18,6 +18,10 @@
             "type": "vcs",
             "url": "https://github.com/palantirnet/palantir-behat-extension.git"
         },
+        "workbench-tabs": {
+            "type": "vcs",
+            "url": "https://github.com/palantirnet/workbench_tabs.git"
+        },
         "drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
@@ -43,6 +47,7 @@
         "drupal/twig_extensions": "^1.0",
         "drupal/viewsreference": "^1.0@alpha",
         "midcamp/hatter": "dev-master",
+        "palantirnet/workbench_tabs": "^1.1",
         "twig/extensions": "^1.5"
     },
     "require-dev": {
