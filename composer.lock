@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ca29ba137b6f353792bd8aa626356f8d",
+    "content-hash": "12a14076b0407388b2014382a2b9a41e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1168,7 +1168,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/address"
             },
-            "time": "2017-09-14T14:03:30+00:00"
+            "time": "2017-09-14 14:03:30"
         },
         {
             "name": "drupal/admin_toolbar",
@@ -2181,7 +2181,7 @@
                 "source": "http://cgit.drupalcode.org/linkicon",
                 "issues": "https://www.drupal.org/project/issues/linkicon"
             },
-            "time": "2017-04-07T14:57:42+00:00"
+            "time": "2017-04-07 14:57:42"
         },
         {
             "name": "drupal/mailchimp",
@@ -3435,7 +3435,47 @@
                 "source": "https://github.com/MidCamp/Hatter/tree/master",
                 "issues": "https://github.com/MidCamp/Hatter/issues"
             },
-            "time": "2017-09-29T22:36:37+00:00"
+            "time": "2017-09-29 22:36:37"
+        },
+        {
+            "name": "palantirnet/workbench_tabs",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/palantirnet/workbench_tabs.git",
+                "reference": "a3e81da8c077101765c2760586aa2e8b366e6754"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/palantirnet/workbench_tabs/zipball/a3e81da8c077101765c2760586aa2e8b366e6754",
+                "reference": "a3e81da8c077101765c2760586aa2e8b366e6754",
+                "shasum": ""
+            },
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Bec White",
+                    "email": "white@palantir.net"
+                },
+                {
+                    "name": "Ashley Cyborski",
+                    "email": "cyborski@palantir.net"
+                },
+                {
+                    "name": "Patrick Weston",
+                    "email": "weston@palantir.net"
+                }
+            ],
+            "description": "Display Drupal's local task tabs and status messages in a consistent location on all pages.",
+            "homepage": "https://github.com/palantirnet/workbench_tabs",
+            "support": {
+                "source": "https://github.com/palantirnet/workbench_tabs/tree/1.1.0",
+                "issues": "https://github.com/palantirnet/workbench_tabs/issues"
+            },
+            "time": "2017-03-29T16:26:53+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -3519,7 +3559,7 @@
             ],
             "description": "GeoPHP is a open-source native PHP library for doing geometry operations. It is written entirely in PHP and can therefore run on shared hosts. It can read and write a wide variety of formats: WKT (including EWKT), WKB (including EWKB), GeoJSON, KML, GPX, GeoRSS). It works with all Simple-Feature geometries (Point, LineString, Polygon, GeometryCollection etc.) and can be used to get centroids, bounding-boxes, area, and a wide variety of other useful information.",
             "homepage": "https://github.com/phayes/geoPHP",
-            "time": "2016-03-04T05:42:29+00:00"
+            "time": "2016-03-04 05:42:29"
         },
         {
             "name": "pimple/pimple",
@@ -8203,7 +8243,7 @@
                 "source": "https://github.com/palantirnet/palantir-behat-extension/tree/drupal8-file-revisited",
                 "issues": "https://github.com/palantirnet/palantir-behat-extension/issues"
             },
-            "time": "2016-08-10T14:27:16+00:00"
+            "time": "2016-08-10 14:27:16"
         },
         {
             "name": "pdepend/pdepend",
