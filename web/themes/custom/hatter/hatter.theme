@@ -4,3 +4,7 @@
  * @file
  * Functions to support theming in the hatter theme.
  */
+
+function hatter_theme_suggestions_taxonomy_term_alter(&$suggestions, $vars, $hook) {
+  $suggestions[] = 'taxonomy_term__' . $vars['elements']['#view_mode'];
+}

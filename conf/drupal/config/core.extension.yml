@@ -50,6 +50,7 @@ module:
   token: 0
   toolbar: 0
   tour: 0
+  twig_extensions: 0
   update: 0
   user: 0
   views_ui: 0

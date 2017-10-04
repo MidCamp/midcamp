@@ -1,21 +1,23 @@
-uuid: 9880ca58-79f3-4f0c-a2f6-69671a5ea4d3
+uuid: bbf79380-0544-4117-aa3f-538cdfaff073
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.taxonomy_term.sub_event_teaser
     - field.field.taxonomy_term.event.field_date
     - field.field.taxonomy_term.event.field_date_has_time
     - field.field.taxonomy_term.event.field_image
     - field.field.taxonomy_term.event.field_social_media
+    - image.style.sub_event_teaser_600x400
     - taxonomy.vocabulary.event
   module:
     - datetime_range
     - image
     - text
-id: taxonomy_term.event.default
+id: taxonomy_term.event.sub_event_teaser
 targetEntityType: taxonomy_term
 bundle: event
-mode: default
+mode: sub_event_teaser
 content:
   description:
     label: hidden
@@ -25,30 +27,29 @@ content:
     third_party_settings: {  }
     region: content
   field_date:
-    weight: 3
-    label: above
+    type: daterange_plain
+    weight: 2
+    region: content
+    label: hidden
     settings:
       timezone_override: ''
-      format_type: long
       separator: '-'
     third_party_settings: {  }
-    type: daterange_default
-    region: content
   field_date_has_time:
-    weight: 4
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
     type: boolean
+    weight: 3
     region: content
+    label: hidden
+    settings:
+      format: boolean
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
   field_image:
     weight: 1
-    label: above
+    label: hidden
     settings:
-      image_style: ''
+      image_style: sub_event_teaser_600x400
       image_link: ''
     third_party_settings: {  }
     type: image

@@ -40,8 +40,10 @@
         "drupal/paragraphs": "^1.2",
         "drupal/pathauto": "^1.0",
         "drupal/scheduler": "^1.0@RC",
+        "drupal/twig_extensions": "^1.0",
         "drupal/viewsreference": "^1.0@alpha",
-        "midcamp/hatter": "dev-master"
+        "midcamp/hatter": "dev-master",
+        "twig/extensions": "^1.5"
     },
     "require-dev": {
         "behat/behat": "^3.1",
@@ -69,6 +71,9 @@
         "patches": {
             "drupal/core": {
                 "Fix 8.4-rc1 install issue (https://www.drupal.org/node/2907654)": "https://www.drupal.org/files/issues/2907654-3-display-mode-url-route-parameters.patch"
+            },
+            "drupal/twig_extensions" : {
+                "PHP intl extension mission" : "https://www.drupal.org/files/issues/2694185-14.patch"
             }
         },
         "installer-paths": {
