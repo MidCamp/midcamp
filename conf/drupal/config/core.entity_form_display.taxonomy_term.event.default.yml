@@ -4,10 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.taxonomy_term.event.field_date
+    - field.field.taxonomy_term.event.field_image
+    - field.field.taxonomy_term.event.field_date_has_time
     - field.field.taxonomy_term.event.field_social_media
+    - image.style.thumbnail
     - taxonomy.vocabulary.event
   module:
-    - datetime
+    - image
+    - datetime_range
     - link
     - path
     - text
@@ -18,7 +22,7 @@ mode: default
 content:
   description:
     type: text_textarea
-    weight: 2
+    weight: 3
     settings:
       placeholder: ''
       rows: 5
@@ -28,10 +32,25 @@ content:
     weight: 1
     settings: {  }
     third_party_settings: {  }
-    type: datetime_default
+    type: daterange_default
+    region: content
+  field_date_has_time:
+    weight: 2
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_image:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   field_social_media:
-    weight: 4
+    weight: 5
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -48,7 +67,7 @@ content:
     region: content
   path:
     type: path
-    weight: 3
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     region: content

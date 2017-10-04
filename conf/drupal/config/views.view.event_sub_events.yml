@@ -3,10 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.taxonomy_term.sub_event_teaser
     - field.storage.taxonomy_term.field_date
     - taxonomy.vocabulary.event
   module:
-    - datetime
+    - datetime_range
     - taxonomy
     - user
 id: event_sub_events
@@ -56,8 +57,15 @@ display:
           offset: 0
       style:
         type: default
+        options:
+          row_class: ''
+          default_row_class: false
+          uses_fields: false
       row:
-        type: fields
+        type: 'entity:taxonomy_term'
+        options:
+          relationship: none
+          view_mode: sub_event_teaser
       fields:
         name:
           id: name
@@ -156,10 +164,11 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: datetime_default
+          type: daterange_default
           settings:
             timezone_override: ''
             format_type: html_yearless_date
+            separator: '-'
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -195,7 +204,7 @@ display:
             label: ''
           granularity: second
           plugin_id: datetime
-      title: 'Event Sub-events'
+      title: 'Events at a Glance'
       header: {  }
       footer: {  }
       empty: {  }

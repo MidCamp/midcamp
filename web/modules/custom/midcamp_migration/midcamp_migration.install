@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ * Installation, update and uninstall functions for the MidCamp Migration module.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function midcamp_migration_uninstall() {
+  \Drupal::configFactory()->getEditable('migrate_plus.migration.midcamp_migration')->delete();
+  \Drupal::configFactory()->getEditable('migrate_plus.migration.midcamp_default_terms')->delete();
+}

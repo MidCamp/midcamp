@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.taxonomy_term.event.field_date
+    - field.field.taxonomy_term.event.field_date_has_time
+    - field.field.taxonomy_term.event.field_image
     - field.field.taxonomy_term.event.field_social_media
     - taxonomy.vocabulary.event
   module:
-    - datetime
-    - link
+    - datetime_range
+    - image
     - text
 id: taxonomy_term.event.default
 targetEntityType: taxonomy_term
@@ -23,24 +25,33 @@ content:
     third_party_settings: {  }
     region: content
   field_date:
+    weight: 3
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: long
+      separator: '-'
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_date_has_time:
+    weight: 4
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_image:
     weight: 1
     label: above
     settings:
-      format_type: medium
-      timezone_override: ''
+      image_style: ''
+      image_link: ''
     third_party_settings: {  }
-    type: datetime_default
+    type: image
     region: content
-  field_social_media:
-    weight: 2
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
-hidden: {  }
+hidden:
+  field_social_media: true
