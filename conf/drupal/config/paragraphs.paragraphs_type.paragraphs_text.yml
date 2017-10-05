@@ -4,3 +4,6 @@ status: true
 dependencies: {  }
 id: paragraphs_text
 label: Text
+icon_uuid: null
+description: null
+behavior_plugins: {  }

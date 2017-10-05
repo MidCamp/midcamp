@@ -1,0 +1,18 @@
+{% set startDate = term.field_date.start_date %}
+{% set endDate = term.field_date.end_date %}
+
+{% if content.field_date|render|trim is not empty %}
+  {% if term.field_date_has_time.value == '1' %}
+    <div class="event__date">{{ term.field_date.value|date('M. jS, Y') }}
+      <div class="event__time">{{ term.field_date.start_date|date('ga') }} &mdash; {{ term.field_date.end_date|date('ga') }}</div>
+    </div>
+  {% else %}
+    {% if endDate|date('M j Y') > startDate|date('M j Y') %}
+      <div class="event__date">{{ term.field_date.start_date|date('M. jS') }} &mdash; {{ term.field_date.end_date|date('jS, Y') }}</div>
+    {% else %}
+      <div class="event__date">{{ term.field_date.value|date('M. jS, Y') }}</div>
+    {% endif %}
+  {% endif %}
+{% endif %}
+
+{{ content|without('field_date', 'field_date_has_time') }}

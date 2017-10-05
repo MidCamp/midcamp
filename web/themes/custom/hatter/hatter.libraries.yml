@@ -4,8 +4,15 @@ global-css:
       css/print.css:
         media: print
       css/styles.css: {}
-global-js:
-  dependencies:
-    - core/jquery
+fonts:
+  css:
+    theme:
+      '//fonts.googleapis.com/css?family=Averia+Serif+Libre:400,400i,700,700i|Poppins:400,700': { type: external, minified: true }
+mapbox:
+  css:
+    theme:
+      https://api.tiles.mapbox.com/mapbox-gl-js/v0.26.0/mapbox-gl.css: { type: external, minified: false }
   js:
-    js/script.js: {}
+    https://api.tiles.mapbox.com/mapbox-gl-js/v0.26.0/mapbox-gl.js: { type: external, minified: false }
+    js/map.js: {}
+

@@ -1,0 +1,26 @@
+uuid: a982afee-0cc4-42e1-b2e7-eba94d150dd6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content
+label: Content
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:title]'
+selection_criteria:
+  6c35ddc6-57db-42a0-a6f0-f69ab91b8771:
+    id: node_type
+    bundles:
+      article: article
+      job: job
+      sponsor: sponsor
+      topic: topic
+      venue: venue
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 6c35ddc6-57db-42a0-a6f0-f69ab91b8771
+selection_logic: and
+weight: -5
+relationships: {  }

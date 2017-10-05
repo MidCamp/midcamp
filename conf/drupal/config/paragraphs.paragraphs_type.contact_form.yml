@@ -4,3 +4,6 @@ status: true
 dependencies: {  }
 id: contact_form
 label: 'Contact Form'
+icon_uuid: null
+description: null
+behavior_plugins: {  }

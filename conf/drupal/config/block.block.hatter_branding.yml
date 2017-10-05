@@ -10,8 +10,8 @@ _core:
   default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
 id: hatter_branding
 theme: hatter
-region: header
-weight: 0
+region: branding
+weight: -8
 provider: null
 plugin: system_branding_block
 settings:
