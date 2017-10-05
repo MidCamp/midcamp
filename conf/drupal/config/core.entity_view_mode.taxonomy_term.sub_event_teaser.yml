@@ -1,0 +1,10 @@
+uuid: 18036eae-97c2-4217-87bc-b4ebcf4e4058
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.sub_event_teaser
+label: 'Sub-Event Teaser'
+targetEntityType: taxonomy_term
+cache: true

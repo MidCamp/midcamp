@@ -1,0 +1,29 @@
+uuid: aed3b38a-1447-48d8-b999-432a9c180f2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.map
+    - field.field.node.venue.field_address
+    - field.field.node.venue.field_venue_events
+    - field.field.node.venue.field_venue_paragraphs
+    - node.type.venue
+  module:
+    - address
+    - user
+id: node.venue.map
+targetEntityType: node
+bundle: venue
+mode: map
+content:
+  field_address:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: address_plain
+    region: content
+hidden:
+  field_venue_events: true
+  field_venue_paragraphs: true
+  links: true

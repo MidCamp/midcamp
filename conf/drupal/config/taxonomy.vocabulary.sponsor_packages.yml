@@ -4,6 +4,6 @@ status: true
 dependencies: {  }
 name: 'Sponsor Packages'
 vid: sponsor_packages
-description: 'Available 2017 MidCamp Sponsorship packages'
+description: 'Available 2018 MidCamp Sponsorship packages'
 hierarchy: 0
 weight: 0

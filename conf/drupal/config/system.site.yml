@@ -1,11 +1,11 @@
 uuid: 4e8b0d7f-53e9-45f1-9a7c-7188d45194bd
 name: 'MidCamp 2018'
 mail: info@midcamp.org
-slogan: 'March 8–11, 2018'
+slogan: 'March 8th - 11th, 2018'
 page:
   403: ''
   404: ''
-  front: /taxonomy/term/1
+  front: /taxonomy/term/2
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

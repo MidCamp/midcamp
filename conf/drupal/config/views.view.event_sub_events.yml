@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.taxonomy_term.sub_event_teaser
     - field.storage.taxonomy_term.field_date
     - taxonomy.vocabulary.event
   module:
@@ -56,8 +57,15 @@ display:
           offset: 0
       style:
         type: default
+        options:
+          row_class: ''
+          default_row_class: false
+          uses_fields: false
       row:
-        type: fields
+        type: 'entity:taxonomy_term'
+        options:
+          relationship: none
+          view_mode: sub_event_teaser
       fields:
         name:
           id: name
@@ -196,7 +204,7 @@ display:
             label: ''
           granularity: second
           plugin_id: datetime
-      title: 'Event Sub-events'
+      title: 'Events at a Glance'
       header: {  }
       footer: {  }
       empty: {  }
