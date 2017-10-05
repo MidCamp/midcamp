@@ -6,15 +6,22 @@ _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated
 label: 'Authenticated user'
-weight: 1
+weight: -9
 is_admin: false
 permissions:
-  - 'access content'
-  - 'use text format basic_html'
   - 'access comments'
-  - 'post comments'
-  - 'skip comment approval'
-  - 'access site-wide contact form'
+  - 'access content'
   - 'access shortcuts'
+  - 'access user profiles'
+  - 'change own username'
+  - 'create topic content'
+  - 'edit own topic content'
+  - 'post comments'
   - 'search content'
+  - 'use editorial transition archived_draft'
+  - 'use editorial transition create_new_draft'
+  - 'use session_review transition create_new_draft'
+  - 'use session_review transition submit_for_review'
+  - 'use text format basic_html'
   - 'use text format mailchimp_campaign'
+  - 'view own unpublished content'

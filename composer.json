@@ -41,6 +41,7 @@
         "drupal/geolocation": "^1.8",
         "drupal/linkicon": "^1.4",
         "drupal/mailchimp": "^1.2",
+        "drupal/masquerade": "^2.0@beta",
         "drupal/paragraphs": "^1.2",
         "drupal/pathauto": "^1.0",
         "drupal/scheduler": "^1.0@RC",
