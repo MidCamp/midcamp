@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.article.field_article_paragraphs
     - field.field.node.article.field_article_summary
     - field.field.node.article.field_event
+    - field.field.node.article.field_planet
     - field.field.node.article.field_tags
     - node.type.article
   module:
@@ -46,9 +47,10 @@ content:
     region: content
   links:
     weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   field_article_news: true
   field_article_summary: true
+  field_planet: true
