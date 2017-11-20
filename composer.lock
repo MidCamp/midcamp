@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e6ab00bfbfb20cb5c8e382f243a2e071",
+    "content-hash": "cdee12ce94ea6ffd9cec9dbee73970b2",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1514,7 +1514,7 @@
             "type": "drupal-core",
             "extra": {
                 "patches_applied": {
-                    "500 errors on dblog": "https://www.drupal.org/files/issues/trans_does_not-2334319-61.patch"
+                    "RSS view with fields give wrong URL from path field (https://www.drupal.org/node/2673980)": "https://www.drupal.org/files/issues/rss_view_with_fields-2673980-27.patch"
                 }
             },
             "autoload": {
@@ -2636,6 +2636,9 @@
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "Error after upgrading to Drupal 8.1 (https://www.drupal.org/project/twig_extensions/issues/2726531)": "https://www.drupal.org/files/issues/error_after_upgrading-2726531-9.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
