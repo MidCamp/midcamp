@@ -1,0 +1,23 @@
+uuid: 9657d9f6-43bd-4ec8-aa2c-039d7acf6d00
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: sponsor_packages
+label: 'Sponsor Packages'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/sponsor/package/[term:name]'
+selection_criteria:
+  e2625ac6-345e-491d-a480-1c0c4d09722a:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      sponsor_packages: sponsor_packages
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: e2625ac6-345e-491d-a480-1c0c4d09722a
+selection_logic: and
+weight: -5
+relationships: {  }
