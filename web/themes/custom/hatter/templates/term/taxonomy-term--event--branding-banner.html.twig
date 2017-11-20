@@ -18,9 +18,9 @@
             <h2 class="event__subtitle">{{ term.field_date.value|date('M. jS, Y') }}</h2>
           {% endif %}
           {% if logged_in %}
-            <a href="{{ content.field_banner_cta_authenticated.url }}" class="event__button button--primary">{{ contnet.field_banner_cta_authenticated.title }}</a>
+            <a href="{{ term.field_banner_cta_authenticated.url }}" class="event__button button--primary">{{ term.field_banner_cta_authenticated.title }}</a>
           {% else %}
-            <a href="{{ content.field_banner_cta_anonymous.url }}" class="event__button button--primary">{{ contnet.field_banner_cta_anonymous.title }}</a>
+            <a href="{{ term.field_banner_cta_anonymous.url }}" class="event__button button--primary">{{ term.field_banner_cta_anonymous.title }}</a>
           {% endif %}
         </div>
       </div>
