@@ -9,6 +9,7 @@ Feature: Job Content Type
     Then the form at "node/add/job" has the expected fields:
       | field                 | tag       | type |
       | title                 | textfield | text |
+      | field-sponsor-company | textfield | text |
       | field-job-type        | select    |      |
       | field-job-description | textarea  |      |
       | field-job-skill-level | select    |      |
