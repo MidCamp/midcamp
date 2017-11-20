@@ -17,7 +17,11 @@
           {% else %}
             <h2 class="event__subtitle">{{ term.field_date.value|date('M. jS, Y') }}</h2>
           {% endif %}
-          {# <a href="#" class="event__button button--primary">Register</a> #}
+          {% if logged_in %}
+            <a href="{{ content.field_banner_cta_authenticated.url }}" class="event__button button--primary">{{ contnet.field_banner_cta_authenticated.title }}</a>
+          {% else %}
+            <a href="{{ content.field_banner_cta_anonymous.url }}" class="event__button button--primary">{{ contnet.field_banner_cta_anonymous.title }}</a>
+          {% endif %}
         </div>
       </div>
     </div>
