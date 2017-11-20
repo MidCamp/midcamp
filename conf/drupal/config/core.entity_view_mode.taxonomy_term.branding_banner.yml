@@ -1,0 +1,10 @@
+uuid: 8f6c45f2-833f-412b-9281-b0113bae124e
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.branding_banner
+label: 'Branding Banner'
+targetEntityType: taxonomy_term
+cache: true

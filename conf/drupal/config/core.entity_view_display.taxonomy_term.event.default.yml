@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.event.field_banner_cta_anonymous
+    - field.field.taxonomy_term.event.field_banner_cta_authenticated
     - field.field.taxonomy_term.event.field_date
     - field.field.taxonomy_term.event.field_date_has_time
     - field.field.taxonomy_term.event.field_image
@@ -11,6 +13,7 @@ dependencies:
   module:
     - datetime_range
     - image
+    - link
     - text
 id: taxonomy_term.event.default
 targetEntityType: taxonomy_term
@@ -23,6 +26,30 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_banner_cta_anonymous:
+    weight: 5
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_banner_cta_authenticated:
+    weight: 6
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   field_date:
     weight: 3

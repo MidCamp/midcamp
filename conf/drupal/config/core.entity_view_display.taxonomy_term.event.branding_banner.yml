@@ -1,92 +1,85 @@
-uuid: 9634c49b-108f-4c61-b7c6-208e076ebf16
+uuid: 5a104020-5f36-410f-8fdd-4c752c5806d4
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.taxonomy_term.branding_banner
     - field.field.taxonomy_term.event.field_banner_cta_anonymous
     - field.field.taxonomy_term.event.field_banner_cta_authenticated
     - field.field.taxonomy_term.event.field_date
     - field.field.taxonomy_term.event.field_date_has_time
     - field.field.taxonomy_term.event.field_image
     - field.field.taxonomy_term.event.field_social_media
-    - image.style.thumbnail
     - taxonomy.vocabulary.event
   module:
     - datetime_range
     - image
     - link
-    - path
     - text
-id: taxonomy_term.event.default
+id: taxonomy_term.event.branding_banner
 targetEntityType: taxonomy_term
 bundle: event
-mode: default
+mode: branding_banner
 content:
   description:
-    type: text_textarea
-    weight: 3
-    settings:
-      placeholder: ''
-      rows: 5
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
     third_party_settings: {  }
     region: content
   field_banner_cta_anonymous:
-    weight: 6
+    weight: 5
+    label: above
     settings:
-      placeholder_url: ''
-      placeholder_title: ''
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {  }
-    type: link_default
+    type: link
     region: content
   field_banner_cta_authenticated:
-    weight: 7
+    weight: 6
+    label: above
     settings:
-      placeholder_url: ''
-      placeholder_title: ''
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {  }
-    type: link_default
+    type: link
     region: content
   field_date:
-    weight: 1
-    settings: {  }
+    weight: 3
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: long
+      separator: '-'
     third_party_settings: {  }
     type: daterange_default
     region: content
   field_date_has_time:
-    weight: 2
+    weight: 4
+    label: above
     settings:
-      display_label: true
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
     third_party_settings: {  }
-    type: boolean_checkbox
+    type: boolean
     region: content
   field_image:
-    weight: 5
+    weight: 1
+    label: above
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      image_style: ''
+      image_link: ''
     third_party_settings: {  }
-    type: image_image
+    type: image
     region: content
-  field_social_media:
-    weight: 5
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-    region: content
-  name:
-    type: string_textfield
-    weight: 0
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
-  path:
-    type: path
-    weight: 4
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-hidden: {  }
+hidden:
+  field_social_media: true
