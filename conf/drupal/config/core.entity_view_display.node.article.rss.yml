@@ -7,9 +7,12 @@ dependencies:
     - field.field.node.article.field_article_news
     - field.field.node.article.field_article_paragraphs
     - field.field.node.article.field_article_summary
+    - field.field.node.article.field_event
+    - field.field.node.article.field_planet
     - field.field.node.article.field_tags
     - node.type.article
   module:
+    - entity_reference_revisions
     - user
 _core:
   default_config_hash: Q90X1FmFdOkTx8udckWPoAgleOstOerbgDnNpoP6PO4
@@ -18,12 +21,23 @@ targetEntityType: node
 bundle: article
 mode: rss
 content:
-  links:
-    weight: 100
+  field_article_paragraphs:
+    type: entity_reference_revisions_entity_view
+    weight: 0
     region: content
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   field_article_news: true
-  field_article_paragraphs: true
   field_article_summary: true
   field_event: true
+  field_planet: true
   field_tags: true
