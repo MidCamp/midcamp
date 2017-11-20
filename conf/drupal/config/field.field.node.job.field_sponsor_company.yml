@@ -1,0 +1,28 @@
+uuid: a4814adf-b684-482b-9e63-c8d91be5a50c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sponsor_company
+    - node.type.job
+    - node.type.sponsor
+id: node.job.field_sponsor_company
+field_name: field_sponsor_company
+entity_type: node
+bundle: job
+label: Company
+description: 'Company that is posting the Job Listing. Job Listings may only be posted for companies that are sponsoring the event.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      sponsor: sponsor
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
