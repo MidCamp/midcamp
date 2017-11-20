@@ -12,7 +12,7 @@ field_name: field_image
 entity_type: taxonomy_term
 bundle: event
 label: Image
-description: ''
+description: 'For a parent event this will appear as the background image in the branding banner, for sub-events this will appear as the teaser image. '
 required: false
 translatable: false
 default_value: {  }

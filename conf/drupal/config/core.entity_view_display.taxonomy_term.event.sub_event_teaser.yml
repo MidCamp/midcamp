@@ -55,4 +55,6 @@ content:
     type: image
     region: content
 hidden:
+  field_banner_cta_anonymous: true
+  field_banner_cta_authenticated: true
   field_social_media: true
