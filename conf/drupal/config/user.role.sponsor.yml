@@ -8,7 +8,11 @@ weight: 3
 is_admin: null
 permissions:
   - 'create job content'
+  - 'create sponsor content'
   - 'delete own job content'
   - 'edit own job content'
+  - 'edit own sponsor content'
   - 'revert job revisions'
+  - 'revert sponsor revisions'
   - 'view job revisions'
+  - 'view sponsor revisions'
