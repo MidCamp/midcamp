@@ -1,0 +1,28 @@
+uuid: b00a5af5-de8c-43f5-b3d7-de8ab0baf05d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_people
+    - node.type.training
+id: node.training.field_people
+field_name: field_people
+entity_type: node
+bundle: training
+label: Trainers
+description: 'The presenter(s), organizer(s), trainer(s), etc.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference
