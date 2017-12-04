@@ -1,0 +1,232 @@
+/**
+ * @file
+ * Define the styles for the site header Component
+ */
+
+// Header Styles
+.site-header {
+  position: relative;
+  background: url("../imgs/dots--blue.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: $blue-dark;
+  border-top: 4px solid $purple;
+  box-shadow: 0px 2px 3px rgba($black, .3);
+}
+
+.site-header__nav {
+  .container {
+    padding: 0;
+
+    @include breakpoint($bp1) {
+      padding: 0 rhythm(1);
+    }
+
+    @include breakpoint($bp2) {
+      padding: 0;
+    }
+  }
+}
+
+.primary-nav__trigger {
+  background: none;
+  border-radius: 0;
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: rhythm(.5);
+
+  svg {
+    display: inline;
+    height: 30px;
+    width: 30px;
+    fill: $white;
+    position: relative;
+    top: 8px;
+    margin-right: 15px;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    background: none;
+    background-color: $purple;
+  }
+
+  @include breakpoint($bp1) {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.primary-nav__list {
+  @extend %list--simple;
+  display: none;
+  visibility: hidden;
+
+  &.is-active {
+    display: block;
+    visibility: visible;
+  }
+
+  @include breakpoint($bp1) {
+    display: block;
+    visibility: visible;
+  }
+}
+
+.primary-nav__item {
+  @include adjust-font-size-to($sm-heading, 1.2);
+  display: block;
+  text-align: left;
+  border-bottom: 1px solid $blue;
+
+  > a:link,
+  > a:visited {
+    display: block;
+    margin: 0;
+    padding: rhythm(.5) 0 rhythm(.5) rhythm(1);
+    color: $white;
+    font-family: $serif;
+  }
+
+  > a:active,
+  > a:hover,
+  > a:focus {
+    text-decoration: underline;
+    color: $yellow;
+  }
+
+  &:first-child {
+    border-top: 1px solid $blue;
+  }
+
+  &.has-children > a {
+    display: inline-block;
+    width: 80%;
+  }
+
+  @include breakpoint($bp1) {
+    position: relative;
+    width: 20%;
+    float: left;
+    border-bottom: 0;
+    border-right: 1px solid $blue;
+
+    &:first-child {
+      border-top: 0;
+      border-left: 1px solid $blue;
+    }
+
+    > a:link,
+    > a:visited {
+      padding: rhythm(.5) 10px;
+    }
+
+    > a:active,
+    > a:hover,
+    > a:focus {
+      background-color: $purple;
+      color: $white;
+      text-decoration: none;
+    }
+
+    &.has-children > a {
+      display: inline-block;
+      width: 75%;
+    }
+  }
+}
+
+.primary-nav__sublist--trigger {
+  max-width: 20%;
+  padding: 15px;
+  float: right;
+  background: none;
+  border-radius: 0;
+
+  svg {
+    fill: $white;
+    height: 12px;
+    width: 12px;
+    margin: 0 rhythm(0.25);
+    transition: transform .25s ease-in;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    background: none;
+    background-color: darken($blue-dark, 10%);
+
+    svg {
+      fill: $white;
+      transform: rotate(90deg);
+      transition: transform .25s ease-in;
+    }
+  }
+
+  .primary-nav__item.is-active & {
+    background-color: darken($blue-dark, 10%);
+
+    svg {
+      transform: rotate(90deg);
+    }
+  }
+
+  @include breakpoint($bp1) {
+    max-width: 25%;
+    padding: 15px 10px;
+
+    svg {
+      margin: 0;
+    }
+  }
+
+  @include breakpoint($bp2) {
+    width: 25%;
+    padding: 18px 10px 19px;
+  }
+}
+
+.primary-nav__sublist {
+  @extend %list--simple;
+  border-top: 1px dotted $blue;
+  background-color: darken($blue-dark, 10%);
+  display: none;
+  visibility: hidden;
+
+  .primary-nav__item.is-active & {
+    display: block;
+    visibility: visible;
+  }
+
+  @include breakpoint($bp1) {
+    .primary-nav__item.is-active & {
+      display: block;
+      visibility: visible;
+      position: absolute;
+      top: 100%;
+      width: 200px;
+    }
+  }
+
+  @include breakpoint($bp2) {
+    .primary-nav__item.is-active & {
+      width: 125%;
+    }
+  }
+}
+
+.primary-nav__sublist-item {
+  @include adjust-font-size-to($label, 1);
+
+  a:link,
+  a:visited {
+    display: block;
+    margin: 0;
+    padding: rhythm(.25) 0 rhythm(.25) rhythm(1.25);
+    color: $white;
+  }
+}

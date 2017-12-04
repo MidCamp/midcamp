@@ -1,0 +1,38 @@
+/**
+ * @file
+ * Define the styles for the social-media Component
+ */
+
+.social--footer {
+	@extend %list--simple;
+	margin-top: .5em;
+}
+
+.social__item--footer {
+	float: left;
+
+	svg {
+		height: 1.5em;
+		width: 1.5em;
+		fill: $white;
+		transition: transform .5s ease;
+	}
+
+	span {
+		@extend %element-invisible;
+	}
+
+	a {
+		padding: 15px 15px 15px 0;
+	}
+
+	a:active,
+	a:hover,
+	a:focus {
+
+		svg {
+			transform: scale(1.3);
+			fill: $magenta;
+		}
+	}
+}

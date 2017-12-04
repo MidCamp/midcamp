@@ -1,0 +1,7 @@
+# npm removes this file from butler on install if we name it .gitignore, but
+# it's a necessary part of the Spress template!
+
+/vendor/
+/build/
+/node_modules/
+/npm-debug.log

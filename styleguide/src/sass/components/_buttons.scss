@@ -1,0 +1,241 @@
+/**
+ * @file
+ * Define the styles for the button Component
+ */
+
+.button--container {
+  margin: rhythm(1) 0;
+}
+
+.button--center-container {
+  text-align: center;
+
+  .cta-link,
+  .button {
+    padding: 0 10px;
+  }
+}
+
+%button,
+.button,
+button,
+input[type="submit"],
+input[type="button"] {
+  @extend %allcaps;
+  display: inline-block;
+  border-radius: 30px;
+  color: $button-text;
+  padding: .25em 2em; 
+  font-weight: 700;
+  font-family: $serif;
+  outline: none;
+  border: 0;
+  text-transform: uppercase;
+  background: url("../imgs/crosshatch--purple.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: $button-background;
+  /* stylelint-disable */
+  -webkit-appearance: none;
+  /* stylelint-enable */
+
+  &:link,
+  &:visited {
+    background-color: $button-background;
+    color: $button-text;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    background: url("../imgs/crosshatch--blue.svg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: $button-hover-background;
+    color: $button-hover-text;
+    text-decoration: none;
+  }
+}
+
+input[type="reset"] {
+  @extend %button--secondary-outline;
+}
+
+.button--small {
+  @include adjust-font-size-to($label, .8);
+}
+
+%button--outline,
+.button--outline,
+.button--outline[type="submit"],
+.button--outline[type="button"] {
+  @extend %button;
+  background: url("../imgs/crosshatch--purple-light.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  border: 1px solid $button-background;
+  color: $button-background;
+
+  &:link,
+  &:visited {
+    background-color: transparent;
+    border: 1px solid $button-background;
+    color: $button-background;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    background: url("../imgs/crosshatch--blue-light.svg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    border: 1px solid $button-hover-background;
+    color: $button-hover-background;
+  }
+}
+
+%button--primary,
+.button--primary,
+.button--primary[type="submit"],
+.button--primary[type="button"] {
+  @extend %button;
+  background: url("../imgs/crosshatch--blue.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: $blue-dark;
+
+
+  &:link,
+  &:visited {
+    background-color: $blue-dark;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    background: url("../imgs/crosshatch--purple.svg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: $purple;
+  }
+}
+
+%button--primary-outline,
+.button--primary-outline,
+.button--primary-outline[type="submit"],
+.button--primary-outline[type="button"] {
+  @extend %button;
+  background: url("../imgs/crosshatch--blue-light.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  border: 1px solid $blue-dark;
+  color: $blue-dark;
+
+  &:link,
+  &:visited {
+    background-color: transparent;
+    border: 1px solid $blue-dark;
+    color: $blue-dark;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    background: url("../imgs/crosshatch--purple-light.svg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    border: 1px solid $purple;
+    color: $purple;
+  }
+}
+
+%button--secondary,
+.button--secondary,
+.button--secondary[type="submit"],
+.button--secondary[type="button"] {
+  @extend %button;
+  background: url("../imgs/crosshatch--gray.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: $gray-medium;
+  color: $white;
+
+  &:link,
+  &:visited {
+    background-color: $gray-medium;
+    color: $white;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    background: url("../imgs/crosshatch--purple.svg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: $purple;
+  }
+}
+
+%button--secondary-outline,
+.button--secondary-outline,
+.button--secondary-outline[type="submit"],
+.button--secondary-outline[type="button"] {
+  @extend %button;
+  background: url("../imgs/crosshatch--gray-light.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  border: 1px solid $gray-medium;
+  color: $gray-medium;
+
+  &:link,
+  &:visited {
+    background-color: transparent;
+    border: 1px solid $gray-medium;
+    color: $gray-medium;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    background: url("../imgs/crosshatch--purple-light.svg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    border: 1px solid $purple;
+    color: $purple;
+  }
+}
+
+%button--tertiary,
+.button--tertiary,
+.button--tertiary[type="submit"],
+.button--tertiary[type="button"] {
+  @extend %button;
+  background: url("../imgs/crosshatch--yellow.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: $yellow;
+  color: $blue-dark;
+
+
+  &:link,
+  &:visited {
+    background-color: $yellow;
+    color: $blue-dark;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    background: url("../imgs/crosshatch--purple.svg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: $purple;
+    color: $white;
+  }
+}
