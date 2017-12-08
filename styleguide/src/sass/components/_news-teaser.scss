@@ -1,0 +1,13 @@
+/**
+ * @file
+ * Define the styles for the News Teaser component
+ */
+
+.news-teaser {
+  margin-bottom: 1.5em;
+}
+
+.news-teaser__date {
+  @include adjust-font-size-to($label, .8);
+  text-transform: uppercase;
+}

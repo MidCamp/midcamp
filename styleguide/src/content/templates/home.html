@@ -1,0 +1,148 @@
+---
+layout: template
+title: Homepage
+section: template
+---
+
+<section class="event-banner__wrapper">
+  <div class="event-banner">
+    <div class="container">
+      <div class="l-1up">
+        <div class="event-banner__block">
+          <img class="event__druplicon" src="{{site.url}}/assets/imgs/druplicon-2018.png" alt="Druplicon wearing a Hatter's Hat">
+          <h1 class="event__title">Midcamp 2018</h1>
+          <h2 class="event__subtitle">March 8th — 11th, 2018</h2>
+          <a href="#" class="event__button button--primary">Register</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include 'navigation.html' %}
+
+<section class="banner">
+  <div class="container">
+    <h2 class="banner-title">Featured Speakers</h2>
+
+    <div class="l-3up">
+      <div class="speaker-item">
+        <div class="speaker-image" style="background-image: url({{site.url}}/assets/imgs/speaker-sprite.png)"><span class="element-invisible">Ashley Cyborski</span></div>
+        <div class="speaker-item__block">
+          <h3 class="speaker-item__title"><a href="#">Ashley Cyborski</a></h3>
+          <p class="speaker-item__subtitle">Senior Designer @ <a href="#">Palantir.net</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-3up">
+      <div class="speaker-item">
+        <div class="speaker-image" style="background-image: url({{site.url}}/assets/imgs/speaker-sprite.png)"><span class="element-invisible">Jim Bean</span></div>
+        <div class="speaker-item__block">
+          <h3 class="speaker-item__title"><a href="#">Jim Bean</a></h3>
+          <p class="speaker-item__subtitle">Brewer @ <a href="#">Some Alcohol Company</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-3up">
+      <div class="speaker-item">
+        <div class="speaker-image" style="background-image: url({{site.url}}/assets/imgs/speaker-sprite.png)"><span class="element-invisible">Ashley Cyborski</span></div>
+        <div class="speaker-item__block">
+          <h3 class="speaker-item__title"><a href="#">Ashley Cyborski</a></h3>
+          <p class="speaker-item__subtitle">Senior Designer @ <a href="#">Palantir.net</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="l-1up button--center-container">
+      <a href="#" class="cta-link">See all Speakers  <span class="cta-arrow">{# include '../content/assets/svg/arrow.svg' #}</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="map-banner">
+  <div class="container">
+    <div class="map-overlay">
+      <span class="map__label">Location</span>
+      <h2 class="map__title">DePaul Lincoln Park Campus</h2>
+      <p class="map__address"><a href="#">2320 N Kenmore Ave, <br/>Chicago, IL 60614</a></p>
+      <a href="#" class="cta-link--yellow">Get Directions  <span class="cta-arrow">{# include 'includes/svg/arrow.svg' #}</span></a> 
+      <br/>
+      <a href="#" class="cta-link--yellow">Book your Hotel  <span class="cta-arrow">{# include 'includes/svg/arrow.svg' #}</span></a>
+    </div>
+  </div>
+</section>
+<section class="banner">
+  <div class="container">
+    <h2 class="banner-title">Thank you to our Sponsors</h2>
+    <div class="l-3up">
+      <a class="sponsor-item" href="#">
+        <img src="{{site.url}}/assets/imgs/JetBrains_newest_3.png" alt="HS2">
+      </a>
+    </div>
+    <div class="l-3up">
+      <a class="sponsor-item" href="#">
+        <img src="{{site.url}}/assets/imgs/amazeeio-logo.jpg" alt="amazee.io">
+      </a>
+    </div>
+    <div class="l-3up">
+      <a class="sponsor-item" href="#">
+        <img src="{{site.url}}/assets/imgs/vertmanifest_logoweb.png" alt="Manifest">
+      </a>
+    </div>
+    <div class="l-1up button--center-container">
+      <a href="#" class="cta-link">Become a Sponsor<span class="cta-arrow">{# include 'includes/svg/arrow.svg' #}</span></a>
+
+      <a href="#" class="cta-link">See all Sponsors<span class="cta-arrow">{# include 'includes/svg/arrow.svg' #}</span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="l-2up">
+      <h3 class="footer-title"><a href="#">Midcamp</a></h3>
+      <div class="footer-description">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <p>For more information email us at <a href="mailto:info@midcamp.org">info@midcamp.org</a></p>
+      </div>
+      <ul class="social--footer">
+        <li class="social__item--footer"><a href="#">{% include 'svg/social-twitter.svg' %} <span>Twitter</span></a></li>
+        <li class="social__item--footer"><a href="#">{% include 'svg/social-facebook.svg' %} <span>Facebook</span></a></li>
+        <li class="social__item--footer"><a href="#">{% include 'svg/social-youtube.svg' %} <span>YouTube</span></a></li>
+      </ul>
+    </div>
+    <div class="l-2up">
+      <div class="l-1up">
+        <nav class="footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__list-item"><a href="#">About</a></li>
+            <li class="footer-nav__list-item"><a href="#">Events</a></li>
+            <li class="footer-nav__list-item"><a href="#">Blog</a></li>
+            <li class="footer-nav__list-item"><a href="#">Volunteer</a></li>
+            <li class="footer-nav__list-item"><a href="#">Code of Conduct</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-sponsors">
+        <div class="footer-sponsor">
+          <a class="sponsor-item" href="#">
+            <img src="{{site.url}}/assets/imgs/vertmanifest_logoweb.png" alt="Manifest">
+          </a>
+        </div>
+        <div class="footer-sponsor">
+          <a class="sponsor-item" href="#">
+            <img src="{{site.url}}/assets/imgs/amazeeio-logo.jpg" alt="Amazee.io">
+          </a>  
+        </div>
+        <div class="footer-sponsor">
+          <a class="sponsor-item" href="#">
+            <img src="{{site.url}}/assets/imgs/palantirnet-logo.png" alt="Palantir.net">
+          </a>
+        </div>
+      
+      </div>
+    </div>  
+  </div>
+</footer>

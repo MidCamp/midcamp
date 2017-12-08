@@ -1,0 +1,89 @@
+/**
+ * @file
+ * Define the styles for the site footer Component
+ */
+
+.site-footer {
+  background: url("../imgs/dots--blue.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: $blue-dark;
+  box-shadow: inset 0px 20px 40px rgba($black, .3);
+  border-top: 4px solid $magenta;
+  padding: 1em 0;
+
+	a:link,
+	a:visited {
+		color: $white;
+		text-decoration: underline;
+	}
+
+	a:active,
+	a:hover,
+	a:focus {
+		color: $magenta;
+	}
+}
+
+.footer-description {
+	@include adjust-font-size-to($label, .8);
+	color: $white;
+}
+
+.footer-nav {
+	margin-top: 1.5em;
+}
+
+.footer-nav__list {
+	@extend %list--simple;
+  @extend %clearfix;
+
+	@include breakpoint($bp1) {
+	  float: right;
+	}
+}
+
+.footer-nav__list-item {
+  display: inline-block;
+  margin-right: rhythm(.5);
+	font-weight: 700;
+}
+
+.footer-sponsors {
+  @extend %clearfix;
+}
+
+.footer-sponsor {
+  background-color: $white;
+  float: left;
+  margin-right: 3%;
+  width: 40%;
+  margin-top: rhythm(1);
+
+  .sponsor-item {
+    margin-bottom: 0;
+
+    &:active,
+    &:hover,
+    &:focus {
+      img {
+        border: 3px dotted transparent;
+      }
+    }
+  }
+
+  @include breakpoint($bp2) {
+    width: 30%;
+    float: right;
+  }
+
+  @include breakpoint($bp3) {
+    width: 25%;
+  }
+}
+
+.footer-copyright {
+	display: block;
+	margin-top: 2em;
+	color: $white;
+}

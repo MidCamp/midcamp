@@ -1,0 +1,19 @@
+{
+  "name": "hatter",
+  "version": "1.0.0",
+  "description": "The hatter styleguide for MidCamp.org",
+  "repository": "https://github.com/MidCamp/midcamp.git",
+  "main": "index.js",
+  "scripts": {
+    "butler": "node_modules/butler/node_modules/.bin/gulp --gulpfile node_modules/butler/Gulpfile.js",
+    "deploy": "node_modules/butler/node_modules/.bin/gulp --gulpfile node_modules/butler/Gulpfile.js spress-deploy",
+    "develop": "node_modules/butler/node_modules/.bin/gulp --gulpfile node_modules/butler/Gulpfile.js develop",
+    "test": "node_modules/butler/node_modules/.bin/gulp --gulpfile node_modules/butler/Gulpfile.js test"
+  },
+  "author": "Ashley Cyborski",
+  "license": "MIT",
+  "dependencies": {
+    "butler": "github:palantirnet/butler#asap-404-fix",
+    "gulp": "^3.9.1"
+  }
+}
