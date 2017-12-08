@@ -2,7 +2,7 @@ name: Hatter
 description: Now with more madness!
 type: theme
 core: 8.x
-base theme: stable
+base theme: classy
 libraries:
   - hatter/global-css
   - hatter/fonts
