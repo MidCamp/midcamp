@@ -93,6 +93,7 @@ permissions:
   - 'use editorial transition archived_published'
   - 'use editorial transition publish'
   - 'use session_review transition accept_session'
+  - 'use text format mailchimp_campaign'
   - 'view all revisions'
   - 'view any unpublished content'
   - 'view article revisions'

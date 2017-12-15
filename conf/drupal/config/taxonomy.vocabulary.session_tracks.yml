@@ -2,8 +2,8 @@ uuid: 820bbc44-5de7-46c0-8116-fd851fcf71da
 langcode: en
 status: true
 dependencies: {  }
-name: 'Session Tracks'
+name: Tracks
 vid: session_tracks
-description: ''
+description: 'Categories topics may fit into for sessions.'
 hierarchy: 0
 weight: 0

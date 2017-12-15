@@ -11,7 +11,7 @@ field_name: field_track
 entity_type: node
 bundle: topic
 label: Track
-description: 'We recommend that you focus your session’s intended audience, but realize that not every topic will fit neatly into one of these categories. For example, a presentation on Multilingual could be primarily Site Building, Content Admin, or Back-End, depending on the focus of the talk. For full track descriptions, please review the <a href="/session-tracks">track descriptions page</a>.'
+description: 'We recommend that you focus your session’s intended audience, but realize that not every topic will fit neatly into one of these categories. For example, a presentation on Multilingual could be primarily Site Building, Content Admin, or Back-End, depending on the focus of the talk. For full track descriptions, please review the track descriptions page.'
 required: false
 translatable: false
 default_value: {  }
