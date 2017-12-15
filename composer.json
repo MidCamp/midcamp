@@ -48,7 +48,7 @@
         "drupal/scheduler": "^1.0@RC",
         "drupal/twig_extensions": "1.x-dev",
         "drupal/viewsreference": "^1.0@alpha",
-        "midcamp/hatter": "dev-composerify-styleguide",
+        "midcamp/hatter": "dev-master",
         "oomphinc/composer-installers-extender": "^1.1",
         "palantirnet/workbench_tabs": "^1.1",
         "twig/extensions": "^1.5"
