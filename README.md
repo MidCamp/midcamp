@@ -113,7 +113,7 @@ Sometimes we need to apply patches from the Drupal.org issue queues. These patch
 
 * `vendor/bin/behat`
 * `vendor/bin/phpcs --standard=vendor/drupal/coder/coder_sniffer/Drupal features/bootstrap web/modules/custom`
-* `vendor/bin/phpmd web/modules/custom text .phpmd.xml` 
+* `vendor/bin/phpmd web/modules/custom text .phpmd.xml`
   * This should be configured to show the same errors triggered by Code Climate that you see on the Pull Request.
 
 ## Troubleshooting
@@ -122,3 +122,7 @@ If you get the following error:
 > Cannot connect to the Docker daemon. Is the docker daemon running?
 
 Make sure your environment variables are set. `eval $(cachalot env)` Maybe you didn't add that to your bash_profile or zshrc as suggested?
+
+### I can't see new things in the style guide
+
+Are you sure your changes got merged to [Hatter's](https://github.com/MidCamp/Hatter) `master`?
