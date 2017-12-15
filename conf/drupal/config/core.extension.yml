@@ -36,7 +36,6 @@ module:
   mailchimp_campaign: 0
   mailchimp_lists: 0
   mailchimp_signup: 0
-  masquerade: 0
   menu_ui: 0
   node: 0
   options: 0
