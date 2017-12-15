@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e5ca048e6cbd201d26fb1227abcc3a74",
+    "content-hash": "6e96610c91eab171e0cadf605f311d71",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1166,7 +1166,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/address"
             },
-            "time": "2017-11-08 17:13:19"
+            "time": "2017-11-08T17:13:19+00:00"
         },
         {
             "name": "drupal/admin_toolbar",
@@ -2240,7 +2240,7 @@
                 "source": "http://cgit.drupalcode.org/linkicon",
                 "issues": "https://www.drupal.org/project/issues/linkicon"
             },
-            "time": "2017-04-07 14:57:42"
+            "time": "2017-04-07T14:57:42+00:00"
         },
         {
             "name": "drupal/mailchimp",
@@ -2718,7 +2718,7 @@
                 "source": "http://cgit.drupalcode.org/twig_extensions",
                 "issues": "http://drupal.org/project/issues/twig_extensions"
             },
-            "time": "2017-10-26 20:58:35"
+            "time": "2017-10-26T20:58:35+00:00"
         },
         {
             "name": "drupal/viewsreference",
@@ -3522,16 +3522,16 @@
         },
         {
             "name": "midcamp/hatter",
-            "version": "dev-composerify-styleguide",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MidCamp/Hatter.git",
-                "reference": "397068b378d34e8517158bce19c9a4e019a633bd"
+                "reference": "de2b4c4a0b210460bba3f449fc2520abc49d164c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MidCamp/Hatter/zipball/397068b378d34e8517158bce19c9a4e019a633bd",
-                "reference": "397068b378d34e8517158bce19c9a4e019a633bd",
+                "url": "https://api.github.com/repos/MidCamp/Hatter/zipball/de2b4c4a0b210460bba3f449fc2520abc49d164c",
+                "reference": "de2b4c4a0b210460bba3f449fc2520abc49d164c",
                 "shasum": ""
             },
             "require": {
@@ -3547,10 +3547,10 @@
                 "MIT"
             ],
             "support": {
-                "source": "https://github.com/MidCamp/Hatter/tree/composerify-styleguide",
+                "source": "https://github.com/MidCamp/Hatter/tree/master",
                 "issues": "https://github.com/MidCamp/Hatter/issues"
             },
-            "time": "2017-12-13T23:50:10+00:00"
+            "time": "2017-12-15T03:14:17+00:00"
         },
         {
             "name": "oomphinc/composer-installers-extender",
@@ -3716,7 +3716,7 @@
             ],
             "description": "GeoPHP is a open-source native PHP library for doing geometry operations. It is written entirely in PHP and can therefore run on shared hosts. It can read and write a wide variety of formats: WKT (including EWKT), WKB (including EWKB), GeoJSON, KML, GPX, GeoRSS). It works with all Simple-Feature geometries (Point, LineString, Polygon, GeometryCollection etc.) and can be used to get centroids, bounding-boxes, area, and a wide variety of other useful information.",
             "homepage": "https://github.com/phayes/geoPHP",
-            "time": "2016-03-04 05:42:29"
+            "time": "2016-03-04T05:42:29+00:00"
         },
         {
             "name": "pimple/pimple",
@@ -8402,7 +8402,7 @@
                 "source": "https://github.com/palantirnet/palantir-behat-extension/tree/drupal8-file-revisited",
                 "issues": "https://github.com/palantirnet/palantir-behat-extension/issues"
             },
-            "time": "2016-08-10 14:27:16"
+            "time": "2016-08-10T14:27:16+00:00"
         },
         {
             "name": "pdepend/pdepend",
