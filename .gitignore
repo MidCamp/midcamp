@@ -25,6 +25,7 @@ web/profiles/contrib/
 
 # Ignore regular Composer dependencies
 /vendor/
+/styleguide/
 
 # Ignore npm dependencies
 node_modules/
@@ -34,14 +35,3 @@ npm-debug.log
 *.sass-cache/
 styleguide/*.sass-cache/
 styleguide/source/code/css/*.css
-
-# Ignore styleguide generated components
-web/themes/custom/hatter/css/
-web/themes/custom/hatter/imgs/
-web/themes/custom/hatter/svg/
-web/themes/custom/hatter/js/
-web/themes/custom/hatter/libraries
-
-# Ignore sculpin output
-styleguide/output_dev/
-styleguide/output_prod/

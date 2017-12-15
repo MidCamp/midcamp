@@ -49,6 +49,7 @@
         "drupal/twig_extensions": "1.x-dev",
         "drupal/viewsreference": "^1.0@alpha",
         "midcamp/hatter": "dev-master",
+        "oomphinc/composer-installers-extender": "^1.1",
         "palantirnet/workbench_tabs": "^1.1",
         "twig/extensions": "^1.5"
     },
@@ -70,9 +71,7 @@
     },
     "scripts": {
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-        "post-create-project-cmd": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-        "post-install-cmd": "MidCamp\\Hatter::installAssets",
-        "post-update-cmd": "MidCamp\\Hatter::installAssets"
+        "post-create-project-cmd": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
     },
     "extra": {
         "patches": {
@@ -83,15 +82,14 @@
             "Error after upgrading to Drupal 8.1 (https://www.drupal.org/project/twig_extensions/issues/2726531)": "https://www.drupal.org/files/issues/error_after_upgrading-2726531-9.patch"
           }
         },
+        "installer-types": ["butler-styleguide"],
         "installer-paths": {
             "web/core": ["type:drupal-core"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/contrib/{$name}": ["type:drupal-drush"]
-        },
-        "styleguide": {
-            "theme-path": "web/themes/custom/hatter/"
+            "drush/contrib/{$name}": ["type:drupal-drush"],
+            "styleguide": ["type:butler-styleguide"]
         }
     }
 }
