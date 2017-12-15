@@ -1,0 +1,30 @@
+uuid: 2ad849a1-ecbb-4923-a5ef-d6b6e2c00966
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_training_length
+field_name: field_training_length
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: full
+      label: 'Full Day'
+    -
+      value: morning
+      label: 'Half Day (morning)'
+    -
+      value: afternoon
+      label: 'Half Day (afternoon)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

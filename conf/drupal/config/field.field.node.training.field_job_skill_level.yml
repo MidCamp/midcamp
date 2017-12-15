@@ -1,0 +1,21 @@
+uuid: af2bd676-c7b2-436e-bd27-6e8c365ced44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_skill_level
+    - node.type.training
+  module:
+    - options
+id: node.training.field_job_skill_level
+field_name: field_job_skill_level
+entity_type: node
+bundle: training
+label: Audience
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

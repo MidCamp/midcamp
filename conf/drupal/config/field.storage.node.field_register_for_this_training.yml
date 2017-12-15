@@ -1,0 +1,19 @@
+uuid: 7b154db3-c004-4662-8a1a-fe5569257890
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_register_for_this_training
+field_name: field_register_for_this_training
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

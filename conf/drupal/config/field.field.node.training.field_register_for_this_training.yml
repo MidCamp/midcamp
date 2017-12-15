@@ -1,0 +1,24 @@
+uuid: e2192946-7e85-47d6-bfa4-26a76f4785a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_register_for_this_training
+    - node.type.training
+  module:
+    - link
+id: node.training.field_register_for_this_training
+field_name: field_register_for_this_training
+entity_type: node
+bundle: training
+label: 'Register for this Training'
+description: 'Add your EventBrite link here.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+  title_predefined: ''
+field_type: link
