@@ -1,0 +1,23 @@
+uuid: 538ead69-aad3-4ff1-a23d-5c496ed0cdef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_planet
+    - node.type.article
+id: node.article.field_planet
+field_name: field_planet
+entity_type: node
+bundle: article
+label: 'Send to Drupal Planet?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Send to Drupal Planet?'
+  off_label: 'Off'
+field_type: boolean

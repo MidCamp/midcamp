@@ -1,0 +1,24 @@
+uuid: f3b0b5a9-a72c-4961-89f2-8e26d5c48f41
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_banner_cta_anonymous
+    - taxonomy.vocabulary.event
+  module:
+    - link
+id: taxonomy_term.event.field_banner_cta_anonymous
+field_name: field_banner_cta_anonymous
+entity_type: taxonomy_term
+bundle: event
+label: 'Banner CTA for Anonymous users'
+description: 'This is the main CTA button that will appear in the banner when users access the website logged out. Generally this should be <em>Register</em>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+  title_predefined: ''
+field_type: link

@@ -39,14 +39,17 @@
         "drupal/devel": "^1.0@beta",
         "drupal/geocoder_geofield": "^2.0@alpha",
         "drupal/geolocation": "^1.8",
+        "drupal/google_analytics": "^2.2",
         "drupal/linkicon": "^1.4",
         "drupal/mailchimp": "^1.2",
+        "drupal/masquerade": "^2.0@beta",
         "drupal/paragraphs": "^1.2",
         "drupal/pathauto": "^1.0",
         "drupal/scheduler": "^1.0@RC",
-        "drupal/twig_extensions": "^1.0",
+        "drupal/twig_extensions": "1.x-dev",
         "drupal/viewsreference": "^1.0@alpha",
         "midcamp/hatter": "dev-master",
+        "oomphinc/composer-installers-extender": "^1.1",
         "palantirnet/workbench_tabs": "^1.1",
         "twig/extensions": "^1.5"
     },
@@ -59,7 +62,7 @@
         "drupal/coder": "^8.2",
         "drupal/console": "^1.0",
         "drupal/drupal-extension": "^3.1",
-        "drush/drush": "^9.0",
+        "drush/drush": "^8.0",
         "palantirnet/palantir-behat-extension": "dev-drupal8-file-revisited",
         "phpmd/phpmd": "^2.4"
     },
@@ -68,28 +71,25 @@
     },
     "scripts": {
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-        "post-create-project-cmd": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-        "post-install-cmd": "MidCamp\\Hatter::installAssets",
-        "post-update-cmd": "MidCamp\\Hatter::installAssets"
+        "post-create-project-cmd": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
     },
     "extra": {
         "patches": {
-            "drupal/core": {
-                "Fix 8.4-rc1 install issue (https://www.drupal.org/node/2907654)": "https://www.drupal.org/files/issues/2907654-3-display-mode-url-route-parameters.patch"
-            },
-            "drupal/twig_extensions" : {
-                "PHP intl extension mission" : "https://www.drupal.org/files/issues/2694185-14.patch"
-            }
+          "drupal/core": {
+            "RSS view with fields give wrong URL from path field (https://www.drupal.org/node/2673980)": "https://www.drupal.org/files/issues/rss_view_with_fields-2673980-27.patch"
+          },
+          "drupal/twig_extensions": {
+            "Error after upgrading to Drupal 8.1 (https://www.drupal.org/project/twig_extensions/issues/2726531)": "https://www.drupal.org/files/issues/error_after_upgrading-2726531-9.patch"
+          }
         },
+        "installer-types": ["butler-styleguide"],
         "installer-paths": {
             "web/core": ["type:drupal-core"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/contrib/{$name}": ["type:drupal-drush"]
-        },
-        "styleguide": {
-            "theme-path": "web/themes/custom/hatter/"
+            "drush/contrib/{$name}": ["type:drupal-drush"],
+            "styleguide": ["type:butler-styleguide"]
         }
     }
 }

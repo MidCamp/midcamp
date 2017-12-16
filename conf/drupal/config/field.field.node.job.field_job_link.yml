@@ -12,7 +12,7 @@ field_name: field_job_link
 entity_type: node
 bundle: job
 label: Link
-description: ''
+description: 'Link for Application and/or More Information'
 required: false
 translatable: false
 default_value: {  }

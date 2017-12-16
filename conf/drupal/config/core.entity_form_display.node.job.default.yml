@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.job.field_job_location
     - field.field.node.job.field_job_skill_level
     - field.field.node.job.field_job_type
+    - field.field.node.job.field_sponsor_company
     - node.type.job
   module:
     - link
@@ -20,12 +21,12 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     region: content
   field_job_description:
-    weight: 35
+    weight: 5
     settings:
       rows: 9
       summary_rows: 3
@@ -34,7 +35,7 @@ content:
     type: text_textarea_with_summary
     region: content
   field_job_link:
-    weight: 38
+    weight: 6
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -42,7 +43,7 @@ content:
     type: link_default
     region: content
   field_job_location:
-    weight: 32
+    weight: 2
     settings:
       size: 60
       placeholder: ''
@@ -50,20 +51,35 @@ content:
     type: string_textfield
     region: content
   field_job_skill_level:
-    weight: 36
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_job_type:
-    weight: 33
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
+  field_sponsor_company:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -91,12 +107,12 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 10
     third_party_settings: {  }
     region: content
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     settings:
       size: 60
       placeholder: ''
@@ -104,7 +120,7 @@ content:
     region: content
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 7
     settings:
       match_operator: CONTAINS
       size: 60

@@ -3,15 +3,17 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.event.field_banner_cta_anonymous
+    - field.field.taxonomy_term.event.field_banner_cta_authenticated
     - field.field.taxonomy_term.event.field_date
-    - field.field.taxonomy_term.event.field_image
     - field.field.taxonomy_term.event.field_date_has_time
+    - field.field.taxonomy_term.event.field_image
     - field.field.taxonomy_term.event.field_social_media
     - image.style.thumbnail
     - taxonomy.vocabulary.event
   module:
-    - image
     - datetime_range
+    - image
     - link
     - path
     - text
@@ -27,6 +29,22 @@ content:
       placeholder: ''
       rows: 5
     third_party_settings: {  }
+    region: content
+  field_banner_cta_anonymous:
+    weight: 6
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_banner_cta_authenticated:
+    weight: 7
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   field_date:
     weight: 1

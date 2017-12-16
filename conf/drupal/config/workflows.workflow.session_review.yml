@@ -1,0 +1,62 @@
+uuid: 34760086-284e-44ad-b0d9-c3ea36ad9f85
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.topic
+  module:
+    - content_moderation
+id: session_review
+label: 'Session Review'
+type: content_moderation
+type_settings:
+  states:
+    accepted:
+      published: true
+      default_revision: false
+      label: Accepted
+      weight: -7
+    draft:
+      label: Draft
+      published: false
+      default_revision: false
+      weight: -10
+    published:
+      label: Published
+      published: true
+      default_revision: true
+      weight: -8
+    submitted:
+      published: true
+      default_revision: false
+      label: Submitted
+      weight: -9
+  transitions:
+    accept_session:
+      label: 'Accept Session'
+      from:
+        - accepted
+        - draft
+        - published
+        - submitted
+      to: accepted
+      weight: -8
+    create_new_draft:
+      label: 'Create New Draft'
+      to: draft
+      weight: -9
+      from:
+        - accepted
+        - draft
+        - published
+        - submitted
+    submit_for_review:
+      label: 'Submit for Review'
+      from:
+        - draft
+        - submitted
+      to: submitted
+      weight: -10
+  entity_types:
+    node:
+      - topic
