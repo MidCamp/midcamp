@@ -7,9 +7,10 @@ dependencies:
     - field.field.node.topic.field_event
     - field.field.node.topic.field_people
     - field.field.node.topic.field_topic_type
+    - field.field.node.topic.field_track
     - node.type.topic
   module:
-    - path
+    - content_moderation
     - text
 id: node.topic.default
 targetEntityType: node
@@ -23,12 +24,6 @@ content:
       rows: 9
       summary_rows: 3
       placeholder: ''
-    third_party_settings: {  }
-    region: content
-  created:
-    type: datetime_timestamp
-    weight: 6
-    settings: {  }
     third_party_settings: {  }
     region: content
   field_people:
@@ -54,43 +49,10 @@ content:
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 12
+    weight: 5
     settings: {  }
     region: content
     third_party_settings: {  }
-  path:
-    type: path
-    weight: 9
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 7
-    third_party_settings: {  }
-    region: content
-  publish_on:
-    type: datetime_timestamp_no_default
-    weight: 10
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  status:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 13
-    third_party_settings: {  }
-    region: content
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 8
-    third_party_settings: {  }
-    region: content
   title:
     type: string_textfield
     weight: 0
@@ -99,20 +61,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
-  uid:
-    type: entity_reference_autocomplete
-    weight: 5
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
-  unpublish_on:
-    type: datetime_timestamp_no_default
-    weight: 11
-    settings: {  }
-    third_party_settings: {  }
-    region: content
 hidden:
+  created: true
   field_event: true
+  path: true
+  promote: true
+  publish_on: true
+  status: true
+  sticky: true
+  uid: true
+  unpublish_on: true
