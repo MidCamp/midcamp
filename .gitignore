@@ -6,6 +6,7 @@
 # Ignore Drupal settings and files
 settings.php
 services.yml
+services.local.yml
 !conf/drupal/settings.php
 !conf/drupal/services.yml
 web/sites/*/files
