@@ -15,42 +15,48 @@ type_settings:
       published: true
       default_revision: false
       label: Accepted
-      weight: 3
+      weight: -7
     draft:
       label: Draft
       published: false
       default_revision: false
-      weight: 0
+      weight: -10
     published:
       label: Published
       published: true
       default_revision: true
-      weight: 1
+      weight: -8
     submitted:
       published: true
       default_revision: false
       label: Submitted
-      weight: 2
+      weight: -9
   transitions:
     accept_session:
       label: 'Accept Session'
       from:
+        - accepted
+        - draft
+        - published
         - submitted
       to: accepted
-      weight: 3
+      weight: -8
     create_new_draft:
       label: 'Create New Draft'
       to: draft
-      weight: 0
+      weight: -9
       from:
+        - accepted
         - draft
         - published
+        - submitted
     submit_for_review:
       label: 'Submit for Review'
       from:
         - draft
+        - submitted
       to: submitted
-      weight: 2
+      weight: -10
   entity_types:
     node:
       - topic

@@ -22,3 +22,4 @@ hidden:
   field_job_location: true
   field_job_skill_level: true
   field_job_type: true
+  field_sponsor_company: true

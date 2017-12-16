@@ -1,8 +1,9 @@
-uuid: 9880ca58-79f3-4f0c-a2f6-69671a5ea4d3
+uuid: 5a104020-5f36-410f-8fdd-4c752c5806d4
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.taxonomy_term.branding_banner
     - field.field.taxonomy_term.event.field_banner_cta_anonymous
     - field.field.taxonomy_term.event.field_banner_cta_authenticated
     - field.field.taxonomy_term.event.field_date
@@ -14,21 +15,13 @@ dependencies:
     - datetime_range
     - image
     - link
-    - text
-id: taxonomy_term.event.default
+id: taxonomy_term.event.branding_banner
 targetEntityType: taxonomy_term
 bundle: event
-mode: default
+mode: branding_banner
 content:
-  description:
-    label: hidden
-    type: text_default
-    weight: 0
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_banner_cta_anonymous:
-    weight: 5
+    weight: 2
     label: above
     settings:
       trim_length: 80
@@ -40,7 +33,7 @@ content:
     type: link
     region: content
   field_banner_cta_authenticated:
-    weight: 6
+    weight: 3
     label: above
     settings:
       trim_length: 80
@@ -52,7 +45,7 @@ content:
     type: link
     region: content
   field_date:
-    weight: 3
+    weight: 1
     label: above
     settings:
       timezone_override: ''
@@ -61,18 +54,8 @@ content:
     third_party_settings: {  }
     type: daterange_default
     region: content
-  field_date_has_time:
-    weight: 4
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
-    region: content
   field_image:
-    weight: 1
+    weight: 0
     label: above
     settings:
       image_style: ''
@@ -81,4 +64,6 @@ content:
     type: image
     region: content
 hidden:
+  description: true
+  field_date_has_time: true
   field_social_media: true

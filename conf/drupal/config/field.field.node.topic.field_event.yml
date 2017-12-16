@@ -5,24 +5,28 @@ dependencies:
   config:
     - field.storage.node.field_event
     - node.type.topic
-    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.event
+  content:
+    - 'taxonomy_term:event:58ab979d-12f0-4b19-ab75-5625aa986afb'
 id: node.topic.field_event
 field_name: field_event
 entity_type: node
 bundle: topic
 label: Event
-description: 'The event in which this topic will be happening.'
+description: 'The event you are proposing this topic for.'
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    target_uuid: 58ab979d-12f0-4b19-ab75-5625aa986afb
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      tags: tags
+      event: event
     sort:
       field: _none
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: event
 field_type: entity_reference

@@ -4,14 +4,26 @@ status: true
 dependencies:
   module:
     - menu_ui
+    - scheduler
 third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: Topic
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+name: 'Topic Proposal'
 type: topic
 description: 'Use <em>topic</em> for individual session, keynote, BoF, etc.'
 help: ''
 new_revision: false
 preview_mode: 1
-display_submitted: true
+display_submitted: false
