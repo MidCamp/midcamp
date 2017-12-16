@@ -4,16 +4,18 @@ deploy_tasks:
   development:
     before_deploy:
       - composer install
-      - cp -r vendor/midcamp/hatter/src/content/assets/* web/themes/custom/hatter/
+      - cp -r styleguide/src/content/assets/* web/themes/custom/hatter/
     after_deploy:
       - cd web && drush -y updb --cache-clear=0
+      - cd web && drush -y cim
       - cd web && drush -y cr
   production:
     before_deploy:
       - composer install
-      - cp -r vendor/midcamp/hatter/src/content/assets/* web/themes/custom/hatter/
+      - cp -r styleguide/src/content/assets/* web/themes/custom/hatter/
     after_deploy:
       - cd web && drush -y updb --cache-clear=0
+      - cd web && drush -y cim
       - cd web && drush -y cr
 
 shared:
