@@ -7,7 +7,8 @@ dependencies:
     - node.type.topic
     - taxonomy.vocabulary.topic_type
   content:
-    - 'taxonomy_term:topic_type:3de299b9-0111-44f0-9cbc-d6f631a98e2a'
+    - 'taxonomy_term:tags:19013b56-6abf-4b48-8fc4-5fa5fa8a0c52'
+    - 'taxonomy_term:topic_type:39f8a394-f9fc-45ae-85a2-46aabfd3212f'
   module:
     - content_moderation
     - node
@@ -72,7 +73,11 @@ display:
             previous: ‹‹
             next: ››
       style:
-        type: html_list
+        type: default
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
       row:
         type: 'entity:node'
         options:
@@ -221,13 +226,13 @@ display:
           admin_label: ''
           operator: or
           value:
-            - 1
+            14: 14
           group: 1
           exposed: false
           expose:
             operator_id: field_topic_type_target_id_op
-            label: 'Topic Type (field_topic_type)'
-            description: null
+            label: 'Topic Type'
+            description: ''
             use_operator: false
             operator: field_topic_type_target_id_op
             identifier: field_topic_type_target_id
@@ -236,6 +241,10 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+              anonymous: '0'
+              speaker: '0'
+              content_editor: '0'
+              administrator: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -250,7 +259,7 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
+          type: select
           limit: true
           vid: topic_type
           hierarchy: false
