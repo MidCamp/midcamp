@@ -18,6 +18,8 @@
  *   - in_active_trail: TRUE if the link is in the active trail.
  */
 #}
+<button class="primary-nav__trigger">{% include active_theme_path() ~ '/svg/menu.svg' %} Menu</button>
+
 {% import _self as menus %}
 
 {#
@@ -31,28 +33,29 @@
   {% if items %}
     {# Add classes to the UL #}
     {%
-      set classes = [
-        'primary-nav__list',
-      ]
+    set classes = [
+    'primary-nav__list',
+    ]
     %}
     {% if menu_level == 0 %}
-      <ul{{ attributes.addClass(classes) }}>
+<ul{{ attributes.addClass(classes) }}>
     {% else %}
-      <ul{{ attributes.addClass(classes) }}>
-    {% endif %}
-    {% for item in items %}
-      {%
-        set item_classes = [
-          'primary-nav__item',
-        ]
-      %}
-      <li{{ item.attributes.addClass(item_classes) }}>
-        {{ link(item.title, item.url) }}
-        {% if item.below %}
-          {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+    <button class="primary-nav__sublist--trigger"><span class="element-invisible">Open Menu</span>{% include active_theme_path() ~ '/svg/arrow.svg' %}</button>
+    <ul{{ attributes.addClass(classes) }}>
         {% endif %}
-      </li>
-    {% endfor %}
+        {% for item in items %}
+            {%
+            set item_classes = [
+            'primary-nav__item',
+            ]
+            %}
+            <li{{ item.attributes.addClass(item_classes) }}>
+                {{ link(item.title, item.url) }}
+                {% if item.below %}
+                    {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+                {% endif %}
+            </li>
+        {% endfor %}
     </ul>
-  {% endif %}
-{% endmacro %}
+    {% endif %}
+    {% endmacro %}
