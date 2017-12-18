@@ -37,6 +37,9 @@ content:
     third_party_settings: {  }
     type: name_default
     region: content
+  google_analytics:
+    weight: 3
+    region: content
   language:
     weight: 0
     region: content

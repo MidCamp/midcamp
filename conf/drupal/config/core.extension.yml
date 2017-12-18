@@ -7,6 +7,7 @@ module:
   block: 0
   block_content: 0
   breakpoint: 0
+  captcha: 0
   ckeditor: 0
   color: 0
   comment: 0
@@ -46,6 +47,7 @@ module:
   path: 0
   quickedit: 0
   rdf: 0
+  recaptcha: 0
   scheduler: 0
   search: 0
   shortcut: 0
