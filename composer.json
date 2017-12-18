@@ -83,6 +83,9 @@
           },
           "drupal/twig_extensions": {
             "Error after upgrading to Drupal 8.1 (https://www.drupal.org/project/twig_extensions/issues/2726531)": "https://www.drupal.org/files/issues/error_after_upgrading-2726531-9.patch"
+          },
+          "drupal/mailchimp": {
+            "MailchimpListsSubscribeForm wants an array, but gets an object (www.drupal.org/project/mailchimp/issues/2931408)": "https://www.drupal.org/files/issues/2931408-2-list-form-cant-array.patch"
           }
         },
         "installer-types": ["butler-styleguide"],
