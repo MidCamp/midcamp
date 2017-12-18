@@ -1,0 +1,20 @@
+uuid: aa16f7ec-a29a-4d65-93e4-8fa886102a7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_twitter
+  module:
+    - user
+id: user.user.field_twitter
+field_name: field_twitter
+entity_type: user
+bundle: user
+label: 'Twitter Handle'
+description: 'Tell us your twitter handle. Example: ACoolName or midwestcamp'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

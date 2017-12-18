@@ -1,0 +1,20 @@
+uuid: 2e0491e6-7c83-424b-8a73-c4ba4a19571b
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - user
+id: user.field_tracks
+field_name: field_tracks
+entity_type: user
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

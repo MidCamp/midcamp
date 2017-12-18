@@ -3,15 +3,92 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_company_url
+    - field.field.user.user.field_do_profile
+    - field.field.user.user.field_eventbrite_email
     - field.field.user.user.field_mailing_list
     - field.field.user.user.field_name
+    - field.field.user.user.field_organization
+    - field.field.user.user.field_site
+    - field.field.user.user.field_title
+    - field.field.user.user.field_tracks
+    - field.field.user.user.field_twitter
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
+    - field_group
     - image
+    - link
     - mailchimp_lists
     - name
+    - path
+    - text
     - user
+third_party_settings:
+  field_group:
+    group_settings:
+      children:
+        - language
+        - contact
+        - timezone
+        - google_analytics
+        - field_eventbrite_email
+      parent_name: ''
+      weight: 3
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Profile Settings'
+    group_links:
+      children:
+        - field_do_profile
+        - field_site
+        - field_twitter
+        - path
+      parent_name: ''
+      weight: 2
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Links, Links and more Links'
+    group_essentials:
+      children:
+        - account
+        - field_mailing_list
+        - field_name
+        - field_tracks
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: true
+        required_fields: true
+      label: Essentials
+    group_all_about_you:
+      children:
+        - user_picture
+        - field_bio
+        - field_title
+        - field_organization
+        - field_company_url
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'All About You'
 _core:
   default_config_hash: LLAieeozVsoZDb-2PbFxRJpQqnKmpR7-4OoRJnduz-U
 id: user.user.default
@@ -20,44 +97,125 @@ bundle: user
 mode: default
 content:
   account:
-    weight: -10
+    weight: 4
     region: content
+    settings: {  }
+    third_party_settings: {  }
   contact:
     weight: 5
     region: content
-  field_mailing_list:
+    settings: {  }
+    third_party_settings: {  }
+  field_bio:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_company_url:
+    weight: 6
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_do_profile:
+    weight: 15
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_eventbrite_email:
     weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_mailing_list:
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     type: mailchimp_lists_select
     region: content
   field_name:
-    weight: 7
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: name_default
     region: content
+  field_organization:
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_site:
+    weight: 16
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_title:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_tracks:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_twitter:
+    weight: 17
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   google_analytics:
-    weight: 3
+    weight: 7
     region: content
+    settings: {  }
+    third_party_settings: {  }
   language:
-    weight: 0
+    weight: 4
     region: content
+    settings: {  }
+    third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 18
     region: content
     settings: {  }
     third_party_settings: {  }
   timezone:
     weight: 6
     region: content
+    settings: {  }
+    third_party_settings: {  }
   user_picture:
     type: image_image
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: -1
+    weight: 2
     region: content
 hidden: {  }

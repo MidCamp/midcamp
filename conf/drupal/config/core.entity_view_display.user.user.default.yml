@@ -3,14 +3,24 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_company_url
+    - field.field.user.user.field_do_profile
+    - field.field.user.user.field_eventbrite_email
     - field.field.user.user.field_mailing_list
     - field.field.user.user.field_name
+    - field.field.user.user.field_organization
+    - field.field.user.user.field_site
+    - field.field.user.user.field_title
+    - field.field.user.user.field_tracks
+    - field.field.user.user.field_twitter
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
     - image
-    - mailchimp_lists
+    - link
     - name
+    - text
     - user
 _core:
   default_config_hash: L2mtwGWH_7wDRCMIR4r_Iu_jmvQ10DV1L8ht8iNZ5qY
@@ -19,17 +29,28 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
-  field_mailing_list:
+  field_bio:
     weight: 7
-    label: above
-    settings:
-      show_interest_groups: false
+    label: hidden
+    settings: {  }
     third_party_settings: {  }
-    type: mailchimp_lists_subscribe_default
+    type: text_default
+    region: content
+  field_do_profile:
+    weight: 2
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   field_name:
-    weight: 6
-    label: above
+    weight: 1
+    label: inline
     settings:
       format: default
       markup: false
@@ -43,8 +64,49 @@ content:
     third_party_settings: {  }
     type: name_default
     region: content
-  member_for:
+  field_organization:
+    weight: 4
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_site:
+    weight: 6
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_title:
+    weight: 3
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_tracks:
+    weight: 8
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_twitter:
     weight: 5
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   user_picture:
     type: image
@@ -55,4 +117,8 @@ content:
     third_party_settings: {  }
     label: hidden
     region: content
-hidden: {  }
+hidden:
+  field_company_url: true
+  field_eventbrite_email: true
+  field_mailing_list: true
+  member_for: true
