@@ -47,6 +47,7 @@
         "drupal/name": "^1.0@beta",
         "drupal/paragraphs": "^1.2",
         "drupal/pathauto": "^1.0",
+        "drupal/r4032login": "1.x-dev",
         "drupal/recaptcha": "^2.2",
         "drupal/scheduler": "^1.0@RC",
         "drupal/twig_extensions": "1.x-dev",
