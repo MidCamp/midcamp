@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3d1749853fd7943db53110fcfeac8f59",
+    "content-hash": "5aedb8691fcdf9172473d65ca9d40057",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -261,16 +261,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "1.5.5",
+            "version": "1.5.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "aab6229c9a4b6731f23b36107c39f4007c290b50"
+                "reference": "4f7f9c12753ec43f1e4629e2a71cabe81f2a4eab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/aab6229c9a4b6731f23b36107c39f4007c290b50",
-                "reference": "aab6229c9a4b6731f23b36107c39f4007c290b50",
+                "url": "https://api.github.com/repos/composer/composer/zipball/4f7f9c12753ec43f1e4629e2a71cabe81f2a4eab",
+                "reference": "4f7f9c12753ec43f1e4629e2a71cabe81f2a4eab",
                 "shasum": ""
             },
             "require": {
@@ -334,7 +334,7 @@
                 "dependency",
                 "package"
             ],
-            "time": "2017-12-01T13:42:57+00:00"
+            "time": "2017-12-18T11:09:18+00:00"
         },
         {
             "name": "composer/installers",
@@ -1898,17 +1898,17 @@
         },
         {
             "name": "drupal/geocoder",
-            "version": "2.0.0-alpha5",
+            "version": "2.0.0-alpha7",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/geocoder",
-                "reference": "8.x-2.0-alpha5"
+                "reference": "8.x-2.0-alpha7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-2.0-alpha5.zip",
-                "reference": "8.x-2.0-alpha5",
-                "shasum": "1cbac01cc6217e17fd53dd8be68d4ad8f018c004"
+                "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-2.0-alpha7.zip",
+                "reference": "8.x-2.0-alpha7",
+                "shasum": "920af28c17d5e3a36079c6af569ce11c937bd000"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -1925,8 +1925,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-alpha5",
-                    "datestamp": "1481538483",
+                    "version": "8.x-2.0-alpha7",
+                    "datestamp": "1513719484",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -1986,7 +1986,7 @@
         },
         {
             "name": "drupal/geocoder_field",
-            "version": "2.0.0-alpha5",
+            "version": "2.0.0-alpha7",
             "require": {
                 "drupal/core": "*",
                 "drupal/geocoder": "self.version"
@@ -1997,8 +1997,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-alpha5",
-                    "datestamp": "1481538483",
+                    "version": "8.x-2.0-alpha7",
+                    "datestamp": "1513719484",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -2055,7 +2055,7 @@
         },
         {
             "name": "drupal/geocoder_geofield",
-            "version": "2.0.0-alpha5",
+            "version": "2.0.0-alpha7",
             "require": {
                 "drupal/core": "~8.0",
                 "drupal/geocoder": "self.version",
@@ -2068,8 +2068,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-alpha5",
-                    "datestamp": "1481538483",
+                    "version": "8.x-2.0-alpha7",
+                    "datestamp": "1513719484",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -2456,6 +2456,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "MailchimpListsSubscribeForm wants an array, but gets an object (www.drupal.org/project/mailchimp/issues/2931408)": "https://www.drupal.org/files/issues/2931408-2-list-form-cant-array.patch"
                 }
             },
             "autoload": {
@@ -3760,12 +3763,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MidCamp/Hatter.git",
-                "reference": "e89c53982525610cff6aef688e9433e86c2536a7"
+                "reference": "e911d3d612da6f06b29674f8195ea5fdbb1d3d87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MidCamp/Hatter/zipball/e89c53982525610cff6aef688e9433e86c2536a7",
-                "reference": "e89c53982525610cff6aef688e9433e86c2536a7",
+                "url": "https://api.github.com/repos/MidCamp/Hatter/zipball/e911d3d612da6f06b29674f8195ea5fdbb1d3d87",
+                "reference": "e911d3d612da6f06b29674f8195ea5fdbb1d3d87",
                 "shasum": ""
             },
             "require": {
@@ -3784,7 +3787,7 @@
                 "source": "https://github.com/MidCamp/Hatter/tree/master",
                 "issues": "https://github.com/MidCamp/Hatter/issues"
             },
-            "time": "2017-12-16 02:14:20"
+            "time": "2017-12-20 06:29:20"
         },
         {
             "name": "oomphinc/composer-installers-extender",
@@ -5497,16 +5500,16 @@
         },
         {
             "name": "symfony/psr-http-message-bridge",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/psr-http-message-bridge.git",
-                "reference": "b2098405d8644f6dc4c36febcee6a77c0fdecdff"
+                "reference": "c2b757934f2d9681a287e662efbc27c41fe8ef86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/b2098405d8644f6dc4c36febcee6a77c0fdecdff",
-                "reference": "b2098405d8644f6dc4c36febcee6a77c0fdecdff",
+                "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/c2b757934f2d9681a287e662efbc27c41fe8ef86",
+                "reference": "c2b757934f2d9681a287e662efbc27c41fe8ef86",
                 "shasum": ""
             },
             "require": {
@@ -5553,7 +5556,7 @@
                 "http-message",
                 "psr-7"
             ],
-            "time": "2017-07-23T09:13:43+00:00"
+            "time": "2017-12-19T00:31:44+00:00"
         },
         {
             "name": "symfony/routing",
