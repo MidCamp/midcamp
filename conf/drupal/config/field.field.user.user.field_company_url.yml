@@ -1,0 +1,24 @@
+uuid: d1bfb342-fc53-44ec-98c0-361b8306bd4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_company_url
+  module:
+    - link
+    - user
+id: user.user.field_company_url
+field_name: field_company_url
+entity_type: user
+bundle: user
+label: 'Company URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+  title_predefined: ''
+field_type: link

@@ -1,0 +1,35 @@
+uuid: 7a328f55-7d37-4fca-abdf-442bc6eb8621
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_mailing_list
+  module:
+    - mailchimp_lists
+    - user
+id: user.user.field_mailing_list
+field_name: field_mailing_list
+entity_type: user
+bundle: user
+label: 'Mailing List'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value:
+      subscribe: 0
+    subscribe: null
+    interest_groups: null
+default_value_callback: ''
+settings:
+  subscribe_checkbox_label: Subscribe
+  show_interest_groups: 0
+  interest_groups_hidden: 0
+  interest_groups_label: 'Interest Groups'
+  merge_fields:
+    EMAIL: mail
+    FNAME: field_name
+    LNAME: ''
+  unsubscribe_on_delete: 0
+field_type: mailchimp_lists_subscription

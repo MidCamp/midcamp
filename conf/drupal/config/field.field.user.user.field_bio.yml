@@ -1,0 +1,21 @@
+uuid: edae991f-31f8-44f6-8ea9-2dc9f2d99f01
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_bio
+  module:
+    - text
+    - user
+id: user.user.field_bio
+field_name: field_bio
+entity_type: user
+bundle: user
+label: 'About Me'
+description: 'Tell us about yourself!'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
