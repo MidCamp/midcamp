@@ -227,9 +227,35 @@ display:
           plugin_id: taxonomy_index_tid
       sorts: {  }
       title: 'Submitted Sessions'
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: "<p>MidCamp is looking for folks just like you to speak to our Drupal audience! Experienced speakers are always welcome, but camp is also a great place to start for first-time speakers. From the opening of session submission through the beginning of camp, we'll have communication to assist speakers (new and old) in creating engaging and informative sessions.</p>\n<p>Sessions submission will close January 26, 2018. <a href=\"/node/add/topic\">Submit your session today!</a></p>"
+            format: basic_html
+          plugin_id: text
       footer: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: 'No sessions submitted yet. What are you waiting for?'
+            format: basic_html
+          plugin_id: text
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
