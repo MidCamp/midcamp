@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.topic.field_track
     - node.type.topic
   module:
-    - content_moderation
     - text
 id: node.topic.default
 targetEntityType: node
@@ -48,10 +47,19 @@ content:
     type: options_buttons
     region: content
   moderation_state:
-    type: moderation_state_default
-    weight: 5
-    settings: {  }
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
+  status:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -67,7 +75,6 @@ hidden:
   path: true
   promote: true
   publish_on: true
-  status: true
   sticky: true
   uid: true
   unpublish_on: true
