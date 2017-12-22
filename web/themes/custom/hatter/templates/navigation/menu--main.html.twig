@@ -43,7 +43,8 @@
   {% for item in items %}
     {% set classes = [
         menu_level == 0 ? 'primary-nav__item' : 'primary-nav__sublist-item',
-        item.below ? 'has-children'
+        item.below ? 'has-children',
+        'item--' ~ item.title|clean_class,
     ] %}
     <li{{ item.attributes.addClass(classes) }}>
         {{ link(item.title, item.url) }}
