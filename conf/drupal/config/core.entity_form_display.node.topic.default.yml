@@ -7,9 +7,9 @@ dependencies:
     - field.field.node.topic.field_event
     - field.field.node.topic.field_people
     - field.field.node.topic.field_topic_type
+    - field.field.node.topic.field_track
     - node.type.topic
   module:
-    - path
     - text
 id: node.topic.default
 targetEntityType: node
@@ -18,79 +18,41 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 9
+    weight: 4
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
     region: content
-  created:
-    type: datetime_timestamp
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_event:
-    weight: 7
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   field_people:
-    weight: 8
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: entity_reference_autocomplete_tags
     region: content
   field_topic_type:
-    weight: 6
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
-  moderation_state:
-    type: moderation_state_default
-    weight: 100
-    settings: {  }
-    region: content
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 5
+  field_track:
+    weight: 2
     settings: {  }
     third_party_settings: {  }
-    region: content
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 3
-    third_party_settings: {  }
-    region: content
-  publish_on:
-    type: datetime_timestamp_no_default
-    weight: 30
-    settings: {  }
-    third_party_settings: {  }
+    type: options_buttons
     region: content
   status:
     type: boolean_checkbox
+    weight: 5
+    region: content
     settings:
       display_label: true
-    weight: 121
     third_party_settings: {  }
-    region: content
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 4
-    third_party_settings: {  }
-    region: content
   title:
     type: string_textfield
     weight: 0
@@ -99,19 +61,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
-  uid:
-    type: entity_reference_autocomplete
-    weight: 1
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
-  unpublish_on:
-    type: datetime_timestamp_no_default
-    weight: 30
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-hidden: {  }
+hidden:
+  created: true
+  field_event: true
+  path: true
+  promote: true
+  publish_on: true
+  sticky: true
+  uid: true
+  unpublish_on: true

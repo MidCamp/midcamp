@@ -11,8 +11,8 @@ id: node.topic.body
 field_name: body
 entity_type: node
 bundle: topic
-label: Description
-description: ''
+label: 'Describe your Topic'
+description: 'Sell us your topic here. Include details like... What makes this topic interesting? Who is your target audience? Why should people attend? Why should the selection committee accept this topic?  What should attendees already know in order to get the most out of this topic?'
 required: false
 translatable: true
 default_value: {  }

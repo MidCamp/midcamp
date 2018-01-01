@@ -1,0 +1,30 @@
+uuid: 1c9aab2e-6364-4d82-9a5f-3ec981bf44ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_tracks
+    - taxonomy.vocabulary.session_tracks
+  module:
+    - user
+id: user.user.field_tracks
+field_name: field_tracks
+entity_type: user
+bundle: user
+label: 'What interests you?'
+description: 'Tell us what kinds of sessions you''d like to see at MidCamp this year. See <a href="/topic-tracks" for descriptions.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      session_tracks: session_tracks
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

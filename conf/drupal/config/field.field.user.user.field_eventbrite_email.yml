@@ -1,0 +1,20 @@
+uuid: 91da902b-4e58-43d9-afb0-93c49adbb823
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_eventbrite_email
+  module:
+    - user
+id: user.user.field_eventbrite_email
+field_name: field_eventbrite_email
+entity_type: user
+bundle: user
+label: 'Eventbrite Email'
+description: 'This helps us connect your ticket in Eventbrite to your user if you used a different email than you used for your MidCamp account.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

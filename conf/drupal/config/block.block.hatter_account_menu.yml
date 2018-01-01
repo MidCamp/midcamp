@@ -12,8 +12,8 @@ _core:
   default_config_hash: DweBpscQZdG0-fHkSpUzdYucrNH45G_KF7Z82V-oyQM
 id: hatter_account_menu
 theme: hatter
-region: secondary_menu
-weight: 0
+region: branding
+weight: -9
 provider: null
 plugin: 'system_menu_block:account'
 settings:

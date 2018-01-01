@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.topic.field_event
     - field.field.node.topic.field_people
     - field.field.node.topic.field_topic_type
+    - field.field.node.topic.field_track
     - node.type.topic
   module:
     - text
@@ -19,24 +20,27 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  content_moderation_control:
     weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
-  field_people:
-    weight: 1
-    label: hidden
+    region: content
+  field_topic_type:
+    weight: 2
+    label: inline
     settings:
-      link: true
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_track:
+    weight: 1
+    label: inline
+    settings:
+      link: false
     third_party_settings: {  }
     type: entity_reference_label
     region: content
 hidden:
   field_event: true
-  field_topic_type: true
+  field_people: true
   links: true

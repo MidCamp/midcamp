@@ -1,0 +1,24 @@
+uuid: dc151103-9167-4b4b-a3de-1288166708f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_do_profile
+  module:
+    - link
+    - user
+id: user.user.field_do_profile
+field_name: field_do_profile
+entity_type: user
+bundle: user
+label: 'Drupal.org Profile'
+description: 'https://drupal.org/u/[username] or https://www.drupal.org/user/[uid number]'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+  title_predefined: ''
+field_type: link

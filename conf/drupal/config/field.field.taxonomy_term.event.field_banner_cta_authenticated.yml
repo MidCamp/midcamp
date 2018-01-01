@@ -1,0 +1,24 @@
+uuid: 49936ee7-f05f-4d6f-a156-dea02986f7f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_banner_cta_authenticated
+    - taxonomy.vocabulary.event
+  module:
+    - link
+id: taxonomy_term.event.field_banner_cta_authenticated
+field_name: field_banner_cta_authenticated
+entity_type: taxonomy_term
+bundle: event
+label: 'Banner CTA for Authenticated users'
+description: 'This is the main CTA that will appear in the banner when users are logged in. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+  title_predefined: ''
+field_type: link

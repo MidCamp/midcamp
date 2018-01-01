@@ -28,31 +28,30 @@
 
 {% macro menu_links(items, attributes, menu_level) %}
   {% import _self as menus %}
-  {% if items %}
-    {# Add classes to the UL #}
-    {%
-      set classes = [
-        'primary-nav__list',
-      ]
-    %}
-    {% if menu_level == 0 %}
-      <ul{{ attributes.addClass(classes) }}>
-    {% else %}
-      <ul{{ attributes.addClass(classes) }}>
-    {% endif %}
-    {% for item in items %}
-      {%
-        set item_classes = [
-          'primary-nav__item',
-        ]
-      %}
-      <li{{ item.attributes.addClass(item_classes) }}>
+
+
+{% if menu_level == 0 %}
+<button class="primary-nav__trigger">{% include active_theme_path() ~ '/svg/menu.svg' %} Menu</button>
+  <ul{{ attributes.addClass('primary-nav__list') }}>
+{% else %}
+<button class="primary-nav__sublist--trigger">
+  <span class="element-invisible">Open Menu</span>
+  {% include active_theme_path() ~ '/svg/arrow.svg' %}
+</button>
+  <ul class="primary-nav__sublist">
+{% endif %}
+  {% for item in items %}
+    {% set classes = [
+        menu_level == 0 ? 'primary-nav__item' : 'primary-nav__sublist-item',
+        item.below ? 'has-children',
+        'item--' ~ item.title|clean_class,
+    ] %}
+    <li{{ item.attributes.addClass(classes) }}>
         {{ link(item.title, item.url) }}
         {% if item.below %}
-          {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+            {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
         {% endif %}
-      </li>
-    {% endfor %}
-    </ul>
-  {% endif %}
+    </li>
+  {% endfor %}
+</ul>
 {% endmacro %}

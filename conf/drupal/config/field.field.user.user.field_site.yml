@@ -1,0 +1,24 @@
+uuid: 850e99fb-2985-44bf-8811-6f338fb21701
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_site
+  module:
+    - link
+    - user
+id: user.user.field_site
+field_name: field_site
+entity_type: user
+bundle: user
+label: 'My Website(s)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+  title_predefined: ''
+field_type: link
