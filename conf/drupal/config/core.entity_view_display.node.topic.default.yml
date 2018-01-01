@@ -20,7 +20,7 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 1
+    weight: 0
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -30,15 +30,15 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_topic_type:
-    weight: 0
-    label: hidden
+    weight: 2
+    label: inline
     settings:
       link: false
     third_party_settings: {  }
     type: entity_reference_label
     region: content
   field_track:
-    weight: 2
+    weight: 1
     label: inline
     settings:
       link: false
