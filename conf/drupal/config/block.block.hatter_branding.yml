@@ -22,4 +22,9 @@ settings:
   use_site_logo: true
   use_site_name: true
   use_site_slogan: true
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
