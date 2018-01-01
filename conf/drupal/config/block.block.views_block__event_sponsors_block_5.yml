@@ -1,0 +1,30 @@
+uuid: e9c4e379-bb7c-40e6-99b1-2967c8cada44
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.event_sponsors
+  module:
+    - system
+    - views
+  theme:
+    - hatter
+id: views_block__event_sponsors_block_5
+theme: hatter
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:event_sponsors-block_5'
+settings:
+  id: 'views_block:event_sponsors-block_5'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /2018/sponsors
+    negate: false
+    context_mapping: {  }
