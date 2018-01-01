@@ -4,22 +4,68 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.job.field_job_description
+    - field.field.node.job.field_job_link
     - field.field.node.job.field_job_location
+    - field.field.node.job.field_job_skill_level
+    - field.field.node.job.field_job_type
+    - field.field.node.job.field_sponsor_company
     - node.type.job
   module:
+    - link
+    - options
     - user
 id: node.job.teaser
 targetEntityType: node
 bundle: job
 mode: teaser
 content:
-  links:
-    weight: 100
+  field_job_link:
+    type: link
+    weight: 5
     region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_job_location:
+    type: string
+    weight: 4
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_job_skill_level:
+    type: list_default
+    weight: 3
+    region: content
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+  field_job_type:
+    type: list_default
+    weight: 2
+    region: content
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+  field_sponsor_company:
+    type: entity_reference_label
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   field_job_description: true
-  field_job_link: true
-  field_job_location: true
-  field_job_skill_level: true
-  field_job_type: true
-  field_sponsor_company: true

@@ -46,14 +46,6 @@ content:
     third_party_settings: {  }
     type: options_buttons
     region: content
-  moderation_state:
-    weight: 26
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   status:
     type: boolean_checkbox
     weight: 5
