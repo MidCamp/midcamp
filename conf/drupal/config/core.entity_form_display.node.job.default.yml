@@ -13,7 +13,6 @@ dependencies:
     - node.type.job
   module:
     - link
-    - metatag
     - path
     - scheduler
     - text
@@ -65,12 +64,6 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
-  field_meta_tags:
-    weight: 122
-    settings: {  }
-    third_party_settings: {  }
-    type: metatag_firehose
-    region: content
   field_sponsor_company:
     weight: 1
     settings:
@@ -96,12 +89,12 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 11
     third_party_settings: {  }
     region: content
   publish_on:
     type: datetime_timestamp_no_default
-    weight: 30
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -109,7 +102,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 121
+    weight: 14
     third_party_settings: {  }
     region: content
   sticky:
@@ -138,8 +131,9 @@ content:
     region: content
   unpublish_on:
     type: datetime_timestamp_no_default
-    weight: 30
+    weight: 13
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_meta_tags: true
