@@ -5,11 +5,13 @@ dependencies:
   config:
     - field.field.node.topic.body
     - field.field.node.topic.field_event
+    - field.field.node.topic.field_meta_tags
     - field.field.node.topic.field_people
     - field.field.node.topic.field_topic_type
     - field.field.node.topic.field_track
     - node.type.topic
   module:
+    - metatag
     - text
 id: node.topic.default
 targetEntityType: node
@@ -24,6 +26,12 @@ content:
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
+    region: content
+  field_meta_tags:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_people:
     weight: 3

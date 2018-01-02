@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.sponsor.field_event
     - field.field.node.sponsor.field_image
     - field.field.node.sponsor.field_link
+    - field.field.node.sponsor.field_meta_tags
     - field.field.node.sponsor.field_sponsor_level
     - node.type.sponsor
   module:
@@ -57,4 +58,5 @@ content:
     region: content
 hidden:
   field_event: true
+  field_meta_tags: true
   links: true
