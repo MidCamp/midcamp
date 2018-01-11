@@ -12,7 +12,7 @@ field_name: field_tracks
 entity_type: user
 bundle: user
 label: 'What interests you?'
-description: 'Tell us what kinds of sessions you''d like to see at MidCamp this year. See <a href="/topic-tracks" for descriptions.'
+description: 'Tell us what kinds of sessions you''d like to see at MidCamp this year. See <a href="/topic-tracks">our topic tracks page</a> for descriptions.'
 required: false
 translatable: false
 default_value: {  }

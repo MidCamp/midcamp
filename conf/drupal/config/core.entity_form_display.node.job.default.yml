@@ -135,5 +135,8 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  url_redirects:
+    weight: 50
+    region: content
 hidden:
   field_meta_tags: true
