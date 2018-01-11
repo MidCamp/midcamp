@@ -7,13 +7,16 @@ dependencies:
     - field.field.node.sponsor.field_event
     - field.field.node.sponsor.field_image
     - field.field.node.sponsor.field_link
+    - field.field.node.sponsor.field_meta_tags
     - field.field.node.sponsor.field_sponsor_level
     - image.style.thumbnail
     - node.type.sponsor
   module:
     - image
     - link
+    - metatag
     - path
+    - scheduler
     - text
 id: node.sponsor.default
 targetEntityType: node
@@ -59,6 +62,12 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_meta_tags:
+    weight: 122
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_sponsor_level:
     weight: 3

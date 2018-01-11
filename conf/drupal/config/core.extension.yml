@@ -39,6 +39,7 @@ module:
   mailchimp_lists: 0
   mailchimp_signup: 0
   menu_ui: 0
+  metatag: 0
   name: 0
   node: 0
   options: 0

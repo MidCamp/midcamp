@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.job.field_job_location
     - field.field.node.job.field_job_skill_level
     - field.field.node.job.field_job_type
+    - field.field.node.job.field_meta_tags
     - field.field.node.job.field_sponsor_company
     - node.type.job
   module:
@@ -70,8 +71,9 @@ content:
     type: entity_reference_label
     region: content
   links:
-    weight: 100
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_meta_tags: true
