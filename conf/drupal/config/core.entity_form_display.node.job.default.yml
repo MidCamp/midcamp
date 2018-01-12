@@ -8,11 +8,13 @@ dependencies:
     - field.field.node.job.field_job_location
     - field.field.node.job.field_job_skill_level
     - field.field.node.job.field_job_type
+    - field.field.node.job.field_meta_tags
     - field.field.node.job.field_sponsor_company
     - node.type.job
   module:
     - link
     - path
+    - scheduler
     - text
 id: node.job.default
 targetEntityType: node
@@ -87,12 +89,12 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 11
     third_party_settings: {  }
     region: content
   publish_on:
     type: datetime_timestamp_no_default
-    weight: 30
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -100,7 +102,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 121
+    weight: 14
     third_party_settings: {  }
     region: content
   sticky:
@@ -129,8 +131,12 @@ content:
     region: content
   unpublish_on:
     type: datetime_timestamp_no_default
-    weight: 30
+    weight: 13
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+  url_redirects:
+    weight: 50
+    region: content
+hidden:
+  field_meta_tags: true

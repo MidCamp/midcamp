@@ -25,5 +25,5 @@ type: topic
 description: 'Use <em>topic</em> for individual session, keynote, BoF, etc.'
 help: ''
 new_revision: false
-preview_mode: 1
+preview_mode: 0
 display_submitted: false

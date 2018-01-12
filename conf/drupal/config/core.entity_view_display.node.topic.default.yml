@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.topic.body
     - field.field.node.topic.field_event
+    - field.field.node.topic.field_meta_tags
     - field.field.node.topic.field_people
     - field.field.node.topic.field_topic_type
     - field.field.node.topic.field_track
@@ -24,11 +25,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  content_moderation_control:
-    weight: 3
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_topic_type:
     weight: 2
     label: inline
@@ -47,5 +43,6 @@ content:
     region: content
 hidden:
   field_event: true
+  field_meta_tags: true
   field_people: true
   links: true

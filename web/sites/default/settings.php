@@ -115,3 +115,8 @@ if (file_exists(__DIR__ . '/services.local.yml')) {
 
 $config_directories['sync'] = '../conf/drupal/config';
 $settings['install_profile'] = 'config_installer';
+
+// To update custom env variables, ask in the Amazee slack #midcamp channel.
+if (getenv('MAILCHIMP_API_KEY')) {
+  $config['mailchimp.settings']['api_key'] = getenv('MAILCHIMP_API_KEY');
+}

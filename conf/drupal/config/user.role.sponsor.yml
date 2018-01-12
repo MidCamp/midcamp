@@ -1,0 +1,18 @@
+uuid: 1c8fdf4f-072b-4764-a8f9-7e0721519ff3
+langcode: en
+status: true
+dependencies: {  }
+id: sponsor
+label: Sponsor
+weight: 3
+is_admin: null
+permissions:
+  - 'create job content'
+  - 'create sponsor content'
+  - 'delete own job content'
+  - 'edit own job content'
+  - 'edit own sponsor content'
+  - 'revert job revisions'
+  - 'revert sponsor revisions'
+  - 'view job revisions'
+  - 'view sponsor revisions'

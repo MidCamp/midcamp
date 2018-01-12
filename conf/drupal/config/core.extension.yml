@@ -39,6 +39,7 @@ module:
   mailchimp_lists: 0
   mailchimp_signup: 0
   menu_ui: 0
+  metatag: 0
   name: 0
   node: 0
   options: 0
@@ -48,6 +49,7 @@ module:
   r4032login: 0
   rdf: 0
   recaptcha: 0
+  redirect: 0
   scheduler: 0
   search: 0
   shortcut: 0

@@ -4,13 +4,16 @@ status: true
 dependencies:
   config:
     - field.field.node.venue.field_address
+    - field.field.node.venue.field_meta_tags
     - field.field.node.venue.field_venue_events
     - field.field.node.venue.field_venue_paragraphs
     - node.type.venue
   module:
     - address
+    - metatag
     - paragraphs
     - path
+    - scheduler
 id: node.venue.default
 targetEntityType: node
 bundle: venue
@@ -28,6 +31,12 @@ content:
       default_country: null
     third_party_settings: {  }
     type: address_default
+    region: content
+  field_meta_tags:
+    weight: 122
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_venue_events:
     weight: 8
@@ -110,5 +119,8 @@ content:
     weight: 30
     settings: {  }
     third_party_settings: {  }
+    region: content
+  url_redirects:
+    weight: 50
     region: content
 hidden: {  }

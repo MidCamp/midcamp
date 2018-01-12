@@ -3,11 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.page.field_meta_tags
     - field.field.node.page.field_page_paragraphs
     - node.type.page
   module:
+    - metatag
     - paragraphs
     - path
+    - scheduler
 _core:
   default_config_hash: KSvzyFhdLuxniTsunUnUfpfMmod2l57GibtVjL8ymHM
 id: node.page.default
@@ -20,6 +23,12 @@ content:
     weight: 3
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_meta_tags:
+    weight: 122
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_page_paragraphs:
     type: entity_reference_paragraphs
@@ -93,5 +102,8 @@ content:
     weight: 30
     settings: {  }
     third_party_settings: {  }
+    region: content
+  url_redirects:
+    weight: 50
     region: content
 hidden: {  }
