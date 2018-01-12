@@ -4,6 +4,6 @@ api_classname: Mailchimp\Mailchimp
 test_mode: false
 _core:
   default_config_hash: x8k6uOqmSHPqpp71jYGxHF3_SAs3U-Pha3YCntQIhPU
-enable_connected: false
+enable_connected: true
 connected_id: null
 connected_paths: null
