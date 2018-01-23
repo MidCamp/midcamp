@@ -7,7 +7,7 @@
     "prefer-stable": true,
     "preferred-install": "dist",
     "config": {
-        "sort-packages": "true"
+        "sort-packages": true
     },
     "repositories": {
         "hatter-styleguide": {
