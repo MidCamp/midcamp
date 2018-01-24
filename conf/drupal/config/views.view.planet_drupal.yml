@@ -3,12 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - taxonomy.vocabulary.tags
-  content:
-    - 'taxonomy_term:tags:85a7b055-8ad6-49a5-984d-47064d30069b'
+    - core.entity_view_mode.node.teaser
   module:
     - node
-    - taxonomy
     - user
 id: planet_drupal
 label: 'Planet Drupal'
@@ -142,14 +139,42 @@ display:
           expose:
             operator: ''
           group: 1
-        tid:
-          id: tid
-          table: taxonomy_index
-          field: tid
-          value:
-            - 1
-          vid: tags
-          plugin_id: taxonomy_index_tid
+        field_planet_value:
+          id: field_planet_value
+          table: node__field_planet
+          field: field_planet_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: boolean
       sorts:
         created:
           id: created
@@ -172,13 +197,16 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -198,7 +226,38 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: Page
+    position: 2
+    display_options:
+      display_extenders: {  }
+      path: admin/planet-test
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+      defaults:
+        style: false
+        row: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: teaser
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
