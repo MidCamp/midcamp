@@ -1380,7 +1380,11 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0",
-                    "datestamp": "1470411844"
+                    "datestamp": "1470411844",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1388,10 +1392,6 @@
                 "GPL-2.0+"
             ],
             "authors": [
-                {
-                    "name": "Caffeinated",
-                    "homepage": "https://www.drupal.org/user/2507260"
-                },
                 {
                     "name": "albertski",
                     "homepage": "https://www.drupal.org/user/1327432"
@@ -1403,6 +1403,10 @@
                 {
                     "name": "mikeacklin",
                     "homepage": "https://www.drupal.org/user/1198900"
+                },
+                {
+                    "name": "thejimbirch",
+                    "homepage": "https://www.drupal.org/user/2507260"
                 }
             ],
             "description": "Field Formatter for Contact Forms",
@@ -1897,17 +1901,17 @@
         },
         {
             "name": "drupal/geocoder",
-            "version": "2.0.0-alpha8",
+            "version": "2.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/geocoder",
-                "reference": "8.x-2.0-alpha8"
+                "reference": "8.x-2.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-2.0-alpha8.zip",
-                "reference": "8.x-2.0-alpha8",
-                "shasum": "289dfba7fb1e31f0c6ad311f47227a8ef517b0eb"
+                "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-2.0-beta2.zip",
+                "reference": "8.x-2.0-beta2",
+                "shasum": "c85caef52ea3cbd56c6df4b3c205b1a88a0f634e"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -1915,8 +1919,13 @@
             },
             "require-dev": {
                 "drupal/address": "*",
+                "drupal/coder": "^8.2",
                 "drupal/geocoder_field": "*",
-                "drupal/geofield": "*"
+                "drupal/geofield": "*",
+                "phpro/grumphp": "^0.12.1",
+                "phpunit/phpunit": "^5.7|^6.5",
+                "sensiolabs/security-checker": "^4.1",
+                "squizlabs/php_codesniffer": "^2.7"
             },
             "type": "drupal-module",
             "extra": {
@@ -1924,11 +1933,11 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-alpha8",
-                    "datestamp": "1513903984",
+                    "version": "8.x-2.0-beta2",
+                    "datestamp": "1516738685",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -1943,8 +1952,9 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "Dean Reilly",
-                    "homepage": "https://www.drupal.org/user/336031"
+                    "name": "Italo Mairo (@itamair)",
+                    "homepage": "https://www.drupal.org/u/itamair",
+                    "role": "Co-maintainer"
                 },
                 {
                     "name": "GJdan",
@@ -1979,7 +1989,7 @@
                     "homepage": "https://www.drupal.org/user/585764"
                 }
             ],
-            "description": "An API to geocode and reverse geocode data into other GIS data types.",
+            "description": "A Drupal module and a services based API to perform Geocode & Reverse Geocode operations among GIS data and addresses types & formats.",
             "homepage": "https://drupal.org/project/geocoder",
             "support": {
                 "source": "https://cgit.drupalcode.org/geocoder",
@@ -1989,7 +1999,7 @@
         },
         {
             "name": "drupal/geocoder_field",
-            "version": "2.0.0-alpha8",
+            "version": "2.0.0-beta2",
             "require": {
                 "drupal/core": "*",
                 "drupal/geocoder": "self.version"
@@ -2000,11 +2010,11 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-alpha8",
-                    "datestamp": "1513903984",
+                    "version": "8.x-2.0-beta2",
+                    "datestamp": "1516738685",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -2062,7 +2072,7 @@
         },
         {
             "name": "drupal/geocoder_geofield",
-            "version": "2.0.0-alpha8",
+            "version": "2.0.0-beta2",
             "require": {
                 "drupal/core": "~8.0",
                 "drupal/geocoder": "self.version",
@@ -2075,11 +2085,11 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-alpha8",
-                    "datestamp": "1513903984",
+                    "version": "8.x-2.0-beta2",
+                    "datestamp": "1516738685",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -2137,17 +2147,17 @@
         },
         {
             "name": "drupal/geofield",
-            "version": "1.0.0-alpha4",
+            "version": "1.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/geofield",
-                "reference": "8.x-1.0-alpha4"
+                "reference": "8.x-1.0-alpha5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geofield-8.x-1.0-alpha4.zip",
-                "reference": "8.x-1.0-alpha4",
-                "shasum": "3bd9f6077bfce43631b35bee37e0b0d04c12c0e3"
+                "url": "https://ftp.drupal.org/files/projects/geofield-8.x-1.0-alpha5.zip",
+                "reference": "8.x-1.0-alpha5",
+                "shasum": "be65502b058a020be49b12a543b2c9c53ff71389"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -2159,8 +2169,12 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha4",
-                    "datestamp": "1496311442"
+                    "version": "8.x-1.0-alpha5",
+                    "datestamp": "1515888783",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2187,16 +2201,8 @@
                     "homepage": "https://www.drupal.org/user/254857"
                 },
                 {
-                    "name": "dtarc",
-                    "homepage": "https://www.drupal.org/user/114087"
-                },
-                {
-                    "name": "jherencia",
-                    "homepage": "https://www.drupal.org/user/360690"
-                },
-                {
-                    "name": "nikhiltri",
-                    "homepage": "https://www.drupal.org/user/270223"
+                    "name": "itamair",
+                    "homepage": "https://www.drupal.org/user/1179076"
                 },
                 {
                     "name": "phayes",
@@ -2399,8 +2405,12 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.4+2-dev",
-                    "datestamp": "1480435083"
+                    "version": "8.x-1.4+4-dev",
+                    "datestamp": "1491577384",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3956,12 +3966,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MidCamp/Hatter.git",
-                "reference": "3744017092d711ae615496fb1a39505a8395bbc9"
+                "reference": "c5bde275b6d3d7d29f0d0b23db7c6df561d00280"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MidCamp/Hatter/zipball/3744017092d711ae615496fb1a39505a8395bbc9",
-                "reference": "3744017092d711ae615496fb1a39505a8395bbc9",
+                "url": "https://api.github.com/repos/MidCamp/Hatter/zipball/c5bde275b6d3d7d29f0d0b23db7c6df561d00280",
+                "reference": "c5bde275b6d3d7d29f0d0b23db7c6df561d00280",
                 "shasum": ""
             },
             "require": {
@@ -3980,7 +3990,7 @@
                 "source": "https://github.com/MidCamp/Hatter/tree/master",
                 "issues": "https://github.com/MidCamp/Hatter/issues"
             },
-            "time": "2018-01-11 22:04:39"
+            "time": "2018-01-25 04:40:11"
         },
         {
             "name": "oomphinc/composer-installers-extender",
@@ -4150,16 +4160,16 @@
         },
         {
             "name": "pimple/pimple",
-            "version": "v3.2.2",
+            "version": "v3.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silexphp/Pimple.git",
-                "reference": "4d45fb62d96418396ec58ba76e6f065bca16e10a"
+                "reference": "9e403941ef9d65d20cba7d54e29fe906db42cf32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/4d45fb62d96418396ec58ba76e6f065bca16e10a",
-                "reference": "4d45fb62d96418396ec58ba76e6f065bca16e10a",
+                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/9e403941ef9d65d20cba7d54e29fe906db42cf32",
+                "reference": "9e403941ef9d65d20cba7d54e29fe906db42cf32",
                 "shasum": ""
             },
             "require": {
@@ -4196,7 +4206,7 @@
                 "container",
                 "dependency injection"
             ],
-            "time": "2017-07-23T07:32:15+00:00"
+            "time": "2018-01-21T07:42:36+00:00"
         },
         {
             "name": "psr/container",
@@ -4560,16 +4570,16 @@
         },
         {
             "name": "ringcentral/psr7",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ringcentral/psr7.git",
-                "reference": "2594fb47cdc659f3fcf0aa1559b7355460555303"
+                "reference": "dcd84bbb49b96c616d1dcc8bfb9bef3f2cd53d1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ringcentral/psr7/zipball/2594fb47cdc659f3fcf0aa1559b7355460555303",
-                "reference": "2594fb47cdc659f3fcf0aa1559b7355460555303",
+                "url": "https://api.github.com/repos/ringcentral/psr7/zipball/dcd84bbb49b96c616d1dcc8bfb9bef3f2cd53d1c",
+                "reference": "dcd84bbb49b96c616d1dcc8bfb9bef3f2cd53d1c",
                 "shasum": ""
             },
             "require": {
@@ -4614,7 +4624,7 @@
                 "stream",
                 "uri"
             ],
-            "time": "2016-03-25T17:36:49+00:00"
+            "time": "2018-01-15T21:00:49+00:00"
         },
         {
             "name": "seld/cli-prompt",
@@ -4666,16 +4676,16 @@
         },
         {
             "name": "seld/jsonlint",
-            "version": "1.7.0",
+            "version": "1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/jsonlint.git",
-                "reference": "9b355654ea99460397b89c132b5c1087b6bf4473"
+                "reference": "d15f59a67ff805a44c50ea0516d2341740f81a38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/9b355654ea99460397b89c132b5c1087b6bf4473",
-                "reference": "9b355654ea99460397b89c132b5c1087b6bf4473",
+                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/d15f59a67ff805a44c50ea0516d2341740f81a38",
+                "reference": "d15f59a67ff805a44c50ea0516d2341740f81a38",
                 "shasum": ""
             },
             "require": {
@@ -4711,7 +4721,7 @@
                 "parser",
                 "validator"
             ],
-            "time": "2018-01-03T12:13:57+00:00"
+            "time": "2018-01-24T12:46:19+00:00"
         },
         {
             "name": "seld/phar-utils",
