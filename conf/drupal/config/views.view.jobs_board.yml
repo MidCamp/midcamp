@@ -226,7 +226,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<strong>{{ title }} at {{ field_sponsor_company }}</strong>'
+            text: "<hr>\n<strong>{{ title }} at {{ field_sponsor_company }}</strong>"
             make_link: false
             path: ''
             absolute: false
