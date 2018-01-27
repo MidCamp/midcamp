@@ -5,6 +5,31 @@
  * Functions to support theming in the hatter theme.
  */
 
+/**
+ * Implements THEME_theme_suggestions_HOOK_alter() for taxonomy terms.
+ */
 function hatter_theme_suggestions_taxonomy_term_alter(&$suggestions, $vars, $hook) {
   $suggestions[] = 'taxonomy_term__' . $vars['elements']['#view_mode'];
 }
+
+/**
+ * Implements THEME_theme_suggestions_HOOK_alter() for fields.
+ */
+function hatter_theme_suggestions_field_alter(&$suggestions, $vars, $hook) {
+  // Add field template suggestions for user view modes.
+  if ($vars['element']['#bundle'] == 'user' && $vars['element']['#view_mode'] == 'featured_speaker') {
+    $suggestions[] = 'field__' . $vars['element']['#bundle'] . '__' .
+                      $vars['element']['#field_name'] . '__' .
+                      $vars['element']['#view_mode'];
+
+  }
+}
+
+/**
+ * Implements THEME_theme_suggestions_HOOK_alter() for user entities.
+ */
+function hatter_theme_suggestions_user_alter(&$suggestions, $vars, $hook) {
+  // Add template suggestions for User entity view modes.
+  $suggestions[] = 'user__' . $vars['elements']['#view_mode'];
+}
+
