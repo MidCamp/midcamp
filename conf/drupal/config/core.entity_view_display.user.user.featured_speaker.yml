@@ -16,7 +16,7 @@ dependencies:
     - field.field.user.user.field_tracks
     - field.field.user.user.field_twitter
     - field.field.user.user.user_picture
-    - image.style.medium
+    - image.style.featured_speaker
   module:
     - image
     - link
@@ -77,7 +77,7 @@ content:
     type: image
     weight: 0
     settings:
-      image_style: medium
+      image_style: featured_speaker
       image_link: ''
     third_party_settings: {  }
     label: hidden
