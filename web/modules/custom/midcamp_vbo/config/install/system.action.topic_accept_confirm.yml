@@ -1,0 +1,7 @@
+langcode: en
+status: true
+id: topic_accept_confirm
+label: 'Accept and confirm topic'
+type: node
+plugin: topic_accept_confirm
+configuration: {  }

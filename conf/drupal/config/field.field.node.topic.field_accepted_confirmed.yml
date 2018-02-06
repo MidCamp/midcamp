@@ -1,0 +1,23 @@
+uuid: a9a91acd-d19e-4e39-abd9-79a19f21ec0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_accepted_confirmed
+    - node.type.topic
+id: node.topic.field_accepted_confirmed
+field_name: field_accepted_confirmed
+entity_type: node
+bundle: topic
+label: 'Accepted and confirmed'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean
