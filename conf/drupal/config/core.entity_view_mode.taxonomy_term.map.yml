@@ -1,0 +1,10 @@
+uuid: afc0eef5-8982-437f-8186-7fb65decee18
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.map
+label: 'Event Venue Map'
+targetEntityType: taxonomy_term
+cache: true

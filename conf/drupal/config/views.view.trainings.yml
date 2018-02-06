@@ -218,7 +218,7 @@ display:
           error_message: true
           plugin_id: taxonomy_index_tid
       sorts: {  }
-      title: 'Submitted Training Workshops'
+      title: 'Submitted Trainings'
       header: {  }
       footer: {  }
       empty:
