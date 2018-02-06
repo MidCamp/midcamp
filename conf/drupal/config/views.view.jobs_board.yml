@@ -77,6 +77,10 @@ display:
           quantity: 9
       style:
         type: default
+        options:
+          grouping: {  }
+          row_class: l-1up
+          default_row_class: true
       row:
         type: fields
         options:
@@ -222,7 +226,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '{{ title }} at {{ field_sponsor_company }}'
+            text: "<hr>\n<strong>{{ title }} at {{ field_sponsor_company }}</strong>"
             make_link: false
             path: ''
             absolute: false
@@ -330,7 +334,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Job Type'
+          label: ''
           exclude: false
           alter:
             alter_text: false
@@ -363,7 +367,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -392,7 +396,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Audience
+          label: ''
           exclude: false
           alter:
             alter_text: false
@@ -425,7 +429,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -496,8 +500,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: text_default
-          settings: {  }
+          type: text_summary_or_trimmed
+          settings:
+            trim_length: 200
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -626,7 +631,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Jobs Board'
+      title: 'Job Board'
       header: {  }
       footer: {  }
       empty: {  }

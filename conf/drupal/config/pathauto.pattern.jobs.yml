@@ -1,22 +1,22 @@
-uuid: 678b54a8-5ba1-4b06-8718-7f2672ab8adb
+uuid: 933c6ce8-4f48-4583-a0fc-e53860048c87
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: topics
-label: Topics
+id: jobs
+label: Jobs
 type: 'canonical_entities:node'
-pattern: 'topic/[node:title]'
+pattern: '/jobs/[node:field_sponsor_company]/[node:title]'
 selection_criteria:
-  9335d045-390f-40c7-84d4-7fcfaf29f957:
+  1743f797-5c39-4618-8a3b-09c10dea8b21:
     id: node_type
     bundles:
-      topic: topic
+      job: job
     negate: false
     context_mapping:
       node: node
-    uuid: 9335d045-390f-40c7-84d4-7fcfaf29f957
+    uuid: 1743f797-5c39-4618-8a3b-09c10dea8b21
 selection_logic: and
-weight: -6
+weight: -10
 relationships: {  }
