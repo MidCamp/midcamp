@@ -7,7 +7,7 @@ dependencies:
     - node.type.topic
     - taxonomy.vocabulary.topic_type
   content:
-    - 'taxonomy_term:event:58ab979d-12f0-4b19-ab75-5625aa986afb'
+    - 'taxonomy_term:topic_type:f9f1e3ca-ad7f-4636-b8c2-bb5d29f7b35b'
   module:
     - node
     - taxonomy
@@ -182,7 +182,7 @@ display:
           admin_label: ''
           operator: or
           value:
-            - 2
+            - 15
           group: 1
           exposed: false
           expose:
@@ -218,7 +218,7 @@ display:
           error_message: true
           plugin_id: taxonomy_index_tid
       sorts: {  }
-      title: 'Submitted Sessions'
+      title: 'Submitted Trainings'
       header: {  }
       footer: {  }
       empty: {  }

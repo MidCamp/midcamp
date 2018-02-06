@@ -1,0 +1,10 @@
+uuid: 376ab4ec-c0d4-4b39-900d-6dadfad1afae
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.email
+label: Email
+targetEntityType: user
+cache: true
