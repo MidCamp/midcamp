@@ -1,0 +1,13 @@
+uuid: 4ab27ad7-1ade-4e19-8bce-dab516bbc44a
+langcode: en
+status: true
+dependencies:
+  module:
+    - midcamp_vbo
+_core:
+  default_config_hash: SuJEMMMnC5K5043bX4BMue6pS4HSZsI69saIyKcunIw
+id: topic_accept_confirm
+label: 'Accept and confirm topic'
+type: node
+plugin: topic_accept_confirm
+configuration: {  }

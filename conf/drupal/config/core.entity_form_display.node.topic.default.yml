@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.topic.body
+    - field.field.node.topic.field_accepted_confirmed
     - field.field.node.topic.field_event
     - field.field.node.topic.field_meta_tags
     - field.field.node.topic.field_people
@@ -25,6 +26,13 @@ content:
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
+    region: content
+  field_accepted_confirmed:
+    weight: 51
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
   field_people:
     weight: 3
