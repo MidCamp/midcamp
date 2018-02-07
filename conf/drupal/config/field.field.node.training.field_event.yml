@@ -1,0 +1,33 @@
+uuid: 7925ed59-1e3c-458a-8973-3e8fb20b3902
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event
+    - node.type.training
+    - taxonomy.vocabulary.event
+  content:
+    - 'taxonomy_term:event:58ab979d-12f0-4b19-ab75-5625aa986afb'
+id: node.training.field_event
+field_name: field_event
+entity_type: node
+bundle: training
+label: Event
+description: 'The event you are proposing this training for.'
+required: false
+translatable: true
+default_value:
+  -
+    target_uuid: 58ab979d-12f0-4b19-ab75-5625aa986afb
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event: event
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
