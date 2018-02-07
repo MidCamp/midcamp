@@ -2202,21 +2202,21 @@
         },
         {
             "name": "drupal/geofield",
-            "version": "1.0.0-alpha6",
+            "version": "1.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/geofield",
-                "reference": "8.x-1.0-alpha6"
+                "reference": "8.x-1.0-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geofield-8.x-1.0-alpha6.zip",
-                "reference": "8.x-1.0-alpha6",
-                "shasum": "101c0b30fb562dac6c60d9900461a665da38bb0d"
+                "url": "https://ftp.drupal.org/files/projects/geofield-8.x-1.0-beta1.zip",
+                "reference": "8.x-1.0-beta1",
+                "shasum": "9caab4e50528575b16aa296c00e8a382a017d3dd"
             },
             "require": {
                 "drupal/core": "~8.0",
-                "phayes/geophp": "dev-master"
+                "phayes/geophp": "dev-master#6855624"
             },
             "type": "drupal-module",
             "extra": {
@@ -2224,11 +2224,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha6",
-                    "datestamp": "1517176686",
+                    "version": "8.x-1.0-beta1",
+                    "datestamp": "1518040980",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -2248,8 +2248,9 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "chachasikes",
-                    "homepage": "https://www.drupal.org/user/50674"
+                    "name": "Italo Mairo",
+                    "homepage": "https://www.drupal.org/u/itamair",
+                    "role": "Maintainer"
                 },
                 {
                     "name": "davidseth",
@@ -4017,12 +4018,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MidCamp/Hatter.git",
-                "reference": "73449c8c402c4524697139c65ca4686a88fbacb3"
+                "reference": "f07fd09005ee3a3f8ef1945b93c5cb8b86c60484"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MidCamp/Hatter/zipball/73449c8c402c4524697139c65ca4686a88fbacb3",
-                "reference": "73449c8c402c4524697139c65ca4686a88fbacb3",
+                "url": "https://api.github.com/repos/MidCamp/Hatter/zipball/f07fd09005ee3a3f8ef1945b93c5cb8b86c60484",
+                "reference": "f07fd09005ee3a3f8ef1945b93c5cb8b86c60484",
                 "shasum": ""
             },
             "require": {
@@ -4041,7 +4042,7 @@
                 "source": "https://github.com/MidCamp/Hatter/tree/master",
                 "issues": "https://github.com/MidCamp/Hatter/issues"
             },
-            "time": "2018-01-31 03:58:44"
+            "time": "2018-02-07 22:03:44"
         },
         {
             "name": "oomphinc/composer-installers-extender",
