@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.topic.body
+    - field.field.node.topic.field_accepted_confirmed
     - field.field.node.topic.field_event
     - field.field.node.topic.field_meta_tags
     - field.field.node.topic.field_people
@@ -63,10 +64,13 @@ content:
     third_party_settings: {  }
     region: content
   url_redirects:
-    weight: 50
+    weight: 6
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
+  field_accepted_confirmed: true
   field_event: true
   field_meta_tags: true
   path: true
