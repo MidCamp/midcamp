@@ -9,19 +9,18 @@ label: Content
 type: 'canonical_entities:node'
 pattern: '[node:content-type]/[node:title]'
 selection_criteria:
-  bf963ed6-17b8-4395-9509-f4a90efe14eb:
+  4737754a-5efa-4674-b1c6-2e61db1cec8c:
     id: node_type
     bundles:
       article: article
       job: job
       sponsor: sponsor
       topic: topic
-      training: training
       venue: venue
     negate: false
     context_mapping:
       node: node
-    uuid: bf963ed6-17b8-4395-9509-f4a90efe14eb
+    uuid: 4737754a-5efa-4674-b1c6-2e61db1cec8c
 selection_logic: and
 weight: -7
 relationships: {  }
