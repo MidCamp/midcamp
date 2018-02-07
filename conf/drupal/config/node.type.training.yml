@@ -1,0 +1,29 @@
+uuid: a46636d0-5a7c-4d75-99e5-319fcb5b2e08
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+name: 'Training Proposal'
+type: training
+description: 'Use <em>training</em> for individual trainings with registration links.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false
