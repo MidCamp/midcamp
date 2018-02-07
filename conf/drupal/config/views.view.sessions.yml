@@ -511,7 +511,7 @@ display:
           click_sort_column: target_id
           type: entity_reference_label
           settings:
-            link: true
+            link: false
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -719,7 +719,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: '<p>Below is the list of accepted and confirmed sessions. We will post the full session schedule shortly. Thanks to all who submitted.</p>'
+            value: '<p>Below is the list of accepted and confirmed sessions. We still have a handful of sessions to confirm and will post the full session schedule shortly. Thanks to all who submitted!</p>'
             format: basic_html
           plugin_id: text
       empty:
