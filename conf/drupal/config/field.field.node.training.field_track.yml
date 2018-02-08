@@ -1,0 +1,29 @@
+uuid: 26d1558b-6469-4fa3-b889-1faf6377df02
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_track
+    - node.type.training
+    - taxonomy.vocabulary.session_tracks
+id: node.training.field_track
+field_name: field_track
+entity_type: node
+bundle: training
+label: Track
+description: 'We recommend that you focus your session’s intended audience, but realize that not every topic will fit neatly into one of these categories. For example, a presentation on Multilingual could be primarily Site Building, Content Admin, or Back-End, depending on the focus of the talk. For full track descriptions, please review the <a href="/topic-tracks">track descriptions</a>.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      session_tracks: session_tracks
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

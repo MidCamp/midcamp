@@ -1,0 +1,23 @@
+uuid: 257994ec-d803-40d3-895f-0485dcbf9219
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.training
+  module:
+    - metatag
+id: node.training.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: training
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'a:0:{}'
+default_value_callback: ''
+settings: {  }
+field_type: metatag
