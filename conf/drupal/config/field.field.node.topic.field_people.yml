@@ -9,7 +9,7 @@ id: node.topic.field_people
 field_name: field_people
 entity_type: node
 bundle: topic
-label: People
+label: Speakers
 description: 'The people who will present or facilitate this topic. This must be a user on the site. '
 required: false
 translatable: false
