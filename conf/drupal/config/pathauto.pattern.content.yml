@@ -9,7 +9,7 @@ label: Content
 type: 'canonical_entities:node'
 pattern: '[node:content-type]/[node:title]'
 selection_criteria:
-  6c35ddc6-57db-42a0-a6f0-f69ab91b8771:
+  4737754a-5efa-4674-b1c6-2e61db1cec8c:
     id: node_type
     bundles:
       article: article
@@ -20,7 +20,7 @@ selection_criteria:
     negate: false
     context_mapping:
       node: node
-    uuid: 6c35ddc6-57db-42a0-a6f0-f69ab91b8771
+    uuid: 4737754a-5efa-4674-b1c6-2e61db1cec8c
 selection_logic: and
-weight: -9
+weight: -7
 relationships: {  }
