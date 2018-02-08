@@ -52,8 +52,5 @@ function hatter_preprocess_user(&$vars) {
     if ($url->count() > 0) {
       $vars['url'] = $user->get('field_company_url')->first()->getUrl();
     }
-
-    // Link to the user entity.
-    $vars['user_link'] = $user->url();
   }
 }
