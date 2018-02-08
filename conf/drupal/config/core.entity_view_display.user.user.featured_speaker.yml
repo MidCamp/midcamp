@@ -78,7 +78,7 @@ content:
     weight: 0
     settings:
       image_style: featured_speaker
-      image_link: content
+      image_link: ''
     third_party_settings: {  }
     label: hidden
     region: content
