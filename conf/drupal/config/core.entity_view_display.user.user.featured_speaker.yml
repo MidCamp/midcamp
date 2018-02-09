@@ -1,0 +1,93 @@
+uuid: 71b18d93-7df5-4b12-8b6f-2b1bf9056c31
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.featured_speaker
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_company_url
+    - field.field.user.user.field_do_profile
+    - field.field.user.user.field_eventbrite_email
+    - field.field.user.user.field_mailing_list
+    - field.field.user.user.field_name
+    - field.field.user.user.field_organization
+    - field.field.user.user.field_site
+    - field.field.user.user.field_title
+    - field.field.user.user.field_tracks
+    - field.field.user.user.field_twitter
+    - field.field.user.user.user_picture
+    - image.style.featured_speaker
+  module:
+    - image
+    - link
+    - name
+    - user
+_core:
+  default_config_hash: L2mtwGWH_7wDRCMIR4r_Iu_jmvQ10DV1L8ht8iNZ5qY
+id: user.user.featured_speaker
+targetEntityType: user
+bundle: user
+mode: featured_speaker
+content:
+  field_company_url:
+    type: link
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: true
+      url_plain: true
+      target: _blank
+      rel: '0'
+    third_party_settings: {  }
+  field_name:
+    weight: 1
+    label: hidden
+    settings:
+      format: default
+      markup: false
+      output: default
+      multiple: default
+      multiple_delimiter: ', '
+      multiple_and: text
+      multiple_delimiter_precedes_last: never
+      multiple_el_al_min: '3'
+      multiple_el_al_first: '1'
+    third_party_settings: {  }
+    type: name_default
+    region: content
+  field_organization:
+    weight: 3
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_title:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  user_picture:
+    type: image
+    weight: 0
+    settings:
+      image_style: featured_speaker
+      image_link: ''
+    third_party_settings: {  }
+    label: hidden
+    region: content
+hidden:
+  field_bio: true
+  field_do_profile: true
+  field_eventbrite_email: true
+  field_mailing_list: true
+  field_site: true
+  field_tracks: true
+  field_twitter: true
+  member_for: true

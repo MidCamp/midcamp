@@ -1,0 +1,17 @@
+<div{{ attributes.addClass('speaker-item') }}>
+  {{ content.user_picture }}
+  <div class="speaker-item__block">
+    <h3 class="speaker-item__title">{{ content.field_name }}</h3>
+    <p class="speaker-item__subtitle">
+      {{ content.field_title }}
+      {% if amp %}
+        @
+      {% endif %}
+      {% if url %}
+        <a href="{{ url }}">{{ content.field_organization }}</a>
+      {% else %}
+        {{ content.field_organization }}
+      {% endif %}
+    </p>
+  </div>
+</div>

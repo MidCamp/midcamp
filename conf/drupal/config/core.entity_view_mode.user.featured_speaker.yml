@@ -1,0 +1,10 @@
+uuid: e2fd89d5-ad02-41fc-a6ba-4a9658d7d4b6
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.featured_speaker
+label: 'Featured Speaker'
+targetEntityType: user
+cache: true

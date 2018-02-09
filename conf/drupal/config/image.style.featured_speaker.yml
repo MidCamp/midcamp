@@ -1,0 +1,14 @@
+uuid: f3a954c9-67e4-4c4c-85f6-18c56f4d015b
+langcode: en
+status: true
+dependencies: {  }
+name: featured_speaker
+label: 'Featured Speaker'
+effects:
+  7de9b193-8880-4d9b-aa42-1857433da4df:
+    uuid: 7de9b193-8880-4d9b-aa42-1857433da4df
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 400

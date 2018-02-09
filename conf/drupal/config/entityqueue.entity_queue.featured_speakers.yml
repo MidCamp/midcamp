@@ -1,0 +1,23 @@
+uuid: 66dd18bb-1ec5-4dd0-8059-35e5728ad395
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: featured_speakers
+label: 'Featured Speakers'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: user
+  handler: views
+  handler_settings:
+    view:
+      view_name: speakers
+      display_name: entity_reference_1
+      arguments: {  }
+queue_settings:
+  min_size: 1
+  max_size: 3
+  act_as_queue: false
+  reverse_in_admin: false
