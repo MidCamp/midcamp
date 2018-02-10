@@ -81,6 +81,7 @@ third_party_settings:
         - field_title
         - field_organization
         - field_company_url
+        - field_company_logo
       parent_name: ''
       weight: 1
       format_type: details
@@ -116,7 +117,7 @@ content:
     type: text_textarea
     region: content
   field_company_logo:
-    weight: 19
+    weight: 7
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -210,7 +211,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 18
+    weight: 19
     region: content
     settings: {  }
     third_party_settings: {  }
