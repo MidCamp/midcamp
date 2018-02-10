@@ -17,7 +17,8 @@ function hatter_theme_suggestions_taxonomy_term_alter(&$suggestions, $vars, $hoo
  */
 function hatter_theme_suggestions_field_alter(&$suggestions, $vars, $hook) {
   // Add field template suggestions for user view modes.
-  if ($vars['element']['#bundle'] == 'user' && $vars['element']['#view_mode'] == 'featured_speaker') {
+  $user_view_modes = ['featured_speaker', 'compact'];
+  if ($vars['element']['#bundle'] == 'user' && in_array($vars['element']['#view_mode'], $user_view_modes)) {
     $suggestions[] = 'field__' . $vars['element']['#bundle'] . '__' .
                       $vars['element']['#field_name'] . '__' .
                       $vars['element']['#view_mode'];
@@ -39,9 +40,11 @@ function hatter_theme_suggestions_user_alter(&$suggestions, $vars, $hook) {
 function hatter_preprocess_user(&$vars) {
   $user = $vars['user'];
 
-  if ($vars['elements']['#view_mode'] == 'featured_speaker') {
+  $user_view_modes = ['featured_speaker', 'compact'];
+  if (in_array($vars['elements']['#view_mode'], $user_view_modes)) {
     $job_title = $user->get('field_title');
     $company = $user->get('field_organization');
+    $picture = $user->get('user_picture');
 
     // Only show the ampersand when both fields have value.
     if ($job_title->count() > 0 && $company->count() > 0) {
@@ -51,6 +54,10 @@ function hatter_preprocess_user(&$vars) {
     $url = $user->get('field_company_url');
     if ($url->count() > 0) {
       $vars['url'] = $user->get('field_company_url')->first()->getUrl();
+    }
+
+    if ($picture->count() > 0) {
+      $vars['picture'] = TRUE;
     }
   }
 }
