@@ -84,6 +84,7 @@ content:
     region: content
 hidden:
   field_bio: true
+  field_company_logo: true
   field_do_profile: true
   field_eventbrite_email: true
   field_mailing_list: true

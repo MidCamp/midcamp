@@ -16,7 +16,7 @@ dependencies:
     - field.field.user.user.field_tracks
     - field.field.user.user.field_twitter
     - field.field.user.user.user_picture
-    - image.style.thumbnail
+    - image.style.featured_speaker
   module:
     - image
     - link
@@ -39,9 +39,9 @@ content:
     region: content
   field_company_logo:
     weight: 9
-    label: above
+    label: hidden
     settings:
-      image_style: ''
+      image_style: featured_speaker
       image_link: ''
     third_party_settings: {  }
     type: image
@@ -122,8 +122,8 @@ content:
     type: image
     weight: 0
     settings:
-      image_style: thumbnail
-      image_link: content
+      image_style: featured_speaker
+      image_link: ''
     third_party_settings: {  }
     label: hidden
     region: content
