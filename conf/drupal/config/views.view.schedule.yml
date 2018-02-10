@@ -121,7 +121,7 @@ display:
           click_sort_column: value
           type: daterange_default
           settings:
-            timezone_override: ''
+            timezone_override: America/Chicago
             format_type: time_only
             separator: to
           group_column: value
@@ -478,11 +478,12 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Page
+    display_title: Friday
     position: 1
     display_options:
       display_extenders: {  }
       path: schedule/friday
+      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:
@@ -498,7 +499,7 @@ display:
   page_2:
     display_plugin: page
     id: page_2
-    display_title: 'Page 2'
+    display_title: Saturday
     position: 2
     display_options:
       display_extenders: {  }
@@ -577,6 +578,7 @@ display:
         operator: AND
         groups:
           1: AND
+      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:
