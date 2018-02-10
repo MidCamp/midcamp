@@ -1,0 +1,21 @@
+uuid: fcf197f4-a663-44a8-acf4-d7885f663d22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_schedule_time
+    - node.type.topic
+  module:
+    - datetime_range
+id: node.topic.field_schedule_time
+field_name: field_schedule_time
+entity_type: node
+bundle: topic
+label: Time
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange
