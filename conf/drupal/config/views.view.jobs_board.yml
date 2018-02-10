@@ -632,9 +632,35 @@ display:
             label: ''
           granularity: second
       title: 'Job Board'
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: "<p>Job postings are a benefit of MidCamp sponsors. If you are a sponsor and need help getting your jobs posted, shoot us an email and we&rsquo;ll gladly help out.</p>\n<p>If you are not currently a MidCamp sponsor and have jobs to post, take a look at our <a href=\"/become-a-sponsor\">prospectus</a>!</p>"
+            format: basic_html
+          plugin_id: text
       footer: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: '<p>There are no job postings yet.</p>'
+            format: basic_html
+          plugin_id: text
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
