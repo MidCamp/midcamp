@@ -31,9 +31,10 @@ content:
     weight: 0
     label: above
     settings:
+      view_mode: compact
       link: false
     third_party_settings: {  }
-    type: entity_reference_label
+    type: entity_reference_entity_view
     region: content
   field_registration_link:
     weight: 3
