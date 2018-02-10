@@ -4,10 +4,23 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_company_url
+    - field.field.user.user.field_do_profile
+    - field.field.user.user.field_eventbrite_email
+    - field.field.user.user.field_mailing_list
+    - field.field.user.user.field_name
+    - field.field.user.user.field_organization
+    - field.field.user.user.field_site
+    - field.field.user.user.field_title
+    - field.field.user.user.field_tracks
+    - field.field.user.user.field_twitter
     - field.field.user.user.user_picture
-    - image.style.thumbnail
+    - image.style.medium
   module:
     - image
+    - name
+    - text
     - user
 _core:
   default_config_hash: C3k_McOy8bL8rTnIjspy5OfFdgqV1z6OdGZaI-tO5eM
@@ -16,6 +29,45 @@ targetEntityType: user
 bundle: user
 mode: compact
 content:
+  field_bio:
+    type: text_default
+    weight: 4
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_name:
+    type: name_default
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      format: default
+      output: plain
+      multiple: default
+      multiple_delimiter: ', '
+      multiple_and: text
+      multiple_delimiter_precedes_last: never
+      multiple_el_al_min: '3'
+      multiple_el_al_first: '1'
+      markup: false
+    third_party_settings: {  }
+  field_organization:
+    type: entity_reference_label
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_title:
+    type: string
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   masquerade:
     weight: 50
     region: content
@@ -23,10 +75,17 @@ content:
     type: image
     weight: 0
     settings:
-      image_style: thumbnail
-      image_link: content
+      image_style: medium
+      image_link: ''
     third_party_settings: {  }
     label: hidden
     region: content
 hidden:
+  field_company_url: true
+  field_do_profile: true
+  field_eventbrite_email: true
+  field_mailing_list: true
+  field_site: true
+  field_tracks: true
+  field_twitter: true
   member_for: true
