@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.user.user.field_bio
+    - field.field.user.user.field_company_logo
     - field.field.user.user.field_company_url
     - field.field.user.user.field_do_profile
     - field.field.user.user.field_eventbrite_email
@@ -113,6 +114,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
+  field_company_logo:
+    weight: 19
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   field_company_url:
     weight: 6
