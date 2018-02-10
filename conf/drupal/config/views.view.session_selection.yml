@@ -542,6 +542,47 @@ display:
           hierarchy: false
           error_message: true
           plugin_id: taxonomy_index_tid
+        field_accepted_confirmed_value:
+          id: field_accepted_confirmed_value
+          table: node__field_accepted_confirmed
+          field: field_accepted_confirmed_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: All
+          group: 1
+          exposed: true
+          expose:
+            operator_id: ''
+            label: 'Accepted and confirmed'
+            description: ''
+            use_operator: false
+            operator: field_accepted_confirmed_value_op
+            identifier: field_accepted_confirmed_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              speaker: '0'
+              content_editor: '0'
+              administrator: '0'
+              sponsor: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: boolean
       sorts:
         created:
           id: created
@@ -558,7 +599,17 @@ display:
           expose:
             label: ''
           granularity: second
-      header: {  }
+      header:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          content: 'Displaying @start - @end of @total'
+          plugin_id: result
       footer: {  }
       empty: {  }
       relationships:
