@@ -454,7 +454,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<div class=\"schedule__nav\">\n      <a href=\"/training\">Thursday</a> | <a href=\"/schedule/friday\">Friday</a> | <a href=\"/schedule/saturday\">Saturday</a><!-- | <a href=\"#\">Sunday</a-->\n</div>\n<h2>Friday, March 9, 2018</h2>"
+            value: "<div class=\"schedule__nav\">\n      <a href=\"/training\">Thursday</a> | <a href=\"/schedule/friday\">Friday</a> | <a href=\"/schedule/saturday\">Saturday</a>< | <a href=\"/sprints\">Sunday</a>\n</div>\n<h2>Friday, March 9, 2018</h2>"
             format: full_html
           plugin_id: text
       footer: {  }
