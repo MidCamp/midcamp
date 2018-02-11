@@ -1,0 +1,8 @@
+uuid: e084e34b-d092-4bf6-a625-e552e70c54a5
+langcode: en
+status: true
+dependencies: {  }
+id: day_and_time
+label: 'Day and Time'
+locked: false
+pattern: 'l, g:i a'
