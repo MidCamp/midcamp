@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.user.user.field_bio
+    - field.field.user.user.field_company_logo
     - field.field.user.user.field_company_url
     - field.field.user.user.field_do_profile
     - field.field.user.user.field_eventbrite_email
@@ -15,7 +16,7 @@ dependencies:
     - field.field.user.user.field_tracks
     - field.field.user.user.field_twitter
     - field.field.user.user.user_picture
-    - image.style.thumbnail
+    - image.style.featured_speaker
   module:
     - image
     - link
@@ -35,6 +36,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
+  field_company_logo:
+    weight: 9
+    label: hidden
+    settings:
+      image_style: featured_speaker
+      image_link: ''
+    third_party_settings: {  }
+    type: image
     region: content
   field_do_profile:
     weight: 2
@@ -112,8 +122,8 @@ content:
     type: image
     weight: 0
     settings:
-      image_style: thumbnail
-      image_link: content
+      image_style: featured_speaker
+      image_link: ''
     third_party_settings: {  }
     label: hidden
     region: content

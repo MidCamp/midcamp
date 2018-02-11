@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.user.user.field_bio
+    - field.field.user.user.field_company_logo
     - field.field.user.user.field_company_url
     - field.field.user.user.field_do_profile
     - field.field.user.user.field_eventbrite_email
@@ -80,6 +81,7 @@ third_party_settings:
         - field_title
         - field_organization
         - field_company_url
+        - field_company_logo
       parent_name: ''
       weight: 1
       format_type: details
@@ -113,6 +115,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
+  field_company_logo:
+    weight: 7
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   field_company_url:
     weight: 6
@@ -201,7 +211,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 18
+    weight: 19
     region: content
     settings: {  }
     third_party_settings: {  }
