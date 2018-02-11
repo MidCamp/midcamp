@@ -1,0 +1,9 @@
+uuid: e535e4b5-5230-4f50-b533-417d2eaf7a94
+langcode: en
+status: true
+dependencies: {  }
+name: Location
+vid: location
+description: 'Room or address'
+hierarchy: 0
+weight: 0
