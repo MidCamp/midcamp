@@ -15,7 +15,12 @@ label: 'Registration Link'
 description: ''
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    attributes: {  }
+    uri: 'https://www.eventbrite.com/e/midcamp-2018-thursday-trainings-midwest-drupal-camp-chicago-illinois-tickets-42970404637'
+    title: 'Register Today'
+    options: {  }
 default_value_callback: ''
 settings:
   link_type: 17

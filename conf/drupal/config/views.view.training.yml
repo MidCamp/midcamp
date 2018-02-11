@@ -9,6 +9,7 @@ dependencies:
     - field.storage.node.field_track
     - node.type.topic
     - node.type.training
+    - system.menu.main
     - taxonomy.vocabulary.topic_type
   content:
     - 'taxonomy_term:topic_type:39f8a394-f9fc-45ae-85a2-46aabfd3212f'
@@ -700,6 +701,15 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: standard
+      menu:
+        type: normal
+        title: 'Trainings (Thu)'
+        description: ''
+        expanded: false
+        parent: 'menu_link_content:f76b79ad-4936-4d3f-9ae6-1f11bfbca9b4'
+        weight: -50
+        context: '0'
+        menu_name: main
     cache_metadata:
       max-age: -1
       contexts:

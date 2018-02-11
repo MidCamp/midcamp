@@ -9,14 +9,14 @@ label: Training
 type: 'canonical_entities:node'
 pattern: 'training/[node:title]'
 selection_criteria:
-  4e5fb38c-7e35-4551-8183-e08585edba93:
+  5cc4e890-9d10-4fcb-b3f4-6b699e95310b:
     id: node_type
     bundles:
-      topic: topic
+      training: training
     negate: false
     context_mapping:
       node: node
-    uuid: 4e5fb38c-7e35-4551-8183-e08585edba93
+    uuid: 5cc4e890-9d10-4fcb-b3f4-6b699e95310b
 selection_logic: and
 weight: -9
 relationships: {  }

@@ -25,4 +25,10 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_accepted_confirmed: true
+  field_event: true
+  field_meta_tags: true
+  field_people: true
+  field_registration_link: true
+  field_track: true
