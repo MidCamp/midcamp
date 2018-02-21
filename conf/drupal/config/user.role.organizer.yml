@@ -1,0 +1,9 @@
+uuid: d79f367c-c1f4-424c-8588-fff1754f9ff1
+langcode: en
+status: true
+dependencies: {  }
+id: organizer
+label: Organizer
+weight: 4
+is_admin: null
+permissions: {  }
