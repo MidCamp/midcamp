@@ -1,0 +1,66 @@
+uuid: 57dcfb9b-8f80-4ae0-ab4d-0b5641cf4ba4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.socials
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_company_logo
+    - field.field.user.user.field_company_url
+    - field.field.user.user.field_do_profile
+    - field.field.user.user.field_eventbrite_email
+    - field.field.user.user.field_mailing_list
+    - field.field.user.user.field_name
+    - field.field.user.user.field_organization
+    - field.field.user.user.field_site
+    - field.field.user.user.field_title
+    - field.field.user.user.field_tracks
+    - field.field.user.user.field_twitter
+    - field.field.user.user.user_picture
+  module:
+    - name
+    - user
+_core:
+  default_config_hash: L2mtwGWH_7wDRCMIR4r_Iu_jmvQ10DV1L8ht8iNZ5qY
+id: user.user.socials
+targetEntityType: user
+bundle: user
+mode: socials
+content:
+  field_name:
+    weight: 0
+    label: inline
+    settings:
+      format: default
+      markup: false
+      output: default
+      multiple: default
+      multiple_delimiter: ', '
+      multiple_and: text
+      multiple_delimiter_precedes_last: never
+      multiple_el_al_min: '3'
+      multiple_el_al_first: '1'
+    third_party_settings: {  }
+    type: name_default
+    region: content
+  field_twitter:
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_bio: true
+  field_company_logo: true
+  field_company_url: true
+  field_do_profile: true
+  field_eventbrite_email: true
+  field_mailing_list: true
+  field_organization: true
+  field_site: true
+  field_title: true
+  field_tracks: true
+  member_for: true
+  user_picture: true
