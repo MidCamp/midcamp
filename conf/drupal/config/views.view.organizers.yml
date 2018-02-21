@@ -169,7 +169,20 @@ display:
           plugin_id: user_roles
       sorts: {  }
       title: Organizers
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<p>MidCamp is organized by a group of volunteers from the Drupal community in Chicago, and beyond!</p>'
+            format: basic_html
+          plugin_id: text
       footer: {  }
       empty: {  }
       relationships: {  }
