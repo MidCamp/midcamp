@@ -27,13 +27,13 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 0
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
   field_people:
     type: entity_reference_entity_view
-    weight: 2
+    weight: 3
     region: content
     label: above
     settings:
@@ -41,7 +41,7 @@ content:
       link: false
     third_party_settings: {  }
   field_schedule_location:
-    weight: 4
+    weight: 1
     label: hidden
     settings:
       link: false
@@ -49,7 +49,7 @@ content:
     type: entity_reference_label
     region: content
   field_schedule_time:
-    weight: 3
+    weight: 0
     label: above
     settings:
       timezone_override: America/Chicago
@@ -67,7 +67,7 @@ content:
     type: entity_reference_label
     region: content
   field_video:
-    weight: 1
+    weight: 4
     label: hidden
     settings:
       responsive: true

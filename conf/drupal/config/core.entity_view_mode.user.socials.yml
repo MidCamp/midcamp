@@ -1,0 +1,10 @@
+uuid: fd371709-d660-4672-abc8-885a60bdfca9
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.socials
+label: Socials
+targetEntityType: user
+cache: true
