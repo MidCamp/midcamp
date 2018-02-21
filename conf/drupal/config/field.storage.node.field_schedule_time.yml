@@ -4,7 +4,11 @@ status: true
 dependencies:
   module:
     - datetime_range
+    - field_permissions
     - node
+third_party_settings:
+  field_permissions:
+    permission_type: custom
 id: node.field_schedule_time
 field_name: field_schedule_time
 entity_type: node
