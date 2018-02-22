@@ -7,5 +7,6 @@ _core:
 id: global
 label: Global
 tags:
-  canonical_url: '[current-page:url]'
   title: '[current-page:title] | [site:name]'
+  canonical_url: '[current-page:url]'
+  og_image: 'https://www.midcamp.org/themes/custom/hatter/logo.png'

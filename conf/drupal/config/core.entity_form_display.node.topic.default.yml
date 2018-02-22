@@ -12,10 +12,12 @@ dependencies:
     - field.field.node.topic.field_schedule_time
     - field.field.node.topic.field_topic_type
     - field.field.node.topic.field_track
+    - field.field.node.topic.field_video
     - node.type.topic
   module:
     - datetime_range
     - text
+    - video_embed_field
 id: node.topic.default
 targetEntityType: node
 bundle: topic
@@ -59,6 +61,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
+    region: content
+  field_video:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: video_embed_field_textfield
     region: content
   status:
     type: boolean_checkbox
