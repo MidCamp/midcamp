@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.topic.field_event
     - field.field.node.topic.field_meta_tags
     - field.field.node.topic.field_people
+    - field.field.node.topic.field_presenter_slides
     - field.field.node.topic.field_schedule_location
     - field.field.node.topic.field_schedule_time
     - field.field.node.topic.field_topic_type
@@ -16,6 +17,7 @@ dependencies:
     - node.type.topic
   module:
     - datetime_range
+    - file
     - text
     - video_embed_field
 id: node.topic.default
@@ -37,6 +39,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_presenter_slides:
+    weight: 26
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
     region: content
   field_schedule_location:
     weight: 3
