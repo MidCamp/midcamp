@@ -1,0 +1,27 @@
+uuid: 5d3dc47a-7f5a-4911-bb15-b91992592e1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_presenter_slides
+    - node.type.topic
+  module:
+    - file
+id: node.topic.field_presenter_slides
+field_name: field_presenter_slides
+entity_type: node
+bundle: topic
+label: 'Presenter Slides'
+description: 'Upload speaker slides'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf ppt pptx'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file
