@@ -457,6 +457,8 @@ display:
         filters: false
         filter_groups: false
         relationships: false
+        empty: false
+        header: false
       filter_groups:
         operator: AND
         groups:
@@ -473,6 +475,21 @@ display:
           limit_queue: featured_speakers
           entity_type: user
           plugin_id: entity_queue
+      empty: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<h2 class="banner-title">[view:title]</h2>'
+            format: full_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:
