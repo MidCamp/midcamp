@@ -23,8 +23,8 @@ settings:
   file_directory: 'pictures/[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
   max_filesize: '512 KB'
-  max_resolution: 250x250
-  min_resolution: ''
+  max_resolution: ''
+  min_resolution: 250x250
   alt_field: false
   alt_field_required: false
   title_field: false
