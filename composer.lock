@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c36626b8bb9d019aa99f68a5408081d5",
+    "content-hash": "5c83cd095b577bbfe911d8fc631a0834",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1582,6 +1582,7 @@
             "type": "drupal-core",
             "extra": {
                 "patches_applied": {
+                    "RSS view with fields give wrong URL from path field (https://www.drupal.org/node/2673980)": "https://www.drupal.org/files/issues/rss_view_with_fields-2673980-27.patch",
                     "The Views integration Datetime Range fields should extend the views integration for regular Datetime fields (https://www.drupal.org/node/2786577)": "https://www.drupal.org/files/issues/improve_the_views-2786577-76-core.patch"
                 }
             },
