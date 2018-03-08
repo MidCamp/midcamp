@@ -57,6 +57,7 @@
         "drupal/twig_extensions": "1.x-dev",
         "drupal/video_embed_media": "^1.5",
         "drupal/viewsreference": "^1.0@alpha",
+        "drupal/webform": "^5.0@RC",
         "midcamp/hatter": "dev-master",
         "oomphinc/composer-installers-extender": "^1.1",
         "palantirnet/workbench_tabs": "^1.1",
@@ -85,9 +86,7 @@
     "extra": {
         "patches": {
           "drupal/core": {
-            "RSS view with fields give wrong URL from path field (https://www.drupal.org/node/2673980)": "https://www.drupal.org/files/issues/rss_view_with_fields-2673980-27.patch"
-          },
-          "drupal/core": {
+            "RSS view with fields give wrong URL from path field (https://www.drupal.org/node/2673980)": "https://www.drupal.org/files/issues/rss_view_with_fields-2673980-27.patch",
             "The Views integration Datetime Range fields should extend the views integration for regular Datetime fields (https://www.drupal.org/node/2786577)": "https://www.drupal.org/files/issues/improve_the_views-2786577-76-core.patch"
           },
           "drupal/twig_extensions": {
