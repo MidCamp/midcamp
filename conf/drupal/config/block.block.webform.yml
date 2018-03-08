@@ -1,0 +1,28 @@
+uuid: f2f9f9a8-066f-427c-a65f-32c598afcfb3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - webform
+  theme:
+    - hatter
+id: webform
+theme: hatter
+region: content
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Lightning Talk Sign Up'
+  provider: webform
+  label_display: visible
+  webform_id: lightning_talk_sign_up
+  default_data: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /topic/lightning-talks
+    negate: false
+    context_mapping: {  }

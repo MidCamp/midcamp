@@ -1,0 +1,25 @@
+uuid: bce31a84-ac01-4714-a9e1-521f23cfec9d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c87b75b7-23fd-45ac-ae17-af7efa9c87a8'
+  module:
+    - block_content
+  theme:
+    - hatter
+id: socialfooter
+theme: hatter
+region: footer_left
+weight: 0
+provider: null
+plugin: 'block_content:c87b75b7-23fd-45ac-ae17-af7efa9c87a8'
+settings:
+  id: 'block_content:c87b75b7-23fd-45ac-ae17-af7efa9c87a8'
+  label: 'Social Footer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
