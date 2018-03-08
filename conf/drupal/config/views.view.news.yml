@@ -207,7 +207,7 @@ display:
         type: normal
         title: News
         menu_name: main
-        weight: -48
+        weight: -47
         parent: 'menu_link_content:c9f1023e-8d4d-472e-bd1a-e27b96e58a36'
     cache_metadata:
       max-age: -1

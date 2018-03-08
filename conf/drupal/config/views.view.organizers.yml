@@ -167,7 +167,19 @@ display:
           reduce_duplicates: false
           entity_type: user
           plugin_id: user_roles
-      sorts: {  }
+      sorts:
+        field_name_family:
+          id: field_name_family
+          table: user__field_name
+          field: field_name_family
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
       title: Organizers
       header:
         area:
