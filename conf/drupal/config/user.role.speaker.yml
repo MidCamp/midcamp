@@ -6,4 +6,5 @@ id: speaker
 label: Speaker
 weight: -8
 is_admin: null
-permissions: {  }
+permissions:
+  - 'edit own topic content'
