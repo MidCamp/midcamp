@@ -1,0 +1,6 @@
+ignored_config_entities:
+  0: 'mailchimp.settings:api_key'
+  2: 'mailchimp.settings:connected_id'
+  4: 'mailchimp.settings:connected_paths'
+_core:
+  default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
