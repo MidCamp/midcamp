@@ -11,7 +11,7 @@ _core:
 id: hatter_messages
 theme: hatter
 region: content
-weight: -11
+weight: -13
 provider: null
 plugin: system_messages_block
 settings:
