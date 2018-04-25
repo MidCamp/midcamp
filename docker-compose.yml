@@ -19,7 +19,7 @@ services:
 
       WEBROOT: web
 
-    image: amazeeio/drupal:php70-basic
+    image: amazeeio/drupal:php71-basic
     volumes:
       - .:/var/www/drupal/public_html
     volumes_from:
