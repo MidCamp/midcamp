@@ -1,0 +1,31 @@
+uuid: 27f1a127-ab54-4f1d-87c1-1c46575785a3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:718a2f09-3a75-462a-9c04-3e21f78a81bb'
+  module:
+    - block_content
+    - system
+  theme:
+    - hatter
+id: midcamp2019
+theme: hatter
+region: content
+weight: -15
+provider: null
+plugin: 'block_content:718a2f09-3a75-462a-9c04-3e21f78a81bb'
+settings:
+  id: 'block_content:718a2f09-3a75-462a-9c04-3e21f78a81bb'
+  label: 'MidCamp 2019'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
