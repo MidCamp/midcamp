@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - node.type.topic
-    - node.type.training
   module:
     - node
     - user
