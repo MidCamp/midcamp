@@ -2,6 +2,8 @@ uuid: f2f9f9a8-066f-427c-a65f-32c598afcfb3
 langcode: en
 status: true
 dependencies:
+  config:
+    - webform.webform.lightning_talk_sign_up
   module:
     - system
     - webform

@@ -149,7 +149,7 @@ display:
         path:
           id: path
           table: node
-          field: path
+          field: view_node
           relationship: none
           group_type: group
           admin_label: ''
@@ -196,7 +196,8 @@ display:
           hide_alter_empty: true
           absolute: false
           entity_type: node
-          plugin_id: node_path
+          plugin_id: entity_link
+          output_url_as_text: true
         uid:
           id: uid
           table: node_field_data
@@ -510,6 +511,8 @@ display:
         - 'config:core.entity_view_display.node.sponsor.teaser'
         - 'config:core.entity_view_display.node.topic.default'
         - 'config:core.entity_view_display.node.topic.teaser'
+        - 'config:core.entity_view_display.node.training.default'
+        - 'config:core.entity_view_display.node.training.teaser'
         - 'config:core.entity_view_display.node.venue.default'
         - 'config:core.entity_view_display.node.venue.map'
         - 'config:core.entity_view_display.node.venue.teaser'
@@ -552,6 +555,8 @@ display:
         - 'config:core.entity_view_display.node.sponsor.teaser'
         - 'config:core.entity_view_display.node.topic.default'
         - 'config:core.entity_view_display.node.topic.teaser'
+        - 'config:core.entity_view_display.node.training.default'
+        - 'config:core.entity_view_display.node.training.teaser'
         - 'config:core.entity_view_display.node.venue.default'
         - 'config:core.entity_view_display.node.venue.map'
         - 'config:core.entity_view_display.node.venue.teaser'
