@@ -1,12 +1,9 @@
-uuid: bf81ca8a-2aa4-4ea5-8b12-a93d70d8f44c
 langcode: en
 status: open
 dependencies:
   enforced:
     module:
       - webform
-_core:
-  default_config_hash: W8LHFRO51r0rBKzjUCRv8qxnRs6aTKBTxa8jwn7tBP8
 open: null
 close: null
 uid: null
@@ -39,6 +36,7 @@ settings:
   form_reset: false
   form_disable_autocomplete: false
   form_novalidate: false
+  form_disable_inline_errors: false
   form_required: false
   form_unsaved: false
   form_disable_back: false
@@ -84,6 +82,8 @@ settings:
   confirmation_back: true
   confirmation_back_label: ''
   confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
   limit_total: null
   limit_total_interval: null
   limit_total_message: ''
@@ -135,6 +135,10 @@ access:
     users: {  }
     permissions: {  }
   administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
     roles: {  }
     users: {  }
     permissions: {  }
@@ -203,3 +207,6 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
+uuid: bf81ca8a-2aa4-4ea5-8b12-a93d70d8f44c
+_core:
+  default_config_hash: W8LHFRO51r0rBKzjUCRv8qxnRs6aTKBTxa8jwn7tBP8

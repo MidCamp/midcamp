@@ -7,6 +7,7 @@ dependencies:
     - field.storage.taxonomy_term.field_date
     - taxonomy.vocabulary.event
   module:
+    - datetime
     - datetime_range
     - taxonomy
     - user

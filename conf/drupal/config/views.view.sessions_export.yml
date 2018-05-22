@@ -558,6 +558,8 @@ display:
           text: view
           entity_type: node
           plugin_id: entity_link
+          output_url_as_text: false
+          absolute: false
         mail_1:
           id: mail_1
           table: users_field_data
@@ -801,7 +803,7 @@ display:
       display_extenders: {  }
       group_by: false
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -822,7 +824,7 @@ display:
       display_extenders: {  }
       path: admin/sessions-export
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -1149,7 +1151,7 @@ display:
         groups:
           1: AND
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
