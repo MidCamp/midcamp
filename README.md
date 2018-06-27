@@ -7,33 +7,22 @@
 
 ###  Development Environment
 
-This site uses the Amazee.io Drupal Docker development environment. If you already have this, you can skip this bit entirely. Their [documentation for setup](https://docs.amazee.io/local_docker_development/local_docker_development.html) is amazeballz, but if you just want to [quick get going on your Mac](https://stories.amazee.io/easy-local-drupal-development-on-os-x-a01a343f99e3):
+This site uses the Amazee.io Drupal Docker development environment. If you already have this, you can skip this bit entirely. Their [documentation for setup](https://docs.amazee.io/local_docker_development/local_docker_development.html) is amazeballz, but if you just want to quickly get going on your Mac:
 
-```
-brew tap amazeeio/cachalot
-brew install docker docker-machine docker-compose cachalot
-cachalot create --provider virtualbox
-```
-
-If you aren't running `virtualbox`, substitute your provider above. Valid values are: `'virtualbox', 'vmware', 'xhyve', or 'parallels'`.
+- [Install pygmy](https://docs.amazee.io/local_docker_development/pygmy.html) with `gem install pygmy`
+- Start pygmy with `pygmy up`
 
 You will be prompted to provide the passphrase for your ssh key. Comply.
-Next, we need to make sure your shell knows about some Docker environment variables:
 
-```
-eval $(cachalot env)
-```
-So your shell remembers next time you log in, use one of these commands:
-* Bash users, add it to your bash_profile with: `echo "eval \$(cachalot env)" >> ~/.bash_profile`
-* Or for ZSH folks: `echo "eval \$(cachalot env)" >> ~/.zshrc`
 
 ### Getting Things Started
 
 From inside the project root, run:
- * `composer install`
- * `docker-compose up -d`
 
-1. Visit [midcamp.org.docker.amazee.io](http://midcamp.org.docker.amazee.io) in your browser of choice.
+- `composer install`
+- `docker-compose up -d`
+
+Visit [midcamp.org.docker.amazee.io](http://midcamp.org.docker.amazee.io) in your browser of choice.  At this point you should see a Drupal installation page.  See below for Drush commands to install the site.  
 
 ## How do I work on this?
 
@@ -54,7 +43,7 @@ This project uses [Composer Installers](https://github.com/composer/installers),
 
 ### Using drush
 
-You can run `drush` commands from anywhere within the repository, as long as you are ssh'ed into the vagrant.
+You can run `drush` commands from anywhere within the repository, as long as you are ssh'ed into the container.
 
 ### Installing and reinstalling Drupal
 
@@ -120,8 +109,6 @@ Sometimes we need to apply patches from the Drupal.org issue queues. These patch
 
 If you get the following error:
 > Cannot connect to the Docker daemon. Is the docker daemon running?
-
-Make sure your environment variables are set. `eval $(cachalot env)` Maybe you didn't add that to your bash_profile or zshrc as suggested?
 
 ### I can't see new things in the style guide
 
