@@ -6,20 +6,28 @@ jobs:
     docker:
       - image: amazeeio/drupal:php71-basic
         user: drupal
-    environment:
-          TEST_RESULTS: /tmp/test-results
+        environment:
+          LAGOON_PROJECT: midcamp_org
+          LAGOON_DISABLE_ALIASES: true
+      - image: amazeeio/mariadb-drupal
+        environment:
+          MYSQL_ALLOW_EMPTY_PASSWORD: 1
 
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - composer-v1-{{ checksum "composer.json" }}
-            - composer-v1-
-      - run: composer install --no-interaction
-      - save_cache:
-          key: composer-v1-{{ checksum "composer.json" }}
-          paths:
-            - vendor
+      - run:
+          name: "Install Dependencies"
+          command: |
+            composer install --no-interaction
+      - run:
+          name: "Look for some settings.php files"
+          command: ls -alh web/sites/default/
+      - run:
+          name: "Install Drupal"
+          command: |
+            cd web && drush site-install --verbose config_installer config_installer_sync_configure_form.sync_directory=./conf/drupal/config
+
+      - run: vendor/bin/behat
 
       - store_artifacts:
           path: $TEST_RESULTS
