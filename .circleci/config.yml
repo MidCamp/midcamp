@@ -4,7 +4,7 @@ jobs:
     working_directory: /var/www/drupal/public_html
 
     docker:
-      - image: amazeeio/drupal:php70-basic
+      - image: amazeeio/drupal:php71-basic
         user: drupal
     environment:
           TEST_RESULTS: /tmp/test-results
