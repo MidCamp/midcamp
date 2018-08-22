@@ -1,11 +1,20 @@
 <?php
 /**
  * @file
- * Lagoon drushrc.php file
+ * amazee.io drushrc.php file
  *
- * This file tells drush about the Lagoon environment
- * It contains some defaults that the Lagoon team suggests, please edit them as required.
+ * This file tells drush about the amazee.io environment
+ * It contains some defaults that the amazee.io team suggests, please edit them as required.
  */
+
+### Base URL so Drush knows on which URL the site runs (needed for cron, etc.)
+if (getenv('AMAZEEIO_BASE_URL')) {
+  $options['uri'] = getenv('AMAZEEIO_BASE_URL');
+}
+
+if (getenv('AMAZEEIO_WEBROOT')) {
+  $options['root'] = getenv('AMAZEEIO_WEBROOT');
+}
 
 ### Skip data for some tables during sql dumps and syncs
 # These tables will be syncronized just as structure and not the data inside them, this makes syncing and dumping much faster
