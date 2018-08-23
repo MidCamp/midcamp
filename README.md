@@ -26,7 +26,7 @@ Visit [midcamp.org.docker.amazee.io](http://midcamp.org.docker.amazee.io) in you
 
 ## How do I work on this?
 
-From inside the project root, type `docker exec -itu drupal midcamp.org.docker.amazee.io bash`
+From inside the project root, type `docker-compose exec cli bash`
 
 This is your project directory; run `drush` commands from here. Avoid using git from here, but if you must, make sure you configure your name and email for proper attribution:
 
@@ -45,10 +45,18 @@ This project uses [Composer Installers](https://github.com/composer/installers),
 
 You can run `drush` commands from anywhere within the repository, as long as you are ssh'ed into the container.
 
-### Installing and reinstalling Drupal
+### Syncing your local environment
 
+To get up and running locally, the easiest thing to do is update from the production database with:
+
+```bash
+drush sql-sync @amazee-production @self
 ```
-drush si --sites-subdir=default --account-name="admin" --account-pass="admin" --y config_installer
+
+If you want the files too, use:
+
+```bash
+drush rsync @amazee-production:%files @self:%files
 ```
 
 ### Adding modules
