@@ -10,7 +10,8 @@
 
 // Defines where the sync folder of your configuration lives. In this case it's outside
 // the web folder for an advanced security measure: '../config/sync'.
-$config_directories[CONFIG_SYNC_DIRECTORY] = '../config/sync';
+$config_directories['sync'] = '../conf/drupal/config';
+$settings['install_profile'] = 'config_installer';
 
 if (getenv('MAILCHIMP_API_KEY')) {
   $config['mailchimp.settings']['api_key'] = getenv('MAILCHIMP_API_KEY');
