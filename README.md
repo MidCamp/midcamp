@@ -20,7 +20,7 @@ You will be prompted to provide the passphrase for your ssh key. Comply.
 From inside the project root, run:
 
 - `composer install`
-- `docker-compose up -d`
+- `docker-compose up -d --build`
 
 Visit [midcamp.org.docker.amazee.io](http://midcamp.org.docker.amazee.io) in your browser of choice.  At this point you should see a Drupal installation page.  See below for Drush commands to install the site.  
 
@@ -107,8 +107,19 @@ Sometimes we need to apply patches from the Drupal.org issue queues. These patch
 
 ## Troubleshooting
 
-If you get the following error:
+### Cannot connect to Docker daemon
+If you get the following error from `pygmy up`:
 > Cannot connect to the Docker daemon. Is the docker daemon running?
+
+Make sure you have the Docker installed and running.
+
+### Failed to start haproxy
+If you get an error like this while running `pygmy up`:
+> Error response from daemon: driver failed programming external connectivity on endpoint amazeeio-haproxy (2c5ed4b1999a8e5d586ca50f666e1ec0db012265375c60d780551b7368c351d0): Error starting userland proxy: Bind for 0.0.0.0:80: unexpected error (Failure EADDRINUSE)
+> Error: failed to start containers: amazeeio-haproxy
+
+Apache is probably already running on port 80 for your system. Run `sudo apachectl stop` and try again.
+
 
 ### I can't see new things in the style guide
 
