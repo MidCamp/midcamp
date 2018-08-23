@@ -157,3 +157,6 @@ if (file_exists(__DIR__ . '/settings.local.php')) {
 if (file_exists(__DIR__ . '/services.local.yml')) {
   $settings['container_yamls'][] = __DIR__ . '/services.local.yml';
 }
+
+$config_directories['sync'] = '../conf/drupal/config';
+$settings['install_profile'] = 'config_installer';
