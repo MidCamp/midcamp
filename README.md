@@ -20,13 +20,13 @@ You will be prompted to provide the passphrase for your ssh key. Comply.
 From inside the project root, run:
 
 - `composer install`
-- `docker-compose up -d`
+- `docker-compose up -d --build`
 
 Visit [midcamp.org.docker.amazee.io](http://midcamp.org.docker.amazee.io) in your browser of choice.  At this point you should see a Drupal installation page.  See below for Drush commands to install the site.  
 
 ## How do I work on this?
 
-From inside the project root, type `docker exec -itu drupal midcamp.org.docker.amazee.io bash`
+From inside the project root, type `docker-compose exec cli bash`
 
 This is your project directory; run `drush` commands from here. Avoid using git from here, but if you must, make sure you configure your name and email for proper attribution:
 
@@ -45,10 +45,18 @@ This project uses [Composer Installers](https://github.com/composer/installers),
 
 You can run `drush` commands from anywhere within the repository, as long as you are ssh'ed into the container.
 
-### Installing and reinstalling Drupal
+### Syncing your local environment
 
+To get up and running locally, the easiest thing to do is update from the production database with:
+
+```bash
+drush sql-sync @amazee-production @self
 ```
-drush si --sites-subdir=default --account-name="admin" --account-pass="admin" --y config_installer
+
+If you want the files too, use:
+
+```bash
+drush rsync @amazee-production:%files @self:%files
 ```
 
 ### Adding modules
@@ -107,8 +115,19 @@ Sometimes we need to apply patches from the Drupal.org issue queues. These patch
 
 ## Troubleshooting
 
-If you get the following error:
+### Cannot connect to Docker daemon
+If you get the following error from `pygmy up`:
 > Cannot connect to the Docker daemon. Is the docker daemon running?
+
+Make sure you have the Docker installed and running.
+
+### Failed to start haproxy
+If you get an error like this while running `pygmy up`:
+> Error response from daemon: driver failed programming external connectivity on endpoint amazeeio-haproxy (2c5ed4b1999a8e5d586ca50f666e1ec0db012265375c60d780551b7368c351d0): Error starting userland proxy: Bind for 0.0.0.0:80: unexpected error (Failure EADDRINUSE)
+> Error: failed to start containers: amazeeio-haproxy
+
+Apache is probably already running on port 80 for your system. Run `sudo apachectl stop` and try again.
+
 
 ### I can't see new things in the style guide
 
