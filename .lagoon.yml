@@ -19,12 +19,18 @@ tasks:
         service: cli
 
 environments:
-  prod:
+  production:
     routes:
       - varnish:
-        - "2018.midcamp.org" 
-        - "midcamp.org" 
-        - "www.midcamp.org" 
+        - "2018.midcamp.org":
+            tls-acme: 'true'
+            insecure: Redirect
+        - "midcamp.org":
+            tls-acme: 'true'
+            insecure: Redirect
+        - "www.midcamp.org":
+            tls-acme: 'true'
+            insecure: Redirect
     cronjobs:
       - name: drush cron
         schedule: "2 * * * *"
