@@ -1,0 +1,29 @@
+uuid: 6f8c0600-c8da-4169-ba5e-658bb01aa3ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event
+    - node.type.page
+    - taxonomy.vocabulary.event
+id: node.page.field_event
+field_name: field_event
+entity_type: node
+bundle: page
+label: Event
+description: 'If this page relates to a specific event, include it here.  Referencing a specific event will include that event''s URL path and menu items.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event: event
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
