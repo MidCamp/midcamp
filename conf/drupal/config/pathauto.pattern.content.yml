@@ -7,9 +7,9 @@ dependencies:
 id: content
 label: Content
 type: 'canonical_entities:node'
-pattern: '[node:content-type]/[node:title]'
+pattern: '[node:field_event:entity:url:path]/[node:content-type]/[node:title]'
 selection_criteria:
-  4737754a-5efa-4674-b1c6-2e61db1cec8c:
+  d012478e-ceda-48a2-8454-4a79a65fa6bd:
     id: node_type
     bundles:
       article: article
@@ -20,7 +20,7 @@ selection_criteria:
     negate: false
     context_mapping:
       node: node
-    uuid: 4737754a-5efa-4674-b1c6-2e61db1cec8c
+    uuid: d012478e-ceda-48a2-8454-4a79a65fa6bd
 selection_logic: and
 weight: -7
 relationships: {  }
