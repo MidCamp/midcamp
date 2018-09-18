@@ -3,6 +3,7 @@
 namespace Drupal\midcamp_event_label_block\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
+use Drupal\Core\Cache\Cache;
 use Drupal\node\NodeInterface;
 use Drupal\core\Field\EntityReferenceFieldItemList;
 use Drupal\taxonomy\Entity\Term;
@@ -76,6 +77,14 @@ class EventLabelBlock extends BlockBase {
     }
 
     return $this->currentEvent;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getCacheContexts() {
+    // Set cache context per route
+    return Cache::mergeContexts(parent::getCacheContexts(), array('route'));
   }
 
 }
