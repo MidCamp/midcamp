@@ -28,8 +28,11 @@ function midcamp_event_label_block_help($route_name, RouteMatchInterface $route_
  */
 function midcamp_event_label_block_theme() {
   return [
-    'midcamp_event_label_block' => [
-      'render element' => 'children',
+    'event_label_block' => [
+      'variables' => [
+          'content' => NULL
+      ],
+      'template' => 'block--event-label-block',
     ],
   ];
 }
