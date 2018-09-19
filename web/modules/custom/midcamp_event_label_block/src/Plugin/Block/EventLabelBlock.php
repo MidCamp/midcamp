@@ -41,6 +41,10 @@ class EventLabelBlock extends BlockBase {
       $build = [
         '#theme' => 'event_label_block',
         '#content' => $currentEvent,
+        '#cache' => [
+          'contexts' => $this->getCacheContexts(),
+          'tags' => $this->getCacheTags(),
+        ],
       ];
     }
 
@@ -96,11 +100,18 @@ class EventLabelBlock extends BlockBase {
     if (($currentNode instanceof NodeInterface) && ($currentNode->hasField($this->eventField))) {
       $eventField = $currentNode->get($this->eventField);
 
-      // Return cache tags for event term if it exists
+      // Return cache tags for node and event term if it exists
       if (($eventField instanceof EntityReferenceFieldItemList) && !empty($eventField->getValue())) {
         $term = Term::load($eventField->target_id);
-        return Cache::mergeTags(parent::getCacheTags(), array('term:' . $term->id()));
+        $tags = [
+          'term:' . $term->id(),
+          'node:' . $currentNode->id(),
+        ];
+        return Cache::mergeTags(parent::getCacheTags(), $tags);
       }
+
+      // Otherwise return cache tag for node
+      return Cache::mergeTags(parent::getCacheTags(), ['node:' . $currentNode->id()]);
     }
 
     return parent::getCacheTags();
