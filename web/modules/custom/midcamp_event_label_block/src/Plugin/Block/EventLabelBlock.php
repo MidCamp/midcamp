@@ -87,4 +87,23 @@ class EventLabelBlock extends BlockBase {
     return Cache::mergeContexts(parent::getCacheContexts(), array('route'));
   }
 
+  /**
+   * {@inheritdoc}
+   */
+  public function getCacheTags() {
+    $currentNode = $this->getCurrentNode();
+
+    if (($currentNode instanceof NodeInterface) && ($currentNode->hasField($this->eventField))) {
+      $eventField = $currentNode->get($this->eventField);
+
+      // Return cache tags for event term if it exists
+      if (($eventField instanceof EntityReferenceFieldItemList) && !empty($eventField->getValue())) {
+        $term = Term::load($eventField->target_id);
+        return Cache::mergeTags(parent::getCacheTags(), array('term:' . $term->id()));
+      }
+    }
+
+    return parent::getCacheTags();
+  }
+
 }
