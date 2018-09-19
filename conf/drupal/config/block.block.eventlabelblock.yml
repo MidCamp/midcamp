@@ -23,6 +23,12 @@ visibility:
     id: 'entity_bundle:node'
     bundles:
       article: article
+      job: job
+      page: page
+      sponsor: sponsor
+      topic: topic
+      training: training
+      venue: venue
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
