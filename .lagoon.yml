@@ -25,12 +25,13 @@ environments:
         - "2018.midcamp.org":
             tls-acme: 'true'
             insecure: Redirect
-        - "midcamp.org":
-            tls-acme: 'true'
-            insecure: Redirect
-        - "www.midcamp.org":
-            tls-acme: 'true'
-            insecure: Redirect
+        # Uncomment these lines when the GitHub redirect to the static page is removed.
+        # - "midcamp.org":
+        #     tls-acme: 'true'
+        #     insecure: Redirect
+        # - "www.midcamp.org":
+        #     tls-acme: 'true'
+        #     insecure: Redirect
     cronjobs:
       - name: drush cron
         schedule: "2 * * * *"
