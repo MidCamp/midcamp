@@ -2,33 +2,37 @@ docker-compose-yaml: docker-compose.yml
 
 tasks:
   post-rollout:
-    
+
     - run:
         name: task0
         command: cd web && drush -y updb --cache-clear=0
         service: cli
-    
+
     - run:
         name: task1
         command: cd web && drush -y cim
         service: cli
-    
+
     - run:
         name: task2
         command: cd web && drush -y cr
         service: cli
-    
 
 environments:
-  prod:
+  production:
     routes:
       - varnish:
-        - "2018.midcamp.org" 
-        - "midcamp.org" 
-        - "www.midcamp.org" 
+        - "2018.midcamp.org":
+            tls-acme: 'true'
+            insecure: Redirect
+        - "midcamp.org":
+            tls-acme: 'true'
+            insecure: Redirect
+        - "www.midcamp.org":
+            tls-acme: 'true'
+            insecure: Redirect
     cronjobs:
       - name: drush cron
         schedule: "2 * * * *"
         command: drush cron
         service: cli
-
