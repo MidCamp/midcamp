@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.job.field_event
     - field.field.node.job.field_job_description
     - field.field.node.job.field_job_link
     - field.field.node.job.field_job_location
@@ -26,6 +27,15 @@ content:
     weight: 8
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_event:
+    weight: 101
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_job_description:
     weight: 5

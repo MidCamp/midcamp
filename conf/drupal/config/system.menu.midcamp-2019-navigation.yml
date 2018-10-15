@@ -1,0 +1,8 @@
+uuid: d8d4a67b-96ed-4c31-8c55-f57c3886ced9
+langcode: en
+status: true
+dependencies: {  }
+id: midcamp-2019-navigation
+label: 'Midcamp 2019 Navigation'
+description: 'Primary navigation for Midcamp 2019 content'
+locked: false

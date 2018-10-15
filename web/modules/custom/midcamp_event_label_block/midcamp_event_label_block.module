@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Contains midcamp_event_label_block.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function midcamp_event_label_block_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the midcamp_event_label_block module.
+    case 'help.page.midcamp_event_label_block':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Exposes a node&#039;s field_event value in a Block') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function midcamp_event_label_block_theme() {
+  return [
+    'event_label_block' => [
+      'variables' => [
+          'content' => NULL
+      ],
+      'template' => 'block--event-label-block',
+    ],
+  ];
+}

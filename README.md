@@ -50,13 +50,13 @@ You can run `drush` commands from anywhere within the repository, as long as you
 To get up and running locally, the easiest thing to do is update from the production database with:
 
 ```bash
-drush sql-sync @amazee-production @self
+drush sql-sync @production @self
 ```
 
 If you want the files too, use:
 
 ```bash
-drush rsync @amazee-production:%files @self:%files
+drush rsync @production:%files @self:%files
 ```
 
 ### Adding modules

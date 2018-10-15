@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.page.field_event
     - field.field.node.page.field_meta_tags
     - field.field.node.page.field_page_paragraphs
     - node.type.page
@@ -23,6 +24,15 @@ content:
     weight: 3
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_event:
+    weight: 123
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_meta_tags:
     weight: 122

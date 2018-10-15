@@ -47,6 +47,7 @@ module:
   menu_ui: 0
   metatag: 0
   metatag_open_graph: 0
+  midcamp_event_label_block: 0
   midcamp_vbo: 0
   name: 0
   node: 0
