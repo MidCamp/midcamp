@@ -1,24 +1,22 @@
-uuid: ad5f6c80-83be-4fda-aa5e-706420e79795
+uuid: 9df7adc9-b47a-4361-b29d-c379394620f3
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.main
+    - system.menu.midcamp-2019-navigation
   module:
     - system
   theme:
     - hatter
-_core:
-  default_config_hash: rx9IrdDv7Ldc4kpalZAxdhIPZfYIeOMh1N-qKoQZwHo
-id: hatter_main_menu
+id: midcamp2019navigation
 theme: hatter
 region: header
-weight: -9
+weight: 0
 provider: null
-plugin: 'system_menu_block:main'
+plugin: 'system_menu_block:midcamp-2019-navigation'
 settings:
-  id: 'system_menu_block:main'
-  label: 'Main navigation'
+  id: 'system_menu_block:midcamp-2019-navigation'
+  label: 'Midcamp 2019 Navigation'
   provider: system
   label_display: '0'
   level: 1
@@ -27,5 +25,5 @@ visibility:
   request_path:
     id: request_path
     pages: '/2018/*'
-    negate: false
+    negate: true
     context_mapping: {  }

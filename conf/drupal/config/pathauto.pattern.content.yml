@@ -7,20 +7,20 @@ dependencies:
 id: content
 label: Content
 type: 'canonical_entities:node'
-pattern: '[node:content-type]/[node:title]'
+pattern: '[node:field_event:entity:url:path]/[node:content-type]/[node:title]'
 selection_criteria:
-  4737754a-5efa-4674-b1c6-2e61db1cec8c:
+  a1b81c41-4e3a-4119-ab68-840fe3f89fa7:
     id: node_type
     bundles:
       article: article
-      job: job
       sponsor: sponsor
       topic: topic
+      training: training
       venue: venue
     negate: false
     context_mapping:
       node: node
-    uuid: 4737754a-5efa-4674-b1c6-2e61db1cec8c
+    uuid: a1b81c41-4e3a-4119-ab68-840fe3f89fa7
 selection_logic: and
 weight: -7
 relationships: {  }

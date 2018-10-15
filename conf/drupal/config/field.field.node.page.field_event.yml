@@ -1,17 +1,17 @@
-uuid: 2bbeba20-fc84-4fe4-bd6a-336aac132594
+uuid: 6f8c0600-c8da-4169-ba5e-658bb01aa3ca
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_event
-    - node.type.sponsor
+    - node.type.page
     - taxonomy.vocabulary.event
-id: node.sponsor.field_event
+id: node.page.field_event
 field_name: field_event
 entity_type: node
-bundle: sponsor
+bundle: page
 label: Event
-description: 'If this Sponsor relates to a specific event, include it here.  Referencing a specific event will include that event''''s URL path and menu items.'
+description: 'If this page relates to a specific event, include it here.  Referencing a specific event will include that event''s URL path and menu items.'
 required: false
 translatable: true
 default_value: {  }
@@ -22,7 +22,8 @@ settings:
     target_bundles:
       event: event
     sort:
-      field: _none
+      field: name
+      direction: asc
     auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

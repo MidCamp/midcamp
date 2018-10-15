@@ -35,6 +35,16 @@ function hatter_theme_suggestions_user_alter(&$suggestions, $vars, $hook) {
 }
 
 /**
+ * Implements THEME_theme_suggestions_HOOK_alter() for menus.
+ */
+function hatter_theme_suggestions_menu_alter(&$suggestions, $vars, $hook) {
+  // Let the new menu uses the existing template for now.
+  if ($vars['menu_name'] == 'midcamp-2019-navigation') {
+    array_unshift($suggestions, 'menu__main');
+  }
+}
+
+/**
  * Implements THEME_preprocess_user().
  */
 function hatter_preprocess_user(&$vars) {
