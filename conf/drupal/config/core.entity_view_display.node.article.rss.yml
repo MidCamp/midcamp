@@ -39,5 +39,6 @@ hidden:
   field_article_news: true
   field_article_summary: true
   field_event: true
+  field_meta_tags: true
   field_planet: true
   field_tags: true
