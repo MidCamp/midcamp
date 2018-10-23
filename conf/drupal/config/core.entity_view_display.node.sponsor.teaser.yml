@@ -33,5 +33,6 @@ hidden:
   field_image: true
   field_level: true
   field_link: true
+  field_meta_tags: true
   field_sponsor_level: true
   field_sponsor_link: true
