@@ -19,4 +19,6 @@ content:
     weight: 101
     region: content
 hidden:
+  field_event: true
+  field_meta_tags: true
   field_page_paragraphs: true

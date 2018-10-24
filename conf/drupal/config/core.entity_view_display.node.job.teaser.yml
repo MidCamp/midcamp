@@ -68,5 +68,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_event: true
   field_job_description: true
   field_meta_tags: true
