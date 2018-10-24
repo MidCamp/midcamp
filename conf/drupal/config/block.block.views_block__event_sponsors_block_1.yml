@@ -5,6 +5,7 @@ dependencies:
   config:
     - views.view.event_sponsors
   module:
+    - system
     - views
   theme:
     - hatter
@@ -22,4 +23,9 @@ settings:
   views_label: ''
   items_per_page: none
   context_mapping: {  }
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/2018/*'
+    negate: false
+    context_mapping: {  }

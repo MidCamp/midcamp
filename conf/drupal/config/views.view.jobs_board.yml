@@ -1197,6 +1197,22 @@ display:
     display_options:
       display_extenders: {  }
       path: jobs
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: "<p>Job postings are a benefit of MidCamp sponsors. If you are a sponsor and need help getting your jobs posted, shoot us an email and we&rsquo;ll gladly help out.</p>\r\n<p>If you are not currently a MidCamp sponsor and have jobs to post, take a look at our <a href=\"/2019/sponsor-midcamp\">prospectus</a>!</p>"
+            format: basic_html
+          plugin_id: text
+      defaults:
+        header: false
     cache_metadata:
       max-age: -1
       contexts:
