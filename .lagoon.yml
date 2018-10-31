@@ -4,6 +4,14 @@ tasks:
   post-rollout:
 
     - run:
+        name: IF no Drupal installed & Pullrequest = Sync database from dev
+        command: |
+            if [[ -n ${LAGOON_PR_BASE_BRANCH} ]] && ! drush status --fields=bootstrap | grep -q "Successful"; then
+                drush -y sql-sync @master default
+            fi
+        service: cli
+
+    - run:
         name: task0
         command: cd web && drush -y updb --cache-clear=0
         service: cli
