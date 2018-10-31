@@ -88,8 +88,7 @@
     "extra": {
         "patches": {
           "drupal/core": {
-            "RSS view with fields give wrong URL from path field (https://www.drupal.org/node/2673980)": "https://www.drupal.org/files/issues/rss_view_with_fields-2673980-27.patch",
-            "The Views integration Datetime Range fields should extend the views integration for regular Datetime fields (https://www.drupal.org/node/2786577)": "https://www.drupal.org/files/issues/improve_the_views-2786577-76-core.patch"
+            "RSS view with fields give wrong URL from path field (https://www.drupal.org/node/2673980)": "https://www.drupal.org/files/issues/rss_view_with_fields-2673980-27.patch"
           },
           "drupal/twig_extensions": {
             "Error after upgrading to Drupal 8.1 (https://www.drupal.org/project/twig_extensions/issues/2726531)": "https://www.drupal.org/files/issues/error_after_upgrading-2726531-9.patch"
