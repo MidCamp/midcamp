@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "35785e217f02a9c6fdf7b53cfae4661a",
+    "content-hash": "7ded6f5aff349fe36d4fbb8d2d0c2ef2",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1448,17 +1448,11 @@
         },
         {
             "name": "drupal/captcha",
-            "version": "1.0.0-beta1",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/captcha",
-                "reference": "8.x-1.0-beta1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/captcha-8.x-1.0-beta1.zip",
-                "reference": "8.x-1.0-beta1",
-                "shasum": "5b6c701bdab332bac61f59dcc78e05578f94d8b7"
+                "reference": "1d21e6864ced543312d8d819a170c3553281b485"
             },
             "require": {
                 "drupal/core": "*"
@@ -1469,17 +1463,17 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta1",
-                    "datestamp": "1487198586",
+                    "version": "8.x-1.0-beta1+30-dev",
+                    "datestamp": "1535582280",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -1511,7 +1505,8 @@
             "homepage": "https://www.drupal.org/project/captcha",
             "support": {
                 "source": "http://cgit.drupalcode.org/captcha"
-            }
+            },
+            "time": "2018-08-31T06:52:06+00:00"
         },
         {
             "name": "drupal/config_filter",
@@ -10359,6 +10354,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/address": 20,
+        "drupal/captcha": 20,
         "drupal/devel": 10,
         "drupal/entityqueue": 15,
         "drupal/field_permissions": 10,
