@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7ded6f5aff349fe36d4fbb8d2d0c2ef2",
+    "content-hash": "3a1d807f76840d7490eccb36d3840ae5",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3556,6 +3556,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Enable cacheable captcha support (https://www.drupal.org/project/recaptcha/issues/2219993)": "https://www.drupal.org/files/issues/2018-05-20/recaptcha-cacheable-8.x-2219993-35.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

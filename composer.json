@@ -96,6 +96,9 @@
           },
           "drupal/mailchimp": {
             "MailchimpListsSubscribeForm wants an array, but gets an object (www.drupal.org/project/mailchimp/issues/2931408)": "https://www.drupal.org/files/issues/2931408-2-list-form-cant-array.patch"
+          },
+          "drupal/recaptcha": {
+              "Enable cacheable captcha support (https://www.drupal.org/project/recaptcha/issues/2219993)": "https://www.drupal.org/files/issues/2018-05-20/recaptcha-cacheable-8.x-2219993-35.patch"
           }
         },
         "installer-types": ["butler-styleguide"],
