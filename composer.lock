@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "35785e217f02a9c6fdf7b53cfae4661a",
+    "content-hash": "00dc5eedeb1db6519c47313959cf05f8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1448,17 +1448,11 @@
         },
         {
             "name": "drupal/captcha",
-            "version": "1.0.0-beta1",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/captcha",
-                "reference": "8.x-1.0-beta1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/captcha-8.x-1.0-beta1.zip",
-                "reference": "8.x-1.0-beta1",
-                "shasum": "5b6c701bdab332bac61f59dcc78e05578f94d8b7"
+                "reference": "1d21e6864ced543312d8d819a170c3553281b485"
             },
             "require": {
                 "drupal/core": "*"
@@ -1469,17 +1463,17 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta1",
-                    "datestamp": "1487198586",
+                    "version": "8.x-1.0-beta1+30-dev",
+                    "datestamp": "1535582280",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -1511,7 +1505,8 @@
             "homepage": "https://www.drupal.org/project/captcha",
             "support": {
                 "source": "http://cgit.drupalcode.org/captcha"
-            }
+            },
+            "time": "2018-08-31T06:52:06+00:00"
         },
         {
             "name": "drupal/config_filter",
@@ -2229,17 +2224,17 @@
         },
         {
             "name": "drupal/entity_reference_revisions",
-            "version": "1.4.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/entity_reference_revisions",
-                "reference": "8.x-1.4"
+                "reference": "8.x-1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "0d5e159ab52fe8e5aa7c27e7ccfc0299e1af4d72"
+                "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "82d515de04d3a75fb677ed82241a6aff3f54ab47"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -2253,8 +2248,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1515143885",
+                    "version": "8.x-1.6",
+                    "datestamp": "1539588781",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2263,7 +2258,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -3321,17 +3316,17 @@
         },
         {
             "name": "drupal/paragraphs",
-            "version": "1.2.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/paragraphs",
-                "reference": "8.x-1.2"
+                "reference": "8.x-1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/paragraphs-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "6efc9d4351d4b21a55e7a6428c78495aaca662ef"
+                "url": "https://ftp.drupal.org/files/projects/paragraphs-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "85ba97dd1c602d33fc5904b6e1df5973312afa94"
             },
             "require": {
                 "drupal/core": "~8",
@@ -3339,12 +3334,19 @@
             },
             "require-dev": {
                 "drupal/block_field": "~1.0",
+                "drupal/ctools": "3.x-dev",
                 "drupal/diff": "~1.0",
+                "drupal/entity_browser": "1.x-dev",
+                "drupal/entity_usage": "2.x-dev",
                 "drupal/field_group": "~1.0",
                 "drupal/inline_entity_form": "~1.0",
+                "drupal/paragraphs-paragraphs_library": "*",
                 "drupal/replicate": "~1.0",
-                "drupal/search_api": "*",
+                "drupal/search_api": "~1.0",
                 "drupal/search_api_db": "*"
+            },
+            "suggest": {
+                "drupal/entity_browser": "Recommended for an improved user experience when using the Paragraphs library module"
             },
             "type": "drupal-module",
             "extra": {
@@ -3352,8 +3354,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1505802867",
+                    "version": "8.x-1.5",
+                    "datestamp": "1541009695",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3561,6 +3563,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Enable cacheable captcha support (https://www.drupal.org/project/recaptcha/issues/2219993)": "https://www.drupal.org/files/issues/2018-05-20/recaptcha-cacheable-8.x-2219993-35.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -10359,6 +10364,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/address": 20,
+        "drupal/captcha": 20,
         "drupal/devel": 10,
         "drupal/entityqueue": 15,
         "drupal/field_permissions": 10,
