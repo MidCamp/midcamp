@@ -33,6 +33,7 @@
         "drupal-composer/drupal-scaffold": "^2.3",
         "drupal/address": "1.x-dev",
         "drupal/admin_toolbar": "^1.18",
+        "drupal/captcha": "1.x-dev",
         "drupal/config_ignore": "^2.1",
         "drupal/config_installer": "^1.5",
         "drupal/contact_formatter": "^1.0",
@@ -87,14 +88,16 @@
     "extra": {
         "patches": {
           "drupal/core": {
-            "RSS view with fields give wrong URL from path field (https://www.drupal.org/node/2673980)": "https://www.drupal.org/files/issues/rss_view_with_fields-2673980-27.patch",
-            "The Views integration Datetime Range fields should extend the views integration for regular Datetime fields (https://www.drupal.org/node/2786577)": "https://www.drupal.org/files/issues/improve_the_views-2786577-76-core.patch"
+            "RSS view with fields give wrong URL from path field (https://www.drupal.org/node/2673980)": "https://www.drupal.org/files/issues/rss_view_with_fields-2673980-27.patch"
           },
           "drupal/twig_extensions": {
             "Error after upgrading to Drupal 8.1 (https://www.drupal.org/project/twig_extensions/issues/2726531)": "https://www.drupal.org/files/issues/error_after_upgrading-2726531-9.patch"
           },
           "drupal/mailchimp": {
             "MailchimpListsSubscribeForm wants an array, but gets an object (www.drupal.org/project/mailchimp/issues/2931408)": "https://www.drupal.org/files/issues/2931408-2-list-form-cant-array.patch"
+          },
+          "drupal/recaptcha": {
+              "Enable cacheable captcha support (https://www.drupal.org/project/recaptcha/issues/2219993)": "https://www.drupal.org/files/issues/2018-05-20/recaptcha-cacheable-8.x-2219993-35.patch"
           }
         },
         "installer-types": ["butler-styleguide"],
