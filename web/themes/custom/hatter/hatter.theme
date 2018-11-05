@@ -87,17 +87,3 @@ function hatter_preprocess_field(array &$variables, $hook) {
       break;
   }
 }
-
-function hatter_preprocess_views_view(&$variables) {
-  /**
-   * If there are no default args for this view, try to pull them from the path alias.
-   * Need to match the first part of the path pattern to a known Event term alias.
-   * Good for dynamic content like Views pages that do not have a term ID associated with them.
-   */
-  if ($variables['id'] == 'event_venue') {
-    dump($variables);
-    dump($variables['view']->args);
-//    if ($variables['view']->args == )
-    // if there are no args, set them with $variables['view']->setArguments();
-  }
-}
