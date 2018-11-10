@@ -22,9 +22,10 @@ settings:
   label_display: visible
   views_label: ''
   items_per_page: none
+  context_mapping: {  }
 visibility:
   request_path:
     id: request_path
-    pages: /2018/sponsors
+    pages: '/*/sponsors'
     negate: false
     context_mapping: {  }
