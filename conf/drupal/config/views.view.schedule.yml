@@ -512,7 +512,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: schedule/friday
+      path: 2018/schedule/friday
       display_description: ''
     cache_metadata:
       max-age: -1
@@ -533,7 +533,7 @@ display:
     position: 2
     display_options:
       display_extenders: {  }
-      path: schedule/saturday
+      path: 2018/schedule/saturday
       header:
         area:
           id: area
@@ -632,7 +632,7 @@ display:
     display_options:
       display_extenders: {  }
       display_description: ''
-      path: Dwayne-social-butterfly
+      path: 2018/Dwayne-social-butterfly
       fields:
         field_schedule_time:
           id: field_schedule_time
@@ -890,6 +890,7 @@ display:
         operator: AND
         groups:
           1: AND
+      enabled: false
     cache_metadata:
       max-age: -1
       contexts:
