@@ -40,8 +40,13 @@ function midcamp_utility_views_pre_view(ViewExecutable $view, $display_id, array
       $term_path = \Drupal::service('path.alias_manager')->getPathByAlias('/' . $parts[1]);
       $term_args = explode('/', $term_path);
 
-      // The last $term_args will be the term ID.
-      $view->args[0] = end($term_args);
+      // If we've found a taxonomy term path pass the term ID.
+      if (reset($term_args) == 'taxonomy') {
+        $view->args[0] = end($term_args);
+      } else {
+        // Otherwise default to the 2019 tid.
+        $view->args[0] = '97';
+      }
     }
   }
 }
