@@ -41,7 +41,7 @@ function midcamp_utility_views_pre_view(ViewExecutable $view, $display_id, array
       $term_args = explode('/', $term_path);
 
       // If we've found a taxonomy term path pass the term ID.
-      if (reset($term_args) == 'taxonomy') {
+      if ($term_args[1] == 'taxonomy') {
         $tid = end($term_args);
         $view->setArguments([$tid]);
       } else {
