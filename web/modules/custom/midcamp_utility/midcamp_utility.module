@@ -42,10 +42,11 @@ function midcamp_utility_views_pre_view(ViewExecutable $view, $display_id, array
 
       // If we've found a taxonomy term path pass the term ID.
       if (reset($term_args) == 'taxonomy') {
-        $view->args[0] = end($term_args);
+        $tid = end($term_args);
+        $view->setArguments([$tid]);
       } else {
         // Otherwise default to the 2019 tid.
-        $view->args[0] = '97';
+        $view->setArguments(['97']);
       }
     }
   }
