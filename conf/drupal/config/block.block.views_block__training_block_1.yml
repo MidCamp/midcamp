@@ -1,31 +1,31 @@
-uuid: e9c4e379-bb7c-40e6-99b1-2967c8cada44
+uuid: 2d9c0a84-34b9-4492-ad96-8d54d231c5af
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.event_sponsors
+    - views.view.training
   module:
     - system
     - views
   theme:
     - hatter
-id: views_block__event_sponsors_block_5
+id: views_block__training_block_1
 theme: hatter
 region: content
-weight: -5
+weight: 0
 provider: null
-plugin: 'views_block:event_sponsors-block_5'
+plugin: 'views_block:training-block_1'
 settings:
-  id: 'views_block:event_sponsors-block_5'
+  id: 'views_block:training-block_1'
   label: ''
   provider: views
-  label_display: visible
+  label_display: '0'
   views_label: ''
   items_per_page: none
   context_mapping: {  }
 visibility:
   request_path:
     id: request_path
-    pages: '/*/sponsors'
+    pages: '/*/training'
     negate: false
     context_mapping: {  }
