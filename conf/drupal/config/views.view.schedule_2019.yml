@@ -1,4 +1,4 @@
-uuid: ac86e172-dc2e-4fda-8230-b0c53900574c
+uuid: 6822e821-ac3b-4500-8a07-5cbae0245d2f
 langcode: en
 status: true
 dependencies:
@@ -12,8 +12,8 @@ dependencies:
     - datetime_range
     - node
     - user
-id: schedule
-label: Schedule
+id: schedule_2019
+label: 'Schedule 2019'
 module: views
 description: ''
 tag: ''
@@ -410,8 +410,8 @@ display:
           admin_label: ''
           operator: between
           value:
-            min: '2018-03-09 00:00:00'
-            max: '2018-03-10 05:00:00'
+            min: '2019-03-21 00:00:00'
+            max: '2019-03-22 05:00:00'
             value: ''
             type: date
           group: 1
@@ -484,7 +484,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<div class=\"schedule__nav\">\r\n      <a href=\"/2018/training\">Thursday</a> | <a href=\"/2018/schedule/friday\">Friday</a> | <a href=\"/2018/schedule/saturday\">Saturday</a> | <a href=\"/2018/sprints\">Sunday</a>\r\n</div>\r\n<h2>Friday, March 9, 2018</h2>"
+            value: "<div class=\"schedule__nav\">\r\n      <a href=\"/2019/training\">Wednesday</a> | <a href=\"/2019/schedule/thursday\">Thursday</a> | <a href=\"/2019/schedule/friday\">Friday</a> | <a href=\"/2019/sprints\">Saturday</a>\r\n</div>\r\n<h2>Thursday, March 21, 2019</h2>"
             format: full_html
           plugin_id: text
       footer: {  }
@@ -508,11 +508,11 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Friday
+    display_title: Thursday
     position: 1
     display_options:
       display_extenders: {  }
-      path: 2018/schedule/friday
+      path: 2019/schedule/thursday
       display_description: ''
     cache_metadata:
       max-age: -1
@@ -529,11 +529,11 @@ display:
   page_2:
     display_plugin: page
     id: page_2
-    display_title: Saturday
+    display_title: Friday
     position: 2
     display_options:
       display_extenders: {  }
-      path: 2018/schedule/saturday
+      path: 2019/schedule/friday
       header:
         area:
           id: area
@@ -545,7 +545,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<div class=\"schedule__nav\">\r\n      <a href=\"/2018/training\">Thursday</a> | <a href=\"/2018/schedule/friday\">Friday</a> | <a href=\"/2018/schedule/saturday\">Saturday</a> | <a href=\"/2018/sprints\">Sunday</a>\r\n</div>\r\n<h2>Saturday, March 10, 2018</h2>"
+            value: "<div class=\"schedule__nav\">\r\n      <a href=\"/2019/training\">Wednesday</a> | <a href=\"/2019/schedule/thursday\">Thursday</a> | <a href=\"/2019/schedule/friday\">Friday</a> | <a href=\"/2019/sprints\">Sunday</a>\r\n</div>\r\n<h2>Friday, March 22, 2019</h2>"
             format: full_html
           plugin_id: text
       defaults:
@@ -573,8 +573,8 @@ display:
           admin_label: ''
           operator: between
           value:
-            min: '2018-03-10 05:00:00'
-            max: '2018-03-11 05:00:00'
+            min: '2019-03-22 05:00:00'
+            max: '2019-03-23 05:00:00'
             value: ''
             type: date
           group: 1
@@ -624,280 +624,3 @@ display:
         - 'config:field.storage.node.field_schedule_location'
         - 'config:field.storage.node.field_schedule_time'
         - 'config:field.storage.node.field_track'
-  page_3:
-    display_plugin: page
-    id: page_3
-    display_title: 'Speaker Socials'
-    position: 3
-    display_options:
-      display_extenders: {  }
-      display_description: ''
-      path: 2018/Dwayne-social-butterfly
-      fields:
-        field_schedule_time:
-          id: field_schedule_time
-          table: node__field_schedule_time
-          field: field_schedule_time
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: daterange_default
-          settings:
-            timezone_override: America/Chicago
-            format_type: time_only
-            separator: to
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: false
-            ellipsis: false
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: h4
-          element_class: schedule__title
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: true
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          entity_type: node
-          entity_field: title
-          plugin_id: field
-        field_people:
-          id: field_people
-          table: node__field_people
-          field: field_people
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: div
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_entity_view
-          settings:
-            view_mode: socials
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-      defaults:
-        fields: false
-        filters: false
-        filter_groups: false
-      filters:
-        status:
-          value: '1'
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-          group: 1
-        field_schedule_time_value:
-          id: field_schedule_time_value
-          table: node__field_schedule_time
-          field: field_schedule_time_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: between
-          value:
-            min: '2018-03-09 00:00:00'
-            max: '2018-03-11 05:00:00'
-            value: ''
-            type: date
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            placeholder: ''
-            min_placeholder: ''
-            max_placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          plugin_id: datetime
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
-      enabled: false
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.field_people'
-        - 'config:field.storage.node.field_schedule_time'
