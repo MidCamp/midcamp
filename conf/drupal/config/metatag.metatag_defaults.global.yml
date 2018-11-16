@@ -7,6 +7,7 @@ _core:
 id: global
 label: Global
 tags:
-  title: '[current-page:title] | [site:name]'
   canonical_url: '[current-page:url]'
-  og_image: 'https://www.midcamp.org/themes/custom/hatter/logo.png'
+  image_src: 'https://www.midcamp.org/sites/default/files/2018-11/midcamp-meetup-2019.png'
+  title: '[current-page:title] | [site:name]'
+  og_image: 'https://www.midcamp.org/sites/default/files/2018-11/midcamp-meetup-2019.png'
