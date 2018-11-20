@@ -62,8 +62,15 @@ function hatter_preprocess_user(&$vars) {
     }
 
     $url = $user->get('field_company_url');
-    if ($url->count() > 0) {
+    if ($url->count() > 0 && $company->count() > 0) {
+      // Get the term ID from `field_organization`
+      $organization_tid = $user->get('field_organization')->getValue();
+      $organization_tid = $organization_tid[0]['target_id'];
+      // Get the term name so we can link it to the `field_company_url` value
+      $term = Drupal\taxonomy\Entity\Term::load($organization_tid);
+
       $vars['url'] = $user->get('field_company_url')->first()->getUrl();
+      $vars['org_name'] = $term->getName();
     }
 
     if ($picture->count() > 0) {

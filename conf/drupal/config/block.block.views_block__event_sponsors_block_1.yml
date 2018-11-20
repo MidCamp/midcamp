@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '/2018/*'
-    negate: false
+    pages: '2018*'
+    negate: true
     context_mapping: {  }
