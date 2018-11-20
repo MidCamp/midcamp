@@ -28,8 +28,9 @@ function midcamp_utility_help($route_name, RouteMatchInterface $route_match) {
  * Implements hook_views_pre_view().
  */
 function midcamp_utility_views_pre_view(ViewExecutable $view, $display_id, array &$args) {
-  // Ensure the Event Venue view gets the correct argument when contextual filters not available
-  if ($view->id() == 'event_venue') {
+  // Ensure the Event Venue, Sponsors views get the correct argument when contextual filters not available
+  $event_views = ['event_venue', 'event_sponsors'];
+  if (in_array($view->id(), $event_views)) {
     // Ensure we are on a Views page
     $current_route = \Drupal::routeMatch();
     if ($current_route->getParameter('view_id')) {
@@ -46,6 +47,13 @@ function midcamp_utility_views_pre_view(ViewExecutable $view, $display_id, array
         $view->setArguments([$tid]);
       } else {
         // Otherwise default to the 2019 tid.
+        $view->setArguments(['97']);
+      }
+    }
+    // Ensure nodes without `field_event` values default to 2019 year.
+    if ($current_route->getParameter('node')) {
+      $node = $current_route->getParameter('node');
+      if ($node->hasField('field_event') && $node->get('field_event')->isEmpty()) {
         $view->setArguments(['97']);
       }
     }
