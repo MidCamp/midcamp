@@ -298,7 +298,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: false
-          content: "<div class=\"l-1up button--center-container\">\n      <a href=\"/become-a-sponsor\" class=\"cta-link\">Become a Sponsor<span class=\"cta-arrow\"></span></a>\n      <a href=\"/2018/sponsors\" class=\"cta-link\">See all Sponsors<span class=\"cta-arrow\"></span></a>\n    </div>"
+          content: "<div class=\"l-1up button--center-container\">\r\n      <a href=\"/2019/sponsor-midcamp\" class=\"cta-link\">Become a Sponsor<span class=\"cta-arrow\"></span></a>\r\n      <a href=\"/2019/sponsors\" class=\"cta-link\">See all Sponsors<span class=\"cta-arrow\"></span></a>\r\n    </div>"
           plugin_id: text_custom
       empty:
         area:
@@ -1043,7 +1043,7 @@ display:
   block_7:
     display_plugin: block
     id: block_7
-    display_title: 'Training Sponsors block'
+    display_title: 'Summit Sponsors block'
     position: 1
     display_options:
       display_extenders: {  }
@@ -1058,7 +1058,7 @@ display:
         filter_groups: false
         css_class: false
       block_description: 'Sponsor page Training'
-      title: 'Training Sponsors'
+      title: 'Summit Sponsors'
       style:
         type: default
         options:
@@ -1240,7 +1240,7 @@ display:
         operator: AND
         groups:
           1: AND
-      title: 'Sprint Sponsors'
+      title: 'Contribution Day Sponsors'
       style:
         type: default
         options:
