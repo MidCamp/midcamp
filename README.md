@@ -128,6 +128,7 @@ If you get an error like this while running `pygmy up`:
 
 Apache is probably already running on port 80 for your system. Run `sudo apachectl stop` and try again.
 
+If this does not work, run `lsof -PiTCP -sTCP:LISTEN` and see what is using port 80. Kill it.
 
 ### I can't see new things in the style guide
 
