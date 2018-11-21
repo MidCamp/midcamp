@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.topic.field_presenter_slides
     - field.field.node.topic.field_schedule_location
     - field.field.node.topic.field_schedule_time
+    - field.field.node.topic.field_session_length
     - field.field.node.topic.field_topic_type
     - field.field.node.topic.field_track
     - field.field.node.topic.field_video
@@ -27,7 +28,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 6
+    weight: 7
     settings:
       rows: 9
       summary_rows: 3
@@ -35,29 +36,35 @@ content:
     third_party_settings: {  }
     region: content
   field_people:
-    weight: 5
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_presenter_slides:
-    weight: 26
+    weight: 10
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
     region: content
   field_schedule_location:
-    weight: 3
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_schedule_time:
-    weight: 2
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     type: daterange_default
+    region: content
+  field_session_length:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
     region: content
   field_topic_type:
     weight: 1
@@ -66,20 +73,20 @@ content:
     type: options_buttons
     region: content
   field_track:
-    weight: 4
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_video:
-    weight: 26
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     type: video_embed_field_textfield
     region: content
   status:
     type: boolean_checkbox
-    weight: 7
+    weight: 8
     region: content
     settings:
       display_label: true
@@ -93,7 +100,7 @@ content:
     third_party_settings: {  }
     region: content
   url_redirects:
-    weight: 8
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
