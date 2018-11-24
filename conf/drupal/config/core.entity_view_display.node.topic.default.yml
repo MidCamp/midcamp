@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.topic.field_presenter_slides
     - field.field.node.topic.field_schedule_location
     - field.field.node.topic.field_schedule_time
+    - field.field.node.topic.field_session_length
     - field.field.node.topic.field_topic_type
     - field.field.node.topic.field_track
     - field.field.node.topic.field_video
@@ -45,7 +46,8 @@ content:
   field_presenter_slides:
     weight: 5
     label: above
-    settings: {  }
+    settings:
+      use_description_as_link_text: true
     third_party_settings: {  }
     type: file_default
     region: content
@@ -68,7 +70,7 @@ content:
     type: daterange_default
     region: content
   field_track:
-    weight: 5
+    weight: 6
     label: inline
     settings:
       link: false
@@ -90,5 +92,6 @@ hidden:
   field_accepted_confirmed: true
   field_event: true
   field_meta_tags: true
+  field_session_length: true
   field_topic_type: true
   links: true
