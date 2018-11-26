@@ -1676,7 +1676,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<p>MidCamp is looking for folks just like you to speak to our Drupal audience! Experienced speakers are always welcome, but camp is also a great place to start for first-time speakers. From the opening of session submission through the beginning of camp, we'll have communication to assist speakers (new and old) in creating engaging and informative sessions.</p>\r\n<p>Sessions submission will close December 12, 2018. <a href=\"/node/add/topic\">Submit your session today!</a></p>"
+            value: "<p>MidCamp is looking for folks just like you to speak to our Drupal audience! Experienced speakers are always welcome, but camp is also a great place to start for first-time speakers. From the opening of session submission through the beginning of camp, we'll have communication to assist speakers (new and old) in creating engaging and informative sessions.</p>\r\n<p><strong>Sessions submission will close December 12, 2018. <a href=\"/node/add/topic\">Submit your session today!</a></strong></p>"
             format: basic_html
           plugin_id: text
     cache_metadata:
