@@ -1,0 +1,21 @@
+uuid: d89fa038-ae96-41b8-a8ab-b1893558799f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_session_length
+    - node.type.topic
+  module:
+    - options
+id: node.topic.field_session_length
+field_name: field_session_length
+entity_type: node
+bundle: topic
+label: 'Session Length'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

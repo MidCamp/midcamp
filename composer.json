@@ -45,6 +45,7 @@
         "drupal/geocoder_geofield": "^2.0@alpha",
         "drupal/geolocation": "^1.8",
         "drupal/google_analytics": "^2.2",
+        "drupal/honeypot": "^1.29",
         "drupal/libraries": "3.x-dev",
         "drupal/linkicon": "^1.4",
         "drupal/mailchimp": "^1.3",
