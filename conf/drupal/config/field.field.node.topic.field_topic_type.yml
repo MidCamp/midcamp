@@ -6,6 +6,8 @@ dependencies:
     - field.storage.node.field_topic_type
     - node.type.topic
     - taxonomy.vocabulary.topic_type
+  content:
+    - 'taxonomy_term:topic_type:39f8a394-f9fc-45ae-85a2-46aabfd3212f'
 id: node.topic.field_topic_type
 field_name: field_topic_type
 entity_type: node
@@ -14,7 +16,9 @@ label: 'Topic Type'
 description: ''
 required: true
 translatable: false
-default_value: {  }
+default_value:
+  -
+    target_uuid: 39f8a394-f9fc-45ae-85a2-46aabfd3212f
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
