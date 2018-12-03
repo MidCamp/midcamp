@@ -10,7 +10,7 @@ field_name: field_people
 entity_type: node
 bundle: topic
 label: Speakers
-description: 'The people who will present or facilitate this topic. This must be a user on the site. '
+description: 'Enter the username(s) of the speaker and any co-presenters. The user accounts must already exist on the site.'
 required: false
 translatable: false
 default_value: {  }
