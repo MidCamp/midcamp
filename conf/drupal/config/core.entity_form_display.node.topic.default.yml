@@ -37,9 +37,12 @@ content:
     region: content
   field_people:
     weight: 6
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: entity_reference_autocomplete
     region: content
   field_presenter_slides:
     weight: 10
