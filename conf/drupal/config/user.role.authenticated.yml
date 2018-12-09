@@ -24,6 +24,7 @@ permissions:
   - 'use text format basic_html'
   - 'use text format basic_html'
   - 'view field_accepted_confirmed'
+  - 'view field_presenter_slides'
   - 'view field_schedule_location'
   - 'view field_schedule_time'
   - 'view own field_accepted_confirmed'
