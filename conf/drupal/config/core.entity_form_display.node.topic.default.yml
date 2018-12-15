@@ -35,6 +35,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
+  created:
+    type: datetime_timestamp
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_people:
     weight: 6
     settings:
@@ -102,13 +108,21 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
+  uid:
+    type: entity_reference_autocomplete
+    weight: 12
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   url_redirects:
     weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
-  created: true
   field_accepted_confirmed: true
   field_event: true
   field_meta_tags: true
@@ -116,5 +130,4 @@ hidden:
   promote: true
   publish_on: true
   sticky: true
-  uid: true
   unpublish_on: true
