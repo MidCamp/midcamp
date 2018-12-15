@@ -23,6 +23,7 @@ permissions:
   - 'use session_review transition submit_for_review'
   - 'use text format basic_html'
   - 'use text format basic_html'
+  - 'use text format restricted_html'
   - 'view field_accepted_confirmed'
   - 'view field_presenter_slides'
   - 'view field_schedule_location'
