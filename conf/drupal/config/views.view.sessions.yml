@@ -1676,7 +1676,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<p>MidCamp is looking for folks just like you to speak to our Drupal audience! Experienced speakers are always welcome, but camp is also a great place to start for first-time speakers. From the opening of session submission through the beginning of camp, we'll have communication to assist speakers (new and old) in creating engaging and informative sessions.</p>\r\n<p><strong>The session submission deadline has been extended to midnight December 19, 2018. <a href=\"/submit-session\">Submit your session today!</a></strong></p>"
+            value: "<!--p>MidCamp is looking for folks just like you to speak to our Drupal audience! Experienced speakers are always welcome, but camp is also a great place to start for first-time speakers. From the opening of session submission through the beginning of camp, we'll have communication to assist speakers (new and old) in creating engaging and informative sessions.</p-->\r\n<!--p><strong>The session submission deadline has been extended to midnight December 19, 2018. <a href=\"/submit-session\">Submit your session today!</a></strong></p-->\r\n<p><strong>Session submission is now closed. Thanks to all who submitted proposals!</strong></p>"
             format: basic_html
           plugin_id: text
     cache_metadata:
@@ -2290,7 +2290,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<p>MidCamp is looking for folks just like you to speak to our Drupal audience! Experienced speakers are always welcome, but camp is also a great place to start for first-time speakers. From the opening of session submission through the beginning of camp, we'll have communication to assist speakers (new and old) in creating engaging and informative sessions.</p>\r\n<p>The session submission deadline has been extended to midnight December 19, 2018. <a href=\"/node/add/topic\">Submit your session today!</a></p>"
+            value: "<p>MidCamp is looking for folks just like you to speak to our Drupal audience! Experienced speakers are always welcome, but camp is also a great place to start for first-time speakers. From the opening of session submission through the beginning of camp, we'll have communication to assist speakers (new and old) in creating engaging and informative sessions.</p>\r\n<!--p><strong>The session submission deadline has been extended to midnight December 19, 2018. <a href=\"/submit-session\">Submit your session today!</a></strong></p-->\r\n<p><strong>Session submission is now closed. Thanks to all who submitted proposals!</strong></p>"
             format: basic_html
           plugin_id: text
       filters:
