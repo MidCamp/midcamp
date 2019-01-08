@@ -1,0 +1,12 @@
+uuid: e1c4e240-b127-4838-9e96-54b36a33202c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - midcamp_vbo
+id: topic_reject
+label: 'Reject or unconfirm topic'
+type: node
+plugin: topic_reject
+configuration: {  }
