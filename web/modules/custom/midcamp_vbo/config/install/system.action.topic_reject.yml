@@ -1,0 +1,11 @@
+id: topic_reject
+label: 'Reject or unconfirm topic'
+status: true
+langcode: en
+type: node
+plugin: topic_reject
+dependencies:
+  module:
+    - node
+    - midcamp_vbo
+
