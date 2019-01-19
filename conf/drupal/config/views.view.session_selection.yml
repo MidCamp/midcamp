@@ -170,6 +170,7 @@ display:
           include_exclude: include
           selected_actions:
             - topic_accept_confirm
+            - topic_reject
           entity_type: node
           plugin_id: node_bulk_form
         field_accepted_confirmed:
