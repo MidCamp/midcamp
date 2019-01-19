@@ -5,6 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - node.type.topic
+    - node.type.training
+    - system.menu.midcamp-2019-navigation
     - taxonomy.vocabulary.event
     - taxonomy.vocabulary.topic_type
   content:
@@ -325,7 +327,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: 2019/submitted-trainings
+      path: 2019/training
       display_description: ''
       filters:
         status:
@@ -370,31 +372,21 @@ display:
           id: type
           table: node_field_data
           field: type
-          value:
-            topic: topic
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-          group: 1
-        field_topic_type_target_id:
-          id: field_topic_type_target_id
-          table: node__field_topic_type
-          field: field_topic_type_target_id
           relationship: none
           group_type: group
           admin_label: ''
-          operator: or
+          operator: in
           value:
-            - 15
+            training: training
           group: 1
           exposed: false
           expose:
-            operator_id: field_topic_type_target_id_op
-            label: 'Topic Type (field_topic_type)'
-            description: null
+            operator_id: ''
+            label: ''
+            description: ''
             use_operator: false
-            operator: field_topic_type_target_id_op
-            identifier: field_topic_type_target_id
+            operator: ''
+            identifier: ''
             required: false
             remember: false
             multiple: false
@@ -413,13 +405,9 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: false
-          type: textfield
-          limit: true
-          vid: topic_type
-          hierarchy: false
-          error_message: true
-          plugin_id: taxonomy_index_tid
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
         field_event_target_id:
           id: field_event_target_id
           table: node__field_event
@@ -467,16 +455,29 @@ display:
       defaults:
         filters: false
         filter_groups: false
+        pager: false
       filter_groups:
         operator: AND
         groups:
           1: AND
+      menu:
+        type: normal
+        title: 'Training (Thu)'
+        description: ''
+        expanded: false
+        parent: 'menu_link_content:48ea9bd1-f7b8-4ec7-a811-787b4ce6aaff'
+        weight: -50
+        context: '0'
+        menu_name: midcamp-2019-navigation
+      pager:
+        type: none
+        options:
+          offset: 0
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - user
         - 'user.node_grants:view'
         - user.permissions

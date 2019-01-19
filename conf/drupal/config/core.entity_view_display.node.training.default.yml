@@ -28,7 +28,7 @@ content:
     third_party_settings: {  }
     region: content
   field_people:
-    weight: 0
+    weight: 3
     label: above
     settings:
       view_mode: compact
@@ -37,7 +37,7 @@ content:
     type: entity_reference_entity_view
     region: content
   field_registration_link:
-    weight: 3
+    weight: 0
     label: hidden
     settings:
       trim_length: 80
