@@ -1,0 +1,34 @@
+uuid: 33749fea-ea33-4b4d-92f4-2c86f1576618
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.eventbrite_event.body
+    - field.field.node.eventbrite_event.eventbrite_event_id
+    - field.field.node.eventbrite_event.eventbrite_event_status
+    - node.type.eventbrite_event
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: Y3tkxDQhvPE-PO-3KuObeP0-vk5irrG3_VaJHxJizxI
+id: node.eventbrite_event.teaser
+targetEntityType: node
+bundle: eventbrite_event
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  eventbrite_event_id: true
+  eventbrite_event_status: true

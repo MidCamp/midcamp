@@ -1,0 +1,23 @@
+uuid: bd2dec01-3e89-43dd-9bbf-2e6e24a72b81
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: Ce9ydx9u1ue9X6BM8OMWuxevf5n24coCrypOs06ytYU
+id: node.eventbrite_event_id
+field_name: eventbrite_event_id
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
