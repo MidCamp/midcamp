@@ -6,6 +6,7 @@ dependencies:
     - field.storage.user.field_organization
     - field.storage.user.field_title
     - field.storage.user.user_picture
+    - system.menu.midcamp-2019-navigation
   module:
     - eventbrite_events
     - image
@@ -56,6 +57,10 @@ display:
           offset: 0
       style:
         type: default
+        options:
+          grouping: {  }
+          row_class: 'speaker-item l-3up'
+          default_row_class: true
       row:
         type: fields
         options:
@@ -101,7 +106,7 @@ display:
             preserve_tags: ''
             html: false
           element_type: ''
-          element_class: ''
+          element_class: speaker-image
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -129,12 +134,9 @@ display:
           field_api_classes: false
           plugin_id: field
         name:
+          id: name
           table: eventbrite_events_attendee
           field: name
-          id: name
-          entity_type: null
-          entity_field: name
-          plugin_id: field
           relationship: none
           group_type: group
           admin_label: ''
@@ -167,11 +169,11 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
-          element_class: ''
+          element_type: h3
+          element_class: speaker-item__title
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -181,7 +183,8 @@ display:
           hide_alter_empty: true
           click_sort_column: value
           type: string
-          settings: {  }
+          settings:
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -192,15 +195,18 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_title:
-          id: field_title
-          table: user__field_title
-          field: field_title
-          relationship: assoc_drupal_user
+          entity_type: null
+          entity_field: name
+          plugin_id: field
+        job_title:
+          id: job_title
+          table: eventbrite_events_attendee
+          field: job_title
+          relationship: none
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -254,6 +260,136 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          entity_type: eventbrite_events_attendee
+          entity_field: job_title
+          plugin_id: field
+        field_title:
+          id: field_title
+          table: user__field_title
+          field: field_title
+          relationship: assoc_drupal_user
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: '{{ job_title }}'
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        company:
+          id: company
+          table: eventbrite_events_attendee
+          field: company
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: eventbrite_events_attendee
+          entity_field: company
           plugin_id: field
         field_organization:
           id: field_organization
@@ -299,10 +435,10 @@ display:
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
-          empty: ''
+          empty: '{{ company }}'
           hide_empty: false
           empty_zero: false
-          hide_alter_empty: true
+          hide_alter_empty: false
           click_sort_column: target_id
           type: entity_reference_label
           settings:
@@ -461,6 +597,7 @@ display:
         groups:
           1: OR
           2: OR
+      css_class: cols-3
     cache_metadata:
       max-age: -1
       contexts:
@@ -477,6 +614,32 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags:
+        - 'config:field.storage.user.field_organization'
+        - 'config:field.storage.user.field_title'
+        - 'config:field.storage.user.user_picture'
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: Page
+    position: 2
+    display_options:
+      display_extenders: {  }
+      path: 2019/attendees
+      menu:
+        type: normal
+        title: Attendees
+        description: ''
+        expanded: false
+        parent: 'menu_link_content:25e219e6-55c6-4d2b-a4c4-7853bba4454a'
+        weight: 0
+        context: '0'
+        menu_name: midcamp-2019-navigation
     cache_metadata:
       max-age: -1
       contexts:
