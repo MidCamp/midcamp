@@ -94,3 +94,10 @@ function hatter_preprocess_field(array &$variables, $hook) {
       break;
   }
 }
+
+/**
+ * Implements THEME_theme_suggestions_HOOK_alter() for views_view_fields.
+ */
+function hatter_theme_suggestions_views_view_fields_alter(&$suggestions, $variables, $hook) {
+  $suggestions[] = 'views_view_fields__' . $variables['view']->id() . '__' . $variables['view']->current_display;
+}
