@@ -124,7 +124,7 @@ display:
             preserve_tags: ''
             html: false
           element_type: ''
-          element_class: speaker-image
+          element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -187,8 +187,8 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: h3
-          element_class: speaker-item__title
+          element_type: ''
+          element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -324,7 +324,7 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: '{{ job_title }}'
           hide_empty: false
           empty_zero: false
@@ -452,7 +452,7 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: '{{ company }}'
           hide_empty: false
           empty_zero: false
