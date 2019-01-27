@@ -656,7 +656,7 @@ display:
         title: Attendees
         description: ''
         expanded: false
-        parent: 'menu_link_content:25e219e6-55c6-4d2b-a4c4-7853bba4454a'
+        parent: 'menu_link_content:db3c8044-0b1c-4432-b89f-8a2b03de0754'
         weight: 0
         context: '0'
         menu_name: midcamp-2019-navigation
