@@ -131,7 +131,7 @@ display:
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
-          empty: ''
+          empty: '<img src="/themes/custom/hatter/logo.png" height="250" width="250" />'
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
