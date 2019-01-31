@@ -421,14 +421,13 @@ display:
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_track'
-  page_1:
-    display_plugin: page
-    id: page_1
-    display_title: Page
-    position: 1
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: Block
+    position: 2
     display_options:
       display_extenders: {  }
-      path: 2019/summits
     cache_metadata:
       max-age: -1
       contexts:
