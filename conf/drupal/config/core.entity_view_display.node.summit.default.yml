@@ -13,7 +13,6 @@ dependencies:
     - node.type.summit
   module:
     - link
-    - metatag
     - text
     - user
 id: node.summit.default
@@ -24,46 +23,22 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 1
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_accepted_confirmed:
-    weight: 102
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
-    region: content
-  field_event:
-    weight: 103
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_meta_tags:
-    weight: 104
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: metatag_empty_formatter
     region: content
   field_people:
-    weight: 107
+    weight: 3
     label: above
     settings:
-      link: true
+      view_mode: compact
+      link: false
     third_party_settings: {  }
-    type: entity_reference_label
+    type: entity_reference_entity_view
     region: content
   field_registration_link:
-    weight: 105
-    label: above
+    weight: 0
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -74,16 +49,15 @@ content:
     type: link
     region: content
   field_track:
-    weight: 106
-    label: above
+    weight: 2
+    label: inline
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-hidden: {  }
+hidden:
+  field_accepted_confirmed: true
+  field_event: true
+  field_meta_tags: true
+  links: true
