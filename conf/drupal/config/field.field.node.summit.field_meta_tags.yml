@@ -1,0 +1,23 @@
+uuid: a8b7474f-036b-462b-9532-644a483649c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.summit
+  module:
+    - metatag
+id: node.summit.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: summit
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'a:0:{}'
+default_value_callback: ''
+settings: {  }
+field_type: metatag

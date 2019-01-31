@@ -1,0 +1,23 @@
+uuid: 20de14ef-7113-46f9-9088-cfeb1ffe7592
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_accepted_confirmed
+    - node.type.summit
+id: node.summit.field_accepted_confirmed
+field_name: field_accepted_confirmed
+entity_type: node
+bundle: summit
+label: 'Accepted and confirmed'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean
