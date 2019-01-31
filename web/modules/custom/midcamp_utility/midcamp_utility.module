@@ -29,7 +29,7 @@ function midcamp_utility_help($route_name, RouteMatchInterface $route_match) {
  */
 function midcamp_utility_views_pre_view(ViewExecutable $view, $display_id, array &$args) {
   // Ensure the Event Venue, Sponsors views get the correct argument when contextual filters not available
-  $event_views = ['event_venue', 'event_sponsors'];
+  $event_views = ['event_venue', 'event_sponsors', 'summits'];
   if (in_array($view->id(), $event_views)) {
     // Ensure we are on a Views page
     $current_route = \Drupal::routeMatch();
