@@ -1,31 +1,30 @@
-uuid: e83de42f-5102-4071-b759-9fcd9e786c49
+uuid: 17b8cd84-6eca-49da-9848-2afa9a2a62db
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.event_sponsors
+    - views.view.attendees
   module:
     - system
     - views
   theme:
     - hatter
-id: views_block__event_sponsors_block_8
+id: views_block__attendees_block_2
 theme: hatter
 region: content
-weight: 1
+weight: 3
 provider: null
-plugin: 'views_block:event_sponsors-block_8'
+plugin: 'views_block:attendees-block_2'
 settings:
-  id: 'views_block:event_sponsors-block_8'
+  id: 'views_block:attendees-block_2'
   label: ''
   provider: views
   label_display: visible
   views_label: ''
   items_per_page: none
-  context_mapping: {  }
 visibility:
   request_path:
     id: request_path
-    pages: '/*/sponsors'
+    pages: /2019/sponsors
     negate: false
     context_mapping: {  }
