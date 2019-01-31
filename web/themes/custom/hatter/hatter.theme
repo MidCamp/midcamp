@@ -102,3 +102,14 @@ function hatter_theme_suggestions_views_view_fields_alter(&$suggestions, $variab
   $suggestions[] = 'views_view_fields__' . $variables['view']->id();
   $suggestions[] = 'views_view_fields__' . $variables['view']->id() . '__' . $variables['view']->current_display;
 }
+
+/**
+ * Implements hook_preprocess_HOOK() for block templates.
+ */
+function hatter_preprocess_block(&$variables) {
+  // Add class to Attendees block to keep consistent styling with Sponsors page.
+  if ($variables['plugin_id'] == 'views_block:attendees-block_2') {
+    $variables['attributes']['class'][] = 'sponsor-group';
+  }
+}
+
