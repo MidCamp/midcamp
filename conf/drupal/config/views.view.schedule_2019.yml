@@ -458,6 +458,18 @@ display:
             label: ''
           granularity: minute
           plugin_id: datetime
+        field_schedule_location_target_id:
+          id: field_schedule_location_target_id
+          table: node__field_schedule_location
+          field: field_schedule_location_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
         title:
           id: title
           table: node_field_data
@@ -514,6 +526,22 @@ display:
       display_extenders: {  }
       path: 2019/schedule/thursday
       display_description: ''
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<div class=\"schedule__nav\">\r\n      <a href=\"/2019/training\">Wednesday</a> | <a href=\"/2019/schedule/thursday\">Thursday</a> | <a href=\"/2019/schedule/friday\">Friday</a> | <a href=\"/2019/contribution-day\">Saturday</a>\r\n</div>\r\n<h2>Thursday, March 21, 2019</h2>"
+            format: full_html
+          plugin_id: text
+      defaults:
+        header: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -545,7 +573,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<div class=\"schedule__nav\">\r\n      <a href=\"/2019/training\">Wednesday</a> | <a href=\"/2019/schedule/thursday\">Thursday</a> | <a href=\"/2019/schedule/friday\">Friday</a> | <a href=\"/2019/sprints\">Sunday</a>\r\n</div>\r\n<h2>Friday, March 22, 2019</h2>"
+            value: "<div class=\"schedule__nav\">\r\n      <a href=\"/2019/training\">Wednesday</a> | <a href=\"/2019/schedule/thursday\">Thursday</a> | <a href=\"/2019/schedule/friday\">Friday</a> | <a href=\"/2019/contribution-day\">Saturday</a>\r\n</div>\r\n<h2>Friday, March 22, 2019</h2>"
             format: full_html
           plugin_id: text
       defaults:
