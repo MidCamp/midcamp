@@ -1,0 +1,21 @@
+uuid: ad7a2e63-9af2-4bb4-afbe-628ec89e884e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.eventbrite_event_id
+    - node.type.eventbrite_event
+_core:
+  default_config_hash: hBoLs7-SUZjf-ggORs67n2zaJTrGChA7OmLm777kJEk
+id: node.eventbrite_event.eventbrite_event_id
+field_name: eventbrite_event_id
+entity_type: node
+bundle: eventbrite_event
+label: 'Eventbrite Event ID'
+description: 'Enter the ID of the event provided by Eventbrite'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
