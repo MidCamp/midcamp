@@ -1,0 +1,33 @@
+uuid: afacd445-4514-4471-9d43-19acea4b9f8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event
+    - node.type.summit
+    - taxonomy.vocabulary.event
+  content:
+    - 'taxonomy_term:event:17285735-fe51-4f45-b481-321ae7af649f'
+id: node.summit.field_event
+field_name: field_event
+entity_type: node
+bundle: summit
+label: Event
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    target_uuid: 17285735-fe51-4f45-b481-321ae7af649f
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event: event
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,24 @@
+uuid: 6c99a00d-eecc-42da-be39-b32fdc5e3909
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_registration_link
+    - node.type.summit
+  module:
+    - link
+id: node.summit.field_registration_link
+field_name: field_registration_link
+entity_type: node
+bundle: summit
+label: 'Registration Link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+  title_predefined: ''
+field_type: link
