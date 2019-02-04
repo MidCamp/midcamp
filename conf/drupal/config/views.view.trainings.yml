@@ -462,13 +462,14 @@ display:
           1: AND
       menu:
         type: normal
-        title: 'Training (Thu)'
+        title: 'Training (Wed)'
         description: ''
         expanded: false
         parent: 'menu_link_content:48ea9bd1-f7b8-4ec7-a811-787b4ce6aaff'
-        weight: -50
+        weight: -49
         context: '0'
         menu_name: midcamp-2019-navigation
+        enabled: true
       pager:
         type: none
         options:

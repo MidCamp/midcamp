@@ -1,0 +1,44 @@
+uuid: fe3e903d-c074-47b0-bb4d-6f27513b9d9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.eventbrite_event.body
+    - field.field.node.eventbrite_event.eventbrite_event_id
+    - field.field.node.eventbrite_event.eventbrite_event_status
+    - node.type.eventbrite_event
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: 7yhsqT085avdm8sUv2R1MEJ3pss-5CgnAdY4ahtHy44
+id: node.eventbrite_event.default
+targetEntityType: node
+bundle: eventbrite_event
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 103
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  eventbrite_event_id:
+    label: above
+    type: string
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  eventbrite_event_status:
+    label: above
+    type: string
+    weight: 102
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

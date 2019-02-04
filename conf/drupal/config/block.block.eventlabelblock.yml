@@ -10,7 +10,7 @@ dependencies:
 id: eventlabelblock
 theme: hatter
 region: content
-weight: -11
+weight: -13
 provider: null
 plugin: event_label_block
 settings:
@@ -22,6 +22,7 @@ visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
     bundles:
+      summit: summit
       article: article
       job: job
       page: page
