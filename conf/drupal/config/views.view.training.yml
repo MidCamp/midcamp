@@ -778,7 +778,7 @@ display:
             trim_whitespace: false
             alt: ''
             rel: ''
-            link_class: button--tertiary
+            link_class: button--primary
             prefix: ''
             suffix: ''
             target: ''
@@ -847,7 +847,7 @@ display:
             preserve_tags: ''
             html: false
           element_type: ''
-          element_class: button--tertiary
+          element_class: button--primary
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false

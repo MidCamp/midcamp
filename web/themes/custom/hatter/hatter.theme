@@ -86,9 +86,10 @@ function hatter_preprocess_field(array &$variables, $hook) {
   switch ($variables['element']['#field_name']) {
     case 'field_registration_link':
       // Add button class to `field_registration_link` in the `training` node type.
-      if (isset($variables['element']['#bundle']) && $variables['element']['#bundle'] == 'training') {
+      $registration_nodes = ['training', 'summit'];
+      if (isset($variables['element']['#bundle']) && in_array($variables['element']['#bundle'], $registration_nodes)) {
         foreach (\Drupal\Core\Render\Element::children($variables['element']) as $id) {
-          $variables['items'][$id]['content']['#options']['attributes']['class'][] = 'button--tertiary';
+          $variables['items'][$id]['content']['#options']['attributes']['class'][] = 'button--primary';
         }
       }
       break;
