@@ -17,7 +17,7 @@ function hatter_theme_suggestions_taxonomy_term_alter(&$suggestions, $vars, $hoo
  */
 function hatter_theme_suggestions_field_alter(&$suggestions, $vars, $hook) {
   // Add field template suggestions for user view modes.
-  $user_view_modes = ['featured_speaker', 'compact'];
+  $user_view_modes = ['featured_speaker', 'compact', 'schedule'];
   if ($vars['element']['#bundle'] == 'user' && in_array($vars['element']['#view_mode'], $user_view_modes)) {
     $suggestions[] = 'field__' . $vars['element']['#bundle'] . '__' .
                       $vars['element']['#field_name'] . '__' .
