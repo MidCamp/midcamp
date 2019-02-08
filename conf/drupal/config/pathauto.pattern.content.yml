@@ -9,18 +9,19 @@ label: Content
 type: 'canonical_entities:node'
 pattern: '[node:field_event:entity:url:path]/[node:content-type]/[node:title]'
 selection_criteria:
-  a1b81c41-4e3a-4119-ab68-840fe3f89fa7:
+  967e3bfc-632f-4c3d-b18f-91886599bc38:
     id: node_type
     bundles:
       article: article
       sponsor: sponsor
+      summit: summit
       topic: topic
       training: training
       venue: venue
     negate: false
     context_mapping:
       node: node
-    uuid: a1b81c41-4e3a-4119-ab68-840fe3f89fa7
+    uuid: 967e3bfc-632f-4c3d-b18f-91886599bc38
 selection_logic: and
 weight: -7
 relationships: {  }
