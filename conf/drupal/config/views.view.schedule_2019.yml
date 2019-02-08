@@ -69,6 +69,11 @@ display:
           default_row_class: true
       row:
         type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
       fields:
         field_schedule_time:
           id: field_schedule_time
@@ -299,7 +304,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: div
+          element_type: '0'
           element_class: ''
           element_label_type: ''
           element_label_class: ''
