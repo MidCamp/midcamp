@@ -54,12 +54,9 @@ content:
     region: content
   field_track:
     weight: 1
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_buttons
     region: content
   status:
     type: boolean_checkbox
