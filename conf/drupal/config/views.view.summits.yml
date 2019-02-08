@@ -294,7 +294,7 @@ display:
             trim_whitespace: false
             alt: ''
             rel: ''
-            link_class: button--tertiary
+            link_class: button--primary
             prefix: ''
             suffix: ''
             target: ''
