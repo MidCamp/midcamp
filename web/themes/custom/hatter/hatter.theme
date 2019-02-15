@@ -93,6 +93,26 @@ function hatter_preprocess_field(array &$variables, $hook) {
         }
       }
       break;
+    case 'field_name':
+      /**
+       * Pull field_organization into the field_name template to concatenate.
+       *
+       * See @file field--user--field-name--schedule.html.twig
+       */
+      if ($variables['entity_type'] == 'user' && $variables['element']['#view_mode'] == 'schedule') {
+        $user = $variables['element']['#object'];
+
+        if ($user->get('field_organization')->getValue()) {
+          // Get the term ID from `field_organization`
+          $organization_tid = $user->get('field_organization')->getValue();
+          $organization_tid = $organization_tid[0]['target_id'];
+          // Get the term name so we can add it to the `field_name` template
+          $term = Drupal\taxonomy\Entity\Term::load($organization_tid);
+
+          $variables['org_name'] = $term->getName();
+        }
+      }
+      break;
   }
 }
 

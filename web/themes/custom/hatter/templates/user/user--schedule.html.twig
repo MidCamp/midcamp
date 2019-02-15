@@ -14,6 +14,6 @@
 #}
 <div{{ attributes.addClass('schedule__speaker') }}>
   {% if content %}
-    {{- content -}}
+    {{- content|without('field_organization') -}}
   {% endif %}
 </div>
