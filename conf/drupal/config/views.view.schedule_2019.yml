@@ -69,6 +69,11 @@ display:
           default_row_class: true
       row:
         type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
       fields:
         field_schedule_time:
           id: field_schedule_time
@@ -234,7 +239,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: h4
+          element_type: h3
           element_class: schedule__title
           element_label_type: ''
           element_label_class: ''
@@ -299,7 +304,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: div
+          element_type: '0'
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -312,9 +317,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: entity_reference_label
+          type: entity_reference_entity_view
           settings:
-            link: false
+            view_mode: schedule
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -323,7 +328,7 @@ display:
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
+          separator: ' '
           field_api_classes: false
           plugin_id: field
         field_schedule_location:

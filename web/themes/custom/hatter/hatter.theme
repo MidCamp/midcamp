@@ -17,7 +17,7 @@ function hatter_theme_suggestions_taxonomy_term_alter(&$suggestions, $vars, $hoo
  */
 function hatter_theme_suggestions_field_alter(&$suggestions, $vars, $hook) {
   // Add field template suggestions for user view modes.
-  $user_view_modes = ['featured_speaker', 'compact'];
+  $user_view_modes = ['featured_speaker', 'compact', 'schedule'];
   if ($vars['element']['#bundle'] == 'user' && in_array($vars['element']['#view_mode'], $user_view_modes)) {
     $suggestions[] = 'field__' . $vars['element']['#bundle'] . '__' .
                       $vars['element']['#field_name'] . '__' .
@@ -90,6 +90,26 @@ function hatter_preprocess_field(array &$variables, $hook) {
       if (isset($variables['element']['#bundle']) && in_array($variables['element']['#bundle'], $registration_nodes)) {
         foreach (\Drupal\Core\Render\Element::children($variables['element']) as $id) {
           $variables['items'][$id]['content']['#options']['attributes']['class'][] = 'button--primary';
+        }
+      }
+      break;
+    case 'field_name':
+      /**
+       * Pull field_organization into the field_name template to concatenate.
+       *
+       * See @file field--user--field-name--schedule.html.twig
+       */
+      if ($variables['entity_type'] == 'user' && $variables['element']['#view_mode'] == 'schedule') {
+        $user = $variables['element']['#object'];
+
+        if ($user->get('field_organization')->getValue()) {
+          // Get the term ID from `field_organization`
+          $organization_tid = $user->get('field_organization')->getValue();
+          $organization_tid = $organization_tid[0]['target_id'];
+          // Get the term name so we can add it to the `field_name` template
+          $term = Drupal\taxonomy\Entity\Term::load($organization_tid);
+
+          $variables['org_name'] = $term->getName();
         }
       }
       break;

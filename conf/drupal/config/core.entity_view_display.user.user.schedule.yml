@@ -1,0 +1,84 @@
+uuid: 4d001b51-06bd-4420-ab8d-9a39816a63c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.schedule
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_company_logo
+    - field.field.user.user.field_company_url
+    - field.field.user.user.field_do_profile
+    - field.field.user.user.field_eventbrite_email
+    - field.field.user.user.field_mailing_list
+    - field.field.user.user.field_name
+    - field.field.user.user.field_organization
+    - field.field.user.user.field_site
+    - field.field.user.user.field_title
+    - field.field.user.user.field_tracks
+    - field.field.user.user.field_twitter
+    - field.field.user.user.user_picture
+    - image.style.schedule_presenter
+  module:
+    - image
+    - name
+    - user
+_core:
+  default_config_hash: L2mtwGWH_7wDRCMIR4r_Iu_jmvQ10DV1L8ht8iNZ5qY
+id: user.user.schedule
+targetEntityType: user
+bundle: user
+mode: schedule
+content:
+  field_company_logo:
+    weight: 3
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_name:
+    weight: 1
+    label: hidden
+    settings:
+      format: default
+      markup: false
+      output: default
+      multiple: default
+      multiple_delimiter: ', '
+      multiple_and: text
+      multiple_delimiter_precedes_last: never
+      multiple_el_al_min: '3'
+      multiple_el_al_first: '1'
+    third_party_settings: {  }
+    type: name_default
+    region: content
+  field_organization:
+    weight: 2
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  user_picture:
+    type: image
+    weight: 0
+    settings:
+      image_style: schedule_presenter
+      image_link: ''
+    third_party_settings: {  }
+    label: hidden
+    region: content
+hidden:
+  field_bio: true
+  field_company_url: true
+  field_do_profile: true
+  field_eventbrite_email: true
+  field_mailing_list: true
+  field_site: true
+  field_title: true
+  field_tracks: true
+  field_twitter: true
+  member_for: true
