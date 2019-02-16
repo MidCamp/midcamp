@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Theme override to present all user data.
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ *   print a subset such as 'content.field_example'. Fields attached to a user
+ *   such as 'user_picture' are available as 'content.user_picture'.
+ * - attributes: HTML attributes for the container element.
+ * - user: A Drupal User entity.
+ *
+ * @see template_preprocess_user()
+ */
+#}
+<div{{ attributes.addClass('schedule__speaker__logo') }}>
+  {%- for item in items -%}
+    {{ item.content }}
+  {%- endfor -%}
+</div>

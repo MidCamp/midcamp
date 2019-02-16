@@ -1,0 +1,15 @@
+uuid: 8fe11307-3e80-48ca-a377-e946879994c0
+langcode: en
+status: true
+dependencies: {  }
+name: schedule_presenter
+label: 'Schedule Presenter'
+effects:
+  0a9c18b8-9c13-4df4-8d90-9cd540cfd8a9:
+    uuid: 0a9c18b8-9c13-4df4-8d90-9cd540cfd8a9
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 400
+      anchor: center-center

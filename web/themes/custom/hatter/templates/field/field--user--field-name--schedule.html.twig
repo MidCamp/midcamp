@@ -1,0 +1,9 @@
+{% for item in items %}
+  <div{{ attributes.addClass('schedule__speaker__name') }}>
+  {% if org_name %}
+    <strong>{{- item.content -}}</strong>,&nbsp;{{- org_name -}}
+  {% else %}
+    <strong>{{- item.content -}}</strong>
+  {% endif %}
+  </div>
+{% endfor %}
