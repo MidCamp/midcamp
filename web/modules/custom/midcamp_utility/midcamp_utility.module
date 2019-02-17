@@ -28,11 +28,16 @@ function midcamp_utility_help($route_name, RouteMatchInterface $route_match) {
  * Implements hook_views_pre_view().
  */
 function midcamp_utility_views_pre_view(ViewExecutable $view, $display_id, array &$args) {
-  // Ensure the Event Venue, Sponsors views get the correct argument when contextual filters not available
+  /*
+   * Ensure the Event Venue, Sponsors views get the correct argument when contextual filters not available.
+   * Set `$event_default` to the current active event term ID.
+   */
+  $event_default = '97';
   $event_views = ['event_venue', 'event_sponsors'];
   if (in_array($view->id(), $event_views)) {
-    // Ensure we are on a Views page
+    // Determine what type of page we are on.
     $current_route = \Drupal::routeMatch();
+    // Views page condition where args may not be present.
     if ($current_route->getParameter('view_id')) {
       // Check the first path part for a value matching an Event term alias.
       $current_uri = \Drupal::request()->getRequestUri();
@@ -47,14 +52,24 @@ function midcamp_utility_views_pre_view(ViewExecutable $view, $display_id, array
         $view->setArguments([$tid]);
       } else {
         // Otherwise default to the 2019 tid.
-        $view->setArguments(['97']);
+        $view->setArguments([$event_default]);
       }
+      return;
     }
-    // Ensure nodes without `field_event` values default to 2019 year.
+    // Node condition where `field_event` values are not present.
     if ($current_route->getParameter('node')) {
       $node = $current_route->getParameter('node');
       if ($node->hasField('field_event') && $node->get('field_event')->isEmpty()) {
-        $view->setArguments(['97']);
+        $view->setArguments([$event_default]);
+        return;
+      }
+    }
+    // Taxonomy condition for non-event terms.
+    if ($current_route->getParameter('taxonomy_term')) {
+      $term = $current_route->getParameter('taxonomy_term');
+      if ($term->bundle() != 'event') {
+        $view->setArguments([$event_default]);
+        return;
       }
     }
   }
