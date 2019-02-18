@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4348d8cc4fa80616b94c24e5d02948fb",
+    "content-hash": "fd1c0ee88955f578b00532363c27d587",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1989,7 +1989,8 @@
                     "merge-extra": false
                 },
                 "patches_applied": {
-                    "RSS view with fields give wrong URL from path field (https://www.drupal.org/node/2673980)": "https://www.drupal.org/files/issues/rss_view_with_fields-2673980-27.patch"
+                    "RSS view with fields give wrong URL from path field (https://www.drupal.org/node/2673980)": "https://www.drupal.org/files/issues/rss_view_with_fields-2673980-27.patch",
+                    "Add hook_post_config_import_NAME after config import (https://www.drupal.org/project/drupal/issues/2901418)": "https://www.drupal.org/files/issues/2019-02-01/2901418-28.patch"
                 }
             },
             "autoload": {
