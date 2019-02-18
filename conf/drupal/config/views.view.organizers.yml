@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.featured_speaker
+    - system.menu.midcamp-2019-navigation
     - taxonomy.vocabulary.event
   content:
     - 'taxonomy_term:event:17285735-fe51-4f45-b481-321ae7af649f'
@@ -303,6 +304,15 @@ display:
         operator: AND
         groups:
           1: AND
+      menu:
+        type: normal
+        title: Organizers
+        description: ''
+        expanded: false
+        parent: 'menu_link_content:db3c8044-0b1c-4432-b89f-8a2b03de0754'
+        weight: 10
+        context: '0'
+        menu_name: midcamp-2019-navigation
     cache_metadata:
       max-age: -1
       contexts:
