@@ -1,0 +1,30 @@
+uuid: e44b49c5-d499-410f-89f2-af113d064302
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_organizer_year
+    - taxonomy.vocabulary.event
+  module:
+    - user
+id: user.user.field_organizer_year
+field_name: field_organizer_year
+entity_type: user
+bundle: user
+label: 'Organizer year'
+description: 'Select the events this user has helped organize. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event: event
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

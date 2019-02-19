@@ -1,5 +1,11 @@
 <div{{ attributes.addClass('speaker-item') }}>
-  {{ content.user_picture }}
+  {% if content.user_picture|render %}
+    {{ content.user_picture }}
+  {% else %}
+    <div class="speaker-image">
+      <img src="/themes/custom/hatter/logo.png" width="400" height="400" class="image-style-featured-speaker">
+    </div>
+  {% endif %}
   <div class="speaker-item__block">
     <h3 class="speaker-item__title">{{ content.field_name }}</h3>
     <p class="speaker-item__subtitle">
