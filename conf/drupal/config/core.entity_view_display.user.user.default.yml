@@ -11,6 +11,7 @@ dependencies:
     - field.field.user.user.field_mailing_list
     - field.field.user.user.field_name
     - field.field.user.user.field_organization
+    - field.field.user.user.field_organizer_year
     - field.field.user.user.field_site
     - field.field.user.user.field_title
     - field.field.user.user.field_tracks
@@ -131,4 +132,5 @@ hidden:
   field_company_url: true
   field_eventbrite_email: true
   field_mailing_list: true
+  field_organizer_year: true
   member_for: true

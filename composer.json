@@ -94,7 +94,8 @@
     "extra": {
         "patches": {
           "drupal/core": {
-            "RSS view with fields give wrong URL from path field (https://www.drupal.org/node/2673980)": "https://www.drupal.org/files/issues/rss_view_with_fields-2673980-27.patch"
+            "RSS view with fields give wrong URL from path field (https://www.drupal.org/node/2673980)": "https://www.drupal.org/files/issues/rss_view_with_fields-2673980-27.patch",
+            "Add hook_post_config_import_NAME after config import (https://www.drupal.org/project/drupal/issues/2901418)": "https://www.drupal.org/files/issues/2019-02-01/2901418-28.patch"
           },
           "drupal/twig_extensions": {
             "Error after upgrading to Drupal 8.1 (https://www.drupal.org/project/twig_extensions/issues/2726531)": "https://www.drupal.org/files/issues/error_after_upgrading-2726531-9.patch"
