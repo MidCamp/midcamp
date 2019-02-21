@@ -72,5 +72,11 @@ function midcamp_utility_views_pre_view(ViewExecutable $view, $display_id, array
         return;
       }
     }
+    // User routes.
+    // @todo - do this a better way.
+    if ($current_route->getParameter('user')) {
+      $view->setArguments([$event_default]);
+      return;
+    }
   }
 }
