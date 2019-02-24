@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - node.type.topic
     - node.type.training
-    - system.menu.midcamp-2019-navigation
     - taxonomy.vocabulary.event
     - taxonomy.vocabulary.topic_type
   content:
@@ -461,7 +460,7 @@ display:
         groups:
           1: AND
       menu:
-        type: normal
+        type: none
         title: 'Training (Wed)'
         description: ''
         expanded: false
@@ -469,7 +468,6 @@ display:
         weight: -49
         context: '0'
         menu_name: midcamp-2019-navigation
-        enabled: true
       pager:
         type: none
         options:

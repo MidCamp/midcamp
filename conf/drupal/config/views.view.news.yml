@@ -283,7 +283,7 @@ display:
         description: ''
         expanded: false
         parent: 'menu_link_content:db3c8044-0b1c-4432-b89f-8a2b03de0754'
-        weight: -47
+        weight: -46
         context: '0'
         menu_name: midcamp-2019-navigation
       filters:
