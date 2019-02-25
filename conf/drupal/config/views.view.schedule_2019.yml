@@ -70,8 +70,8 @@ display:
         options:
           grouping:
             -
-              field: type
-              rendered: false
+              field: field_schedule_time
+              rendered: true
               rendered_strip: false
           row_class: schedule__teaser
           default_row_class: false
@@ -681,6 +681,8 @@ display:
         fields: false
         header: false
         sorts: false
+        style: false
+        row: false
       filters:
         status:
           value: '1'
@@ -1185,6 +1187,23 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: standard
+      style:
+        type: default
+        options:
+          grouping:
+            -
+              field: type
+              rendered: false
+              rendered_strip: false
+          row_class: schedule__teaser
+          default_row_class: false
+      row:
+        type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
     cache_metadata:
       max-age: -1
       contexts:
