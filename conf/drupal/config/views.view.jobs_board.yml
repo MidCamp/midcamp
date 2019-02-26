@@ -643,7 +643,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<p>Job postings are a benefit of MidCamp sponsors. If you are a sponsor and need help getting your jobs posted, shoot us an email and we&rsquo;ll gladly help out.</p>\n<p>If you are not currently a MidCamp sponsor and have jobs to post, take a look at our <a href=\"/become-a-sponsor\">prospectus</a>!</p>"
+            value: "<p>Job postings are a benefit of MidCamp sponsors. If you are a sponsor and need help getting your jobs posted, shoot us an email and we&rsquo;ll gladly help out.</p>\n<p>If you are not currently a MidCamp sponsor and have jobs to post, take a look at our <a href=\"/become-a-sponsor\">prospectus</a>!</p>\n<p>For companies who are unable to attend camp or aren&rsquo;t looking for full benefits of sponsorship we offer, we want to give you the chance to spread the word about your company. For $350 you can get access to post up to 3 jobs on our Job Board, targeting our audience of experienced web professionals from Chicagoland and beyond. MidCamp attracts Front End Developers, Engineers, Team Leads, Project Managers, Designers, and more. Over 50% of our audience have 3 or more years experience in the field. We promote the board before camp on social media and during camp during all of our announcements. To get started, email <a href=\"mailto:sponsor@midcamp.org\">sponsor@midcamp.org</a>."
             format: basic_html
           plugin_id: text
       footer: {  }
