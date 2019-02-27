@@ -71,7 +71,7 @@ display:
           grouping:
             -
               field: field_schedule_time
-              rendered: true
+              rendered: false
               rendered_strip: false
           row_class: schedule__teaser
           default_row_class: false
