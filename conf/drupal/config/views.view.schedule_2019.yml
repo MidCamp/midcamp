@@ -530,6 +530,90 @@ display:
         - 'config:field.storage.node.field_schedule_location'
         - 'config:field.storage.node.field_schedule_time'
         - 'config:field.storage.node.field_track'
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: 'Wednesday Social'
+    position: 4
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        field_schedule_time_value:
+          id: field_schedule_time_value
+          table: node__field_schedule_time
+          field: field_schedule_time_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: between
+          value:
+            min: '2019-03-20 00:00:00'
+            max: '2019-03-21 05:00:00'
+            value: ''
+            type: date
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: datetime
+      defaults:
+        filters: false
+        filter_groups: false
+        header: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      header: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_people'
+        - 'config:field.storage.node.field_schedule_location'
+        - 'config:field.storage.node.field_schedule_time'
+        - 'config:field.storage.node.field_track'
   page_1:
     display_plugin: page
     id: page_1
@@ -683,6 +767,7 @@ display:
         sorts: false
         style: false
         row: false
+        footer: false
       filters:
         status:
           value: '1'
@@ -1204,6 +1289,18 @@ display:
           inline: {  }
           separator: ''
           hide_empty: false
+      footer:
+        view:
+          id: view
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          view_to_insert: 'schedule_2019:block_1'
+          inherit_arguments: false
+          plugin_id: view
     cache_metadata:
       max-age: -1
       contexts:
