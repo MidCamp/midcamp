@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_sponsor_company
     - node.type.job
-    - node.type.sponsor
 id: node.job.field_sponsor_company
 field_name: field_sponsor_company
 entity_type: node
@@ -17,12 +16,10 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:node'
+  handler: views
   handler_settings:
-    target_bundles:
-      sponsor: sponsor
-    sort:
-      field: _none
-    auto_create: false
-    auto_create_bundle: ''
+    view:
+      view_name: sponsor_company_field_filter
+      display_name: entity_reference_1
+      arguments: {  }
 field_type: entity_reference
