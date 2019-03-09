@@ -12,6 +12,7 @@
 // the web folder for an advanced security measure: '../config/sync'.
 $config_directories['sync'] = '../conf/drupal/config';
 $settings['install_profile'] = 'config_installer';
+$settings['file_private_path'] = 'sites/default/files/private';
 
 if (getenv('MAILCHIMP_API_KEY')) {
   $config['mailchimp.settings']['api_key'] = getenv('MAILCHIMP_API_KEY');
