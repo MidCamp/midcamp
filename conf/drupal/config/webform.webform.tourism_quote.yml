@@ -151,7 +151,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: dsdobrzynski@gmail.com
+      to_mail: 'dsdobrzynski@gmail.com,info@midcamp.org'
       to_options: {  }
       cc_mail: ''
       cc_options: {  }
