@@ -616,21 +616,18 @@ display:
           reduce_duplicates: false
           plugin_id: list_field
       sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          order: DESC
-          entity_type: node
-          entity_field: created
-          plugin_id: date
+        random:
+          id: random
+          table: views
+          field: random
           relationship: none
           group_type: group
           admin_label: ''
+          order: ASC
           exposed: false
           expose:
             label: ''
-          granularity: second
+          plugin_id: random
       title: 'Job Board'
       header:
         area:
@@ -665,7 +662,7 @@ display:
       arguments: {  }
       display_extenders: {  }
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -695,6 +692,7 @@ display:
         css_class: false
         fields: false
         empty: false
+        sorts: false
       arguments:
         field_sponsor_company_target_id:
           id: field_sponsor_company_target_id
@@ -1174,6 +1172,21 @@ display:
           field_api_classes: false
           plugin_id: field
       empty: {  }
+      sorts:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
     cache_metadata:
       max-age: -1
       contexts:
@@ -1213,13 +1226,17 @@ display:
           plugin_id: text
       defaults:
         header: false
+        pager: false
+      pager:
+        type: none
+        options:
+          offset: 0
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:
