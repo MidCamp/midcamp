@@ -7,10 +7,10 @@ close: null
 uid: 67
 template: false
 id: tourism_quote
-title: 'Submit a Tourism Blurb'
+title: 'Submit a Tourism Quote'
 description: ''
 category: ''
-elements: "markup:\n  '#type': webform_markup\n  '#display_on': both\n  '#markup': 'Want to be featured on our <a href=\"/2019/tourism\">tourism page</a>? Let us know your favorite spots and things to do!'\nname:\n  '#type': textfield\n  '#title': 'Your Name'\n  '#required': true\nemail:\n  '#type': email\n  '#title': 'Your Email'\n  '#required': true\n  '#unique': true\nquote:\n  '#type': textarea\n  '#title': 'Your Blurb'\n  '#required': true\n"
+elements: "markup:\n  '#type': webform_markup\n  '#display_on': both\n  '#markup': 'Want to be featured on our <a href=\"/2019/tourism\">tourism page</a>? Let us know your favorite spots and things to do!'\nname:\n  '#type': textfield\n  '#title': 'Your Name'\n  '#required': true\nemail:\n  '#type': email\n  '#title': 'Your Email'\n  '#required': true\n  '#unique': true\nquote:\n  '#type': textarea\n  '#title': 'Your Blurb'\n  '#required': true\npicture_option:\n  '#type': select\n  '#title': 'Your Picture Option'\n  '#options':\n    user_image: 'Use the image from my user.'\n    generic_image: 'Use the generic Mad Hatter image.'\n    upload_image: 'Use the image uploaded here.'\n  '#required': true\npicture_image:\n  '#type': webform_image_file\n  '#title': 'Your Picture'\n  '#help': \"Your virtual face or picture.<br />\\r\\nImage should be at least 250 pixels wide.\"\n  '#states':\n    enabled:\n      ':input[name=\"picture_option\"]':\n        value: upload_image\n    visible:\n      ':input[name=\"picture_option\"]':\n        value: upload_image\n    required:\n      ':input[name=\"picture_option\"]':\n        value: upload_image\n  '#max_filesize': '2'\n  '#file_extensions': 'gif jpg png jpeg'\n  '#sanitize': true\n"
 css: ''
 javascript: ''
 settings:
@@ -72,7 +72,7 @@ settings:
   draft_auto_save: false
   draft_saved_message: ''
   draft_loaded_message: ''
-  confirmation_type: page
+  confirmation_type: inline
   confirmation_title: ''
   confirmation_message: ''
   confirmation_url: ''
