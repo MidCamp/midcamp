@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fd1c0ee88955f578b00532363c27d587",
+    "content-hash": "5dfbdff0be0794e02f1cac2019d61d76",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -64,12 +64,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Brian-Clement/eventbrite_events.git",
-                "reference": "3fe262b2c1348bed111dddcd8c33fa282fb07a91"
+                "reference": "31211eb869ddc506986a54bf121f1145cedd394d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Brian-Clement/eventbrite_events/zipball/3fe262b2c1348bed111dddcd8c33fa282fb07a91",
-                "reference": "3fe262b2c1348bed111dddcd8c33fa282fb07a91",
+                "url": "https://api.github.com/repos/Brian-Clement/eventbrite_events/zipball/31211eb869ddc506986a54bf121f1145cedd394d",
+                "reference": "31211eb869ddc506986a54bf121f1145cedd394d",
                 "shasum": ""
             },
             "type": "drupal-module",
@@ -81,10 +81,10 @@
                 "Drupal"
             ],
             "support": {
-                "source": "https://github.com/Brian-Clement/eventbrite_events/tree/v0.1-alpha",
+                "source": "https://github.com/Brian-Clement/eventbrite_events/tree/master",
                 "issues": "https://github.com/Brian-Clement/eventbrite_events/issues"
             },
-            "time": "2019-01-30T21:53:25+00:00"
+            "time": "2019-03-17T19:21:33+00:00"
         },
         {
             "name": "commerceguys/addressing",
