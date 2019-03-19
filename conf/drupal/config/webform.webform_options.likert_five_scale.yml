@@ -1,0 +1,14 @@
+uuid: 1d192fc5-2887-47ba-96cc-d375ce6c8ab2
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: zEZX8JSVqznnFtqFfpuC593h3t1JDAZhF0Q3pvA229o
+id: likert_five_scale
+label: 'Likert: Five Scale'
+category: Likert
+likert: true
+options: "1: '1'\n2: '2'\n3: '3'\n4: '4'\n5: '5'\n"
