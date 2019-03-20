@@ -53,7 +53,9 @@ settings:
   submission_label: ''
   submission_log: false
   submission_views: {  }
-  submission_views_replace: {  }
+  submission_views_replace:
+    webform_routes: {  }
+    node_routes: {  }
   submission_user_columns: {  }
   submission_user_duplicate: false
   submission_access_denied: default
@@ -92,9 +94,9 @@ settings:
   draft_auto_save: false
   draft_saved_message: ''
   draft_loaded_message: ''
-  confirmation_type: page
+  confirmation_type: inline
   confirmation_title: ''
-  confirmation_message: ''
+  confirmation_message: 'Thanks for your feedback!'
   confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
@@ -108,11 +110,11 @@ settings:
   limit_total_unique: false
   limit_user: null
   limit_user_interval: null
-  limit_user_message: ''
+  limit_user_message: 'You have already provided feedback for this session.'
   limit_user_unique: false
   entity_limit_total: null
   entity_limit_total_interval: null
-  entity_limit_user: null
+  entity_limit_user: 1
   entity_limit_user_interval: null
   purge: none
   purge_days: null
