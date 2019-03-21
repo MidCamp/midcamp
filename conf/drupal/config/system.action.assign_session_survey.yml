@@ -1,0 +1,12 @@
+uuid: 775845a4-544f-43aa-96c7-87410c76a146
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - midcamp_vbo
+id: assign_session_survey
+label: 'Assign session survey'
+type: node
+plugin: assign_session_survey
+configuration: {  }

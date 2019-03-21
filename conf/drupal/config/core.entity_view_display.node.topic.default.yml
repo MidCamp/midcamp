@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.topic.body
     - field.field.node.topic.field_accepted_confirmed
     - field.field.node.topic.field_event
+    - field.field.node.topic.field_feedback_form
     - field.field.node.topic.field_meta_tags
     - field.field.node.topic.field_people
     - field.field.node.topic.field_presenter_slides
@@ -22,6 +23,7 @@ dependencies:
     - text
     - user
     - video_embed_field
+    - webform
 id: node.topic.default
 targetEntityType: node
 bundle: topic
@@ -33,6 +35,14 @@ content:
     weight: 2
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_feedback_form:
+    weight: 7
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
     region: content
   field_people:
     type: entity_reference_entity_view
