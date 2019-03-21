@@ -1,24 +1,25 @@
+uuid: 351cbc2c-6753-45ea-bb08-e9d6f85e7db8
 langcode: en
 status: open
 dependencies: {  }
 open: null
 close: null
 weight: 0
-uid: 16
+uid: 6
 template: false
 archive: false
-id: room_monitor_checklist
-title: 'Room Monitor Checklist'
-description: ''
+id: session_feedback
+title: 'Session Feedback'
+description: 'A survey for attendees to tell us what they thought of a session.'
 category: ''
-elements: "markup:\n  '#type': webform_markup\n  '#markup': \"Thank you for being a room monitor.&nbsp; Please fill out the form below and if there are any immediate needs, please contact JD Flynn or any of the organizer teams via Slack or Twitter or yelling really loudly (please don&#39;t yell really loudly).&nbsp;&nbsp;<br />\\n<br />\\nIn addition to filling out this form, there are a few things we need checked out for every session:\\n<ul>\\n\\t<li>Please be in the room at least 5 minutes before the session starts to help make sure that any issues are hopefully handled before the session starts.</li>\\n\\t<li>Make sure that the speaker(s) press the BIG RED BUTTON on the recording kit.&nbsp; If the light strip is red, it&#39;s recording.</li>\\n\\t<li>If there are any issues during recording with the projector flickering or other strangeness, ping Kevin Thull on Slack or email JD Flynn</li>\\n\\t<li>Learn something!</li>\\n</ul>\"\nsession:\n  '#type': webform_entity_select\n  '#title': Session\n  '#target_type': node\n  '#selection_handler': views\n  '#selection_settings':\n    view:\n      view_name: survey_filters\n      display_name: entity_reference_1\n      arguments: {  }\nmonitor_name:\n  '#type': textfield\n  '#title': 'Monitor Name'\nnumber_of_attendees:\n  '#type': textfield\n  '#title': 'Number of Attendees (including yourself)'\nany_concerns_:\n  '#type': textarea\n  '#title': 'Any Concerns?'\n"
+elements: "mastery_of_topic:\n  '#type': radios\n  '#title': 'Please rate the speaker''s mastery of this topic.'\n  '#options': likert_five_scale\n  '#options_display': side_by_side\npresentation_skills:\n  '#type': radios\n  '#title': 'Please rate the speaker''s presentation skills.'\n  '#options': likert_five_scale\n  '#options_display': side_by_side\nquality_of_slides:\n  '#type': radios\n  '#title': 'Please rate the quality of speaker''s slides and visual aids.'\n  '#options': likert_five_scale\n  '#options_display': side_by_side\nlearn_something:\n  '#type': radios\n  '#title': 'Did you learn something?'\n  '#options': yes_no\ncomments:\n  '#type': textarea\n  '#title': Comments"
 css: ''
 javascript: ''
 settings:
   ajax: false
   ajax_scroll_top: form
   page: true
-  page_submit_path: room-checklist
+  page_submit_path: ''
   page_confirm_path: ''
   form_title: both
   form_submit_once: false
@@ -52,7 +53,9 @@ settings:
   submission_label: ''
   submission_log: false
   submission_views: {  }
-  submission_views_replace: {  }
+  submission_views_replace:
+    webform_routes: {  }
+    node_routes: {  }
   submission_user_columns: {  }
   submission_user_duplicate: false
   submission_access_denied: default
@@ -91,9 +94,9 @@ settings:
   draft_auto_save: false
   draft_saved_message: ''
   draft_loaded_message: ''
-  confirmation_type: page
+  confirmation_type: inline
   confirmation_title: ''
-  confirmation_message: ''
+  confirmation_message: 'Thanks for your feedback!'
   confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
@@ -107,11 +110,11 @@ settings:
   limit_total_unique: false
   limit_user: null
   limit_user_interval: null
-  limit_user_message: ''
+  limit_user_message: 'You have already provided feedback for this session.'
   limit_user_unique: false
   entity_limit_total: null
   entity_limit_total_interval: null
-  entity_limit_user: null
+  entity_limit_user: 1
   entity_limit_user_interval: null
   purge: none
   purge_days: null
@@ -165,39 +168,4 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers:
-  email:
-    id: email
-    label: Email
-    handler_id: email
-    status: true
-    conditions: {  }
-    weight: 0
-    settings:
-      states:
-        - completed
-      to_mail: jflynn8@gmail.com
-      to_options: {  }
-      cc_mail: ''
-      cc_options: {  }
-      bcc_mail: ''
-      bcc_options: {  }
-      from_mail: _default
-      from_options: {  }
-      from_name: _default
-      subject: _default
-      body: _default
-      excluded_elements: {  }
-      ignore_access: false
-      exclude_empty: true
-      exclude_empty_checkbox: false
-      html: true
-      attachments: false
-      twig: false
-      debug: false
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
-      theme_name: ''
-uuid: 14089955-e024-4f64-af62-9ebebd80ba97
+handlers: {  }
