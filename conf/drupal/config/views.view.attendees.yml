@@ -480,8 +480,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          operator: '='
-          value: Attending
+          operator: not_starts
+          value: 'Not Attending'
           group: 1
           exposed: false
           expose:
@@ -659,8 +659,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          operator: '='
-          value: Attending
+          operator: not_starts
+          value: 'Not Attending'
           group: 1
           exposed: false
           expose:
@@ -796,8 +796,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          operator: '='
-          value: Attending
+          operator: not_starts
+          value: 'Not Attending'
           group: 1
           exposed: false
           expose:
