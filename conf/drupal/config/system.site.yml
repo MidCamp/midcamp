@@ -1,11 +1,11 @@
 uuid: 4e8b0d7f-53e9-45f1-9a7c-7188d45194bd
-name: 'MidCamp 2019'
+name: 'MidCamp 2020'
 mail: info@midcamp.org
-slogan: 'March 20th - 23rd, 2019'
+slogan: 'March 18th - 21st, 2020'
 page:
   403: ''
   404: ''
-  front: /node/332
+  front: /taxonomy/term/143
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en
