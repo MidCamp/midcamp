@@ -5,7 +5,7 @@ slogan: 'March 20th - 23rd, 2019'
 page:
   403: ''
   404: ''
-  front: /2019/schedule/friday
+  front: /node/332
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en
