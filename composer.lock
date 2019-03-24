@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7bc37bfae2c5e802cda0cb6711533408",
+    "content-hash": "5dfbdff0be0794e02f1cac2019d61d76",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4979,16 +4979,16 @@
         },
         {
             "name": "midcamp/hatter",
-            "version": "dev-midcamp2020",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MidCamp/Hatter.git",
-                "reference": "badbde920708b589923be8700b074b10c930bfe4"
+                "reference": "9364edecc4e0d22cd98af110095f70f110fb9528"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MidCamp/Hatter/zipball/badbde920708b589923be8700b074b10c930bfe4",
-                "reference": "badbde920708b589923be8700b074b10c930bfe4",
+                "url": "https://api.github.com/repos/MidCamp/Hatter/zipball/9364edecc4e0d22cd98af110095f70f110fb9528",
+                "reference": "9364edecc4e0d22cd98af110095f70f110fb9528",
                 "shasum": ""
             },
             "require": {
@@ -5004,10 +5004,10 @@
                 "MIT"
             ],
             "support": {
-                "source": "https://github.com/MidCamp/Hatter/tree/midcamp2020",
+                "source": "https://github.com/MidCamp/Hatter/tree/master",
                 "issues": "https://github.com/MidCamp/Hatter/issues"
             },
-            "time": "2019-03-23T23:24:08+00:00"
+            "time": "2019-03-24T13:24:32+00:00"
         },
         {
             "name": "oomphinc/composer-installers-extender",
