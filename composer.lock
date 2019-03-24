@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "5dfbdff0be0794e02f1cac2019d61d76",
@@ -2112,6 +2112,10 @@
                     "name": "Daniel Wehner (dawehner)",
                     "homepage": "https://www.drupal.org/u/dawehner",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
                 },
                 {
                     "name": "merlinofchaos",
@@ -4979,12 +4983,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MidCamp/Hatter.git",
-                "reference": "ffcb4c6fc2d560a415463336a55b54371a97a14c"
+                "reference": "9364edecc4e0d22cd98af110095f70f110fb9528"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MidCamp/Hatter/zipball/ffcb4c6fc2d560a415463336a55b54371a97a14c",
-                "reference": "ffcb4c6fc2d560a415463336a55b54371a97a14c",
+                "url": "https://api.github.com/repos/MidCamp/Hatter/zipball/9364edecc4e0d22cd98af110095f70f110fb9528",
+                "reference": "9364edecc4e0d22cd98af110095f70f110fb9528",
                 "shasum": ""
             },
             "require": {
@@ -5003,7 +5007,7 @@
                 "source": "https://github.com/MidCamp/Hatter/tree/master",
                 "issues": "https://github.com/MidCamp/Hatter/issues"
             },
-            "time": "2019-03-12T23:48:00+00:00"
+            "time": "2019-03-24T13:24:32+00:00"
         },
         {
             "name": "oomphinc/composer-installers-extender",
