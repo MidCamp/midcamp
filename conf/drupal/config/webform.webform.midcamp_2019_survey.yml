@@ -19,7 +19,7 @@ settings:
   ajax: false
   ajax_scroll_top: form
   page: true
-  page_submit_path: ''
+  page_submit_path: /survey
   page_confirm_path: ''
   form_title: both
   form_submit_once: true

@@ -1,3 +1,4 @@
+uuid: 0825e1bf-8303-49b7-9c98-4c3b5e410505
 langcode: en
 status: open
 dependencies: {  }
@@ -18,7 +19,7 @@ settings:
   ajax: false
   ajax_scroll_top: form
   page: true
-  page_submit_path: /survey
+  page_submit_path: /2018/survey
   page_confirm_path: ''
   form_title: both
   form_submit_once: true
@@ -166,4 +167,3 @@ access:
     users: {  }
     permissions: {  }
 handlers: {  }
-uuid: 0825e1bf-8303-49b7-9c98-4c3b5e410505

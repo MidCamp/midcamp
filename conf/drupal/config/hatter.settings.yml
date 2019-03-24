@@ -5,6 +5,6 @@ features:
   favicon: 1
 logo:
   use_default: 0
-  path: themes/custom/hatter/logo.png
+  path: themes/custom/hatter/o-midcamp.png
 favicon:
   use_default: 1
