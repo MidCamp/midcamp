@@ -10,10 +10,12 @@ dependencies:
     - field.field.node.training.field_people
     - field.field.node.training.field_registration_link
     - field.field.node.training.field_track
+    - field.field.node.training.field_video
     - node.type.training
   module:
     - link
     - text
+    - video_embed_field
 id: node.training.default
 targetEntityType: node
 bundle: training
@@ -50,6 +52,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
+    region: content
+  field_video:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: video_embed_field_textfield
     region: content
   title:
     type: string_textfield
