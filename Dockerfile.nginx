@@ -3,6 +3,9 @@ FROM ${CLI_IMAGE} as cli
 
 FROM amazeeio/nginx-drupal
 
+RUN echo "~^2019.midcamp.org            https://midcamp.org/2019\$request_uri;" >> /etc/nginx/redirects-map.conf
+RUN echo "~^o.midcamp.org            https://midcamp.org/\$request_uri;" >> /etc/nginx/redirects-map.conf
+
 COPY --from=cli /app /app
 # Define where the Drupal Root is located
 ENV WEBROOT=/web
