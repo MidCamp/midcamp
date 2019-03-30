@@ -33,6 +33,15 @@ environments:
         - "2018.midcamp.org":
             tls-acme: 'true'
             insecure: Redirect
+        - "2019.midcamp.org":
+            tls-acme: 'true'
+            insecure: Redirect
+        - "2020.midcamp.org":
+            tls-acme: 'true'
+            insecure: Redirect
+        - "o.midcamp.org":
+            tls-acme: 'true'
+            insecure: Redirect
         - "midcamp.org":
             tls-acme: 'true'
             insecure: Redirect
