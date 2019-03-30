@@ -27,6 +27,12 @@ tasks:
         service: cli
 
 environments:
+  master:
+    routes:
+      - nginx:
+        - "dev.midcamp.org":
+            tls-acme: 'true'
+            insecure: Redirect
   production:
     routes:
       - varnish:
