@@ -27,10 +27,25 @@ tasks:
         service: cli
 
 environments:
+  master:
+    routes:
+      - nginx:
+        - "dev.midcamp.org":
+            tls-acme: 'true'
+            insecure: Redirect
   production:
     routes:
       - varnish:
         - "2018.midcamp.org":
+            tls-acme: 'true'
+            insecure: Redirect
+        - "2019.midcamp.org":
+            tls-acme: 'true'
+            insecure: Redirect
+        - "2020.midcamp.org":
+            tls-acme: 'true'
+            insecure: Redirect
+        - "o.midcamp.org":
             tls-acme: 'true'
             insecure: Redirect
         - "midcamp.org":
