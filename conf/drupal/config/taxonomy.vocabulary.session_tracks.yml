@@ -5,5 +5,4 @@ dependencies: {  }
 name: Tracks
 vid: session_tracks
 description: 'Categories topics may fit into for sessions.'
-hierarchy: 0
 weight: 0
