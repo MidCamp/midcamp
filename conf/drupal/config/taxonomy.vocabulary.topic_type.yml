@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Topic Type'
 vid: topic_type
 description: ''
-hierarchy: 0
 weight: 0

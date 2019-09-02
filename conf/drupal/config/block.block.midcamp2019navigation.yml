@@ -21,9 +21,10 @@ settings:
   label_display: '0'
   level: 1
   depth: 2
+  expand_all_items: false
 visibility:
   request_path:
     id: request_path
-    pages: "/2018/*\r\n/2018\r\n<front>"
-    negate: true
+    pages: "/2019/*\r\n/2019"
+    negate: false
     context_mapping: {  }

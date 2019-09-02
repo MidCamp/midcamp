@@ -38,8 +38,9 @@ function hatter_theme_suggestions_user_alter(&$suggestions, $vars, $hook) {
  * Implements THEME_theme_suggestions_HOOK_alter() for menus.
  */
 function hatter_theme_suggestions_menu_alter(&$suggestions, $vars, $hook) {
-  // Let the new menu uses the existing template for now.
-  if ($vars['menu_name'] == 'midcamp-2019-navigation') {
+  // Let the new menus use the existing template for now.
+  $menus = ['midcamp-2019-navigation', 'midcamp-2020-navigation'];
+  if (in_array($vars['menu_name'], $menus)) {
     array_unshift($suggestions, 'menu__main');
   }
 }
