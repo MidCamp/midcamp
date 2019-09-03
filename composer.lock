@@ -2128,6 +2128,10 @@
                     "role": "Maintainer"
                 },
                 {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
+                },
+                {
                     "name": "merlinofchaos",
                     "homepage": "https://www.drupal.org/user/26979"
                 },
@@ -5003,12 +5007,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MidCamp/Hatter.git",
-                "reference": "9364edecc4e0d22cd98af110095f70f110fb9528"
+                "reference": "f6e2ea0f9768139bc359fa22f447be602d00899c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MidCamp/Hatter/zipball/9364edecc4e0d22cd98af110095f70f110fb9528",
-                "reference": "9364edecc4e0d22cd98af110095f70f110fb9528",
+                "url": "https://api.github.com/repos/MidCamp/Hatter/zipball/f6e2ea0f9768139bc359fa22f447be602d00899c",
+                "reference": "f6e2ea0f9768139bc359fa22f447be602d00899c",
                 "shasum": ""
             },
             "require": {
@@ -5027,7 +5031,7 @@
                 "source": "https://github.com/MidCamp/Hatter/tree/master",
                 "issues": "https://github.com/MidCamp/Hatter/issues"
             },
-            "time": "2019-03-24T13:24:32+00:00"
+            "time": "2019-09-03T01:55:42+00:00"
         },
         {
             "name": "oomphinc/composer-installers-extender",
@@ -9255,7 +9259,7 @@
             "version": "8.2.12",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/coder.git",
+                "url": "https://git.drupalcode.org/project/coder.git",
                 "reference": "984c54a7b1e8f27ff1c32348df69712afd86b17f"
             },
             "dist": {
