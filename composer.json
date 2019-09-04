@@ -62,6 +62,7 @@
         "drupal/recaptcha": "^2.2",
         "drupal/redirect": "^1.0",
         "drupal/scheduler": "^1.0@RC",
+        "drupal/switch_page_theme": "^1.0",
         "drupal/twig_extensions": "1.x-dev",
         "drupal/video_embed_media": "^1.5",
         "drupal/viewsreference": "^1.0@alpha",
