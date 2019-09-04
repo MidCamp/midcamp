@@ -63,6 +63,7 @@ module:
   scheduler: 0
   search: 0
   shortcut: 0
+  switch_page_theme: 0
   system: 0
   taxonomy: 0
   text: 0
