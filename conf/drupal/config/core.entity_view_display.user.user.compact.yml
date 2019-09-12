@@ -5,12 +5,14 @@ dependencies:
   config:
     - core.entity_view_mode.user.compact
     - field.field.user.user.field_bio
+    - field.field.user.user.field_company_logo
     - field.field.user.user.field_company_url
     - field.field.user.user.field_do_profile
     - field.field.user.user.field_eventbrite_email
     - field.field.user.user.field_mailing_list
     - field.field.user.user.field_name
     - field.field.user.user.field_organization
+    - field.field.user.user.field_organizer_year
     - field.field.user.user.field_site
     - field.field.user.user.field_title
     - field.field.user.user.field_tracks
@@ -38,19 +40,18 @@ content:
     third_party_settings: {  }
   field_name:
     type: name_default
+    settings:
+      list_format: default
+      format: default
+      markup: none
+      link_target: ''
+      preferred_field_reference: ''
+      preferred_field_reference_separator: ', '
+      alternative_field_reference: ''
+      alternative_field_reference_separator: ', '
     weight: 1
     region: content
     label: hidden
-    settings:
-      format: default
-      output: plain
-      multiple: default
-      multiple_delimiter: ', '
-      multiple_and: text
-      multiple_delimiter_precedes_last: never
-      multiple_el_al_min: '3'
-      multiple_el_al_first: '1'
-      markup: false
     third_party_settings: {  }
   field_organization:
     type: entity_reference_label
@@ -86,6 +87,7 @@ hidden:
   field_do_profile: true
   field_eventbrite_email: true
   field_mailing_list: true
+  field_organizer_year: true
   field_site: true
   field_tracks: true
   field_twitter: true
