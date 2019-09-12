@@ -6,6 +6,8 @@ examples:
     family: Doe
     generational: Jnr.
     credentials: 'B.Sc., Ph.D.'
+    preferred: Joe
+    alternative: 'Lorem ipsum dolor'
   -
     title: ''
     given: JOAN
@@ -20,5 +22,3 @@ examples:
     family: ''
     generational: ''
     credentials: ''
-_core:
-  default_config_hash: UWTs4MzakCEyfc8ytLFqZlhaJPD2vwPHXnpZYQRMhbM
