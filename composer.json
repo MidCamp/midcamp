@@ -59,7 +59,7 @@
         "drupal/paragraphs": "^1.2",
         "drupal/pathauto": "^1.0",
         "drupal/r4032login": "1.x-dev",
-        "drupal/recaptcha": "^2.2",
+        "drupal/recaptcha": "^2.4",
         "drupal/redirect": "^1.0",
         "drupal/scheduler": "^1.0@RC",
         "drupal/twig_extensions": "1.x-dev",
