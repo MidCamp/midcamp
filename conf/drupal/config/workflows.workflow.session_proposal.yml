@@ -35,6 +35,7 @@ type_settings:
       from:
         - draft
         - published
+        - submitted
     publish:
       label: Publish
       to: published
