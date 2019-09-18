@@ -82,7 +82,8 @@
         "drupal/drupal-extension": "^3.1",
         "drush/drush": "^8.0",
         "palantirnet/palantir-behat-extension": "dev-drupal8-file-revisited",
-        "phpmd/phpmd": "^2.4"
+        "phpmd/phpmd": "^2.4",
+        "vijaycs85/drupal-quality-checker": "^1.0"
     },
     "conflict": {
         "drupal/drupal": "*"
