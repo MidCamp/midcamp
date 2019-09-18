@@ -6,4 +6,8 @@ id: organizer
 label: Organizer
 weight: 4
 is_admin: null
-permissions: {  }
+permissions:
+  - 'use session_proposal transition publish'
+  - 'use session_proposal transition submitted_proposal'
+  - 'view any unpublished content'
+  - 'view latest version'

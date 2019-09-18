@@ -4,5 +4,7 @@ ignored_config_entities:
   4: 'mailchimp.settings:connected_paths'
   6: eventbrite_events.eventbritesettings
   8: google_analytics.settings
+  10: 'recaptcha.settings:site_key'
+  12: 'recaptcha.settings:secret_key'
 _core:
   default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
