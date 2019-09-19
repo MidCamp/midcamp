@@ -23,6 +23,9 @@ $config['system.performance']['css']['preprocess'] = 0;
 // Aggregate JavaScript files off
 $config['system.performance']['js']['preprocess'] = 0;
 
+// Enable local config split
+$config['config_split.config_split.local']['status'] = TRUE;
+
 // Stage file proxy URL from production URL
 if (getenv('LAGOON_PRODUCTION_URL')){
   $config['stage_file_proxy.settings']['origin'] = getenv('LAGOON_PRODUCTION_URL');
