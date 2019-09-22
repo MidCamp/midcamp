@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c5e5b5a667010212e1623e7633f6ca3b",
+    "content-hash": "5b69398cf588abae12fa40d065958765",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1624,6 +1624,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "2953769 - Add a tag to config_filter.storage.sync service": "https://www.drupal.org/files/issues/2018-04-05/2953769-1.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
