@@ -15,11 +15,13 @@ dependencies:
     - field.field.node.topic.field_session_length
     - field.field.node.topic.field_topic_type
     - field.field.node.topic.field_track
+    - field.field.node.topic.field_transcript
     - field.field.node.topic.field_video
     - node.type.topic
   module:
     - datetime_range
     - file
+    - link
     - text
     - user
     - video_embed_field
@@ -33,6 +35,11 @@ content:
     label: hidden
     type: text_default
     weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: -20
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -86,6 +93,18 @@ content:
       link: false
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_transcript:
+    weight: 8
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   field_video:
     weight: 3

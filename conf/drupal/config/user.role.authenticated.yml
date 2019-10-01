@@ -29,6 +29,7 @@ permissions:
   - 'view field_feedback_form'
   - 'view field_schedule_location'
   - 'view field_schedule_time'
+  - 'view field_transcript'
   - 'view field_video'
   - 'view latest version'
   - 'view own field_accepted_confirmed'
