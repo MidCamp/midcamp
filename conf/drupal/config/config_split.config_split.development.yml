@@ -2,10 +2,10 @@ uuid: 6e86bc40-29f5-41d1-b20b-e7bb4253a448
 langcode: en
 status: false
 dependencies: {  }
-id: local
-label: local
+id: development
+label: development
 description: ''
-folder: ../conf/drupal/local
+folder: ../conf/drupal/development
 module:
   dblog: 0
   devel: 0
