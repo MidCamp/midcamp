@@ -1,0 +1,18 @@
+parameters:
+  ascii:
+    failed: vendor/vijaycs85/drupal-quality-checker/resources/ascii/grumpy.txt
+    succeeded: vendor/vijaycs85/drupal-quality-checker/resources/ascii/happy.txt
+  git_dir: .
+  bin_dir: vendor/bin
+  tasks:
+    phplint:
+      triggered_by: [php,module,inc,install,test,profile,theme]
+    yamllint: ~
+    composer: ~
+    jsonlint: ~
+    phpcpd: ~
+    phpcpd:
+      directory: './src'
+    phpcs:
+      standard: Drupal
+      triggered_by: [php,module,inc,install,test,profile,theme,css,info]
