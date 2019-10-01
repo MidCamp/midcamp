@@ -22,7 +22,7 @@ From inside the project root, run:
 - `composer install`
 - `docker-compose up -d --build`
 
-Visit [midcamp.org.docker.amazee.io](http://midcamp.org.docker.amazee.io) in your browser of choice.  At this point you should see a Drupal installation page.  See below for Drush commands to install the site.  
+Visit [midcamp.org.docker.amazee.io](http://midcamp.org.docker.amazee.io) in your browser of choice.  At this point you should see a Drupal installation page.  See below for Drush commands to install the site.
 
 ## How do I work on this?
 
@@ -101,8 +101,19 @@ Butler is tool to automate front-end development tasks and streamline prototypin
 
   *Note: When you are deploying, Butler will ask you for your GitHub credentials at least once, possibly multiple times. Enter your own GitHub credentials as prompted.*
 
+## Code Linting
 
-### Patching modules
+[GrumPHP](https://github.com/phpro/grumphp) is included for linting and enforcing Drupal code quality standards.  This will run on a Git `pre-commit` hook based on the files you are attempting to commit.  When you run `git commit -m "My message"` GrumPHP will check your code and potentially prevent you from committing until issues are resolved.
+
+Additionally, you can run commands directly against files or directories with the following commands:
+
+- `vendor/bin/phpcs --standard=Drupal path/to/something/to/lint`: Runs PHP Code Sniffer.  Pass it a file or a directory to inspect.
+- `vendor/bin/phpcbf --standard=Drupal path/to/something/to/fix`: Runs PHP Code Beautifier and Fixer.  Pass it a file or a directory to fix.
+
+If you need to commit something you know is breaking the rules, you can pass the `-n` or `--no-verify` flag when you commit.
+
+
+## Patching modules
 
 Sometimes we need to apply patches from the Drupal.org issue queues. These patches should be applied using composer using the [Composer Patches](https://github.com/cweagans/composer-patches) composer plugin.
 
