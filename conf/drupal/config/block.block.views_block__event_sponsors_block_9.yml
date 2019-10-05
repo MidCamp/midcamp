@@ -1,31 +1,31 @@
-uuid: c0ebc97b-2815-4ebc-b51c-955722ddc847
+uuid: e71b13c4-319d-41c4-8d97-93c3a8c81422
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.summits
+    - views.view.event_sponsors
   module:
     - system
     - views
   theme:
     - hatter
-id: views_block__summits_block_1
+id: views_block__event_sponsors_block_9
 theme: hatter
 region: content
-weight: 2
+weight: -9
 provider: null
-plugin: 'views_block:summits-block_1'
+plugin: 'views_block:event_sponsors-block_9'
 settings:
-  id: 'views_block:summits-block_1'
+  id: 'views_block:event_sponsors-block_9'
   label: ''
   provider: views
-  label_display: '0'
+  label_display: visible
   views_label: ''
   items_per_page: none
   context_mapping: {  }
 visibility:
   request_path:
     id: request_path
-    pages: '/*/summits'
+    pages: /2020/sponsors
     negate: false
     context_mapping: {  }

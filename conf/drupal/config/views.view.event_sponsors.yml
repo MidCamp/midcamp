@@ -9,10 +9,13 @@ dependencies:
   content:
     - 'taxonomy_term:sponsor_packages:093eb4a2-8a19-4779-9a9b-9271b8d6c89c'
     - 'taxonomy_term:sponsor_packages:0c317172-cd1b-4a9f-875f-0027d7e8ce08'
+    - 'taxonomy_term:sponsor_packages:45d56eac-64a3-46ab-aae4-c551f2c2ad2d'
     - 'taxonomy_term:sponsor_packages:61ecbedc-dfb9-45dd-9baf-fb27d6ba634a'
     - 'taxonomy_term:sponsor_packages:7eebf274-691e-441d-82e5-82a0881d125b'
     - 'taxonomy_term:sponsor_packages:84684caa-f1d0-4180-9c27-3ba1c1b835f9'
     - 'taxonomy_term:sponsor_packages:9f318987-349c-4d6c-8374-cac6ad408986'
+    - 'taxonomy_term:sponsor_packages:dbf01793-1e3f-4c77-94fd-6389f4b6834b'
+    - 'taxonomy_term:sponsor_packages:dfa746d0-2015-41db-a602-e769068602ab'
     - 'taxonomy_term:sponsor_packages:f619a673-b5b7-42f8-82d1-63e40cff788e'
   module:
     - image
@@ -464,6 +467,232 @@ display:
           inline: {  }
           separator: ''
           hide_empty: true
+    cache_metadata:
+      max-age: 0
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_image'
+  block_10:
+    display_plugin: block
+    id: block_10
+    display_title: 'Community Sponsors block'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      footer: {  }
+      defaults:
+        footer: false
+        filters: false
+        filter_groups: false
+        title: false
+        style: false
+        row: false
+        css_class: false
+      block_description: 'Sponsor page Community'
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            sponsor: sponsor
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_sponsor_level_target_id:
+          id: field_sponsor_level_target_id
+          table: node__field_sponsor_level
+          field: field_sponsor_level_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            173: 173
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: sponsor_packages
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      title: 'Community Sponsors'
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: l-4up
+          default_row_class: false
+      row:
+        type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: true
+      css_class: sponsor-group
+    cache_metadata:
+      max-age: 0
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_image'
+  block_11:
+    display_plugin: block
+    id: block_11
+    display_title: 'Special Recognition Sponsors block'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      footer: {  }
+      defaults:
+        footer: false
+        filters: false
+        filter_groups: false
+        title: false
+        style: false
+        row: false
+        css_class: false
+      block_description: 'Sponsor page Special Recognition'
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            sponsor: sponsor
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_sponsor_level_target_id:
+          id: field_sponsor_level_target_id
+          table: node__field_sponsor_level
+          field: field_sponsor_level_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            174: 174
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: sponsor_packages
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      title: 'Special Recognition Sponsors'
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: l-4up
+          default_row_class: false
+      row:
+        type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: true
+      css_class: sponsor-group
     cache_metadata:
       max-age: 0
       contexts:
@@ -1202,6 +1431,119 @@ display:
           operator: or
           value:
             12: 12
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: sponsor_packages
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      title: 'Contribution Day Sponsors'
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: l-4up
+          default_row_class: false
+      row:
+        type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: true
+      css_class: sponsor-group
+    cache_metadata:
+      max-age: 0
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_image'
+  block_9:
+    display_plugin: block
+    id: block_9
+    display_title: 'Contribution Day Sponsors block'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      footer: {  }
+      defaults:
+        footer: false
+        filters: false
+        filter_groups: false
+        title: false
+        style: false
+        row: false
+        css_class: false
+      block_description: 'Sponsor page Contribution Day'
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            sponsor: sponsor
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_sponsor_level_target_id:
+          id: field_sponsor_level_target_id
+          table: node__field_sponsor_level
+          field: field_sponsor_level_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            172: 172
           group: 1
           exposed: false
           expose:

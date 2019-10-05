@@ -22,6 +22,7 @@ settings:
   label_display: visible
   webform_id: training_feedback_2019
   default_data: ''
+  redirect: false
 visibility:
   request_path:
     id: request_path
