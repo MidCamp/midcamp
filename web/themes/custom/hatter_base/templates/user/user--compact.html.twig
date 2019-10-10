@@ -1,0 +1,37 @@
+<div {{ attributes.addClass('clearfix') }}>
+  <div class="l-66-33--1">
+    {{ content.field_name }}
+    {{ content.field_title }}
+    {% if amp %}
+      @
+    {% endif %}
+    {% if url %}
+      <a href="{{ url }}">{{ org_name }}</a>
+    {% else %}
+      {{ content.field_organization }}
+    {% endif %}
+    {{ content.field_bio }}
+  </div>
+    <div class="l-66-33--2">{{ content.user_picture }}</div>
+  </div>
+
+{#<div {{ attributes.addClass('clearfix') }}>#}
+  {#{% if picture %}#}
+    {#<div class="l-6up">{{ content.user_picture }}</div>#}
+    {#<div class="l-33-66--2">#}
+  {#{% else %}#}
+    {#<div class="l-1up">#}
+  {#{% endif %}#}
+    {#{{ content.field_name }}#}
+    {#{{ content.field_title }}#}
+    {#{% if amp %}#}
+      {#@#}
+    {#{% endif %}#}
+    {#{% if url %}#}
+      {#<a href="{{ url }}">{{ content.field_organization }}</a>#}
+    {#{% else %}#}
+      {#{{ content.field_organization }}#}
+    {#{% endif %}#}
+    {#{{ content.field_bio }}#}
+  {#</div>#}
+{#</div>#}

@@ -1,0 +1,29 @@
+{
+  "name": "hatter_2019",
+  "version": "1.0.0",
+  "description": "Node dependencies for Hatter 2019 theme",
+  "scripts": {
+    "preinstall": "rimraf dist && rimraf js && rimraf svg",
+    "postinstall": "vendor-copy"
+  },
+  "private": true,
+  "dependencies": {
+    "@backlineint/hatter": "^1.0.6",
+    "rimraf": "^3.0.0",
+    "vendor-copy": "^2.0.0"
+  },
+  "vendorCopy": [
+    {
+      "from": "node_modules/@backlineint/hatter/dist",
+      "to": "dist"
+    },
+    {
+      "from": "node_modules/@backlineint/hatter/source/svg",
+      "to": "svg"
+    },
+    {
+      "from": "node_modules/@backlineint/hatter/source/js",
+      "to": "js"
+    }
+  ]
+}
