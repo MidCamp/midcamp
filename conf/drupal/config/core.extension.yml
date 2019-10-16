@@ -14,6 +14,7 @@ module:
   config: 0
   config_filter: 0
   config_ignore: 0
+  config_split: 0
   contact: 0
   contact_formatter: 0
   content_moderation: 0
@@ -21,7 +22,6 @@ module:
   ctools: 0
   datetime: 0
   datetime_range: 0
-  dblog: 0
   dynamic_page_cache: 0
   editor: 0
   entity: 0
@@ -31,7 +31,6 @@ module:
   field: 0
   field_group: 0
   field_permissions: 0
-  field_ui: 0
   file: 0
   filter: 0
   google_analytics: 0
@@ -71,13 +70,11 @@ module:
   text: 0
   token: 0
   toolbar: 0
-  tour: 0
   twig_extensions: 0
   update: 0
   user: 0
   video_embed_field: 0
   video_embed_media: 0
-  views_ui: 0
   viewsreference: 0
   webform: 0
   webform_ui: 0

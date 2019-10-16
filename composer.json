@@ -41,6 +41,7 @@
         "drupal/captcha": "1.x-dev",
         "drupal/config_ignore": "^2.1",
         "drupal/config_installer": "^1.5",
+        "drupal/config_split": "^1.4",
         "drupal/contact_formatter": "^1.0",
         "drupal/core": "^8.5",
         "drupal/devel": "^1.0@beta",
@@ -105,6 +106,9 @@
           },
           "drupal/recaptcha": {
               "Enable cacheable captcha support (https://www.drupal.org/project/recaptcha/issues/2219993)": "https://www.drupal.org/files/issues/2018-05-20/recaptcha-cacheable-8.x-2219993-35.patch"
+          },
+          "drupal/config_filter": {
+            "2953769 - Add a tag to config_filter.storage.sync service": "https://www.drupal.org/files/issues/2018-04-05/2953769-1.patch"
           }
         },
         "installer-types": ["butler-styleguide"],
