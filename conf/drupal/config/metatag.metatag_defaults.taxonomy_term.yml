@@ -10,3 +10,4 @@ tags:
   canonical_url: '[term:url]'
   description: '[term:description]'
   title: '[term:name] | [site:name]'
+  og_title: '[term:name] | [site:name]'
