@@ -43,12 +43,12 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 13
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
   field_feedback_form:
-    weight: 26
+    weight: 15
     settings:
       default_data: true
     third_party_settings: {  }
@@ -101,7 +101,7 @@ content:
     type: options_buttons
     region: content
   field_transcript:
-    weight: 101
+    weight: 11
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -109,14 +109,14 @@ content:
     type: link_default
     region: content
   field_video:
-    weight: 11
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     type: video_embed_field_textfield
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 100
+    weight: 16
     settings: {  }
     region: content
     third_party_settings: {  }
@@ -137,7 +137,7 @@ content:
     region: content
   uid:
     type: entity_reference_autocomplete
-    weight: 12
+    weight: 13
     region: content
     settings:
       match_operator: CONTAINS
