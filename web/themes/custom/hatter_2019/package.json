@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "Node dependencies for Hatter 2019 theme",
   "scripts": {
-    "preinstall": "rimraf dist && rimraf js && rimraf svg",
-    "postinstall": "vendor-copy"
+    "postinstall": "rimraf dist && rimraf js && rimraf svg && vendor-copy"
   },
   "private": true,
   "dependencies": {

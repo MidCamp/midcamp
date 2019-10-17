@@ -15,7 +15,9 @@ jobs:
           keys:
             - composer-v1-{{ checksum "composer.json" }}
             - composer-v1-
-      - run: composer install --no-interaction
+      - run:
+          - composer install --no-interaction
+          - npm ci
       - save_cache:
           key: composer-v1-{{ checksum "composer.json" }}
           paths:
