@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "description": "Node dependencies for Hatter 2019 theme",
   "scripts": {
-    "postinstall": "rimraf dist && rimraf js && rimraf svg && vendor-copy"
+    "watch-hatter": "npm link @backlineint/hatter && watch 'npm run postinstall' node_modules/@backlineint/hatter --wait=5",
+    "postinstall": "rimraf dist && rimraf js && rimraf svg && vendor-copy",
+    "unlink-hatter": "npm unlink --no-save @backlineint/hatter && npm install"
   },
   "private": true,
   "dependencies": {
     "@backlineint/hatter": "^1.0.6",
     "rimraf": "^3.0.0",
-    "vendor-copy": "^2.0.0"
+    "vendor-copy": "^2.0.0",
+    "watch": "^1.0.2"
   },
   "vendorCopy": [
     {

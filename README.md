@@ -79,6 +79,25 @@ dependencies as well.
 To include a specific version of the Hatter styleguide, update the version of the hatter dependency in `package.json` in
 the related theme and them run `npm install`
 
+### Local Drupal theme development
+
+To streamline theme development in the context of Drupal, you can use NPM's link feature. 
+
+First, in your local clone of the Hatter design system (hatter-v2) run:
+
+* `npm link`
+
+You'll only need to run this command once in the Hatter repository unless you remove or reinstall the package.
+
+Then, in the Drupal theme directory (web/themes/custom/hatter_2019 for example,) run:
+
+* `npm run watch-hatter`
+
+This will link the Hatter package to your local development version of the pattern library, and watch for any changes.
+
+When you're done with local theme development, run the following script to unlink your local version of Hatter and
+re-install the published version of the package.
+
 ### Patching modules
 
 Sometimes we need to apply patches from the Drupal.org issue queues. These patches should be applied using composer using the [Composer Patches](https://github.com/cweagans/composer-patches) composer plugin.
