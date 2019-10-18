@@ -7,7 +7,11 @@ label: Organizer
 weight: 4
 is_admin: null
 permissions:
+  - 'create field_transcript'
+  - 'edit field_transcript'
+  - 'edit own field_transcript'
   - 'use session_proposal transition publish'
   - 'use session_proposal transition submitted_proposal'
   - 'view any unpublished content'
   - 'view latest version'
+  - 'view own field_transcript'
