@@ -10,8 +10,8 @@ jobs:
           LAGOON_PROJECT: midcamp_org
           LAGOON_DISABLE_ALIASES: true
       - image: amazeeio/mariadb-drupal
-        environment:
-          MYSQL_ALLOW_EMPTY_PASSWORD: 1
+        ports:
+        - "3306"
 
     steps:
       - checkout
@@ -20,12 +20,15 @@ jobs:
           command: |
             composer install --no-interaction
       - run:
+          name: "Set up db config"
+          command: cp .circleci/settings.circleci.php web/sites/default/settings.local.php
+      - run:
           name: "Look for some settings.php files"
           command: ls -alh web/sites/default/
       - run:
           name: "Install Drupal"
           command: |
-            cd web && drush site-install --verbose config_installer config_installer_sync_configure_form.sync_directory=./conf/drupal/config
+            cd web && drush site-install --verbose config_installer config_installer_sync_configure_form.sync_directory=./conf/drupal/config -y
 
       - run: vendor/bin/behat
 
