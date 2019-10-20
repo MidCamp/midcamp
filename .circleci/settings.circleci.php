@@ -10,3 +10,6 @@ $databases['default']['default'] = array(
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
+
+// This should already be read, but things are being weird.
+$settings['install_profile'] = 'config_installer';

@@ -28,7 +28,7 @@ jobs:
       - run:
           name: "Install Drupal"
           command: |
-            cd web && drush site-install --verbose config_installer config_installer_sync_configure_form.sync_directory=./conf/drupal/config -y
+            cd web && drush site-install --verbose config_installer config_installer_sync_configure_form.sync_directory=../conf/drupal/config/ --yes
 
       - run: vendor/bin/behat
 
