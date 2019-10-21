@@ -46,7 +46,7 @@ module:
   mailchimp_campaign: 0
   mailchimp_lists: 0
   mailchimp_signup: 0
-  media_entity: 0
+  media: 0
   menu_ui: 0
   metatag: 0
   metatag_open_graph: 0
