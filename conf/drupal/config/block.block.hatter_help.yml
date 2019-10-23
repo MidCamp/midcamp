@@ -11,7 +11,7 @@ _core:
 id: hatter_help
 theme: hatter
 region: content
-weight: -17
+weight: -19
 provider: null
 plugin: help_block
 settings:

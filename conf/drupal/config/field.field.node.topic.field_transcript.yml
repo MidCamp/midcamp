@@ -1,0 +1,24 @@
+uuid: cc02b550-d424-448a-99fa-a700132ca085
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_transcript
+    - node.type.topic
+  module:
+    - link
+id: node.topic.field_transcript
+field_name: field_transcript
+entity_type: node
+bundle: topic
+label: Transcript
+description: 'Add a link to the transcript for the session.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+  title_predefined: ''
+field_type: link

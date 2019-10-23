@@ -114,6 +114,13 @@ function hatter_preprocess_field(array &$variables, $hook) {
         }
       }
       break;
+    case 'field_transcript':
+      if ($variables['entity_type'] == 'node' && $variables['element']['#bundle'] == 'topic') {
+        foreach ($variables['items'] as $index => $item) {
+          $variables['items'][$index]['content']['#title'] = 'View Transcript';
+        }
+      }
+      break;
   }
 }
 

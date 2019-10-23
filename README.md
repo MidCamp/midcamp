@@ -9,7 +9,7 @@
 
 This site uses the Amazee.io Drupal Docker development environment. If you already have this, you can skip this bit entirely. Their [documentation for setup](https://docs.amazee.io/local_docker_development/local_docker_development.html) is amazeballz, but if you just want to quickly get going on your Mac:
 
-- [Install pygmy](https://docs.amazee.io/local_docker_development/pygmy.html) with `gem install pygmy`
+- [Install pygmy](https://pygmy.readthedocs.io/en/master/installation/l) with `gem install pygmy`
 - Start pygmy with `pygmy up`
 
 You will be prompted to provide the passphrase for your ssh key. Comply.
@@ -22,7 +22,15 @@ From inside the project root, run:
 - `composer install`
 - `docker-compose up -d --build`
 
-Visit [midcamp.org.docker.amazee.io](http://midcamp.org.docker.amazee.io) in your browser of choice.  At this point you should see a Drupal installation page.  See below for Drush commands to install the site.  
+Visit [midcamp.org.docker.amazee.io](http://midcamp.org.docker.amazee.io) in your browser of choice.  At this point you should see a Drupal installation page.  See below for Drush commands to install the site. 
+
+### Stopping
+
+Occasionally, you might want to stop working on this wonderful project. In that case:
+
+- `pygmy stop       # Stop all pygmy services` if you just want a short pause, OR
+- `pygmy down       # Stop and destroy all pygmy services` if you want to tear it all down, which is good especially if you're working with other local environments on the same machine.
+- [just walk away](https://media.giphy.com/media/l0HlSlZmYf7lN2DEk/giphy.gif)—go outside, spend some time with family & friends, have a beverage, or just breathe.
 
 ## How do I work on this?
 
