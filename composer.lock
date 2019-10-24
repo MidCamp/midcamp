@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fd205dffa69f7ab2255e11782ae6d904",
+    "content-hash": "8541d007b05a5525c9189b3f14e7b0d4",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -64,12 +64,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Brian-Clement/eventbrite_events.git",
-                "reference": "31211eb869ddc506986a54bf121f1145cedd394d"
+                "reference": "1ac7032b3fe9fda40f92e1899f090d88638f0c73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Brian-Clement/eventbrite_events/zipball/31211eb869ddc506986a54bf121f1145cedd394d",
-                "reference": "31211eb869ddc506986a54bf121f1145cedd394d",
+                "url": "https://api.github.com/repos/Brian-Clement/eventbrite_events/zipball/1ac7032b3fe9fda40f92e1899f090d88638f0c73",
+                "reference": "1ac7032b3fe9fda40f92e1899f090d88638f0c73",
                 "shasum": ""
             },
             "type": "drupal-module",
@@ -84,7 +84,7 @@
                 "source": "https://github.com/Brian-Clement/eventbrite_events/tree/master",
                 "issues": "https://github.com/Brian-Clement/eventbrite_events/issues"
             },
-            "time": "2019-03-17T19:21:33+00:00"
+            "time": "2019-10-21T23:02:13+00:00"
         },
         {
             "name": "brumann/polyfill-unserialize",
@@ -1749,6 +1749,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Fix config_install error (https://www.drupal.org/project/config_installer/issues/3039052)": "https://www.drupal.org/files/issues/2019-03-11/config_installer-generatepassword-missing-3039052-2-D8.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
