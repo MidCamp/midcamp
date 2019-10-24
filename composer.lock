@@ -64,12 +64,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Brian-Clement/eventbrite_events.git",
-                "reference": "31211eb869ddc506986a54bf121f1145cedd394d"
+                "reference": "1ac7032b3fe9fda40f92e1899f090d88638f0c73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Brian-Clement/eventbrite_events/zipball/31211eb869ddc506986a54bf121f1145cedd394d",
-                "reference": "31211eb869ddc506986a54bf121f1145cedd394d",
+                "url": "https://api.github.com/repos/Brian-Clement/eventbrite_events/zipball/1ac7032b3fe9fda40f92e1899f090d88638f0c73",
+                "reference": "1ac7032b3fe9fda40f92e1899f090d88638f0c73",
                 "shasum": ""
             },
             "type": "drupal-module",
@@ -84,7 +84,7 @@
                 "source": "https://github.com/Brian-Clement/eventbrite_events/tree/master",
                 "issues": "https://github.com/Brian-Clement/eventbrite_events/issues"
             },
-            "time": "2019-03-17T19:21:33+00:00"
+            "time": "2019-10-21T23:02:13+00:00"
         },
         {
             "name": "brumann/polyfill-unserialize",
