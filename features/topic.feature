@@ -9,7 +9,5 @@ Feature: Topic Content Type
     Then the form at "node/add/topic" has the expected fields:
       | field             | tag       | type  |
       | title             | textfield | text  |
-      | field-topic-type  | input     | radio |
-      | field-event       | select    |       |
       | field-people      | textfield | text  |
       | body              | textarea  |       |
