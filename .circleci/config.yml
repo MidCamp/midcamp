@@ -27,6 +27,10 @@ jobs:
           name: Install site
           command: |
             docker-compose exec -d cli drush site-install --verbose config_installer config_installer_sync_configure_form.sync_directory=../conf/drupal/config/ --yes
+      - run:
+          name: Run Behat tests
+          command: |
+            docker-compose exec cli behat
 workflows:
   version: 2
   main:

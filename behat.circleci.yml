@@ -17,7 +17,7 @@ default:
       goutte: ~
       selenium2:
         wd_host: "http://127.0.0.1:8643/wd/hub"
-      base_url: http://127.0.0.1:8080
+      base_url: http://nginx:8080
     Drupal\DrupalExtension:
       blackbox: ~
       api_driver: 'drupal'
