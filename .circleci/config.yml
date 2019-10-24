@@ -32,7 +32,7 @@ jobs:
           command: |
             docker-compose exec cli composer install
       - run:
-          name: Run Behat tests inside
+          name: Run Behat tests
           command: |
             docker-compose exec cli vendor/bin/behat -c behat.circleci.yml
 workflows:
