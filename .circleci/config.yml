@@ -35,13 +35,3 @@ jobs:
           name: Run Behat tests
           command: |
             docker-compose exec cli vendor/bin/behat -c behat.circleci.yml
-workflows:
-  version: 2
-  main:
-    jobs:
-      - build:
-          filters:
-            tags:
-              only: /.*/
-            branches:
-              only: /.*/
