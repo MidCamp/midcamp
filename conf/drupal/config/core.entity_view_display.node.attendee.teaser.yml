@@ -1,0 +1,20 @@
+uuid: 67b1d5b7-e3be-40c2-810b-13efaddc84af
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.attendee
+  module:
+    - user
+id: node.attendee.teaser
+targetEntityType: node
+bundle: attendee
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

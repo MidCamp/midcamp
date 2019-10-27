@@ -1,0 +1,101 @@
+uuid: caad2c28-42e9-4bdb-a3ce-df8cf31a3656
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.attendee.field_attendee_id
+    - field.field.node.attendee.field_display_on_site
+    - field.field.node.attendee.field_email
+    - field.field.node.attendee.field_first_name
+    - field.field.node.attendee.field_job_title
+    - field.field.node.attendee.field_last_name
+    - field.field.node.attendee.field_name
+    - field.field.node.attendee.field_organization
+    - field.field.node.attendee.field_ticket_state
+    - node.type.attendee
+  module:
+    - user
+id: node.attendee.default
+targetEntityType: node
+bundle: attendee
+mode: default
+content:
+  field_attendee_id:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_display_on_site:
+    weight: 105
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_email:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_first_name:
+    weight: 107
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_job_title:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_last_name:
+    weight: 108
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_name:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_organization:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ticket_state:
+    weight: 109
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
