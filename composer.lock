@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "568a110e489c1aaa103ee9ed3d5174dc",
+    "content-hash": "1ad27279d11b2df6277cf91c6c654938",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -85,6 +85,31 @@
                 "issues": "https://github.com/Brian-Clement/eventbrite_events/issues"
             },
             "time": "2019-10-21T23:02:13+00:00"
+        },
+        {
+            "name": "brian-clement/tito",
+            "version": "dev-feature/api",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Brian-Clement/tito.git",
+                "reference": "58ab3cc1771d05b876d0dd6eb284bdde52f5c71b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Brian-Clement/tito/zipball/58ab3cc1771d05b876d0dd6eb284bdde52f5c71b",
+                "reference": "58ab3cc1771d05b876d0dd6eb284bdde52f5c71b",
+                "shasum": ""
+            },
+            "type": "drupal-module",
+            "description": "Tito",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "issues": "https://www.drupal.org/project/issues/tito",
+                "source": "http://cgit.drupalcode.org/tito"
+            },
+            "time": "2019-10-27T15:14:37+00:00"
         },
         {
             "name": "brumann/polyfill-unserialize",
@@ -8480,6 +8505,7 @@
                 "psr",
                 "psr-7"
             ],
+            "abandoned": "laminas/laminas-diactoros",
             "time": "2019-08-06T17:53:53+00:00"
         },
         {
@@ -8525,6 +8551,7 @@
                 "escaper",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-escaper",
             "time": "2019-09-05T20:03:20+00:00"
         },
         {
@@ -8588,6 +8615,7 @@
                 "feed",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-feed",
             "time": "2019-03-05T20:08:49+00:00"
         },
         {
@@ -8634,6 +8662,7 @@
                 "stdlib",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-stdlib",
             "time": "2018-08-28T21:34:05+00:00"
         }
     ],
@@ -11092,6 +11121,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "brian-clement/eventbrite_events": 20,
+        "brian-clement/tito": 20,
         "drupal/address": 20,
         "drupal/captcha": 20,
         "drupal/devel": 10,
