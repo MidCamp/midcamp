@@ -1,0 +1,24 @@
+name: Hatter 2019
+description: O'Midcamp!
+type: theme
+core: 8.x
+base theme: hatter_base
+libraries:
+  - hatter_2019/global-css
+  - hatter_2019/global-js
+regions:
+  page_top: 'Page top'
+  branding: 'Branding'
+  header: 'Header'
+  secondary_menu: 'Secondary menu'
+  highlighted: 'Highlighted'
+  featured_top: 'Featured top'
+  breadcrumb: 'Breadcrumb'
+  content: 'Content'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  featured_bottom_first: 'Featured bottom first'
+  featured_bottom_second: 'Featured bottom second'
+  footer_left: 'Footer Left'
+  footer_right: 'Footer Right'
+  page_bottom: 'Page bottom'

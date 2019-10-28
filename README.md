@@ -20,6 +20,7 @@ You will be prompted to provide the passphrase for your ssh key. Comply.
 From inside the project root, run:
 
 - `composer install`
+- `npm ci`
 - `docker-compose up -d --build`
 
 Visit [midcamp.org.docker.amazee.io](http://midcamp.org.docker.amazee.io) in your browser of choice.  At this point you should see a Drupal installation page.  See below for Drush commands to install the site. 
@@ -76,39 +77,34 @@ drush rsync @production:%files @self:%files
 
 ### Working on the theme
 
-The hatter designs are in a Butler styleguide at styleguide/. To use it, first you'll need to install. You can run the styleguide on either your host or your vm, but only the environment you install on. It's probably easiest on your host.
+As of 2019, component markup, styles and interactivity all live in the [Hatter Styleguide](https://github.com/MidCamp/hatter-v2)
+The majority of theming work will occur in that repository and instructions are included in the [readme](https://github.com/MidCamp/hatter-v2/blob/master/README.md). 
 
-```
-cd styleguide
-npm install
-```
+The compiled assets are packaged as an npm dependency. To install the latest, run `npm install` either in the root of this
+repository, or the theme directory. The initial setup process, along with the Circle CI build process will install these
+dependencies as well.
 
-## What does this Butler do?
+To include a specific version of the Hatter styleguide, update the version of the hatter dependency in `package.json` in
+the related theme and them run `npm install`
 
-Butler is tool to automate front-end development tasks and streamline prototyping. Run npm commands from the `styleguide/` directory:
+### Local Drupal theme development
 
-* `npm run butler`
+To streamline theme development in the context of Drupal, you can use NPM's link feature. 
 
-  This is the default task. This will watch your sass/spress files for changes and compile/build accordingly. It will also flag any sass linting errors before compiling. It will output CSS that has been been minified and optimized. While butler is running, the styleguide is available at http://midcamp.local:4000.
+First, in your local clone of the Hatter design system (hatter-v2) run:
 
-* `npm run butler -- sass`
+* `npm link`
 
-  Just compile the sass. You can also use this syntax to run any task from the Gulpfile.
+You'll only need to run this command once in the Hatter repository unless you remove or reinstall the package.
 
-* `npm run tests`
+Then, in the Drupal theme directory (web/themes/custom/hatter_2019 for example,) run:
 
-  This is the testing task it will run linters as their own tasks. To learn more about configuring and customizing the linters for Butler check the [linters documentation](/docs/LINTERS.md).
+* `npm run watch-hatter`
 
-  This task also checks for WCAG 2.0AA compliance using the [gulp-accessibility](https://github.com/yargalot/gulp-accessibility) plugin.
+This will link the Hatter package to your local development version of the pattern library, and watch for any changes.
 
-* `npm run deploy`
-
-  This is a task to deploy the static styleguide to GitHub pages.
-
-  Butler will build a Spress production artifact to `styleguide/output_prod` and deploy the production artifact to `gh-pages` branch of the repo defined in the `conf/butler.defaults.js`. Each commit for this process will default to the message: "Updated with Butler - [timestamp]".
-
-  *Note: When you are deploying, Butler will ask you for your GitHub credentials at least once, possibly multiple times. Enter your own GitHub credentials as prompted.*
-
+When you're done with local theme development, run the following script to unlink your local version of Hatter and
+re-install the published version of the package.
 
 ### Patching modules
 
@@ -140,4 +136,4 @@ If this does not work, run `lsof -PiTCP -sTCP:LISTEN` and see what is using port
 
 ### I can't see new things in the style guide
 
-Are you sure your changes got merged to [Hatter's](https://github.com/MidCamp/Hatter) `master`?
+Are you sure your changes got merged to [Hatter's](https://github.com/MidCamp/hatter-v2) `master`?

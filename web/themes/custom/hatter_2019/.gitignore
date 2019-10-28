@@ -1,0 +1,7 @@
+# Vendor files copied from Hatter
+dist
+js
+svg
+
+# Node dependencies
+node_modules

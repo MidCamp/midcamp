@@ -1,0 +1,159 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the hatter base theme.
+ */
+
+/**
+ * Implements THEME_theme_suggestions_HOOK_alter() for taxonomy terms.
+ */
+function hatter__base_theme_suggestions_taxonomy_term_alter(&$suggestions, $vars, $hook) {
+  $suggestions[] = 'taxonomy_term__' . $vars['elements']['#view_mode'];
+}
+
+/**
+ * Implements THEME_theme_suggestions_HOOK_alter() for fields.
+ */
+function hatter_base_theme_suggestions_field_alter(&$suggestions, $vars, $hook) {
+  // Add field template suggestions for user view modes.
+  $user_view_modes = ['featured_speaker', 'compact', 'schedule'];
+  if ($vars['element']['#bundle'] == 'user' && in_array($vars['element']['#view_mode'], $user_view_modes)) {
+    $suggestions[] = 'field__' . $vars['element']['#bundle'] . '__' .
+                      $vars['element']['#field_name'] . '__' .
+                      $vars['element']['#view_mode'];
+
+  }
+}
+
+/**
+ * Implements THEME_theme_suggestions_HOOK_alter() for user entities.
+ */
+function hatter_base_theme_suggestions_user_alter(&$suggestions, $vars, $hook) {
+  // Add template suggestions for User entity view modes.
+  $suggestions[] = 'user__' . $vars['elements']['#view_mode'];
+}
+
+/**
+ * Implements THEME_theme_suggestions_HOOK_alter() for menus.
+ */
+function hatter_base_theme_suggestions_menu_alter(&$suggestions, $vars, $hook) {
+  // Let the new menus use the existing template for now.
+  $menus = ['midcamp-2019-navigation', 'midcamp-2020-navigation'];
+  if (in_array($vars['menu_name'], $menus)) {
+    array_unshift($suggestions, 'menu__main');
+  }
+}
+
+/**
+ * Implements THEME_preprocess_user().
+ */
+function hatter_base_preprocess_user(&$vars) {
+  $user = $vars['user'];
+
+  $user_view_modes = ['featured_speaker', 'compact'];
+  if (in_array($vars['elements']['#view_mode'], $user_view_modes)) {
+    $job_title = $user->get('field_title');
+    $company = $user->get('field_organization');
+    $picture = $user->get('user_picture');
+
+    // Only show the ampersand when both fields have value.
+    if ($job_title->count() > 0 && $company->count() > 0) {
+      $vars['amp'] = TRUE;
+    }
+
+    $url = $user->get('field_company_url');
+    if ($url->count() > 0 && $company->count() > 0) {
+      // Get the term ID from `field_organization`
+      $organization_tid = $user->get('field_organization')->getValue();
+      $organization_tid = $organization_tid[0]['target_id'];
+      // Get the term name so we can link it to the `field_company_url` value
+      $term = Drupal\taxonomy\Entity\Term::load($organization_tid);
+
+      $vars['url'] = $user->get('field_company_url')->first()->getUrl();
+      $vars['org_name'] = $term->getName();
+    }
+
+    if ($picture->count() > 0) {
+      $vars['picture'] = TRUE;
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_field().
+ */
+function hatter_base_preprocess_field(array &$variables, $hook) {
+  switch ($variables['element']['#field_name']) {
+    case 'field_registration_link':
+      // Add button class to `field_registration_link` in the `training` node type.
+      $registration_nodes = ['training', 'summit'];
+      if (isset($variables['element']['#bundle']) && in_array($variables['element']['#bundle'], $registration_nodes)) {
+        foreach (\Drupal\Core\Render\Element::children($variables['element']) as $id) {
+          $variables['items'][$id]['content']['#options']['attributes']['class'][] = 'button--primary';
+        }
+      }
+      break;
+    case 'field_name':
+      /**
+       * Pull field_organization into the field_name template to concatenate.
+       *
+       * See @file field--user--field-name--schedule.html.twig
+       */
+      if ($variables['entity_type'] == 'user' && $variables['element']['#view_mode'] == 'schedule') {
+        $user = $variables['element']['#object'];
+
+        if ($user->get('field_organization')->getValue()) {
+          // Get the term ID from `field_organization`
+          $organization_tid = $user->get('field_organization')->getValue();
+          $organization_tid = $organization_tid[0]['target_id'];
+          // Get the term name so we can add it to the `field_name` template
+          $term = Drupal\taxonomy\Entity\Term::load($organization_tid);
+
+          $variables['org_name'] = $term->getName();
+        }
+      }
+      break;
+  }
+}
+
+/**
+ * Implements THEME_theme_suggestions_HOOK_alter() for views_view_fields.
+ */
+function hatter_base_theme_suggestions_views_view_fields_alter(&$suggestions, $variables, $hook) {
+  $suggestions[] = 'views_view_fields__' . $variables['view']->id();
+  $suggestions[] = 'views_view_fields__' . $variables['view']->id() . '__' . $variables['view']->current_display;
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for block templates.
+ */
+function hatter_base_preprocess_block(&$variables) {
+  // Add class to Attendees block to keep consistent styling with Sponsors page.
+  if ($variables['plugin_id'] == 'views_block:attendees-block_2') {
+    $variables['attributes']['class'][] = 'sponsor-group';
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function hatter_base_form_node_form_alter(&$form, $form_state, $form_id) {
+  // Clarify the states to authenticated users submitting sessions.
+  if ($form_id === 'node_topic_form') {
+    $form['moderation_state']['widget'][0]['state'] += [
+      '#description' => t('Choose whether this submission should be kept as a draft or submitted for consideration.'),
+    ];
+  }
+  if ($form_id === 'node_topic_edit_form' && $form['moderation_state']['widget'][0]['current']['#markup'] === 'Submitted') {
+    $form['moderation_state']['widget'][0]['state'] += [
+      '#description' => t('Choose whether this submission should go back to the draft state or remain submitted.'),
+    ];
+  }
+  if ($form_id === 'node_topic_edit_form' && $form['moderation_state']['widget'][0]['current']['#markup'] === 'Draft') {
+    $form['moderation_state']['widget'][0]['state'] += [
+      '#description' => t('Choose whether this submission should be submitted for consideration or remain as a draft.'),
+    ];
+  }
+}
+

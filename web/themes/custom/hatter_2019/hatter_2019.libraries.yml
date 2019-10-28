@@ -1,0 +1,11 @@
+global-css:
+  css:
+    theme:
+      dist/css/base.bundle.css: {}
+global-js:
+  js:
+    js/site.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
