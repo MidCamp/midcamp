@@ -24,3 +24,10 @@ Feature: Topic Content Type
       | field-topic-type  | input     | radio |
       | field-people      | textfield | text  |
       | body              | textarea  |       |
+
+  Scenario: Authenticated user role cannot publish Topic content
+    Given I am logged in as a user with the "authenticated" role
+    And I am at "node/add/topic"
+    Then I should see "Draft" in the "#edit-moderation-state-0-state" element
+    And I should see "Submitted" in the "#edit-moderation-state-0-state" element
+    And I should not see "Accepted" in the "#edit-moderation-state-0-state" element
