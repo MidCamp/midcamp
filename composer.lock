@@ -5128,12 +5128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MidCamp/Hatter.git",
-                "reference": "f6e2ea0f9768139bc359fa22f447be602d00899c"
+                "reference": "0f5e194858da5b9b26a4e131669fcf5a6cb2c103"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MidCamp/Hatter/zipball/f6e2ea0f9768139bc359fa22f447be602d00899c",
-                "reference": "f6e2ea0f9768139bc359fa22f447be602d00899c",
+                "url": "https://api.github.com/repos/MidCamp/Hatter/zipball/0f5e194858da5b9b26a4e131669fcf5a6cb2c103",
+                "reference": "0f5e194858da5b9b26a4e131669fcf5a6cb2c103",
                 "shasum": ""
             },
             "require": {
@@ -5152,7 +5152,7 @@
                 "source": "https://github.com/MidCamp/Hatter/tree/master",
                 "issues": "https://github.com/MidCamp/Hatter/issues"
             },
-            "time": "2019-09-03T01:55:42+00:00"
+            "time": "2019-11-02T13:57:41+00:00"
         },
         {
             "name": "oomphinc/composer-installers-extender",
