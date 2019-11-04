@@ -1,13 +1,18 @@
 FROM amazeeio/node:10-builder as builder
+
+# Copy relevant files and directories so we can install node dependencies first.
 COPY package.json package-lock.json /app/
 COPY ./web/themes/custom/hatter_2019 /app/web/themes/custom/hatter_2019
 RUN npm install
+
 FROM amazeeio/php:7.1-cli-drupal
 
 COPY composer.json composer.lock /app/
 RUN composer install --prefer-dist --no-dev --no-suggest --optimize-autoloader --apcu-autoloader
 
 COPY . /app
+
+# Ensure the installed files are included.
 COPY --from=builder /app/web/themes/custom/hatter_2019/ /app/web/themes/custom/hatter_2019/
 
 # Define where the Drupal Root is located
