@@ -1,0 +1,30 @@
+uuid: bae994e5-92fd-4434-8a2b-3c811bde9186
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.attendees
+  module:
+    - system
+    - views
+  theme:
+    - hatter_2019
+id: hatter_2019_views_block__attendees_block_2
+theme: hatter_2019
+region: content
+weight: 5
+provider: null
+plugin: 'views_block:attendees-block_2'
+settings:
+  id: 'views_block:attendees-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /2019/sponsors
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,25 @@
+uuid: 42840a9e-e6eb-4b88-a28d-f437119d3606
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2f35417b-1d83-40cb-a971-3683805002ae'
+  module:
+    - block_content
+  theme:
+    - hatter_2019
+id: hatter_2019_footerbranding
+theme: hatter_2019
+region: footer_left
+weight: 0
+provider: null
+plugin: 'block_content:2f35417b-1d83-40cb-a971-3683805002ae'
+settings:
+  id: 'block_content:2f35417b-1d83-40cb-a971-3683805002ae'
+  label: 'Footer Branding'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

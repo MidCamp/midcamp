@@ -1,0 +1,22 @@
+uuid: 4d54c65b-4e71-4043-8b3d-d0b45840dd2e
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - hatter_2019
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: hatter_2019_search
+theme: hatter_2019
+region: header
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

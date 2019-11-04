@@ -1,0 +1,25 @@
+uuid: 75d16c03-daea-4933-8fda-c8f0cbe4ca82
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.event_sub_events
+  module:
+    - views
+  theme:
+    - hatter_2019
+id: hatter_2019_views_block__event_sub_events_block_1
+theme: hatter_2019
+region: featured_bottom_second
+weight: -9
+provider: null
+plugin: 'views_block:event_sub_events-block_1'
+settings:
+  id: 'views_block:event_sub_events-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: a581199d-7424-43ad-9c66-d11041877760
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - hatter_base
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: hatter_base_help
+theme: hatter_base
+region: content
+weight: -19
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,27 @@
+uuid: 40182122-a180-4bfc-8402-8e25a7c96bea
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hatter_base
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: hatter_base_content
+theme: hatter_base
+region: content
+weight: -12
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

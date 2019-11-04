@@ -1,0 +1,25 @@
+uuid: abd96f51-afbc-4fa2-888f-ada1cda28c28
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c87b75b7-23fd-45ac-ae17-af7efa9c87a8'
+  module:
+    - block_content
+  theme:
+    - hatter_2019
+id: hatter_2019_socialfooter
+theme: hatter_2019
+region: footer_left
+weight: 0
+provider: null
+plugin: 'block_content:c87b75b7-23fd-45ac-ae17-af7efa9c87a8'
+settings:
+  id: 'block_content:c87b75b7-23fd-45ac-ae17-af7efa9c87a8'
+  label: 'Social Footer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

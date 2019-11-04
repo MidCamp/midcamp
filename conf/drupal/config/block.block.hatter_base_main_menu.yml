@@ -1,0 +1,32 @@
+uuid: 752d07ee-b711-47a7-af28-11a4e264741f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - hatter_base
+_core:
+  default_config_hash: rx9IrdDv7Ldc4kpalZAxdhIPZfYIeOMh1N-qKoQZwHo
+id: hatter_base_main_menu
+theme: hatter_base
+region: header
+weight: -9
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: "/2018/*\r\n/2018"
+    negate: false
+    context_mapping: {  }

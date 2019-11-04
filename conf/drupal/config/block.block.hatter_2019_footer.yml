@@ -1,0 +1,25 @@
+uuid: c81ac533-f229-46f1-93b4-2a36e90f8976
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - hatter_2019
+id: hatter_2019_footer
+theme: hatter_2019
+region: footer_right
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

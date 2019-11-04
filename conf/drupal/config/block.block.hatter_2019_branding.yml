@@ -1,0 +1,30 @@
+uuid: 123f3671-35e3-482e-84bb-8d59465520ce
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hatter_2019
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: hatter_2019_branding
+theme: hatter_2019
+region: branding
+weight: -8
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,27 @@
+uuid: a33c6d59-3980-47fd-973d-ef96f68e8edf
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hatter_base
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: hatter_base_page_title
+theme: hatter_base
+region: content
+weight: -15
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

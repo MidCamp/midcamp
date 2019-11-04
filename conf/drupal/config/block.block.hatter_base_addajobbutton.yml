@@ -1,0 +1,41 @@
+uuid: ba981e70-e0cb-4473-8670-2f5b33cacd2f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:de1557a6-167f-41a3-945d-05e977e71f1c'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - hatter_base
+id: hatter_base_addajobbutton
+theme: hatter_base
+region: content
+weight: -14
+provider: null
+plugin: 'block_content:de1557a6-167f-41a3-945d-05e977e71f1c'
+settings:
+  id: 'block_content:de1557a6-167f-41a3-945d-05e977e71f1c'
+  label: 'Add a Job Button'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /jobs
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      content_editor: content_editor
+      administrator: administrator
+      sponsor: sponsor
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
