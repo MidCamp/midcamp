@@ -8,11 +8,11 @@ id: global
 label: Global
 tags:
   canonical_url: '[current-page:url]'
-  image_src: 'https://www.midcamp.org/themes/custom/hatter/o-midcamp.png'
+  image_src: 'https://www.midcamp.org/sites/default/files/2019-10/MidCamp2020Social.png'
   title: '[current-page:title] | [site:name]'
-  og_image: 'https://www.midcamp.org/themes/custom/hatter/o-midcamp.png'
+  og_image: 'https://www.midcamp.org/sites/default/files/2019-10/MidCamp2020Social.png'
   og_image_alt: Midcamp
-  og_image_height: '787'
+  og_image_height: '600'
   og_image_type: image/png
-  og_image_width: '600'
+  og_image_width: '1200'
   og_title: '[current-page:title] | [site:name]'

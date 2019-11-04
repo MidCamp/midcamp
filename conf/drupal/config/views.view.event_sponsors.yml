@@ -301,7 +301,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: false
-          content: "<div class=\"l-1up button--center-container\">\r\n      <a href=\"/2019/sponsor-midcamp\" class=\"cta-link\">Become a Sponsor<span class=\"cta-arrow\"></span></a>\r\n      <a href=\"/2019/sponsors\" class=\"cta-link\">See all Sponsors<span class=\"cta-arrow\"></span></a>\r\n    </div>"
+          content: "<div class=\"l-1up button--center-container\">\r\n      <a href=\"/become-a-sponsor\" class=\"cta-link\">Become a Sponsor<span class=\"cta-arrow\"></span></a>\r\n      <a href=\"/sponsors\" class=\"cta-link\">See all Sponsors<span class=\"cta-arrow\"></span></a>\r\n    </div>"
           plugin_id: text_custom
       empty:
         area:

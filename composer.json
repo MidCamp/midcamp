@@ -54,6 +54,7 @@
         "drupal/libraries": "3.x-dev",
         "drupal/linkicon": "^1.4",
         "drupal/mailchimp": "^1.3",
+        "drupal/media_entity": "^2",
         "drupal/metatag": "^1.4",
         "drupal/name": "^1.0@beta",
         "drupal/paragraphs": "^1.2",
@@ -62,8 +63,10 @@
         "drupal/recaptcha": "^2.4",
         "drupal/redirect": "^1.0",
         "drupal/scheduler": "^1.0@RC",
+        "drupal/simple_sitemap": "^3.3",
         "drupal/twig_extensions": "1.x-dev",
-        "drupal/video_embed_media": "^1.5",
+        "drupal/video_embed_field": "^2.2",
+        "drupal/video_embed_media": "^2.2",
         "drupal/viewsreference": "^1.0@alpha",
         "drupal/webform": "^5.0@RC",
         "midcamp/hatter": "dev-master",
@@ -105,6 +108,9 @@
           },
           "drupal/recaptcha": {
               "Enable cacheable captcha support (https://www.drupal.org/project/recaptcha/issues/2219993)": "https://www.drupal.org/files/issues/2018-05-20/recaptcha-cacheable-8.x-2219993-35.patch"
+          },
+          "drupal/config_installer": {
+              "Fix config_install error (https://www.drupal.org/project/config_installer/issues/3039052)": "https://www.drupal.org/files/issues/2019-03-11/config_installer-generatepassword-missing-3039052-2-D8.patch"
           }
         },
         "installer-types": ["butler-styleguide"],
