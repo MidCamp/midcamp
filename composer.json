@@ -108,6 +108,9 @@
           },
           "drupal/recaptcha": {
               "Enable cacheable captcha support (https://www.drupal.org/project/recaptcha/issues/2219993)": "https://www.drupal.org/files/issues/2018-05-20/recaptcha-cacheable-8.x-2219993-35.patch"
+          },
+          "drupal/config_installer": {
+              "Fix config_install error (https://www.drupal.org/project/config_installer/issues/3039052)": "https://www.drupal.org/files/issues/2019-03-11/config_installer-generatepassword-missing-3039052-2-D8.patch"
           }
         },
         "installer-types": ["butler-styleguide"],

@@ -1,29 +1,34 @@
 version: 2
+
 jobs:
   build:
-    working_directory: /var/www/drupal/public_html
+    working_directory: /app
 
     docker:
-      - image: amazeeio/drupal:php71-basic
-        user: drupal
-    environment:
-          TEST_RESULTS: /tmp/test-results
+      - image: integratedexperts/circleci2-builder
+        environment:
+          COMPOSER_ALLOW_SUPERUSER: 1
 
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - composer-v1-{{ checksum "composer.json" }}
-            - composer-v1-
-      - run: composer install --no-interaction
-      - save_cache:
-          key: composer-v1-{{ checksum "composer.json" }}
-          paths:
-            - vendor
-
-      - store_artifacts:
-          path: $TEST_RESULTS
-          destination: raw-test-output
-
-      - store_test_results:
-          path: $TEST_RESULTS
+      - run:
+          name: Set up files
+          command: |
+            cp .circleci/docker-compose.circleci.yml docker-compose.yml
+      - setup_remote_docker
+      - run:
+          name: Build project
+          command: |
+            docker-compose up -d --build
+      - run:
+          name: Install site
+          command: |
+            docker-compose exec cli drush site-install --verbose config_installer config_installer_sync_configure_form.sync_directory=../conf/drupal/config/ --yes
+      - run:
+          name: Install dev dependencies
+          command: |
+            docker-compose exec cli composer install
+      - run:
+          name: Run Behat tests
+          command: |
+            docker-compose exec cli vendor/bin/behat -c behat.circleci.yml
