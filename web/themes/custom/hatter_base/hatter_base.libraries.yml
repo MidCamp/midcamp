@@ -1,0 +1,28 @@
+global-css:
+  css:
+    theme:
+      css/print.css:
+        media: print
+      css/styles.css: {}
+global-js:
+  js:
+    js/site.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+fonts:
+  css:
+    theme:
+      '//fonts.googleapis.com/css?family=Averia+Serif+Libre:400,400i,700,700i|Poppins:400,700': { type: external, minified: true }
+mapbox:
+  css:
+    theme:
+      https://api.tiles.mapbox.com/mapbox-gl-js/v0.26.0/mapbox-gl.css: { type: external, minified: false }
+  js:
+    https://api.tiles.mapbox.com/mapbox-gl-js/v0.26.0/mapbox-gl.js: { type: external, minified: false }
+    js/map.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+

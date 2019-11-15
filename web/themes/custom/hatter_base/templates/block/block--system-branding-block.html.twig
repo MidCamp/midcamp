@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ * Theme override for a branding block.
+ *
+ * Each branding element variable (logo, name, slogan) is only available if
+ * enabled in the block configuration.
+ *
+ * Available variables:
+ * - site_logo: Logo for site as defined in Appearance or theme settings.
+ * - site_name: Name for site as defined in Site information settings.
+ * - site_slogan: Slogan for site as defined in Site information settings.
+ */
+#}
+
+<section class="event-banner__wrapper">
+  <div class="event-banner">
+    <div class="container">
+      <div class="l-1up">
+        <div class="event-banner__block">
+          {% if site_logo %}
+            <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" tabindex=-1>
+              <img class="event__druplicon" src="{{ site_logo }}" alt="Druplicon wearing a Hatter's Hat" />
+            </a>
+          {% endif %}
+          {% if site_name %}
+            <h1 class="event__title">{{ site_name }}</h1>
+          {% endif %}
+          <h2 class="event__subtitle">{{ site_slogan }}</h2>
+          {#<a href="/submit-session" class="event__button button--primary">Submit a Session</a>#}
+          {#<a href="https://www.eventbrite.com/e/midcamp-2019-midwest-drupal-camp-chicago-illinois-tickets-52035893759" class="event__button button--primary">Buy a Ticket</a>#}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

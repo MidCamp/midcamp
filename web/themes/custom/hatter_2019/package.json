@@ -1,0 +1,31 @@
+{
+  "name": "hatter_2019",
+  "version": "1.0.0",
+  "description": "Node dependencies for Hatter 2019 theme",
+  "scripts": {
+    "watch-hatter": "npm link @midcamp/hatter && watch 'npm run postinstall' node_modules/@midcamp/hatter --wait=5",
+    "postinstall": "rimraf dist && rimraf js && rimraf svg && vendor-copy",
+    "unlink-hatter": "npm unlink --no-save @midcamp/hatter && npm install"
+  },
+  "private": true,
+  "dependencies": {
+    "@midcamp/hatter": "^1.0.7",
+    "rimraf": "^3.0.0",
+    "vendor-copy": "^2.0.0",
+    "watch": "^1.0.2"
+  },
+  "vendorCopy": [
+    {
+      "from": "node_modules/@midcamp/hatter/dist",
+      "to": "dist"
+    },
+    {
+      "from": "node_modules/@midcamp/hatter/source/svg",
+      "to": "svg"
+    },
+    {
+      "from": "node_modules/@midcamp/hatter/source/js",
+      "to": "js"
+    }
+  ]
+}
