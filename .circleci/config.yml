@@ -28,7 +28,6 @@ jobs:
           name: Install dev dependencies
           command: |
             - docker-compose exec cli composer install
-            - docker-compose exec cli npm ci --unsafe-perm
       - run:
           name: Run Behat tests
           command: |
