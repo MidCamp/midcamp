@@ -8,6 +8,7 @@ dependencies:
     - field.field.taxonomy_term.event.field_date
     - field.field.taxonomy_term.event.field_date_has_time
     - field.field.taxonomy_term.event.field_event_id
+    - field.field.taxonomy_term.event.field_event_status
     - field.field.taxonomy_term.event.field_image
     - field.field.taxonomy_term.event.field_social_media
     - image.style.thumbnail
@@ -62,6 +63,14 @@ content:
     region: content
   field_event_id:
     weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_event_status:
+    weight: 9
     settings:
       size: 60
       placeholder: ''
