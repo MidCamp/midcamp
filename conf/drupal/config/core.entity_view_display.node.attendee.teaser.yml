@@ -17,4 +17,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_attendee_id: true
+  field_display_on_site: true
+  field_email: true
+  field_first_name: true
+  field_job_title: true
+  field_last_name: true
+  field_name: true
+  field_organization: true
+  field_ticket_state: true

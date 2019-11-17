@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.attendee.field_attendee_id
     - field.field.node.attendee.field_display_on_site
     - field.field.node.attendee.field_email
+    - field.field.node.attendee.field_event
     - field.field.node.attendee.field_first_name
     - field.field.node.attendee.field_job_title
     - field.field.node.attendee.field_last_name
@@ -50,6 +51,15 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: email_default
+    region: content
+  field_event:
+    weight: 130
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_first_name:
     weight: 127
