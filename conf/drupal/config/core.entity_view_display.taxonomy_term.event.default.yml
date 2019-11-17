@@ -7,6 +7,7 @@ dependencies:
     - field.field.taxonomy_term.event.field_banner_cta_authenticated
     - field.field.taxonomy_term.event.field_date
     - field.field.taxonomy_term.event.field_date_has_time
+    - field.field.taxonomy_term.event.field_event_id
     - field.field.taxonomy_term.event.field_image
     - field.field.taxonomy_term.event.field_social_media
     - taxonomy.vocabulary.event
@@ -70,6 +71,14 @@ content:
       format_custom_true: ''
     third_party_settings: {  }
     type: boolean
+    region: content
+  field_event_id:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   field_image:
     weight: 1
