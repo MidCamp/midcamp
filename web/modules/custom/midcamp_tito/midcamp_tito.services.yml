@@ -1,0 +1,4 @@
+services:
+  midcamp_tito.status:
+    class: Drupal\midcamp_tito\Status
+    arguments: ['@tito.client']

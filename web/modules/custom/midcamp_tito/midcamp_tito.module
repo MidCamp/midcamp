@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * @file
+ * Contains midcamp_tito.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Implements hook_help().
+ */
+function midcamp_tito_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the midcamp_tito module.
+    case 'help.page.midcamp_tito':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Integrate with Tito API to sync event and attendee data') . '</p>';
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_entity_presave().
+ *
+ * Store the event status on the event entity.
+ *
+ * @param \Drupal\Core\Entity\EntityInterface $entity
+ */
+function midcamp_tito_entity_presave(EntityInterface $entity) {
+  if ($entity->bundle() == 'event') {
+    // If field_event_id is set, atempt to sync attendees.
+    $fields = $entity->getFields();
+    if (!$fields['field_event_id']->isEmpty()) {
+      $eventId = $fields['field_event_id']->getString();
+
+      // Check event status, save to entity.
+      $status_checker = \Drupal::service('midcamp_tito.status');
+      $event_status = $status_checker->check($eventId);
+
+      $entity->set('field_event_status', $event_status);
+    }
+  }
+}
