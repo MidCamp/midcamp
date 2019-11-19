@@ -81,8 +81,12 @@ As of 2019, component markup, styles and interactivity all live in the [Hatter S
 The majority of theming work will occur in that repository and instructions are included in the [readme](https://github.com/MidCamp/hatter-v2/blob/master/README.md). 
 
 The compiled assets are packaged as an npm dependency. To install the latest, run `npm install` either in the root of this
-repository, or the theme directory. The initial setup process, along with the Circle CI build process will install these
+repository, or the theme directory. The initial setup process, along with the build process will install these
 dependencies as well.
+
+To update to the latest version of the Hatter Styleguide, change to the theme directory
+and run `npm update @midcamp/hatter` Commit the resulting updates to package.json 
+and package-lock.json
 
 To include a specific version of the Hatter styleguide, update the version of the hatter dependency in `package.json` in
 the related theme and them run `npm install`
@@ -137,3 +141,10 @@ If this does not work, run `lsof -PiTCP -sTCP:LISTEN` and see what is using port
 ### I can't see new things in the style guide
 
 Are you sure your changes got merged to [Hatter's](https://github.com/MidCamp/hatter-v2) `master`?
+
+### Drush is super slow.
+
+Your firewall may be blocking requests to Amazee. Running drush with LAGOON_DISABLE_ALIASES=true 
+may temporarily resolve the issue.
+
+* `LAGOON_DISABLE_ALIASES=true drush <SOME-COMMAND-HERE>`
