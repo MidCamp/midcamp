@@ -1,0 +1,20 @@
+uuid: c1a183f4-bc38-46cc-bb31-a7c2e9b0cc10
+langcode: en
+status: true
+dependencies:
+  theme:
+    - hatter_base
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: hatter_base_local_actions
+theme: hatter_base
+region: content
+weight: -13
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

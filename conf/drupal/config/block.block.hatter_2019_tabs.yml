@@ -1,0 +1,20 @@
+uuid: cea14ee3-b9d4-48fc-b67b-655276c53912
+langcode: en
+status: true
+dependencies:
+  theme:
+    - hatter_2019
+id: hatter_2019_tabs
+theme: hatter_2019
+region: content
+weight: -17
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,31 @@
+uuid: a8eb223a-aa1b-42b9-bdc9-66310c90f4dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.summits
+  module:
+    - system
+    - views
+  theme:
+    - hatter_base
+id: hatter_base_views_block__summits_block_1
+theme: hatter_base
+region: content
+weight: 2
+provider: null
+plugin: 'views_block:summits-block_1'
+settings:
+  id: 'views_block:summits-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/*/summits'
+    negate: false
+    context_mapping: {  }

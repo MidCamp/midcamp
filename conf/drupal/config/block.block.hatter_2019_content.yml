@@ -1,0 +1,27 @@
+uuid: d0039fcf-3774-4c3c-85cc-1f5965bdda02
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hatter_2019
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: hatter_2019_content
+theme: hatter_2019
+region: content
+weight: -12
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

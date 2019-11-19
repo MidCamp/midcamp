@@ -1,0 +1,22 @@
+uuid: 5bd24436-b381-4610-b1d6-8bc74fc914cf
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hatter_2019
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: hatter_2019_breadcrumbs
+theme: hatter_2019
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }
