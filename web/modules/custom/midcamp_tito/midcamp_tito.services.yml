@@ -2,3 +2,6 @@ services:
   midcamp_tito.status:
     class: Drupal\midcamp_tito\Status
     arguments: ['@tito.client']
+  midcamp_tito.attendees:
+    class: Drupal\midcamp_tito\Attendees
+    arguments: ['@tito.client']
