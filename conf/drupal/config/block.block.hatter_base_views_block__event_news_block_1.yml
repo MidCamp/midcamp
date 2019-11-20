@@ -1,0 +1,24 @@
+uuid: 75ced073-5006-449a-98b5-808c1e2481f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.event_news
+  module:
+    - views
+  theme:
+    - hatter_base
+id: hatter_base_views_block__event_news_block_1
+theme: hatter_base
+region: content
+weight: -11
+provider: null
+plugin: 'views_block:event_news-block_1'
+settings:
+  id: 'views_block:event_news-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }
