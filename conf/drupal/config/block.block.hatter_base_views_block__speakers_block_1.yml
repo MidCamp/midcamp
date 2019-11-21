@@ -1,0 +1,30 @@
+uuid: 54815e74-9703-4ca9-8144-a0a44ae989d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.speakers
+  module:
+    - system
+    - views
+  theme:
+    - hatter_base
+id: hatter_base_views_block__speakers_block_1
+theme: hatter_base
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:speakers-block_1'
+settings:
+  id: 'views_block:speakers-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

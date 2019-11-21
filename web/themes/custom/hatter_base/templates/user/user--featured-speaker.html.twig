@@ -1,0 +1,23 @@
+<div{{ attributes.addClass('speaker-item') }}>
+  {% if content.user_picture|render %}
+    {{ content.user_picture }}
+  {% else %}
+    <div class="speaker-image">
+      <img src="/themes/custom/hatter/imgs/hatter.jpg" width="400" height="400" class="image-style-featured-speaker">
+    </div>
+  {% endif %}
+  <div class="speaker-item__block">
+    <h3 class="speaker-item__title">{{ content.field_name }}</h3>
+    <p class="speaker-item__subtitle">
+      {{ content.field_title }}
+      {% if amp %}
+        @
+      {% endif %}
+      {% if url %}
+        <a href="{{ url }}">{{ content.field_organization }}</a>
+      {% else %}
+        {{ content.field_organization }}
+      {% endif %}
+    </p>
+  </div>
+</div>

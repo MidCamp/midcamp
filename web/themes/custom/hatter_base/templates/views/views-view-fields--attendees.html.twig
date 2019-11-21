@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Theme override to display all the fields in a row.
+ *
+ * @see template_preprocess_views_view_fields()
+ */
+#}
+
+{% if fields.user_picture %}
+  <div class="speaker-image">{{ fields.user_picture.content }}</div>
+{% endif %}
+<div class="speaker-item__block">
+  <h3 class="speaker-item__title">{{ fields.name.content }}</h3>
+  <p class="speaker-item__subtitle">
+    {{ fields.field_title.content }}
+    {{ fields.field_organization.content }}
+  </p>
+</div>

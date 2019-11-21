@@ -1,0 +1,29 @@
+{% set startDate = term.field_date.start_date %}
+{% set endDate = term.field_date.end_date %}
+
+<section class="event-banner__wrapper">
+  <div class="event-banner">
+    <div class="container">
+      <div class="l-1up">
+        <div class="event-banner__block">
+          {% if site_logo %}
+            <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">
+              <img class="event__druplicon" src="{{ site_logo }}" alt="Druplicon wearing a Hatter's Hat" />
+            </a>
+          {% endif %}
+          <h1 class="event__title">{{ name }}</h1>
+          {% if endDate|date('M j Y') > startDate|date('M j Y') %}
+            <h2 class="event__subtitle">{{ term.field_date.start_date|date('M. jS') }} &mdash; {{ term.field_date.end_date|date('jS, Y') }}</h2>
+          {% else %}
+            <h2 class="event__subtitle">{{ term.field_date.value|date('M. jS, Y') }}</h2>
+          {% endif %}
+          {% if logged_in %}
+            <a href="{{ term.field_banner_cta_authenticated.url }}" class="event__button button--primary">{{ term.field_banner_cta_authenticated.title }}</a>
+          {% else %}
+            <a href="{{ term.field_banner_cta_anonymous.url }}" class="event__button button--primary">{{ term.field_banner_cta_anonymous.title }}</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

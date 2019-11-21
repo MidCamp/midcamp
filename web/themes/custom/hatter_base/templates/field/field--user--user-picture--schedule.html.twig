@@ -1,0 +1,10 @@
+{#
+/**
+ * @file
+ * Theme override for a field.
+ */
+#}
+
+{% for item in items %}
+  <div{{ attributes.addClass('schedule__speaker__photo') }}>{{ item.content }}</div>
+{% endfor %}

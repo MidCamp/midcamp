@@ -1,0 +1,17 @@
+{
+  "name": "midcamp",
+  "version": "1.0.0",
+  "description": "Scripts to manage Midcamp theme dependencies",
+  "scripts": {
+    "preinstall": "cd web/themes/custom/hatter_2019 && npm ci"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MidCamp/midcamp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MidCamp/midcamp/issues"
+  },
+  "homepage": "https://github.com/MidCamp/midcamp#readme"
+}

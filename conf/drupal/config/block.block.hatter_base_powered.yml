@@ -1,0 +1,22 @@
+uuid: e211238b-b678-4b6e-a24e-60237118cf5d
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - hatter_base
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: hatter_base_powered
+theme: hatter_base
+region: header
+weight: -8
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

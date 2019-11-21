@@ -1,0 +1,31 @@
+{% set startDate = term.field_date.start_date %}
+{% set endDate = term.field_date.end_date %}
+
+<a href="{{ url }}" class="sub-event">
+  {% if content.field_image|render|trim is not empty %}
+    <div class="sub-event__bg-img">
+      {{ content.field_image.0 }}
+    </div>
+  {% else %}
+    <div class="sub-event__bg-img">
+      {% include active_theme_path() ~ '/imgs/dots--blue.svg' %}
+    </div>
+  {% endif %}
+  <div class="sub-event__inner">
+    {% if content.field_date|render|trim is not empty %}
+      {% if term.field_date_has_time.value == '1' %}
+        <div class="sub-event__date">{{ term.field_date.value|date('M. jS, Y') }}
+          <div class="sub-event__time">{{ term.field_date.start_date|date('ga') }} &mdash; {{ term.field_date.end_date|date('ga') }}</div>
+        </div>
+      {% else %}
+        {% if endDate|date('M j Y') > startDate|date('M j Y') %}
+          <div class="sub-event__date">{{ term.field_date.start_date|date('M. jS') }} &mdash; {{ term.field_date.end_date|date('jS, Y') }}</div>
+        {% else %}
+          <div class="sub-event__date">{{ term.field_date.value|date('M. jS, Y') }}</div>
+        {% endif %}
+      {% endif %}
+    {% endif %}
+    <h3>{{ name }}</h3>
+    <small class="sub-event__link-text">{% trans %}Learn More<span class="element-invisible"> about {{ name }}</span>{% endtrans %}</small>
+  </div>
+</a>

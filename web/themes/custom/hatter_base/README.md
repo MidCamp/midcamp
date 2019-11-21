@@ -1,0 +1,1 @@
+**Note: this theme is not intended to be used on its own, only as a base for another theme.**

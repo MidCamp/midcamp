@@ -1,0 +1,22 @@
+uuid: 753d4db5-2820-4edf-9b9c-93dcc66ad207
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hatter_base
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: hatter_base_messages
+theme: hatter_base
+region: content
+weight: -18
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
