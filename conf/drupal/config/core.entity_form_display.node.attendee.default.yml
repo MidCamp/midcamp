@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.attendee.field_name
     - field.field.node.attendee.field_organization
     - field.field.node.attendee.field_ticket_state
+    - field.field.node.attendee.field_ticket_type
     - node.type.attendee
   module:
     - content_moderation
@@ -103,6 +104,14 @@ content:
     region: content
   field_ticket_state:
     weight: 129
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_ticket_type:
+    weight: 131
     settings:
       size: 60
       placeholder: ''

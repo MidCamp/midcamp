@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.attendee.field_name
     - field.field.node.attendee.field_organization
     - field.field.node.attendee.field_ticket_state
+    - field.field.node.attendee.field_ticket_type
     - node.type.attendee
   module:
     - user
@@ -96,6 +97,14 @@ content:
     region: content
   field_ticket_state:
     weight: 109
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ticket_type:
+    weight: 111
     label: above
     settings:
       link_to_entity: false
