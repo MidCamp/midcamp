@@ -2,6 +2,7 @@
 
 namespace Drupal\midcamp_tito;
 
+use Drupal\node\Entity\Node;
 use Drupal\tito\Client;
 use Drupal\taxonomy\Entity\Term;
 
@@ -32,8 +33,7 @@ class Status {
    */
   public function check($tito_event_id) {
     // Get the status response for the given event ID.
-    // @todo Add config for setting orgnization.
-    $event = $this->titoClient->request('get', "exampleorganization/$tito_event_id/", '');
+    $event = $this->titoClient->request('get', "midcamp/$tito_event_id/", '');
 
     $event = reset($event);
 
@@ -43,6 +43,22 @@ class Status {
     elseif ($event['live'] == TRUE) {
       return 'live';
     }
+  }
+
+  /**
+   * Update an Event Term.
+   *
+   * @param \Drupal\taxonomy\Entity\Term $event
+   */
+  public function update(Term $event) {
+    // Call the API to check the event status
+//    $tito_event_id = $event->get('field_event_id')->value;
+    $tito_slug = $event->get('field_tito_slug')->value;
+    $status = $this->check($tito_slug);
+
+    // Set the status and save the node
+    $event->set('field_event_status', $status);
+    $event->save();
   }
 
 }

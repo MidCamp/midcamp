@@ -35,10 +35,11 @@ function midcamp_tito_entity_presave(EntityInterface $entity) {
     $fields = $entity->getFields();
     if (!$fields['field_event_id']->isEmpty()) {
       $eventId = $fields['field_event_id']->getString();
+      $slug = $fields['field_tito_slug']->getString();
 
       // Check event status, save to entity.
       $status_checker = \Drupal::service('midcamp_tito.status');
-      $event_status = $status_checker->check($eventId);
+      $event_status = $status_checker->check($slug);
 
       $entity->set('field_event_status', $event_status);
     }
@@ -52,8 +53,7 @@ function midcamp_tito_entity_presave(EntityInterface $entity) {
  *
  * @param \Drupal\Core\Entity\EntityInterface $entity
  */
-function midcamp_tito_entity_insert(EntityInterface $entity)
-{
+function midcamp_tito_entity_insert(EntityInterface $entity) {
   if ($entity->bundle() == 'event') {
 
     // If field_event_id is set, sync attendees.
@@ -61,10 +61,63 @@ function midcamp_tito_entity_insert(EntityInterface $entity)
 
     if (!$fields['field_event_id']->isEmpty()) {
       $event_id = $fields['field_event_id']->getString();
+      $slug = $fields['field_tito_slug']->getString();
       $event_status = $fields['field_event_status']->getString();
 
-      $sync_service = \Drupal::service('eventbrite_events.sync_attendees'); // @todo build this service
+      $sync_service = \Drupal::service('midcamp_tito.attendees');
+      $sync_service->sync($slug, $event_status);
+    }
+  }
+}
+
+/**
+ * Implements hook_entity_update().
+ *
+ * Check for attendees when updating an `eventbrite_event` node.
+ *
+ * @param \Drupal\Core\Entity\EntityInterface $entity
+ */
+function midcamp_tito_entity_update(EntityInterface $entity) {
+  if ($entity->bundle() == 'event') {
+
+    // If eventbrite_event_id is set, sync attendees.
+    $fields = $entity->getFields();
+
+    if (!$fields['field_event_id']->isEmpty()) {
+      $event_id = $fields['field_event_id']->getString();
+      $event_status = $fields['field_event_status']->getString();
+
+      $sync_service = \Drupal::service('midcamp_tito.attendees');
       $sync_service->sync($event_id, $event_status);
     }
   }
 }
+
+/**
+ * Implements hook_cron().
+ *
+ * Periodically update the attendee list by refreshing on cron.
+ */
+//function midcamp_tito_cron() {
+//
+//  // Load all event nodes with an event ID.
+//  $event_nids = \Drupal::entityQuery('taxonomy_term')
+//    ->condition('status',1)
+//    ->condition('type','event')
+//    ->condition('field_event_id',NULL, 'IS NOT NULL')
+//    ->execute();
+//
+//  $event_nodes =  \Drupal\node\Entity\Node::loadMultiple($event_nids);
+//
+//  foreach ($event_nodes as $event) {
+//    // Update event status.
+//    $status_service = \Drupal::service('midcamp_tito.status');
+//    $status_service->update($event);
+//
+//    // Get the event ID and status and run the sync_attendees service.
+//    $event_id = $event->get('field_event_id')->value;
+//    $event_status = $event->get('eventbrite_event_status')->value;
+//    $sync_service = \Drupal::service('midcamp_tito.attendees');
+//    $sync_service->sync($event_id, $event_status);
+//  }
+//}

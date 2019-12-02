@@ -4,4 +4,7 @@ services:
     arguments: ['@tito.client']
   midcamp_tito.attendees:
     class: Drupal\midcamp_tito\Attendees
+    arguments: ['@tito.client', '@entity_type.manager']
+  midcamp_tito.id:
+    class: Drupal\midcamp_tito\Id
     arguments: ['@tito.client']
