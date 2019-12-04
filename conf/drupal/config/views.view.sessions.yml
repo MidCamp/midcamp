@@ -16,6 +16,7 @@ dependencies:
   content:
     - 'taxonomy_term:event:17285735-fe51-4f45-b481-321ae7af649f'
     - 'taxonomy_term:event:58ab979d-12f0-4b19-ab75-5625aa986afb'
+    - 'taxonomy_term:event:edb1c63f-3af1-4ce3-b9d0-55336993e692'
     - 'taxonomy_term:topic_type:39f8a394-f9fc-45ae-85a2-46aabfd3212f'
     - 'taxonomy_term:topic_type:f9f1e3ca-ad7f-4636-b8c2-bb5d29f7b35b'
   module:
@@ -2290,48 +2291,10 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<p>MidCamp is looking for folks just like you to speak to our Drupal audience! Experienced speakers are always welcome, but camp is also a great place to start for first-time speakers. From the opening of session submission through the beginning of camp, we'll have communication to assist speakers (new and old) in creating engaging and informative sessions.</p>\r\n<!--p><strong>The session submission deadline has been extended to midnight December 19, 2018. <a href=\"/submit-session\">Submit your session today!</a></strong></p-->\r\n<p><strong>Session submission is now closed. Thanks to all who submitted proposals!</strong></p>"
+            value: "<p>MidCamp is looking for folks just like you to speak to our Drupal audience! Experienced speakers are always welcome, but camp is also a great place to start for first-time speakers. From the opening of session submission through the beginning of camp, we'll have communication to assist speakers (new and old) in creating engaging and informative sessions.</p>\r\n<!--p><strong>The session submission deadline has been extended to midnight December 19, 2018. <a href=\"/submit-session\">Submit your session today!</a></strong></p-->\r\n<!--p><strong>Session submission is now closed. Thanks to all who submitted proposals!</strong></p-->"
             format: basic_html
           plugin_id: text
       filters:
-        status:
-          id: status
-          table: node_field_data
-          field: status
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value: '1'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: node
-          entity_field: status
-          plugin_id: boolean
         type:
           id: type
           table: node_field_data
@@ -2399,7 +2362,7 @@ display:
           admin_label: ''
           operator: or
           value:
-            97: 97
+            143: 143
           group: 1
           exposed: false
           expose:
