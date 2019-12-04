@@ -12,7 +12,7 @@ field_name: field_video
 entity_type: node
 bundle: topic
 label: Video
-description: ''
+description: 'For internal use once session recordings are posted to YouTube.'
 required: false
 translatable: false
 default_value: {  }
