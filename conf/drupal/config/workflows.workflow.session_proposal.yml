@@ -12,6 +12,11 @@ label: 'Session and Training Proposal'
 type: content_moderation
 type_settings:
   states:
+    accepted:
+      published: true
+      default_revision: true
+      label: Accepted
+      weight: 3
     draft:
       label: Draft
       published: false
@@ -33,21 +38,33 @@ type_settings:
       to: draft
       weight: 0
       from:
+        - accepted
         - draft
         - published
         - submitted
+    proposal_accepted:
+      label: 'Proposal Accepted'
+      from:
+        - accepted
+        - published
+        - submitted
+      to: accepted
+      weight: 3
     publish:
       label: Publish
       to: published
       weight: 1
       from:
+        - accepted
         - draft
         - published
         - submitted
     submitted_proposal:
       label: 'Submitted Proposal'
       from:
+        - accepted
         - draft
+        - published
         - submitted
       to: submitted
       weight: 2
