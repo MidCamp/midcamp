@@ -20,7 +20,7 @@ type_settings:
     published:
       published: true
       default_revision: true
-      label: Accepted
+      label: Published
       weight: 1
     submitted:
       published: false
