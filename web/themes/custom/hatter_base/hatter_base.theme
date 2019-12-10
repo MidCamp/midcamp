@@ -134,26 +134,3 @@ function hatter_base_preprocess_block(&$variables) {
     $variables['attributes']['class'][] = 'sponsor-group';
   }
 }
-
-/**
- * Implements hook_form_alter().
- */
-function hatter_base_form_node_form_alter(&$form, $form_state, $form_id) {
-  // Clarify the states to authenticated users submitting sessions.
-  if ($form_id === 'node_topic_form') {
-    $form['moderation_state']['widget'][0]['state'] += [
-      '#description' => t('Choose whether this submission should be kept as a draft or submitted for consideration.'),
-    ];
-  }
-  if ($form_id === 'node_topic_edit_form' && $form['moderation_state']['widget'][0]['current']['#markup'] === 'Submitted') {
-    $form['moderation_state']['widget'][0]['state'] += [
-      '#description' => t('Choose whether this submission should go back to the draft state or remain submitted.'),
-    ];
-  }
-  if ($form_id === 'node_topic_edit_form' && $form['moderation_state']['widget'][0]['current']['#markup'] === 'Draft') {
-    $form['moderation_state']['widget'][0]['state'] += [
-      '#description' => t('Choose whether this submission should be submitted for consideration or remain as a draft.'),
-    ];
-  }
-}
-
