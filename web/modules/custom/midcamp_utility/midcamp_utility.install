@@ -1,0 +1,31 @@
+<?php
+/**
+ * @file midcamp_utility.install
+ * Contains install and update hooks for the midcamp_utility module.
+ */
+
+/**
+ * Kill workflow states and workflows with fire.
+ */
+function midcamp_utility_update_8001() {
+  /**
+   * Workflows is gross. It doesn't let us remove a workflow while there is content
+   * using a workflow, and doesn't let us delete a moderation state while content
+   * is in said state, and won't let us uninstall the module unless both of the
+   * above are resolved...
+   *
+   * This is a quick and dirty way to resolve those problems. Surely there is a
+   * better way, but it did not immediately reveal itself to me. I am sorry.
+   */
+
+  // Remove moderation states from all content.
+  \Drupal::database()
+    ->delete('content_moderation_state_field_data')
+    ->execute();
+
+  // Remove all moderation states.
+  \Drupal::database()
+    ->delete('content_moderation_state')
+    ->execute();
+
+}
