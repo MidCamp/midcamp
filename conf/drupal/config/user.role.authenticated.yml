@@ -19,6 +19,7 @@ permissions:
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
+  - 'use node.limited form mode'
   - 'use session_proposal transition create_new_draft'
   - 'use session_proposal transition submitted_proposal'
   - 'use session_review transition create_new_draft'

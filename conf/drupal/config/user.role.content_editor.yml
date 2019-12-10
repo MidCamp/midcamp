@@ -107,6 +107,7 @@ permissions:
   - 'use editorial transition archived_published'
   - 'use editorial transition create_new_draft'
   - 'use editorial transition publish'
+  - 'use node.admin form mode'
   - 'use session_proposal transition publish'
   - 'use session_proposal transition submitted_proposal'
   - 'use session_review transition accept_session'

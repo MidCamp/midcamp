@@ -1,0 +1,184 @@
+uuid: fb417b7e-87d5-40c5-a0de-aff1db9903de
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.node.admin
+    - field.field.node.topic.body
+    - field.field.node.topic.field_accepted_confirmed
+    - field.field.node.topic.field_event
+    - field.field.node.topic.field_feedback_form
+    - field.field.node.topic.field_meta_tags
+    - field.field.node.topic.field_people
+    - field.field.node.topic.field_presenter_slides
+    - field.field.node.topic.field_schedule_location
+    - field.field.node.topic.field_schedule_time
+    - field.field.node.topic.field_session_length
+    - field.field.node.topic.field_topic_type
+    - field.field.node.topic.field_track
+    - field.field.node.topic.field_transcript
+    - field.field.node.topic.field_video
+    - node.type.topic
+  module:
+    - datetime_range
+    - file
+    - link
+    - metatag
+    - path
+    - text
+    - video_embed_field
+    - webform
+id: node.topic.admin
+targetEntityType: node
+bundle: topic
+mode: admin
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 6
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_accepted_confirmed:
+    type: boolean_checkbox
+    weight: 17
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_event:
+    type: entity_reference_autocomplete
+    weight: 16
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_feedback_form:
+    weight: 12
+    settings:
+      default_data: true
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_people:
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_presenter_slides:
+    type: file_generic
+    weight: 19
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_schedule_location:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_schedule_time:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_session_length:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_track:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_transcript:
+    weight: 9
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_video:
+    type: video_embed_field_textfield
+    weight: 18
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  uid:
+    type: entity_reference_autocomplete
+    weight: 10
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_topic_type: true
+  promote: true
+  sticky: true

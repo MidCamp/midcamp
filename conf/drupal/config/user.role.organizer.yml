@@ -10,6 +10,7 @@ permissions:
   - 'create field_transcript'
   - 'edit field_transcript'
   - 'edit own field_transcript'
+  - 'use node.admin form mode'
   - 'use session_proposal transition publish'
   - 'use session_proposal transition submitted_proposal'
   - 'view any unpublished content'
