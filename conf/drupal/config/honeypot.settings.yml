@@ -4,10 +4,10 @@ unprotected_forms:
   - search_block_form
   - views_exposed_form
   - honeypot_settings_form
-protect_all_forms: true
+protect_all_forms: false
 log: true
 element_name: url
-time_limit: 12
+time_limit: 10
 expire: 300
 form_settings:
   user_register_form: true
@@ -20,8 +20,8 @@ form_settings:
   node_page_form: false
   node_sponsor_form: false
   node_summit_form: false
-  node_topic_form: false
-  node_training_form: false
+  node_topic_form: true
+  node_training_form: true
   node_venue_form: false
   comment_comment_form: true
 _core:
