@@ -1,10 +1,10 @@
 verify_hostname: false
-use_globally: false
+use_globally: true
 widget:
   theme: light
   type: image
   size: ''
   tabindex: 0
-  noscript: false
+  noscript: true
 _core:
   default_config_hash: eKR4FfUD7Cp3bXamsCz6GAxh0PCLIZNMa65y2kChIh0
