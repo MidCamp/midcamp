@@ -26,7 +26,7 @@ Feature: Topic Content Type
 
   Scenario: Authenticated user role cannot publish Topic content
     Given I am logged in as a user with the "authenticated" role
-    And I am at "node/add/topic"
+    And I am at "node/add/topic/limited"
     When I fill in "Title" with "This is a test Session"
     And I fill in "Describe your Topic" with "Test session body content goes here."
     Then I cannot publish the node
