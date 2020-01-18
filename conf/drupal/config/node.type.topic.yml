@@ -20,6 +20,7 @@ third_party_settings:
     unpublish_enable: false
     unpublish_required: false
     unpublish_revision: false
+    publish_past_date_created: false
 name: 'Topic Proposal'
 type: topic
 description: 'Use <em>topic</em> for individual session, keynote, BoF, etc.'
