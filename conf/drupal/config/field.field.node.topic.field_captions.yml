@@ -1,0 +1,21 @@
+uuid: 11e6c802-a6d4-428b-a732-8558d13dc8bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_captions
+    - node.type.topic
+  module:
+    - text
+id: node.topic.field_captions
+field_name: field_captions
+entity_type: node
+bundle: topic
+label: Captions
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
