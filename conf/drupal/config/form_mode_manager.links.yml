@@ -1,6 +1,6 @@
 local_tasks:
   node:
-    position: secondary
+    position: primary
   user:
     position: secondary
   block_content:
