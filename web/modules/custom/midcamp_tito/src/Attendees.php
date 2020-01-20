@@ -2,7 +2,6 @@
 
 namespace Drupal\midcamp_tito;
 use Drupal\tito\Client;
-use Drupal\taxonomy\Entity\Term;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\node\Entity\Node;
 
@@ -39,13 +38,14 @@ class Attendees {
   /**
    * Create attendee entities for the given event.
    *
-   * @param int $tito_event_id
+   * @param string $tito_slug
+   * @param string $tito_event_id
    * @param string $event_status
    * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
    * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
    * @throws \Drupal\Core\Entity\EntityStorageException
    */
-  public function sync($tito_event_id, $event_status) {
+  public function sync($tito_slug, $tito_event_id, $event_status) {
     // If the event is not active, to not attempt to sync attendees.
     if ($this->activeEvent($event_status) == FALSE) {
       return;
@@ -56,25 +56,24 @@ class Attendees {
     // Define an array to capture attendees.
     $attendees = [];
 
-    // No query parameters for now.
-    $query = '?search[states][]=complete';
+    do {
+      // No query parameters initially, only fetch completed tickets.
+      $query = '?search[states][]=complete';
+      // Handle pagination.
+      if (isset($page)) {
+        $query = $query . "&page=$page";
+      }
+      $results[] = $this->titoClient->request('get', "$tito_slug/$tito_event_id/tickets/", $query, []);
+    }
+    while ($page = end($results)['meta']['next_page']);
 
-    // Get the attendees response for the given event ID.
-    $results = $this->titoClient->request('get', "midcamp/$tito_event_id/tickets/", $query, []);
-    dump("Look at the ticket results");
-    dump($results);
-//    die();
+    foreach ($results as $result) {
+      $attendees = array_merge($attendees, $result['tickets']);
+    }
 
     // Iterate over each page of response results to load user data.
-    foreach ($results['tickets'] as $attendee) {
-      dump("RESULTS AS RESULT");
-      dump($attendee);
-//      die();
-//      foreach ($result['tickets'] as $attendee) {
-        $attendees[] = $attendee['name'];
-
+    foreach ($attendees as $attendee) {
         // Check for existing attendee node so we can update existing.
-        // Need to load an "Attendee" node.  Prob need to map to a `field_attendee_id`.  Figure this out.
         $query = \Drupal::entityQuery('node')
           ->condition('type', 'attendee')
           ->condition('field_attendee_id', $attendee['id']);
@@ -86,13 +85,9 @@ class Attendees {
           $entity->set('field_name', $attendee['name']);
           $entity->set('field_first_name', $attendee['first_name']);
           $entity->set('field_last_name', $attendee['last_name']);
-//          $entity->set('field_job_title', isset($attendee['profile']['job_title']) ? $attendee['profile']['job_title'] : '');
           $entity->set('field_organization', isset($attendee['company_name']) ? $attendee['company_name'] : '');
           $entity->set('field_ticket_type', $attendee['release_title']);
-//          $entity->set('ticket_class_id', $attendee['ticket_class_id']); // @TODO - do we need this?
           $entity->set('assoc_drupal_user', isset($attendee['email']) ? $this->getUserIdByEmail($attendee['email']) : '');
-//          $entity->set('field_event', $this->getEventById($attendee['event_id'])); // @TODO - figure this out
-//          $entity->set('ticket_cancelled', $attendee['cancelled']); // @TODO - do we need this?
           $entity->set('field_ticket_state', $attendee['state']);
           $entity->save();
         }
@@ -100,26 +95,21 @@ class Attendees {
           // Create the attendee if one does not yet exist.
           $entity = Node::create([
             'type' => 'attendee',
-            'title' => $attendee['name'],
+            'title' => !empty($attendee['name']) ? $attendee['name'] : $attendee['id'],
             'field_attendee_id' => $attendee['id'],
             'assoc_drupal_user' => isset($attendee['email']) ? $this->getUserIdByEmail($attendee['email']) : '',
-//            'field_event' => $this->getEventById($attendee['event_id']), // @TODO - figure this out
             'field_name' => $attendee['name'],
             'field_first_name' => $attendee['first_name'],
             'field_last_name' => $attendee['last_name'],
             'field_email' => isset($attendee['email']) ? $attendee['email'] : '',
-//            'field_job_title' => isset($attendee['profile']['job_title']) ? $attendee['profile']['job_title'] : '',
             'field_organization' => isset($attendee['company_name']) ? $attendee['company_name'] : '',
             'field_ticket_type' => $attendee['release_title'],
-//            'ticket_class_id' => $attendee['ticket_class_id'], // @TODO - do we need this?
-//            'ticket_cancelled' => $attendee['cancelled'], // @TODO - do we need this?
             'field_ticket_state' => $attendee['state'],
+            'field_event' => $this->getEventById($tito_event_id),
           ]);
           $entity->save();
         }
-//      }
     }
-    die();
   }
 
   /**
@@ -164,14 +154,14 @@ class Attendees {
     $entity_id = FALSE;
 
     $entities = \Drupal::entityTypeManager()
-      ->getStorage('node')
+      ->getStorage('taxonomy_term')
       ->loadByProperties([
-        'type' => 'event',
+        'vid' => 'event',
         'field_event_id' => $id,
       ]);
 
     if ($entities) {
-      // For now, assume one Tito Event node.
+      // For now, assume one event Term.
       $entity = reset($entities);
       $entity_id = $entity->id();
     }

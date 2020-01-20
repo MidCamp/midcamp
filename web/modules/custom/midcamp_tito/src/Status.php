@@ -28,14 +28,17 @@ class Status {
   /**
    * Check the status of the event.
    *
-   * @param int $tito_event_id
+   * @param string $tito_slug
+   * @param string $tito_event_id
    * @return string
    */
-  public function check($tito_event_id) {
+  public function check($tito_slug, $tito_event_id) {
     // Get the status response for the given event ID.
-    $event = $this->titoClient->request('get', "midcamp/$tito_event_id/", '');
+    $event = $this->titoClient->request('get', "$tito_slug/$tito_event_id/", '');
 
-    $event = reset($event);
+    if ($event) {
+      $event = reset($event);
+    }
 
     if ($event['archived'] == TRUE) {
       return 'archived';
@@ -43,6 +46,8 @@ class Status {
     elseif ($event['live'] == TRUE) {
       return 'live';
     }
+
+    return 'unknown';
   }
 
   /**
@@ -52,9 +57,9 @@ class Status {
    */
   public function update(Term $event) {
     // Call the API to check the event status
-//    $tito_event_id = $event->get('field_event_id')->value;
     $tito_slug = $event->get('field_tito_slug')->value;
-    $status = $this->check($tito_slug);
+    $tito_event_id = $event->get('field_event_id')->value;
+    $status = $this->check($tito_slug, $tito_event_id);
 
     // Set the status and save the node
     $event->set('field_event_status', $status);
