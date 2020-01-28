@@ -2245,8 +2245,8 @@ display:
           empty: true
           tokenize: false
           content:
-            value: '<p>Below is the list of accepted and confirmed sessions. We still have a handful of sessions to confirm and will post the full session schedule shortly. Thanks to all who submitted!</p>'
-            format: basic_html
+            value: '<p>Below is the list of accepted and confirmed sessions. We <!--still have a handful of sessions to confirm and -->will post the full session schedule shortly. Thanks to all who submitted!</p>'
+            format: full_html
           plugin_id: text
       empty:
         area:
