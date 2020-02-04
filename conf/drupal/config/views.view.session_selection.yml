@@ -12,7 +12,7 @@ dependencies:
     - taxonomy.vocabulary.topic_type
     - user.role.administrator
   content:
-    - 'taxonomy_term:event:17285735-fe51-4f45-b481-321ae7af649f'
+    - 'taxonomy_term:event:edb1c63f-3af1-4ce3-b9d0-55336993e692'
     - 'taxonomy_term:topic_type:39f8a394-f9fc-45ae-85a2-46aabfd3212f'
   module:
     - datetime
@@ -1228,7 +1228,7 @@ display:
           admin_label: ''
           operator: or
           value:
-            97: 97
+            143: 143
           group: 1
           exposed: true
           expose:

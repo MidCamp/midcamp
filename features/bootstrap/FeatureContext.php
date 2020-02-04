@@ -22,4 +22,17 @@ class FeatureContext extends RawDrupalContext implements SnippetAcceptingContext
   public function __construct() {
   }
 
+  /**
+   * @Then I cannot publish the node
+   */
+  public function cannotPublish()
+  {
+    $page = $this->getSession()->getPage();
+    $element = $page->find('xpath', '//*[@id="edit-status-wrapper"]');
+    // Seriously? WTF happened to all the $this->assertSomething() methods?
+    if (!empty($element)) {
+      throw new Exception("Found the Publishing Status field.");
+    }
+  }
+
 }

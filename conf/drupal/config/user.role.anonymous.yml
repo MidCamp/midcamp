@@ -16,6 +16,7 @@ permissions:
   - 'search content'
   - 'use text format restricted_html'
   - 'view field_accepted_confirmed'
+  - 'view field_captions'
   - 'view field_feedback_form'
   - 'view field_schedule_location'
   - 'view field_schedule_time'
