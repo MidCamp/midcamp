@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.topic.body
     - field.field.node.topic.field_accepted_confirmed
+    - field.field.node.topic.field_captions
     - field.field.node.topic.field_event
     - field.field.node.topic.field_feedback_form
     - field.field.node.topic.field_meta_tags
@@ -43,6 +44,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_captions:
+    weight: 10
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   field_feedback_form:
     weight: 9
     label: above
