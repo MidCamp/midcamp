@@ -12,9 +12,7 @@ dependencies:
     - field.field.node.training.field_track
     - field.field.node.training.field_video
     - node.type.training
-    - workflows.workflow.session_proposal
   module:
-    - content_moderation
     - link
     - text
     - video_embed_field
