@@ -19,9 +19,7 @@ dependencies:
     - field.field.node.topic.field_transcript
     - field.field.node.topic.field_video
     - node.type.topic
-    - workflows.workflow.session_proposal
   module:
-    - content_moderation
     - datetime_range
     - link
     - text
@@ -108,12 +106,6 @@ content:
     third_party_settings: {  }
     type: link_default
     region: content
-  moderation_state:
-    type: moderation_state_default
-    weight: 15
-    settings: {  }
-    region: content
-    third_party_settings: {  }
   status:
     type: boolean_checkbox
     weight: 8
