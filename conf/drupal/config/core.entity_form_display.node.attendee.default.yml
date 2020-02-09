@@ -16,7 +16,6 @@ dependencies:
     - field.field.node.attendee.field_ticket_type
     - node.type.attendee
   module:
-    - content_moderation
     - path
     - scheduler
 id: node.attendee.default
