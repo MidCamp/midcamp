@@ -11,6 +11,7 @@ dependencies:
     - node.type.summit
     - node.type.topic
     - node.type.training
+    - system.menu.midcamp-2020-navigation
     - taxonomy.vocabulary.event
   content:
     - 'taxonomy_term:event:edb1c63f-3af1-4ce3-b9d0-55336993e692'
@@ -424,8 +425,8 @@ display:
           admin_label: ''
           operator: between
           value:
-            min: '2020-03-18 00:00:00'
-            max: '2020-03-19 05:00:00'
+            min: '2020-03-19 00:00:00'
+            max: '2020-03-19 23:59:59'
             value: ''
             type: date
           group: 1
@@ -560,8 +561,8 @@ display:
           admin_label: ''
           operator: between
           value:
-            min: '2020-03-20 00:00:00'
-            max: '2020-03-21 05:00:00'
+            min: '2020-03-18 00:00:00'
+            max: '2020-03-18 23:59:59'
             value: ''
             type: date
           group: 1
@@ -635,11 +636,20 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<div class=\"schedule__nav\">\r\n      <a href=\"/2020/schedule/wednesday\">Wednesday</a> | <a href=\"/2020/schedule/thursday\">Thursday</a> | <a href=\"/2020/schedule/friday\">Friday</a> | <a href=\"/2020/contribution-day\">Saturday</a>\r\n</div>\r\n<h2>Thursday, March 19, 2019</h2>"
+            value: "<div class=\"schedule__nav\">\r\n      <a href=\"/2020/schedule/wednesday\">Wednesday</a> | <a href=\"/2020/schedule/thursday\">Thursday</a> | <a href=\"/2020/schedule/friday\">Friday</a> | <a href=\"/2020/contribution-day\">Saturday</a>\r\n</div>\r\n<h2>Thursday, March 19, 2020</h2>"
             format: full_html
           plugin_id: text
       defaults:
         header: false
+      menu:
+        type: normal
+        title: 'Sessions (Thu)'
+        description: ''
+        expanded: false
+        parent: 'menu_link_content:9aa75b79-01c2-41b7-ba8d-b3b46afb3eb8'
+        weight: -54
+        context: '0'
+        menu_name: midcamp-2020-navigation
     cache_metadata:
       max-age: -1
       contexts:
@@ -671,7 +681,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<div class=\"schedule__nav\">\r\n      <a href=\"/2020/schedule/wednesday\">Wednesday</a> | <a href=\"/2020/schedule/thursday\">Thursday</a> | <a href=\"/2020/schedule/friday\">Friday</a> | <a href=\"/2020/contribution-day\">Saturday</a>\r\n</div>\r\n<h2>Friday, March 20, 2019</h2>"
+            value: "<div class=\"schedule__nav\">\r\n      <a href=\"/2020/schedule/wednesday\">Wednesday</a> | <a href=\"/2020/schedule/thursday\">Thursday</a> | <a href=\"/2020/schedule/friday\">Friday</a> | <a href=\"/2020/contribution-day\">Saturday</a>\r\n</div>\r\n<h2>Friday, March 20, 2020</h2>"
             format: full_html
           plugin_id: text
       defaults:
@@ -699,8 +709,8 @@ display:
           admin_label: ''
           operator: between
           value:
-            min: '2020-03-19 05:00:00'
-            max: '2020-03-20 05:00:00'
+            min: '2020-03-20 00:00:00'
+            max: '2020-03-20 23:59:59'
             value: ''
             type: date
           group: 1
@@ -738,6 +748,15 @@ display:
         groups:
           1: AND
       display_description: ''
+      menu:
+        type: normal
+        title: 'Sessions (Fri)'
+        description: ''
+        expanded: false
+        parent: 'menu_link_content:9aa75b79-01c2-41b7-ba8d-b3b46afb3eb8'
+        weight: -53
+        context: '0'
+        menu_name: midcamp-2020-navigation
     cache_metadata:
       max-age: -1
       contexts:
@@ -1202,7 +1221,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<div class=\"schedule__nav\">\r\n      <a href=\"/2020/schedule/wednesday\">Wednesday</a> | <a href=\"/2020/schedule/thursday\">Thursday</a> | <a href=\"/2020/schedule/friday\">Friday</a> | <a href=\"/2020/sprints\">Saturday</a>\r\n</div>\r\n<h2>Wednesday, March 18, 2019</h2>"
+            value: "<div class=\"schedule__nav\">\r\n      <a href=\"/2020/schedule/wednesday\">Wednesday</a> | <a href=\"/2020/schedule/thursday\">Thursday</a> | <a href=\"/2020/schedule/friday\">Friday</a> | <a href=\"/2020/sprints\">Saturday</a>\r\n</div>\r\n<h2>Wednesday, March 18, 2020</h2>"
             format: full_html
           plugin_id: text
       sorts:
@@ -1263,6 +1282,15 @@ display:
           view_to_insert: 'schedule_2020:block_1'
           inherit_arguments: false
           plugin_id: view
+      menu:
+        type: normal
+        title: 'Summits & Training (Wed)'
+        description: ''
+        expanded: false
+        parent: 'menu_link_content:9aa75b79-01c2-41b7-ba8d-b3b46afb3eb8'
+        weight: -55
+        context: '0'
+        menu_name: midcamp-2020-navigation
     cache_metadata:
       max-age: -1
       contexts:
@@ -1719,6 +1747,16 @@ display:
           inline: {  }
           separator: ''
           hide_empty: false
+      menu:
+        type: normal
+        title: 'All Sessions'
+        description: ''
+        expanded: false
+        parent: 'menu_link_content:9aa75b79-01c2-41b7-ba8d-b3b46afb3eb8'
+        weight: -6
+        context: '0'
+        menu_name: midcamp-2020-navigation
+      enabled: false
     cache_metadata:
       max-age: -1
       contexts:
