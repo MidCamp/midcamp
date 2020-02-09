@@ -123,6 +123,7 @@ class Attendees {
         $entity->save();
       }
     }
+    \Drupal::logger('midcamp_tito')->info('Syncing attendees for event "%event"', ['%event' => $tito_event_id]);
   }
 
   /**
