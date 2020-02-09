@@ -71,44 +71,57 @@ class Attendees {
       $attendees = array_merge($attendees, $result['tickets']);
     }
 
+    // Gather user preferences on site display. This is ugly, but the API is
+    // very limited in this area.
+    $question = 'show-on-the-public-attendees-listing';
+    $attendeePreferences = $this->getQuestion($tito_slug, $tito_event_id, $question);
+
     // Iterate over each page of response results to load user data.
     foreach ($attendees as $attendee) {
-        // Check for existing attendee node so we can update existing.
-        $query = \Drupal::entityQuery('node')
-          ->condition('type', 'attendee')
-          ->condition('field_attendee_id', $attendee['id']);
-        $entity_nid = $query->execute();
-        $entity = $entityStorage->load(current($entity_nid));
+      if (!isset($attendee['id'])) {
+        return;
+      }
 
-        if ($entity) {
-          $entity->set('field_attendee_id', $attendee['id']);
-          $entity->set('field_name', $attendee['name']);
-          $entity->set('field_first_name', $attendee['first_name']);
-          $entity->set('field_last_name', $attendee['last_name']);
-          $entity->set('field_organization', isset($attendee['company_name']) ? $attendee['company_name'] : '');
-          $entity->set('field_ticket_type', $attendee['release_title']);
-          $entity->set('assoc_drupal_user', isset($attendee['email']) ? $this->getUserIdByEmail($attendee['email']) : '');
-          $entity->set('field_ticket_state', $attendee['state']);
-          $entity->save();
-        }
-        else {
-          // Create the attendee if one does not yet exist.
-          $entity = Node::create([
-            'type' => 'attendee',
-            'title' => !empty($attendee['name']) ? $attendee['name'] : $attendee['id'],
-            'field_attendee_id' => $attendee['id'],
-            'assoc_drupal_user' => isset($attendee['email']) ? $this->getUserIdByEmail($attendee['email']) : '',
-            'field_name' => $attendee['name'],
-            'field_first_name' => $attendee['first_name'],
-            'field_last_name' => $attendee['last_name'],
-            'field_email' => isset($attendee['email']) ? $attendee['email'] : '',
-            'field_organization' => isset($attendee['company_name']) ? $attendee['company_name'] : '',
-            'field_ticket_type' => $attendee['release_title'],
-            'field_ticket_state' => $attendee['state'],
-            'field_event' => $this->getEventById($tito_event_id),
-          ]);
-          $entity->save();
-        }
+      // Check for existing attendee node so we can update existing.
+      $query = \Drupal::entityQuery('node')
+        ->condition('type', 'attendee')
+        ->condition('field_attendee_id', $attendee['id']);
+
+      $entity_nid = $query->execute();
+
+      if (isset($entity_nid) && $entity = $entityStorage->load(current($entity_nid))) {
+        $entity->set('field_attendee_id', $attendee['id']);
+        $entity->set('field_name', $attendee['name']);
+        $entity->set('field_first_name', $attendee['first_name']);
+        $entity->set('field_last_name', $attendee['last_name']);
+        $entity->set('field_organization', isset($attendee['company_name']) ? $attendee['company_name'] : '');
+        $entity->set('field_ticket_type', $attendee['release_title']);
+        $entity->set('field_drupal_user_account', isset($attendee['email']) ? $this->getUserIdByEmail($attendee['email']) : '');
+        $entity->set('field_ticket_state', $attendee['state']);
+        $entity->set('field_display_on_site', isset($attendee['id']) ? $this->userDisplayPreference($attendee['id'], $attendeePreferences) : TRUE);
+        $entity->set('status', isset($attendee['id']) ? $this->userDisplayPreference($attendee['id'], $attendeePreferences) : TRUE);
+        $entity->save();
+      }
+      else {
+        // Create the attendee if one does not yet exist.
+        $entity = Node::create([
+          'type' => 'attendee',
+          'title' => !empty($attendee['name']) ? $attendee['name'] : $attendee['id'],
+          'field_attendee_id' => $attendee['id'],
+          'field_drupal_user_account' => isset($attendee['email']) ? $this->getUserIdByEmail($attendee['email']) : '',
+          'field_name' => $attendee['name'],
+          'field_first_name' => $attendee['first_name'],
+          'field_last_name' => $attendee['last_name'],
+          'field_email' => isset($attendee['email']) ? $attendee['email'] : '',
+          'field_organization' => isset($attendee['company_name']) ? $attendee['company_name'] : '',
+          'field_ticket_type' => $attendee['release_title'],
+          'field_ticket_state' => $attendee['state'],
+          'field_event' => $this->getEventById($tito_event_id),
+          'field_display_on_site' => isset($attendee['id']) ? $this->userDisplayPreference($attendee['id'], $attendeePreferences) : TRUE,
+          'status' => isset($attendee['id']) ? $this->userDisplayPreference($attendee['id'], $attendeePreferences) : TRUE,
+        ]);
+        $entity->save();
+      }
     }
   }
 
@@ -166,6 +179,55 @@ class Attendees {
       $entity_id = $entity->id();
     }
     return $entity_id;
+  }
+
+  /**
+   * @param string $tito_slug
+   * @param string $tito_event_id
+   *
+   * @param string $question
+   *
+   * @return array
+   */
+  protected function getQuestion($tito_slug, $tito_event_id, $question) {
+    $results = [];
+
+    do {
+      // No query parameters initially.
+      $query = '';
+      // Handle pagination.
+      if (isset($page)) {
+        $query = $query . "&page=$page";
+      }
+      $results[] = $this->titoClient->request('get', "$tito_slug/$tito_event_id/questions/$question/answers", '', []);
+    }
+    while ($page = end($results)['meta']['next_page']);
+
+    $answers = [];
+    foreach ($results as $result) {
+      $answers = array_merge($answers, $result['answers']);
+    }
+
+    return $answers;
+  }
+
+  /**
+   * @param string $ticketId
+   * @param array $answers
+   *
+   * @return mixed
+   */
+  protected function userDisplayPreference($ticketId, $answers) {
+    // Attempt to find a response.
+    $index = array_search($ticketId, array_column($answers, 'ticket_id'), TRUE);
+
+    // If we have an answer and the answer is No, return false.
+    if (isset($index) && $answers[$index]['response'] == 'No') {
+      return FALSE;
+    }
+
+    // No answer or Yes answer returns TRUE.
+    return TRUE;
   }
 
 }
