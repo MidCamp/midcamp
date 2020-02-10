@@ -83,13 +83,16 @@ class Attendees {
       }
 
       // Check for existing attendee node so we can update existing.
-      $query = \Drupal::entityQuery('node')
+      $query = \Drupal::entityQuery('node');
+      $queryResult = $query
         ->condition('type', 'attendee')
-        ->condition('field_attendee_id', $attendee['id']);
+        ->condition('field_attendee_id', $attendee['id'])
+        ->execute();
 
-      $entity_nid = $query->execute();
+      $entityNid = is_array($queryResult) ? current($queryResult) : null;
+      $entity = is_numeric($entityNid) ? $entityStorage->load($entityNid) : null;
 
-      if (isset($entity_nid) && $entity = $entityStorage->load(current($entity_nid))) {
+      if ($entity) {
         $entity->set('field_attendee_id', $attendee['id']);
         $entity->set('field_name', $attendee['name']);
         $entity->set('field_first_name', $attendee['first_name']);
