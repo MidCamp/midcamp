@@ -799,10 +799,189 @@ display:
         - 'config:field.storage.user.field_organization'
         - 'config:field.storage.user.field_title'
         - 'config:field.storage.user.user_picture'
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: 'Individual Sponsor Block'
+    position: 2
+    display_options:
+      display_extenders: {  }
+      title: 'Individual Sponsors'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+        pager: false
+        css_class: false
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            attendee: attendee
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          group: 1
+        field_event_target_id:
+          id: field_event_target_id
+          table: node__field_event
+          field: field_event_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            - 143
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: textfield
+          limit: true
+          vid: event
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_first_name_value:
+          id: field_first_name_value
+          table: node__field_first_name
+          field: field_first_name_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: 'not empty'
+          value: ''
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: string
+        field_ticket_type_value:
+          id: field_ticket_type_value
+          table: node__field_ticket_type
+          field: field_ticket_type_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: 'Individual Sponsor (add-on)'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: string
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      block_description: 'MidCamp 2020 Individual Sponsors'
+      pager:
+        type: none
+        options:
+          offset: 0
+      css_class: ''
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_job_title'
+        - 'config:field.storage.node.field_organization'
+        - 'config:field.storage.user.field_organization'
+        - 'config:field.storage.user.field_title'
+        - 'config:field.storage.user.user_picture'
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Page
+    display_title: 'Attendee Page'
     position: 1
     display_options:
       display_extenders: {  }
@@ -816,6 +995,7 @@ display:
         weight: 0
         context: '0'
         menu_name: midcamp-2020-navigation
+      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:
