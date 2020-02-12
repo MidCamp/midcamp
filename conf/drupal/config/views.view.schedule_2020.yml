@@ -788,6 +788,7 @@ display:
         style: false
         row: false
         footer: false
+        pager: false
       filters:
         status:
           value: '1'
@@ -1291,6 +1292,11 @@ display:
         weight: -55
         context: '0'
         menu_name: midcamp-2020-navigation
+      pager:
+        type: some
+        options:
+          items_per_page: 4
+          offset: 0
     cache_metadata:
       max-age: -1
       contexts:
