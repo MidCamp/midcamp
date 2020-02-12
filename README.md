@@ -138,6 +138,11 @@ Apache is probably already running on port 80 for your system. Run `sudo apachec
 
 If this does not work, run `lsof -PiTCP -sTCP:LISTEN` and see what is using port 80. Kill it.
 
+### I get the 'Could not load API JWT Token, error was:                                  [warning]'lagoon@ssh.lagoon.amazeeio.cloud: Permission denied (publickey). Error: no alias record could be found for source @production'
+
+You will need someone on the Amazee Rocket Chat (https://amazeeio.rocket.chat/group/midcamp) to add your public SSH key on your account.  
+
+
 ### I can't see new things in the style guide
 
 Are you sure your changes got merged to [Hatter's](https://github.com/MidCamp/hatter-v2) `master`?
