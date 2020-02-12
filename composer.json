@@ -37,7 +37,7 @@
     },
     "require": {
         "brian-clement/eventbrite_events": "dev-master",
-        "brian-clement/tito": "dev-feature/api",
+        "brian-clement/tito": "dev-master",
         "composer/installers": "^1.0",
         "cweagans/composer-patches": "~1.0",
         "drupal-composer/drupal-scaffold": "^2.3",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1ad27279d11b2df6277cf91c6c654938",
+    "content-hash": "5115d2334a0417b5f07a56064395c8a5",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -88,16 +88,16 @@
         },
         {
             "name": "brian-clement/tito",
-            "version": "dev-feature/api",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Brian-Clement/tito.git",
-                "reference": "58ab3cc1771d05b876d0dd6eb284bdde52f5c71b"
+                "reference": "b9d506bcb416c9b57b4d6456c0baca4957be8633"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Brian-Clement/tito/zipball/58ab3cc1771d05b876d0dd6eb284bdde52f5c71b",
-                "reference": "58ab3cc1771d05b876d0dd6eb284bdde52f5c71b",
+                "url": "https://api.github.com/repos/Brian-Clement/tito/zipball/b9d506bcb416c9b57b4d6456c0baca4957be8633",
+                "reference": "b9d506bcb416c9b57b4d6456c0baca4957be8633",
                 "shasum": ""
             },
             "type": "drupal-module",
@@ -109,7 +109,7 @@
                 "issues": "https://www.drupal.org/project/issues/tito",
                 "source": "http://cgit.drupalcode.org/tito"
             },
-            "time": "2019-10-27T15:14:37+00:00"
+            "time": "2020-02-12T19:44:50+00:00"
         },
         {
             "name": "brumann/polyfill-unserialize",
