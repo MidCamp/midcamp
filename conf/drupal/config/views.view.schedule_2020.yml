@@ -1222,7 +1222,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<div class=\"schedule__nav\">\r\n      <a href=\"/2020/schedule/wednesday\">Wednesday</a> | <a href=\"/2020/schedule/thursday\">Thursday</a> | <a href=\"/2020/schedule/friday\">Friday</a> | <a href=\"/2020/sprints\">Saturday</a>\r\n</div>\r\n<h2>Wednesday, March 18, 2020</h2>"
+            value: "<div class=\"schedule__nav\">\r\n      <a href=\"/2020/schedule/wednesday\">Wednesday</a> | <a href=\"/2020/schedule/thursday\">Thursday</a> | <a href=\"/2020/schedule/friday\">Friday</a> | <a href=\"/2020/contribution-day\">Saturday</a>\r\n</div>\r\n<h2>Wednesday, March 18, 2020</h2>"
             format: full_html
           plugin_id: text
       sorts:
