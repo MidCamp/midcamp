@@ -92,12 +92,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Brian-Clement/tito.git",
-                "reference": "b9d506bcb416c9b57b4d6456c0baca4957be8633"
+                "reference": "6e6dcf9c4ecf3a98b1a252f12bd2e78848c4f0f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Brian-Clement/tito/zipball/b9d506bcb416c9b57b4d6456c0baca4957be8633",
-                "reference": "b9d506bcb416c9b57b4d6456c0baca4957be8633",
+                "url": "https://api.github.com/repos/Brian-Clement/tito/zipball/6e6dcf9c4ecf3a98b1a252f12bd2e78848c4f0f0",
+                "reference": "6e6dcf9c4ecf3a98b1a252f12bd2e78848c4f0f0",
                 "shasum": ""
             },
             "type": "drupal-module",
@@ -109,7 +109,7 @@
                 "issues": "https://www.drupal.org/project/issues/tito",
                 "source": "http://cgit.drupalcode.org/tito"
             },
-            "time": "2020-02-12T19:44:50+00:00"
+            "time": "2020-02-23T15:46:32+00:00"
         },
         {
             "name": "brumann/polyfill-unserialize",
