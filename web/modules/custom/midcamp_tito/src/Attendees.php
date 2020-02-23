@@ -48,6 +48,7 @@ class Attendees {
   public function sync($tito_slug, $tito_event_id, $event_status) {
     // If the event is not active, to not attempt to sync attendees.
     if ($this->activeEvent($event_status) == FALSE) {
+      \Drupal::logger('midcamp_tito')->info('Event "%event" not active.', ['%event' => $tito_event_id]);
       return;
     }
 
@@ -67,8 +68,18 @@ class Attendees {
     }
     while ($page = end($results)['meta']['next_page']);
 
+    if (empty($results)) {
+      \Drupal::logger('midcamp_tito')->info('No attendees returned for event "%event"', ['%event' => $tito_event_id]);
+      return;
+    }
+
     foreach ($results as $result) {
       $attendees = array_merge($attendees, $result['tickets']);
+    }
+
+    if (!$attendees) {
+      \Drupal::logger('midcamp_tito')->info('No attendees returned for event "%event"', ['%event' => $tito_event_id]);
+      return;
     }
 
     // Gather user preferences on site display. This is ugly, but the API is

@@ -20,6 +20,8 @@ class Status {
 
   /**
    * Constructs a new Status object.
+   *
+   * @param \Drupal\tito\Client $tito_client
    */
   public function __construct(Client $tito_client) {
     $this->titoClient = $tito_client;
@@ -54,6 +56,8 @@ class Status {
    * Update an Event Term.
    *
    * @param \Drupal\taxonomy\Entity\Term $event
+   *
+   * @throws \Drupal\Core\Entity\EntityStorageException
    */
   public function update(Term $event) {
     // Call the API to check the event status
