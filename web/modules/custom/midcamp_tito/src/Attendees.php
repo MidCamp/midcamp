@@ -46,13 +46,11 @@ class Attendees {
    * @throws \Drupal\Core\Entity\EntityStorageException
    */
   public function sync($tito_slug, $tito_event_id, $event_status) {
-    // If the event is not active, to not attempt to sync attendees.
+    // If the event is not active, do not attempt to sync attendees.
     if ($this->activeEvent($event_status) == FALSE) {
       \Drupal::logger('midcamp_tito')->info('Event "%event" not active.', ['%event' => $tito_event_id]);
       return;
     }
-
-    $entityStorage = $this->entityTypeManager->getStorage('node');
 
     // Define an array to capture attendees.
     $attendees = [];
@@ -89,57 +87,23 @@ class Attendees {
     sleep(1);
     $attendeePreferences = $this->getQuestion($tito_slug, $tito_event_id, $question);
 
+    $batch = [
+      'title' => t('Bulk importing attendees'),
+      // Leave this empty for now, but maybe look to the Pathauto example and put a starter on here...
+      'operations' => [],
+      'finished' => 'Drupal\midcamp_tito\Attendees::batchFinished',
+    ];
+
     // Iterate over each page of response results to load user data.
     foreach ($attendees as $attendee) {
       if (!isset($attendee['id'])) {
-        return;
-      }
-
-      // Check for existing attendee node so we can update existing.
-      $query = \Drupal::entityQuery('node');
-      $queryResult = $query
-        ->condition('type', 'attendee')
-        ->condition('field_attendee_id', $attendee['id'])
-        ->execute();
-
-      $entityNid = is_array($queryResult) ? current($queryResult) : null;
-      $entity = is_numeric($entityNid) ? $entityStorage->load($entityNid) : null;
-
-      if ($entity) {
-        $entity->set('field_attendee_id', $attendee['id']);
-        $entity->set('field_name', $attendee['name']);
-        $entity->set('field_first_name', $attendee['first_name']);
-        $entity->set('field_last_name', $attendee['last_name']);
-        $entity->set('field_organization', isset($attendee['company_name']) ? $attendee['company_name'] : '');
-        $entity->set('field_ticket_type', $attendee['release_title']);
-        $entity->set('field_drupal_user_account', isset($attendee['email']) ? $this->getUserIdByEmail($attendee['email']) : '');
-        $entity->set('field_ticket_state', $attendee['state']);
-        $entity->set('field_display_on_site', isset($attendee['id']) ? $this->userDisplayPreference($attendee['id'], $attendeePreferences) : TRUE);
-        $entity->set('status', isset($attendee['id']) ? $this->userDisplayPreference($attendee['id'], $attendeePreferences) : TRUE);
-        $entity->save();
-      }
-      else {
-        // Create the attendee if one does not yet exist.
-        $entity = Node::create([
-          'type' => 'attendee',
-          'title' => !empty($attendee['name']) ? $attendee['name'] : $attendee['id'],
-          'field_attendee_id' => $attendee['id'],
-          'field_drupal_user_account' => isset($attendee['email']) ? $this->getUserIdByEmail($attendee['email']) : '',
-          'field_name' => $attendee['name'],
-          'field_first_name' => $attendee['first_name'],
-          'field_last_name' => $attendee['last_name'],
-          'field_email' => isset($attendee['email']) ? $attendee['email'] : '',
-          'field_organization' => isset($attendee['company_name']) ? $attendee['company_name'] : '',
-          'field_ticket_type' => $attendee['release_title'],
-          'field_ticket_state' => $attendee['state'],
-          'field_event' => $this->getEventById($tito_event_id),
-          'field_display_on_site' => isset($attendee['id']) ? $this->userDisplayPreference($attendee['id'], $attendeePreferences) : TRUE,
-          'status' => isset($attendee['id']) ? $this->userDisplayPreference($attendee['id'], $attendeePreferences) : TRUE,
-        ]);
-        $entity->save();
+        $batch['operations'][] = ['Drupal\midcamp_tito\Attendees::batchProcess', [$attendee, $attendeePreferences, $tito_event_id]];
       }
     }
+
     \Drupal::logger('midcamp_tito')->info('Syncing attendees for event "%event"', ['%event' => $tito_event_id]);
+
+    batch_set($batch);
   }
 
   /**
@@ -245,6 +209,88 @@ class Attendees {
 
     // No answer or Yes answer returns TRUE.
     return TRUE;
+  }
+
+  /**
+   * Batch processing callback for event attendee sync.
+   *
+   * @param $attendee
+   * @param $attendeePreferences
+   * @param $tito_event_id
+   * @param $context
+   *
+   * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
+   * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
+   * @throws \Drupal\Core\Entity\EntityStorageException
+   */
+  protected function batchProcess($attendee, $attendeePreferences, $tito_event_id, &$context) {
+    // Check for existing attendee node so we can update existing.
+    $query = \Drupal::entityQuery('node');
+    $queryResult = $query
+      ->condition('type', 'attendee')
+      ->condition('field_attendee_id', $attendee['id'])
+      ->execute();
+
+    $entityNid = is_array($queryResult) ? current($queryResult) : null;
+    $entity = is_numeric($entityNid) ? $this->entityTypeManager->getStorage('node')->load($entityNid) : null;
+
+    if ($entity) {
+      $entity->set('field_attendee_id', $attendee['id']);
+      $entity->set('field_name', $attendee['name']);
+      $entity->set('field_first_name', $attendee['first_name']);
+      $entity->set('field_last_name', $attendee['last_name']);
+      $entity->set('field_organization', isset($attendee['company_name']) ? $attendee['company_name'] : '');
+      $entity->set('field_ticket_type', $attendee['release_title']);
+      $entity->set('field_drupal_user_account', isset($attendee['email']) ? $this->getUserIdByEmail($attendee['email']) : '');
+      $entity->set('field_ticket_state', $attendee['state']);
+      $entity->set('field_display_on_site', isset($attendee['id']) ? $this->userDisplayPreference($attendee['id'], $attendeePreferences) : TRUE);
+      $entity->set('status', isset($attendee['id']) ? $this->userDisplayPreference($attendee['id'], $attendeePreferences) : TRUE);
+      $entity->save();
+    }
+    else {
+      // Create the attendee if one does not yet exist.
+      $entity = Node::create([
+        'type' => 'attendee',
+        'title' => !empty($attendee['name']) ? $attendee['name'] : $attendee['id'],
+        'field_attendee_id' => $attendee['id'],
+        'field_drupal_user_account' => isset($attendee['email']) ? $this->getUserIdByEmail($attendee['email']) : '',
+        'field_name' => $attendee['name'],
+        'field_first_name' => $attendee['first_name'],
+        'field_last_name' => $attendee['last_name'],
+        'field_email' => isset($attendee['email']) ? $attendee['email'] : '',
+        'field_organization' => isset($attendee['company_name']) ? $attendee['company_name'] : '',
+        'field_ticket_type' => $attendee['release_title'],
+        'field_ticket_state' => $attendee['state'],
+        'field_event' => $this->getEventById($tito_event_id),
+        'field_display_on_site' => isset($attendee['id']) ? $this->userDisplayPreference($attendee['id'], $attendeePreferences) : TRUE,
+        'status' => isset($attendee['id']) ? $this->userDisplayPreference($attendee['id'], $attendeePreferences) : TRUE,
+      ]);
+      $entity->save();
+    }
+  }
+
+  /**
+   * Batch finished callback.
+   */
+  public function batchFinished($success, $results, $operations) {
+    if ($success) {
+      if ($results['updates']) {
+        \Drupal::service('messenger')->addMessage(\Drupal::translation()
+          ->formatPlural($results['updates'], 'Generated 1 attendee.', 'Generated @count attendees.'));
+      }
+      else {
+        \Drupal::service('messenger')
+          ->addMessage(t('No attendees to generate.'));
+      }
+    }
+    else {
+      $error_operation = reset($operations);
+      \Drupal::service('messenger')
+        ->addMessage(t('An error occurred while processing @operation with arguments : @args'), [
+          '@operation' => $error_operation[0],
+          '@args' => print_r($error_operation[0]),
+        ]);
+    }
   }
 
 }
