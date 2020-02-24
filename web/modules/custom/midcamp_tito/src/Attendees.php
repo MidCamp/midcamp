@@ -85,6 +85,8 @@ class Attendees {
     // Gather user preferences on site display. This is ugly, but the API is
     // very limited in this area.
     $question = 'show-on-the-public-attendees-listing';
+    // Honor the rate limit.
+    sleep(1);
     $attendeePreferences = $this->getQuestion($tito_slug, $tito_event_id, $question);
 
     // Iterate over each page of response results to load user data.
