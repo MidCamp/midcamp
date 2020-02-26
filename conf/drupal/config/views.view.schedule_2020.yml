@@ -647,7 +647,7 @@ display:
         description: ''
         expanded: false
         parent: 'menu_link_content:9aa75b79-01c2-41b7-ba8d-b3b46afb3eb8'
-        weight: -54
+        weight: -49
         context: '0'
         menu_name: midcamp-2020-navigation
     cache_metadata:
@@ -754,7 +754,7 @@ display:
         description: ''
         expanded: false
         parent: 'menu_link_content:9aa75b79-01c2-41b7-ba8d-b3b46afb3eb8'
-        weight: -53
+        weight: -48
         context: '0'
         menu_name: midcamp-2020-navigation
     cache_metadata:
@@ -1289,7 +1289,7 @@ display:
         description: ''
         expanded: false
         parent: 'menu_link_content:9aa75b79-01c2-41b7-ba8d-b3b46afb3eb8'
-        weight: -55
+        weight: -50
         context: '0'
         menu_name: midcamp-2020-navigation
       pager:
