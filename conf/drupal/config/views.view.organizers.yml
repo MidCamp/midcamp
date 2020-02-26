@@ -400,7 +400,7 @@ display:
         description: ''
         expanded: false
         parent: 'menu_link_content:8a08e9a9-1692-43db-8f38-b20ee4b9c7f0'
-        weight: 0
+        weight: -43
         context: '0'
         menu_name: midcamp-2020-navigation
       display_description: ''
