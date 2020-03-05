@@ -29,6 +29,15 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
+  field_event:
+    type: entity_reference_autocomplete
+    weight: 8
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_meta_tags:
     weight: 7
     settings: {  }
@@ -81,7 +90,6 @@ content:
 hidden:
   created: true
   field_accepted_confirmed: true
-  field_event: true
   path: true
   promote: true
   publish_on: true
