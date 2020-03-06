@@ -63,6 +63,8 @@ class Attendees {
         $query = $query . "&page=$page";
       }
       $results[] = $this->titoClient->request('get', "$tito_slug/$tito_event_id/tickets/", $query, []);
+      // Honor the rate limit.
+      sleep(1);
     }
     while ($page = end($results)['meta']['next_page']);
 

@@ -84,7 +84,7 @@ function midcamp_tito_entity_insert(EntityInterface $entity) {
 function midcamp_tito_entity_update(EntityInterface $entity) {
   if ($entity->bundle() == 'event') {
 
-    // If eventbrite_event_id is set, sync attendees.
+    // If field_event_id is set, sync attendees.
     $fields = $entity->getFields();
 
     if (!$fields['field_event_id']->isEmpty()) {
