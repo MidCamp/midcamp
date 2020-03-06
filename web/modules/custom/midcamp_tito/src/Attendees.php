@@ -83,8 +83,6 @@ class Attendees {
     // Gather user preferences on site display. This is ugly, but the API is
     // very limited in this area.
     $question = 'show-on-the-public-attendees-listing';
-    // Honor the rate limit.
-    sleep(1);
     $attendeePreferences = $this->getQuestion($tito_slug, $tito_event_id, $question);
 
     $batch = [
@@ -181,6 +179,8 @@ class Attendees {
         $query = $query . "&page=$page";
       }
       $results[] = $this->titoClient->request('get', "$tito_slug/$tito_event_id/questions/$question/answers", '', []);
+      // Honor the rate limit.
+      sleep(1);
     }
     while ($page = end($results)['meta']['next_page']);
 
