@@ -178,7 +178,7 @@ class Attendees {
       if (isset($page)) {
         $query = $query . "&page=$page";
       }
-      $results[] = $this->titoClient->request('get', "$tito_slug/$tito_event_id/questions/$question/answers", '', []);
+      $results[] = $this->titoClient->request('get', "$tito_slug/$tito_event_id/questions/$question/answers", $query, []);
       // Honor the rate limit.
       sleep(1);
     }
