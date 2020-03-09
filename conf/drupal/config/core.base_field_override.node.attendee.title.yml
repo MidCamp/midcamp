@@ -1,0 +1,18 @@
+uuid: 36ae1236-55b0-44d9-b204-c496a50d045f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.attendee
+id: node.attendee.title
+field_name: title
+entity_type: node
+bundle: attendee
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

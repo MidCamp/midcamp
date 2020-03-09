@@ -1,0 +1,128 @@
+<?php
+
+/**
+ * @file
+ * Contains midcamp_tito.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\taxonomy\Entity\Term;
+
+/**
+ * Implements hook_help().
+ */
+function midcamp_tito_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the midcamp_tito module.
+    case 'help.page.midcamp_tito':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Integrate with Tito API to sync event and attendee data') . '</p>';
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_entity_presave().
+ *
+ * Store the event status on the event entity.
+ *
+ * @param \Drupal\Core\Entity\EntityInterface $entity
+ */
+function midcamp_tito_entity_presave(EntityInterface $entity) {
+  if ($entity->bundle() == 'event') {
+    // If field_event_id is set, attempt to sync attendees.
+    $fields = $entity->getFields();
+    if (!$fields['field_tito_slug']->isEmpty() && !$fields['field_event_id']->isEmpty()) {
+      $slug = $fields['field_tito_slug']->getString();
+      $eventId = $fields['field_event_id']->getString();
+
+      // Check event status, save to entity.
+      $status_checker = \Drupal::service('midcamp_tito.status');
+      $event_status = $status_checker->check($slug, $eventId);
+
+      $entity->set('field_event_status', $event_status);
+    }
+  }
+}
+
+/**
+ * Implements hook_entity_insert().
+ *
+ * Check for attendees when creating an `event` term.
+ *
+ * @param \Drupal\Core\Entity\EntityInterface $entity
+ */
+function midcamp_tito_entity_insert(EntityInterface $entity) {
+  if ($entity->bundle() == 'event') {
+
+    // If field_event_id is set, sync attendees.
+    $fields = $entity->getFields();
+
+    if (!$fields['field_tito_slug']->isEmpty() && !$fields['field_event_id']->isEmpty()) {
+      $slug = $fields['field_tito_slug']->getString();
+      $event_id = $fields['field_event_id']->getString();
+      $event_status = $fields['field_event_status']->getString();
+
+      // Only sync for events that are live.
+      if ($event_status == 'live') {
+        $sync_service = \Drupal::service('midcamp_tito.attendees');
+        $sync_service->sync($slug, $event_id, $event_status);
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_entity_update().
+ *
+ * Check for attendees when updating an `eventbrite_event` node.
+ *
+ * @param \Drupal\Core\Entity\EntityInterface $entity
+ */
+function midcamp_tito_entity_update(EntityInterface $entity) {
+  if ($entity->bundle() == 'event') {
+
+    // If field_event_id is set, sync attendees.
+    $fields = $entity->getFields();
+
+    if (!$fields['field_event_id']->isEmpty()) {
+      $slug = $fields['field_tito_slug']->getString();
+      $event_id = $fields['field_event_id']->getString();
+      $event_status = $fields['field_event_status']->getString();
+
+      $sync_service = \Drupal::service('midcamp_tito.attendees');
+      $sync_service->sync($slug, $event_id, $event_status);
+    }
+  }
+}
+
+/**
+ * Implements hook_cron().
+ *
+ * Periodically update the attendee list by refreshing on cron.
+ */
+function midcamp_tito_cron() {
+
+  // Load all event terms with an event ID.
+  $event_tids = \Drupal::entityQuery('taxonomy_term')
+    ->condition('vid','event')
+    ->condition('field_event_id',NULL, 'IS NOT NULL')
+    ->execute();
+
+  $event_terms =  Term::loadMultiple($event_tids);
+
+  foreach ($event_terms as $event) {
+    // Update event status.
+    $status_service = \Drupal::service('midcamp_tito.status');
+    $status_service->update($event);
+
+    // Get the event ID and status and run the sync_attendees service.
+    $slug = $event->get('field_tito_slug')->value;
+    $event_id = $event->get('field_event_id')->value;
+    $event_status = $event->get('field_event_status')->value;
+    $sync_service = \Drupal::service('midcamp_tito.attendees');
+    $sync_service->sync($slug, $event_id, $event_status);
+  }
+}

@@ -1257,7 +1257,7 @@ display:
           inline: {  }
           separator: ''
           hide_empty: true
-      css_class: sponsor-group
+      css_class: 'sponsor-group clearfix'
     cache_metadata:
       max-age: 0
       contexts:

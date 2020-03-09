@@ -1,0 +1,71 @@
+uuid: caad2c28-42e9-4bdb-a3ce-df8cf31a3656
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.attendee.field_attendee_id
+    - field.field.node.attendee.field_display_on_site
+    - field.field.node.attendee.field_drupal_user_account
+    - field.field.node.attendee.field_email
+    - field.field.node.attendee.field_event
+    - field.field.node.attendee.field_first_name
+    - field.field.node.attendee.field_job_title
+    - field.field.node.attendee.field_last_name
+    - field.field.node.attendee.field_name
+    - field.field.node.attendee.field_organization
+    - field.field.node.attendee.field_ticket_state
+    - field.field.node.attendee.field_ticket_type
+    - node.type.attendee
+  module:
+    - user
+id: node.attendee.default
+targetEntityType: node
+bundle: attendee
+mode: default
+content:
+  field_event:
+    weight: 4
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_job_title:
+    weight: 2
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_name:
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_organization:
+    weight: 3
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_attendee_id: true
+  field_display_on_site: true
+  field_drupal_user_account: true
+  field_email: true
+  field_first_name: true
+  field_last_name: true
+  field_ticket_state: true
+  field_ticket_type: true

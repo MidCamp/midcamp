@@ -1,0 +1,23 @@
+uuid: ace8e1f4-3d4e-4ea6-b896-9e408e416a1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_on_site
+    - node.type.attendee
+id: node.attendee.field_display_on_site
+field_name: field_display_on_site
+entity_type: node
+bundle: attendee
+label: 'Display Preference'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes, it is okay to show me amongst the event attendees on the site.'
+  off_label: 'No, please do not list me amongst the event attendees on the site.'
+field_type: boolean

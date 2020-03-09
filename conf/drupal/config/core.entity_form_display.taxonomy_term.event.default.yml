@@ -7,16 +7,36 @@ dependencies:
     - field.field.taxonomy_term.event.field_banner_cta_authenticated
     - field.field.taxonomy_term.event.field_date
     - field.field.taxonomy_term.event.field_date_has_time
+    - field.field.taxonomy_term.event.field_event_id
+    - field.field.taxonomy_term.event.field_event_status
     - field.field.taxonomy_term.event.field_image
     - field.field.taxonomy_term.event.field_social_media
+    - field.field.taxonomy_term.event.field_tito_slug
     - image.style.thumbnail
     - taxonomy.vocabulary.event
   module:
     - datetime_range
+    - field_group
     - image
     - link
     - path
     - text
+third_party_settings:
+  field_group:
+    group_tito:
+      children:
+        - field_tito_slug
+        - field_event_id
+        - field_event_status
+      parent_name: ''
+      weight: 9
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: 'Enter the event "slug" from Tito.  The rest of the fields will be populated automatically. '
+        required_fields: false
+      label: Tito
 id: taxonomy_term.event.default
 targetEntityType: taxonomy_term
 bundle: event
@@ -31,7 +51,7 @@ content:
     third_party_settings: {  }
     region: content
   field_banner_cta_anonymous:
-    weight: 6
+    weight: 7
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -39,7 +59,7 @@ content:
     type: link_default
     region: content
   field_banner_cta_authenticated:
-    weight: 7
+    weight: 8
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -59,6 +79,22 @@ content:
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
+  field_event_id:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_event_status:
+    weight: 12
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_image:
     weight: 5
     settings:
@@ -68,12 +104,20 @@ content:
     type: image_image
     region: content
   field_social_media:
-    weight: 5
+    weight: 6
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_tito_slug:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   name:
     type: string_textfield

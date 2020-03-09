@@ -1,0 +1,19 @@
+uuid: 2d99a0c8-19c3-45f5-9655-8f8a7e765957
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ticket_type
+    - node.type.attendee
+id: node.attendee.field_ticket_type
+field_name: field_ticket_type
+entity_type: node
+bundle: attendee
+label: 'Ticket Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
