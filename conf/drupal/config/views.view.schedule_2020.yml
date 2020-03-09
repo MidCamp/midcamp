@@ -647,7 +647,7 @@ display:
         description: ''
         expanded: false
         parent: 'menu_link_content:9aa75b79-01c2-41b7-ba8d-b3b46afb3eb8'
-        weight: -54
+        weight: -49
         context: '0'
         menu_name: midcamp-2020-navigation
     cache_metadata:
@@ -754,7 +754,7 @@ display:
         description: ''
         expanded: false
         parent: 'menu_link_content:9aa75b79-01c2-41b7-ba8d-b3b46afb3eb8'
-        weight: -53
+        weight: -48
         context: '0'
         menu_name: midcamp-2020-navigation
     cache_metadata:
@@ -1222,7 +1222,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<div class=\"schedule__nav\">\r\n      <a href=\"/2020/schedule/wednesday\">Wednesday</a> | <a href=\"/2020/schedule/thursday\">Thursday</a> | <a href=\"/2020/schedule/friday\">Friday</a> | <a href=\"/2020/sprints\">Saturday</a>\r\n</div>\r\n<h2>Wednesday, March 18, 2020</h2>"
+            value: "<div class=\"schedule__nav\">\r\n      <a href=\"/2020/schedule/wednesday\">Wednesday</a> | <a href=\"/2020/schedule/thursday\">Thursday</a> | <a href=\"/2020/schedule/friday\">Friday</a> | <a href=\"/2020/contribution-day\">Saturday</a>\r\n</div>\r\n<h2>Wednesday, March 18, 2020</h2>\r\n<strong>Registration 8 am. Events run 9 am - 5 pm.</strong>"
             format: full_html
           plugin_id: text
       sorts:
@@ -1289,13 +1289,13 @@ display:
         description: ''
         expanded: false
         parent: 'menu_link_content:9aa75b79-01c2-41b7-ba8d-b3b46afb3eb8'
-        weight: -55
+        weight: -50
         context: '0'
         menu_name: midcamp-2020-navigation
       pager:
         type: some
         options:
-          items_per_page: 4
+          items_per_page: 6
           offset: 0
     cache_metadata:
       max-age: -1

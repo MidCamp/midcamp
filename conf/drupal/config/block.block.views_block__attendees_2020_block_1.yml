@@ -1,0 +1,30 @@
+uuid: e8af6cc5-2038-4d24-82ec-2e0b3e6d004a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.attendees_2020
+  module:
+    - system
+    - views
+  theme:
+    - hatter_2019
+id: views_block__attendees_2020_block_1
+theme: hatter_2019
+region: content
+weight: 4
+provider: null
+plugin: 'views_block:attendees_2020-block_1'
+settings:
+  id: 'views_block:attendees_2020-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /2020/sponsors
+    negate: false
+    context_mapping: {  }

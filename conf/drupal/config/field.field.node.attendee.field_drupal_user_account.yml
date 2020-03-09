@@ -1,0 +1,28 @@
+uuid: f1768f7f-5ec1-46e6-bca3-a222cba89730
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_drupal_user_account
+    - node.type.attendee
+id: node.attendee.field_drupal_user_account
+field_name: field_drupal_user_account
+entity_type: node
+bundle: attendee
+label: 'Drupal User Account'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

@@ -14,6 +14,10 @@
             "type": "vcs",
             "url": "https://github.com/Brian-Clement/eventbrite_events.git"
         },
+        "tito": {
+            "type": "vcs",
+            "url": "https://github.com/Brian-Clement/tito.git"
+        },
         "hatter-styleguide": {
             "type": "vcs",
             "url": "https://github.com/midcamp/hatter.git"
@@ -33,6 +37,7 @@
     },
     "require": {
         "brian-clement/eventbrite_events": "dev-master",
+        "brian-clement/tito": "dev-master",
         "composer/installers": "^1.0",
         "cweagans/composer-patches": "~1.0",
         "drupal-composer/drupal-scaffold": "^2.3",

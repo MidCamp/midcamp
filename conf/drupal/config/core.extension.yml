@@ -51,6 +51,7 @@ module:
   metatag: 0
   metatag_open_graph: 0
   midcamp_event_label_block: 0
+  midcamp_tito: 0
   midcamp_utility: 0
   midcamp_vbo: 0
   name: 0
@@ -70,6 +71,7 @@ module:
   system: 0
   taxonomy: 0
   text: 0
+  tito: 0
   token: 0
   toolbar: 0
   tour: 0

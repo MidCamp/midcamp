@@ -1,0 +1,19 @@
+uuid: 3e853f13-51a9-496e-987a-4d6846bff0e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.attendee
+id: node.attendee.field_email
+field_name: field_email
+entity_type: node
+bundle: attendee
+label: email
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

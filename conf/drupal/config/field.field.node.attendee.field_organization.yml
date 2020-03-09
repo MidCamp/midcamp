@@ -1,0 +1,19 @@
+uuid: dae0b07b-7010-4e63-816b-11c3294b1dc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organization
+    - node.type.attendee
+id: node.attendee.field_organization
+field_name: field_organization
+entity_type: node
+bundle: attendee
+label: Organization
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
