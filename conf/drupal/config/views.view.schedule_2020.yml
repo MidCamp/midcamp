@@ -636,7 +636,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<div class=\"schedule__nav\">\r\n      <a href=\"/2020/schedule/wednesday\">Wednesday</a> | <a href=\"/2020/schedule/thursday\">Thursday</a> | <a href=\"/2020/schedule/friday\">Friday</a> | <a href=\"/2020/contribution-day\">Saturday</a>\r\n</div>\r\n<h2>Thursday, March 19, 2020</h2>"
+            value: "<div class=\"schedule__nav\">\r\n      <!--a href=\"/2020/schedule/wednesday\">Wednesday</a> | --><a href=\"/2020/schedule/thursday\">Thursday</a> | <a href=\"/2020/schedule/friday\">Friday</a> | <a href=\"/2020/contribution-day\">Saturday</a>\r\n</div>\r\n<h2>Thursday, March 19, 2020</h2>"
             format: full_html
           plugin_id: text
       defaults:
@@ -681,7 +681,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<div class=\"schedule__nav\">\r\n      <a href=\"/2020/schedule/wednesday\">Wednesday</a> | <a href=\"/2020/schedule/thursday\">Thursday</a> | <a href=\"/2020/schedule/friday\">Friday</a> | <a href=\"/2020/contribution-day\">Saturday</a>\r\n</div>\r\n<h2>Friday, March 20, 2020</h2>"
+            value: "<div class=\"schedule__nav\">\r\n      <!--a href=\"/2020/schedule/wednesday\">Wednesday</a> | --><a href=\"/2020/schedule/thursday\">Thursday</a> | <a href=\"/2020/schedule/friday\">Friday</a> | <a href=\"/2020/contribution-day\">Saturday</a>\r\n</div>\r\n<h2>Friday, March 20, 2020</h2>"
             format: full_html
           plugin_id: text
       defaults:
@@ -1222,7 +1222,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<div class=\"schedule__nav\">\r\n      <a href=\"/2020/schedule/wednesday\">Wednesday</a> | <a href=\"/2020/schedule/thursday\">Thursday</a> | <a href=\"/2020/schedule/friday\">Friday</a> | <a href=\"/2020/contribution-day\">Saturday</a>\r\n</div>\r\n<h2>Wednesday, March 18, 2020</h2>\r\n<strong>Registration 8 am. Events run 9 am - 5 pm.</strong>"
+            value: "<div class=\"schedule__nav\">\r\n      <!--a href=\"/2020/schedule/wednesday\">Wednesday</a> | --><a href=\"/2020/schedule/thursday\">Thursday</a> | <a href=\"/2020/schedule/friday\">Friday</a> | <a href=\"/2020/contribution-day\">Saturday</a>\r\n</div>\r\n<h2>Wednesday, March 18, 2020</h2>\r\n<strong>Registration 8 am. Events run 9 am - 5 pm.</strong>"
             format: full_html
           plugin_id: text
       sorts:
@@ -1292,6 +1292,7 @@ display:
         weight: -50
         context: '0'
         menu_name: midcamp-2020-navigation
+        enabled: false
       pager:
         type: some
         options:
