@@ -114,6 +114,17 @@ function hatter_base_preprocess_field(array &$variables, $hook) {
         }
       }
       break;
+    case 'field_link':
+      // Add button class to `field_link` for `location` terms' `topic_page`
+      // display.
+      if ($variables['entity_type'] == 'taxonomy_term'
+        && $variables['element']['#bundle'] == 'location'
+        && $variables['element']['#view_mode'] == 'topic_page') {
+        foreach (\Drupal\Core\Render\Element::children($variables['element']) as $id) {
+          $variables['items'][$id]['content']['#options']['attributes']['class'][] = 'button--primary';
+        }
+      }
+      break;
   }
 }
 
