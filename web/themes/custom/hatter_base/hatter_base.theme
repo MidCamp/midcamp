@@ -9,7 +9,13 @@
  * Implements THEME_theme_suggestions_HOOK_alter() for taxonomy terms.
  */
 function hatter_base_theme_suggestions_taxonomy_term_alter(&$suggestions, $vars, $hook) {
-  $suggestions[] = 'taxonomy_term__' . $vars['elements']['#view_mode'];
+  // Include bundles and view modes in template suggestions.
+  $element = $vars['elements'];
+  /** @var \Drupal\taxonomy\Entity\Term $term */
+  $term = $element['#taxonomy_term'];
+  $view_mode = $element['#view_mode'];
+  $bundle = $term->bundle();
+  $suggestions[] = 'taxonomy_term__' . $bundle . '__' . $view_mode;
 }
 
 /**
