@@ -6,6 +6,10 @@
 %}
 <div{{ attributes.setAttribute('id', 'taxonomy-term-' ~ term.id).addClass(classes) }}>
   <div class="content">
-    {{ content }}
+    {% if content.field_link|render %}
+      {{ content }}
+    {% else %}
+      {{ name }}
+    {% endif %}
   </div>
 </div>
