@@ -8,7 +8,7 @@
 /**
  * Implements THEME_theme_suggestions_HOOK_alter() for taxonomy terms.
  */
-function hatter__base_theme_suggestions_taxonomy_term_alter(&$suggestions, $vars, $hook) {
+function hatter_base_theme_suggestions_taxonomy_term_alter(&$suggestions, $vars, $hook) {
   $suggestions[] = 'taxonomy_term__' . $vars['elements']['#view_mode'];
 }
 
