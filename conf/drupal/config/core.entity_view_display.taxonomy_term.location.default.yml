@@ -5,45 +5,11 @@ dependencies:
   config:
     - field.field.taxonomy_term.location.field_link
     - taxonomy.vocabulary.location
-  module:
-    - linkicon
-    - text
 id: taxonomy_term.location.default
 targetEntityType: taxonomy_term
 bundle: location
 mode: default
-content:
-  description:
-    label: hidden
-    type: text_default
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_link:
-    weight: 1
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-      linkicon_prefix: icon
-      linkicon_wrapper_class: ''
-      linkicon_load: false
-      linkicon_vertical: false
-      linkicon_style: ''
-      linkicon_color: ''
-      linkicon_tooltip: false
-      linkicon_maxlength: 60
-      linkicon_no_text: false
-      linkicon_position: ''
-      linkicon_link: false
-      linkicon_global_title: ''
-      linkicon_size: ''
-      linkicon_bundle: ''
-    third_party_settings: {  }
-    type: linkicon
-    region: content
-hidden: {  }
+content: {  }
+hidden:
+  description: true
+  field_link: true
