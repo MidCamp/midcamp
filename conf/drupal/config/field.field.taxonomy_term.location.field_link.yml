@@ -1,0 +1,24 @@
+uuid: 1c69c90d-f46e-460a-b3b9-a3d6f3bbf66f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_link
+    - taxonomy.vocabulary.location
+  module:
+    - link
+id: taxonomy_term.location.field_link
+field_name: field_link
+entity_type: taxonomy_term
+bundle: location
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 5
+  title_predefined: 'Go to [term:name]'
+field_type: link
