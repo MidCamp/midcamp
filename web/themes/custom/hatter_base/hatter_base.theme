@@ -8,8 +8,14 @@
 /**
  * Implements THEME_theme_suggestions_HOOK_alter() for taxonomy terms.
  */
-function hatter__base_theme_suggestions_taxonomy_term_alter(&$suggestions, $vars, $hook) {
-  $suggestions[] = 'taxonomy_term__' . $vars['elements']['#view_mode'];
+function hatter_base_theme_suggestions_taxonomy_term_alter(&$suggestions, $vars, $hook) {
+  // Include bundles and view modes in template suggestions.
+  $element = $vars['elements'];
+  /** @var \Drupal\taxonomy\Entity\Term $term */
+  $term = $element['#taxonomy_term'];
+  $view_mode = $element['#view_mode'];
+  $bundle = $term->bundle();
+  $suggestions[] = 'taxonomy_term__' . $bundle . '__' . $view_mode;
 }
 
 /**
@@ -111,6 +117,17 @@ function hatter_base_preprocess_field(array &$variables, $hook) {
           $term = Drupal\taxonomy\Entity\Term::load($organization_tid);
 
           $variables['org_name'] = $term->getName();
+        }
+      }
+      break;
+    case 'field_link':
+      // Add button class to `field_link` for `location` terms' `topic_page`
+      // display.
+      if ($variables['entity_type'] == 'taxonomy_term'
+        && $variables['element']['#bundle'] == 'location'
+        && $variables['element']['#view_mode'] == 'topic_page') {
+        foreach (\Drupal\Core\Render\Element::children($variables['element']) as $id) {
+          $variables['items'][$id]['content']['#options']['attributes']['class'][] = 'button--primary';
         }
       }
       break;

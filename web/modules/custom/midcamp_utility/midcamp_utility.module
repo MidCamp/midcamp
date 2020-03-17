@@ -80,3 +80,23 @@ function midcamp_utility_views_pre_view(ViewExecutable $view, $display_id, array
     }
   }
 }
+
+/**
+ * Implements hook_entity_view_mode_alter().
+ */
+function midcamp_utility_entity_view_mode_alter(&$view_mode, Drupal\Core\Entity\EntityInterface $entity, $context) {
+  // Change view modes for `location` terms referenced on Topic nodes.
+  if ($entity->getEntityTypeId() == 'taxonomy_term'
+    && $entity->bundle() == 'location' && $view_mode == 'default') {
+    /** @var \Drupal\node\Entity\Node $parent_entity */
+    if (isset($entity->_referringItem) && $parent_entity = $entity->_referringItem->getParent()->getEntity()) {
+      $event = $parent_entity->get('field_event')->getValue();
+      $event = reset($event);
+      // Check if we are on a 2020 Topic (identified by tid 143), and set the
+      // view mode appropriately.
+      if ($event['target_id'] == '143') {
+        $view_mode = 'topic_page';
+      }
+    }
+  }
+}

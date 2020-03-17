@@ -1,0 +1,36 @@
+uuid: 7a577039-26e0-473e-9676-9db37c6e27f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.topic_page
+    - field.field.taxonomy_term.location.field_link
+    - taxonomy.vocabulary.location
+  module:
+    - link
+    - text
+id: taxonomy_term.location.topic_page
+targetEntityType: taxonomy_term
+bundle: location
+mode: topic_page
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_link:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: null
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }
