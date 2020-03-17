@@ -59,7 +59,7 @@ You can run `drush` commands from anywhere within the repository, as long as you
 To get up and running locally, the easiest thing to do is update from the production database with:
 
 ```bash
-drush sql-sync @production @self
+dsql @production
 ```
 
 If you want the files too, use:
@@ -122,6 +122,8 @@ Sometimes we need to apply patches from the Drupal.org issue queues. These patch
   * This should be configured to show the same errors triggered by Code Climate that you see on the Pull Request.
 
 ## Troubleshooting
+
+Be sure to visit the [Troubleshooting page](https://docs.amazee.io/local_docker_development/troubleshooting.html)
 
 ### Cannot connect to Docker daemon
 If you get the following error from `pygmy up`:
