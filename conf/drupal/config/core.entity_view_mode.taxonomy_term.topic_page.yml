@@ -1,0 +1,10 @@
+uuid: d9d868af-ef55-44cb-a7f0-2f51cdc3c84b
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.topic_page
+label: 'Topic Page'
+targetEntityType: taxonomy_term
+cache: true

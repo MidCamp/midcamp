@@ -1,0 +1,15 @@
+{%
+  set classes = [
+  'taxonomy-term',
+  'vocabulary-' ~ term.bundle|clean_class,
+]
+%}
+<div{{ attributes.setAttribute('id', 'taxonomy-term-' ~ term.id).addClass(classes) }}>
+  <div class="content">
+    {% if content.field_link|render %}
+      {{ content }}
+    {% else %}
+      {{ name }}
+    {% endif %}
+  </div>
+</div>
