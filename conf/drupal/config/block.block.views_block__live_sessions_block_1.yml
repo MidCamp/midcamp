@@ -12,7 +12,7 @@ dependencies:
 id: views_block__live_sessions_block_1
 theme: hatter_2019
 region: content
-weight: -21
+weight: -20
 provider: null
 plugin: 'views_block:live_sessions-block_1'
 settings:
