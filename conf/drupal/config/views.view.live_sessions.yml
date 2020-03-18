@@ -1,25 +1,24 @@
-uuid: 2f550ee3-c8bd-4dbe-a5e0-1c8a21615849
+uuid: 2ea8d1d1-0917-4fc7-b63b-2379a06541c6
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_job_title
-    - field.storage.node.field_organization
-    - field.storage.user.field_organization
-    - field.storage.user.field_title
-    - field.storage.user.user_picture
-    - node.type.attendee
-    - system.menu.midcamp-2020-navigation
+    - field.storage.node.field_people
+    - field.storage.node.field_schedule_location
+    - field.storage.node.field_schedule_time
+    - field.storage.node.field_track
+    - node.type.topic
     - taxonomy.vocabulary.event
   content:
     - 'taxonomy_term:event:edb1c63f-3af1-4ce3-b9d0-55336993e692'
   module:
-    - image
+    - datetime
+    - datetime_range
     - node
     - taxonomy
     - user
-id: attendees_2020
-label: 'Attendees 2020'
+id: live_sessions
+label: 'Live Sessions'
 module: views
 description: ''
 tag: ''
@@ -59,49 +58,37 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
-        type: full
+        type: some
         options:
-          items_per_page: 15
+          items_per_page: 0
           offset: 0
-          id: 0
-          total_pages: null
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          quantity: 5
       style:
         type: default
         options:
-          grouping: {  }
-          row_class: 'speaker-item l-3up'
-          default_row_class: true
+          grouping:
+            -
+              field: field_schedule_time
+              rendered: false
+              rendered_strip: false
+          row_class: schedule__teaser
+          default_row_class: false
       row:
         type: fields
         options:
-          default_field_elements: true
+          default_field_elements: false
           inline: {  }
           separator: ''
           hide_empty: false
       fields:
-        user_picture:
-          id: user_picture
-          table: user__user_picture
-          field: user_picture
-          relationship: field_drupal_user_account
+        field_schedule_time:
+          id: field_schedule_time
+          table: node__field_schedule_time
+          field: field_schedule_time
+          relationship: none
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -137,16 +124,80 @@ display:
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
-          empty: '<img src="/themes/custom/hatter/imgs/hatter.jpg" height="250" width="250" />'
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: daterange_default
+          settings:
+            timezone_override: ''
+            format_type: time_only
+            separator: '-'
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_track:
+          id: field_track
+          table: node__field_track
+          field: field_track
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: div
+          element_class: schedule__track
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: entity_reference_label
           settings:
-            image_style: ''
-            image_link: ''
-          group_column: ''
+            link: false
+          group_column: target_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -193,14 +244,14 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
-          element_class: ''
+          element_type: h3
+          element_class: schedule__title
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -208,7 +259,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: false
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -222,200 +273,11 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-        field_job_title:
-          id: field_job_title
-          table: node__field_job_title
-          field: field_job_title
+        field_people:
+          id: field_people
+          table: node__field_people
+          field: field_people
           relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: true
-            text: '{{ field_job_title }} @'
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: false
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_title:
-          id: field_title
-          table: user__field_title
-          field: field_title
-          relationship: field_drupal_user_account
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: true
-            text: '{{ field_title }} @'
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: '{{ job_title }}'
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: false
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_organization:
-          id: field_organization
-          table: node__field_organization
-          field: field_organization
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: false
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_organization_1:
-          id: field_organization_1
-          table: user__field_organization
-          field: field_organization
-          relationship: field_drupal_user_account
           group_type: group
           admin_label: ''
           label: ''
@@ -454,15 +316,78 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
-          empty: '{{ field_organization }}'
+          element_default_classes: false
+          empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: entity_reference_label
+          type: entity_reference_entity_view
           settings:
-            link: false
+            view_mode: schedule
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_schedule_location:
+          id: field_schedule_location
+          table: node__field_schedule_location
+          field: field_schedule_location
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: div
+          element_class: schedule__room
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_entity_view
+          settings:
+            view_mode: topic_page
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -491,11 +416,10 @@ display:
           table: node_field_data
           field: type
           value:
-            attendee: attendee
+            topic: topic
           entity_type: node
           entity_field: type
           plugin_id: bundle
-          group: 1
         field_event_target_id:
           id: field_event_target_id
           table: node__field_event
@@ -505,7 +429,7 @@ display:
           admin_label: ''
           operator: or
           value:
-            - 143
+            143: 143
           group: 1
           exposed: false
           expose:
@@ -534,206 +458,25 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
+          type: select
           limit: true
           vid: event
           hierarchy: false
           error_message: true
           plugin_id: taxonomy_index_tid
-        field_ticket_type_value:
-          id: field_ticket_type_value
-          table: node__field_ticket_type
-          field: field_ticket_type_value
+        field_schedule_time_value:
+          id: field_schedule_time_value
+          table: node__field_schedule_time
+          field: field_schedule_time_value
           relationship: none
           group_type: group
           admin_label: ''
-          operator: '='
-          value: 'The Worm'
-          group: 2
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          plugin_id: string
-        field_ticket_type_value_1:
-          id: field_ticket_type_value_1
-          table: node__field_ticket_type
-          field: field_ticket_type_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value: Alice
-          group: 2
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          plugin_id: string
-        field_ticket_type_value_2:
-          id: field_ticket_type_value_2
-          table: node__field_ticket_type
-          field: field_ticket_type_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value: 'The Rabbit'
-          group: 2
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          plugin_id: string
-        field_ticket_type_value_3:
-          id: field_ticket_type_value_3
-          table: node__field_ticket_type
-          field: field_ticket_type_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value: Student
-          group: 2
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          plugin_id: string
-        field_ticket_type_value_4:
-          id: field_ticket_type_value_4
-          table: node__field_ticket_type
-          field: field_ticket_type_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value: Sponsored
-          group: 2
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          plugin_id: string
-        field_first_name_value:
-          id: field_first_name_value
-          table: node__field_first_name
-          field: field_first_name_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: 'not empty'
-          value: ''
+          operator: '<='
+          value:
+            min: now
+            max: 'now +5 days'
+            value: now
+            type: offset
           group: 1
           exposed: false
           expose:
@@ -749,6 +492,8 @@ display:
             remember_roles:
               authenticated: authenticated
             placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -761,58 +506,160 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: string
-      sorts: {  }
-      title: 'MidCamp 2020 Attendees'
-      header: {  }
-      footer: {  }
-      empty: {  }
-      relationships:
-        field_drupal_user_account:
-          id: field_drupal_user_account
-          table: node__field_drupal_user_account
-          field: field_drupal_user_account
+          plugin_id: datetime
+        field_schedule_time_end_value:
+          id: field_schedule_time_end_value
+          table: node__field_schedule_time
+          field: field_schedule_time_end_value
           relationship: none
           group_type: group
-          admin_label: User
-          required: false
-          plugin_id: standard
+          admin_label: ''
+          operator: '>='
+          value:
+            min: now
+            max: 'now +6 days'
+            value: now
+            type: offset
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: datetime
+      sorts:
+        field_schedule_time_value:
+          id: field_schedule_time_value
+          table: node__field_schedule_time
+          field: field_schedule_time_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
+          plugin_id: datetime
+      title: 'Live Sessions'
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<h2 class=\"banner-title\">Sessions Live Now</h2>\r\n<hr />"
+            format: full_html
+          plugin_id: text
+      footer: {  }
+      empty: {  }
+      relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
-          2: OR
+      css_class: schedule
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_job_title'
-        - 'config:field.storage.node.field_organization'
-        - 'config:field.storage.user.field_organization'
-        - 'config:field.storage.user.field_title'
-        - 'config:field.storage.user.user_picture'
+        - 'config:field.storage.node.field_people'
+        - 'config:field.storage.node.field_schedule_location'
+        - 'config:field.storage.node.field_schedule_time'
+        - 'config:field.storage.node.field_track'
   block_1:
     display_plugin: block
     id: block_1
-    display_title: 'Individual Sponsor Block'
+    display_title: Block
+    position: 1
+    display_options:
+      display_extenders: {  }
+      block_description: 'Live Sessions: Live Now'
+      footer:
+        view:
+          id: view
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          view_to_insert: 'live_sessions:block_2'
+          inherit_arguments: false
+          plugin_id: view
+      defaults:
+        footer: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_people'
+        - 'config:field.storage.node.field_schedule_location'
+        - 'config:field.storage.node.field_schedule_time'
+        - 'config:field.storage.node.field_track'
+  block_2:
+    display_plugin: block
+    id: block_2
+    display_title: 'Block 2'
     position: 2
     display_options:
       display_extenders: {  }
-      title: 'Individual Sponsors'
+      title: 'Sessions Coming Next'
       defaults:
         title: false
+        header: false
         filters: false
         filter_groups: false
-        pager: false
-        css_class: false
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<h2 class=\"banner-title\">Sessions Coming Up</h2>\r\n<hr />"
+            format: full_html
+          plugin_id: text
       filters:
         status:
           value: '1'
@@ -830,11 +677,10 @@ display:
           table: node_field_data
           field: type
           value:
-            attendee: attendee
+            topic: topic
           entity_type: node
           entity_field: type
           plugin_id: bundle
-          group: 1
         field_event_target_id:
           id: field_event_target_id
           table: node__field_event
@@ -844,7 +690,7 @@ display:
           admin_label: ''
           operator: or
           value:
-            - 143
+            143: 143
           group: 1
           exposed: false
           expose:
@@ -873,21 +719,25 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
+          type: select
           limit: true
           vid: event
           hierarchy: false
           error_message: true
           plugin_id: taxonomy_index_tid
-        field_first_name_value:
-          id: field_first_name_value
-          table: node__field_first_name
-          field: field_first_name_value
+        field_schedule_time_value:
+          id: field_schedule_time_value
+          table: node__field_schedule_time
+          field: field_schedule_time_value
           relationship: none
           group_type: group
           admin_label: ''
-          operator: 'not empty'
-          value: ''
+          operator: '>='
+          value:
+            min: now
+            max: 'now +5 days'
+            value: 'now +1 minute'
+            type: offset
           group: 1
           exposed: false
           expose:
@@ -903,6 +753,8 @@ display:
             remember_roles:
               authenticated: authenticated
             placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -915,16 +767,20 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: string
-        field_ticket_type_value:
-          id: field_ticket_type_value
-          table: node__field_ticket_type
-          field: field_ticket_type_value
+          plugin_id: datetime
+        field_schedule_time_end_value:
+          id: field_schedule_time_end_value
+          table: node__field_schedule_time
+          field: field_schedule_time_end_value
           relationship: none
           group_type: group
           admin_label: ''
-          operator: '='
-          value: 'Individual Sponsor (add-on)'
+          operator: '<='
+          value:
+            min: now
+            max: 'now +6 days'
+            value: 'now +2 hours'
+            type: offset
           group: 1
           exposed: false
           expose:
@@ -940,6 +796,8 @@ display:
             remember_roles:
               authenticated: authenticated
             placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -952,18 +810,11 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: string
+          plugin_id: datetime
       filter_groups:
         operator: AND
         groups:
           1: AND
-      block_description: 'MidCamp 2020 Individual Sponsors'
-      pager:
-        type: none
-        options:
-          offset: 0
-      css_class: ''
-      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:
@@ -973,42 +824,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_job_title'
-        - 'config:field.storage.node.field_organization'
-        - 'config:field.storage.user.field_organization'
-        - 'config:field.storage.user.field_title'
-        - 'config:field.storage.user.user_picture'
-  page_1:
-    display_plugin: page
-    id: page_1
-    display_title: 'Attendee Page'
-    position: 1
-    display_options:
-      display_extenders: {  }
-      path: 2020/attendees
-      menu:
-        type: normal
-        title: Attendees
-        description: ''
-        expanded: false
-        parent: 'menu_link_content:8a08e9a9-1692-43db-8f38-b20ee4b9c7f0'
-        weight: 0
-        context: '0'
-        menu_name: midcamp-2020-navigation
-        enabled: false
-      display_description: ''
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - url.query_args
-        - user
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.field_job_title'
-        - 'config:field.storage.node.field_organization'
-        - 'config:field.storage.user.field_organization'
-        - 'config:field.storage.user.field_title'
-        - 'config:field.storage.user.user_picture'
+        - 'config:field.storage.node.field_people'
+        - 'config:field.storage.node.field_schedule_location'
+        - 'config:field.storage.node.field_schedule_time'
+        - 'config:field.storage.node.field_track'

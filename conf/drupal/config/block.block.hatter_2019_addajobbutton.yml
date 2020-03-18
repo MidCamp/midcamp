@@ -13,7 +13,7 @@ dependencies:
 id: hatter_2019_addajobbutton
 theme: hatter_2019
 region: content
-weight: -14
+weight: -13
 provider: null
 plugin: 'block_content:de1557a6-167f-41a3-945d-05e977e71f1c'
 settings:
