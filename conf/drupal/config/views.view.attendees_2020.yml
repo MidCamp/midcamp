@@ -995,6 +995,7 @@ display:
         weight: 0
         context: '0'
         menu_name: midcamp-2020-navigation
+        enabled: false
       display_description: ''
     cache_metadata:
       max-age: -1
