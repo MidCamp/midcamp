@@ -12,7 +12,7 @@ id: movie_suggestions
 title: 'Movie Suggestions'
 description: 'A virtual &quot;submit a suggestion&quot; box for which movie to watch on movie night.'
 category: ''
-elements: "movie_titles:\n  '#type': textarea\n  '#title': 'Movie Title(s)'\n  '#description': 'Please enter one movie title per line. Movie must be available on Netflix.'\n  '#required': true"
+elements: "movie_titles:\n  '#type': textarea\n  '#title': 'Movie Title(s)'\n  '#description': 'Please enter one movie title per line. Movie must be available on Netflix or in the <a href=\"https://en.wikipedia.org/wiki/List_of_films_in_the_public_domain_in_the_United_States\">public domain</a>.'\n  '#required': true"
 css: ''
 javascript: ''
 settings:

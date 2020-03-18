@@ -42,7 +42,7 @@ content:
     weight: 9
     label: hidden
     settings:
-      image_style: featured_speaker
+      image_style: large
       image_link: ''
     third_party_settings: {  }
     type: image
