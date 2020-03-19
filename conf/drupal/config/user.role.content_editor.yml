@@ -113,6 +113,7 @@ permissions:
   - 'use session_proposal transition publish'
   - 'use session_proposal transition submitted_proposal'
   - 'use session_review transition accept_session'
+  - 'use text format full_html'
   - 'use text format mailchimp_campaign'
   - 'view all revisions'
   - 'view any unpublished content'
