@@ -6,7 +6,7 @@ dependencies:
     - node.type.topic
     - taxonomy.vocabulary.event
   content:
-    - 'taxonomy_term:event:17285735-fe51-4f45-b481-321ae7af649f'
+    - 'taxonomy_term:event:edb1c63f-3af1-4ce3-b9d0-55336993e692'
   module:
     - node
     - taxonomy
@@ -197,7 +197,7 @@ display:
           admin_label: ''
           operator: or
           value:
-            - 97
+            - 143
           group: 1
           exposed: false
           expose:
