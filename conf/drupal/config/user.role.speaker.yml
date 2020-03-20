@@ -7,5 +7,6 @@ label: Speaker
 weight: -8
 is_admin: null
 permissions:
+  - 'edit own field_video'
   - 'edit own topic content'
   - 'use session_proposal transition submitted_proposal'
