@@ -25,6 +25,14 @@ From inside the project root, run:
 
 Visit [midcamp.org.docker.amazee.io](http://midcamp.org.docker.amazee.io) in your browser of choice.  At this point you should see a Drupal installation page.  See below for Drush commands to install the site. 
 
+### Working on a task
+
+When beginning work on a task, start a new branch:
+
+`git checkout -b feature/my-great-work`
+
+Amazee [workflows](https://lagoon.readthedocs.io/en/latest/using_lagoon/workflows/) will build a new environment for every branch that begins with `feature/` when it's pushed to GitHub. In order to access the environment for the branch above, visit https://nginx-midcamp-org-feature-my-great-work.us.amazee.io/. Databases for that environment are synced from Amazee dev, and it takes a few minutes after Circle completes for the install to complete.
+
 ### Stopping
 
 Occasionally, you might want to stop working on this wonderful project. In that case:
@@ -40,7 +48,7 @@ From inside the project root, type `docker-compose exec cli bash`
 This is your project directory; run `drush` commands from here. Avoid using git from here, but if you must, make sure you configure your name and email for proper attribution:
 
 ```
-git config --global user.email 'me@palantir.net'
+git config --global user.email 'me@example.com'
 git config --global user.name 'My Name'
 ```
 
