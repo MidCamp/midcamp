@@ -26,6 +26,7 @@ permissions:
   - 'use text format basic_html'
   - 'use text format basic_html'
   - 'use text format restricted_html'
+  - 'view any webform submission'
   - 'view field_accepted_confirmed'
   - 'view field_captions'
   - 'view field_feedback_form'
