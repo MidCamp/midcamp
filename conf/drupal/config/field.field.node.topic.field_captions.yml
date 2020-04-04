@@ -11,7 +11,7 @@ id: node.topic.field_captions
 field_name: field_captions
 entity_type: node
 bundle: topic
-label: Captions
+label: Transcript
 description: ''
 required: false
 translatable: false
