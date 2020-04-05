@@ -106,6 +106,43 @@ function midcamp_utility_entity_view_mode_alter(&$view_mode, Drupal\Core\Entity\
   }
 }
 
+// snippet: https://stefvanlooveren.me/node/75
+/**
+ * Implements hook_block_access().
+ */
+function midcamp_utility_block_access(Block $block, $operation, AccountInterface $account) {
+  // Determine what type of page we are on.
+  $current_route = \Drupal::routeMatch();
+
+  // If we're viewing the 'Session Feedback' block...
+  if ($operation == 'view' && $block->getPluginId() == 'views_block:session_feedback-block_1') {
+
+    // Always provide access if the user is admin.
+    if (in_array('administrator', $account->getRoles())) {
+      return AccessResult::allowed();
+    }
+    // Otherwise, check to see if we're on a node...
+    elseif ($current_route->getParameter('node')) {
+      $node = $current_route->getParameter('node');
+
+      // And the node has field_people (i.e. speakers)...
+      if ($node->hasField('field_people') && !$node->field_people->isEmpty()) {
+        $speakers = explode(', ', $node->field_people->getString());
+
+        // And the current user matches one of the speakers.
+        if (in_array($account->id(), $speakers)) {
+          // If so, show the block.
+          return AccessResult::allowed()->addCacheableDependency($account);
+        }
+      }
+    }
+
+    // Otherwise hide the block.
+    return AccessResult::forbidden();
+  }
+  return AccessResult::neutral();
+}
+
 /**
  * Implements hook_webform_submission_access().
  */
