@@ -155,7 +155,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<h2>Session Feedback</h2>'
+            value: "<h2>Session Feedback</h2>\r\n<p>This block is only available to listed speakers on <em>this session</em> and site administrators.</p>"
             format: basic_html
           plugin_id: text
         result:
@@ -169,7 +169,20 @@ display:
           content: 'Displaying @start - @end of @total responses.'
           plugin_id: result
       footer: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: 'There is no feedback available for this session.'
+            format: basic_html
+          plugin_id: text
       relationships: {  }
       arguments:
         entity_id:

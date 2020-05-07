@@ -1,12 +1,9 @@
-uuid: bf81ca8a-2aa4-4ea5-8b12-a93d70d8f44c
 langcode: en
 status: open
 dependencies:
   enforced:
     module:
       - webform
-_core:
-  default_config_hash: W8LHFRO51r0rBKzjUCRv8qxnRs6aTKBTxa8jwn7tBP8
 open: null
 close: null
 weight: 0
@@ -83,6 +80,7 @@ settings:
   wizard_progress_pages: false
   wizard_progress_percentage: false
   wizard_progress_link: false
+  wizard_progress_states: false
   wizard_start_label: ''
   wizard_preview_link: false
   wizard_confirmation: true
@@ -130,6 +128,8 @@ settings:
   purge_days: null
   results_disabled: false
   results_disabled_ignore: false
+  results_customize: false
+  token_view: false
   token_update: false
 access:
   create:
@@ -204,6 +204,7 @@ handlers:
       ignore_access: false
       exclude_empty: true
       exclude_empty_checkbox: false
+      exclude_attachments: false
       html: true
       attachments: false
       twig: false
@@ -239,6 +240,7 @@ handlers:
       ignore_access: false
       exclude_empty: true
       exclude_empty_checkbox: false
+      exclude_attachments: false
       html: true
       attachments: false
       twig: false
@@ -249,3 +251,7 @@ handlers:
       sender_name: ''
       theme_name: ''
       parameters: {  }
+variants: {  }
+uuid: bf81ca8a-2aa4-4ea5-8b12-a93d70d8f44c
+_core:
+  default_config_hash: W8LHFRO51r0rBKzjUCRv8qxnRs6aTKBTxa8jwn7tBP8
