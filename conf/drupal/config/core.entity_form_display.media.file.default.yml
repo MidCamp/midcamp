@@ -7,6 +7,7 @@ dependencies:
     - media.type.file
   module:
     - file
+    - path
 id: media.file.default
 targetEntityType: media
 bundle: file
@@ -45,6 +46,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     region: content
     third_party_settings: {  }
 hidden:
