@@ -11,7 +11,6 @@ dependencies:
   content:
     - 'taxonomy_term:event:17285735-fe51-4f45-b481-321ae7af649f'
     - 'taxonomy_term:event:58ab979d-12f0-4b19-ab75-5625aa986afb'
-    - 'taxonomy_term:event:edb1c63f-3af1-4ce3-b9d0-55336993e692'
     - 'taxonomy_term:topic_type:f9f1e3ca-ad7f-4636-b8c2-bb5d29f7b35b'
   module:
     - node
@@ -24,7 +23,6 @@ description: ''
 tag: ''
 base_table: node_field_data
 base_field: nid
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -153,6 +151,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -178,6 +178,9 @@ display:
           entity_field: type
           plugin_id: bundle
           group: 1
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
         field_topic_type_target_id:
           id: field_topic_type_target_id
           table: node__field_topic_type
@@ -203,6 +206,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -247,6 +252,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -353,6 +360,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -393,6 +402,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -433,6 +444,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''

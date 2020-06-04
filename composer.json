@@ -47,7 +47,7 @@
         "drupal/config_ignore": "^2.1",
         "drupal/config_installer": "^1.5",
         "drupal/contact_formatter": "^1.0",
-        "drupal/core": "~8.7.0",
+        "drupal/core": "~8.8.0",
         "drupal/devel": "^1.0@beta",
         "drupal/entityqueue": "^1.0@alpha",
         "drupal/field_group": "^1.3",
@@ -102,8 +102,7 @@
     "extra": {
         "patches": {
           "drupal/core": {
-            "RSS view with fields give wrong URL from path field (https://www.drupal.org/node/2673980)": "https://www.drupal.org/files/issues/rss_view_with_fields-2673980-27.patch",
-            "Add hook_post_config_import_NAME after config import (https://www.drupal.org/project/drupal/issues/2901418)": "https://www.drupal.org/files/issues/2019-02-26/2901418-53-reroll-28_0.patch"
+            "Add hook_post_config_import_NAME after config import (https://www.drupal.org/project/drupal/issues/2901418)": "https://www.drupal.org/files/issues/2019-10-23/2901418-67-add-hook_post_config_import_NAME-after-config-import.patch"
           },
           "drupal/twig_extensions": {
             "Error after upgrading to Drupal 8.1 (https://www.drupal.org/project/twig_extensions/issues/2726531)": "https://www.drupal.org/files/issues/error_after_upgrading-2726531-9.patch"
