@@ -106,6 +106,7 @@ permissions:
   - 'revert training revisions'
   - 'revert venue revisions'
   - 'skip comment approval'
+  - 'use admin toolbar search'
   - 'use editorial transition archive'
   - 'use editorial transition archived_published'
   - 'use editorial transition create_new_draft'

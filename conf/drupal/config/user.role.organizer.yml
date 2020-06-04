@@ -13,6 +13,7 @@ permissions:
   - 'edit field_transcript'
   - 'edit own field_captions'
   - 'edit own field_transcript'
+  - 'use admin toolbar search'
   - 'use session_proposal transition publish'
   - 'use session_proposal transition submitted_proposal'
   - 'view any unpublished content'
