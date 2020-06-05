@@ -1512,19 +1512,20 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/captcha.git",
-                "reference": "1d21e6864ced543312d8d819a170c3553281b485"
+                "reference": "e1dc28f826a4301ac2ce60a6745390da1e09de81"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8.8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                    "dev-1.x": "1.x-dev",
+                    "dev-8.x-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta1+30-dev",
-                    "datestamp": "1535582280",
+                    "version": "8.x-1.0+4-dev",
+                    "datestamp": "1591157922",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -1543,6 +1544,10 @@
                 {
                     "name": "elachlan",
                     "homepage": "https://www.drupal.org/user/1021502"
+                },
+                {
+                    "name": "japerry",
+                    "homepage": "https://www.drupal.org/user/45640"
                 },
                 {
                     "name": "naveenvalecha",
@@ -1564,9 +1569,10 @@
             "description": "The CAPTCHA module provides this feature to virtually any user facing web form on a Drupal site.",
             "homepage": "https://www.drupal.org/project/captcha",
             "support": {
-                "source": "http://cgit.drupalcode.org/captcha"
+                "source": "https://git.drupalcode.org/project/captcha",
+                "issues": "https://www.drupal.org/project/issues/captcha"
             },
-            "time": "2018-08-31T06:52:06+00:00"
+            "time": "2020-06-03T04:18:21+00:00"
         },
         {
             "name": "drupal/config_filter",
