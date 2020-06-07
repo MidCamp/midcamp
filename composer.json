@@ -119,6 +119,9 @@
           },
           "drupal/r4032login": {
               "Drupal 9 Deprecated Code (https://www.drupal.org/project/r4032login/issues/3042799)": "https://www.drupal.org/files/issues/2020-06-04/3042799-22_0.patch"
+          },
+          "drupal/config_ignore": {
+              "Drupal 9 Deprecated Code (https://www.drupal.org/project/config_ignore/issues/3042661)": "https://www.drupal.org/files/issues/2020-06-02/3042661-26.patch"
           }
         },
         "installer-types": ["butler-styleguide"],

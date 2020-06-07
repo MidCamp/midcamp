@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1225af1a21ef6868c2dd460e2afa1b22",
+    "content-hash": "ff6f14b805bc482959fcaa48c0224a80",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1673,6 +1673,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Drupal 9 Deprecated Code (https://www.drupal.org/project/config_ignore/issues/3042661)": "https://www.drupal.org/files/issues/2020-06-02/3042661-26.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
