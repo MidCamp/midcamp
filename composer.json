@@ -116,6 +116,9 @@
           },
           "drupal/config_installer": {
               "Fix config_install error (https://www.drupal.org/project/config_installer/issues/3039052)": "https://www.drupal.org/files/issues/2019-03-11/config_installer-generatepassword-missing-3039052-2-D8.patch"
+          },
+          "drupal/r4032login": {
+              "Drupal 9 Deprecated Code (https://www.drupal.org/project/r4032login/issues/3042799)": "https://www.drupal.org/files/issues/2020-06-04/3042799-22_0.patch"
           }
         },
         "installer-types": ["butler-styleguide"],

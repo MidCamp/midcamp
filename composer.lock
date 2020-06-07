@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fad4e4c9291b03a5d3485173ec1a40d1",
+    "content-hash": "1225af1a21ef6868c2dd460e2afa1b22",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3607,7 +3607,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/r4032login.git",
-                "reference": "b264078b6b4c4740a749c1a663139e3ca7f552a6"
+                "reference": "90904367bc60e14320ee1478d934ca6dce34233d"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -3618,12 +3618,15 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1486527783",
+                    "version": "8.x-1.1+2-dev",
+                    "datestamp": "1578668589",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "Drupal 9 Deprecated Code (https://www.drupal.org/project/r4032login/issues/3042799)": "https://www.drupal.org/files/issues/2020-06-04/3042799-22_0.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3675,9 +3678,9 @@
             "description": "Redirect anonymous users from 403 Access Denied pages to the /user/login page.",
             "homepage": "https://www.drupal.org/project/r4032login",
             "support": {
-                "source": "http://cgit.drupalcode.org/r4032login"
+                "source": "https://git.drupalcode.org/project/r4032login"
             },
-            "time": "2018-04-17T09:58:23+00:00"
+            "time": "2020-01-10T16:52:01+00:00"
         },
         {
             "name": "drupal/recaptcha",
