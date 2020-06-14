@@ -23,4 +23,10 @@ settings:
   plugin_types:
     block: block
   preselect_views: {  }
+  enabled_settings:
+    argument: argument
+    offset: 0
+    limit: 0
+    pager: 0
+    title: title
 field_type: viewsreference

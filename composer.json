@@ -69,11 +69,11 @@
         "drupal/redirect": "^1.0",
         "drupal/scheduler": "^1.0@RC",
         "drupal/simple_sitemap": "^3.3",
-        "drupal/twig_extensions": "1.x-dev",
+        "drupal/twig_extensions": "2.x-dev",
         "drupal/upgrade_status": "^2.7",
         "drupal/video_embed_field": "^2.4",
         "drupal/video_embed_media": "^2.4",
-        "drupal/viewsreference": "^1.0@alpha",
+        "drupal/viewsreference": "^2.0@alpha",
         "drupal/webform": "^5.0@RC",
         "midcamp/hatter": "dev-master",
         "oomphinc/composer-installers-extender": "^1.1",
@@ -105,9 +105,6 @@
         "patches": {
           "drupal/core": {
             "Add hook_post_config_import_NAME after config import (https://www.drupal.org/project/drupal/issues/2901418)": "https://www.drupal.org/files/issues/2019-10-23/2901418-67-add-hook_post_config_import_NAME-after-config-import.patch"
-          },
-          "drupal/twig_extensions": {
-            "Error after upgrading to Drupal 8.1 (https://www.drupal.org/project/twig_extensions/issues/2726531)": "https://www.drupal.org/files/issues/error_after_upgrading-2726531-9.patch"
           },
           "drupal/mailchimp": {
             "MailchimpListsSubscribeForm wants an array, but gets an object (www.drupal.org/project/mailchimp/issues/2931408)": "https://www.drupal.org/files/issues/2931408-2-list-form-cant-array.patch"
