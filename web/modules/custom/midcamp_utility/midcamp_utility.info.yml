@@ -1,5 +1,5 @@
 name: 'Midcamp Utility'
 type: module
 description: 'Misc modifications and helpers'
-core: 8.x
+core_version_requirement: ^8 || ^9
 package: 'Midcamp'
