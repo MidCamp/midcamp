@@ -1,0 +1,6 @@
+name: midcamp
+recipe: lagoon
+config:
+  flavor: drupal
+  build:
+    - composer install
