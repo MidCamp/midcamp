@@ -36,3 +36,5 @@ npm-debug.log
 *.sass-cache/
 styleguide/*.sass-cache/
 styleguide/source/code/css/*.css
+/.editorconfig
+/.gitattributes

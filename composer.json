@@ -47,6 +47,7 @@
         "drupal/config_installer": "^1.5",
         "drupal/contact_formatter": "^2.0",
         "drupal/core": "~8.9.0",
+        "drupal/core-composer-scaffold": "~8.9.0",
         "drupal/devel": "^1.0@beta",
         "drupal/entityqueue": "^1.0@alpha",
         "drupal/field_group": "^1.3",
@@ -121,6 +122,22 @@
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"],
             "styleguide": ["type:butler-styleguide"]
+        },
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "./web"
+            },
+            "file-mapping": {
+                "[web-root]/sites/default/default.services.yml": false,
+                "[web-root]/sites/default/default.settings.php": false,
+                "[web-root]/README.txt": false,
+                "[web-root]/INSTALL.txt": false,
+                "[web-root]/example.gitignore": false,
+                "[web-root]/modules/README.txt": false,
+                "[web-root]/profiles/README.txt": false,
+                "[web-root]/sites/README.txt": false,
+                "[web-root]/themes/README.txt": false
+            }
         }
     }
 }
