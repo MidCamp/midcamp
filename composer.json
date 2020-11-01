@@ -36,6 +36,7 @@
         }
     },
     "require": {
+        "amazeeio/drupal_integrations": "^0.3.3",
         "brian-clement/eventbrite_events": "dev-master",
         "brian-clement/tito": "dev-master",
         "composer/installers": "^1.0",
