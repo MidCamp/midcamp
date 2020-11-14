@@ -5,7 +5,7 @@ jobs:
     working_directory: /app
 
     docker:
-      - image: integratedexperts/circleci2-builder
+      - image: drevops/ci-builder
         environment:
           COMPOSER_ALLOW_SUPERUSER: 1
 
