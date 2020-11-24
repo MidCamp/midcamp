@@ -1,0 +1,99 @@
+feature-add-lando-support:
+  host: ssh.lagoon.amazeeio.cloud
+  options:
+    backup-dir: /tmp
+    command-specific:
+      sql-sync:
+        no-ordered-dump: true
+  root: /app/web
+  user: midcamp-org-feature-add-lando-support
+  ssh:
+    options: '-o LogLevel=ERROR -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p 32222'
+feature-code-quality:
+  host: ssh.lagoon.amazeeio.cloud
+  options:
+    backup-dir: /tmp
+    command-specific:
+      sql-sync:
+        no-ordered-dump: true
+  root: /app/web
+  user: midcamp-org-feature-code-quality
+  ssh:
+    options: '-o LogLevel=ERROR -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p 32222'
+feature-d9:
+  host: ssh.lagoon.amazeeio.cloud
+  options:
+    backup-dir: /tmp
+    command-specific:
+      sql-sync:
+        no-ordered-dump: true
+  root: /app/web
+  user: midcamp-org-feature-d9
+  ssh:
+    options: '-o LogLevel=ERROR -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p 32222'
+feature-fix-permissions:
+  host: ssh.lagoon.amazeeio.cloud
+  options:
+    backup-dir: /tmp
+    command-specific:
+      sql-sync:
+        no-ordered-dump: true
+  root: /app/web
+  user: midcamp-org-feature-fix-permissions
+  ssh:
+    options: '-o LogLevel=ERROR -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p 32222'
+feature-prod-config-session-surveys:
+  host: ssh.lagoon.amazeeio.cloud
+  options:
+    backup-dir: /tmp
+    command-specific:
+      sql-sync:
+        no-ordered-dump: true
+  root: /app/web
+  user: midcamp-org-feature-prod-config-session-surveys
+  ssh:
+    options: '-o LogLevel=ERROR -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p 32222'
+feature-test-build:
+  host: ssh.lagoon.amazeeio.cloud
+  options:
+    backup-dir: /tmp
+    command-specific:
+      sql-sync:
+        no-ordered-dump: true
+  root: /app/web
+  user: midcamp-org-feature-test-build
+  ssh:
+    options: '-o LogLevel=ERROR -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p 32222'
+feature-test-config-split:
+  host: ssh.lagoon.amazeeio.cloud
+  options:
+    backup-dir: /tmp
+    command-specific:
+      sql-sync:
+        no-ordered-dump: true
+  root: /app/web
+  user: midcamp-org-feature-test-config-split
+  ssh:
+    options: '-o LogLevel=ERROR -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p 32222'
+master:
+  host: ssh.lagoon.amazeeio.cloud
+  options:
+    backup-dir: /tmp
+    command-specific:
+      sql-sync:
+        no-ordered-dump: true
+  root: /app/web
+  user: midcamp-org-master
+  ssh:
+    options: '-o LogLevel=ERROR -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p 32222'
+production:
+  host: ssh.lagoon.amazeeio.cloud
+  options:
+    backup-dir: /tmp
+    command-specific:
+      sql-sync:
+        no-ordered-dump: true
+  root: /app/web
+  user: midcamp-org-production
+  ssh:
+    options: '-o LogLevel=ERROR -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p 32222'
