@@ -4,3 +4,4 @@ config:
   flavor: drupal
   build:
     - composer install
+    - npm install
