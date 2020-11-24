@@ -1,4 +1,4 @@
-sitegroup: midcamp_org
+sitegroup: midcamp-org
 
 deploy_tasks:
   development:
