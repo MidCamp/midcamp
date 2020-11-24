@@ -2,7 +2,7 @@ version: '2.3'
 
 x-lagoon-project:
   # Lagoon project name (leave `&lagoon-project` when you edit this)
-  &lagoon-project midcamp_org
+  &lagoon-project midcamp-org
 
 x-volumes:
   &default-volumes
@@ -83,9 +83,9 @@ services:
     environment:
       << : *default-environment
 
-  
 
-  
+
+
   solr:
     image: amazeeio/solr:6.6-drupal
     labels:
@@ -94,7 +94,7 @@ services:
       - "8983" # exposes the port 8983 with a random local port, find it with `docker-compose port solr 8983`
     environment:
       << : *default-environment
-  
+
 
   varnish:
     image: amazeeio/varnish-drupal

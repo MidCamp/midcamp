@@ -1,5 +1,5 @@
 <?php
-putenv('AMAZEEIO_OVERRIDE_SITEGROUP=midcamp_org');
+putenv('AMAZEEIO_OVERRIDE_SITEGROUP=midcamp-org');
 
 // Don't change anything here, it's magic!
 global $aliases_stub;
