@@ -23,6 +23,7 @@ jobs:
       - run:
           name: Install site
           command: |
+            docker-compose exec cli drush status
             docker-compose exec cli drush site-install --verbose minimal --existing-config --yes
       - run:
           name: Install dev dependencies
