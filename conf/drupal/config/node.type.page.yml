@@ -11,6 +11,7 @@ third_party_settings:
       - main
       - midcamp-2019-navigation
       - midcamp-2020-navigation
+      - midcamp-2021-navigation
     parent: 'main:'
   scheduler:
     expand_fieldset: when_required
