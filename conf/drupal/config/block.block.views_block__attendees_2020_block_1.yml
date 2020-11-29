@@ -12,7 +12,7 @@ dependencies:
 id: views_block__attendees_2020_block_1
 theme: hatter_2019
 region: content
-weight: 5
+weight: 4
 provider: null
 plugin: 'views_block:attendees_2020-block_1'
 settings:
