@@ -12,7 +12,7 @@ dependencies:
 id: hatter_2019_views_block__attendees_block_2
 theme: hatter_2019
 region: content
-weight: 6
+weight: 5
 provider: null
 plugin: 'views_block:attendees-block_2'
 settings:

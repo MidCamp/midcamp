@@ -10,6 +10,7 @@ dependencies:
   content:
     - 'taxonomy_term:event:17285735-fe51-4f45-b481-321ae7af649f'
     - 'taxonomy_term:event:58ab979d-12f0-4b19-ab75-5625aa986afb'
+    - 'taxonomy_term:event:5c03697f-f030-4408-bc96-aaca0ee62b55'
     - 'taxonomy_term:event:edb1c63f-3af1-4ce3-b9d0-55336993e692'
   module:
     - taxonomy
@@ -414,6 +415,99 @@ display:
         weight: -43
         context: '0'
         menu_name: midcamp-2020-navigation
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - user
+        - user.permissions
+      tags: {  }
+  page_4:
+    display_plugin: page
+    id: page_4
+    display_title: '2021 Organizers'
+    position: 2
+    display_options:
+      display_extenders: {  }
+      path: 2021/organizers
+      filters:
+        status:
+          value: '1'
+          table: users_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: user
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        field_organizer_year_target_id:
+          id: field_organizer_year_target_id
+          table: user__field_organizer_year
+          field: field_organizer_year_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            234: 234
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: event
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+      defaults:
+        filters: false
+        filter_groups: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      menu:
+        type: none
+        title: Organizers
+        description: ''
+        expanded: false
+        parent: ''
+        weight: -43
+        context: '0'
+        menu_name: midcamp-2021-navigation
       display_description: ''
     cache_metadata:
       max-age: -1

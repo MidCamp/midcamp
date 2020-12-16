@@ -1,23 +1,23 @@
-uuid: 7991a2d1-dfef-4568-9e7d-22f253ef68eb
+uuid: 638df935-e43a-4745-9ca3-02d76b6fd01c
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:718a2f09-3a75-462a-9c04-3e21f78a81bb'
+    - 'block_content:basic:a54a0659-0ed4-46e8-afe3-55cdd97cd855'
   module:
     - block_content
     - system
   theme:
     - hatter_2019
-id: hatter_2019_midcamp2019
+id: midcamp2021
 theme: hatter_2019
 region: content
-weight: -22
+weight: -21
 provider: null
-plugin: 'block_content:718a2f09-3a75-462a-9c04-3e21f78a81bb'
+plugin: 'block_content:a54a0659-0ed4-46e8-afe3-55cdd97cd855'
 settings:
-  id: 'block_content:718a2f09-3a75-462a-9c04-3e21f78a81bb'
-  label: 'MidCamp 2019'
+  id: 'block_content:a54a0659-0ed4-46e8-afe3-55cdd97cd855'
+  label: 'MidCamp 2021'
   provider: block_content
   label_display: '0'
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /2020
+    pages: '<front>'
     negate: false
     context_mapping: {  }
