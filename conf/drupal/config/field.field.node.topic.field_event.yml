@@ -7,7 +7,7 @@ dependencies:
     - node.type.topic
     - taxonomy.vocabulary.event
   content:
-    - 'taxonomy_term:event:edb1c63f-3af1-4ce3-b9d0-55336993e692'
+    - 'taxonomy_term:event:5c03697f-f030-4408-bc96-aaca0ee62b55'
 id: node.topic.field_event
 field_name: field_event
 entity_type: node
@@ -18,7 +18,7 @@ required: false
 translatable: false
 default_value:
   -
-    target_uuid: edb1c63f-3af1-4ce3-b9d0-55336993e692
+    target_uuid: 5c03697f-f030-4408-bc96-aaca0ee62b55
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'

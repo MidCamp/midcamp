@@ -12,7 +12,7 @@ dependencies:
 id: hatter_2019_views_block__event_sponsors_block_9
 theme: hatter_2019
 region: content
-weight: -8
+weight: -9
 provider: null
 plugin: 'views_block:event_sponsors-block_9'
 settings:

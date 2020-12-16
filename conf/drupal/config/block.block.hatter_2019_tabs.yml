@@ -7,7 +7,7 @@ dependencies:
 id: hatter_2019_tabs
 theme: hatter_2019
 region: content
-weight: -16
+weight: -17
 provider: null
 plugin: local_tasks_block
 settings:
