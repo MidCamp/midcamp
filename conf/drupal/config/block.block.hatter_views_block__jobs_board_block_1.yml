@@ -1,0 +1,33 @@
+uuid: ed5b10cb-b80f-40cb-8a46-58aa2e716fec
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.jobs_board
+  module:
+    - ctools
+    - views
+  theme:
+    - hatter
+id: hatter_views_block__jobs_board_block_1
+theme: hatter
+region: content
+weight: 1
+provider: null
+plugin: 'views_block:jobs_board-block_1'
+settings:
+  id: 'views_block:jobs_board-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      sponsor: sponsor
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

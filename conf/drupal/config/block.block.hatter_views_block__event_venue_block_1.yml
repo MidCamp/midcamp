@@ -1,0 +1,31 @@
+uuid: aa77c6dc-33de-45e3-91f0-c3d95d78bc36
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.event_venue
+  module:
+    - system
+    - views
+  theme:
+    - hatter
+id: hatter_views_block__event_venue_block_1
+theme: hatter
+region: featured_bottom_first
+weight: 0
+provider: null
+plugin: 'views_block:event_venue-block_1'
+settings:
+  id: 'views_block:event_venue-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/2019*\r\n<front>"
+    negate: true
+    context_mapping: {  }

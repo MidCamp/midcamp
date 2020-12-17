@@ -1,0 +1,35 @@
+uuid: c9679a5a-4666-4cd5-aa2f-ffd433e98976
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - midcamp_event_label_block
+  theme:
+    - hatter
+id: hatter_eventlabelblock
+theme: hatter
+region: content
+weight: -16
+provider: null
+plugin: event_label_block
+settings:
+  id: event_label_block
+  label: 'Event label block'
+  provider: midcamp_event_label_block
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      summit: summit
+      article: article
+      job: job
+      page: page
+      sponsor: sponsor
+      topic: topic
+      training: training
+      venue: venue
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
