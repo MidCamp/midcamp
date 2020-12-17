@@ -25,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/2018*\r\n/2019*"
-    negate: true
+    pages: "/2020/*\r\n/2020"
+    negate: false
     context_mapping: {  }
