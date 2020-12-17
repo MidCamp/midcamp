@@ -69,6 +69,7 @@
         "drupal/redirect": "^1.0",
         "drupal/scheduler": "^1.0@RC",
         "drupal/simple_sitemap": "^3.3",
+        "drupal/switch_page_theme": "1.x-dev",
         "drupal/twig_extensions": "1.x-dev",
         "drupal/video_embed_field": "^2.2",
         "drupal/video_embed_media": "^2.2",
@@ -109,6 +110,9 @@
           },
           "drupal/config_installer": {
               "Fix config_install error (https://www.drupal.org/project/config_installer/issues/3039052)": "https://www.drupal.org/files/issues/2019-03-11/config_installer-generatepassword-missing-3039052-2-D8.patch"
+          },
+          "drupal/switch_page_theme": {
+              "Drupal 9 Readiness [#3145213]": "https://www.drupal.org/files/issues/2020-07-07/3145213-5.patch"
           }
         },
         "installer-types": ["butler-styleguide"],

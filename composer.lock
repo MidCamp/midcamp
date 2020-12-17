@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "db9618bc1ccb644bdb4c3d395ca3f083",
+    "content-hash": "d73e1841d4523d58fdbc030fd60d63ce",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4081,6 +4081,51 @@
                 "issues": "https://drupal.org/project/issues/simple_sitemap",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             }
+        },
+        {
+            "name": "drupal/switch_page_theme",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/switch_page_theme.git",
+                "reference": "c1b84af3d4c50e15b61018e1b29306c61fc3a99b"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0+3-dev",
+                    "datestamp": "1558333985",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                },
+                "patches_applied": {
+                    "Drupal 9 Readiness [#3145213]": "https://www.drupal.org/files/issues/2020-07-07/3145213-5.patch"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "deepali_agarwal",
+                    "homepage": "https://www.drupal.org/user/2438242"
+                }
+            ],
+            "description": "Switches active theme on specific pages.",
+            "homepage": "https://www.drupal.org/project/switch_page_theme",
+            "support": {
+                "source": "https://git.drupalcode.org/project/switch_page_theme"
+            },
+            "time": "2019-05-20T06:28:19+00:00"
         },
         {
             "name": "drupal/token",
@@ -13308,6 +13353,7 @@
         "drupal/name": 10,
         "drupal/r4032login": 20,
         "drupal/scheduler": 5,
+        "drupal/switch_page_theme": 20,
         "drupal/twig_extensions": 20,
         "drupal/viewsreference": 15,
         "drupal/webform": 5,
