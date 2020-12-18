@@ -1,0 +1,16 @@
+spt_table:
+  -
+    status: '1'
+    pages: "/2020\r\n/2020*"
+    theme_key: ''
+    theme: hatter_2019
+    weight: '-10'
+    roles:
+      anonymous: 0
+      speaker: 0
+      content_editor: 0
+      administrator: 0
+      authenticated: 0
+      sponsor: 0
+      organizer: 0
+    remove: Remove
