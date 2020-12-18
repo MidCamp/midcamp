@@ -1,0 +1,31 @@
+uuid: 91e782a8-6447-4967-94d3-8462bba9ddf3
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.training_feedback_2019
+  module:
+    - system
+    - webform
+  theme:
+    - hatter
+id: hatter_training_feedback_form
+theme: hatter
+region: content
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Provide feedback on this training'
+  provider: webform
+  label_display: visible
+  webform_id: training_feedback_2019
+  default_data: ''
+  redirect: false
+visibility:
+  request_path:
+    id: request_path
+    pages: '/2019/training-proposal/*'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 20197274-2705-4b17-b5b1-37eb8bb86e4f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a54a0659-0ed4-46e8-afe3-55cdd97cd855'
+  module:
+    - block_content
+    - system
+  theme:
+    - hatter
+id: midcamp2021_2
+theme: hatter
+region: content
+weight: -20
+provider: null
+plugin: 'block_content:a54a0659-0ed4-46e8-afe3-55cdd97cd855'
+settings:
+  id: 'block_content:a54a0659-0ed4-46e8-afe3-55cdd97cd855'
+  label: 'MidCamp 2021'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
