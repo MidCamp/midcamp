@@ -113,6 +113,9 @@
           },
           "drupal/switch_page_theme": {
               "Drupal 9 Readiness [#3145213]": "https://www.drupal.org/files/issues/2020-07-07/3145213-5.patch"
+          },
+          "drupal/libraries": {
+              "Missing global variable $base_theme_info [#3057777]": "https://www.drupal.org/files/issues/2019-06-26/missing_base_theme_info_global_variable-3057777-4.patch"
           }
         },
         "installer-types": ["butler-styleguide"],

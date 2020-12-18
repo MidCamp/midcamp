@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d73e1841d4523d58fdbc030fd60d63ce",
+    "content-hash": "28ba80ca4cea4f6dbde856a37804dfd8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3183,6 +3183,9 @@
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "Missing global variable $base_theme_info [#3057777]": "https://www.drupal.org/files/issues/2019-06-26/missing_base_theme_info_global_variable-3057777-4.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
