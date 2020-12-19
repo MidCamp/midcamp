@@ -5,3 +5,10 @@ config:
   build:
     - composer install
     - npm install
+tooling:
+  composer:
+    service: cli
+    description: Run composer with no memory restrictions
+    cmd:
+      - php -d memory_limit=-1 /usr/local/bin/composer
+
