@@ -64,7 +64,7 @@
         "drupal/metatag": "^1.4",
         "drupal/name": "^1.0@beta",
         "drupal/paragraphs": "^1.2",
-        "drupal/pathauto": "^1.0",
+        "drupal/pathauto": "^1.8",
         "drupal/r4032login": "1.x-dev",
         "drupal/recaptcha": "^2.4",
         "drupal/redirect": "^1.0",
