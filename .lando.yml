@@ -11,4 +11,17 @@ tooling:
     description: Run composer with no memory restrictions
     cmd:
       - php -d memory_limit=-1 /usr/local/bin/composer
-
+  behat:
+    service: cli
+    description: Run Behat tests
+    cmd:
+      - /app/vendor/bin/behat
+  phpcs:
+    service: cli
+    cmd:
+      - /app/vendor/bin/phpcs --config-set installed_paths vendor/drupal/coder/coder_sniffer
+      - /app/vendor/bin/phpcs --standard=Drupal,DrupalPractice --extensions=php,module,inc,install,test,profile,theme,info
+  phpmd:
+    service: cli
+    cmd:
+      - /app/vendor/bin/phpmd
