@@ -23,7 +23,7 @@ jobs:
       - run:
           name: Install site
           command: |
-            docker-compose exec cli drush site-install --verbose config_installer config_installer_sync_configure_form.sync_directory=../conf/drupal/config/ --yes
+            docker-compose exec cli LAGOON_DISABLE_ALIASES=true drush site-install --verbose config_installer config_installer_sync_configure_form.sync_directory=../conf/drupal/config/ --yes
       - run:
           name: Install dev dependencies
           command: |
