@@ -1,7 +1,7 @@
 # MidCamp
 
 ## The Drupal 8 website for midcamp.org
-<!-- [![CircleCI](https://circleci.com/gh/MidCamp/midcamp.svg?style=shield)](https://circleci.com/gh/MidCamp/midcamp) -->
+[![CircleCI](https://circleci.com/gh/MidCamp/midcamp.svg?style=shield)](https://circleci.com/gh/MidCamp/midcamp)
 [![Code Climate](https://codeclimate.com/github/MidCamp/midcamp/badges/gpa.svg)](https://codeclimate.com/github/MidCamp/midcamp)
 
 ## Prerequisites
@@ -14,7 +14,9 @@ Refer to [Lando's documentation](https://docs.lando.dev/) for detailed informati
 
 1. Start your local environment with `lando start`
 1. Ensure you have an Amazee account with your SSH keys loaded.  If not reach out on the [Amazee Rocket Chat](https://amazeeio.rocket.chat/group/midcamp).
-1. Import your local database and files via `lando pull`
+1. Import your local database and files via:
+    1. `lando get-db`
+    1. `lando get-files`
 
 ## Working with Lando
 
