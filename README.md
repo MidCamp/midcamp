@@ -78,7 +78,7 @@ To streamline theme development in the context of Drupal, you can use NPM's link
 
 First, in your local clone of the Hatter design system (hatter-v2) run:
 
-* `lando npm link`
+* `npm link`
 
 You'll only need to run this command once in the Hatter repository unless you remove or reinstall the package.
 
