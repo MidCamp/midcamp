@@ -1,0 +1,22 @@
+midcamp-org-master:
+  host: ssh.lagoon.amazeeio.cloud
+  options:
+    backup-dir: /tmp
+    command-specific:
+      sql-sync:
+        no-ordered-dump: true
+  root: /app/web
+  user: midcamp-org-master
+  ssh:
+    options: '-o LogLevel=ERROR -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p 32222'
+midcamp-org-production:
+  host: ssh.lagoon.amazeeio.cloud
+  options:
+    backup-dir: /tmp
+    command-specific:
+      sql-sync:
+        no-ordered-dump: true
+  root: /app/web
+  user: midcamp-org-production
+  ssh:
+    options: '-o LogLevel=ERROR -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p 32222'
