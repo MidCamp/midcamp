@@ -18,7 +18,7 @@ web/sites/sites.php
 conf/provision-user
 
 # Ignore Drupal contrib downloaded by Composer
-drush/contrib
+drush/Commands/contrib
 web/core
 web/modules/contrib
 web/themes/contrib/
@@ -36,3 +36,5 @@ npm-debug.log
 *.sass-cache/
 styleguide/*.sass-cache/
 styleguide/source/code/css/*.css
+/.editorconfig
+/.gitattributes
