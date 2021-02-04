@@ -37,7 +37,7 @@ function midcamp_utility_views_pre_view(ViewExecutable $view, $display_id, array
    * Ensure the Event Venue, Sponsors views get the correct argument when contextual filters not available.
    * Set `$event_default` to the current active event term ID.
    */
-  $event_default = '143';
+  $event_default = '231';
   $event_views = ['event_venue', 'event_sponsors'];
   if (in_array($view->id(), $event_views)) {
     // Determine what type of page we are on.
@@ -97,9 +97,9 @@ function midcamp_utility_entity_view_mode_alter(&$view_mode, Drupal\Core\Entity\
     if (isset($entity->_referringItem) && $parent_entity = $entity->_referringItem->getParent()->getEntity()) {
       $event = $parent_entity->get('field_event')->getValue();
       $event = reset($event);
-      // Check if we are on a 2020 Topic (identified by tid 143), and set the
+      // Check if we are on a 2021 Topic (identified by tid 231), and set the
       // view mode appropriately.
-      if ($event['target_id'] == '143') {
+      if ($event['target_id'] == '231') {
         $view_mode = 'topic_page';
       }
     }
