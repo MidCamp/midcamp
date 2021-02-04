@@ -37,7 +37,7 @@ function midcamp_utility_views_pre_view(ViewExecutable $view, $display_id, array
    * Ensure the Event Venue, Sponsors views get the correct argument when contextual filters not available.
    * Set `$event_default` to the current active event term ID.
    */
-  $event_default = '143';
+  $event_default = '234';
   $event_views = ['event_venue', 'event_sponsors'];
   if (in_array($view->id(), $event_views)) {
     // Determine what type of page we are on.
