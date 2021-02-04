@@ -140,5 +140,12 @@ function hatter_preprocess_block(&$variables) {
   if ($variables['plugin_id'] == 'views_block:attendees-block_2') {
     $variables['attributes']['class'][] = 'sponsor-group';
   }
+
+  switch ($variables['plugin_id']) {
+    case 'system_menu_block:account':
+      $site_config = \Drupal::config('system.site');
+      $variables['site_slogan'] = $site_config->get('slogan');
+      break;
+  }
 }
 
