@@ -6,7 +6,7 @@ dependencies:
     - node.type.sponsor
     - taxonomy.vocabulary.event
   content:
-    - 'taxonomy_term:event:17285735-fe51-4f45-b481-321ae7af649f'
+    - 'taxonomy_term:event:5c03697f-f030-4408-bc96-aaca0ee62b55'
   module:
     - node
     - taxonomy
@@ -151,7 +151,7 @@ display:
           admin_label: ''
           operator: or
           value:
-            97: 97
+            234: 234
           group: 1
           exposed: false
           expose:
@@ -160,6 +160,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -167,8 +169,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
