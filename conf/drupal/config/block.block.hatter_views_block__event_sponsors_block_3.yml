@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '/*/sponsors'
+    pages: "/2018/sponsors\r\n/2019/sponsors\r\n/2020/sponsors"
     negate: false
     context_mapping: {  }
