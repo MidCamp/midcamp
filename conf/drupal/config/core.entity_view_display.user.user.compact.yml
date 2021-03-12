@@ -9,6 +9,7 @@ dependencies:
     - field.field.user.user.field_company_url
     - field.field.user.user.field_do_profile
     - field.field.user.user.field_eventbrite_email
+    - field.field.user.user.field_leadership_year
     - field.field.user.user.field_mailing_list
     - field.field.user.user.field_name
     - field.field.user.user.field_organization
@@ -86,6 +87,7 @@ hidden:
   field_company_url: true
   field_do_profile: true
   field_eventbrite_email: true
+  field_leadership_year: true
   field_mailing_list: true
   field_organizer_year: true
   field_site: true

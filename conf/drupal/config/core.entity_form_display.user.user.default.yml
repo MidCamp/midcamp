@@ -8,6 +8,7 @@ dependencies:
     - field.field.user.user.field_company_url
     - field.field.user.user.field_do_profile
     - field.field.user.user.field_eventbrite_email
+    - field.field.user.user.field_leadership_year
     - field.field.user.user.field_mailing_list
     - field.field.user.user.field_name
     - field.field.user.user.field_organization
@@ -148,6 +149,16 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: email_default
+    region: content
+  field_leadership_year:
+    weight: 21
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_mailing_list:
     weight: 5
