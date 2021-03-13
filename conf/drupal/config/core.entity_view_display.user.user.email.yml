@@ -5,12 +5,15 @@ dependencies:
   config:
     - core.entity_view_mode.user.email
     - field.field.user.user.field_bio
+    - field.field.user.user.field_company_logo
     - field.field.user.user.field_company_url
     - field.field.user.user.field_do_profile
     - field.field.user.user.field_eventbrite_email
+    - field.field.user.user.field_leadership_year
     - field.field.user.user.field_mailing_list
     - field.field.user.user.field_name
     - field.field.user.user.field_organization
+    - field.field.user.user.field_organizer_year
     - field.field.user.user.field_site
     - field.field.user.user.field_title
     - field.field.user.user.field_tracks
@@ -34,11 +37,14 @@ content:
     third_party_settings: {  }
 hidden:
   field_bio: true
+  field_company_logo: true
   field_company_url: true
   field_do_profile: true
+  field_leadership_year: true
   field_mailing_list: true
   field_name: true
   field_organization: true
+  field_organizer_year: true
   field_site: true
   field_title: true
   field_tracks: true

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "05069c108bf3d480d6903c942e5820f5",
+    "content-hash": "4faae867b0dd99970d6a162f716d61fc",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4424,17 +4424,17 @@
         },
         {
             "name": "drupal/webform",
-            "version": "5.22.0",
+            "version": "5.25.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "8.x-5.22"
+                "reference": "8.x-5.25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.22.zip",
-                "reference": "8.x-5.22",
-                "shasum": "807308bb8c57c3c66c7a839effc558ab2a76c1f5"
+                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.25.zip",
+                "reference": "8.x-5.25",
+                "shasum": "115f8bc21549abc080543eb772166eb4fd2a162e"
             },
             "require": {
                 "drupal/core": "^8.8"
@@ -4475,8 +4475,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-5.22",
-                    "datestamp": "1601919522",
+                    "version": "8.x-5.25",
+                    "datestamp": "1614873338",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -14209,12 +14209,12 @@
             "version": "1.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
+                "url": "https://github.com/webmozarts/assert.git",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "shasum": ""
             },

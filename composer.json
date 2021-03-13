@@ -74,7 +74,7 @@
         "drupal/video_embed_field": "^2.2",
         "drupal/video_embed_media": "^2.2",
         "drupal/viewsreference": "^1.0@alpha",
-        "drupal/webform": "^5.22",
+        "drupal/webform": "^5.25",
         "midcamp/hatter": "dev-master",
         "oomphinc/composer-installers-extender": "^1.1",
         "palantirnet/workbench_tabs": "^1.1",
