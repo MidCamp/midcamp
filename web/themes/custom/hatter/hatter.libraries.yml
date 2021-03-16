@@ -4,6 +4,7 @@ global-css:
       css/print.css:
         media: print
       css/styles.css: {}
+      port-to-hatter-v2.css: {}
 global-js:
   js:
     js/site.js: {}
