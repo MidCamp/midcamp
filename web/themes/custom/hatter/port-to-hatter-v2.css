@@ -1,0 +1,5 @@
+/* aka shame.css */
+
+.sponsor-item, .sponsor-item img {
+  display: inline-grid;
+}
