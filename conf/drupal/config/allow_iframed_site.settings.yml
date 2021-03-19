@@ -1,0 +1,4 @@
+request_path:
+  id: request_path
+  pages: "<front>\r\n/2021*\r\n/jobs\r\n/code-conduct\r\n"
+  negate: 0
