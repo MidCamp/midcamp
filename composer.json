@@ -42,6 +42,7 @@
         "cweagans/composer-patches": "~1.0",
         "drupal/address": "1.x-dev",
         "drupal/admin_toolbar": "^2.0",
+        "drupal/allow_iframed_site": "^3.0",
         "drupal/captcha": "1.x-dev",
         "drupal/config_ignore": "^2.1",
         "drupal/config_installer": "^1.5",
