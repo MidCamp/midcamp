@@ -1,23 +1,23 @@
-uuid: 20197274-2705-4b17-b5b1-37eb8bb86e4f
+uuid: 287b04ad-7295-40ab-85b9-9b95723c948c
 langcode: en
-status: false
+status: true
 dependencies:
   content:
-    - 'block_content:basic:a54a0659-0ed4-46e8-afe3-55cdd97cd855'
+    - 'block_content:basic:c2c340aa-3a74-490e-a0bb-5bb747b2e1b9'
   module:
     - block_content
     - system
   theme:
     - hatter
-id: midcamp2021_2
+id: midcamp2021survey
 theme: hatter
 region: content
-weight: 6
+weight: 5
 provider: null
-plugin: 'block_content:a54a0659-0ed4-46e8-afe3-55cdd97cd855'
+plugin: 'block_content:c2c340aa-3a74-490e-a0bb-5bb747b2e1b9'
 settings:
-  id: 'block_content:a54a0659-0ed4-46e8-afe3-55cdd97cd855'
-  label: 'MidCamp 2021'
+  id: 'block_content:c2c340aa-3a74-490e-a0bb-5bb747b2e1b9'
+  label: 'MidCamp 2021 Survey'
   provider: block_content
   label_display: '0'
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: "/2021/*\r\n<front>"
     negate: false
     context_mapping: {  }

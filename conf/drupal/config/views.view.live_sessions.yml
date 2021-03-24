@@ -10,7 +10,7 @@ dependencies:
     - node.type.topic
     - taxonomy.vocabulary.event
   content:
-    - 'taxonomy_term:event:edb1c63f-3af1-4ce3-b9d0-55336993e692'
+    - 'taxonomy_term:event:5c03697f-f030-4408-bc96-aaca0ee62b55'
   module:
     - datetime
     - datetime_range
@@ -433,7 +433,7 @@ display:
           admin_label: ''
           operator: or
           value:
-            143: 143
+            234: 234
           group: 1
           exposed: false
           expose:
@@ -442,6 +442,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -449,8 +451,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -705,7 +705,7 @@ display:
           admin_label: ''
           operator: or
           value:
-            143: 143
+            234: 234
           group: 1
           exposed: false
           expose:
@@ -714,6 +714,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -721,8 +723,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
