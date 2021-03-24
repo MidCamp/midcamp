@@ -1,6 +1,6 @@
-uuid: 20197274-2705-4b17-b5b1-37eb8bb86e4f
+uuid: 8c84b696-38a0-4976-8b61-924e078dd0d6
 langcode: en
-status: false
+status: true
 dependencies:
   content:
     - 'block_content:basic:a54a0659-0ed4-46e8-afe3-55cdd97cd855'
@@ -9,10 +9,10 @@ dependencies:
     - system
   theme:
     - hatter
-id: midcamp2021_2
+id: midcamp2021_3
 theme: hatter
 region: content
-weight: 6
+weight: -23
 provider: null
 plugin: 'block_content:a54a0659-0ed4-46e8-afe3-55cdd97cd855'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: "/2021/*\r\n<front>"
     negate: false
     context_mapping: {  }
