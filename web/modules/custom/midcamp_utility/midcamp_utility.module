@@ -99,7 +99,7 @@ function midcamp_utility_entity_view_mode_alter(&$view_mode, Drupal\Core\Entity\
       $event = reset($event);
       // Check if we are on a 2020 or 2021 Topic, and set the view mode
       // appropriately.
-      $virtual_event_tids = ['143', '231'];
+      $virtual_event_tids = ['143', '234'];
       if (in_array($event['target_id'], $virtual_event_tids)) {
         $view_mode = 'topic_page';
       }
