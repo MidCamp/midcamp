@@ -1,6 +1,6 @@
 uuid: 78545a0e-2791-4e81-a66e-c6cfe8867c3d
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.live_sessions
