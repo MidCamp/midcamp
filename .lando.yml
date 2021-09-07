@@ -3,7 +3,7 @@ recipe: lagoon
 config:
   flavor: drupal
   build:
-    - composer install
+    - /usr/local/bin/composer install
     - npm install
 tooling:
   composer:

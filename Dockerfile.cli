@@ -4,6 +4,7 @@ COPY ./web/themes/custom/hatter_2019 /app/web/themes/custom/hatter_2019
 RUN npm ci
 FROM amazeeio/php:7.4-cli-drupal
 
+RUN composer selfupdate --2
 COPY composer.json composer.lock /app/
 RUN composer install --prefer-dist --no-dev --no-suggest --optimize-autoloader --apcu-autoloader
 
