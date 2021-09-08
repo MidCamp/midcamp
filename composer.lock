@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "22c6c87b64bb54f40dbd3c63902c5c79",
+    "content-hash": "444b36e1442ddd5d9d66c12a355b01fe",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6377,46 +6377,6 @@
             "description": "Extend the composer/installers plugin to accept any arbitrary package type.",
             "homepage": "http://www.oomphinc.com/",
             "time": "2020-08-11T21:06:11+00:00"
-        },
-        {
-            "name": "palantirnet/workbench_tabs",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/palantirnet/workbench_tabs.git",
-                "reference": "a3e81da8c077101765c2760586aa2e8b366e6754"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/palantirnet/workbench_tabs/zipball/a3e81da8c077101765c2760586aa2e8b366e6754",
-                "reference": "a3e81da8c077101765c2760586aa2e8b366e6754",
-                "shasum": ""
-            },
-            "type": "drupal-module",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Bec White",
-                    "email": "white@palantir.net"
-                },
-                {
-                    "name": "Ashley Cyborski",
-                    "email": "cyborski@palantir.net"
-                },
-                {
-                    "name": "Patrick Weston",
-                    "email": "weston@palantir.net"
-                }
-            ],
-            "description": "Display Drupal's local task tabs and status messages in a consistent location on all pages.",
-            "homepage": "https://github.com/palantirnet/workbench_tabs",
-            "support": {
-                "source": "https://github.com/palantirnet/workbench_tabs/tree/1.1.0",
-                "issues": "https://github.com/palantirnet/workbench_tabs/issues"
-            },
-            "time": "2017-03-29T16:26:53+00:00"
         },
         {
             "name": "pear/archive_tar",
@@ -15088,5 +15048,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.1.0"
 }

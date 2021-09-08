@@ -79,7 +79,6 @@
         "drupal/webform": "^5.25",
         "midcamp/hatter": "dev-master",
         "oomphinc/composer-installers-extender": "^2.0",
-        "palantirnet/workbench_tabs": "^1.1",
         "twig/extensions": "^1.5"
     },
     "require-dev": {
