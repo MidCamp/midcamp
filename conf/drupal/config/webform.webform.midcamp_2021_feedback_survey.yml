@@ -1,6 +1,6 @@
 uuid: c01e46ea-4353-4919-8018-0e843f9c1ab6
 langcode: en
-status: open
+status: closed
 dependencies: {  }
 open: null
 close: null
@@ -25,7 +25,7 @@ settings:
   page_submit_path: 2021/survey
   page_confirm_path: ''
   page_theme_name: ''
-  form_title: both
+  form_title: source_entity_webform
   form_submit_once: false
   form_exception_message: ''
   form_open_message: ''
@@ -94,7 +94,7 @@ settings:
   wizard_track: ''
   wizard_prev_button_label: ''
   wizard_next_button_label: ''
-  wizard_toggle: false
+  wizard_toggle: true
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
   preview: 0
