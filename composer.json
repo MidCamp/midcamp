@@ -112,6 +112,9 @@
           },
           "drupal/scheduler": {
               "Add Drush 10 support [#3169731]": "https://www.drupal.org/files/issues/2020-09-08/3169731-2.drush10.patch"
+          },
+          "drupal/entity_reference_revisions": {
+              "composer.json is missing extra.drush.services section [#3225141]": "https://www.drupal.org/files/issues/2021-07-23/entity_reference_revisions_composer.patch"
           }
         },
         "installer-types": ["butler-styleguide"],
