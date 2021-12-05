@@ -24,6 +24,16 @@ tasks:
 
     - run:
         name: task2
+        command: cd web && drush -y updb --cache-clear=0
+        service: cli
+
+    - run:
+        name: task3
+        command: cd web && drush -y cim
+        service: cli
+
+    - run:
+        name: task4
         command: cd web && drush -y cr
         service: cli
 
