@@ -48,7 +48,6 @@
         "drupal/contact_formatter": "^2.0",
         "drupal/core": "~8.9.0",
         "drupal/core-composer-scaffold": "~8.9.0",
-        "drupal/devel": "^2.0",
         "drupal/entity": "^1.2",
         "drupal/entityqueue": "^1.0@alpha",
         "drupal/field_group": "^1.3",
