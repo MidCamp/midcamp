@@ -1,23 +1,22 @@
 <?php
+
 /**
- * @file midcamp_utility.install
+ * @file
  * Contains install and update hooks for the midcamp_utility module.
  */
 
 /**
  * Kill workflow states and workflows with fire.
+ *
+ * Workflows is gross. It doesn't let us remove a workflow while there is
+ * content using a workflow, and doesn't let us delete a moderation state while
+ * content is in said state, and won't let us uninstall the module unless both
+ * of the above are resolved...
+ *
+ * This is a quick and dirty way to resolve those problems. Surely there is a
+ * better way, but it did not immediately reveal itself to me. I am sorry.
  */
 function midcamp_utility_update_8001() {
-  /**
-   * Workflows is gross. It doesn't let us remove a workflow while there is content
-   * using a workflow, and doesn't let us delete a moderation state while content
-   * is in said state, and won't let us uninstall the module unless both of the
-   * above are resolved...
-   *
-   * This is a quick and dirty way to resolve those problems. Surely there is a
-   * better way, but it did not immediately reveal itself to me. I am sorry.
-   */
-
   // Remove moderation states from all content.
   \Drupal::database()
     ->delete('content_moderation_state_field_data')
@@ -28,4 +27,33 @@ function midcamp_utility_update_8001() {
     ->delete('content_moderation_state')
     ->execute();
 
+}
+
+/**
+ * Switch from 'config_installer' profile to 'minimal'.
+ */
+function midcamp_utility_update_8901(&$sandbox) {
+  // Set profile entry.
+  $config = \Drupal::configFactory()->getEditable('core.extension');
+  $config->set('profile', 'minimal');
+
+  // Remove old profile from active config.
+  $modules = $config->get('module');
+  unset($modules['config_installer']);
+  $config->set('module', $modules);
+  $config->save();
+  drupal_flush_all_caches();
+
+  // Install new profile.
+  \Drupal::service('module_installer')->install(['minimal']);
+
+  // Uninstall old profile.
+  \Drupal::service('module_installer')->uninstall(['config_installer']);
+
+  // Remove schema entry for old_profile.
+  $schema = \Drupal::keyValue('system.schema');
+  if ($schema->get('config_installer')) {
+    $schema->delete('config_installer');
+  }
+  drupal_flush_all_caches();
 }
