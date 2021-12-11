@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "edcf1cc743becd3523f2df663ca55281",
+    "content-hash": "41d997ffe9394f043a97621da55eb102",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2045,52 +2045,6 @@
                 "source": "http://cgit.drupalcode.org/config_ignore",
                 "issues": "http://drupal.org/project/config_ignore",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
-            }
-        },
-        {
-            "name": "drupal/config_installer",
-            "version": "1.8.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/config_installer.git",
-                "reference": "8.x-1.8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_installer-8.x-1.8.zip",
-                "reference": "8.x-1.8",
-                "shasum": "43d7af76a3f00d074161e242ddf94d942d256250"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-profile",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.8",
-                    "datestamp": "1524572284",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "patches_applied": {
-                    "Fix config_install error (https://www.drupal.org/project/config_installer/issues/3039052)": "https://www.drupal.org/files/issues/2019-03-11/config_installer-generatepassword-missing-3039052-2-D8.patch"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "alexpott",
-                    "homepage": "https://www.drupal.org/user/157725"
-                }
-            ],
-            "homepage": "https://www.drupal.org/project/config_installer",
-            "support": {
-                "source": "https://git.drupalcode.org/project/config_installer"
             }
         },
         {
