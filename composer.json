@@ -45,11 +45,9 @@
         "drupal/allow_iframed_site": "^3.0",
         "drupal/captcha": "1.x-dev",
         "drupal/config_ignore": "^2.1",
-        "drupal/config_installer": "^1.5",
         "drupal/contact_formatter": "^2.0",
         "drupal/core": "~8.9.0",
         "drupal/core-composer-scaffold": "~8.9.0",
-        "drupal/devel": "^2.0",
         "drupal/entity": "^1.2",
         "drupal/entityqueue": "^1.0@alpha",
         "drupal/field_group": "^1.3",
@@ -103,9 +101,6 @@
           },
           "drupal/recaptcha": {
               "Enable cacheable captcha support (https://www.drupal.org/project/recaptcha/issues/2219993)": "https://www.drupal.org/files/issues/2018-05-20/recaptcha-cacheable-8.x-2219993-35.patch"
-          },
-          "drupal/config_installer": {
-              "Fix config_install error (https://www.drupal.org/project/config_installer/issues/3039052)": "https://www.drupal.org/files/issues/2019-03-11/config_installer-generatepassword-missing-3039052-2-D8.patch"
           },
           "drupal/libraries": {
               "Missing global variable $base_theme_info [#3057777]": "https://www.drupal.org/files/issues/2019-06-26/missing_base_theme_info_global_variable-3057777-4.patch"
