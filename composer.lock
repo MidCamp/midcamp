@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5d89a40632582a46b6b603c2c60176e8",
+    "content-hash": "96391f76da8b98beeaf56a71582bfe63",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2613,35 +2613,35 @@
         },
         {
             "name": "drupal/entityqueue",
-            "version": "1.0.0-beta5",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entityqueue.git",
-                "reference": "8.x-1.0-beta5"
+                "reference": "8.x-1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entityqueue-8.x-1.0-beta5.zip",
-                "reference": "8.x-1.0-beta5",
-                "shasum": "b4194b275eb36cea4b77dc267c368341fc37d455"
+                "url": "https://ftp.drupal.org/files/projects/entityqueue-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "ef579fde4fbed75be2b9728ee3167d6a32beb527"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "^8.7.7 || ^9"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-beta5",
-                    "datestamp": "1559148188",
+                    "version": "8.x-1.2",
+                    "datestamp": "1606297907",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -14603,7 +14603,6 @@
         "brian-clement/tito": 20,
         "drupal/address": 20,
         "drupal/captcha": 20,
-        "drupal/entityqueue": 15,
         "drupal/field_permissions": 10,
         "drupal/libraries": 10,
         "drupal/r4032login": 20,
