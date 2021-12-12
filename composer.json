@@ -57,7 +57,7 @@
         "drupal/libraries": "^3.0@beta",
         "drupal/linkicon": "^1.4",
         "drupal/mailchimp": "^1.12",
-        "drupal/metatag": "^1.4",
+        "drupal/metatag": "^1.16",
         "drupal/name": "^1.0",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
