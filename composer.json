@@ -44,7 +44,7 @@
         "drupal/admin_toolbar": "^2.0",
         "drupal/allow_iframed_site": "^3.0",
         "drupal/captcha": "1.x-dev",
-        "drupal/config_ignore": "^2.1",
+        "drupal/config_ignore": "^2.3",
         "drupal/contact_formatter": "^2.0",
         "drupal/core": "~8.9.0",
         "drupal/core-composer-scaffold": "~8.9.0",

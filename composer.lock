@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7dd784ffdf0151ec804dd7efa17a5392",
+    "content-hash": "5d89a40632582a46b6b603c2c60176e8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1925,20 +1925,23 @@
         },
         {
             "name": "drupal/config_filter",
-            "version": "1.5.0",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_filter.git",
-                "reference": "8.x-1.5"
+                "reference": "8.x-2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_filter-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "81210684c378dab856b3c2bce5eeaa58992d2efc"
+                "url": "https://ftp.drupal.org/files/projects/config_filter-8.x-2.2.zip",
+                "reference": "8.x-2.2",
+                "shasum": "dc6bc8107255066507cfc1d6766e664c3673cda0"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^8.8 || ^9"
+            },
+            "conflict": {
+                "drush/drush": "<10"
             },
             "suggest": {
                 "drupal/config_split": "Split site configuration for different environments."
@@ -1946,8 +1949,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.5",
-                    "datestamp": "1572542288",
+                    "version": "8.x-2.2",
+                    "datestamp": "1601934694",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1956,7 +1959,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -1984,34 +1987,34 @@
                 "configuration management"
             ],
             "support": {
-                "source": "http://cgit.drupalcode.org/config_filter",
+                "source": "https://git.drupalcode.org/project/config_filter",
                 "issues": "https://www.drupal.org/project/issues/config_filter",
-                "irc": "irc://irc.freenode.org/drupal-contribute"
+                "slack": "https://drupal.slack.com/archives/C45342CDD"
             }
         },
         {
             "name": "drupal/config_ignore",
-            "version": "2.2.0",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_ignore.git",
-                "reference": "8.x-2.2"
+                "reference": "8.x-2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_ignore-8.x-2.2.zip",
-                "reference": "8.x-2.2",
-                "shasum": "18af5772087b90dd4b83c2c6e292d8ea2f8834e0"
+                "url": "https://ftp.drupal.org/files/projects/config_ignore-8.x-2.3.zip",
+                "reference": "8.x-2.3",
+                "shasum": "2e1f07a455275fb6637909921a8915646601fc00"
             },
             "require": {
-                "drupal/config_filter": "1.*",
-                "drupal/core": "~8.0"
+                "drupal/config_filter": "^1 || ^2",
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.2",
-                    "datestamp": "1576528386",
+                    "version": "8.x-2.3",
+                    "datestamp": "1608306489",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2020,7 +2023,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -2042,7 +2045,7 @@
             "description": "Ignore certain configuration during import.",
             "homepage": "http://drupal.org/project/config_ignore",
             "support": {
-                "source": "http://cgit.drupalcode.org/config_ignore",
+                "source": "https://git.drupalcode.org/project/config_ignore",
                 "issues": "http://drupal.org/project/config_ignore",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             }
