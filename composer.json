@@ -40,7 +40,7 @@
         "brian-clement/tito": "dev-master",
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",
-        "drupal/address": "1.x-dev",
+        "drupal/address": "^1.9",
         "drupal/admin_toolbar": "^2.0",
         "drupal/allow_iframed_site": "^3.0",
         "drupal/captcha": "1.x-dev",
