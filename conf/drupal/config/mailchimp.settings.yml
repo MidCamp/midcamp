@@ -7,3 +7,4 @@ _core:
 enable_connected: true
 connected_id: 3c32683d2b85c4b
 connected_paths: '<front>'
+api_timeout: 10
