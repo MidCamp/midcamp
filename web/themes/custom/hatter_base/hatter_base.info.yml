@@ -1,7 +1,7 @@
 name: Hatter Base
 description: Now with more madness!
 type: theme
-core: 8.x
+core_version_requirement: ^8 || ^9
 base theme: classy
 libraries:
   - hatter_base/global-css
