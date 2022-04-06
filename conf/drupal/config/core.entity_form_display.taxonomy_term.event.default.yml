@@ -37,6 +37,7 @@ third_party_settings:
         description: 'Enter the event "slug" from Tito.  The rest of the fields will be populated automatically. '
         required_fields: false
       label: Tito
+      region: content
 id: taxonomy_term.event.default
 targetEntityType: taxonomy_term
 bundle: event
@@ -133,4 +134,11 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
+    third_party_settings: {  }
 hidden: {  }
