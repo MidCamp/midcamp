@@ -68,7 +68,7 @@
         "drupal/name": "^1.0",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
-        "drupal/r4032login": "1.x-dev",
+        "drupal/r4032login": "^2.1",
         "drupal/recaptcha": "^3.0",
         "drupal/redirect": "^1.0",
         "drupal/scheduler": "^1.3",
