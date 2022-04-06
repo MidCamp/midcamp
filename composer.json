@@ -7,7 +7,14 @@
     "prefer-stable": true,
     "preferred-install": "dist",
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "drupal/console-extend-plugin": true,
+            "drupal/core-composer-scaffold": true,
+            "cweagans/composer-patches": true,
+            "oomphinc/composer-installers-extender": true
+        }
     },
     "repositories": {
         "eventbrite-events": {
