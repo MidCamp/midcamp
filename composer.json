@@ -99,27 +99,42 @@
     },
     "extra": {
         "patches": {
-          "drupal/mailchimp": {
-            "MailchimpListsSubscribeForm wants an array, but gets an object (www.drupal.org/project/mailchimp/issues/2931408)": "https://www.drupal.org/files/issues/2931408-2-list-form-cant-array.patch"
-          },
-          "drupal/libraries": {
-              "Missing global variable $base_theme_info [#3057777]": "https://www.drupal.org/files/issues/2019-06-26/missing_base_theme_info_global_variable-3057777-4.patch"
-          },
-          "drupal/scheduler": {
-              "Add Drush 10 support [#3169731]": "https://www.drupal.org/files/issues/2020-09-08/3169731-2.drush10.patch"
-          },
-          "drupal/entity_reference_revisions": {
-              "composer.json is missing extra.drush.services section [#3225141]": "https://www.drupal.org/files/issues/2021-07-23/entity_reference_revisions_composer.patch"
-          }
+            "drupal/mailchimp": {
+                "MailchimpListsSubscribeForm wants an array, but gets an object (www.drupal.org/project/mailchimp/issues/2931408)": "https://www.drupal.org/files/issues/2931408-2-list-form-cant-array.patch",
+                "Ensure missing API keys in lower environments don't break the site": "patches/mailchimp-prevent-wsod-missing-keys.patch"
+            },
+            "drupal/libraries": {
+                "Missing global variable $base_theme_info [#3057777]": "https://www.drupal.org/files/issues/2019-06-26/missing_base_theme_info_global_variable-3057777-4.patch"
+            },
+            "drupal/scheduler": {
+                "Add Drush 10 support [#3169731]": "https://www.drupal.org/files/issues/2020-09-08/3169731-2.drush10.patch"
+            },
+            "drupal/entity_reference_revisions": {
+                "composer.json is missing extra.drush.services section [#3225141]": "https://www.drupal.org/files/issues/2021-07-23/entity_reference_revisions_composer.patch"
+            }
         },
-        "installer-types": ["butler-styleguide"],
+        "installer-types": [
+            "butler-styleguide"
+        ],
         "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
-            "styleguide": ["type:butler-styleguide"]
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "styleguide": [
+                "type:butler-styleguide"
+            ]
         },
         "drupal-scaffold": {
             "locations": {
