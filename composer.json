@@ -43,7 +43,7 @@
         }
     },
     "require": {
-        "brian-clement/eventbrite_events": "dev-master",
+        "brian-clement/eventbrite_events": "^1.0",
         "brian-clement/tito": "dev-master",
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",
@@ -68,13 +68,13 @@
         "drupal/name": "^1.0",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
-        "drupal/r4032login": "1.x-dev",
+        "drupal/r4032login": "^2.1",
         "drupal/recaptcha": "^3.0",
         "drupal/redirect": "^1.0",
         "drupal/scheduler": "^1.3",
         "drupal/simple_sitemap": "^3.8",
         "drupal/switch_page_theme": "1.x-dev",
-        "drupal/twig_extensions": "1.x-dev",
+        "drupal/twig_extensions": "2.x-dev",
         "drupal/upgrade_status": "^3.10",
         "drupal/video_embed_field": "^2.4",
         "drupal/viewsreference": "^1.7",
@@ -99,30 +99,42 @@
     },
     "extra": {
         "patches": {
-          "drupal/twig_extensions": {
-            "Error after upgrading to Drupal 8.1 (https://www.drupal.org/project/twig_extensions/issues/2726531)": "https://www.drupal.org/files/issues/error_after_upgrading-2726531-9.patch"
-          },
-          "drupal/mailchimp": {
-            "MailchimpListsSubscribeForm wants an array, but gets an object (www.drupal.org/project/mailchimp/issues/2931408)": "https://www.drupal.org/files/issues/2931408-2-list-form-cant-array.patch"
-          },
-          "drupal/libraries": {
-              "Missing global variable $base_theme_info [#3057777]": "https://www.drupal.org/files/issues/2019-06-26/missing_base_theme_info_global_variable-3057777-4.patch"
-          },
-          "drupal/scheduler": {
-              "Add Drush 10 support [#3169731]": "https://www.drupal.org/files/issues/2020-09-08/3169731-2.drush10.patch"
-          },
-          "drupal/entity_reference_revisions": {
-              "composer.json is missing extra.drush.services section [#3225141]": "https://www.drupal.org/files/issues/2021-07-23/entity_reference_revisions_composer.patch"
-          }
+            "drupal/mailchimp": {
+                "MailchimpListsSubscribeForm wants an array, but gets an object (www.drupal.org/project/mailchimp/issues/2931408)": "https://www.drupal.org/files/issues/2931408-2-list-form-cant-array.patch",
+                "Ensure missing API keys in lower environments don't break the site": "patches/mailchimp-prevent-wsod-missing-keys.patch"
+            },
+            "drupal/libraries": {
+                "Missing global variable $base_theme_info [#3057777]": "https://www.drupal.org/files/issues/2019-06-26/missing_base_theme_info_global_variable-3057777-4.patch"
+            },
+            "drupal/scheduler": {
+                "Add Drush 10 support [#3169731]": "https://www.drupal.org/files/issues/2020-09-08/3169731-2.drush10.patch"
+            },
+            "drupal/entity_reference_revisions": {
+                "composer.json is missing extra.drush.services section [#3225141]": "https://www.drupal.org/files/issues/2021-07-23/entity_reference_revisions_composer.patch"
+            }
         },
-        "installer-types": ["butler-styleguide"],
+        "installer-types": [
+            "butler-styleguide"
+        ],
         "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
-            "styleguide": ["type:butler-styleguide"]
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "styleguide": [
+                "type:butler-styleguide"
+            ]
         },
         "drupal-scaffold": {
             "locations": {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "74b10ab83ec531c4f745b67947ab6f45",
+    "content-hash": "156ac2978bc1bee7f3c52c6fa1e9dbd0",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -64,16 +64,16 @@
         },
         {
             "name": "brian-clement/eventbrite_events",
-            "version": "dev-master",
+            "version": "1.0-beta",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Brian-Clement/eventbrite_events.git",
-                "reference": "1ac7032b3fe9fda40f92e1899f090d88638f0c73"
+                "reference": "4a9a2c5734035396e970c9f3ae5553d14a8ae3f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Brian-Clement/eventbrite_events/zipball/1ac7032b3fe9fda40f92e1899f090d88638f0c73",
-                "reference": "1ac7032b3fe9fda40f92e1899f090d88638f0c73",
+                "url": "https://api.github.com/repos/Brian-Clement/eventbrite_events/zipball/4a9a2c5734035396e970c9f3ae5553d14a8ae3f2",
+                "reference": "4a9a2c5734035396e970c9f3ae5553d14a8ae3f2",
                 "shasum": ""
             },
             "type": "drupal-module",
@@ -85,10 +85,10 @@
                 "Drupal"
             ],
             "support": {
-                "source": "https://github.com/Brian-Clement/eventbrite_events/tree/master",
+                "source": "https://github.com/Brian-Clement/eventbrite_events/tree/1.0-beta",
                 "issues": "https://github.com/Brian-Clement/eventbrite_events/issues"
             },
-            "time": "2019-10-21T23:02:13+00:00"
+            "time": "2022-05-22T18:32:28+00:00"
         },
         {
             "name": "brian-clement/tito",
@@ -3405,26 +3405,29 @@
         },
         {
             "name": "drupal/r4032login",
-            "version": "dev-1.x",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/r4032login.git",
-                "reference": "90904367bc60e14320ee1478d934ca6dce34233d"
+                "reference": "2.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/r4032login-2.1.0.zip",
+                "reference": "2.1.0",
+                "shasum": "2004f3ea4a4d4e0f08cdcd75f6f89c3f58d903fa"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "^8.8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.1+3-dev",
-                    "datestamp": "1578675183",
+                    "version": "2.1.0",
+                    "datestamp": "1615710471",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -3436,6 +3439,10 @@
                 {
                     "name": "Bevan",
                     "homepage": "https://www.drupal.org/user/49989"
+                },
+                {
+                    "name": "Grayle",
+                    "homepage": "https://www.drupal.org/user/3145497"
                 },
                 {
                     "name": "Nixou",
@@ -3478,8 +3485,7 @@
             "homepage": "https://www.drupal.org/project/r4032login",
             "support": {
                 "source": "https://git.drupalcode.org/project/r4032login"
-            },
-            "time": "2020-01-10T16:52:01+00:00"
+            }
         },
         {
             "name": "drupal/recaptcha",
@@ -3866,31 +3872,28 @@
         },
         {
             "name": "drupal/twig_extensions",
-            "version": "dev-1.x",
+            "version": "dev-2.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/twig_extensions.git",
-                "reference": "2e73803b1dd4e05b8e268d991518416ae49e6455"
+                "reference": "35e09f8ff9d4fc2409326f4348321f4799b7d5aa"
             },
             "require": {
-                "drupal/core": "~8.0",
+                "drupal/core": "^8 || ^9",
                 "twig/extensions": "^1.3"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                    "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1534896480",
+                    "version": "8.x-2.0+3-dev",
+                    "datestamp": "1591199111",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": {
-                    "Error after upgrading to Drupal 8.1 (https://www.drupal.org/project/twig_extensions/issues/2726531)": "https://www.drupal.org/files/issues/error_after_upgrading-2726531-9.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3904,15 +3907,14 @@
                 }
             ],
             "description": "Twig Extensions",
-            "homepage": "http://drupal.org/project/twig_extensions",
+            "homepage": "https://www.drupal.org/project/twig_extensions",
             "keywords": [
                 "Drupal"
             ],
             "support": {
-                "source": "http://cgit.drupalcode.org/twig_extensions",
-                "issues": "http://drupal.org/project/issues/twig_extensions"
-            },
-            "time": "2018-08-22T00:02:56+00:00"
+                "source": "https://git.drupalcode.org/project/twig_extensions",
+                "issues": "https://www.drupal.org/project/issues/twig_extensions"
+            }
         },
         {
             "name": "drupal/upgrade_status",
@@ -14624,11 +14626,9 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "brian-clement/eventbrite_events": 20,
         "brian-clement/tito": 20,
         "drupal/captcha": 20,
         "drupal/libraries": 10,
-        "drupal/r4032login": 20,
         "drupal/switch_page_theme": 20,
         "drupal/twig_extensions": 20,
         "midcamp/hatter": 20,
@@ -14638,5 +14638,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.3.0"
 }
