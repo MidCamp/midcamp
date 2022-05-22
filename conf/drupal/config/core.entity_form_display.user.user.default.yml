@@ -46,6 +46,7 @@ third_party_settings:
         open: false
         required_fields: true
       label: 'Profile Settings'
+      region: content
     group_links:
       children:
         - field_do_profile
@@ -61,6 +62,7 @@ third_party_settings:
         open: false
         required_fields: true
       label: 'Links, Links and more Links'
+      region: content
     group_essentials:
       children:
         - account
@@ -76,6 +78,7 @@ third_party_settings:
         open: true
         required_fields: true
       label: Essentials
+      region: content
     group_all_about_you:
       children:
         - user_picture
@@ -93,6 +96,7 @@ third_party_settings:
         open: false
         required_fields: true
       label: 'All About You'
+      region: content
 _core:
   default_config_hash: LLAieeozVsoZDb-2PbFxRJpQqnKmpR7-4OoRJnduz-U
 id: user.user.default

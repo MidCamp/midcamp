@@ -1,0 +1,14 @@
+--- web/modules/contrib/mailchimp/mailchimp.module
++++ web/modules/contrib/mailchimp/mailchimp.module
+@@ -1484,6 +1484,11 @@
+           /* @var \Mailchimp\MailchimpConnectedSites $mc_connected */
+           $mc_connected = mailchimp_get_api_object('MailchimpConnectedSites');
+
++          // Handle instances where API keys may be missing.
++          if (!isset($mc_connected)) {
++            return;
++          }
++
+           // Verify Connected Site exists on the Mailchimp side and insert JS.
+           $connected_site = $mc_connected->getConnectedSite($connected_site_id);
+           if (!empty($connected_site)) {
