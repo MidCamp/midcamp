@@ -18,13 +18,13 @@ plugin: 'views_block:attendees-block_2'
 settings:
   id: 'views_block:attendees-block_2'
   label: ''
-  provider: views
   label_display: visible
+  provider: views
   views_label: ''
   items_per_page: none
 visibility:
   request_path:
     id: request_path
-    pages: /2019/sponsors
     negate: false
     context_mapping: {  }
+    pages: /2019/sponsors

@@ -16,19 +16,19 @@ mode: default
 content:
   field_column_content_2:
     type: entity_reference_revisions_entity_view
-    weight: 1
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 1
     region: content
   field_grid_style:
-    weight: 0
+    type: list_key
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: list_key
+    weight: 0
     region: content
 hidden:
   created: true

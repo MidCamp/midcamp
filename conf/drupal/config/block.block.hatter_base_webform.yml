@@ -18,14 +18,14 @@ plugin: webform_block
 settings:
   id: webform_block
   label: 'Lightning Talk Sign Up'
-  provider: webform
   label_display: visible
+  provider: webform
   webform_id: lightning_talk_sign_up
   default_data: ''
   redirect: false
 visibility:
   request_path:
     id: request_path
-    pages: "/2018/topic-proposal/lightning-talks\r\n/2019/topic-proposal/lightning-talks"
     negate: false
     context_mapping: {  }
+    pages: "/2018/topic-proposal/lightning-talks\r\n/2019/topic-proposal/lightning-talks"

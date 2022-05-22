@@ -2,9 +2,9 @@ uuid: 0825e1bf-8303-49b7-9c98-4c3b5e410505
 langcode: en
 status: open
 dependencies: {  }
+weight: 0
 open: null
 close: null
-weight: 0
 uid: 1
 template: false
 archive: false
@@ -12,7 +12,202 @@ id: midcamp_2018_survey
 title: 'Midcamp 2018 Survey'
 description: ''
 category: ''
-elements: "1:\n  '#type': webform_wizard_page\n  '#title': '1'\n  '#open': true\n  markup_intro:\n    '#type': webform_markup\n    '#markup': 'Thank you for taking this survey. It has 20 questions. We want to make next year&#39;s MidCamp even better and your responses will help inform our strategy for 2018.'\n  first_time_midcamp:\n    '#type': radios\n    '#title': 'First time at Midcamp?'\n    '#options': yes_no\n    '#required': true\n2:\n  '#type': webform_wizard_page\n  '#title': '2'\n  '#open': true\n  how_did_you_find_out_about_midcamp_:\n    '#type': webform_checkboxes_other\n    '#title': 'How did you find out about MidCamp?'\n    '#description': \"<p tabindex=\\\"-1\\\">Welcome! Congrats! We&rsquo;re think you&rsquo;re the greatest!!</p>\\nHow did you find out about MidCamp? (pick all that apply)\\n\"\n    '#title_display': before\n    '#description_display': before\n    '#options':\n      Colleague: Colleague\n      'Local drupal org/meetup group': 'Local drupal org/meetup group'\n      Friend: Friend\n      'Drupal.org website': 'Drupal.org website'\n      'Twitter/other social media': 'Twitter/other social media'\n    '#states':\n      invisible:\n        ':input[name=\"first_time_midcamp\"]':\n          '!value': 'Yes'\n  what_is_your_job_:\n    '#type': webform_checkboxes_other\n    '#title': 'What is your job?'\n    '#title_display': before\n    '#options':\n      'Drupal developer': 'Drupal developer'\n      'Developer (other)': 'Developer (other)'\n      'Site Builder': 'Site Builder'\n      'Website Manager': 'Website Manager'\n      'Drupal Project Manager': 'Drupal Project Manager'\n      Designer: Designer\n      Recruiter: Recruiter\n      UXer: UXer\n      'Business Owner': 'Business Owner'\n      Student: Student\n  primary_reason_for_coming:\n    '#type': webform_checkboxes_other\n    '#title': 'Which of the following best describes your primary reason for coming to MidCamp'\n    '#options':\n      'Learn about Drupal 8': 'Learn about Drupal 8'\n      'Meeting clients': 'Meeting clients'\n      'Meeting employers': 'Meeting employers'\n      'Recruiting employees': 'Recruiting employees'\n      'Meeting community members': 'Meeting community members'\n      'Want to build knowledge/learning': 'Want to build knowledge/learning'\n      'Make connections in Drupal Community': 'Make connections in Drupal Community'\n      Training: Training\n      Sprints: Sprints\n      BOFs: BOFs\n  where_did_you_stay_during_camp_:\n    '#type': radios\n    '#title': 'Where did you stay during camp?'\n    '#options':\n      'At my home. I’m local.': 'At my home. I’m local.'\n      'A camp-recommended hotel': 'A camp-recommended hotel'\n      'A rental or hotel elsewhere in the city': 'A rental or hotel elsewhere in the city'\n      'With friends/any free bed': 'With friends/any free bed'\n3:\n  '#type': webform_wizard_page\n  '#title': '3'\n  '#open': true\n  did_you_attend_any_sessions_:\n    '#type': radios\n    '#title': 'Did you attend any sessions?'\n    '#options': yes_no\n  sessions_worthwhile:\n    '#type': webform_entity_select\n    '#title': 'Which MidCamp sessions did you find most worthwhile?'\n    '#multiple': 5\n    '#multiple_error': 'Please choose no more than 5 favorite sessions!'\n    '#description': 'Please select up to 5 sessions.'\n    '#states':\n      invisible:\n        ':input[name=\"did_you_attend_any_sessions_\"]':\n          '!value': 'Yes'\n    '#target_type': node\n    '#selection_handler': views\n    '#selection_settings':\n      view:\n        view_name: survey_filters\n        display_name: entity_reference_1\n        arguments: {  }\n  speakers_enjoy:\n    '#type': webform_entity_select\n    '#title': 'Which MidCamp speakers did you most enjoy?'\n    '#multiple': 5\n    '#multiple_error': 'Please choose no more than 5 favorite speakers!'\n    '#description': 'Please select up to 5 speakers.'\n    '#options_randomize': true\n    '#states':\n      invisible:\n        ':input[name=\"did_you_attend_any_sessions_\"]':\n          '!value': 'Yes'\n    '#target_type': user\n    '#selection_handler': views\n    '#selection_settings':\n      view:\n        view_name: user_entityreference\n        display_name: entity_reference_1\n        arguments: {  }\n  recommend_midcamp_0_10:\n    '#type': webform_rating\n    '#title': 'On a scale from 0-10, how likely are you to recommend Midcamp to a friend or colleague?'\n    '#max': 10\n    '#reset': true\n  do_you_have_anything_to_say_about_the_food_or_drink_:\n    '#type': radios\n    '#title': 'Do you have anything to say about the food or drink?'\n    '#options': yes_no\n4:\n  '#type': webform_wizard_page\n  '#title': '4'\n  '#open': true\n  food_satisfaction:\n    '#type': webform_likert\n    '#title': 'Please rate the following on a scale of 1-5 for your satisfaction with the following'\n    '#states':\n      invisible:\n        ':input[name=\"do_you_have_anything_to_say_about_the_food_or_drink_\"]':\n          '!value': 'Yes'\n    '#questions':\n      'Quantity of food': 'Quantity of food'\n      'Quality of food': 'Quality of food'\n      \"Variety of food (dietary requirements)\\t\": \"Variety of food (dietary requirements)\\t\"\n      'Quantity of drinks/coffee': 'Quantity of drinks/coffee'\n    '#answers':\n      \"Extremely dissatisfied\\t\": \"Extremely dissatisfied\\t\"\n      'Somewhat dissatisfied': 'Somewhat dissatisfied'\n      'Neither satisfied nor dissatisfied': 'Neither satisfied nor dissatisfied'\n      'Somewhat satisfied': 'Somewhat satisfied'\n      'Extremely satisfied': 'Extremely satisfied'\n    '#na_answer_text': ''\n  other_comments_food_or_drink:\n    '#type': textarea\n    '#title': 'Any other comments about the food or drink?'\n    '#states':\n      invisible:\n        ':input[name=\"do_you_have_anything_to_say_about_the_food_or_drink_\"]':\n          '!value': 'Yes'\n  rate_experience_at_midcamp_scale_1_5:\n    '#type': webform_likert\n    '#title': 'Please rate your experience at MidCamp on a scale of 1-5, where 1 is very negative and 5 is very positive.'\n    '#questions':\n      'How satisfied were you with the large meeting space?': 'How satisfied were you with the large meeting space?'\n      \"How satisfied were you with the set-ups?\\t\": \"How satisfied were you with the set-ups?\\t\"\n      \"How useful were the walking lanes?\\t\": \"How useful were the walking lanes?\\t\"\n      \"How likely are you to come back to MidCamp next year?\\t\": \"How likely are you to come back to MidCamp next year?\\t\"\n      \"How satisfied are you with your experience at MidCamp?\\t\": \"How satisfied are you with your experience at MidCamp?\\t\"\n    '#answers': likert_satisfaction\n    '#na_answer_text': ''\n  highlight_of_camp:\n    '#type': textarea\n    '#title': 'What was the highlight of camp for you?'\n  improve_next_year:\n    '#type': textarea\n    '#title': 'What could we improve for next year?'\n  suggestions_grow_midcamp:\n    '#type': textarea\n    '#title': 'We are always looking for ways to broaden our reach: if you have any suggestions on how to grow MidCamp we’d love to hear them.'\n  other_comments:\n    '#type': textarea\n    '#title': 'Any other comments that you want to share with the organizers of this year''s camp?'\n  email:\n    '#type': email\n    '#title': 'What is your email?'\n  what_is_your_drupal_org_username:\n    '#type': textfield\n    '#title': 'What is your Drupal.org Username?'\n  postal_code_or_zipcode_for_primary_residence:\n    '#type': webform_address\n    '#title': 'Postal Code or Zipcode (for primary residence)'\n    '#address__access': false\n    '#address_2__access': false\n    '#city__access': false\n    '#state_province__access': false\n    '#country__access': false\n  interested_in_helping_organize_midcamp:\n    '#type': radios\n    '#title': 'Are you interested in being a volunteer or helping organize MidCamp next year?'\n    '#options':\n      'Yes': 'Yes'\n      Maybe: Maybe\n      'No': 'No'\n"
+elements: |
+  1:
+    '#type': webform_wizard_page
+    '#title': '1'
+    '#open': true
+    markup_intro:
+      '#type': webform_markup
+      '#markup': 'Thank you for taking this survey. It has 20 questions. We want to make next year&#39;s MidCamp even better and your responses will help inform our strategy for 2018.'
+    first_time_midcamp:
+      '#type': radios
+      '#title': 'First time at Midcamp?'
+      '#options': yes_no
+      '#required': true
+  2:
+    '#type': webform_wizard_page
+    '#title': '2'
+    '#open': true
+    how_did_you_find_out_about_midcamp_:
+      '#type': webform_checkboxes_other
+      '#title': 'How did you find out about MidCamp?'
+      '#description': "<p tabindex=\"-1\">Welcome! Congrats! We&rsquo;re think you&rsquo;re the greatest!!</p>\nHow did you find out about MidCamp? (pick all that apply)\n"
+      '#title_display': before
+      '#description_display': before
+      '#options':
+        Colleague: Colleague
+        'Local drupal org/meetup group': 'Local drupal org/meetup group'
+        Friend: Friend
+        'Drupal.org website': 'Drupal.org website'
+        'Twitter/other social media': 'Twitter/other social media'
+      '#states':
+        invisible:
+          ':input[name="first_time_midcamp"]':
+            '!value': 'Yes'
+    what_is_your_job_:
+      '#type': webform_checkboxes_other
+      '#title': 'What is your job?'
+      '#title_display': before
+      '#options':
+        'Drupal developer': 'Drupal developer'
+        'Developer (other)': 'Developer (other)'
+        'Site Builder': 'Site Builder'
+        'Website Manager': 'Website Manager'
+        'Drupal Project Manager': 'Drupal Project Manager'
+        Designer: Designer
+        Recruiter: Recruiter
+        UXer: UXer
+        'Business Owner': 'Business Owner'
+        Student: Student
+    primary_reason_for_coming:
+      '#type': webform_checkboxes_other
+      '#title': 'Which of the following best describes your primary reason for coming to MidCamp'
+      '#options':
+        'Learn about Drupal 8': 'Learn about Drupal 8'
+        'Meeting clients': 'Meeting clients'
+        'Meeting employers': 'Meeting employers'
+        'Recruiting employees': 'Recruiting employees'
+        'Meeting community members': 'Meeting community members'
+        'Want to build knowledge/learning': 'Want to build knowledge/learning'
+        'Make connections in Drupal Community': 'Make connections in Drupal Community'
+        Training: Training
+        Sprints: Sprints
+        BOFs: BOFs
+    where_did_you_stay_during_camp_:
+      '#type': radios
+      '#title': 'Where did you stay during camp?'
+      '#options':
+        'At my home. I’m local.': 'At my home. I’m local.'
+        'A camp-recommended hotel': 'A camp-recommended hotel'
+        'A rental or hotel elsewhere in the city': 'A rental or hotel elsewhere in the city'
+        'With friends/any free bed': 'With friends/any free bed'
+  3:
+    '#type': webform_wizard_page
+    '#title': '3'
+    '#open': true
+    did_you_attend_any_sessions_:
+      '#type': radios
+      '#title': 'Did you attend any sessions?'
+      '#options': yes_no
+    sessions_worthwhile:
+      '#type': webform_entity_select
+      '#title': 'Which MidCamp sessions did you find most worthwhile?'
+      '#multiple': 5
+      '#multiple_error': 'Please choose no more than 5 favorite sessions!'
+      '#description': 'Please select up to 5 sessions.'
+      '#states':
+        invisible:
+          ':input[name="did_you_attend_any_sessions_"]':
+            '!value': 'Yes'
+      '#target_type': node
+      '#selection_handler': views
+      '#selection_settings':
+        view:
+          view_name: survey_filters
+          display_name: entity_reference_1
+          arguments: {  }
+    speakers_enjoy:
+      '#type': webform_entity_select
+      '#title': 'Which MidCamp speakers did you most enjoy?'
+      '#multiple': 5
+      '#multiple_error': 'Please choose no more than 5 favorite speakers!'
+      '#description': 'Please select up to 5 speakers.'
+      '#options_randomize': true
+      '#states':
+        invisible:
+          ':input[name="did_you_attend_any_sessions_"]':
+            '!value': 'Yes'
+      '#target_type': user
+      '#selection_handler': views
+      '#selection_settings':
+        view:
+          view_name: user_entityreference
+          display_name: entity_reference_1
+          arguments: {  }
+    recommend_midcamp_0_10:
+      '#type': webform_rating
+      '#title': 'On a scale from 0-10, how likely are you to recommend Midcamp to a friend or colleague?'
+      '#max': 10
+      '#reset': true
+    do_you_have_anything_to_say_about_the_food_or_drink_:
+      '#type': radios
+      '#title': 'Do you have anything to say about the food or drink?'
+      '#options': yes_no
+  4:
+    '#type': webform_wizard_page
+    '#title': '4'
+    '#open': true
+    food_satisfaction:
+      '#type': webform_likert
+      '#title': 'Please rate the following on a scale of 1-5 for your satisfaction with the following'
+      '#states':
+        invisible:
+          ':input[name="do_you_have_anything_to_say_about_the_food_or_drink_"]':
+            '!value': 'Yes'
+      '#questions':
+        'Quantity of food': 'Quantity of food'
+        'Quality of food': 'Quality of food'
+        "Variety of food (dietary requirements)\t": "Variety of food (dietary requirements)\t"
+        'Quantity of drinks/coffee': 'Quantity of drinks/coffee'
+      '#answers':
+        "Extremely dissatisfied\t": "Extremely dissatisfied\t"
+        'Somewhat dissatisfied': 'Somewhat dissatisfied'
+        'Neither satisfied nor dissatisfied': 'Neither satisfied nor dissatisfied'
+        'Somewhat satisfied': 'Somewhat satisfied'
+        'Extremely satisfied': 'Extremely satisfied'
+      '#na_answer_text': ''
+    other_comments_food_or_drink:
+      '#type': textarea
+      '#title': 'Any other comments about the food or drink?'
+      '#states':
+        invisible:
+          ':input[name="do_you_have_anything_to_say_about_the_food_or_drink_"]':
+            '!value': 'Yes'
+    rate_experience_at_midcamp_scale_1_5:
+      '#type': webform_likert
+      '#title': 'Please rate your experience at MidCamp on a scale of 1-5, where 1 is very negative and 5 is very positive.'
+      '#questions':
+        'How satisfied were you with the large meeting space?': 'How satisfied were you with the large meeting space?'
+        "How satisfied were you with the set-ups?\t": "How satisfied were you with the set-ups?\t"
+        "How useful were the walking lanes?\t": "How useful were the walking lanes?\t"
+        "How likely are you to come back to MidCamp next year?\t": "How likely are you to come back to MidCamp next year?\t"
+        "How satisfied are you with your experience at MidCamp?\t": "How satisfied are you with your experience at MidCamp?\t"
+      '#answers': likert_satisfaction
+      '#na_answer_text': ''
+    highlight_of_camp:
+      '#type': textarea
+      '#title': 'What was the highlight of camp for you?'
+    improve_next_year:
+      '#type': textarea
+      '#title': 'What could we improve for next year?'
+    suggestions_grow_midcamp:
+      '#type': textarea
+      '#title': 'We are always looking for ways to broaden our reach: if you have any suggestions on how to grow MidCamp we’d love to hear them.'
+    other_comments:
+      '#type': textarea
+      '#title': 'Any other comments that you want to share with the organizers of this year''s camp?'
+    email:
+      '#type': email
+      '#title': 'What is your email?'
+    what_is_your_drupal_org_username:
+      '#type': textfield
+      '#title': 'What is your Drupal.org Username?'
+    postal_code_or_zipcode_for_primary_residence:
+      '#type': webform_address
+      '#title': 'Postal Code or Zipcode (for primary residence)'
+      '#address__access': false
+      '#address_2__access': false
+      '#city__access': false
+      '#state_province__access': false
+      '#country__access': false
+    interested_in_helping_organize_midcamp:
+      '#type': radios
+      '#title': 'Are you interested in being a volunteer or helping organize MidCamp next year?'
+      '#options':
+        'Yes': 'Yes'
+        Maybe: Maybe
+        'No': 'No'
 css: ''
 javascript: ''
 settings:
@@ -27,9 +222,9 @@ settings:
   page_theme_name: ''
   form_title: both
   form_submit_once: true
-  form_exception_message: ''
   form_open_message: ''
   form_close_message: ''
+  form_exception_message: ''
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
@@ -39,31 +234,36 @@ settings:
   form_prepopulate_source_entity: false
   form_prepopulate_source_entity_required: false
   form_prepopulate_source_entity_type: ''
-  form_reset: false
+  form_unsaved: true
+  form_disable_back: false
+  form_submit_back: false
   form_disable_autocomplete: false
   form_novalidate: false
   form_disable_inline_errors: false
   form_required: false
-  form_unsaved: true
-  form_disable_back: false
-  form_submit_back: false
   form_autofocus: false
   form_details_toggle: false
+  form_reset: false
   form_access_denied: default
   form_access_denied_title: ''
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  form_attributes: {  }
   form_method: ''
   form_action: ''
-  form_attributes: {  }
   share: false
   share_node: false
   share_theme_name: ''
   share_title: true
   share_page_body_attributes: {  }
   submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
   submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
   submission_views: {  }
   submission_views_replace: {  }
   submission_user_columns: {  }
@@ -72,11 +272,6 @@ settings:
   submission_access_denied_title: ''
   submission_access_denied_message: ''
   submission_access_denied_attributes: {  }
-  submission_exception_message: ''
-  submission_locked_message: ''
-  submission_excluded_elements: {  }
-  submission_exclude_empty: false
-  submission_exclude_empty_checkbox: false
   previous_submission_message: ''
   previous_submissions_message: ''
   autofill: false
@@ -87,13 +282,13 @@ settings:
   wizard_progress_percentage: false
   wizard_progress_link: false
   wizard_progress_states: false
-  wizard_auto_forward: true
-  wizard_auto_forward_hide_next_button: false
-  wizard_keyboard: true
   wizard_start_label: ''
   wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
   wizard_track: ''
   wizard_prev_button_label: ''
   wizard_next_button_label: ''
@@ -116,9 +311,9 @@ settings:
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
   confirmation_type: page
+  confirmation_url: ''
   confirmation_title: 'Thank you!'
   confirmation_message: 'Thank you for filling out this survey!'
-  confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''

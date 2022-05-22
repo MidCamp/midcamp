@@ -23,14 +23,14 @@ bundle: job
 mode: default
 content:
   field_job_description:
-    weight: 4
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 4
     region: content
   field_job_link:
-    weight: 5
+    type: link
     label: inline
     settings:
       trim_length: 80
@@ -39,43 +39,43 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 5
     region: content
   field_job_location:
-    weight: 1
+    type: string
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 1
     region: content
   field_job_skill_level:
-    weight: 3
+    type: list_default
     label: inline
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 3
     region: content
   field_job_type:
-    weight: 2
+    type: list_default
     label: inline
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 2
     region: content
   field_sponsor_company:
-    weight: 0
+    type: entity_reference_label
     label: inline
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 0
     region: content
   links:
-    weight: 6
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 6
+    region: content
 hidden:
   field_event: true
   field_meta_tags: true

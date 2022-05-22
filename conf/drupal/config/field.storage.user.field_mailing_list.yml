@@ -11,8 +11,8 @@ entity_type: user
 type: mailchimp_lists_subscription
 settings:
   mc_list_id: 12c897b018
-  double_opt_in: 0
-  send_welcome: 0
+  double_opt_in: false
+  send_welcome: false
 module: mailchimp_lists
 locked: false
 cardinality: 1

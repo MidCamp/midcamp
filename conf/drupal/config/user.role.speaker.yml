@@ -1,7 +1,12 @@
 uuid: 01bdd8f2-e08b-4ff9-bd23-c8ac6b5e38d9
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - node.type.topic
+  module:
+    - field_permissions
+    - node
 id: speaker
 label: Speaker
 weight: -8
@@ -9,4 +14,3 @@ is_admin: null
 permissions:
   - 'edit own field_video'
   - 'edit own topic content'
-  - 'use session_proposal transition submitted_proposal'

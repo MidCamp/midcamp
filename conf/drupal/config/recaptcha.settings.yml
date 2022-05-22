@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: eKR4FfUD7Cp3bXamsCz6GAxh0PCLIZNMa65y2kChIh0
 verify_hostname: false
 use_globally: true
 widget:
@@ -6,5 +8,3 @@ widget:
   size: ''
   tabindex: 0
   noscript: true
-_core:
-  default_config_hash: eKR4FfUD7Cp3bXamsCz6GAxh0PCLIZNMa65y2kChIh0

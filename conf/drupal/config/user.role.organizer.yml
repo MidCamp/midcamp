@@ -1,7 +1,9 @@
 uuid: d79f367c-c1f4-424c-8588-fff1754f9ff1
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - field_permissions
 id: organizer
 label: Organizer
 weight: 4
@@ -13,9 +15,5 @@ permissions:
   - 'edit field_transcript'
   - 'edit own field_captions'
   - 'edit own field_transcript'
-  - 'use session_proposal transition publish'
-  - 'use session_proposal transition submitted_proposal'
-  - 'view any unpublished content'
-  - 'view latest version'
   - 'view own field_captions'
   - 'view own field_transcript'

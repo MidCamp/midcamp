@@ -15,22 +15,22 @@ bundle: location
 mode: topic_page
 content:
   description:
-    label: hidden
     type: text_default
-    weight: 0
-    region: content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
   field_link:
-    weight: 1
+    type: link
     label: hidden
     settings:
       trim_length: null
-      target: _blank
       url_only: false
       url_plain: false
       rel: '0'
+      target: _blank
     third_party_settings: {  }
-    type: link
+    weight: 1
     region: content
 hidden: {  }

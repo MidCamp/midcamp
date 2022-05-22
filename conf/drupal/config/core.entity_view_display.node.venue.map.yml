@@ -17,11 +17,11 @@ bundle: venue
 mode: map
 content:
   field_address:
-    weight: 0
+    type: address_plain
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: address_plain
+    weight: 0
     region: content
 hidden:
   field_venue_events: true

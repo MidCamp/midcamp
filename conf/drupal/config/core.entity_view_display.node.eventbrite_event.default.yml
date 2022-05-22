@@ -18,25 +18,25 @@ bundle: eventbrite_event
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 103
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 103
     region: content
   eventbrite_event_id:
-    label: above
     type: string
-    weight: 101
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 101
     region: content
   eventbrite_event_status:
-    label: above
     type: string
-    weight: 102
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 102
     region: content
   links:
     weight: 100

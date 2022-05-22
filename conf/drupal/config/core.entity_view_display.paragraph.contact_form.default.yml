@@ -13,11 +13,11 @@ bundle: contact_form
 mode: default
 content:
   field_contact:
-    weight: 0
+    type: contact_field_formatter
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: contact_field_formatter
+    weight: 0
     region: content
 hidden:
   created: true

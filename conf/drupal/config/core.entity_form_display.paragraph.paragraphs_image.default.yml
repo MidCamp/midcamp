@@ -14,13 +14,13 @@ bundle: paragraphs_image
 mode: default
 content:
   field_paragraph_image:
+    type: image_image
     weight: 0
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    type: image_image
-    region: content
 hidden:
   created: true
   status: true

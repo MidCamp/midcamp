@@ -18,14 +18,14 @@ plugin: 'block_content:c2c340aa-3a74-490e-a0bb-5bb747b2e1b9'
 settings:
   id: 'block_content:c2c340aa-3a74-490e-a0bb-5bb747b2e1b9'
   label: 'MidCamp 2021 Survey'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: "/2021/*\r\n<front>"
     negate: false
     context_mapping: {  }
+    pages: "/2021/*\r\n<front>"

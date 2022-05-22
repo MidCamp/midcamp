@@ -17,8 +17,8 @@ plugin: 'block_content:c87b75b7-23fd-45ac-ae17-af7efa9c87a8'
 settings:
   id: 'block_content:c87b75b7-23fd-45ac-ae17-af7efa9c87a8'
   label: 'Social Footer'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

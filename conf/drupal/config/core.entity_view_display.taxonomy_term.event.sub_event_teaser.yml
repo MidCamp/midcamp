@@ -20,39 +20,39 @@ bundle: event
 mode: sub_event_teaser
 content:
   description:
-    label: hidden
     type: text_default
-    weight: 0
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
   field_date:
     type: daterange_plain
-    weight: 2
-    region: content
     label: hidden
     settings:
       timezone_override: ''
       separator: '-'
     third_party_settings: {  }
+    weight: 2
+    region: content
   field_date_has_time:
     type: boolean
-    weight: 3
-    region: content
     label: hidden
     settings:
       format: boolean
-      format_custom_true: ''
       format_custom_false: ''
+      format_custom_true: ''
     third_party_settings: {  }
+    weight: 3
+    region: content
   field_image:
-    weight: 1
+    type: image
     label: hidden
     settings:
-      image_style: sub_event_teaser_600x400
       image_link: ''
+      image_style: sub_event_teaser_600x400
     third_party_settings: {  }
-    type: image
+    weight: 1
     region: content
 hidden:
   field_banner_cta_anonymous: true

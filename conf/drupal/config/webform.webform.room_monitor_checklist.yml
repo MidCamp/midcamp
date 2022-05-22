@@ -2,9 +2,9 @@ uuid: 14089955-e024-4f64-af62-9ebebd80ba97
 langcode: en
 status: open
 dependencies: {  }
+weight: 0
 open: null
 close: null
-weight: 0
 uid: 16
 template: false
 archive: false
@@ -12,7 +12,29 @@ id: room_monitor_checklist
 title: 'Room Monitor Checklist'
 description: ''
 category: ''
-elements: "markup:\n  '#type': webform_markup\n  '#markup': \"Thank you for being a room monitor.&nbsp; Please fill out the form below and if there are any immediate needs, please contact JD Flynn or any of the organizer teams via Slack or Twitter or yelling really loudly (please don&#39;t yell really loudly).&nbsp;&nbsp;<br />\\n<br />\\nIn addition to filling out this form, there are a few things we need checked out for every session:\\n<ul>\\n\\t<li>Please be in the room at least 5 minutes before the session starts to help make sure that any issues are hopefully handled before the session starts.</li>\\n\\t<li>Make sure that the speaker(s) press the BIG RED BUTTON on the recording kit.&nbsp; If the light strip is red, it&#39;s recording.</li>\\n\\t<li>If there are any issues during recording with the projector flickering or other strangeness, ping Kevin Thull on Slack or email JD Flynn</li>\\n\\t<li>Learn something!</li>\\n</ul>\"\nsession:\n  '#type': webform_entity_select\n  '#title': Session\n  '#target_type': node\n  '#selection_handler': views\n  '#selection_settings':\n    view:\n      view_name: survey_filters\n      display_name: entity_reference_1\n      arguments: {  }\nmonitor_name:\n  '#type': textfield\n  '#title': 'Monitor Name'\nnumber_of_attendees:\n  '#type': textfield\n  '#title': 'Number of Attendees (including yourself)'\nany_concerns_:\n  '#type': textarea\n  '#title': 'Any Concerns?'\n"
+elements: |
+  markup:
+    '#type': webform_markup
+    '#markup': "Thank you for being a room monitor.&nbsp; Please fill out the form below and if there are any immediate needs, please contact JD Flynn or any of the organizer teams via Slack or Twitter or yelling really loudly (please don&#39;t yell really loudly).&nbsp;&nbsp;<br />\n<br />\nIn addition to filling out this form, there are a few things we need checked out for every session:\n<ul>\n\t<li>Please be in the room at least 5 minutes before the session starts to help make sure that any issues are hopefully handled before the session starts.</li>\n\t<li>Make sure that the speaker(s) press the BIG RED BUTTON on the recording kit.&nbsp; If the light strip is red, it&#39;s recording.</li>\n\t<li>If there are any issues during recording with the projector flickering or other strangeness, ping Kevin Thull on Slack or email JD Flynn</li>\n\t<li>Learn something!</li>\n</ul>"
+  session:
+    '#type': webform_entity_select
+    '#title': Session
+    '#target_type': node
+    '#selection_handler': views
+    '#selection_settings':
+      view:
+        view_name: survey_filters
+        display_name: entity_reference_1
+        arguments: {  }
+  monitor_name:
+    '#type': textfield
+    '#title': 'Monitor Name'
+  number_of_attendees:
+    '#type': textfield
+    '#title': 'Number of Attendees (including yourself)'
+  any_concerns_:
+    '#type': textarea
+    '#title': 'Any Concerns?'
 css: ''
 javascript: ''
 settings:
@@ -27,9 +49,9 @@ settings:
   page_theme_name: ''
   form_title: both
   form_submit_once: false
-  form_exception_message: ''
   form_open_message: ''
   form_close_message: ''
+  form_exception_message: ''
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
@@ -39,31 +61,36 @@ settings:
   form_prepopulate_source_entity: false
   form_prepopulate_source_entity_required: false
   form_prepopulate_source_entity_type: ''
-  form_reset: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
   form_disable_autocomplete: false
   form_novalidate: false
   form_disable_inline_errors: false
   form_required: false
-  form_unsaved: false
-  form_disable_back: false
-  form_submit_back: false
   form_autofocus: false
   form_details_toggle: false
+  form_reset: false
   form_access_denied: default
   form_access_denied_title: ''
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  form_attributes: {  }
   form_method: ''
   form_action: ''
-  form_attributes: {  }
   share: false
   share_node: false
   share_theme_name: ''
   share_title: true
   share_page_body_attributes: {  }
   submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
   submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
   submission_views: {  }
   submission_views_replace: {  }
   submission_user_columns: {  }
@@ -72,11 +99,6 @@ settings:
   submission_access_denied_title: ''
   submission_access_denied_message: ''
   submission_access_denied_attributes: {  }
-  submission_exception_message: ''
-  submission_locked_message: ''
-  submission_excluded_elements: {  }
-  submission_exclude_empty: false
-  submission_exclude_empty_checkbox: false
   previous_submission_message: ''
   previous_submissions_message: ''
   autofill: false
@@ -87,13 +109,13 @@ settings:
   wizard_progress_percentage: false
   wizard_progress_link: false
   wizard_progress_states: false
-  wizard_auto_forward: true
-  wizard_auto_forward_hide_next_button: false
-  wizard_keyboard: true
   wizard_start_label: ''
   wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
   wizard_track: ''
   wizard_prev_button_label: ''
   wizard_next_button_label: ''
@@ -116,9 +138,9 @@ settings:
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
   confirmation_type: page
+  confirmation_url: ''
   confirmation_title: ''
   confirmation_message: ''
-  confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -197,9 +219,9 @@ access:
 handlers:
   email:
     id: email
+    handler_id: email
     label: Email
     notes: ''
-    handler_id: email
     status: true
     conditions: {  }
     weight: 0
@@ -208,13 +230,17 @@ handlers:
         - completed
       to_mail: jflynn8@gmail.com
       to_options: {  }
-      cc_mail: ''
-      cc_options: {  }
       bcc_mail: ''
       bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
       from_mail: _default
       from_options: {  }
       from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
       subject: _default
       body: _default
       excluded_elements: {  }
@@ -225,11 +251,7 @@ handlers:
       html: true
       attachments: false
       twig: false
-      debug: false
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
       theme_name: ''
       parameters: {  }
+      debug: false
 variants: {  }

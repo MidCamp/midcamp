@@ -28,16 +28,16 @@ third_party_settings:
         - field_tito_slug
         - field_event_id
         - field_event_status
+      label: Tito
+      region: content
       parent_name: ''
       weight: 9
       format_type: fieldset
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         description: 'Enter the event "slug" from Tito.  The rest of the fields will be populated automatically. '
         required_fields: false
-      label: Tito
-      region: content
 id: taxonomy_term.event.default
 targetEntityType: taxonomy_term
 bundle: event
@@ -46,99 +46,99 @@ content:
   description:
     type: text_textarea
     weight: 3
+    region: content
     settings:
-      placeholder: ''
       rows: 5
+      placeholder: ''
     third_party_settings: {  }
-    region: content
   field_banner_cta_anonymous:
+    type: link_default
     weight: 7
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   field_banner_cta_authenticated:
+    type: link_default
     weight: 8
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   field_date:
+    type: daterange_default
     weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: daterange_default
-    region: content
   field_date_has_time:
+    type: boolean_checkbox
     weight: 2
+    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_event_id:
+    type: string_textfield
     weight: 11
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_event_status:
+    type: string_textfield
     weight: 12
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_image:
+    type: image_image
     weight: 5
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    type: image_image
-    region: content
   field_social_media:
+    type: link_default
     weight: 6
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   field_tito_slug:
+    type: string_textfield
     weight: 10
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   name:
     type: string_textfield
     weight: 0
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    region: content
   path:
     type: path
     weight: 4
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 100
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
 hidden: {  }

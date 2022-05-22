@@ -18,14 +18,14 @@ plugin: 'block_content:718a2f09-3a75-462a-9c04-3e21f78a81bb'
 settings:
   id: 'block_content:718a2f09-3a75-462a-9c04-3e21f78a81bb'
   label: 'MidCamp 2019'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /2020
     negate: false
     context_mapping: {  }
+    pages: /2020

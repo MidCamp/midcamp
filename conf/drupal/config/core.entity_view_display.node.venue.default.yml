@@ -19,34 +19,34 @@ bundle: venue
 mode: default
 content:
   field_address:
-    weight: 1
+    type: address_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: address_default
+    weight: 1
     region: content
   field_venue_events:
-    weight: 3
+    type: entity_reference_label
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 3
     region: content
   field_venue_paragraphs:
     type: entity_reference_revisions_entity_view
-    weight: 2
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 2
     region: content
   links:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_event: true
   field_meta_tags: true
