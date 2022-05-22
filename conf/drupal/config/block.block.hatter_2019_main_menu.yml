@@ -19,14 +19,14 @@ plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
   label: 'Main navigation'
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
   depth: 2
   expand_all_items: false
 visibility:
   request_path:
     id: request_path
-    pages: "/2018/*\r\n/2018"
     negate: false
     context_mapping: {  }
+    pages: "/2018/*\r\n/2018"

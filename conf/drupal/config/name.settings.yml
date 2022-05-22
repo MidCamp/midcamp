@@ -1,8 +1,8 @@
+_core:
+  default_config_hash: JCsvMkZ6JYCJ99YViyi8ie9Pf46l5eDF3rX01kl4g2A
 component_required_marker: '*'
-default_format: ((((t+ig)+im)+if)+is)+jc
 sep1: ' '
 sep2: ', '
 sep3: ''
 user_preferred: field_name
-_core:
-  default_config_hash: JCsvMkZ6JYCJ99YViyi8ie9Pf46l5eDF3rX01kl4g2A
+default_format: ((((t+ig)+im)+if)+is)+jc

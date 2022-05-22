@@ -34,13 +34,13 @@ content:
   body:
     type: text_textarea_with_summary
     weight: 7
+    region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 13
@@ -48,30 +48,30 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_captions:
+    type: text_textarea
     weight: 11
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
-    region: content
   field_feedback_form:
+    type: webform_entity_reference_select
     weight: 16
+    region: content
     settings:
       default_data: true
     third_party_settings: {  }
-    type: webform_entity_reference_select
-    region: content
   field_people:
+    type: entity_reference_autocomplete
     weight: 6
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_presenter_slides:
     type: file_generic
     weight: 14
@@ -80,43 +80,43 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
   field_schedule_location:
-    weight: 4
-    settings: {  }
-    third_party_settings: {  }
     type: options_select
+    weight: 4
     region: content
+    settings: {  }
+    third_party_settings: {  }
   field_schedule_time:
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
     type: daterange_default
+    weight: 3
     region: content
+    settings: {  }
+    third_party_settings: {  }
   field_session_length:
+    type: options_buttons
     weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_buttons
-    region: content
   field_topic_type:
+    type: options_buttons
     weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_buttons
-    region: content
   field_track:
+    type: options_buttons
     weight: 5
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_buttons
-    region: content
   field_transcript:
+    type: link_default
     weight: 10
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   field_video:
     type: video_embed_field_textfield
     weight: 15
@@ -133,20 +133,20 @@ content:
   title:
     type: string_textfield
     weight: 0
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 12
     region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
     third_party_settings: {  }
   url_redirects:
     weight: 9

@@ -31,26 +31,26 @@ mode: socials
 content:
   field_name:
     type: name_default
+    label: inline
     settings:
-      list_format: default
       format: default
       markup: none
+      list_format: default
       link_target: ''
       preferred_field_reference: ''
       preferred_field_reference_separator: ', '
       alternative_field_reference: ''
       alternative_field_reference_separator: ', '
-    weight: 0
-    label: inline
     third_party_settings: {  }
+    weight: 0
     region: content
   field_twitter:
-    weight: 1
+    type: string
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 1
     region: content
 hidden:
   field_bio: true

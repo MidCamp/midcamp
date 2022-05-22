@@ -1,7 +1,38 @@
 uuid: fb322d03-a0ea-4030-80e3-5a20f94fbb4a
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.full_html
+    - filter.format.mailchimp_campaign
+    - node.type.article
+    - node.type.job
+    - node.type.page
+    - node.type.sponsor
+    - node.type.summit
+    - node.type.topic
+    - node.type.training
+    - node.type.venue
+    - taxonomy.vocabulary.event
+    - taxonomy.vocabulary.sponsor_packages
+    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.topic_type
+  module:
+    - block_content
+    - comment
+    - contact
+    - field_permissions
+    - field_ui
+    - file
+    - filter
+    - node
+    - paragraphs
+    - path
+    - quickedit
+    - system
+    - taxonomy
+    - toolbar
+    - tour
 id: content_editor
 label: 'Content Editor'
 weight: -7
@@ -94,8 +125,6 @@ permissions:
   - 'edit terms in sponsor_packages'
   - 'edit terms in tags'
   - 'edit terms in topic_type'
-  - 'masquerade as authenticated'
-  - 'masquerade as speaker'
   - 'revert all revisions'
   - 'revert article revisions'
   - 'revert job revisions'
@@ -106,20 +135,11 @@ permissions:
   - 'revert training revisions'
   - 'revert venue revisions'
   - 'skip comment approval'
-  - 'use editorial transition archive'
-  - 'use editorial transition archived_published'
-  - 'use editorial transition create_new_draft'
-  - 'use editorial transition publish'
-  - 'use session_proposal transition publish'
-  - 'use session_proposal transition submitted_proposal'
-  - 'use session_review transition accept_session'
   - 'use text format full_html'
   - 'use text format mailchimp_campaign'
   - 'view all revisions'
-  - 'view any unpublished content'
   - 'view article revisions'
   - 'view job revisions'
-  - 'view latest version'
   - 'view own field_captions'
   - 'view page revisions'
   - 'view sponsor revisions'

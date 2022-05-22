@@ -16,11 +16,14 @@ plugin: event_label_block
 settings:
   id: event_label_block
   label: 'Event label block'
-  provider: midcamp_event_label_block
   label_display: '0'
+  provider: midcamp_event_label_block
 visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
     bundles:
       summit: summit
       article: article
@@ -30,6 +33,3 @@ visibility:
       topic: topic
       training: training
       venue: venue
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'

@@ -2,9 +2,9 @@ uuid: 4f9b189f-599e-4cb9-8642-ca6df4be6c68
 langcode: en
 status: open
 dependencies: {  }
+weight: 0
 open: null
 close: null
-weight: 0
 uid: 67
 template: false
 archive: false
@@ -12,7 +12,49 @@ id: tourism_quote
 title: 'Submit a Tourism Quote'
 description: ''
 category: ''
-elements: "markup:\n  '#type': webform_markup\n  '#display_on': both\n  '#markup': 'Want to be featured on our <a href=\"/2019/tourism\">tourism page</a>? Let us know your favorite spots and things to do as well as any tips for visitors!'\nname:\n  '#type': textfield\n  '#title': 'Your Name'\n  '#required': true\nemail:\n  '#type': email\n  '#title': 'Your Email'\n  '#required': true\n  '#unique': true\nquote:\n  '#type': textarea\n  '#title': 'Your Blurb'\n  '#required': true\npicture_option:\n  '#type': select\n  '#title': 'Your Picture Option'\n  '#options':\n    user_image: 'Use the image from my user.'\n    generic_image: 'Use the generic Mad Hatter image.'\n    upload_image: 'Use the image uploaded here.'\n  '#required': true\npicture_image:\n  '#type': webform_image_file\n  '#title': 'Your Picture'\n  '#help': \"Your virtual face or picture.<br />\\r\\nImage should be at least 250 pixels wide.\"\n  '#states':\n    enabled:\n      ':input[name=\"picture_option\"]':\n        value: upload_image\n    visible:\n      ':input[name=\"picture_option\"]':\n        value: upload_image\n    required:\n      ':input[name=\"picture_option\"]':\n        value: upload_image\n  '#max_filesize': '2'\n  '#file_extensions': 'gif jpg png jpeg'\n  '#sanitize': true\n"
+elements: |
+  markup:
+    '#type': webform_markup
+    '#display_on': both
+    '#markup': 'Want to be featured on our <a href="/2019/tourism">tourism page</a>? Let us know your favorite spots and things to do as well as any tips for visitors!'
+  name:
+    '#type': textfield
+    '#title': 'Your Name'
+    '#required': true
+  email:
+    '#type': email
+    '#title': 'Your Email'
+    '#required': true
+    '#unique': true
+  quote:
+    '#type': textarea
+    '#title': 'Your Blurb'
+    '#required': true
+  picture_option:
+    '#type': select
+    '#title': 'Your Picture Option'
+    '#options':
+      user_image: 'Use the image from my user.'
+      generic_image: 'Use the generic Mad Hatter image.'
+      upload_image: 'Use the image uploaded here.'
+    '#required': true
+  picture_image:
+    '#type': webform_image_file
+    '#title': 'Your Picture'
+    '#help': "Your virtual face or picture.<br />\r\nImage should be at least 250 pixels wide."
+    '#states':
+      enabled:
+        ':input[name="picture_option"]':
+          value: upload_image
+      visible:
+        ':input[name="picture_option"]':
+          value: upload_image
+      required:
+        ':input[name="picture_option"]':
+          value: upload_image
+    '#max_filesize': '2'
+    '#file_extensions': 'gif jpg png jpeg'
+    '#sanitize': true
 css: ''
 javascript: ''
 settings:
@@ -27,9 +69,9 @@ settings:
   page_theme_name: ''
   form_title: both
   form_submit_once: true
-  form_exception_message: ''
   form_open_message: ''
   form_close_message: ''
+  form_exception_message: ''
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
@@ -39,31 +81,36 @@ settings:
   form_prepopulate_source_entity: false
   form_prepopulate_source_entity_required: false
   form_prepopulate_source_entity_type: ''
-  form_reset: false
+  form_unsaved: true
+  form_disable_back: false
+  form_submit_back: false
   form_disable_autocomplete: false
   form_novalidate: false
   form_disable_inline_errors: false
   form_required: false
-  form_unsaved: true
-  form_disable_back: false
-  form_submit_back: false
   form_autofocus: true
   form_details_toggle: false
+  form_reset: false
   form_access_denied: default
   form_access_denied_title: ''
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  form_attributes: {  }
   form_method: ''
   form_action: ''
-  form_attributes: {  }
   share: false
   share_node: false
   share_theme_name: ''
   share_title: true
   share_page_body_attributes: {  }
   submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
   submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
   submission_views: {  }
   submission_views_replace: {  }
   submission_user_columns: {  }
@@ -72,11 +119,6 @@ settings:
   submission_access_denied_title: ''
   submission_access_denied_message: ''
   submission_access_denied_attributes: {  }
-  submission_exception_message: ''
-  submission_locked_message: ''
-  submission_excluded_elements: {  }
-  submission_exclude_empty: false
-  submission_exclude_empty_checkbox: false
   previous_submission_message: ''
   previous_submissions_message: ''
   autofill: false
@@ -87,13 +129,13 @@ settings:
   wizard_progress_percentage: false
   wizard_progress_link: false
   wizard_progress_states: false
-  wizard_auto_forward: true
-  wizard_auto_forward_hide_next_button: false
-  wizard_keyboard: true
   wizard_start_label: ''
   wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
   wizard_track: ''
   wizard_prev_button_label: ''
   wizard_next_button_label: ''
@@ -116,9 +158,9 @@ settings:
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
   confirmation_type: inline
+  confirmation_url: ''
   confirmation_title: ''
   confirmation_message: ''
-  confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -197,9 +239,9 @@ access:
 handlers:
   email:
     id: email
+    handler_id: email
     label: Email
     notes: ''
-    handler_id: email
     status: true
     conditions: {  }
     weight: 0
@@ -208,13 +250,17 @@ handlers:
         - completed
       to_mail: 'dsdobrzynski@gmail.com,info@midcamp.org'
       to_options: {  }
-      cc_mail: ''
-      cc_options: {  }
       bcc_mail: ''
       bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
       from_mail: _default
       from_options: {  }
       from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
       subject: _default
       body: _default
       excluded_elements: {  }
@@ -225,11 +271,7 @@ handlers:
       html: true
       attachments: false
       twig: false
-      debug: false
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
       theme_name: ''
       parameters: {  }
+      debug: false
 variants: {  }

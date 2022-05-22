@@ -2,9 +2,9 @@ uuid: d65665c1-9306-4e83-847e-1440d2456422
 langcode: en
 status: open
 dependencies: {  }
+weight: 0
 open: null
 close: null
-weight: 0
 uid: 6
 template: false
 archive: false
@@ -12,7 +12,76 @@ id: training_feedback_2019
 title: 'Training Feedback 2019'
 description: 'A survey for students to tell us what they thought of a training.'
 category: ''
-elements: "markup:\n  '#type': webform_markup\n  '#markup': 'Thank you for helping your trainers and the MidCamp organizers improve the training experience!&nbsp;'\ndid_this_workshop_meet_your_expectations_:\n  '#type': webform_radios_other\n  '#title': 'Did this training meet your expectations?'\n  '#options':\n    'Yes': 'Yes'\n  '#other__type': textarea\n  '#other__option_label': 'No'\n  '#other__title': 'Please tell us why (optional)'\n  '#other__placeholder': 'Enter feedback...'\n  '#required': true\ndo_you_recommend_this_class_:\n  '#type': webform_radios_other\n  '#title': 'Should this training be offered next year?'\n  '#help': 'Would you recommend this training to someone else in your role?'\n  '#options':\n    'Yes': 'Yes'\n  '#other__type': textarea\n  '#other__option_label': 'No'\n  '#other__title': 'Please tell us why (optional)'\n  '#other__placeholder': 'Enter your feedback...'\n  '#required': true\ndid_the_instructor_s_communicate_the_subject_matter_clearly_:\n  '#type': webform_radios_other\n  '#title': 'Did the instructor(s) communicate the subject-matter clearly?'\n  '#options':\n    'Yes': 'Yes'\n  '#other__type': textarea\n  '#other__option_label': 'No'\n  '#other__title': 'Please tell us why (optional)'\n  '#other__placeholder': 'Enter your feedback...'\n  '#required': true\nwas_the_depth_of_content_appropriate_for_the_subject_matter_:\n  '#type': radios\n  '#title': 'Was the depth of content appropriate for the subject-matter?'\n  '#options':\n    'It was too deep; there was too much material': 'It was too deep; there was too much material'\n    'It was just right': 'It was just right'\n    'It wasn''t deep enough; I still have questions': 'It wasn''t deep enough; I still have questions'\n  '#required': true\nwas_the_pace_of_instruction_appropriate_for_the_subject_matter_:\n  '#type': radios\n  '#title': 'Was the pace of instruction appropriate for the subject-matter?'\n  '#options':\n    'No, it was too fast': 'No, it was too fast'\n    'Yes, it was just right': 'Yes, it was just right'\n    'No, it was too slow': 'No, it was too slow'\n  '#required': true\nwhy_did_you_sign_up_for_this_workshop_:\n  '#type': textarea\n  '#title': 'Why did you sign up for this training?'\nif_the_trainer_can_only_improve_this_workshop_in_one_area_where_:\n  '#type': textarea\n  '#title': 'If the trainer can only improve this training in one area, where should they focus?'\n  '#help': 'e.g., logistics, content, speakers, etc.'\nanything_else_:\n  '#type': textarea\n  '#title': 'Any other feedback about this specific training?'\nwhat_training_topics_do_you_want_to_attend_:\n  '#type': textarea\n  '#title': 'What training topics would you attend next year?'\n  '#help': 'If applicable, please&nbsp;include the experience level for each topic (beginner, intermediate, advanced).'\n  '#description': 'Intro to Drupal 8, Module Development, Theming, Project Mangement, etc.'\nany_feedback_about_training_for_the_midcamp_organizers_:\n  '#type': textarea\n  '#title': 'Any other feedback about training for the MidCamp organizers?'\n  '#description': 'If you want to be contacted in response to your feedback, please leave your name and email address in this field along with any other notes.'\n"
+elements: |
+  markup:
+    '#type': webform_markup
+    '#markup': 'Thank you for helping your trainers and the MidCamp organizers improve the training experience!&nbsp;'
+  did_this_workshop_meet_your_expectations_:
+    '#type': webform_radios_other
+    '#title': 'Did this training meet your expectations?'
+    '#options':
+      'Yes': 'Yes'
+    '#other__type': textarea
+    '#other__option_label': 'No'
+    '#other__title': 'Please tell us why (optional)'
+    '#other__placeholder': 'Enter feedback...'
+    '#required': true
+  do_you_recommend_this_class_:
+    '#type': webform_radios_other
+    '#title': 'Should this training be offered next year?'
+    '#help': 'Would you recommend this training to someone else in your role?'
+    '#options':
+      'Yes': 'Yes'
+    '#other__type': textarea
+    '#other__option_label': 'No'
+    '#other__title': 'Please tell us why (optional)'
+    '#other__placeholder': 'Enter your feedback...'
+    '#required': true
+  did_the_instructor_s_communicate_the_subject_matter_clearly_:
+    '#type': webform_radios_other
+    '#title': 'Did the instructor(s) communicate the subject-matter clearly?'
+    '#options':
+      'Yes': 'Yes'
+    '#other__type': textarea
+    '#other__option_label': 'No'
+    '#other__title': 'Please tell us why (optional)'
+    '#other__placeholder': 'Enter your feedback...'
+    '#required': true
+  was_the_depth_of_content_appropriate_for_the_subject_matter_:
+    '#type': radios
+    '#title': 'Was the depth of content appropriate for the subject-matter?'
+    '#options':
+      'It was too deep; there was too much material': 'It was too deep; there was too much material'
+      'It was just right': 'It was just right'
+      'It wasn''t deep enough; I still have questions': 'It wasn''t deep enough; I still have questions'
+    '#required': true
+  was_the_pace_of_instruction_appropriate_for_the_subject_matter_:
+    '#type': radios
+    '#title': 'Was the pace of instruction appropriate for the subject-matter?'
+    '#options':
+      'No, it was too fast': 'No, it was too fast'
+      'Yes, it was just right': 'Yes, it was just right'
+      'No, it was too slow': 'No, it was too slow'
+    '#required': true
+  why_did_you_sign_up_for_this_workshop_:
+    '#type': textarea
+    '#title': 'Why did you sign up for this training?'
+  if_the_trainer_can_only_improve_this_workshop_in_one_area_where_:
+    '#type': textarea
+    '#title': 'If the trainer can only improve this training in one area, where should they focus?'
+    '#help': 'e.g., logistics, content, speakers, etc.'
+  anything_else_:
+    '#type': textarea
+    '#title': 'Any other feedback about this specific training?'
+  what_training_topics_do_you_want_to_attend_:
+    '#type': textarea
+    '#title': 'What training topics would you attend next year?'
+    '#help': 'If applicable, please&nbsp;include the experience level for each topic (beginner, intermediate, advanced).'
+    '#description': 'Intro to Drupal 8, Module Development, Theming, Project Mangement, etc.'
+  any_feedback_about_training_for_the_midcamp_organizers_:
+    '#type': textarea
+    '#title': 'Any other feedback about training for the MidCamp organizers?'
+    '#description': 'If you want to be contacted in response to your feedback, please leave your name and email address in this field along with any other notes.'
 css: ''
 javascript: ''
 settings:
@@ -27,9 +96,9 @@ settings:
   page_theme_name: ''
   form_title: both
   form_submit_once: false
-  form_exception_message: ''
   form_open_message: ''
   form_close_message: ''
+  form_exception_message: ''
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
@@ -39,31 +108,36 @@ settings:
   form_prepopulate_source_entity: false
   form_prepopulate_source_entity_required: false
   form_prepopulate_source_entity_type: ''
-  form_reset: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
   form_disable_autocomplete: false
   form_novalidate: false
   form_disable_inline_errors: false
   form_required: false
-  form_unsaved: false
-  form_disable_back: false
-  form_submit_back: false
   form_autofocus: false
   form_details_toggle: false
+  form_reset: false
   form_access_denied: default
   form_access_denied_title: ''
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  form_attributes: {  }
   form_method: ''
   form_action: ''
-  form_attributes: {  }
   share: false
   share_node: false
   share_theme_name: ''
   share_title: true
   share_page_body_attributes: {  }
   submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
   submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
   submission_views: {  }
   submission_views_replace: {  }
   submission_user_columns: {  }
@@ -72,11 +146,6 @@ settings:
   submission_access_denied_title: ''
   submission_access_denied_message: ''
   submission_access_denied_attributes: {  }
-  submission_exception_message: ''
-  submission_locked_message: ''
-  submission_excluded_elements: {  }
-  submission_exclude_empty: false
-  submission_exclude_empty_checkbox: false
   previous_submission_message: ''
   previous_submissions_message: ''
   autofill: false
@@ -87,13 +156,13 @@ settings:
   wizard_progress_percentage: false
   wizard_progress_link: false
   wizard_progress_states: false
-  wizard_auto_forward: true
-  wizard_auto_forward_hide_next_button: false
-  wizard_keyboard: true
   wizard_start_label: ''
   wizard_preview_link: false
   wizard_confirmation: false
   wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
   wizard_track: ''
   wizard_prev_button_label: ''
   wizard_next_button_label: ''
@@ -116,9 +185,9 @@ settings:
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
   confirmation_type: page
+  confirmation_url: ''
   confirmation_title: Thanks!
   confirmation_message: 'We really appreciate you taking the time to leave feedback. We hope to see you next year!'
-  confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: false
   confirmation_back_label: ''
@@ -201,9 +270,9 @@ access:
 handlers:
   email_to_david:
     id: email
+    handler_id: email_to_david
     label: 'Email to David'
     notes: ''
-    handler_id: email_to_david
     status: true
     conditions: {  }
     weight: 0
@@ -212,13 +281,17 @@ handlers:
         - completed
       to_mail: david.needham+midcampfeedback@pantheon.io
       to_options: {  }
-      cc_mail: ''
-      cc_options: {  }
       bcc_mail: ''
       bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
       from_mail: _default
       from_options: {  }
       from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
       subject: _default
       body: _default
       excluded_elements: {  }
@@ -229,11 +302,7 @@ handlers:
       html: true
       attachments: false
       twig: false
-      debug: false
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
       theme_name: ''
       parameters: {  }
+      debug: false
 variants: {  }

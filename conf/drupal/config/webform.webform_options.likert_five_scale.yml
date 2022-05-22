@@ -11,4 +11,9 @@ id: likert_five_scale
 label: 'Likert: Five Scale'
 category: Likert
 likert: true
-options: "1: '1'\n2: '2'\n3: '3'\n4: '4'\n5: '5'\n"
+options: |
+  1: '1'
+  2: '2'
+  3: '3'
+  4: '4'
+  5: '5'

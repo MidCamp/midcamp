@@ -1,7 +1,21 @@
 uuid: 13219806-f24b-4e5e-b746-5b3c09094513
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.restricted_html
+    - node.type.topic
+  module:
+    - comment
+    - contact
+    - field_permissions
+    - filter
+    - media
+    - node
+    - search
+    - shortcut
+    - system
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated
@@ -19,10 +33,6 @@ permissions:
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
-  - 'use session_proposal transition create_new_draft'
-  - 'use session_proposal transition submitted_proposal'
-  - 'use session_review transition create_new_draft'
-  - 'use session_review transition submit_for_review'
   - 'use text format basic_html'
   - 'use text format basic_html'
   - 'use text format restricted_html'
@@ -33,7 +43,6 @@ permissions:
   - 'view field_schedule_time'
   - 'view field_transcript'
   - 'view field_video'
-  - 'view latest version'
   - 'view media'
   - 'view own field_accepted_confirmed'
   - 'view own field_feedback_form'

@@ -24,14 +24,14 @@ bundle: event
 mode: default
 content:
   description:
-    label: hidden
     type: text_default
-    weight: 0
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
   field_banner_cta_anonymous:
-    weight: 4
+    type: link
     label: above
     settings:
       trim_length: 80
@@ -40,10 +40,10 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 4
     region: content
   field_banner_cta_authenticated:
-    weight: 5
+    type: link
     label: above
     settings:
       trim_length: 80
@@ -52,36 +52,36 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 5
     region: content
   field_date:
-    weight: 2
+    type: daterange_default
     label: above
     settings:
       timezone_override: ''
       format_type: long
       separator: '-'
     third_party_settings: {  }
-    type: daterange_default
+    weight: 2
     region: content
   field_date_has_time:
-    weight: 3
+    type: boolean
     label: above
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    type: boolean
+    weight: 3
     region: content
   field_image:
-    weight: 1
+    type: image
     label: above
     settings:
-      image_style: ''
       image_link: ''
+      image_style: ''
     third_party_settings: {  }
-    type: image
+    weight: 1
     region: content
 hidden:
   field_event_id: true

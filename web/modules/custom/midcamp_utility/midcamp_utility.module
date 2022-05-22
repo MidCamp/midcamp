@@ -48,7 +48,7 @@ function midcamp_utility_views_pre_view(ViewExecutable $view, $display_id, array
       $current_uri = \Drupal::request()->getRequestUri();
       $parts = explode('/', $current_uri);
       // Get the term ID from the path
-      $term_path = \Drupal::service('path.alias_manager')->getPathByAlias('/' . $parts[1]);
+      $term_path = \Drupal::service('path_alias.manager')->getPathByAlias('/' . $parts[1]);
       $term_args = explode('/', $term_path);
 
       // If we've found a taxonomy term path pass the term ID.

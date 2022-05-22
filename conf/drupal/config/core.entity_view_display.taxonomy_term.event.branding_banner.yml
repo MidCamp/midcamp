@@ -21,7 +21,7 @@ bundle: event
 mode: branding_banner
 content:
   field_banner_cta_anonymous:
-    weight: 2
+    type: link
     label: above
     settings:
       trim_length: 80
@@ -30,10 +30,10 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 2
     region: content
   field_banner_cta_authenticated:
-    weight: 3
+    type: link
     label: above
     settings:
       trim_length: 80
@@ -42,26 +42,26 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 3
     region: content
   field_date:
-    weight: 1
+    type: daterange_default
     label: above
     settings:
       timezone_override: ''
       format_type: long
       separator: '-'
     third_party_settings: {  }
-    type: daterange_default
+    weight: 1
     region: content
   field_image:
-    weight: 0
+    type: image
     label: above
     settings:
-      image_style: ''
       image_link: ''
+      image_style: ''
     third_party_settings: {  }
-    type: image
+    weight: 0
     region: content
 hidden:
   description: true

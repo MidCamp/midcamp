@@ -17,14 +17,14 @@ plugin: 'system_menu_block:midcamp-2020-navigation'
 settings:
   id: 'system_menu_block:midcamp-2020-navigation'
   label: 'Midcamp 2020 Navigation'
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
   depth: 2
   expand_all_items: true
 visibility:
   request_path:
     id: request_path
-    pages: "/2018*\r\n/2019*"
     negate: true
     context_mapping: {  }
+    pages: "/2018*\r\n/2019*"

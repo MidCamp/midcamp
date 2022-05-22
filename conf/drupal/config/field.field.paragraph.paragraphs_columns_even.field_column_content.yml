@@ -26,13 +26,13 @@ settings:
       paragraphs_image: paragraphs_image
       paragraphs_text: paragraphs_text
     target_bundles_drag_drop:
-      paragraphs_image:
-        enabled: true
-        weight: -7
-      paragraphs_text:
-        enabled: true
-        weight: -6
       paragraphs_columns_even:
         weight: -5
         enabled: false
+      paragraphs_image:
+        weight: -7
+        enabled: true
+      paragraphs_text:
+        weight: -6
+        enabled: true
 field_type: entity_reference_revisions

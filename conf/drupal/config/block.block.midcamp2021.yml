@@ -18,14 +18,14 @@ plugin: 'block_content:a54a0659-0ed4-46e8-afe3-55cdd97cd855'
 settings:
   id: 'block_content:a54a0659-0ed4-46e8-afe3-55cdd97cd855'
   label: 'MidCamp 2021'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

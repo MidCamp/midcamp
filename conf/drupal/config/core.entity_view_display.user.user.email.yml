@@ -30,11 +30,11 @@ mode: email
 content:
   field_eventbrite_email:
     type: basic_string
-    weight: 0
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_bio: true
   field_company_logo: true

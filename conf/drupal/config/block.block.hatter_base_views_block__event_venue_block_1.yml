@@ -18,14 +18,14 @@ plugin: 'views_block:event_venue-block_1'
 settings:
   id: 'views_block:event_venue-block_1'
   label: ''
-  provider: views
   label_display: '0'
+  provider: views
+  context_mapping: {  }
   views_label: ''
   items_per_page: none
-  context_mapping: {  }
 visibility:
   request_path:
     id: request_path
-    pages: "/2019*\r\n<front>"
     negate: true
     context_mapping: {  }
+    pages: "/2019*\r\n<front>"

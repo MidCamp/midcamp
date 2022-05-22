@@ -33,23 +33,23 @@ bundle: user
 mode: default
 content:
   field_bio:
-    weight: 7
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 7
     region: content
   field_company_logo:
-    weight: 9
+    type: image
     label: hidden
     settings:
-      image_style: large
       image_link: ''
+      image_style: large
     third_party_settings: {  }
-    type: image
+    weight: 9
     region: content
   field_do_profile:
-    weight: 2
+    type: link
     label: inline
     settings:
       trim_length: 80
@@ -58,33 +58,33 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 2
     region: content
   field_name:
     type: name_default
+    label: inline
     settings:
-      list_format: default
       format: default
       markup: none
+      list_format: default
       link_target: ''
       preferred_field_reference: ''
       preferred_field_reference_separator: ', '
       alternative_field_reference: ''
       alternative_field_reference_separator: ', '
-    weight: 1
-    label: inline
     third_party_settings: {  }
+    weight: 1
     region: content
   field_organization:
-    weight: 4
+    type: entity_reference_label
     label: inline
     settings:
       link: false
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 4
     region: content
   field_site:
-    weight: 6
+    type: link
     label: above
     settings:
       trim_length: 80
@@ -93,40 +93,40 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 6
     region: content
   field_title:
-    weight: 3
+    type: string
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 3
     region: content
   field_tracks:
-    weight: 8
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 8
     region: content
   field_twitter:
-    weight: 5
+    type: string
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 5
     region: content
   user_picture:
     type: image
-    weight: 0
-    settings:
-      image_style: featured_speaker
-      image_link: ''
-    third_party_settings: {  }
     label: hidden
+    settings:
+      image_link: ''
+      image_style: featured_speaker
+    third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   field_company_url: true

@@ -22,11 +22,11 @@ mode: teaser
 content:
   field_article_summary:
     type: basic_string
-    weight: 0
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_article_news: true
   field_article_paragraphs: true
