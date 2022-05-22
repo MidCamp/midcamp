@@ -43,6 +43,9 @@
             "url": "https://packages.drupal.org/8"
         }
     },
+    "replace": {
+      "spress/spress": "*"
+    },
     "require": {
         "brian-clement/eventbrite_events": "^1.0",
         "brian-clement/tito": "dev-master",
@@ -80,6 +83,7 @@
         "drupal/video_embed_field": "^2.4",
         "drupal/viewsreference": "^1.7",
         "drupal/webform": "^6.1",
+        "midcamp/hatter": "dev-master",
         "oomphinc/composer-installers-extender": "^2.0",
         "twig/extensions": "^1.5"
     },

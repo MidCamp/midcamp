@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2feccce89a89fa0124d65d47069103ae",
+    "content-hash": "9dc5331adfd0b4ec8d1edf872ca12f29",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4537,6 +4537,39 @@
                 }
             ],
             "time": "2021-08-27T13:48:19+00:00"
+        },
+        {
+            "name": "midcamp/hatter",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MidCamp/Hatter.git",
+                "reference": "0f5e194858da5b9b26a4e131669fcf5a6cb2c103"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MidCamp/Hatter/zipball/0f5e194858da5b9b26a4e131669fcf5a6cb2c103",
+                "reference": "0f5e194858da5b9b26a4e131669fcf5a6cb2c103",
+                "shasum": ""
+            },
+            "require": {
+                "spress/spress": "^2.1"
+            },
+            "default-branch": true,
+            "type": "butler-styleguide",
+            "autoload": {
+                "psr-0": {
+                    "MidCamp\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "support": {
+                "source": "https://github.com/MidCamp/Hatter/tree/master",
+                "issues": "https://github.com/MidCamp/Hatter/issues"
+            },
+            "time": "2019-11-02T13:57:41+00:00"
         },
         {
             "name": "nette/finder",
@@ -14281,7 +14314,8 @@
         "drupal/captcha": 20,
         "drupal/libraries": 10,
         "drupal/switch_page_theme": 20,
-        "drupal/twig_extensions": 20
+        "drupal/twig_extensions": 20,
+        "midcamp/hatter": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
