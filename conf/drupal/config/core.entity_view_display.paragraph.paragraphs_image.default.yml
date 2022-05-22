@@ -13,13 +13,13 @@ bundle: paragraphs_image
 mode: default
 content:
   field_paragraph_image:
-    weight: 0
+    type: image
     label: hidden
     settings:
-      image_style: ''
       image_link: ''
+      image_style: ''
     third_party_settings: {  }
-    type: image
+    weight: 0
     region: content
 hidden:
   created: true

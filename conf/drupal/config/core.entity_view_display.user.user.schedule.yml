@@ -32,45 +32,45 @@ bundle: user
 mode: schedule
 content:
   field_company_logo:
-    weight: 3
+    type: image
     label: hidden
     settings:
-      image_style: medium
       image_link: ''
+      image_style: medium
     third_party_settings: {  }
-    type: image
+    weight: 3
     region: content
   field_name:
     type: name_default
+    label: hidden
     settings:
-      list_format: default
       format: default
       markup: none
+      list_format: default
       link_target: ''
       preferred_field_reference: ''
       preferred_field_reference_separator: ', '
       alternative_field_reference: ''
       alternative_field_reference_separator: ', '
-    weight: 1
-    label: hidden
     third_party_settings: {  }
+    weight: 1
     region: content
   field_organization:
-    weight: 2
+    type: entity_reference_label
     label: hidden
     settings:
       link: false
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 2
     region: content
   user_picture:
     type: image
-    weight: 0
-    settings:
-      image_style: schedule_presenter
-      image_link: ''
-    third_party_settings: {  }
     label: hidden
+    settings:
+      image_link: ''
+      image_style: schedule_presenter
+    third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   field_bio: true

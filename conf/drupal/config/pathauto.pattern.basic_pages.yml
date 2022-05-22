@@ -11,12 +11,12 @@ pattern: '[node:field_event:entity:url:path]/[node:title]'
 selection_criteria:
   fe413bb3-aae4-44fe-87c3-36e63c5130e7:
     id: node_type
-    bundles:
-      page: page
     negate: false
+    uuid: fe413bb3-aae4-44fe-87c3-36e63c5130e7
     context_mapping:
       node: node
-    uuid: fe413bb3-aae4-44fe-87c3-36e63c5130e7
+    bundles:
+      page: page
 selection_logic: and
 weight: -5
 relationships: {  }

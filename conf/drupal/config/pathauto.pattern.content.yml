@@ -11,6 +11,10 @@ pattern: '[node:field_event:entity:url:path]/[node:content-type]/[node:title]'
 selection_criteria:
   967e3bfc-632f-4c3d-b18f-91886599bc38:
     id: node_type
+    negate: false
+    uuid: 967e3bfc-632f-4c3d-b18f-91886599bc38
+    context_mapping:
+      node: node
     bundles:
       article: article
       sponsor: sponsor
@@ -18,10 +22,6 @@ selection_criteria:
       topic: topic
       training: training
       venue: venue
-    negate: false
-    context_mapping:
-      node: node
-    uuid: 967e3bfc-632f-4c3d-b18f-91886599bc38
 selection_logic: and
 weight: -7
 relationships: {  }

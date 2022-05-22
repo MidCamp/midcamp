@@ -18,7 +18,7 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  link_type: 16
   title: 5
+  link_type: 16
   title_predefined: "facebook|Facebook\r\ntwitter|Twitter\r\ngoogle-plus|Google+\r\nyoutube|Youtube"
 field_type: link

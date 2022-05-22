@@ -12,12 +12,12 @@ pattern: '/sponsor/package/[term:name]'
 selection_criteria:
   e2625ac6-345e-491d-a480-1c0c4d09722a:
     id: 'entity_bundle:taxonomy_term'
-    bundles:
-      sponsor_packages: sponsor_packages
     negate: false
+    uuid: e2625ac6-345e-491d-a480-1c0c4d09722a
     context_mapping:
       taxonomy_term: taxonomy_term
-    uuid: e2625ac6-345e-491d-a480-1c0c4d09722a
+    bundles:
+      sponsor_packages: sponsor_packages
 selection_logic: and
 weight: -5
 relationships: {  }

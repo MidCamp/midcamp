@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
 ignored_config_entities:
   0: 'mailchimp.settings:api_key'
   2: 'mailchimp.settings:connected_id'
@@ -7,5 +9,3 @@ ignored_config_entities:
   10: 'recaptcha.settings:site_key'
   12: 'recaptcha.settings:secret_key'
   14: 'tito.settings:tito_api_token'
-_core:
-  default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk

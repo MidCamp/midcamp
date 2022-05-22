@@ -21,40 +21,40 @@ bundle: sponsor
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   field_image:
-    weight: 1
+    type: image
     label: hidden
     settings:
-      image_style: ''
       image_link: ''
+      image_style: ''
     third_party_settings: {  }
-    type: image
+    weight: 1
     region: content
   field_link:
     type: link
-    weight: 3
     label: hidden
     settings:
       trim_length: 80
-      target: _blank
       url_only: true
       url_plain: false
       rel: '0'
+      target: _blank
     third_party_settings: {  }
+    weight: 3
     region: content
   field_sponsor_level:
-    weight: 0
+    type: entity_reference_label
     label: hidden
     settings:
       link: false
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 0
     region: content
 hidden:
   field_event: true

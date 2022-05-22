@@ -12,12 +12,12 @@ pattern: '[term:root]/[term:name]'
 selection_criteria:
   b927e73e-693b-4e83-9948-308047e4014e:
     id: 'entity_bundle:taxonomy_term'
-    bundles:
-      event: event
     negate: false
+    uuid: b927e73e-693b-4e83-9948-308047e4014e
     context_mapping:
       taxonomy_term: taxonomy_term
-    uuid: b927e73e-693b-4e83-9948-308047e4014e
+    bundles:
+      event: event
 selection_logic: and
 weight: -6
 relationships: {  }

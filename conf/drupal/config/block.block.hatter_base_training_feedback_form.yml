@@ -18,14 +18,14 @@ plugin: webform_block
 settings:
   id: webform_block
   label: 'Provide feedback on this training'
-  provider: webform
   label_display: visible
+  provider: webform
   webform_id: training_feedback_2019
   default_data: ''
   redirect: false
 visibility:
   request_path:
     id: request_path
-    pages: '/2019/training-proposal/*'
     negate: false
     context_mapping: {  }
+    pages: '/2019/training-proposal/*'

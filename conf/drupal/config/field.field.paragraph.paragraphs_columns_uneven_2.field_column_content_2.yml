@@ -33,9 +33,9 @@ settings:
         weight: 6
         enabled: false
       paragraphs_image:
-        enabled: true
         weight: 7
-      paragraphs_text:
         enabled: true
+      paragraphs_text:
         weight: 8
+        enabled: true
 field_type: entity_reference_revisions

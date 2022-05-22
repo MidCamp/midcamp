@@ -18,7 +18,7 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  link_type: 16
   title: 5
+  link_type: 16
   title_predefined: 'Go to [term:name]'
 field_type: link

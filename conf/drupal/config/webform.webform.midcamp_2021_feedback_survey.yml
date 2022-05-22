@@ -2,9 +2,9 @@ uuid: c01e46ea-4353-4919-8018-0e843f9c1ab6
 langcode: en
 status: closed
 dependencies: {  }
+weight: 0
 open: null
 close: null
-weight: 0
 uid: 40
 template: false
 archive: false
@@ -12,7 +12,35 @@ id: midcamp_2021_feedback_survey
 title: 'MidCamp 2021 Feedback Survey'
 description: ''
 category: ''
-elements: "markup:\n  '#type': webform_markup\n  '#markup': |\n    Thank you for attending MidCamp 2021!<br />\n    <br />\n    We have a few questions about your experience and how we can improve for MidCamp 2022.&nbsp; Thanks so much for giving us your feedback,&nbsp;&nbsp;\n    \nis_this_feedback_for_a_session_or_for_the_whole_camp_:\n  '#type': radios\n  '#title': 'Is this feedback for a session or for the whole camp?'\n  '#options':\n    'For a single session': 'For a single session'\n    'For the camp overall': 'For the camp overall'\nif_for_a_session_which_session_:\n  '#type': textarea\n  '#title': 'If for a session, which session?'\nwhat_was_your_favorite_part_:\n  '#type': textarea\n  '#title': 'What was your favorite part?'\nwhat_might_be_tried_for_improvement_:\n  '#type': textarea\n  '#title': 'What might be tried for improvement?'\nany_other_notes_:\n  '#type': textarea\n  '#title': 'Any other notes?'\nwhat_was_your_least_favorite_part_midcamp2021:\n  '#type': textarea\n  '#title': 'What was your least favorite part?'"
+elements: |-
+  markup:
+    '#type': webform_markup
+    '#markup': |
+      Thank you for attending MidCamp 2021!<br />
+      <br />
+      We have a few questions about your experience and how we can improve for MidCamp 2022.&nbsp; Thanks so much for giving us your feedback,&nbsp;&nbsp;
+      
+  is_this_feedback_for_a_session_or_for_the_whole_camp_:
+    '#type': radios
+    '#title': 'Is this feedback for a session or for the whole camp?'
+    '#options':
+      'For a single session': 'For a single session'
+      'For the camp overall': 'For the camp overall'
+  if_for_a_session_which_session_:
+    '#type': textarea
+    '#title': 'If for a session, which session?'
+  what_was_your_favorite_part_:
+    '#type': textarea
+    '#title': 'What was your favorite part?'
+  what_might_be_tried_for_improvement_:
+    '#type': textarea
+    '#title': 'What might be tried for improvement?'
+  any_other_notes_:
+    '#type': textarea
+    '#title': 'Any other notes?'
+  what_was_your_least_favorite_part_midcamp2021:
+    '#type': textarea
+    '#title': 'What was your least favorite part?'
 css: ''
 javascript: ''
 settings:
@@ -27,9 +55,9 @@ settings:
   page_theme_name: ''
   form_title: source_entity_webform
   form_submit_once: false
-  form_exception_message: ''
   form_open_message: ''
   form_close_message: ''
+  form_exception_message: ''
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
@@ -39,31 +67,36 @@ settings:
   form_prepopulate_source_entity: false
   form_prepopulate_source_entity_required: false
   form_prepopulate_source_entity_type: ''
-  form_reset: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
   form_disable_autocomplete: false
   form_novalidate: false
   form_disable_inline_errors: false
   form_required: false
-  form_unsaved: false
-  form_disable_back: false
-  form_submit_back: false
   form_autofocus: false
   form_details_toggle: false
+  form_reset: false
   form_access_denied: default
   form_access_denied_title: ''
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  form_attributes: {  }
   form_method: ''
   form_action: ''
-  form_attributes: {  }
   share: false
   share_node: false
   share_theme_name: ''
   share_title: true
   share_page_body_attributes: {  }
   submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
   submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
   submission_views: {  }
   submission_views_replace: {  }
   submission_user_columns: {  }
@@ -72,11 +105,6 @@ settings:
   submission_access_denied_title: ''
   submission_access_denied_message: ''
   submission_access_denied_attributes: {  }
-  submission_exception_message: ''
-  submission_locked_message: ''
-  submission_excluded_elements: {  }
-  submission_exclude_empty: false
-  submission_exclude_empty_checkbox: false
   previous_submission_message: ''
   previous_submissions_message: ''
   autofill: false
@@ -87,13 +115,13 @@ settings:
   wizard_progress_percentage: false
   wizard_progress_link: false
   wizard_progress_states: false
-  wizard_auto_forward: true
-  wizard_auto_forward_hide_next_button: false
-  wizard_keyboard: true
   wizard_start_label: ''
   wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
   wizard_track: ''
   wizard_prev_button_label: ''
   wizard_next_button_label: ''
@@ -116,9 +144,9 @@ settings:
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
   confirmation_type: page
+  confirmation_url: ''
   confirmation_title: ''
   confirmation_message: ''
-  confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''

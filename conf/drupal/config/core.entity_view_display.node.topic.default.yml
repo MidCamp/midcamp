@@ -33,78 +33,78 @@ bundle: topic
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 3
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 3
     region: content
   content_moderation_control:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
   field_captions:
-    weight: 10
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 10
     region: content
   field_feedback_form:
-    weight: 9
+    type: webform_entity_reference_entity_view
     label: above
     settings:
       source_entity: true
     third_party_settings: {  }
-    type: webform_entity_reference_entity_view
+    weight: 9
     region: content
   field_people:
     type: entity_reference_entity_view
-    weight: 7
-    region: content
     label: above
     settings:
       view_mode: compact
       link: false
     third_party_settings: {  }
+    weight: 7
+    region: content
   field_presenter_slides:
-    weight: 5
+    type: file_default
     label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    type: file_default
+    weight: 5
     region: content
   field_schedule_location:
-    weight: 2
+    type: entity_reference_entity_view
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 2
     region: content
   field_schedule_time:
-    weight: 1
+    type: daterange_default
     label: above
     settings:
       timezone_override: America/Chicago
       format_type: day_and_time
       separator: '-'
     third_party_settings: {  }
-    type: daterange_default
+    weight: 1
     region: content
   field_track:
-    weight: 8
+    type: entity_reference_label
     label: inline
     settings:
       link: false
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 8
     region: content
   field_transcript:
-    weight: 6
+    type: link
     label: above
     settings:
       trim_length: 80
@@ -113,18 +113,18 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 6
     region: content
   field_video:
-    weight: 4
+    type: video_embed_field_video
     label: hidden
     settings:
+      autoplay: false
       responsive: true
       width: 854
       height: 480
-      autoplay: false
     third_party_settings: {  }
-    type: video_embed_field_video
+    weight: 4
     region: content
 hidden:
   field_accepted_confirmed: true

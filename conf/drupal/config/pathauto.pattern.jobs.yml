@@ -11,12 +11,12 @@ pattern: '/jobs/[node:field_sponsor_company]/[node:title]'
 selection_criteria:
   1743f797-5c39-4618-8a3b-09c10dea8b21:
     id: node_type
-    bundles:
-      job: job
     negate: false
+    uuid: 1743f797-5c39-4618-8a3b-09c10dea8b21
     context_mapping:
       node: node
-    uuid: 1743f797-5c39-4618-8a3b-09c10dea8b21
+    bundles:
+      job: job
 selection_logic: and
 weight: -10
 relationships: {  }

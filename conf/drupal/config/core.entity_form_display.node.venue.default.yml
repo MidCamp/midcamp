@@ -23,45 +23,46 @@ content:
   created:
     type: datetime_timestamp
     weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   field_address:
+    type: address_default
     weight: 6
+    region: content
     settings:
       default_country: null
     third_party_settings: {  }
-    type: address_default
-    region: content
   field_event:
+    type: entity_reference_autocomplete
     weight: 123
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_meta_tags:
+    type: metatag_firehose
     weight: 122
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: metatag_firehose
-    region: content
   field_venue_events:
+    type: entity_reference_autocomplete
     weight: 8
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_venue_paragraphs:
     type: entity_reference_paragraphs
     weight: 7
+    region: content
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -69,64 +70,63 @@ content:
       add_mode: dropdown
       form_display_mode: default
     third_party_settings: {  }
-    region: content
   path:
     type: path
     weight: 5
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   promote:
     type: boolean_checkbox
+    weight: 3
+    region: content
     settings:
       display_label: true
-    weight: 3
     third_party_settings: {  }
-    region: content
   publish_on:
     type: datetime_timestamp_no_default
     weight: 30
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   status:
     type: boolean_checkbox
+    weight: 121
+    region: content
     settings:
       display_label: true
-    weight: 121
     third_party_settings: {  }
-    region: content
   sticky:
     type: boolean_checkbox
+    weight: 4
+    region: content
     settings:
       display_label: true
-    weight: 4
     third_party_settings: {  }
-    region: content
   title:
     type: string_textfield
     weight: 0
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 1
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
     third_party_settings: {  }
-    region: content
   unpublish_on:
     type: datetime_timestamp_no_default
     weight: 30
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   url_redirects:
     weight: 50
     region: content

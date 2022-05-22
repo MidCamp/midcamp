@@ -1,7 +1,12 @@
 uuid: 1c8fdf4f-072b-4764-a8f9-7e0721519ff3
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - node.type.job
+    - node.type.sponsor
+  module:
+    - node
 id: sponsor
 label: Sponsor
 weight: 3
