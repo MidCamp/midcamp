@@ -43,7 +43,7 @@
         }
     },
     "require": {
-        "brian-clement/eventbrite_events": "dev-master",
+        "brian-clement/eventbrite_events": "^1.0",
         "brian-clement/tito": "dev-master",
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",

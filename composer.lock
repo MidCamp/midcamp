@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cd744fc338cca82e5886bd4abda439b7",
+    "content-hash": "156ac2978bc1bee7f3c52c6fa1e9dbd0",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -64,16 +64,16 @@
         },
         {
             "name": "brian-clement/eventbrite_events",
-            "version": "dev-master",
+            "version": "1.0-beta",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Brian-Clement/eventbrite_events.git",
-                "reference": "1ac7032b3fe9fda40f92e1899f090d88638f0c73"
+                "reference": "4a9a2c5734035396e970c9f3ae5553d14a8ae3f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Brian-Clement/eventbrite_events/zipball/1ac7032b3fe9fda40f92e1899f090d88638f0c73",
-                "reference": "1ac7032b3fe9fda40f92e1899f090d88638f0c73",
+                "url": "https://api.github.com/repos/Brian-Clement/eventbrite_events/zipball/4a9a2c5734035396e970c9f3ae5553d14a8ae3f2",
+                "reference": "4a9a2c5734035396e970c9f3ae5553d14a8ae3f2",
                 "shasum": ""
             },
             "type": "drupal-module",
@@ -85,10 +85,10 @@
                 "Drupal"
             ],
             "support": {
-                "source": "https://github.com/Brian-Clement/eventbrite_events/tree/master",
+                "source": "https://github.com/Brian-Clement/eventbrite_events/tree/1.0-beta",
                 "issues": "https://github.com/Brian-Clement/eventbrite_events/issues"
             },
-            "time": "2019-10-21T23:02:13+00:00"
+            "time": "2022-05-22T18:32:28+00:00"
         },
         {
             "name": "brian-clement/tito",
@@ -14626,7 +14626,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "brian-clement/eventbrite_events": 20,
         "brian-clement/tito": 20,
         "drupal/captcha": 20,
         "drupal/libraries": 10,
