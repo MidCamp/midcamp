@@ -89,6 +89,8 @@ display:
           settings:
             image_link: ''
             image_style: schedule_presenter
+            image_loading:
+              attribute: lazy
           group_column: ''
           group_columns: {  }
           group_rows: true
