@@ -8,8 +8,11 @@ dependencies:
     - field.field.taxonomy_term.event.field_banner_cta_authenticated
     - field.field.taxonomy_term.event.field_date
     - field.field.taxonomy_term.event.field_date_has_time
+    - field.field.taxonomy_term.event.field_event_id
+    - field.field.taxonomy_term.event.field_event_status
     - field.field.taxonomy_term.event.field_image
     - field.field.taxonomy_term.event.field_social_media
+    - field.field.taxonomy_term.event.field_tito_slug
     - taxonomy.vocabulary.event
   module:
     - datetime_range
@@ -78,8 +81,13 @@ content:
     settings:
       image_link: ''
       image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 1
     region: content
 hidden:
+  field_event_id: true
+  field_event_status: true
   field_social_media: true
+  field_tito_slug: true

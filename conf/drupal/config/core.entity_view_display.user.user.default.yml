@@ -45,6 +45,8 @@ content:
     settings:
       image_link: ''
       image_style: large
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 9
     region: content
@@ -125,6 +127,8 @@ content:
     settings:
       image_link: ''
       image_style: featured_speaker
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
