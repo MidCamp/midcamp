@@ -1,40 +1,49 @@
-uuid: 14089955-e024-4f64-af62-9ebebd80ba97
+uuid: c3ac3b19-45b4-411e-a91f-821e4df2821c
 langcode: en
-status: closed
-dependencies: {  }
+status: open
+dependencies:
+  module:
+    - honeypot
+third_party_settings:
+  honeypot:
+    honeypot: true
 weight: 0
 open: null
 close: null
-uid: 16
+uid: 13
 template: false
 archive: false
-id: room_monitor_checklist
-title: 'Room Monitor Checklist'
+id: midcamp_2023_interest
+title: 'MidCamp 2023 Interest'
 description: ''
 category: ''
-elements: |
-  markup:
-    '#type': webform_markup
-    '#markup': "Thank you for being a room monitor.&nbsp; Please fill out the form below and if there are any immediate needs, please contact JD Flynn or any of the organizer teams via Slack or Twitter or yelling really loudly (please don&#39;t yell really loudly).&nbsp;&nbsp;<br />\n<br />\nIn addition to filling out this form, there are a few things we need checked out for every session:\n<ul>\n\t<li>Please be in the room at least 5 minutes before the session starts to help make sure that any issues are hopefully handled before the session starts.</li>\n\t<li>Make sure that the speaker(s) press the BIG RED BUTTON on the recording kit.&nbsp; If the light strip is red, it&#39;s recording.</li>\n\t<li>If there are any issues during recording with the projector flickering or other strangeness, ping Kevin Thull on Slack or email JD Flynn</li>\n\t<li>Learn something!</li>\n</ul>"
-  session:
-    '#type': webform_entity_select
-    '#title': Session
-    '#target_type': node
-    '#selection_handler': views
-    '#selection_settings':
-      view:
-        view_name: survey_filters
-        display_name: entity_reference_1
-        arguments: {  }
-  monitor_name:
-    '#type': textfield
-    '#title': 'Monitor Name'
-  number_of_attendees:
-    '#type': textfield
-    '#title': 'Number of Attendees (including yourself)'
-  any_concerns_:
+elements: |-
+  processed_text:
+    '#type': processed_text
+    '#text': |
+      <p>Greetings! We're beginning planning for MidCamp 2023 and would love to know what your thoughts</p>
+    '#format': basic_html
+  what_is_the_most_important_part_of_midcamp_for_you_:
+    '#type': webform_radios_other
+    '#title': 'What do you most look forward to at MidCamp?'
+    '#options':
+      Trainings: 'Trainings -- Half or full-day courses led by an instructor.'
+      Sessions: 'Sessions -- Hour-ish long presentations.'
+      'Q&A / Meeting Speakers': 'Q&A / Meeting Speakers -- Informal discussions with session presenters.'
+      Summits: 'Summits -- Half or full-day small-group gatherings focused on a single topic area.'
+      Un-conference/BoFs: 'Un-conference/BoFs -- Self-organized broadly-ranging conversations.'
+      Contribution: 'Contribution -- Either during a designated day or throughout.'
+      Socializing: 'Socializing -- Either in the "Hallway Track" or outside the venue.'
+  we_re_doing_all_the_things_you_want_to_do_if_you_had_to_decide_t:
+    '#type': radios
+    '#title': 'So, theoretically we''re doing all the things you want at our usual time in March of 2023! If you had to decide today, would you...'
+    '#options':
+      'attend MidCamp in-person': 'attend MidCamp in-person'
+      'attend MidCamp virtually': 'attend MidCamp virtually'
+      'skip MidCamp this year :(': 'skip MidCamp this year :('
+  comments:
     '#type': textarea
-    '#title': 'Any Concerns?'
+    '#title': Comments
 css: ''
 javascript: ''
 settings:
@@ -44,7 +53,7 @@ settings:
   ajax_effect: ''
   ajax_speed: null
   page: true
-  page_submit_path: /room-checklist
+  page_submit_path: ''
   page_confirm_path: ''
   page_theme_name: ''
   form_title: both
@@ -216,42 +225,5 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers:
-  email:
-    id: email
-    handler_id: email
-    label: Email
-    notes: ''
-    status: true
-    conditions: {  }
-    weight: 0
-    settings:
-      states:
-        - completed
-      to_mail: jflynn8@gmail.com
-      to_options: {  }
-      bcc_mail: ''
-      bcc_options: {  }
-      cc_mail: ''
-      cc_options: {  }
-      from_mail: _default
-      from_options: {  }
-      from_name: _default
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
-      subject: _default
-      body: _default
-      excluded_elements: {  }
-      ignore_access: false
-      exclude_empty: true
-      exclude_empty_checkbox: false
-      exclude_attachments: false
-      html: true
-      attachments: false
-      twig: false
-      theme_name: ''
-      parameters: {  }
-      debug: false
+handlers: {  }
 variants: {  }
