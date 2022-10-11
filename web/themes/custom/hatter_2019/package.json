@@ -11,7 +11,7 @@
   "dependencies": {
     "@midcamp/hatter": "^1.0.10",
     "rimraf": "^3.0.0",
-    "vendor-copy": "^2.0.0",
+    "vendor-copy": "^2.0.1",
     "watch": "^1.0.2"
   },
   "vendorCopy": [
