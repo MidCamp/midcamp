@@ -11,7 +11,7 @@ _core:
 id: hatter_powered
 theme: hatter
 region: header
-weight: -8
+weight: -18
 provider: null
 plugin: system_powered_by_block
 settings:

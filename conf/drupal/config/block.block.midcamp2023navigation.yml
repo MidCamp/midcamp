@@ -1,0 +1,29 @@
+uuid: 956d9e0e-8f0f-4550-a963-8502c8c88ca3
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.midcamp-2023-navigation
+  module:
+    - system
+  theme:
+    - hatter
+id: midcamp2023navigation
+theme: hatter
+region: header
+weight: -19
+provider: null
+plugin: 'system_menu_block:midcamp-2023-navigation'
+settings:
+  id: 'system_menu_block:midcamp-2023-navigation'
+  label: 'MidCamp 2023 Navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/2018*\r\n/2019*\r\n/2020*\r\n/2021*"

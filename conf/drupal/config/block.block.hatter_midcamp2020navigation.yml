@@ -11,7 +11,7 @@ dependencies:
 id: hatter_midcamp2020navigation
 theme: hatter
 region: header
-weight: 0
+weight: -21
 provider: null
 plugin: 'system_menu_block:midcamp-2020-navigation'
 settings:

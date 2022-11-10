@@ -11,7 +11,7 @@ dependencies:
 id: midcamp2021navigation_2
 theme: hatter
 region: header
-weight: 0
+weight: -20
 provider: null
 plugin: 'system_menu_block:midcamp-2021-navigation'
 settings:
@@ -25,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    negate: true
+    negate: false
     context_mapping: {  }
-    pages: "/2018*\r\n/2019*\r\n/2020*"
+    pages: "/2021/*\r\n/2021"
