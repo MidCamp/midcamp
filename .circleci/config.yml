@@ -20,15 +20,3 @@ jobs:
           name: Build project
           command: |
             docker-compose up -d --build
-      - run:
-          name: Install site
-          command: |
-            docker-compose exec cli drush site:install --verbose minimal --existing-config --yes
-      - run:
-          name: Install dev dependencies
-          command: |
-            docker-compose exec cli composer install
-      - run:
-          name: Run Behat tests
-          command: |
-            docker-compose exec cli vendor/bin/behat -c behat.circleci.yml
