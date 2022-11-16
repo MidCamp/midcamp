@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies:
   module:
-    - ctools
     - midcamp_event_label_block
+    - node
   theme:
     - hatter
 id: hatter_eventlabelblock

@@ -6,7 +6,7 @@ dependencies:
     - node.type.sponsor
     - taxonomy.vocabulary.event
   content:
-    - 'taxonomy_term:event:5c03697f-f030-4408-bc96-aaca0ee62b55'
+    - 'taxonomy_term:event:1ccc1913-46fe-407d-a8b9-e03edfac2625'
   module:
     - node
     - taxonomy
@@ -149,7 +149,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            234: 234
+            250: 250
           group: 1
           exposed: false
           expose:
