@@ -5,7 +5,7 @@ dependencies:
   config:
     - views.view.jobs_board
   module:
-    - ctools
+    - node
     - views
   theme:
     - hatter

@@ -1,0 +1,8 @@
+uuid: 73e9f7f9-a12e-4a7f-8e38-9fe52b3f4aee
+langcode: en
+status: true
+dependencies: {  }
+id: midcamp-2023-navigation
+label: 'MidCamp 2023 Navigation'
+description: 'Primary navigation for Midcamp 2023 content'
+locked: false

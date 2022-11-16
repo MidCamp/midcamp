@@ -9,6 +9,7 @@ dependencies:
     - taxonomy.vocabulary.event
   content:
     - 'taxonomy_term:event:17285735-fe51-4f45-b481-321ae7af649f'
+    - 'taxonomy_term:event:1ccc1913-46fe-407d-a8b9-e03edfac2625'
     - 'taxonomy_term:event:58ab979d-12f0-4b19-ab75-5625aa986afb'
     - 'taxonomy_term:event:5c03697f-f030-4408-bc96-aaca0ee62b55'
     - 'taxonomy_term:event:edb1c63f-3af1-4ce3-b9d0-55336993e692'
@@ -226,7 +227,7 @@ display:
       tags: {  }
   attachment_1:
     id: attachment_1
-    display_title: '20201 Leadership Attachment'
+    display_title: '2021 Leadership Attachment'
     display_plugin: attachment
     position: 5
     display_options:
@@ -331,6 +332,121 @@ display:
       display_extenders: {  }
       displays:
         page_4: page_4
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - user
+        - user.permissions
+      tags: {  }
+  attachment_2:
+    id: attachment_2
+    display_title: '2023 Leadership Attachment'
+    display_plugin: attachment
+    position: 5
+    display_options:
+      filters:
+        status:
+          id: status
+          table: users_field_data
+          field: status
+          entity_type: user
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        field_leadership_year_target_id:
+          id: field_leadership_year_target_id
+          table: user__field_leadership_year
+          field: field_leadership_year_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            - 250
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: event
+          type: textfield
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        filters: false
+        filter_groups: false
+        header: false
+        footer: false
+      display_description: ''
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<h2>Leadership</h2>'
+            format: basic_html
+          tokenize: false
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<h2>Organizers</h2>'
+            format: basic_html
+          tokenize: false
+      display_extenders: {  }
+      displays:
+        page_5: page_5
     cache_metadata:
       max-age: -1
       contexts:
@@ -677,6 +793,160 @@ display:
           tokenize: false
       display_extenders: {  }
       path: 2021/organizers
+      menu:
+        type: none
+        title: Organizers
+        description: ''
+        weight: -43
+        expanded: false
+        menu_name: midcamp-2021-navigation
+        parent: ''
+        context: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - user
+        - user.permissions
+      tags: {  }
+  page_5:
+    id: page_5
+    display_title: '2023 Organizers'
+    display_plugin: page
+    position: 2
+    display_options:
+      filters:
+        status:
+          id: status
+          table: users_field_data
+          field: status
+          entity_type: user
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        field_organizer_year_target_id:
+          id: field_organizer_year_target_id
+          table: user__field_organizer_year
+          field: field_organizer_year_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            250: 250
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: event
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_leadership_year_target_id:
+          id: field_leadership_year_target_id
+          table: user__field_leadership_year
+          field: field_leadership_year_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: not
+          value:
+            - 250
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: event
+          type: textfield
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        filters: false
+        filter_groups: false
+        header: false
+      display_description: ''
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<p>MidCamp is organized by a group of volunteers from the Drupal community in Chicago, and beyond!</p>'
+            format: basic_html
+          tokenize: false
+      display_extenders: {  }
+      path: 2023/organizers
       menu:
         type: none
         title: Organizers
