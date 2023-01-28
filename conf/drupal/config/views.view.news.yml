@@ -842,7 +842,8 @@ display:
         type: normal
         title: News
         description: ''
-        weight: -50
+        weight: -46
+        enabled: true
         expanded: false
         menu_name: midcamp-2023-navigation
         parent: ''
