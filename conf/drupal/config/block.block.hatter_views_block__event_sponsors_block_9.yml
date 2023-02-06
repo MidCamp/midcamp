@@ -28,4 +28,4 @@ visibility:
     id: request_path
     negate: false
     context_mapping: {  }
-    pages: "/2020/sponsors\r\n/2021/sponsors"
+    pages: "/2020/sponsors\r\n/2021/sponsors\r\n/2023/sponsors"

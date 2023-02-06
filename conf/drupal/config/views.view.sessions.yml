@@ -3847,6 +3847,219 @@ display:
       tags:
         - 'config:field.storage.node.field_people'
         - 'config:field.storage.node.field_track'
+  page_8:
+    id: page_8
+    display_title: 'Submitted 2023'
+    display_plugin: page
+    position: 1
+    display_options:
+      access:
+        type: perm
+        options:
+          perm: 'administer nodes'
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          operator: '='
+          value: '0'
+          group: 1
+          exposed: true
+          expose:
+            operator_id: ''
+            label: Published
+            description: ''
+            use_operator: false
+            operator: status_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: status
+            required: true
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              speaker: '0'
+              content_editor: '0'
+              administrator: '0'
+              sponsor: '0'
+              organizer: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            topic: topic
+          group: 1
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_topic_type_target_id:
+          id: field_topic_type_target_id
+          table: node__field_topic_type
+          field: field_topic_type_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            14: 14
+          group: 1
+          exposed: false
+          expose:
+            operator_id: field_topic_type_target_id_op
+            label: 'Topic Type'
+            description: ''
+            use_operator: false
+            operator: field_topic_type_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_topic_type_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              speaker: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: topic_type
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_event_target_id:
+          id: field_event_target_id
+          table: node__field_event
+          field: field_event_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            250: 250
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: event
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        access: false
+        filters: false
+        filter_groups: false
+        header: false
+      display_description: ''
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: "<!--p>MidCamp is looking for folks just like you to speak to our Drupal audience! Experienced speakers are always welcome, but camp is also a great place to start for first-time speakers. From the opening of session submission through the beginning of camp, we'll have communication to assist speakers (new and old) in creating engaging and informative sessions.</p-->\r\n<!--p><strong>The session submission deadline has been extended to midnight December 19, 2018. <a href=\"/submit-session\">Submit your session today!</a></strong></p-->\r\n<!--p><strong>Session submission is now closed. Thanks to all who submitted proposals!</strong></p-->"
+            format: basic_html
+          tokenize: false
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: result
+          empty: false
+          content: 'Displaying @start - @end of @total'
+      display_extenders: {  }
+      path: admin/2023/submitted-sessions
+    cache_metadata:
+      max-age: 0
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
   user_sessions:
     id: user_sessions
     display_title: 'User profile tab'
@@ -3970,7 +4183,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            143: 143
+            250: 250
           group: 1
           exposed: false
           expose:
