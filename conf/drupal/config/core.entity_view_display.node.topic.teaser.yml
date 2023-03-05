@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.topic.field_schedule_location
     - field.field.node.topic.field_schedule_time
     - field.field.node.topic.field_session_length
+    - field.field.node.topic.field_social_post
     - field.field.node.topic.field_topic_type
     - field.field.node.topic.field_track
     - field.field.node.topic.field_transcript
@@ -58,6 +59,7 @@ hidden:
   field_schedule_location: true
   field_schedule_time: true
   field_session_length: true
+  field_social_post: true
   field_topic_type: true
   field_transcript: true
   field_video: true
