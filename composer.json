@@ -60,7 +60,7 @@
         "drupal/contact_formatter": "^2.0",
         "drupal/core-composer-scaffold": "^9.5",
         "drupal/core-recommended": "^9.5",
-        "drupal/entity": "^1.2",
+        "drupal/entity": "^1.4",
         "drupal/entityqueue": "^1.2",
         "drupal/field_group": "^3.2",
         "drupal/field_permissions": "^1.1",
