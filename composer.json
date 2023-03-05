@@ -83,7 +83,7 @@
         "drupal/twig_extensions": "2.x-dev",
         "drupal/upgrade_status": "^3.10",
         "drupal/video_embed_field": "^2.4",
-        "drupal/viewsreference": "^1.7",
+        "drupal/viewsreference": "^1.8",
         "drupal/webform": "^6.1",
         "midcamp/hatter": "dev-master",
         "oomphinc/composer-installers-extender": "^2.0",
