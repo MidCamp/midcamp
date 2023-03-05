@@ -5,6 +5,7 @@ dependencies:
   config:
     - filter.format.basic_html
     - filter.format.restricted_html
+    - filter.format.webform_default
     - node.type.topic
   module:
     - comment
@@ -38,6 +39,7 @@ permissions:
   - 'use text format basic_html'
   - 'use text format basic_html'
   - 'use text format restricted_html'
+  - 'use text format webform_default'
   - 'view field_accepted_confirmed'
   - 'view field_captions'
   - 'view field_feedback_form'

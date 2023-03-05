@@ -16,7 +16,7 @@ archive: false
 id: session_feedback
 title: 'Session Feedback'
 description: 'A survey for attendees to tell us what they thought of a session.'
-category: ''
+categories: {  }
 elements: |-
   mastery_of_topic:
     '#type': radios
@@ -129,6 +129,8 @@ settings:
   wizard_toggle: true
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
   preview: 0
   preview_label: ''
   preview_title: ''
