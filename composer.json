@@ -14,7 +14,8 @@
             "drupal/core-composer-scaffold": true,
             "cweagans/composer-patches": true,
             "oomphinc/composer-installers-extender": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "phpstan/extension-installer": true
         }
     },
     "repositories": {
@@ -81,7 +82,7 @@
         "drupal/simple_sitemap": "^3.8",
         "drupal/switch_page_theme": "1.x-dev",
         "drupal/twig_extensions": "2.x-dev",
-        "drupal/upgrade_status": "^3.10",
+        "drupal/upgrade_status": "^4.0",
         "drupal/video_embed_field": "^2.4",
         "drupal/viewsreference": "^1.8",
         "drupal/webform": "^6.2",
@@ -95,6 +96,7 @@
         "drupal/core-dev": "^9.5",
         "drupal/drupal-extension": "^4",
         "drush/drush": "^10.6",
+        "phpcompatibility/php-compatibility": "dev-develop",
         "phpmd/phpmd": "^2.4"
     },
     "conflict": {
