@@ -55,7 +55,7 @@
         "drupal/address": "^1.9",
         "drupal/admin_toolbar": "^3.4",
         "drupal/allow_iframed_site": "^3.0",
-        "drupal/captcha": "1.x-dev",
+        "drupal/captcha": "^1.14",
         "drupal/config_ignore": "^2.3",
         "drupal/contact_formatter": "^2.0",
         "drupal/core-composer-scaffold": "^9.5",
