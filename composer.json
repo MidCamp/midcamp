@@ -67,7 +67,7 @@
         "drupal/google_analytics": "^3.1",
         "drupal/honeypot": "^2.1",
         "drupal/libraries": "^3.0@beta",
-        "drupal/linkicon": "^1.4",
+        "drupal/linkicon": "^1.10",
         "drupal/mailchimp": "^2.2",
         "drupal/metatag": "^1.16",
         "drupal/name": "^1.0",
