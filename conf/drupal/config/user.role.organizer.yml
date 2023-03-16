@@ -12,6 +12,7 @@ permissions:
   - 'create field_captions'
   - 'create field_transcript'
   - 'edit field_captions'
+  - 'edit field_eyebrow'
   - 'edit field_transcript'
   - 'edit own field_captions'
   - 'edit own field_transcript'

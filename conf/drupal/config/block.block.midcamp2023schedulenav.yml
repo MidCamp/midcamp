@@ -1,0 +1,38 @@
+uuid: f6eb6159-6e17-40b7-995c-8ee6b8242a8a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e066b47a-a80d-432a-8edd-6c60b28b7c95'
+  module:
+    - block_content
+    - node
+    - system
+  theme:
+    - hatter
+id: midcamp2023schedulenav
+theme: hatter
+region: content
+weight: -18
+provider: null
+plugin: 'block_content:e066b47a-a80d-432a-8edd-6c60b28b7c95'
+settings:
+  id: 'block_content:e066b47a-a80d-432a-8edd-6c60b28b7c95'
+  label: 'MidCamp 2023 Schedule Nav'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      topic: topic
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/2023/*'

@@ -112,6 +112,7 @@ permissions:
   - 'edit any training content'
   - 'edit any venue content'
   - 'edit field_captions'
+  - 'edit field_eyebrow'
   - 'edit own article content'
   - 'edit own field_captions'
   - 'edit own job content'
