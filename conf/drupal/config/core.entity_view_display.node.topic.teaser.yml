@@ -5,10 +5,21 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.topic.body
+    - field.field.node.topic.field_accepted_confirmed
+    - field.field.node.topic.field_captions
     - field.field.node.topic.field_event
+    - field.field.node.topic.field_eyebrow
+    - field.field.node.topic.field_feedback_form
+    - field.field.node.topic.field_meta_tags
     - field.field.node.topic.field_people
+    - field.field.node.topic.field_presenter_slides
+    - field.field.node.topic.field_schedule_location
+    - field.field.node.topic.field_schedule_time
+    - field.field.node.topic.field_session_length
     - field.field.node.topic.field_topic_type
     - field.field.node.topic.field_track
+    - field.field.node.topic.field_transcript
+    - field.field.node.topic.field_video
     - node.type.topic
   module:
     - text
@@ -36,7 +47,18 @@ content:
     region: content
 hidden:
   content_moderation_control: true
+  field_accepted_confirmed: true
+  field_captions: true
   field_event: true
+  field_eyebrow: true
+  field_feedback_form: true
+  field_meta_tags: true
   field_people: true
+  field_presenter_slides: true
+  field_schedule_location: true
+  field_schedule_time: true
+  field_session_length: true
   field_topic_type: true
+  field_transcript: true
+  field_video: true
   links: true
