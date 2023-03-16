@@ -14,8 +14,8 @@ definitions:
     expanded: false
     enabled: true
   user__logout:
+    enabled: true
     menu_name: account
     parent: ''
-    weight: -49
     expanded: false
-    enabled: false
+    weight: -49

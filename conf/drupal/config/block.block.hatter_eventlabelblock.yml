@@ -10,7 +10,7 @@ dependencies:
 id: hatter_eventlabelblock
 theme: hatter
 region: content
-weight: -17
+weight: -19
 provider: null
 plugin: event_label_block
 settings:
