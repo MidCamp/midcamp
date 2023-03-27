@@ -653,7 +653,7 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: "<div class=\"schedule__nav\">\r\n      <a href=\"/2023/schedule/wednesday\">Wednesday</a> | <!--a href=\"/2023/schedule/thursday\">Thursday</a>--> | <a href=\"/2023/schedule/friday\">Friday</a>\r\n</div>\r\n<h2>Thursday, April 27, 2023</h2>"
+            value: "<div class=\"schedule__nav\">\r\n      <a href=\"/2023/schedule/wednesday\">Wednesday</a> | <!--a href=\"/2023/schedule/thursday\">Thursday</a> | --><a href=\"/2023/schedule/friday\">Friday</a>\r\n</div>\r\n<h2>Thursday, April 27, 2023</h2>"
             format: full_html
           tokenize: false
       display_extenders: {  }
@@ -662,7 +662,7 @@ display:
         type: normal
         title: 'Sessions (Thu)'
         description: ''
-        weight: -47
+        weight: -49
         expanded: false
         menu_name: midcamp-2023-navigation
         parent: 'menu_link_content:5b43dcc3-6bee-4b91-98e0-cae3efa2ae56'
@@ -866,7 +866,7 @@ display:
         type: normal
         title: 'Contribution Day (Fri)'
         description: ''
-        weight: -46
+        weight: -48
         expanded: false
         menu_name: midcamp-2023-navigation
         parent: 'menu_link_content:5b43dcc3-6bee-4b91-98e0-cae3efa2ae56'
@@ -1426,10 +1426,10 @@ display:
       display_extenders: {  }
       path: 2023/schedule/sessions
       menu:
-        type: none
-        title: 'Accepted Sessions'
+        type: normal
+        title: 'All Sessions'
         description: ''
-        weight: -49
+        weight: -45
         expanded: false
         menu_name: midcamp-2023-navigation
         parent: 'menu_link_content:5b43dcc3-6bee-4b91-98e0-cae3efa2ae56'
@@ -1690,7 +1690,7 @@ display:
         type: normal
         title: 'Sessions (Wed)'
         description: ''
-        weight: -48
+        weight: -50
         expanded: false
         menu_name: midcamp-2023-navigation
         parent: 'menu_link_content:5b43dcc3-6bee-4b91-98e0-cae3efa2ae56'
