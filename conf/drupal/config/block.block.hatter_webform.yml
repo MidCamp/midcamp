@@ -28,4 +28,4 @@ visibility:
     id: request_path
     negate: false
     context_mapping: {  }
-    pages: "/2018/topic-proposal/lightning-talks\r\n/2019/topic-proposal/lightning-talks"
+    pages: "/2018/topic-proposal/lightning-talks\r\n/2019/topic-proposal/lightning-talks\r\n/node/6965"

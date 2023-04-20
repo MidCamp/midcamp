@@ -1,0 +1,37 @@
+uuid: 01cd58c9-d8a6-41e8-978f-7dd80354710e
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.2023_birds_of_a_feather_bof_subm
+  module:
+    - system
+    - webform
+  theme:
+    - hatter
+id: webform
+theme: hatter
+region: content
+weight: -4
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'BoF Submission Webform'
+  label_display: '0'
+  provider: webform
+  webform_id: 2023_birds_of_a_feather_bof_subm
+  default_data: ''
+  redirect: false
+visibility:
+  'entity_bundle:webform_submission':
+    id: 'entity_bundle:webform_submission'
+    negate: false
+    context_mapping:
+      webform_submission: '@webform.webform_submission_route_context:webform_submission'
+    bundles:
+      2023_birds_of_a_feather_bof_subm: 2023_birds_of_a_feather_bof_subm
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/6964\r\n/node/6963\r\n/2023/topic-proposal/birds-feather-bofs-thursday-1245pm-300pm"
