@@ -1,0 +1,30 @@
+uuid: c2496e14-8f47-423d-be00-850ad45d59d3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:daf73e2b-f395-4c62-8e60-15afec11e174'
+  module:
+    - block_content
+    - system
+  theme:
+    - hatter
+id: midcamp2023wednesdayschedulenav
+theme: hatter
+region: content
+weight: -18
+provider: null
+plugin: 'block_content:daf73e2b-f395-4c62-8e60-15afec11e174'
+settings:
+  id: 'block_content:daf73e2b-f395-4c62-8e60-15afec11e174'
+  label: 'MidCamp 2023 Wednesday Schedule Nav'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /2023/schedule/wednesday

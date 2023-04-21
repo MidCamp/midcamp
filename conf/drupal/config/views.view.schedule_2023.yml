@@ -16,7 +16,9 @@ dependencies:
     - taxonomy.vocabulary.topic_type
   content:
     - 'taxonomy_term:event:1ccc1913-46fe-407d-a8b9-e03edfac2625'
+    - 'taxonomy_term:location:5c305285-e1de-4045-8545-660c5634c8a1'
     - 'taxonomy_term:location:985e9954-42b8-480b-805e-3070a00de0cc'
+    - 'taxonomy_term:location:bc210ee9-2ef4-4066-89a2-31936d2481d4'
     - 'taxonomy_term:location:e0572394-8994-43f7-9683-99e7f1792d87'
     - 'taxonomy_term:topic_type:39f8a394-f9fc-45ae-85a2-46aabfd3212f'
   module:
@@ -285,9 +287,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: entity_reference_label
+          type: entity_reference_entity_view
           settings:
-            link: false
+            view_mode: topic_page
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -727,6 +729,8 @@ display:
           operator: or
           value:
             264: 264
+            270: 270
+            271: 271
             263: 263
           group: 1
           exposed: false
@@ -967,6 +971,8 @@ display:
           operator: or
           value:
             264: 264
+            270: 270
+            271: 271
             263: 263
           group: 1
           exposed: false
@@ -1220,6 +1226,8 @@ display:
           operator: or
           value:
             264: 264
+            270: 270
+            271: 271
             263: 263
           group: 1
           exposed: false
@@ -1482,7 +1490,7 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: "<div class=\"schedule__nav\">\r\n      <a href=\"/2023/schedule/hybrid\">Hybrid</a> | <a href=\"/2023/schedule/wednesday\">Wednesday</a> | <!--a href=\"/2023/schedule/thursday\">Thursday</a> | --><a href=\"/2023/schedule/friday\">Friday</a>\r\n</div>\r\n<h2>Thursday, April 27, 2023</h2>"
+            value: '<h2>Thursday, April 27, 2023</h2>'
             format: full_html
           tokenize: false
       display_extenders: {  }
@@ -1491,7 +1499,7 @@ display:
         type: normal
         title: 'Sessions (Thu)'
         description: ''
-        weight: -49
+        weight: -48
         expanded: false
         menu_name: midcamp-2023-navigation
         parent: 'menu_link_content:5b43dcc3-6bee-4b91-98e0-cae3efa2ae56'
@@ -1687,7 +1695,7 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: "<div class=\"schedule__nav\">\r\n      <a href=\"/2023/schedule/hybrid\">Hybrid</a> | <a href=\"/2023/schedule/wednesday\">Wednesday</a> | <a href=\"/2023/schedule/thursday\">Thursday</a><!-- | <a href=\"/2023/schedule/friday\">Friday</a>-->\r\n</div>\r\n<h2>Friday, April 28, 2023: 10AM - 4PM</h2>\r\n<p>A contribution day is a get-together for focused work on a project. Contribution&nbsp;days are an important part of Drupal's growth and are also a great opportunity to get involved because others are on hand to help you contribute. There is&nbsp;a dedicated contribution day on Friday,&nbsp;so come and collaborate&nbsp;with other Drupal community members!</p>\r\n<ul>\r\n\t<li>Coffee (and other morning beverages)!</li>\r\n\t<li>Contrib day in rooms 312, 313, & 316! Reach out on Slack if you'd like to lead an initiative.</li>\r\n\t<li>Lunch (provided)</li>\r\n\t<li>Evening: Community-led social TBD.</li>\r\n</ul>\r\n\r\n<h2>Who Should Come?</h2>\r\n\r\n<p>If you are interested in contributing to Drupal core or contributed projects, this is your chance. You don't need to be a developer to contribute; we need project managers, bug reporters, QA testers, people to help write documentation, etc. If you are a developer, but not sure where to get started, we have mentors to show you the ropes.</p>\r\n\r\n<p>If you feel new and would love helping hands, the best day to start is the Friday contribution day. This is the biggest&nbsp;day for contributing with many people collaborating,&nbsp;and different opportunities based on experience level. For a guided introduction to Drupal Contributions, get there first thing in the morning at 10am for a <a href=\"/2023/topic-proposal/first-time-contribution-workshop\">First Time Contribution Workshop.</a></p>\r\n\r\n<p>If you know the tools but still could use help picking issues and going through the process, we will have experienced contributors there to help newer folks.</p>\r\n\r\n<p><strong>Specific details below.</strong></p>\r\n\r\n<h2>What Topics Will We Focus On?</h2>\r\n\r\n<p>There will be a general contribution space as well as rooms for selected&nbsp;initiatives.</p>\r\n\r\n<h3>General Contributions</h3>\r\n\r\n<p>Come by and use this space for co-working and collaboration.</p>\r\n\r\n<p>Slack Channel:&nbsp;<a href=\"https://midcamp.slack.com/archives/C0CA5H539\">#contributions</a></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Below are the contribution initiatives we will focus on at MidCamp. If you are attending camp and want to lead an initiative not listed below, shoot us an email and we will announce it here.</strong></p>\r\n\r\n<h3>Initiatives</h3>\r\n\r\n<h4><a href=\"https://www.drupal.org/project/project_browser\">Project Browser</a></h4>\r\n<p>The Project Browser makes it easy for site builders to find modules.</p>\r\n\r\n<h4><a href=\"https://www.drupal.org/community-initiatives/drupal-7-soft-landing-initiative\">Drupal 7 Soft Landing Initiative</a></h4>\r\n<p>The primary goal of this initiative is to support owners of current D7 sites with guidance on what to do before Drupal 7's End-of-Life date.</p>\r\n\r\n<h4><a href=\"https://www.drupal.org/project/editoria11y\">The Editoria11y project.</a></h4>\r\n<p>Editoria11y (editorial accessibility ally) is a user-friendly accessibility\r\nchecker that addresses three critical needs for content authors.</p>\r\n\r\n<h4><a href=\"https://www.drupal.org/project/same_page_preview\">Same Page Preview</a></h4>\r\n<p>Wouldn't it be nice to see a preview on the same page as the form you're editing. We want to improve the content editing experience, by reducing the feedback loop for content workers.</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+            value: "<h2>Friday, April 28, 2023: 10AM - 4PM</h2>\r\n<p>A contribution day is a get-together for focused work on a project. Contribution&nbsp;days are an important part of Drupal's growth and are also a great opportunity to get involved because others are on hand to help you contribute. There is&nbsp;a dedicated contribution day on Friday,&nbsp;so come and collaborate&nbsp;with other Drupal community members!</p>\r\n<ul>\r\n\t<li>Coffee (and other morning beverages)!</li>\r\n\t<li>Contrib day in rooms 312, 313, & 316! Reach out on Slack if you'd like to lead an initiative.</li>\r\n\t<li>Lunch (provided)</li>\r\n\t<li>Evening: Community-led social TBD.</li>\r\n</ul>\r\n\r\n<h2>Who Should Come?</h2>\r\n\r\n<p>If you are interested in contributing to Drupal core or contributed projects, this is your chance. You don't need to be a developer to contribute; we need project managers, bug reporters, QA testers, people to help write documentation, etc. If you are a developer, but not sure where to get started, we have mentors to show you the ropes.</p>\r\n\r\n<p>If you feel new and would love helping hands, the best day to start is the Friday contribution day. This is the biggest&nbsp;day for contributing with many people collaborating,&nbsp;and different opportunities based on experience level. For a guided introduction to Drupal Contributions, get there first thing in the morning at 10am for a <a href=\"/2023/topic-proposal/first-time-contribution-workshop\">First Time Contribution Workshop.</a></p>\r\n\r\n<p>If you know the tools but still could use help picking issues and going through the process, we will have experienced contributors there to help newer folks.</p>\r\n\r\n<p><strong>Specific details below.</strong></p>\r\n\r\n<h2>What Topics Will We Focus On?</h2>\r\n\r\n<p>There will be a general contribution space as well as rooms for selected&nbsp;initiatives.</p>\r\n\r\n<h3>General Contributions</h3>\r\n\r\n<p>Come by and use this space for co-working and collaboration.</p>\r\n\r\n<p>Slack Channel:&nbsp;<a href=\"https://midcamp.slack.com/archives/C0CA5H539\">#contributions</a></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Below are the contribution initiatives we will focus on at MidCamp. If you are attending camp and want to lead an initiative not listed below, shoot us an email and we will announce it here.</strong></p>\r\n\r\n<h3>Initiatives</h3>\r\n\r\n<h4><a href=\"https://www.drupal.org/project/project_browser\">Project Browser</a></h4>\r\n<p>The Project Browser makes it easy for site builders to find modules.</p>\r\n\r\n<h4><a href=\"https://www.drupal.org/community-initiatives/drupal-7-soft-landing-initiative\">Drupal 7 Soft Landing Initiative</a></h4>\r\n<p>The primary goal of this initiative is to support owners of current D7 sites with guidance on what to do before Drupal 7's End-of-Life date.</p>\r\n\r\n<h4><a href=\"https://www.drupal.org/project/editoria11y\">The Editoria11y project.</a></h4>\r\n<p>Editoria11y (editorial accessibility ally) is a user-friendly accessibility\r\nchecker that addresses three critical needs for content authors.</p>\r\n\r\n<h4><a href=\"https://drupal.slack.com/archives/C1AFW2ZPD\">UX Initiative</a></h4>\r\n<p>There are big changes coming in 10.1 and there has been a lot of work on the Field UI. The Usability meeting is on Zoom Friday morning, join the call and then help out with the usability initiatives.</p>\r\n\r\n<h4><a href=\"https://www.drupal.org/project/same_page_preview\">Same Page Preview</a></h4>\r\n<p>Wouldn't it be nice to see a preview on the same page as the form you're editing. We want to improve the content editing experience, by reducing the feedback loop for content workers.</p>\r\n\r\n<p>&nbsp;</p>\r\n"
             format: full_html
           tokenize: false
       display_extenders: {  }
@@ -1696,7 +1704,7 @@ display:
         type: normal
         title: 'Contribution Day (Fri)'
         description: ''
-        weight: -48
+        weight: -46
         expanded: false
         menu_name: midcamp-2023-navigation
         parent: 'menu_link_content:5b43dcc3-6bee-4b91-98e0-cae3efa2ae56'
@@ -2065,7 +2073,7 @@ display:
         type: normal
         title: 'All Sessions'
         description: ''
-        weight: -45
+        weight: -44
         expanded: false
         menu_name: midcamp-2023-navigation
         parent: 'menu_link_content:5b43dcc3-6bee-4b91-98e0-cae3efa2ae56'
@@ -2551,8 +2559,8 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: "<div class=\"schedule__nav\">\r\n      <a href=\"/2023/schedule/hybrid\">Hybrid</a> | <!--a href=\"/2023/schedule/wednesday\">Wednesday</a> | --><a href=\"/2023/schedule/thursday\">Thursday</a> | <a href=\"/2023/schedule/friday\">Friday</a>\r\n</div>\r\n<h2>Wednesday, April 26, 2023</h2>"
-            format: full_html
+            value: '<h2>Wednesday, April 26, 2023</h2>'
+            format: basic_html
           tokenize: false
       footer: {  }
       display_extenders: {  }
@@ -2561,7 +2569,7 @@ display:
         type: normal
         title: 'Sessions (Wed)'
         description: ''
-        weight: -50
+        weight: -49
         expanded: false
         menu_name: midcamp-2023-navigation
         parent: 'menu_link_content:5b43dcc3-6bee-4b91-98e0-cae3efa2ae56'

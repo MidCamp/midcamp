@@ -1,0 +1,30 @@
+uuid: 1afa6762-0375-4de2-bda7-defb5197daae
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8fda6051-e288-4faf-8315-99e9cad4903a'
+  module:
+    - block_content
+    - system
+  theme:
+    - hatter
+id: midcamp2023thursdayschedulenav
+theme: hatter
+region: content
+weight: -17
+provider: null
+plugin: 'block_content:8fda6051-e288-4faf-8315-99e9cad4903a'
+settings:
+  id: 'block_content:8fda6051-e288-4faf-8315-99e9cad4903a'
+  label: 'MidCamp 2023 Thursday Schedule Nav'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /2023/schedule/thursday
