@@ -1,32 +1,28 @@
-uuid: b5dd1627-f0fc-4710-84fe-f0026d6954f9
+uuid: 446f3162-5504-4f23-9900-d3108b4a0724
 langcode: en
-status: closed
-dependencies: {  }
+status: open
+dependencies:
+  module:
+    - honeypot
+third_party_settings:
+  honeypot:
+    honeypot: true
 weight: 0
 open: null
 close: null
-uid: 1
+uid: 116
 template: false
 archive: false
-id: lightning_talk_sign_up
-title: 'Lightning Talk Sign Up'
+id: 2023_birds_of_a_feather_bof_subm
+title: '2023 Birds of a Feather (BoF) Submission'
 description: ''
 category: ''
 elements: |-
-  present_lightning_talk:
-    '#type': radios
-    '#title': 'Would you like to present a Lightning Talk?'
-    '#options': yes_no
-    '#required': true
   what_is_your_name_:
     '#type': webform_name
     '#title': 'What is your name?'
     '#title_display': before
     '#required': true
-    '#states':
-      invisible:
-        ':input[name="present_lightning_talk"]':
-          '!value': 'Yes'
     '#title__access': false
     '#middle__access': false
     '#suffix__access': false
@@ -34,17 +30,31 @@ elements: |-
   email_address:
     '#type': webform_email_confirm
     '#title': 'Email address'
-    '#states':
-      invisible:
-        ':input[name="present_lightning_talk"]':
-          '!value': 'Yes'
+    '#required': true
+  select_available_time_slots:
+    '#type': select
+    '#title': 'Select available time slots'
+    '#multiple': true
+    '#description': 'If you&#39;d like to schedule for an hour you may pick two adjacent slots.'
+    '#options':
+      'Wed 1:15': 'Wednesday 1:15-1:45pm'
+      'Wed 1:50': 'Wednesday 1:50-2:20'
+      'Wed 2:25': 'Wednesday 2:25-2:55'
+      'Wed 3:00': 'Wednesday 3:00-3:30'
+      'Thu 12:45': 'Thursday 12:45-1:15pm'
+      'Thu 1:20': 'Thursday 1:20-1:50pm'
+      'Thu 1:55': 'Thursday 1:55-2:25pm'
+      'Thu 2:30': 'Thursday 2:30-3:00pm'
+    '#select2': true
+    '#required': true
   what_would_you_like_to_present_:
     '#type': textarea
-    '#title': 'What would you like to present?'
-    '#states':
-      invisible:
-        ':input[name="present_lightning_talk"]':
-          '!value': 'Yes'
+    '#title': 'What is your BoF Topic?'
+    '#description': 'Please provide a short topic title and description. Also add any other comments for the organizers.'
+    '#required': true
+  captcha:
+    '#type': captcha
+    '#captcha_type': recaptcha/reCAPTCHA
 css: ''
 javascript: ''
 settings:
@@ -57,7 +67,7 @@ settings:
   page_submit_path: ''
   page_confirm_path: ''
   page_theme_name: ''
-  form_title: source_entity_webform
+  form_title: both
   form_submit_once: false
   form_open_message: ''
   form_close_message: ''
@@ -129,7 +139,7 @@ settings:
   wizard_track: ''
   wizard_prev_button_label: ''
   wizard_next_button_label: ''
-  wizard_toggle: true
+  wizard_toggle: false
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
   preview: 0
@@ -147,10 +157,10 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: page
+  confirmation_type: message
   confirmation_url: ''
   confirmation_title: ''
-  confirmation_message: ''
+  confirmation_message: 'Your BoF Submission has been recorded'
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -226,5 +236,42 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  email:
+    id: email
+    handler_id: email
+    label: Email
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: bsnodgrass@net2community.com
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: _default
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
 variants: {  }

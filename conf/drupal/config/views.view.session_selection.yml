@@ -9,7 +9,9 @@ dependencies:
     - field.storage.node.field_schedule_location
     - field.storage.node.field_schedule_time
     - field.storage.node.field_session_length
+    - field.storage.user.field_organization
     - taxonomy.vocabulary.event
+    - taxonomy.vocabulary.organization
     - taxonomy.vocabulary.topic_type
     - user.role.administrator
   content:
@@ -725,30 +727,23 @@ display:
           row_class: ''
           default_row_class: true
           columns:
-            field_schedule_time_1: field_schedule_time_1
-            field_schedule_time: field_schedule_time
-            field_schedule_location: field_schedule_location
+            node_bulk_form: node_bulk_form
+            field_accepted_confirmed: field_accepted_confirmed
             title: title
             field_session_length: field_session_length
-            edit_node: edit_node
-          default: field_schedule_time
+            field_people: field_people
+            field_organization_1: field_organization_1
+            uid: uid
+            view_node: view_node
+          default: '-1'
           info:
-            field_schedule_time_1:
-              sortable: true
-              default_sort_order: asc
+            node_bulk_form:
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
-            field_schedule_time:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_schedule_location:
-              sortable: true
+            field_accepted_confirmed:
+              sortable: false
               default_sort_order: asc
               align: ''
               separator: ''
@@ -768,7 +763,26 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-            edit_node:
+            field_people:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_organization_1:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            uid:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            view_node:
               sortable: false
               default_sort_order: asc
               align: ''
@@ -1143,7 +1157,70 @@ display:
           click_sort_column: target_id
           type: entity_reference_label
           settings:
-            link: false
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_organization_1:
+          id: field_organization_1
+          table: user__field_organization
+          field: field_organization
+          relationship: field_people
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: Organization
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -1208,7 +1285,7 @@ display:
           click_sort_column: target_id
           type: entity_reference_label
           settings:
-            link: false
+            link: true
           group_column: target_id
           group_columns:
             target_id: target_id
@@ -1273,10 +1350,306 @@ display:
           text: view
           output_url_as_text: false
           absolute: false
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        field_topic_type_target_id:
+          id: field_topic_type_target_id
+          table: node__field_topic_type
+          field: field_topic_type_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            14: 14
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_topic_type_target_id_op
+            label: 'Topic Type'
+            description: ''
+            use_operator: false
+            operator: field_topic_type_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_topic_type_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              speaker: '0'
+              content_editor: '0'
+              administrator: '0'
+              sponsor: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: topic_type
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_accepted_confirmed_value:
+          id: field_accepted_confirmed_value
+          table: node__field_accepted_confirmed
+          field: field_accepted_confirmed_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: boolean
+          operator: '='
+          value: All
+          group: 1
+          exposed: true
+          expose:
+            operator_id: ''
+            label: 'Accepted and confirmed'
+            description: ''
+            use_operator: false
+            operator: field_accepted_confirmed_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_accepted_confirmed_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              speaker: '0'
+              content_editor: '0'
+              administrator: '0'
+              sponsor: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        field_event_target_id:
+          id: field_event_target_id
+          table: node__field_event
+          field: field_event_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_event_target_id_op
+            label: Event
+            description: ''
+            use_operator: false
+            operator: field_event_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_event_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              speaker: '0'
+              content_editor: '0'
+              administrator: '0'
+              sponsor: '0'
+              organizer: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: event
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_session_length_value:
+          id: field_session_length_value
+          table: node__field_session_length
+          field: field_session_length_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: list_field
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_session_length_value_op
+            label: 'Session Length'
+            description: ''
+            use_operator: false
+            operator: field_session_length_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_session_length_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              speaker: '0'
+              content_editor: '0'
+              administrator: '0'
+              sponsor: '0'
+              organizer: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+        field_organization_target_id:
+          id: field_organization_target_id
+          table: user__field_organization
+          field: field_organization_target_id
+          relationship: field_people
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_organization_target_id_op
+            label: Organization
+            description: ''
+            use_operator: false
+            operator: field_organization_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_organization_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              speaker: '0'
+              content_editor: '0'
+              administrator: '0'
+              sponsor: '0'
+              organizer: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: 'Organization (field_organization)'
+            description: null
+            identifier: field_organization_target_id
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1: {  }
+              2: {  }
+              3: {  }
+          reduce_duplicates: false
+          vid: organization
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
       defaults:
+        relationships: false
         fields: false
+        filters: false
+        filter_groups: false
+      relationships:
+        uid:
+          id: uid
+          table: node_field_data
+          field: uid
+          relationship: none
+          group_type: group
+          admin_label: author
+          entity_type: node
+          entity_field: uid
+          plugin_id: standard
+          required: false
+        field_people:
+          id: field_people
+          table: node__field_people
+          field: field_people
+          relationship: none
+          group_type: group
+          admin_label: 'field_people: User'
+          plugin_id: standard
+          required: false
       display_extenders: {  }
-      path: admin/sessions-select
+      path: admin/content/select-sessions
+      menu:
+        type: tab
+        title: Sessions
+        description: ''
+        weight: 0
+        expanded: false
+        menu_name: admin
+        parent: 'menu_link_content:97245675-d0d1-4716-a055-ada17a7c9455'
+        context: '0'
     cache_metadata:
       max-age: 0
       contexts:
@@ -1291,6 +1664,7 @@ display:
         - 'config:field.storage.node.field_accepted_confirmed'
         - 'config:field.storage.node.field_people'
         - 'config:field.storage.node.field_session_length'
+        - 'config:field.storage.user.field_organization'
   scheduling:
     id: scheduling
     display_title: Scheduling
@@ -1888,7 +2262,16 @@ display:
         filter_groups: false
       display_description: ''
       display_extenders: {  }
-      path: admin/session-scheduling
+      path: admin/content/schedule-sessions
+      menu:
+        type: tab
+        title: Scheduling
+        description: ''
+        weight: 0
+        expanded: false
+        menu_name: admin
+        parent: 'menu_link_content:97245675-d0d1-4716-a055-ada17a7c9455'
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
