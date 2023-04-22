@@ -12,7 +12,7 @@ dependencies:
 id: midcamp2021_3
 theme: hatter
 region: content
-weight: -24
+weight: -26
 provider: null
 plugin: 'block_content:a54a0659-0ed4-46e8-afe3-55cdd97cd855'
 settings:

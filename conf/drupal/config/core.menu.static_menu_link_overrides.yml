@@ -19,3 +19,27 @@ definitions:
     parent: ''
     expanded: false
     weight: -49
+  'admin_toolbar_tools__extra_links:node__add':
+    weight: 1
+    menu_name: admin
+    parent: system.admin_content
+    enabled: true
+    expanded: false
+  comment__admin:
+    weight: 3
+    menu_name: admin
+    parent: system.admin_content
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:view__files':
+    weight: 4
+    menu_name: admin
+    parent: system.admin_content
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:media_page':
+    weight: 5
+    menu_name: admin
+    parent: system.admin_content
+    expanded: false
+    enabled: true
