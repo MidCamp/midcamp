@@ -120,6 +120,16 @@ AddEncoding gzip svgz
   # uncomment the following line:
   # RewriteBase /
 
+  # Redirect previous year subdomains to subfolder
+  RewriteCond %{HTTP_HOST} ^2019\.midcamp\.org
+  RewriteRule ^(.*)$ http://midcamp.org/2019/$1 [R=301]
+
+  RewriteCond %{HTTP_HOST} ^2018\.midcamp\.org
+  RewriteRule ^(.*)$ http://midcamp.org/2018/$1 [R=301]
+
+  # Redirect to t
+
+
   # Redirect common PHP files to their new locations.
   RewriteCond %{REQUEST_URI} ^(.*)?/(install\.php) [OR]
   RewriteCond %{REQUEST_URI} ^(.*)?/(rebuild\.php)
