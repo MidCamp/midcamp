@@ -1,24 +1,24 @@
-uuid: ed5b10cb-b80f-40cb-8a46-58aa2e716fec
+uuid: 5a395cfc-364e-4c47-bfb5-0d53474bd001
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.jobs_board
+    - views.view.schedule_2023
   module:
     - node
     - views
   theme:
     - hatter
-id: hatter_views_block__jobs_board_block_1
+id: views_block__schedule_2023_short_url
 theme: hatter
 region: content
-weight: 3
+weight: -11
 provider: null
-plugin: 'views_block:jobs_board-block_1'
+plugin: 'views_block:schedule_2023-short_url'
 settings:
-  id: 'views_block:jobs_board-block_1'
+  id: 'views_block:schedule_2023-short_url'
   label: ''
-  label_display: visible
+  label_display: '0'
   provider: views
   context_mapping: {  }
   views_label: ''
@@ -30,4 +30,4 @@ visibility:
     context_mapping:
       node: '@node.node_route_context:node'
     bundles:
-      sponsor: sponsor
+      topic: topic

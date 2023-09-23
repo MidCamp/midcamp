@@ -1,49 +1,51 @@
-uuid: c3ac3b19-45b4-411e-a91f-821e4df2821c
+uuid: 61e60305-b7c6-4dd1-9ad3-ed20ac02cd26
 langcode: en
 status: closed
-dependencies:
-  module:
-    - honeypot
-third_party_settings:
-  honeypot:
-    honeypot: true
+dependencies: {  }
 weight: 0
 open: null
 close: null
 uid: 13
 template: false
 archive: false
-id: midcamp_2023_interest
-title: 'MidCamp 2023 Interest'
+id: midcamp_2023_feedback_survey
+title: 'MidCamp 2023 Feedback'
 description: ''
 category: ''
 elements: |-
-  processed_text:
-    '#type': processed_text
-    '#text': |
-      <p>Greetings! We're beginning planning for MidCamp 2023 and would love to know what your thoughts</p>
-    '#format': basic_html
-  what_is_the_most_important_part_of_midcamp_for_you_:
-    '#type': webform_radios_other
-    '#title': 'What do you most look forward to at MidCamp?'
-    '#options':
-      Trainings: 'Trainings -- Half or full-day courses led by an instructor.'
-      Sessions: 'Sessions -- Hour-ish long presentations.'
-      'Q&A / Meeting Speakers': 'Q&A / Meeting Speakers -- Informal discussions with session presenters.'
-      Summits: 'Summits -- Half or full-day small-group gatherings focused on a single topic area.'
-      Un-conference/BoFs: 'Un-conference/BoFs -- Self-organized broadly-ranging conversations.'
-      Contribution: 'Contribution -- Either during a designated day or throughout.'
-      Socializing: 'Socializing -- Either in the "Hallway Track" or outside the venue.'
-  we_re_doing_all_the_things_you_want_to_do_if_you_had_to_decide_t:
+  markup:
+    '#type': webform_markup
+    '#markup': |-
+      Thank you for attending MidCamp 2023!<br />
+      <br />
+      We have a few questions about your experience and how we can improve.&nbsp; Thanks so much for giving us your feedback.
+  is_this_feedback_for_a_session_or_for_the_whole_camp_:
     '#type': radios
-    '#title': 'So, theoretically we''re doing all the things you want at our usual time in March of 2023! If you had to decide today, would you...'
+    '#title': 'Is this feedback for a session or for the whole camp?'
     '#options':
-      'attend MidCamp in-person': 'attend MidCamp in-person'
-      'attend MidCamp virtually': 'attend MidCamp virtually'
-      'skip MidCamp this year :(': 'skip MidCamp this year :('
-  comments:
+      'For a single session': 'For a single session'
+      'For the camp overall': 'For the camp overall'
+  if_for_a_session_which_session_:
+    '#type': textfield
+    '#title': 'If for a session, which session?'
+    '#states':
+      visible:
+        ':input[name="is_this_feedback_for_a_session_or_for_the_whole_camp_"]':
+          value: 'For a single session'
+  what_was_your_favorite_part_:
     '#type': textarea
-    '#title': Comments
+    '#title': 'What was your favorite part?'
+  what_might_be_tried_for_improvement_:
+    '#type': textarea
+    '#title': 'What can we do better?'
+  what_was_your_least_favorite_part_midcamp2021:
+    '#type': textarea
+    '#title': 'What was your least favorite part?'
+  any_other_notes_:
+    '#type': textarea
+    '#title': 'Any other notes?'
+  captcha:
+    '#type': captcha
 css: ''
 javascript: ''
 settings:
@@ -53,7 +55,7 @@ settings:
   ajax_effect: ''
   ajax_speed: null
   page: true
-  page_submit_path: ''
+  page_submit_path: /2023/survey
   page_confirm_path: ''
   page_theme_name: ''
   form_title: source_entity_webform

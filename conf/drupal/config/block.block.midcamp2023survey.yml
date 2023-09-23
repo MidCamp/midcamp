@@ -1,0 +1,30 @@
+uuid: ff20527a-ced5-41ad-930c-20c1c963a36a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1b4a7d99-7564-406a-ab3e-5cea2f34683a'
+  module:
+    - block_content
+    - system
+  theme:
+    - hatter
+id: midcamp2023survey
+theme: hatter
+region: content
+weight: -26
+provider: null
+plugin: 'block_content:1b4a7d99-7564-406a-ab3e-5cea2f34683a'
+settings:
+  id: 'block_content:1b4a7d99-7564-406a-ab3e-5cea2f34683a'
+  label: 'MidCamp 2023 Survey'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/2023/*\r\n/jobs\r\n/speaker-resources\r\n/about/venue\r\n/topic-tracks"
