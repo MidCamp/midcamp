@@ -12,7 +12,7 @@ dependencies:
 id: hatter_training_feedback_form
 theme: hatter
 region: content
-weight: 1
+weight: 2
 provider: null
 plugin: webform_block
 settings:

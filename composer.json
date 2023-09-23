@@ -57,8 +57,8 @@
         "drupal/captcha": "1.x-dev",
         "drupal/config_ignore": "^2.3",
         "drupal/contact_formatter": "^2.0",
-        "drupal/core-composer-scaffold": "^9.4",
-        "drupal/core-recommended": "^9.4",
+        "drupal/core-composer-scaffold": "^9.5",
+        "drupal/core-recommended": "^9.5",
         "drupal/entity": "^1.2",
         "drupal/entityqueue": "^1.2",
         "drupal/field_group": "^3.2",
@@ -91,7 +91,7 @@
     "require-dev": {
         "amazeeio/drupal_integrations": "^0.3.3",
         "behat/mink-extension": "^2.2",
-        "drupal/core-dev": "^9.4",
+        "drupal/core-dev": "^9.5",
         "drupal/drupal-extension": "^4",
         "drush/drush": "^10.6",
         "phpmd/phpmd": "^2.4"
