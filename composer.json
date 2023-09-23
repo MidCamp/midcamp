@@ -64,7 +64,7 @@
         "drupal/entityqueue": "^1.2",
         "drupal/field_group": "^3.2",
         "drupal/field_permissions": "^1.1",
-        "drupal/google_analytics": "^3.1",
+        "drupal/google_analytics": "^4.0",
         "drupal/honeypot": "^2.1",
         "drupal/libraries": "^3.0@beta",
         "drupal/linkicon": "^1.10",
