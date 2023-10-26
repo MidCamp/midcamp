@@ -4,11 +4,11 @@ langcode: en
 uuid: 4e8b0d7f-53e9-45f1-9a7c-7188d45194bd
 name: MidCamp
 mail: info@midcamp.org
-slogan: 'April 26-28th, 2023'
+slogan: 'March 20-22, 2024'
 page:
   403: ''
   404: ''
-  front: /taxonomy/term/250
+  front: /taxonomy/term/499
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
