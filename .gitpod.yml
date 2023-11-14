@@ -1,4 +1,6 @@
 # DDEV Gitpod config via https://github.com/shaal/ddev-gitpod/blob/main/.gitpod.yml
+image: drupalpod/drupalpod-gitpod-base:20230922
+
 tasks:
   - init: |
       ddev start -y
