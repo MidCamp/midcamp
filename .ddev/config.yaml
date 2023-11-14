@@ -12,7 +12,7 @@ database:
 use_dns_when_possible: true
 composer_version: "2"
 web_environment:
-    - LAGOON_ENVIRONMENT=midcamp-org-production
+    - LAGOON_ENVIRONMENT=production
     - LAGOON_PROJECT=midcamp-org
 
 # Key features of DDEV's config.yaml:
