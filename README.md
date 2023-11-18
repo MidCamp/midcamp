@@ -1,28 +1,54 @@
 # MidCamp
 
-## The Drupal 8 website for midcamp.org
+## The Drupal website for midcamp.org
 [![CircleCI](https://circleci.com/gh/MidCamp/midcamp.svg?style=shield)](https://circleci.com/gh/MidCamp/midcamp)
 [![Code Climate](https://codeclimate.com/github/MidCamp/midcamp/badges/gpa.svg)](https://codeclimate.com/github/MidCamp/midcamp)
 
-## Prerequisites
+## Getting access
+
+Ensure you have an Amazee account with your [SSH keys loaded](http://dashboard.amazeeio.cloud/settings).  If not reach out on the [MidCamp Slack](https://mid.camp/slack) in `#website-amazeeio`.
+
+## DDEV-mode
+
+### Prerequisites
+
+- [DDEV](https://ddev.readthedocs.io/en/latest/users/install/)
+
+### Getting started
+
+Refer to [DDEV's documentation](https://ddev.readthedocs.io/en/latest/) for detailed information on configuration, customization and troubleshooting.
+
+1. Start your local environment with `ddev start`
+1. Run `ddev auth ssh` to load your ssh keys.
+1. Import your local database and files via:
+    1. `ddev pull lagoon`
+    1. Skip files/db with `--skip-files` or `--skip-db`
+
+## GitPod-mode
+
+- [Add your SSH keys to GitPod (maybe)](https://github.com/gitpod-io/gitpod/issues/666)
+- [Rock and roll](https://gitpod.io/?autostart=true#https://github.com/MidCamp/midcamp)
+
+## Lando-mode
+
+### Prerequisites
 
 - Lando (tested and working with version [`v3.0.23`](https://github.com/lando/lando/releases/tag/v3.0.23))
 
-##  Getting started
+###  Getting started
 
 Refer to [Lando's documentation](https://docs.lando.dev/) for detailed information on configuration, customization and troubleshooting.
 
 1. Start your local environment with `lando start`
-1. Ensure you have an Amazee account with your SSH keys loaded.  If not reach out on the [Amazee Rocket Chat](https://amazeeio.rocket.chat/group/midcamp).
 1. Import your local database and files via:
     1. `lando get-db`
     1. `lando get-files`
 
-## Working with Lando
+### Working with Lando
 
 Some common Lando commands to be aware of:
 
-- `lando start` statrs your application
+- `lando start` starts your application
 - `lando stop` stops your application
 - `lando poweroff` stops Lando and any Lando apps currently running
 - `lando restart` restarts your application
