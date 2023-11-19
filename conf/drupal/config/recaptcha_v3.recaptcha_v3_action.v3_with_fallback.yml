@@ -1,0 +1,8 @@
+uuid: 7d9c2bd1-81b7-40cb-b104-629631cbf524
+langcode: en
+status: true
+dependencies: {  }
+id: v3_with_fallback
+label: 'v3 with fallback'
+threshold: 0.5
+challenge: recaptcha/reCAPTCHA
