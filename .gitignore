@@ -5,6 +5,7 @@
 
 # Ignore Drupal settings and files
 settings.php
+settings.local.php
 services.yml
 services.local.yml
 !conf/drupal/settings.php
@@ -38,6 +39,3 @@ styleguide/*.sass-cache/
 styleguide/source/code/css/*.css
 /.editorconfig
 /.gitattributes
-
-# Ignore Mac stuff
-.DS_Store
