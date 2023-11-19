@@ -172,6 +172,20 @@ function hatter_preprocess_block(&$variables) {
       $site_config = \Drupal::config('system.site');
       $variables['site_slogan'] = $site_config->get('slogan');
       break;
+    case 'system_branding_block':
+      $term = \Drupal::routeMatch()->getParameter('taxonomy_term');
+      if ($term instanceof \Drupal\taxonomy\Entity\Term) {
+        if ($variables['user']->isAnonymous()) {
+          $variables['button']['title'] = $term->field_banner_cta_anonymous->__get('title');
+          $variables['button']['uri'] = $term->field_banner_cta_anonymous->__get('uri');
+        }
+        else {
+          $variables['button']['title'] = $term->field_banner_cta_authenticated->__get('title');
+          $variables['button']['uri'] = $term->field_banner_cta_authenticated->__get('uri');
+        }
+
+      }
+      break;
   }
 }
 
