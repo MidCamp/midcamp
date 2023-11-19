@@ -26,7 +26,11 @@ Refer to [DDEV's documentation](https://ddev.readthedocs.io/en/latest/) for deta
 
 ## GitPod-mode
 
-- [Add your SSH keys to GitPod (maybe)](https://github.com/gitpod-io/gitpod/issues/666)
+`.gitpod.yml` adds support for developing in a fully web-based environment called [GitPod](https://gitpod.io). GitPod doesn't have a great solution for forwarding ssh keys yet, so in order to be able to pull from Amazee you have two options:
+
+1. [Add your existing SSH keys to GitPod (if you trust them)]https://github.com/gitpod-io/gitpod/issues/666#issuecomment-534124994)
+1. [Generate a new key pod and give it to Amazee](https://docs.lagoon.sh/using-lagoon-advanced/ssh/) - you'll have to do this on every new instance, but Amazee will recognize new keys basically instantaneously, so it isn't too bad.
+
 - [Rock and roll](https://gitpod.io/?autostart=true#https://github.com/MidCamp/midcamp)
 
 ## Lando-mode
@@ -68,6 +72,16 @@ When beginning work on a task, start a new branch:
 `git checkout -b feature/my-great-work`
 
 Amazee [workflows](https://lagoon.readthedocs.io/en/latest/using_lagoon/workflows/) will build a new environment for every branch that begins with `feature/` when it's pushed to GitHub. In order to access the environment for the branch above, visit https://nginx-midcamp-org-feature-my-great-work.us.amazee.io/. Databases for that environment are synced from Amazee dev, and it takes a few minutes after Circle completes for the install to complete.
+
+### Deploying
+
+To deploy a feature:
+
+- merge your feature branch into `master`,
+- (optional but plz) give it a few minutes to sync, then test your work on https://dev.midcamp.org/
+- merge `master` to `production`.
+
+See `deploy_tasks` in `.amazeeio.yml` for what happens after deploy (`updb`, `cim`, and more!)
 
 ## How do I Drupal?
 
