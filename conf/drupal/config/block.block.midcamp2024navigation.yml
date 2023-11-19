@@ -25,5 +25,5 @@ settings:
 visibility:
   request_path:
     id: request_path
-    negate: true
-    pages: "/2018*\r\n/2019*\r\n/2020*\r\n/2021*\r\n/2023*"
+    negate: false
+    pages: "/2024/*\r\n/2024"

@@ -38,3 +38,6 @@ styleguide/*.sass-cache/
 styleguide/source/code/css/*.css
 /.editorconfig
 /.gitattributes
+
+# Ignore Mac stuff
+.DS_Store
