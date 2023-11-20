@@ -12,6 +12,7 @@ services.local.yml
 !conf/drupal/services.yml
 web/sites/*/files
 web/sites/sites.php
+.ddev/.env
 
 # Ignore virtual environment and artifacts
 .vagrant/

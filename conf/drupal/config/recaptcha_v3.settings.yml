@@ -1,8 +1,8 @@
 _core:
   default_config_hash: ae8AQLsAFXvfcLPmE4YUBcxThAqf7psqRTHzhccslls
-site_key: 6LetCxUpAAAAAJLcJycGGF5OrCRUpZpe2i6zcfPA
-secret_key: 6LetCxUpAAAAAGFwzsE024dUtM7Cv9GlyJyw4qWo
-hide_badge: false
+site_key: 'in environment variables'
+secret_key: 'in environment variables'
+hide_badge: true
 verify_hostname: true
 default_challenge: recaptcha/reCAPTCHA
 error_message: 'Antibot verification failed.'

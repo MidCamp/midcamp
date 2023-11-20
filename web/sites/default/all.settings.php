@@ -16,3 +16,13 @@ $settings['file_private_path'] = 'sites/default/files/private';
 if (getenv('MAILCHIMP_API_KEY')) {
   $config['mailchimp.settings']['api_key'] = getenv('MAILCHIMP_API_KEY');
 }
+
+if (getenv('RECAPTCHA_SITE_KEY') && getenv('RECAPTCHA_SECRET_KEY')){
+  $config['recaptcha.settings']['site_key'] = getenv('RECAPTCHA_SITE_KEY');
+  $config['recaptcha.settings']['secret_key'] = getenv('RECAPTCHA_SECRET_KEY');
+}
+
+if (getenv('RECAPTCHA_V3_SITE_KEY') && getenv('RECAPTCHA_V3_SECRET_KEY')) {
+  $config['recaptcha_v3.settings']['site_key'] = getenv('RECAPTCHA_V3_SITE_KEY');
+  $config['recaptcha_v3.settings']['secret_key'] = getenv('RECAPTCHA_V3_SECRET_KEY');
+}
