@@ -5,12 +5,14 @@
 
 # Ignore Drupal settings and files
 settings.php
+settings.local.php
 services.yml
 services.local.yml
 !conf/drupal/settings.php
 !conf/drupal/services.yml
 web/sites/*/files
 web/sites/sites.php
+.ddev/.env
 
 # Ignore virtual environment and artifacts
 .vagrant/

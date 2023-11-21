@@ -9,7 +9,7 @@ _core:
 id: hatter_local_actions
 theme: hatter
 region: content
-weight: -13
+weight: -15
 provider: null
 plugin: local_actions_block
 settings:

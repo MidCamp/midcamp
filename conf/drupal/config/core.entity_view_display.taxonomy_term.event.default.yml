@@ -14,9 +14,6 @@ dependencies:
     - field.field.taxonomy_term.event.field_tito_slug
     - taxonomy.vocabulary.event
   module:
-    - datetime_range
-    - image
-    - link
     - text
 id: taxonomy_term.event.default
 targetEntityType: taxonomy_term
@@ -30,63 +27,13 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_banner_cta_anonymous:
-    type: link
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    weight: 4
-    region: content
-  field_banner_cta_authenticated:
-    type: link
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    weight: 5
-    region: content
-  field_date:
-    type: daterange_default
-    label: above
-    settings:
-      timezone_override: ''
-      format_type: long
-      separator: '-'
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  field_date_has_time:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 3
-    region: content
-  field_image:
-    type: image
-    label: above
-    settings:
-      image_link: ''
-      image_style: ''
-      image_loading:
-        attribute: lazy
-    third_party_settings: {  }
-    weight: 1
-    region: content
 hidden:
+  field_banner_cta_anonymous: true
+  field_banner_cta_authenticated: true
+  field_date: true
+  field_date_has_time: true
   field_event_id: true
   field_event_status: true
+  field_image: true
   field_social_media: true
   field_tito_slug: true

@@ -5,5 +5,5 @@ dependencies: {  }
 _core:
   default_config_hash: O11nB9Assnic6AhIuaeK_CQdh_zO0udxABDnUZJupis
 formId: user_register_form
-captchaType: recaptcha/reCAPTCHA
+captchaType: default
 label: 'User register form'

@@ -75,3 +75,15 @@ environments:
         schedule: "2 * * * *"
         command: drush cron
         service: cli
+
+lagoon-sync:
+  mariadb:
+    config:
+      hostname: "${MARIADB_HOST:-mariadb}"
+      username: "${MARIADB_USERNAME:-drupal}"
+      password: "${MARIADB_PASSWORD:-drupal}"
+      port: "${MARIADB_PORT:-3306}"
+      database: "${MARIADB_DATABASE:-drupal}"
+  files:
+    config:
+      sync-directory: "web/sites/default/files"
