@@ -68,6 +68,7 @@ module:
   r4032login: 0
   rdf: 0
   recaptcha: 0
+  recaptcha_v3: 0
   redirect: 0
   scheduler: 0
   search: 0

@@ -1,0 +1,10 @@
+_core:
+  default_config_hash: ae8AQLsAFXvfcLPmE4YUBcxThAqf7psqRTHzhccslls
+site_key: 'in environment variables'
+secret_key: 'in environment variables'
+hide_badge: true
+verify_hostname: true
+default_challenge: recaptcha/reCAPTCHA
+error_message: 'Antibot verification failed.'
+cacheable: false
+library_use_recaptcha_net: false

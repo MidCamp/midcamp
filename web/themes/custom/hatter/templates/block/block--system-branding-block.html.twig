@@ -29,6 +29,9 @@
           <h2 class="event__subtitle">{{ site_slogan }}</h2>
           {# <a href="/submit-session" class="event__button button--primary">Submit a Session</a> #}
           {# <a href="https://mid.camp/tickets/" class="event__button button--primary">Register</a> #}
+          {% if button.title and button.uri %}
+            {{ link(button.title, button.uri, create_attribute({'class': ['event__button', 'button--primary']})) }}
+          {% endif %}
         </div>
       </div>
     </div>

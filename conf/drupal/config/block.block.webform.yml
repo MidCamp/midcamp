@@ -12,7 +12,7 @@ dependencies:
 id: webform
 theme: hatter
 region: content
-weight: -1
+weight: -4
 provider: null
 plugin: webform_block
 settings:
