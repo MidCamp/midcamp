@@ -69,7 +69,7 @@ content:
     weight: 9
     region: content
   field_people:
-    type: entity_reference_entity_view
+    type: midcamp_utility_bypass_access_entity_reference
     label: above
     settings:
       view_mode: compact
