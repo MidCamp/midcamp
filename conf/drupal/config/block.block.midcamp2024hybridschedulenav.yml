@@ -1,0 +1,30 @@
+uuid: 23324b21-4053-42cd-9463-5626b41e8910
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:60c51dee-1752-4a09-8422-4f73154c47cd'
+  module:
+    - block_content
+    - system
+  theme:
+    - hatter
+id: midcamp2024hybridschedulenav
+theme: hatter
+region: content
+weight: -20
+provider: null
+plugin: 'block_content:60c51dee-1752-4a09-8422-4f73154c47cd'
+settings:
+  id: 'block_content:60c51dee-1752-4a09-8422-4f73154c47cd'
+  label: 'MidCamp 2024 All/Hybrid Schedule Nav'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/2024/schedule/sessions\r\n/2024/schedule/hybrid"

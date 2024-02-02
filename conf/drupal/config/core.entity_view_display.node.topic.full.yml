@@ -26,6 +26,7 @@ dependencies:
     - field_group
     - file
     - link
+    - midcamp_utility
     - text
     - user
     - video_embed_field

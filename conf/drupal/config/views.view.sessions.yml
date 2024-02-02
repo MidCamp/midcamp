@@ -4923,7 +4923,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            250: 250
+            499: 499
           group: 1
           exposed: false
           expose:

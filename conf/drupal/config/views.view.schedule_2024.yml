@@ -1,4 +1,4 @@
-uuid: 7d9b3528-cca6-474a-a1d1-74fb1138eb38
+uuid: 819ba770-df65-4f8b-99a2-63a6b947c000
 langcode: en
 status: true
 dependencies:
@@ -9,13 +9,12 @@ dependencies:
     - field.storage.node.field_schedule_time
     - field.storage.node.field_track
     - node.type.topic
-    - system.menu.midcamp-2023-navigation
     - taxonomy.vocabulary.event
     - taxonomy.vocabulary.location
     - taxonomy.vocabulary.session_tracks
     - taxonomy.vocabulary.topic_type
   content:
-    - 'taxonomy_term:event:1ccc1913-46fe-407d-a8b9-e03edfac2625'
+    - 'taxonomy_term:event:9a98e441-13be-448f-b8b3-a8d87005a0a7'
     - 'taxonomy_term:location:49093618-0ccd-4e5f-86d4-c8a314a725a5'
     - 'taxonomy_term:location:5c305285-e1de-4045-8545-660c5634c8a1'
     - 'taxonomy_term:location:985e9954-42b8-480b-805e-3070a00de0cc'
@@ -29,8 +28,8 @@ dependencies:
     - taxonomy
     - text
     - user
-id: schedule_2023
-label: 'Schedule 2023'
+id: schedule_2024
+label: 'Schedule 2024'
 module: views
 description: ''
 tag: ''
@@ -449,7 +448,20 @@ display:
       cache:
         type: tag
         options: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: "<p style=\"align='center'\">Session scheduling is still underway. Check back again soon.</p>\r\n\r\n<p>Meanwhile, check out the <a href=\"/2024/schedule/sessions\">Accepted Sessions</a>.</p>"
+            format: basic_html
+          tokenize: false
       sorts:
         field_schedule_time_value:
           id: field_schedule_time_value
@@ -553,395 +565,15 @@ display:
         - 'config:field.storage.node.field_track'
   block_1:
     id: block_1
-    display_title: 'Hybrid Block All'
+    display_title: 'Wed Sessions'
     display_plugin: block
-    position: 2
+    position: 3
     display_options:
       enabled: true
-      title: 'Hybrid Session Schedule'
-      fields:
-        field_schedule_time:
-          id: field_schedule_time
-          table: node__field_schedule_time
-          field: field_schedule_time
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: h3
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: daterange_default
-          settings:
-            timezone_override: America/Chicago
-            format_type: time_only
-            separator: to
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_track:
-          id: field_track
-          table: node__field_track
-          field: field_track
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: div
-          element_class: schedule__track
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: false
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          entity_field: title
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: "{% if  'Hybrid' in field_schedule_location|render|render %}\r\n{{ title }} (Hybrid)\r\n{% endif %}"
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: false
-            ellipsis: false
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: h3
-          element_class: schedule__title
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: true
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_schedule_location:
-          id: field_schedule_location
-          table: node__field_schedule_location
-          field: field_schedule_location
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: div
-          element_class: schedule__room
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_entity_view
-          settings:
-            view_mode: topic_page
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        body:
-          id: body
-          table: node__body
-          field: body
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: div
-          element_class: schedule__description
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: text_trimmed
-          settings:
-            trim_length: 300
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_people:
-          id: field_people
-          table: node__field_people
-          field: field_people
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: '0'
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_entity_view
-          settings:
-            view_mode: schedule
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ' '
-          field_api_classes: false
+      pager:
+        type: none
+        options:
+          offset: 0
       filters:
         status:
           id: status
@@ -966,7 +598,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            250: 250
+            499: 499
           group: 1
           exposed: false
           expose:
@@ -1012,8 +644,8 @@ display:
           plugin_id: datetime
           operator: between
           value:
-            min: '2023-04-26 00:00:00'
-            max: '2023-04-28 00:00:00'
+            min: '2024-03-20 00:00:00'
+            max: '2024-03-21 00:00:00'
             value: ''
             type: date
           group: 1
@@ -1089,79 +721,41 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-        field_schedule_location_target_id:
-          id: field_schedule_location_target_id
-          table: node__field_schedule_location
-          field: field_schedule_location_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value:
-            264: 264
-            270: 270
-            271: 271
-            273: 273
-            263: 263
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          vid: location
-          type: select
-          hierarchy: false
-          limit: true
-          error_message: true
       filter_groups:
         operator: AND
         groups:
           1: AND
+      style:
+        type: default
+        options:
+          grouping:
+            -
+              field: field_schedule_time
+              rendered: false
+              rendered_strip: false
+          row_class: schedule__teaser
+          default_row_class: false
+      row:
+        type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
       defaults:
-        title: false
-        relationships: false
-        fields: false
+        title: true
+        pager: false
+        style: false
+        row: false
+        fields: true
+        sorts: true
         filters: false
         filter_groups: false
         header: false
-      relationships:
-        field_schedule_location:
-          id: field_schedule_location
-          table: node__field_schedule_location
-          field: field_schedule_location
-          relationship: none
-          group_type: group
-          admin_label: 'field_schedule_location: Taxonomy term'
-          plugin_id: standard
-          required: false
+        footer: false
       display_description: ''
       header: {  }
+      footer: {  }
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -1179,11 +773,11 @@ display:
         - 'config:field.storage.node.field_track'
   block_2:
     id: block_2
-    display_title: 'Hybrid Block Wed'
+    display_title: 'Wed Hybrid Block'
     display_plugin: block
     position: 4
     display_options:
-      enabled: true
+      enabled: false
       title: 'Hybrid Wednesday Session Schedule'
       fields:
         field_schedule_time:
@@ -1568,6 +1162,7 @@ display:
           multi_type: separator
           separator: ' '
           field_api_classes: false
+      empty: {  }
       filters:
         status:
           id: status
@@ -1592,7 +1187,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            250: 250
+            499: 499
           group: 1
           exposed: false
           expose:
@@ -1638,8 +1233,8 @@ display:
           plugin_id: datetime
           operator: between
           value:
-            min: '2023-04-26 00:00:00'
-            max: '2023-04-27 00:00:00'
+            min: '2024-03-20 00:00:00'
+            max: '2024-03-21 00:00:00'
             value: ''
             type: date
           group: 1
@@ -1770,6 +1365,7 @@ display:
         groups:
           1: AND
       defaults:
+        empty: false
         title: false
         relationships: false
         fields: false
@@ -1798,7 +1394,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<h2>Wednesday, April 26, 2023</h2>'
+            value: '<h2>Wednesday, March 20, 2024</h2>'
             format: basic_html
           tokenize: false
       display_extenders: {  }
@@ -1818,11 +1414,11 @@ display:
         - 'config:field.storage.node.field_track'
   block_3:
     id: block_3
-    display_title: 'Hybrid Block Thu'
+    display_title: 'Thu Hybrid Block'
     display_plugin: block
-    position: 6
+    position: 7
     display_options:
-      enabled: true
+      enabled: false
       title: 'Hybrid Thursday Session Schedule'
       fields:
         field_schedule_time:
@@ -2207,6 +1803,7 @@ display:
           multi_type: separator
           separator: ' '
           field_api_classes: false
+      empty: {  }
       filters:
         status:
           id: status
@@ -2231,7 +1828,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            250: 250
+            499: 499
           group: 1
           exposed: false
           expose:
@@ -2277,8 +1874,8 @@ display:
           plugin_id: datetime
           operator: between
           value:
-            min: '2023-04-27 00:00:00'
-            max: '2023-04-28 00:00:00'
+            min: '2024-03-21 00:00:00'
+            max: '2024-03-22 00:00:00'
             value: ''
             type: date
           group: 1
@@ -2409,6 +2006,7 @@ display:
         groups:
           1: AND
       defaults:
+        empty: false
         title: false
         relationships: false
         fields: false
@@ -2437,7 +2035,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<h2>Thursday, April 27, 2023</h2>'
+            value: '<h2>Thursday, March 21, 2024</h2>'
             format: basic_html
           tokenize: false
       display_extenders: {  }
@@ -2455,11 +2053,11 @@ display:
         - 'config:field.storage.node.field_schedule_location'
         - 'config:field.storage.node.field_schedule_time'
         - 'config:field.storage.node.field_track'
-  page_1:
-    id: page_1
-    display_title: Thursday
-    display_plugin: page
-    position: 5
+  block_4:
+    id: block_4
+    display_title: 'Thu Sessions'
+    display_plugin: block
+    position: 6
     display_options:
       enabled: true
       filters:
@@ -2486,7 +2084,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            250: 250
+            499: 499
           group: 1
           exposed: false
           expose:
@@ -2532,8 +2130,8 @@ display:
           plugin_id: datetime
           operator: between
           value:
-            min: '2023-04-27 00:00:00'
-            max: '2023-04-28 00:00:00'
+            min: '2024-03-21 00:00:00'
+            max: '2024-03-22 00:00:00'
             value: ''
             type: date
           group: 1
@@ -2619,31 +2217,8 @@ display:
         filter_groups: false
         header: false
       display_description: ''
-      header:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text
-          empty: true
-          content:
-            value: '<h2>Thursday, April 27, 2023</h2>'
-            format: full_html
-          tokenize: false
+      header: {  }
       display_extenders: {  }
-      path: 2023/schedule/thursday
-      menu:
-        type: normal
-        title: 'Sessions (Thu)'
-        description: ''
-        weight: -48
-        expanded: false
-        menu_name: midcamp-2023-navigation
-        parent: 'menu_link_content:5b43dcc3-6bee-4b91-98e0-cae3efa2ae56'
-        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
@@ -2658,11 +2233,11 @@ display:
         - 'config:field.storage.node.field_schedule_location'
         - 'config:field.storage.node.field_schedule_time'
         - 'config:field.storage.node.field_track'
-  page_2:
-    id: page_2
-    display_title: Friday
-    display_plugin: page
-    position: 7
+  block_5:
+    id: block_5
+    display_title: 'Fri Training'
+    display_plugin: block
+    position: 9
     display_options:
       enabled: true
       title: 'Contribution Day Schedule'
@@ -2690,7 +2265,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            250: 250
+            499: 499
           group: 1
           exposed: false
           expose:
@@ -2736,8 +2311,8 @@ display:
           plugin_id: datetime
           operator: between
           value:
-            min: '2023-04-28 00:00:00'
-            max: '2023-04-29 00:00:00v'
+            min: '2024-03-22 00:00:00'
+            max: '2024-03-23 00:00:00'
             value: ''
             type: date
           group: 1
@@ -2824,31 +2399,8 @@ display:
         filter_groups: false
         header: false
       display_description: ''
-      header:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text
-          empty: true
-          content:
-            value: "<h2>Friday, April 28, 2023: 10AM - 4PM</h2>\r\n<p>A contribution day is a get-together for focused work on a project. Contribution&nbsp;days are an important part of Drupal's growth and are also a great opportunity to get involved because others are on hand to help you contribute. There is&nbsp;a dedicated contribution day on Friday,&nbsp;so come and collaborate&nbsp;with other Drupal community members!</p>\r\n<ul>\r\n\t<li>Coffee (and other morning beverages)!</li>\r\n\t<li>Contrib day in rooms 312, 313, & 316! Reach out on Slack if you'd like to lead an initiative.</li>\r\n\t<li>Lunch (provided)</li>\r\n\t<li>Evening: Community-led social TBD.</li>\r\n</ul>\r\n\r\n<h2>Who Should Come?</h2>\r\n\r\n<p>If you are interested in contributing to Drupal core or contributed projects, this is your chance. You don't need to be a developer to contribute; we need project managers, bug reporters, QA testers, people to help write documentation, etc. If you are a developer, but not sure where to get started, we have mentors to show you the ropes.</p>\r\n\r\n<p>If you feel new and would love helping hands, the best day to start is the Friday contribution day. This is the biggest&nbsp;day for contributing with many people collaborating,&nbsp;and different opportunities based on experience level. For a guided introduction to Drupal Contributions, get there first thing in the morning at 10am for a <a href=\"/2023/topic-proposal/first-time-contribution-workshop\">First Time Contribution Workshop.</a></p>\r\n\r\n<p>If you know the tools but still could use help picking issues and going through the process, we will have experienced contributors there to help newer folks.</p>\r\n\r\n<p><strong>Specific details below.</strong></p>\r\n\r\n<h2>What Topics Will We Focus On?</h2>\r\n\r\n<p>There will be a general contribution space as well as rooms for selected&nbsp;initiatives.</p>\r\n\r\n<h3>General Contributions</h3>\r\n\r\n<p>Come by and use this space for co-working and collaboration.</p>\r\n\r\n<p>Slack Channel:&nbsp;<a href=\"https://midcamp.slack.com/archives/C0CA5H539\">#contributions</a></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Below are the contribution initiatives we will focus on at MidCamp. If you are attending camp and want to lead an initiative not listed below, shoot us an email and we will announce it here.</strong></p>\r\n\r\n<h3>Initiatives</h3>\r\n\r\n<h4><a href=\"https://www.drupal.org/project/project_browser\">Project Browser</a></h4>\r\n<p>The Project Browser makes it easy for site builders to find modules.</p>\r\n\r\n<h4><a href=\"https://www.drupal.org/community-initiatives/drupal-7-soft-landing-initiative\">Drupal 7 Soft Landing Initiative</a></h4>\r\n<p>The primary goal of this initiative is to support owners of current D7 sites with guidance on what to do before Drupal 7's End-of-Life date.</p>\r\n\r\n<h4><a href=\"https://www.drupal.org/project/editoria11y\">The Editoria11y project.</a></h4>\r\n<p>Editoria11y (editorial accessibility ally) is a user-friendly accessibility\r\nchecker that addresses three critical needs for content authors.</p>\r\n\r\n<h4><a href=\"https://drupal.slack.com/archives/C1AFW2ZPD\">UX Initiative</a></h4>\r\n<p>There are big changes coming in 10.1 and there has been a lot of work on the Field UI. The Usability meeting is on Zoom Friday morning, join the call and then help out with the usability initiatives.</p>\r\n\r\n<h4><a href=\"https://www.drupal.org/project/same_page_preview\">Same Page Preview</a></h4>\r\n<p>Wouldn't it be nice to see a preview on the same page as the form you're editing. We want to improve the content editing experience, by reducing the feedback loop for content workers.</p>\r\n\r\n<p>&nbsp;</p>\r\n"
-            format: full_html
-          tokenize: false
+      header: {  }
       display_extenders: {  }
-      path: 2023/schedule/friday
-      menu:
-        type: normal
-        title: 'Contribution Day (Fri)'
-        description: ''
-        weight: -46
-        expanded: false
-        menu_name: midcamp-2023-navigation
-        parent: 'menu_link_content:5b43dcc3-6bee-4b91-98e0-cae3efa2ae56'
-        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
@@ -2863,10 +2415,10 @@ display:
         - 'config:field.storage.node.field_schedule_location'
         - 'config:field.storage.node.field_schedule_time'
         - 'config:field.storage.node.field_track'
-  page_3:
-    id: page_3
+  block_6:
+    id: block_6
     display_title: 'Accepted Sessions'
-    display_plugin: page
+    display_plugin: block
     position: 1
     display_options:
       title: 'Accepted Sessions'
@@ -2891,20 +2443,6 @@ display:
             offset: false
             offset_label: Offset
           quantity: 9
-      empty:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text
-          empty: true
-          content:
-            value: 'Session selection and confirmation is still underway. Check back again soon.'
-            format: basic_html
-          tokenize: false
       sorts:
         title:
           id: title
@@ -3025,7 +2563,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            250: 250
+            499: 499
           group: 1
           exposed: false
           expose:
@@ -3075,7 +2613,7 @@ display:
           exposed: true
           expose:
             operator_id: field_track_target_id_op
-            label: 'Track (field_track)'
+            label: Track
             description: ''
             use_operator: false
             operator: field_track_target_id_op
@@ -3180,7 +2718,7 @@ display:
           separator: ''
           hide_empty: false
       defaults:
-        empty: false
+        empty: true
         title: false
         pager: false
         style: false
@@ -3192,32 +2730,9 @@ display:
         header: false
         footer: false
       display_description: ''
-      header:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text
-          empty: true
-          content:
-            value: '<p>Below is the list of accepted and confirmed sessions. We <!--still have a handful of sessions to confirm and -->will post the full session schedule shortly. Thanks to all who submitted!</p>'
-            format: basic_html
-          tokenize: false
+      header: {  }
       footer: {  }
       display_extenders: {  }
-      path: 2023/schedule/sessions
-      menu:
-        type: normal
-        title: 'All Sessions'
-        description: ''
-        weight: -44
-        expanded: false
-        menu_name: midcamp-2023-navigation
-        parent: 'menu_link_content:5b43dcc3-6bee-4b91-98e0-cae3efa2ae56'
-        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
@@ -3234,506 +2749,13 @@ display:
         - 'config:field.storage.node.field_schedule_location'
         - 'config:field.storage.node.field_schedule_time'
         - 'config:field.storage.node.field_track'
-  page_4:
-    id: page_4
-    display_title: Hybrid
-    display_plugin: page
-    position: 8
-    display_options:
-      enabled: false
-      title: 'Hybrid Session Schedule'
-      filters:
-        status:
-          id: status
-          table: node_field_data
-          field: status
-          entity_type: node
-          entity_field: status
-          plugin_id: boolean
-          value: '1'
-          group: 1
-          expose:
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-        field_event_target_id:
-          id: field_event_target_id
-          table: node__field_event
-          field: field_event_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value:
-            250: 250
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          vid: event
-          type: select
-          hierarchy: false
-          limit: true
-          error_message: true
-        field_schedule_time_value:
-          id: field_schedule_time_value
-          table: node__field_schedule_time
-          field: field_schedule_time_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: datetime
-          operator: between
-          value:
-            min: '2024-03-20 00:00:00'
-            max: '2024-03-22 00:00:00'
-            value: ''
-            type: date
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            min_placeholder: ''
-            max_placeholder: ''
-            placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-          operator: in
-          value:
-            topic: topic
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-        field_schedule_location_target_id:
-          id: field_schedule_location_target_id
-          table: node__field_schedule_location
-          field: field_schedule_location_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value:
-            264: 264
-            263: 263
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          vid: location
-          type: select
-          hierarchy: false
-          limit: true
-          error_message: true
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
-      defaults:
-        title: false
-        relationships: false
-        fields: true
-        filters: false
-        filter_groups: false
-        header: false
-      relationships:
-        field_schedule_location:
-          id: field_schedule_location
-          table: node__field_schedule_location
-          field: field_schedule_location
-          relationship: none
-          group_type: group
-          admin_label: 'field_schedule_location: Taxonomy term'
-          plugin_id: standard
-          required: false
-      display_description: ''
-      header:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text
-          empty: true
-          content:
-            value: "<div class=\"schedule__nav\">\r\n      <a href=\"/2023/schedule/wednesday\">All Wednesday</a> | <a href=\"/2023/schedule/thursday\">All Thursday</a> | <a href=\"/2023/schedule/friday\">Friday</a>\r\n</div>"
-            format: full_html
-          tokenize: false
-      display_extenders: {  }
-      path: 2023/schedule/hybrid
-      menu:
-        type: normal
-        title: 'Hybrid (Wed/Thu)'
-        description: ''
-        weight: -48
-        expanded: false
-        menu_name: midcamp-2023-navigation
-        parent: 'menu_link_content:5b43dcc3-6bee-4b91-98e0-cae3efa2ae56'
-        context: '0'
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - user
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_people'
-        - 'config:field.storage.node.field_schedule_location'
-        - 'config:field.storage.node.field_schedule_time'
-        - 'config:field.storage.node.field_track'
-  page_5:
-    id: page_5
-    display_title: Wednesday
-    display_plugin: page
-    position: 3
-    display_options:
-      enabled: true
-      pager:
-        type: none
-        options:
-          offset: 0
-      filters:
-        status:
-          id: status
-          table: node_field_data
-          field: status
-          entity_type: node
-          entity_field: status
-          plugin_id: boolean
-          value: '1'
-          group: 1
-          expose:
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-        field_event_target_id:
-          id: field_event_target_id
-          table: node__field_event
-          field: field_event_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value:
-            250: 250
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          vid: event
-          type: select
-          hierarchy: false
-          limit: true
-          error_message: true
-        field_schedule_time_value:
-          id: field_schedule_time_value
-          table: node__field_schedule_time
-          field: field_schedule_time_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: datetime
-          operator: between
-          value:
-            min: '2023-04-26 00:00:00'
-            max: '2023-04-27 00:00:00'
-            value: ''
-            type: date
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            min_placeholder: ''
-            max_placeholder: ''
-            placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-          operator: in
-          value:
-            topic: topic
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
-      style:
-        type: default
-        options:
-          grouping:
-            -
-              field: field_schedule_time
-              rendered: false
-              rendered_strip: false
-          row_class: schedule__teaser
-          default_row_class: false
-      row:
-        type: fields
-        options:
-          default_field_elements: false
-          inline: {  }
-          separator: ''
-          hide_empty: false
-      defaults:
-        title: true
-        pager: false
-        style: false
-        row: false
-        fields: true
-        sorts: true
-        filters: false
-        filter_groups: false
-        header: false
-        footer: false
-      display_description: ''
-      header:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text
-          empty: true
-          content:
-            value: '<h2>Wednesday, April 26, 2023</h2>'
-            format: basic_html
-          tokenize: false
-      footer: {  }
-      display_extenders: {  }
-      path: 2023/schedule/wednesday
-      menu:
-        type: normal
-        title: 'Sessions (Wed)'
-        description: ''
-        weight: -49
-        expanded: false
-        menu_name: midcamp-2023-navigation
-        parent: 'menu_link_content:5b43dcc3-6bee-4b91-98e0-cae3efa2ae56'
-        context: '0'
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - user
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_people'
-        - 'config:field.storage.node.field_schedule_location'
-        - 'config:field.storage.node.field_schedule_time'
-        - 'config:field.storage.node.field_track'
   short_url:
     id: short_url
     display_title: 'Session Short Link'
     display_plugin: block
-    position: 9
+    position: 10
     display_options:
+      enabled: false
       title: 'Session Short Link'
       fields:
         nid:
@@ -3802,6 +2824,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+      empty: {  }
       arguments:
         nid:
           id: nid
@@ -3840,6 +2863,7 @@ display:
           break_phrase: false
           not: false
       defaults:
+        empty: false
         title: false
         fields: false
         arguments: false

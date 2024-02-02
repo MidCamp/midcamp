@@ -5,6 +5,7 @@ dependencies:
   config:
     - filter.format.basic_html
     - filter.format.restricted_html
+    - node.type.topic
   module:
     - comment
     - contact
@@ -27,6 +28,8 @@ permissions:
   - 'access shortcuts'
   - 'access site-wide contact form'
   - 'access user profiles'
+  - 'create topic content'
+  - 'edit own topic content'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'

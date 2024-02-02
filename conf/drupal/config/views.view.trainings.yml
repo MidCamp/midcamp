@@ -11,6 +11,7 @@ dependencies:
   content:
     - 'taxonomy_term:event:17285735-fe51-4f45-b481-321ae7af649f'
     - 'taxonomy_term:event:58ab979d-12f0-4b19-ab75-5625aa986afb'
+    - 'taxonomy_term:event:9a98e441-13be-448f-b8b3-a8d87005a0a7'
     - 'taxonomy_term:topic_type:f9f1e3ca-ad7f-4636-b8c2-bb5d29f7b35b'
   module:
     - node

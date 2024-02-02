@@ -1,0 +1,30 @@
+uuid: e917f8a2-2f9e-477e-9862-0480da781098
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7ecf4c8c-cb41-41f2-9a9d-8b5fdd717ed1'
+  module:
+    - block_content
+    - system
+  theme:
+    - hatter
+id: midcamp2024trainingnav
+theme: hatter
+region: content
+weight: -17
+provider: null
+plugin: 'block_content:7ecf4c8c-cb41-41f2-9a9d-8b5fdd717ed1'
+settings:
+  id: 'block_content:7ecf4c8c-cb41-41f2-9a9d-8b5fdd717ed1'
+  label: 'MidCamp 2024 Training Nav'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /2024/training
