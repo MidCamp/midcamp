@@ -12,7 +12,7 @@ dependencies:
 id: hatter_views_block__event_sponsors_block_3
 theme: hatter
 region: content
-weight: -8
+weight: -6
 provider: null
 plugin: 'views_block:event_sponsors-block_3'
 settings:
@@ -28,4 +28,4 @@ visibility:
     id: request_path
     negate: false
     context_mapping: {  }
-    pages: "/2018/sponsors\r\n/2019/sponsors\r\n/2020/sponsors\r\n/2021/sponsors\r\n/2023/sponsors"
+    pages: "/2018/sponsors\r\n/2019/sponsors\r\n/2020/sponsors\r\n/2021/sponsors\r\n/2023/sponsors\r\n/2024/sponsors"

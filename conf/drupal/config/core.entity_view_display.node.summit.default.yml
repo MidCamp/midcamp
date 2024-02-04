@@ -13,6 +13,7 @@ dependencies:
     - node.type.summit
   module:
     - link
+    - midcamp_utility
     - text
     - user
 id: node.summit.default

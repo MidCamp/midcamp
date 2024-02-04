@@ -1,0 +1,30 @@
+uuid: f6d36c18-f5e1-46a0-bbe6-0307fd91bd50
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5be8dd31-3677-4223-be28-a417cfed55a4'
+  module:
+    - block_content
+    - system
+  theme:
+    - hatter
+id: midcamp2024thursdayschedulenav
+theme: hatter
+region: content
+weight: -18
+provider: null
+plugin: 'block_content:5be8dd31-3677-4223-be28-a417cfed55a4'
+settings:
+  id: 'block_content:5be8dd31-3677-4223-be28-a417cfed55a4'
+  label: 'MidCamp 2024 Thursday Schedule Nav'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /2024/schedule/thursday

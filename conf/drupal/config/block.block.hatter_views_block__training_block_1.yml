@@ -12,7 +12,7 @@ dependencies:
 id: hatter_views_block__training_block_1
 theme: hatter
 region: content
-weight: -2
+weight: 0
 provider: null
 plugin: 'views_block:training-block_1'
 settings:
@@ -28,4 +28,4 @@ visibility:
     id: request_path
     negate: false
     context_mapping: {  }
-    pages: '/*/training'
+    pages: "/2014/training\r\n/2015/training\r\n/2016/training\r\n/2017/training\r\n/2018/training\r\n/2019/training"
