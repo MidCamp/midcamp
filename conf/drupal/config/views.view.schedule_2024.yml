@@ -26,6 +26,7 @@ dependencies:
   module:
     - datetime
     - datetime_range
+    - midcamp_utility
     - node
     - taxonomy
     - text
@@ -415,7 +416,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: entity_reference_entity_view
+          type: midcamp_utility_bypass_access_entity_reference
           settings:
             view_mode: schedule
           group_column: target_id
