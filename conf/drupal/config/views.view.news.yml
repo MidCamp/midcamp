@@ -9,6 +9,7 @@ dependencies:
     - system.menu.midcamp-2019-navigation
     - system.menu.midcamp-2021-navigation
     - system.menu.midcamp-2023-navigation
+    - system.menu.midcamp-2024-navigation
     - taxonomy.vocabulary.event
   content:
     - 'taxonomy_term:event:17285735-fe51-4f45-b481-321ae7af649f'
@@ -989,9 +990,8 @@ display:
         title: News
         description: ''
         weight: -46
-        enabled: true
         expanded: false
-        menu_name: midcamp-2023-navigation
+        menu_name: midcamp-2024-navigation
         parent: ''
         context: '0'
     cache_metadata:

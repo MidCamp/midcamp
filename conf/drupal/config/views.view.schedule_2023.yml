@@ -1181,7 +1181,7 @@ display:
     id: block_2
     display_title: 'Hybrid Block Wed'
     display_plugin: block
-    position: 2
+    position: 4
     display_options:
       enabled: true
       title: 'Hybrid Wednesday Session Schedule'
@@ -1820,7 +1820,7 @@ display:
     id: block_3
     display_title: 'Hybrid Block Thu'
     display_plugin: block
-    position: 2
+    position: 6
     display_options:
       enabled: true
       title: 'Hybrid Thursday Session Schedule'
@@ -2459,7 +2459,7 @@ display:
     id: page_1
     display_title: Thursday
     display_plugin: page
-    position: 2
+    position: 5
     display_options:
       enabled: true
       filters:
@@ -2662,7 +2662,7 @@ display:
     id: page_2
     display_title: Friday
     display_plugin: page
-    position: 2
+    position: 7
     display_options:
       enabled: true
       title: 'Contribution Day Schedule'
@@ -2737,7 +2737,7 @@ display:
           operator: between
           value:
             min: '2023-04-28 00:00:00'
-            max: '2023-04-29 00:00:00'
+            max: '2023-04-29 00:00:00v'
             value: ''
             type: date
           group: 1
@@ -3238,7 +3238,7 @@ display:
     id: page_4
     display_title: Hybrid
     display_plugin: page
-    position: 2
+    position: 8
     display_options:
       enabled: false
       title: 'Hybrid Session Schedule'
@@ -3312,8 +3312,8 @@ display:
           plugin_id: datetime
           operator: between
           value:
-            min: '2023-04-26 00:00:00'
-            max: '2023-04-28 00:00:00'
+            min: '2024-03-20 00:00:00'
+            max: '2024-03-22 00:00:00'
             value: ''
             type: date
           group: 1
@@ -3501,7 +3501,7 @@ display:
     id: page_5
     display_title: Wednesday
     display_plugin: page
-    position: 1
+    position: 3
     display_options:
       enabled: true
       pager:

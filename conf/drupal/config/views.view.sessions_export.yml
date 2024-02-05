@@ -47,7 +47,7 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-          label: ''
+          label: Title
           exclude: false
           alter:
             alter_text: false
@@ -110,7 +110,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: ''
+          label: Body
           exclude: false
           alter:
             alter_text: false
@@ -172,7 +172,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: ''
+          label: Presenters
           exclude: false
           alter:
             alter_text: false
@@ -235,7 +235,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: ''
+          label: Track
           exclude: false
           alter:
             alter_text: false

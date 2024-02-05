@@ -1520,7 +1520,7 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: '<p>Below is the list of accepted and confirmed sessions. We <!--still have a handful of sessions to confirm and -->will post the full session schedule shortly. Thanks to all who submitted!</p>'
+            value: "Count: [view:total-rows]\r\n<p>Below is the list of accepted and confirmed sessions. We <!--still have a handful of sessions to confirm and -->will post the full session schedule shortly. Thanks to all who submitted!</p>"
             format: full_html
           tokenize: false
       display_extenders: {  }
@@ -4923,7 +4923,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            250: 250
+            499: 499
           group: 1
           exposed: false
           expose:

@@ -1,0 +1,30 @@
+uuid: cb16c529-09fe-43b2-84f0-e575aba41bbf
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7f5ab596-46d5-4d05-a805-5d75a88ae367'
+  module:
+    - block_content
+    - system
+  theme:
+    - hatter
+id: midcamp2024fridayschedulenav
+theme: hatter
+region: content
+weight: -16
+provider: null
+plugin: 'block_content:7f5ab596-46d5-4d05-a805-5d75a88ae367'
+settings:
+  id: 'block_content:7f5ab596-46d5-4d05-a805-5d75a88ae367'
+  label: 'MidCamp 2024 Contribution Day Nav'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /2024/schedule/contrib

@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - dblog
+    - name
     - user
 id: watchdog
 label: Watchdog
@@ -297,7 +298,7 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 56
+            max_length: 100
             word_boundary: true
             ellipsis: true
             more_link: false
@@ -438,7 +439,7 @@ display:
         type: mini
         options:
           offset: 0
-          items_per_page: 50
+          items_per_page: 1000
           total_pages: null
           id: 0
           tags:
@@ -569,6 +570,95 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        message:
+          id: message
+          table: watchdog
+          field: message
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: string
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: message_op
+            label: Message
+            description: ''
+            use_operator: false
+            operator: message_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: message
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              speaker: '0'
+              content_editor: '0'
+              administrator: '0'
+              sponsor: '0'
+              organizer: '0'
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        field_name:
+          id: field_name
+          table: user__field_name
+          field: field_name
+          relationship: uid
+          group_type: group
+          admin_label: ''
+          plugin_id: name_fulltext
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_name_op
+            label: User
+            description: ''
+            use_operator: false
+            operator: field_name_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_name
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              speaker: '0'
+              content_editor: '0'
+              administrator: '0'
+              sponsor: '0'
+              organizer: '0'
           is_grouped: false
           group_info:
             label: ''

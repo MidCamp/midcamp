@@ -1,0 +1,38 @@
+uuid: 280a99de-2402-4bf6-8d34-e949d237aaf9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f2becf96-513a-4419-8c1d-1c7e0b008859'
+  module:
+    - block_content
+    - node
+    - system
+  theme:
+    - hatter
+id: midcamp2024schedulenav_2
+theme: hatter
+region: content
+weight: -21
+provider: null
+plugin: 'block_content:f2becf96-513a-4419-8c1d-1c7e0b008859'
+settings:
+  id: 'block_content:f2becf96-513a-4419-8c1d-1c7e0b008859'
+  label: 'MidCamp 2024 Schedule Nav'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/2024/*'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      topic: topic

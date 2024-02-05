@@ -10,7 +10,7 @@ dependencies:
 id: hatter_eventlabelblock
 theme: hatter
 region: content
-weight: -23
+weight: -27
 provider: null
 plugin: event_label_block
 settings:
@@ -25,11 +25,11 @@ visibility:
     context_mapping:
       node: '@node.node_route_context:node'
     bundles:
-      summit: summit
       article: article
       job: job
       page: page
       sponsor: sponsor
+      summit: summit
       topic: topic
       training: training
       venue: venue

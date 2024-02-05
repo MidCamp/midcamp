@@ -12,7 +12,7 @@ dependencies:
 id: views_block__schedule_2023_short_url
 theme: hatter
 region: content
-weight: -13
+weight: -11
 provider: null
 plugin: 'views_block:schedule_2023-short_url'
 settings:
