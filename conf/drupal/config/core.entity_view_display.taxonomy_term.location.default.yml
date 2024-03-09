@@ -5,11 +5,19 @@ dependencies:
   config:
     - field.field.taxonomy_term.location.field_link
     - taxonomy.vocabulary.location
+  module:
+    - text
 id: taxonomy_term.location.default
 targetEntityType: taxonomy_term
 bundle: location
 mode: default
-content: {  }
+content:
+  description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
-  description: true
   field_link: true

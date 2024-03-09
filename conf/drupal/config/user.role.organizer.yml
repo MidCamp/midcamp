@@ -13,6 +13,7 @@ permissions:
   - 'create field_transcript'
   - 'edit field_captions'
   - 'edit field_eyebrow'
+  - 'edit field_social_post'
   - 'edit field_transcript'
   - 'edit own field_captions'
   - 'edit own field_transcript'

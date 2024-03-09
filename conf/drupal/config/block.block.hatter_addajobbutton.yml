@@ -29,7 +29,7 @@ visibility:
     id: request_path
     negate: false
     context_mapping: {  }
-    pages: /jobs
+    pages: "/jobs\r\n/*/jobs"
   user_role:
     id: user_role
     negate: false

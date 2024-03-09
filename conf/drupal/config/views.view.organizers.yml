@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.user.featured_speaker
     - system.menu.midcamp-2019-navigation
     - system.menu.midcamp-2020-navigation
+    - system.menu.midcamp-2024-navigation
     - taxonomy.vocabulary.event
   content:
     - 'taxonomy_term:event:17285735-fe51-4f45-b481-321ae7af649f'
@@ -95,9 +96,8 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
-        type: perm
-        options:
-          perm: 'access user profiles'
+        type: none
+        options: {  }
       cache:
         type: tag
         options: {  }
@@ -224,7 +224,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - user
-        - user.permissions
       tags: {  }
   attachment_1:
     id: attachment_1
@@ -339,7 +338,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - user
-        - user.permissions
       tags: {  }
   attachment_2:
     id: attachment_2
@@ -454,7 +452,120 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - user
-        - user.permissions
+      tags: {  }
+  attachment_3:
+    id: attachment_3
+    display_title: '2024 Leadership Attachment'
+    display_plugin: attachment
+    position: 5
+    display_options:
+      filters:
+        status:
+          id: status
+          table: users_field_data
+          field: status
+          entity_type: user
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        field_leadership_year_target_id:
+          id: field_leadership_year_target_id
+          table: user__field_leadership_year
+          field: field_leadership_year_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            - 499
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: event
+          type: textfield
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        filters: false
+        filter_groups: false
+        header: false
+        footer: false
+      display_description: ''
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<h2>Leadership</h2>'
+            format: basic_html
+          tokenize: false
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<h2>Organizers</h2>'
+            format: basic_html
+          tokenize: false
+      display_extenders: {  }
+      displays:
+        page_6: page_6
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - user
       tags: {  }
   page_1:
     id: page_1
@@ -470,7 +581,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - user
-        - user.permissions
       tags: {  }
   page_2:
     id: page_2
@@ -562,7 +672,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - user
-        - user.permissions
       tags: {  }
   page_3:
     id: page_3
@@ -655,7 +764,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - user
-        - user.permissions
       tags: {  }
   page_4:
     id: page_4
@@ -809,7 +917,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - user
-        - user.permissions
       tags: {  }
   page_5:
     id: page_5
@@ -963,7 +1070,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - user
-        - user.permissions
       tags: {  }
   page_6:
     id: page_6
@@ -1103,13 +1209,13 @@ display:
       display_extenders: {  }
       path: 2024/organizers
       menu:
-        type: none
+        type: normal
         title: Organizers
         description: ''
-        weight: -43
+        weight: -46
         expanded: false
-        menu_name: midcamp-2021-navigation
-        parent: ''
+        menu_name: midcamp-2024-navigation
+        parent: 'menu_link_content:f5521d88-f601-4a5f-9756-1026e6af3d84'
         context: '0'
     cache_metadata:
       max-age: -1
@@ -1117,5 +1223,4 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - user
-        - user.permissions
       tags: {  }
