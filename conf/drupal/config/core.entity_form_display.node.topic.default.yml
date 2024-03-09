@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.topic.field_schedule_location
     - field.field.node.topic.field_schedule_time
     - field.field.node.topic.field_session_length
+    - field.field.node.topic.field_social_post
     - field.field.node.topic.field_topic_type
     - field.field.node.topic.field_track
     - field.field.node.topic.field_transcript
@@ -24,6 +25,7 @@ dependencies:
     - datetime_range
     - file
     - link
+    - path
     - text
     - video_embed_field
     - webform
@@ -111,6 +113,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_social_post:
+    type: string_textarea
+    weight: 26
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   field_topic_type:
     type: options_buttons
     weight: 1
@@ -134,6 +144,12 @@ content:
   field_video:
     type: video_embed_field_textfield
     weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 19
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -178,7 +194,6 @@ hidden:
   field_accepted_confirmed: true
   field_meta_tags: true
   field_session_length: true
-  path: true
   promote: true
   publish_on: true
   unpublish_on: true

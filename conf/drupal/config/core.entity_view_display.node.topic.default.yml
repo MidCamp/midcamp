@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.topic.field_schedule_location
     - field.field.node.topic.field_schedule_time
     - field.field.node.topic.field_session_length
+    - field.field.node.topic.field_social_post
     - field.field.node.topic.field_topic_type
     - field.field.node.topic.field_track
     - field.field.node.topic.field_transcript
@@ -39,7 +40,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
   content_moderation_control:
     settings: {  }
@@ -51,7 +52,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 10
+    weight: 9
     region: content
   field_eyebrow:
     type: string
@@ -67,7 +68,7 @@ content:
     settings:
       source_entity: true
     third_party_settings: {  }
-    weight: 9
+    weight: 8
     region: content
   field_people:
     type: midcamp_utility_bypass_access_entity_reference
@@ -76,7 +77,7 @@ content:
       view_mode: compact
       link: false
     third_party_settings: {  }
-    weight: 7
+    weight: 6
     region: content
   field_presenter_slides:
     type: file_default
@@ -84,7 +85,7 @@ content:
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    weight: 5
+    weight: 4
     region: content
   field_schedule_location:
     type: entity_reference_label
@@ -110,7 +111,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 8
+    weight: 7
     region: content
   field_transcript:
     type: link
@@ -122,7 +123,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 6
+    weight: 5
     region: content
   field_video:
     type: video_embed_field_video
@@ -133,12 +134,13 @@ content:
       width: 854
       height: 480
     third_party_settings: {  }
-    weight: 4
+    weight: 3
     region: content
 hidden:
   field_accepted_confirmed: true
   field_event: true
   field_meta_tags: true
   field_session_length: true
+  field_social_post: true
   field_topic_type: true
   links: true
