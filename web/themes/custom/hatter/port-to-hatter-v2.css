@@ -3,3 +3,16 @@
 .sponsor-item, .sponsor-item img {
   display: inline-grid;
 }
+
+.schedule__times,
+.schedule .view-content>h3 {
+  margin-bottom: 1.5em;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 100;
+}
+
+.schedule__teaser {
+  margin-left: 1.5em;
+}
