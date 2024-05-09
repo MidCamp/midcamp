@@ -3,6 +3,8 @@ description: Now with more madness!
 type: theme
 core_version_requirement: ^9 || ^10
 base theme: classy
+dependencies:
+  - classy:classy
 libraries:
   - hatter/global-css
   - hatter/global-js
