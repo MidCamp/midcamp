@@ -12,11 +12,6 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Set up files
-          command: |
-            cp .circleci/docker-compose.circleci.yml docker-compose.yml
-      - setup_remote_docker
-      - run:
           name: Build project
           command: |
-            docker-compose up -d --build
+            composer install --prefer-dist --no-dev --no-suggest --optimize-autoloader --apcu-autoloader --ignore-platform-req=ext-gd
