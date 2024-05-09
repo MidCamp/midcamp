@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 id: midcamp-2021-navigation
 label: 'Midcamp 2021 Navigation'
-description: ''
+description: 'Primary navigation for Midcamp 2021 content'
 locked: false
