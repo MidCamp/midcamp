@@ -46,6 +46,8 @@
   Loops through the Column field here instead of the field template so we can
   set the grid_style class and add the loop index (key + 1)
 #}
-{% for key, item in content.field_column_content_2 if key|first != '#' %}
-  <div class="{{ grid_style }}--{{ key + 1 }}">{{ item }}</div>
+{% for key, item in content.field_column_content_2 %}
+  {% if key|first != '#' %}
+    <div class="{{ grid_style }}--{{ key + 1 }}">{{ item }}</div>
+  {% endif %}
 {% endfor %}

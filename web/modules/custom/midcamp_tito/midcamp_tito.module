@@ -107,6 +107,7 @@ function midcamp_tito_cron() {
 
   // Load all event terms with an event ID.
   $event_tids = \Drupal::entityQuery('taxonomy_term')
+    ->accessCheck(FALSE)
     ->condition('vid','event')
     ->condition('field_event_id',NULL, 'IS NOT NULL')
     ->execute();
