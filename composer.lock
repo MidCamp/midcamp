@@ -64,16 +64,16 @@
         },
         {
             "name": "brian-clement/eventbrite_events",
-            "version": "1.0-beta",
+            "version": "1.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Brian-Clement/eventbrite_events.git",
-                "reference": "4a9a2c5734035396e970c9f3ae5553d14a8ae3f2"
+                "reference": "b2a58e29ab183dacc8d168f2bb4ac4adf60d65db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Brian-Clement/eventbrite_events/zipball/4a9a2c5734035396e970c9f3ae5553d14a8ae3f2",
-                "reference": "4a9a2c5734035396e970c9f3ae5553d14a8ae3f2",
+                "url": "https://api.github.com/repos/Brian-Clement/eventbrite_events/zipball/b2a58e29ab183dacc8d168f2bb4ac4adf60d65db",
+                "reference": "b2a58e29ab183dacc8d168f2bb4ac4adf60d65db",
                 "shasum": ""
             },
             "type": "drupal-module",
@@ -85,10 +85,10 @@
                 "Drupal"
             ],
             "support": {
-                "source": "https://github.com/Brian-Clement/eventbrite_events/tree/1.0-beta",
+                "source": "https://github.com/Brian-Clement/eventbrite_events/tree/1.0-beta1",
                 "issues": "https://github.com/Brian-Clement/eventbrite_events/issues"
             },
-            "time": "2022-05-22T18:32:28+00:00"
+            "time": "2024-05-09T17:45:47+00:00"
         },
         {
             "name": "brian-clement/tito",
@@ -96,12 +96,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Brian-Clement/tito.git",
-                "reference": "275124ed619af5912b16fa6bfd85770205e583fc"
+                "reference": "6a9c0f47be5841db8d1bd2055e5417699de4937e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Brian-Clement/tito/zipball/275124ed619af5912b16fa6bfd85770205e583fc",
-                "reference": "275124ed619af5912b16fa6bfd85770205e583fc",
+                "url": "https://api.github.com/repos/Brian-Clement/tito/zipball/6a9c0f47be5841db8d1bd2055e5417699de4937e",
+                "reference": "6a9c0f47be5841db8d1bd2055e5417699de4937e",
                 "shasum": ""
             },
             "type": "drupal-module",
@@ -113,7 +113,7 @@
                 "issues": "https://www.drupal.org/project/issues/tito",
                 "source": "http://cgit.drupalcode.org/tito"
             },
-            "time": "2020-06-14T20:45:00+00:00"
+            "time": "2024-05-09T18:24:40+00:00"
         },
         {
             "name": "commerceguys/addressing",
@@ -10070,16 +10070,16 @@
         },
         {
             "name": "drupal/coder",
-            "version": "8.3.22",
+            "version": "8.3.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pfrenssen/coder.git",
-                "reference": "ba6e62303d567863275fb086941f50a06dc7d08f"
+                "reference": "1a59890f972db5da091354f0191dec1037f7c582"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pfrenssen/coder/zipball/ba6e62303d567863275fb086941f50a06dc7d08f",
-                "reference": "ba6e62303d567863275fb086941f50a06dc7d08f",
+                "url": "https://api.github.com/repos/pfrenssen/coder/zipball/1a59890f972db5da091354f0191dec1037f7c582",
+                "reference": "1a59890f972db5da091354f0191dec1037f7c582",
                 "shasum": ""
             },
             "require": {
@@ -10088,7 +10088,7 @@
                 "php": ">=7.2",
                 "sirbrillig/phpcs-variable-analysis": "^2.11.7",
                 "slevomat/coding-standard": "^8.11",
-                "squizlabs/php_codesniffer": "^3.7.1",
+                "squizlabs/php_codesniffer": "^3.9.1",
                 "symfony/yaml": ">=3.4.0"
             },
             "require-dev": {
@@ -10117,7 +10117,7 @@
                 "issues": "https://www.drupal.org/project/issues/coder",
                 "source": "https://www.drupal.org/project/coder"
             },
-            "time": "2023-10-15T09:55:50+00:00"
+            "time": "2024-04-21T06:13:24+00:00"
         },
         {
             "name": "drupal/core-dev",
