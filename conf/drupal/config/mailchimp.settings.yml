@@ -8,3 +8,4 @@ test_mode: false
 enable_connected: true
 connected_id: 3c32683d2b85c4b
 connected_paths: '<front>'
+optin_check_email_msg: 'Please check your email to confirm your subscription.'

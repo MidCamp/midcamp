@@ -1,11 +1,12 @@
 _core:
   default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
+mode: simple
 ignored_config_entities:
-  0: 'mailchimp.settings:api_key'
-  2: 'mailchimp.settings:connected_id'
-  4: 'mailchimp.settings:connected_paths'
-  6: eventbrite_events.eventbritesettings
-  8: google_analytics.settings
-  10: 'recaptcha.settings:site_key'
-  12: 'recaptcha.settings:secret_key'
-  14: 'tito.settings:tito_api_token'
+  - eventbrite_events.eventbritesettings
+  - google_analytics.settings
+  - 'mailchimp.settings:api_key'
+  - 'mailchimp.settings:connected_id'
+  - 'mailchimp.settings:connected_paths'
+  - 'recaptcha.settings:secret_key'
+  - 'recaptcha.settings:site_key'
+  - 'tito.settings:tito_api_token'

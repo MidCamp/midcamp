@@ -14,6 +14,7 @@ use Drupal\Core\Config\ConfigImporter;
 function midcamp_utility_post_config_import_organizer_update_2018(&$sandbox, ConfigImporter $configImporter) {
   // Last year's organizers were set by role.
   $organizer_uids = \Drupal::entityQuery('user')
+    ->accessCheck(TRUE)
     ->condition('status', 1)
     ->condition('roles', 'organizer')
     ->execute();

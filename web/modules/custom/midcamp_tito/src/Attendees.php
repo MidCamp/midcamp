@@ -127,6 +127,7 @@ class Attendees {
     foreach ($attendees as $attendee) {
       $query = \Drupal::entityQuery('node');
       $queryResult = $query
+        ->accessCheck(FALSE)
         ->condition('type', 'attendee')
         ->condition('field_attendee_id', $attendee['id'])
         ->execute();

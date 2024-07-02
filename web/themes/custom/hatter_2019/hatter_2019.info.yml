@@ -1,7 +1,7 @@
 name: Hatter 2019
 description: O'Midcamp!
 type: theme
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^9 || ^10
 base theme: hatter_base
 libraries:
   - hatter_2019/global-css

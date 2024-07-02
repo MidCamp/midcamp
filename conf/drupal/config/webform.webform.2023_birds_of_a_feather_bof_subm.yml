@@ -16,7 +16,7 @@ archive: false
 id: 2023_birds_of_a_feather_bof_subm
 title: '2023 Birds of a Feather (BoF) Submission'
 description: ''
-category: ''
+categories: {  }
 elements: |-
   what_is_your_name_:
     '#type': webform_name
@@ -142,6 +142,8 @@ settings:
   wizard_toggle: true
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
   preview: 0
   preview_label: ''
   preview_title: ''

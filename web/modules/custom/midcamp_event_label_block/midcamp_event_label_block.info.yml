@@ -1,5 +1,5 @@
 name: 'MidCamp Event Label Block'
 type: module
 description: 'Exposes field_event value in a Block'
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^9 || ^10
 package: 'MidCamp'
