@@ -28,4 +28,4 @@ visibility:
     id: request_path
     negate: false
     context_mapping: {  }
-    pages: "/2018*\r\n/2023*\r\n/2024*"
+    pages: "/2018*\r\n/2023*\r\n/2024*\r\n/2025*"

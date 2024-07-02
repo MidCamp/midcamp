@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.topic.field_schedule_location
     - field.field.node.topic.field_schedule_time
     - field.field.node.topic.field_session_length
+    - field.field.node.topic.field_social_post
     - field.field.node.topic.field_topic_type
     - field.field.node.topic.field_track
     - field.field.node.topic.field_transcript
@@ -129,9 +130,10 @@ content:
     weight: 5
     region: content
   field_schedule_location:
-    type: entity_reference_label
+    type: entity_reference_entity_view
     label: above
     settings:
+      view_mode: default
       link: false
     third_party_settings: {  }
     weight: 1
@@ -182,5 +184,6 @@ hidden:
   field_event: true
   field_meta_tags: true
   field_session_length: true
+  field_social_post: true
   field_topic_type: true
   links: true
