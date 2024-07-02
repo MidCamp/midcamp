@@ -1,0 +1,8 @@
+uuid: 6760e74b-b96d-497f-9440-9aa4e9fd6b97
+langcode: en
+status: true
+dependencies: {  }
+id: midcamp-2025-navigation
+label: 'MidCamp 2025 navigation'
+description: 'Primary navigation for Midcamp 2025 content'
+locked: false

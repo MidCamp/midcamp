@@ -12,7 +12,7 @@ dependencies:
 id: midcamp2024thursdayschedulenav
 theme: hatter
 region: content
-weight: -18
+weight: -17
 provider: null
 plugin: 'block_content:5be8dd31-3677-4223-be28-a417cfed55a4'
 settings:

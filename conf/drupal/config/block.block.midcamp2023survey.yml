@@ -1,18 +1,19 @@
 uuid: ff20527a-ced5-41ad-930c-20c1c963a36a
 langcode: en
-status: false
+status: true
 dependencies:
   content:
     - 'block_content:basic:1b4a7d99-7564-406a-ab3e-5cea2f34683a'
   module:
     - block_content
     - system
+    - webform
   theme:
     - hatter
 id: midcamp2023survey
 theme: hatter
 region: content
-weight: 9
+weight: 10
 provider: null
 plugin: 'block_content:1b4a7d99-7564-406a-ab3e-5cea2f34683a'
 settings:
@@ -28,3 +29,10 @@ visibility:
     id: request_path
     negate: false
     pages: "<front>\r\n/2023/*\r\n/jobs\r\n/speaker-resources\r\n/about/venue\r\n/topic-tracks"
+  'entity_bundle:webform_submission':
+    id: 'entity_bundle:webform_submission'
+    negate: false
+    context_mapping:
+      webform_submission: '@webform.webform_submission_route_context:webform_submission'
+    bundles:
+      midcamp_2024_feedback: midcamp_2024_feedback
