@@ -22,6 +22,7 @@ dependencies:
     - image.style.medium
   module:
     - image
+    - link
     - name
     - text
     - user
@@ -38,6 +39,29 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 4
+    region: content
+  field_company_logo:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_company_url:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 5
     region: content
   field_name:
     type: name_default
@@ -85,8 +109,6 @@ content:
     weight: 0
     region: content
 hidden:
-  field_company_logo: true
-  field_company_url: true
   field_do_profile: true
   field_eventbrite_email: true
   field_leadership_year: true

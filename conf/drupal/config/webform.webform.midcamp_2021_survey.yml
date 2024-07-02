@@ -11,7 +11,7 @@ archive: false
 id: midcamp_2021_survey
 title: 'MidCamp 2021 Survey'
 description: ''
-category: ''
+categories: {  }
 elements: |-
   markup:
     '#type': webform_markup
@@ -128,6 +128,8 @@ settings:
   wizard_toggle: false
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
   preview: 0
   preview_label: ''
   preview_title: ''

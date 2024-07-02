@@ -1,7 +1,7 @@
 name: 'MidCamp Tito'
 type: module
 description: 'Integrate with Tito API to sync event and attendee data'
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^9 || ^10
 package: 'Custom'
 dependencies:
   - tito

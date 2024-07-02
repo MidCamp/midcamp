@@ -1,0 +1,29 @@
+uuid: aa8ec645-27c9-4bd0-adaa-b1a806408a6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.midcamp-2025-navigation
+  module:
+    - system
+  theme:
+    - hatter
+id: midcamp2025navigation
+theme: hatter
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:midcamp-2025-navigation'
+settings:
+  id: 'system_menu_block:midcamp-2025-navigation'
+  label: 'MidCamp 2025 navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/2025/*\r\n/2025\r\n/jobs"

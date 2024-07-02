@@ -1,0 +1,30 @@
+uuid: c4e747a7-3a10-4ab6-9ed3-8eababc08230
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:701df378-7417-4c39-90c2-6bada9abdc14'
+  module:
+    - block_content
+    - system
+  theme:
+    - hatter
+id: midcamp2024survey
+theme: hatter
+region: content
+weight: -31
+provider: null
+plugin: 'block_content:701df378-7417-4c39-90c2-6bada9abdc14'
+settings:
+  id: 'block_content:701df378-7417-4c39-90c2-6bada9abdc14'
+  label: 'MidCamp 2024 Survey'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/2024/*\r\n/jobs\r\n/speaker-resources\r\n/about/venue\r\n/topic-tracksv"
