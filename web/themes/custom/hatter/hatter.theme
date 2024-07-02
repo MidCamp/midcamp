@@ -51,7 +51,8 @@ function hatter_theme_suggestions_menu_alter(&$suggestions, $vars, $hook) {
     'midcamp-2020-navigation',
     'midcamp-2021-navigation',
     'midcamp-2023-navigation',
-    'midcamp-2024-navigation'
+    'midcamp-2024-navigation',
+    'midcamp-2025-navigation'
   ];
   if (in_array($vars['menu_name'], $menus)) {
     array_unshift($suggestions, 'menu__main');
