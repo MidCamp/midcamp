@@ -11,7 +11,7 @@ archive: false
 id: midcamp_2024_feedback
 title: 'MidCamp 2024 Feedback'
 description: ''
-category: ''
+categories: {  }
 elements: |-
   markup:
     '#type': webform_markup
