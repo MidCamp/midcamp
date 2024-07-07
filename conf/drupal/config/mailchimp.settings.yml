@@ -1,5 +1,7 @@
 _core:
   default_config_hash: x8k6uOqmSHPqpp71jYGxHF3_SAs3U-Pha3YCntQIhPU
+domain: www.midcamp.org
+use_oauth: true
 api_timeout: 10
 cron: false
 batch_limit: 100
@@ -8,4 +10,5 @@ test_mode: false
 enable_connected: true
 connected_id: 3c32683d2b85c4b
 connected_paths: '<front>'
+webhook_hash: 5510e6df330453df24b52863a9e210e2
 optin_check_email_msg: 'Please check your email to confirm your subscription.'
