@@ -31,12 +31,12 @@
 
 
 {% if menu_level == 0 %}
-<button class="primary-nav__trigger">{% include active_theme_path() ~ '/svg/menu.svg' %} Menu</button>
+<button class="primary-nav__trigger">{% include active_theme_path() ~ '/svg/menu.svg' ignore missing %} Menu</button>
   <ul{{ attributes.addClass('primary-nav__list') }}>
 {% else %}
 <button class="primary-nav__sublist--trigger">
   <span class="element-invisible">Open Menu</span>
-  {% include active_theme_path() ~ '/svg/arrow.svg' %}
+  {% include active_theme_path() ~ '/svg/arrow.svg' ignore missing %}
 </button>
   <ul class="primary-nav__sublist">
 {% endif %}

@@ -3,16 +3,16 @@
   "version": "1.0.0",
   "description": "Node dependencies for Hatter 2019 theme",
   "scripts": {
-    "watch-hatter": "npm link @midcamp/hatter && watch 'npm run postinstall' node_modules/@midcamp/hatter --wait=5",
+    "watch-hatter": "npm link @midcamp/hatter && chokidar 'node_modules/@midcamp/hatter' -c 'npm run postinstall'",
     "postinstall": "rimraf dist && rimraf js && rimraf svg && vendor-copy",
     "unlink-hatter": "npm unlink --no-save @midcamp/hatter && npm install"
   },
   "private": true,
   "dependencies": {
     "@midcamp/hatter": "^1.0.10",
-    "rimraf": "^3.0.0",
-    "vendor-copy": "^2.0.1",
-    "watch": "^1.0.2"
+    "chokidar-cli": "^3.0.0",
+    "rimraf": "^6.0.1",
+    "vendor-copy": "^3.0.1"
   },
   "vendorCopy": [
     {
