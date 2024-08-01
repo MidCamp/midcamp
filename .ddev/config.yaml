@@ -2,6 +2,7 @@ name: midcamp
 type: drupal9
 docroot: web
 php_version: "8.1"
+nodejs_version: "22"
 webserver_type: nginx-fpm
 xdebug_enabled: false
 additional_hostnames: []
