@@ -1,4 +1,4 @@
-FROM amazeeio/node:10-builder as builder
+FROM amazeeio/node:22-builder as builder
 COPY package.json package-lock.json /app/
 COPY ./web/themes/custom/hatter_2019 /app/web/themes/custom/hatter_2019
 RUN npm ci
