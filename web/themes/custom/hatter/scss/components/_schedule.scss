@@ -1,0 +1,140 @@
+.schedule {
+  margin-bottom: 2em;
+}
+
+.schedule__nav {
+  text-align: center;
+}
+.schedule__block {
+
+}
+.schedule__times {
+  margin-bottom: rhythm(1);
+}
+.schedule__teaser {
+  border-top: 1px solid $gray-light;
+  margin: rhythm(.5) 0;
+  padding: rhythm(.25) 0;
+  clear: both;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  &:last-child {
+    border-bottom: 1px solid $gray-light;
+  }
+}
+.schedule__title {
+  font-family: $serif;
+  margin-top: 0;
+  grid-column-end: span 2;
+}
+.schedule__description {
+  grid-column-end: span 2;
+}
+.schedule__speaker {
+  margin-top: 0;
+  margin-bottom: .5em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  &:nth-of-type(odd) {
+    padding-left: rhythm(.25);
+  }
+  &:nth-of-type(even) {
+    padding-right: rhythm(.25);
+  }
+  & div {
+    vertical-align: middle;
+  }
+}
+.schedule__speaker__photo {
+  width: 125px;
+  height: 125px;
+  flex: none;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  text-align: center;
+  margin-right: 1em;
+}
+.schedule__speaker__name {
+  font-size: .9em;
+  line-height: 1.2;
+  padding-right: 1em;
+  flex: auto;
+}
+.schedule__speaker__logo {
+  width: 125px;
+  flex: none;
+  & .logo-container {
+    @include aspect-ratio(16,9);
+  }
+}
+.schedule__track {
+  @include adjust-font-size-to($label, .9);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1em;
+  margin-top: rhythm(.5);
+  margin-bottom: 0;
+  grid-column-end: span 2;
+}
+.schedule__room {
+  @include adjust-font-size-to($label, .9);
+  font-weight: 400;
+  clear: both;
+  grid-column-end: span 2;
+}
+
+@media screen and (max-width: 480px) {
+  .schedule__speaker__photo {
+    width: 100px;
+    height: 100px;
+  }
+  .schedule__speaker__name {
+    width: 90%;
+  }
+  .schedule__speaker__logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .schedule__teaser {
+    grid-template-columns: repeat(1, 100%);
+  }
+  .schedule__track,
+  .schedule__title,
+  .schedule__description,
+  .schedule__room {
+    grid-column-end: span 1;
+  }
+
+  .schedule__speaker {
+    width: 100%;
+    grid-column-end: span 1;
+    &:nth-of-type(odd) {
+      padding-left: unset;
+    }
+    &:nth-of-type(even) {
+      padding-right: unset;
+    }
+  }
+  .schedule__speaker__name {
+    width: 70%;
+  }
+  .schedule__speaker__logo {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .schedule__speaker__photo {
+    width: 100px;
+    height: 100px;
+  }
+  .schedule__speaker__logo {
+    width: 100px;
+  }
+}
+
