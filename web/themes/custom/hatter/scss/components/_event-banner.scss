@@ -1,0 +1,89 @@
+/**
+ * @file
+ * Define the styles for the Event Banner Component
+ */
+
+.event-banner__wrapper {
+  background-image: url("../imgs/drop-room.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.event-banner {
+  padding: rhythm(1) 0;
+  background-color: rgba($white, .9);
+
+  @include breakpoint($bp1) {
+    padding: rhythm(2) 0;
+    // Changed for O'Midcamp Skin
+    // background-color: rgba($purple, .7);
+    background-color: rgba(226,208,48,.7);
+  }
+
+  @include breakpoint($bp1) {
+    padding: rhythm(4) 0;
+  }
+}
+
+.event__druplicon {
+  display: none;
+
+  @include breakpoint($bp1) {
+    display: block;
+    position: absolute;
+    bottom: -35px;
+    right: -10px;
+    width: 200px;
+  }
+
+  @include breakpoint($bp2) {
+    display: block;
+    position: absolute;
+    bottom: -50px;
+    left: -160px;
+    width: 300px;
+  }
+}
+
+.event-banner__block {
+  position: relative;
+  padding: rhythm(1);
+  max-width: 550px;
+  margin: 0 auto;
+
+  @include breakpoint($bp1) {
+    background: rgba($white, .8);
+    padding: rhythm(1);
+    border: 1px solid $purple;
+    border-radius: 25px;
+    box-shadow: 0 0 60px rgba(0,0,0,.4);
+  }
+
+  @include breakpoint($bp2) {
+    padding: rhythm(2) rhythm(2) rhythm(2) 150px;
+  }
+}
+
+.event__title {
+  @include adjust-font-size-to($xl-heading, 1.4);
+  @include leader(.15);
+  @include trailer(.15);
+  margin-right: rhythm(.25);
+  font-family: $serif;
+  font-style: italic;
+}
+
+.event__subtitle {
+  @include adjust-font-size-to($sm-heading, 1.2);
+  @include leader(.15);
+  @include trailer(.5);
+  font-weight: 400;
+}
+
+.event__button {
+
+  &:focus{
+    outline-color: $focus-outline-med-blue;
+  }
+}

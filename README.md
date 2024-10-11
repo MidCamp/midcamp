@@ -98,38 +98,14 @@ This project uses [Composer Installers](https://github.com/composer/installers) 
 
 ### Working on the theme
 
-As of 2019, component markup, styles and interactivity all live in the [Hatter Styleguide](https://github.com/MidCamp/hatter-v2)
-The majority of theming work will occur in that repository and instructions are included in the [readme](https://github.com/MidCamp/hatter-v2/blob/master/README.md).
+The hatter theme has been flattened (it was a separate repo with Patternlab) to go to the theme folder, for best results use the npm version specified in `.nvmrc` and then `npm install` to get the dependencies for the build and then the following commands compile assets:
 
-The compiled assets are packaged as an npm dependency. To install the latest, run `lando npm install` either in the root of this
-repository, or the theme directory. The initial setup process, along with the build process will install these
-dependencies as well.
+* `npm run build` - Builds CSS and JS once
+* `npm start` - Starts a watch process that will recompile CSS and JS whenever a change is made to the source.
 
-To update to the latest version of the Hatter Styleguide, change to the theme directory
-and run `lando npm update @midcamp/hatter` Commit the resulting updates to package.json
-and package-lock.json
-
-To include a specific version of the Hatter styleguide, update the version of the hatter dependency in `package.json` in
-the related theme and them run `lando npm install`
-
-### Local Drupal theme development
-
-To streamline theme development in the context of Drupal, you can use NPM's link feature.
-
-First, in your local clone of the Hatter design system (hatter-v2) run:
-
-* `npm link`
-
-You'll only need to run this command once in the Hatter repository unless you remove or reinstall the package.
-
-Then, in the Drupal theme directory (web/themes/custom/hatter_2019 for example,) run:
-
-* `lando npm run watch-hatter`
-
-This will link the Hatter package to your local development version of the pattern library, and watch for any changes.
-
-When you're done with local theme development, run the following script to unlink your local version of Hatter and
-re-install the published version of the package.
+If git conflicts occur in the:
+* Compiled CSS or JS, run `npm run build` and add the result.
+* Source SCSS or JS file, first address the conflict, then run `npm run build` and add the result.
 
 ### Patching modules
 

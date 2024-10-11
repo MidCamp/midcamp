@@ -1,0 +1,19 @@
+/**
+ * @file
+ * Define the styles for the banners Component
+ */
+
+.banner {
+  padding: rhythm(1.5) 0;
+  border-bottom: 2px solid $green;
+  a:focus {
+    outline-color: $focus-outline-med-blue;
+  }
+}
+
+.banner-title {
+  @extend %allcaps;
+  @include adjust-font-size-to($text, 1);
+  @include trailer(1);
+  text-align: center;
+}

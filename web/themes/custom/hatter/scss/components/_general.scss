@@ -1,0 +1,19 @@
+.field--label-inline .field__label,
+.field--label-inline .field__item,
+.field--label-inline .field__items {
+  display: inline-block;
+  float: none;
+}
+
+.field--name-field-captions {
+  @extend textarea;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  .field__item {
+    max-height: 300px;
+    overflow: scroll;
+  }
+}

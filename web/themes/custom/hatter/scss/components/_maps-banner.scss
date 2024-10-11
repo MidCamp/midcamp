@@ -1,0 +1,82 @@
+/**
+ * @file
+ * Define the styles for the maps Component
+ */
+
+.map-banner {
+  position: relative;
+  background: url('../imgs/map.png');
+  background-size: 180%;
+  background-position: 30% 50%;
+  background-repeat: no-repeat;
+  padding: rhythm(2) 0;
+
+  @include breakpoint($bp2) {
+    background-position: 50% 50%;
+  }
+
+  @include breakpoint($bp3) {
+    background-size: 130%;
+  }
+
+  a:active,
+  a:hover,
+  a:focus {
+    // Added for O'Midcamp reskin
+    color: $yellow;
+  }
+}
+
+.map-overlay {
+  background-color: $blue-dark;
+  padding: 0 2em 2em;
+
+  @include breakpoint($bp1) {
+
+    width: 400px;
+    z-index: 9999;
+    box-shadow: 2px 2px 5px $gray-dark;
+  }
+
+  @include breakpoint($bp2) {
+  }
+}
+
+.map__label {
+  position: relative;
+  left: -1em;
+  top: -.6em;
+  display: inline-block;
+  transform: rotate(-10deg);
+  // Changed for O'Midcamp Skin
+  // background-color: $green;
+  background-color: $purple;
+  box-shadow: 2px 2px 5px $gray-dark;
+  padding: 8px 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: $white;
+}
+
+.map__title {
+  color: $white;
+  margin-top: .5em;
+}
+
+.map__address {
+  color: $white;
+
+  a:link,
+  a:visited {
+    color: $white;
+    text-decoration: underline;
+  }
+
+  a:active,
+  a:hover,
+  a:focus {
+    // Changed for O'Midcamp reskin
+    // color: $magenta;
+    color: $yellow;
+  }
+}
