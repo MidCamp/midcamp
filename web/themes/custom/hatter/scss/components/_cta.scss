@@ -1,0 +1,40 @@
+/**
+ * @file
+ * Define the styles for the banners Component
+ */
+
+%cta-link,
+.cta-link {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.cta-arrow svg {
+  fill: $blue-dark;
+  height: 1em;
+
+  .cta-link:active &,
+  .cta-link:hover &,
+  .cta-link:focus & {
+    fill: $magenta;
+  }
+}
+
+.cta-link--yellow {
+  @extend %cta-link;
+  color: $yellow;
+
+  &:focus {
+    outline-color: $focus-outline-light-blue;
+  }
+
+  svg {
+    fill: $yellow;
+
+    .cta-link--yellow:active &,
+    .cta-link--yellow:hover &,
+    .cta-link--yellow:focus & {
+      fill: $magenta;
+    }
+  }
+}
