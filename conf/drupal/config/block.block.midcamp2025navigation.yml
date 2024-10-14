@@ -21,9 +21,9 @@ settings:
   provider: system
   level: 1
   depth: 0
-  expand_all_items: false
+  expand_all_items: true
 visibility:
   request_path:
     id: request_path
-    negate: false
-    pages: "/2025/*\r\n/2025\r\n/jobs"
+    negate: true
+    pages: "/2024/*\r\n/2024\r\n/2023/*\r\n/2023\r\n/2022/*\r\n/2022\r\n/2021/*\r\n/2021\r\n/2020/*\r\n/2020\r\n/2019/*\r\n/2019\r\n/2018/*\r\n/2018\r\n/2017/*\r\n/2017\r\n/2016/*\r\n/2016\r\n/2015/*\r\n/2015\r\n/2014/*\r\n/2014"

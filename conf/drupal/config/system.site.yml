@@ -8,7 +8,7 @@ slogan: 'May 20-22, 2025'
 page:
   403: ''
   404: ''
-  front: /taxonomy/term/499
+  front: /taxonomy/term/536
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
