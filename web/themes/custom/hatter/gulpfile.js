@@ -68,7 +68,7 @@ const processJs = (source, output) =>
     .pipe(sourceMaps.write())
     .pipe(dest(output));
 
-const buildJs = () => processJs(jsSource, 'js/');
+const buildJs = () => processJs(jsSource, 'js/compiled');
 
 /**
  * Builds repo in current state
