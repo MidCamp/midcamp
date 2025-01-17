@@ -59,6 +59,7 @@
         "drupal/core-composer-scaffold": "^9.5",
         "drupal/core-recommended": "^9.5",
         "drupal/ctools": "^4.1",
+        "drupal/editoria11y": "^2.2",
         "drupal/entity": "^1.4",
         "drupal/entityqueue": "^1.2",
         "drupal/field_group": "^3.2",
