@@ -16,7 +16,7 @@ filters:
     status: true
     weight: -10
     settings:
-      allowed_html: '<br> <p> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <cite> <dl> <dt> <dd> <span> <a hreflang href> <blockquote cite> <ul type> <ol type start> <img data-entity-uuid data-entity-type src alt height width data-caption data-align> <strong> <em> <code> <s> <li>'
+      allowed_html: '<br> <p> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <a class="button" hreflang href> <cite> <dl> <dt> <dd> <span> <blockquote cite> <ul type> <ol type start> <img data-entity-uuid data-entity-type src alt height width data-caption data-align> <strong> <em> <code> <s> <li>'
       filter_html_help: false
       filter_html_nofollow: false
   filter_align:

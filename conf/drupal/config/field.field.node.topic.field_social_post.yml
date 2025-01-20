@@ -10,7 +10,7 @@ field_name: field_social_post
 entity_type: node
 bundle: topic
 label: 'Social Post'
-description: "You know your session subject better than anyone; could you write us a sample tweet about the main take away. Something like “Come see @myhandle speaking about -YOUR SUBJECT- to learn -BIGGEST TAKEAWAY- at #MidCamp 2023\"\r\nDon’t worry about the character limit, we just want to make sure we are promoting you right!"
+description: "You know your session subject better than anyone; could you write us a sample tweet about the main take away. Something like “Come see @myhandle speaking about -YOUR SUBJECT- to learn -BIGGEST TAKEAWAY- at #MidCamp2025\"\r\nDon’t worry about the character limit, we just want to make sure we are promoting you right!"
 required: false
 translatable: false
 default_value: {  }

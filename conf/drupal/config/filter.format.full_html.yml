@@ -40,6 +40,6 @@ filters:
     status: false
     weight: -10
     settings:
-      allowed_html: ''
+      allowed_html: '<a class="button">'
       filter_html_help: true
       filter_html_nofollow: false
