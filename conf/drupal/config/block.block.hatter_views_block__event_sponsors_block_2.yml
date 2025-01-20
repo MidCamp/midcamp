@@ -1,6 +1,6 @@
 uuid: bcd364d6-e7a7-4add-8453-a3d7386b89de
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.event_sponsors
@@ -28,4 +28,4 @@ visibility:
     id: request_path
     negate: false
     context_mapping: {  }
-    pages: "/2018/sponsors\r\n/2019/sponsors"
+    pages: "/2016/sponsors\r\n/2017/sponsors\r\n/2018/sponsors"

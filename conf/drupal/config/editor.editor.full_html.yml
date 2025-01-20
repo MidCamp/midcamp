@@ -29,6 +29,7 @@ settings:
       - horizontalLine
       - '|'
       - heading
+      - style
       - codeBlock
       - '|'
       - sourceEditing
@@ -40,6 +41,11 @@ settings:
         - heading4
         - heading5
         - heading6
+    ckeditor5_style:
+      styles:
+        -
+          label: Button
+          element: '<a class="button">'
     ckeditor5_sourceEditing:
       allowed_tags: {  }
     ckeditor5_list:

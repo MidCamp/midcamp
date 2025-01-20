@@ -17,7 +17,7 @@ dependencies:
     - taxonomy.vocabulary.topic_type
     - user.role.administrator
   content:
-    - 'taxonomy_term:event:9a98e441-13be-448f-b8b3-a8d87005a0a7'
+    - 'taxonomy_term:event:e1d16813-ded3-4fc6-976f-86ba736be49d'
     - 'taxonomy_term:topic_type:39f8a394-f9fc-45ae-85a2-46aabfd3212f'
   module:
     - datetime
@@ -857,7 +857,7 @@ display:
         - 'config:field.storage.node.field_session_length'
   page_1:
     id: page_1
-    display_title: Page
+    display_title: 'Select Sessions'
     display_plugin: page
     position: 2
     display_options:
@@ -1707,6 +1707,7 @@ display:
           admin_label: 'field_people: User'
           plugin_id: standard
           required: false
+      display_description: ''
       display_extenders: {  }
       path: admin/content/select-sessions
       menu:
@@ -2914,7 +2915,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            499: 499
+            536: 536
           group: 1
           exposed: true
           expose:
