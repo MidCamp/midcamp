@@ -12,8 +12,8 @@ field_name: field_do_profile
 entity_type: user
 bundle: user
 label: 'Drupal.org Profile'
-description: 'https://drupal.org/u/[username] or https://www.drupal.org/user/[uid number]'
-required: false
+description: "https://drupal.org/u/[username] or https://www.drupal.org/user/[uid number]\r\n\r\nWe require all users to register for a free Drupal.org username in order to properly credit your contribution. Please <a href=\"https://www.drupal.org/user/register\">register a new account on Drupal.org</a> if you do not have one before starting the session submission process.”"
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

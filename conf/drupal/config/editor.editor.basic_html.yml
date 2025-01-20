@@ -24,6 +24,7 @@ settings:
       - drupalInsertImage
       - '|'
       - heading
+      - style
       - '|'
       - sourceEditing
       - '|'
@@ -36,6 +37,11 @@ settings:
         - heading4
         - heading5
         - heading6
+    ckeditor5_style:
+      styles:
+        -
+          label: Button
+          element: '<a class="button">'
     ckeditor5_sourceEditing:
       allowed_tags:
         - '<cite>'
