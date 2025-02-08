@@ -10,11 +10,12 @@
         "sort-packages": true,
         "allow-plugins": {
             "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/console-extend-plugin": true,
             "drupal/core-composer-scaffold": true,
-            "cweagans/composer-patches": true,
+            "drupal/core-project-message": true,
             "oomphinc/composer-installers-extender": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true,
             "phpstan/extension-installer": true
         }
     },
@@ -56,8 +57,9 @@
         "drupal/config_filter": "^2.6",
         "drupal/config_ignore": "^3.3",
         "drupal/contact_formatter": "^2.0",
-        "drupal/core-composer-scaffold": "^9.5",
-        "drupal/core-recommended": "^9.5",
+        "drupal/core-composer-scaffold": "^10",
+        "drupal/core-project-message": "^10",
+        "drupal/core-recommended": "^10",
         "drupal/ctools": "^4.1",
         "drupal/editoria11y": "^2.2",
         "drupal/entity": "^1.4",
@@ -79,6 +81,7 @@
         "drupal/recaptcha_v3": "^2.0",
         "drupal/redirect": "^1.7",
         "drupal/scheduler": "^1.3",
+        "drupal/seven": "^1.0",
         "drupal/simple_sitemap": "^4.1",
         "drupal/switch_page_theme": "^4.0",
         "drupal/twig_extensions": "2.x-dev",
@@ -86,18 +89,12 @@
         "drupal/video_embed_field": "^2.4",
         "drupal/viewsreference": "^2.0@beta",
         "drupal/webform": "^6.2",
+        "drush/drush": "^12",
         "oomphinc/composer-installers-extender": "^2.0",
-        "twig/extensions": "^1.5"
+        "twig/extra-bundle": "^3.0"
     },
     "require-dev": {
-        "amazeeio/drupal_integrations": "^0.3.3",
-        "behat/mink-extension": "^2.2",
-        "drupal/core-dev": "^9.5",
-        "drupal/drupal-extension": "^4",
-        "drush/drush": "^11",
-        "mglaman/drupal-check": "^1.4",
-        "phpcompatibility/php-compatibility": "dev-develop",
-        "phpmd/phpmd": "^2.4"
+        "mglaman/drupal-check": "^1.4"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -105,7 +102,6 @@
     "extra": {
         "patches": {
             "drupal/mailchimp": {
-                "MailchimpListsSubscribeForm wants an array, but gets an object (www.drupal.org/project/mailchimp/issues/2931408)": "https://www.drupal.org/files/issues/2931408-2-list-form-cant-array.patch",
                 "Ensure missing API keys in lower environments don't break the site": "patches/mailchimp-prevent-wsod-missing-keys.patch"
             },
             "drupal/libraries": {
