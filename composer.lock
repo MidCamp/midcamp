@@ -4,8 +4,62 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f2817fddb437e9f2e5f56d923dd3ad99",
+    "content-hash": "ad8eefaf137f4784d95ac7d578061f82",
     "packages": [
+        {
+            "name": "amazeeio/drupal_integrations",
+            "version": "0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amazeeio/drupal-integrations.git",
+                "reference": "5ff908d941551ae985f8eff5c2cbd7d5f4643bc9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amazeeio/drupal-integrations/zipball/5ff908d941551ae985f8eff5c2cbd7d5f4643bc9",
+                "reference": "5ff908d941551ae985f8eff5c2cbd7d5f4643bc9",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/core-composer-scaffold": "*"
+            },
+            "conflict": {
+                "drupal/core": "<9.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "drupal/coder": "^8.3"
+            },
+            "suggest": {
+                "drupal/lagoon_logs": "Zero configuration logging system for Drupal sites running on Lagoon"
+            },
+            "type": "drupal-drush",
+            "extra": {
+                "drupal-scaffold": {
+                    "file-mapping": {
+                        "[project-root]/.drush-lock-update": "assets/drush-lock-update",
+                        "[web-root]/sites/default/settings.php": {
+                            "mode": "replace",
+                            "path": "assets/initial.settings.php",
+                            "overwrite": false
+                        },
+                        "[project-root]/drush/sites/lagoon.site.yml": "assets/lagoon.site.yml",
+                        "[web-root]/sites/default/settings.lagoon.php": "assets/settings.lagoon.php",
+                        "[web-root]/sites/default/default.development.services.yml": "assets/default.development.services.yml"
+                    }
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Add this project to any Drupal 9+ distribution based on drupal/core-composer-scaffold to enable it for use on Lagoon.",
+            "support": {
+                "issues": "https://github.com/amazeeio/drupal-integrations/issues",
+                "source": "https://github.com/amazeeio/drupal-integrations/tree/0.5.0"
+            },
+            "time": "2024-09-04T03:50:30+00:00"
+        },
         {
             "name": "asm89/stack-cors",
             "version": "v2.2.0",
@@ -3055,31 +3109,34 @@
         },
         {
             "name": "drupal/mailchimp",
-            "version": "2.2.5",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/mailchimp.git",
-                "reference": "2.2.5"
+                "reference": "3.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/mailchimp-2.2.5.zip",
-                "reference": "2.2.5",
-                "shasum": "e8764ee98a2a0185a6889277d0f9a9cd27c9d6ef"
+                "url": "https://ftp.drupal.org/files/projects/mailchimp-3.0.0.zip",
+                "reference": "3.0.0",
+                "shasum": "642b30f6fbbbd7ab1601d59da54a20198d1fa30a"
             },
             "require": {
-                "drupal/core": "^8.7.7 || ^9 || ^10",
+                "drupal/core": "^10 || ^11",
                 "thinkshout/mailchimp-api-php": "^3"
             },
             "require-dev": {
                 "drupal/mailchimp_events": "*",
                 "drupal/mailchimp_lists": "*"
             },
+            "suggest": {
+                "drupal/webform": "Provide mailchimp events for webform submissions"
+            },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.2.5",
-                    "datestamp": "1728582242",
+                    "version": "3.0.0",
+                    "datestamp": "1728589878",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
