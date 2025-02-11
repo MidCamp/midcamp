@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 0062a0b0-9534-4aef-b7bd-a26fbaede788
+  default_langcode: en
+  depends:
+    e4809666-6a61-426b-af5c-2fb678618f24: user
+default:
+  uid:
+    -
+      entity: e4809666-6a61-426b-af5c-2fb678618f24
+  filename:
+    -
+      value: jim-birch-at-badcamp.jpg
+  uri:
+    -
+      value: 'public://pictures/2018-02/jim-birch-at-badcamp.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 78112
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1519312198

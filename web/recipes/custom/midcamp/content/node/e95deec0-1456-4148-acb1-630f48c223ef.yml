@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e95deec0-1456-4148-acb1-630f48c223ef
+  bundle: page
+  default_langcode: en
+  depends:
+    302f396f-b1da-474b-92a7-4192dee6e0ae: user
+    e1d16813-ded3-4fc6-976f-86ba736be49d: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: 302f396f-b1da-474b-92a7-4192dee6e0ae
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 302f396f-b1da-474b-92a7-4192dee6e0ae
+  title:
+    -
+      value: Sponsors
+  created:
+    -
+      value: 1735658860
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /2025/sponsors
+      langcode: en
+      pathauto: 1
+  field_event:
+    -
+      entity: e1d16813-ded3-4fc6-976f-86ba736be49d

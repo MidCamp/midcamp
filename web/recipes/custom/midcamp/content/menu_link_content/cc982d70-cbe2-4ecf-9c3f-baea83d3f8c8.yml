@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: cc982d70-cbe2-4ecf-9c3f-baea83d3f8c8
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    cd07578f-8ae1-410b-adec-189c8dd6fa8a: menu_link_content
+    6efc37fd-43c5-4cd8-8d5f-5bef80ad6b43: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Accommodations
+  menu_name:
+    -
+      value: midcamp-2025-navigation
+  link:
+    -
+      target_uuid: 6efc37fd-43c5-4cd8-8d5f-5bef80ad6b43
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: -48
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:cd07578f-8ae1-410b-adec-189c8dd6fa8a'
+  revision_translation_affected:
+    -
+      value: true

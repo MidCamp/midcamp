@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 13c02ce2-c40d-4be5-b023-8d9a21d5ef40
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: DwayneMcDaniel.jpeg
+  uri:
+    -
+      value: 'public://pictures/2018-01/DwayneMcDaniel.jpeg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 8016
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1515773338

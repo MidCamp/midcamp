@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: a5194d5e-15f4-420c-a518-6959c8259492
+  default_langcode: en
+  depends:
+    368eb671-3208-464e-9bf6-f8c98cf06d5d: user
+default:
+  uid:
+    -
+      entity: 368eb671-3208-464e-9bf6-f8c98cf06d5d
+  filename:
+    -
+      value: 'Chris Headshot.jpg'
+  uri:
+    -
+      value: 'public://pictures/2019-12/Chris Headshot.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 71660
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1576527970

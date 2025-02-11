@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 4bb576be-60e1-40a2-ae91-cc3e0673ea46
+  default_langcode: en
+  depends:
+    2e1df083-fc12-4dfb-9560-8992e6465347: user
+default:
+  uid:
+    -
+      entity: 2e1df083-fc12-4dfb-9560-8992e6465347
+  filename:
+    -
+      value: pasted_image_at_2016_02_18_04_24_pm-crop.jpg
+  uri:
+    -
+      value: 'public://pictures/2018-01/pasted_image_at_2016_02_18_04_24_pm-crop.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 13175
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1517251009

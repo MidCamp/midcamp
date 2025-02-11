@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 7a23e46e-31e6-4480-bdc1-f127e799eb8e
+  default_langcode: en
+  depends:
+    2b721d2c-bb47-4127-b6eb-80a4d61c8790: user
+default:
+  uid:
+    -
+      entity: 2b721d2c-bb47-4127-b6eb-80a4d61c8790
+  filename:
+    -
+      value: BpTtfMDCQAAo0AT.jpg
+  uri:
+    -
+      value: 'public://pictures/2018-02/BpTtfMDCQAAo0AT.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 11180
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1518581166

@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 920ec6bb-02a6-4f3d-bb57-7d55a49cc845
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    08dfbbe3-144b-4993-bba0-9bf78eab5600: menu_link_content
+    8a9b3eb5-cd99-49a2-8a53-7b624f0e1d1a: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Topic Tracks'
+  menu_name:
+    -
+      value: midcamp-2025-navigation
+  link:
+    -
+      target_uuid: 8a9b3eb5-cd99-49a2-8a53-7b624f0e1d1a
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:08dfbbe3-144b-4993-bba0-9bf78eab5600'
+  revision_translation_affected:
+    -
+      value: true

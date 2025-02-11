@@ -1,0 +1,34 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 84684caa-f1d0-4180-9c27-3ba1c1b835f9
+  bundle: sponsor_packages
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Summit Sponsors'
+  description:
+    -
+      value: "<p dir=\"ltr\">Full-day summits are&nbsp;targeted at attendees looking for hands-on, in-depth discussion around a specific topic.</p>\r\n\r\n<p dir=\"ltr\">At this level, sponsors will receive:</p>\r\n\r\n<ul dir=\"ltr\">\r\n\t<li>Your logo on Summit Day signage</li>\r\n\t<li>Logo in program</li>\r\n\t<li>Company logo on midcamp.org website linked to own site</li>\r\n</ul>\r\n"
+      format: basic_html
+  weight:
+    -
+      value: 6
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /sponsor/package/summit-sponsors
+      langcode: en
+      pathauto: 1
+  field_sponsor_package_price:
+    -
+      value: '1200.00'

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5e869cfc-674b-44ba-93d7-4fd1ffc6add5
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: mike.jpg
+  uri:
+    -
+      value: 'public://pictures/2018-01/mike.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 8189
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1517238636

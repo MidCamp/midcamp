@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 1e13e469-ddb1-41a1-a0cd-bb0d5d050021
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    5942bb19-9e9f-4ec1-9557-4667a5b3babe: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Convince Your Boss'
+  menu_name:
+    -
+      value: footer
+  link:
+    -
+      target_uuid: 5942bb19-9e9f-4ec1-9557-4667a5b3babe
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

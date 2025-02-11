@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 8bf50e68-d52f-4edd-b230-9d5a8ed3d67a
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    cd07578f-8ae1-410b-adec-189c8dd6fa8a: menu_link_content
+    d9854cd1-1352-4435-ba62-de23669bdaee: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Venue
+  menu_name:
+    -
+      value: midcamp-2025-navigation
+  link:
+    -
+      target_uuid: d9854cd1-1352-4435-ba62-de23669bdaee
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: -47
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:cd07578f-8ae1-410b-adec-189c8dd6fa8a'
+  revision_translation_affected:
+    -
+      value: true

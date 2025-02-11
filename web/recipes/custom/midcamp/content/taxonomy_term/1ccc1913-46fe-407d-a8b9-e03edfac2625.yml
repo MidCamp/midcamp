@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 1ccc1913-46fe-407d-a8b9-e03edfac2625
+  bundle: event
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'MidCamp 2023'
+  weight:
+    -
+      value: 2
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /2023
+      langcode: en
+      pathauto: 0
+  field_date_has_time:
+    -
+      value: false
+  field_tito_slug:
+    -
+      value: '2023'

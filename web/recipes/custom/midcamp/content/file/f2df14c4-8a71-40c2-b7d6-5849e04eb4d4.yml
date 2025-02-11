@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f2df14c4-8a71-40c2-b7d6-5849e04eb4d4
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: me.jpg
+  uri:
+    -
+      value: 'public://pictures/2018-01/me_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 31927
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1516128199

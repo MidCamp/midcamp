@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b78bdef1-4636-4f1b-9e95-11a843fd63e1
+  default_langcode: en
+  depends:
+    a46601d9-e640-4685-9080-038e16432b9e: user
+default:
+  uid:
+    -
+      entity: a46601d9-e640-4685-9080-038e16432b9e
+  filename:
+    -
+      value: doug-profile.png
+  uri:
+    -
+      value: 'public://pictures/2018-01/doug-profile.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 111712
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1516772889

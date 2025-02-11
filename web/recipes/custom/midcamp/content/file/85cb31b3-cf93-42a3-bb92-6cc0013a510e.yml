@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 85cb31b3-cf93-42a3-bb92-6cc0013a510e
+  default_langcode: en
+  depends:
+    b4781368-0f55-4aa2-89c0-bb0450bb92b4: user
+default:
+  uid:
+    -
+      entity: b4781368-0f55-4aa2-89c0-bb0450bb92b4
+  filename:
+    -
+      value: chris-urban-sm.jpg
+  uri:
+    -
+      value: 'public://pictures/2018-03/chris-urban-sm.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 47714
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1520191400

@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: bdf32956-1aca-40a1-be90-bb53f448ff5c
+  default_langcode: en
+  depends:
+    4986b1fc-ac36-4bca-8e9f-0c66ff35b081: user
+default:
+  uid:
+    -
+      entity: 4986b1fc-ac36-4bca-8e9f-0c66ff35b081
+  filename:
+    -
+      value: 3LRfmYzD_400x400.jpg
+  uri:
+    -
+      value: 'public://pictures/2019-12/3LRfmYzD_400x400.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 27579
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1576122843

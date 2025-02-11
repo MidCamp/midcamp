@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 8ef27b9a-c87a-419b-a936-ab257e6d20ad
+  default_langcode: en
+  depends:
+    1b5b70b0-fecc-447d-b71e-4b61bad23593: user
+default:
+  uid:
+    -
+      entity: 1b5b70b0-fecc-447d-b71e-4b61bad23593
+  filename:
+    -
+      value: OSP_logo_black_RGB_padded.png
+  uri:
+    -
+      value: 'public://2020-02/OSP_logo_black_RGB_padded.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 94249
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1582726412

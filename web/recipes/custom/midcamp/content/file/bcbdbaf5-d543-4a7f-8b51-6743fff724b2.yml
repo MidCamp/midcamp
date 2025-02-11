@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: bcbdbaf5-d543-4a7f-8b51-6743fff724b2
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: me.jpeg
+  uri:
+    -
+      value: 'public://pictures/2019-12/me.jpeg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 86406
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1575922533

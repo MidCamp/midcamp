@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: a2effa10-ceef-48be-b3fa-4ba1824235c5
+  default_langcode: en
+  depends:
+    1c02772e-5724-4d9d-aa07-ab9d235b585a: user
+default:
+  uid:
+    -
+      entity: 1c02772e-5724-4d9d-aa07-ab9d235b585a
+  filename:
+    -
+      value: avatar.png
+  uri:
+    -
+      value: 'public://pictures/2020-02/avatar.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 72161
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1580817092

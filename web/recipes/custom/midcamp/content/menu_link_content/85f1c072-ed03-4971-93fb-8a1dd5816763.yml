@@ -1,0 +1,41 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 85f1c072-ed03-4971-93fb-8a1dd5816763
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    4157f1ca-1cab-4abe-afd3-34a77fb53051: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Jobs
+  menu_name:
+    -
+      value: midcamp-2025-navigation
+  link:
+    -
+      target_uuid: 4157f1ca-1cab-4abe-afd3-34a77fb53051
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:cd07578f-8ae1-410b-adec-189c8dd6fa8a'
+  revision_translation_affected:
+    -
+      value: true

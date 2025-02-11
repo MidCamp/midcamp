@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ec43fedc-7af2-40de-8f38-a3c9fc0854a1
+  default_langcode: en
+  depends:
+    c48e7b51-3e42-4544-829d-58395ae8b719: user
+default:
+  uid:
+    -
+      entity: c48e7b51-3e42-4544-829d-58395ae8b719
+  filename:
+    -
+      value: 'IMG_20181002_150414 (2).jpg'
+  uri:
+    -
+      value: 'public://pictures/2019-02/IMG_20181002_150414 (2).jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 288584
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1550867478

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3152b686-a6ab-4d93-94b0-679840a2632d
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: bobart.jpg
+  uri:
+    -
+      value: 'public://pictures/2018-02/bobart.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 34188
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1519084614

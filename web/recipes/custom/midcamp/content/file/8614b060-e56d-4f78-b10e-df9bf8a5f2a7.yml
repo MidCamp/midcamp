@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 8614b060-e56d-4f78-b10e-df9bf8a5f2a7
+  default_langcode: en
+  depends:
+    5358c624-664c-4d13-98c1-633cbb50eafe: user
+default:
+  uid:
+    -
+      entity: 5358c624-664c-4d13-98c1-633cbb50eafe
+  filename:
+    -
+      value: becker-logo-1.png
+  uri:
+    -
+      value: 'public://2022-11/becker-logo-1.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 9642
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1668134188

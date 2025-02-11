@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: abab103d-161f-4050-adf4-f1d568c87a8f
+  default_langcode: en
+  depends:
+    302f396f-b1da-474b-92a7-4192dee6e0ae: user
+default:
+  uid:
+    -
+      entity: 302f396f-b1da-474b-92a7-4192dee6e0ae
+  filename:
+    -
+      value: 'cloudtech logo design template tecnilogy illustration (4).png'
+  uri:
+    -
+      value: 'public://2024-03/cloudtech logo design template tecnilogy illustration (4).png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 59136
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1709335682

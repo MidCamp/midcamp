@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: bbd6a62d-1d67-4b29-8a2a-916be294b3ad
+  default_langcode: en
+  depends:
+    75792dbd-fa20-4d0d-9c5f-4f7e7178d2f7: user
+default:
+  uid:
+    -
+      entity: 75792dbd-fa20-4d0d-9c5f-4f7e7178d2f7
+  filename:
+    -
+      value: Veritas-Health-Horizontal-Color.png
+  uri:
+    -
+      value: 'public://2018-02/Veritas-Health-Horizontal-Color.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 3733
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1518663355

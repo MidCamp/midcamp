@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5b6f0957-6250-4e17-95f5-57b17aaa261a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: avatar2.png
+  uri:
+    -
+      value: 'public://pictures/2018-01/avatar2.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 91318
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1516829502

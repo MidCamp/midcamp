@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 72709cf5-8c5f-4861-8c9a-e8e1bec22483
+  default_langcode: en
+  depends:
+    082d8990-e991-47c7-806a-9a8765d78021: user
+default:
+  uid:
+    -
+      entity: 082d8990-e991-47c7-806a-9a8765d78021
+  filename:
+    -
+      value: logo_410x155.png
+  uri:
+    -
+      value: 'public://2024-02/logo_410x155.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 25678
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1708441415

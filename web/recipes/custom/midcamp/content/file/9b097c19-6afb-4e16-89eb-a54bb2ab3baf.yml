@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9b097c19-6afb-4e16-89eb-a54bb2ab3baf
+  default_langcode: en
+  depends:
+    3726f9e4-b7ea-4cfc-917d-ec4e6c76ec66: user
+default:
+  uid:
+    -
+      entity: 3726f9e4-b7ea-4cfc-917d-ec4e6c76ec66
+  filename:
+    -
+      value: avatar_cropped_image_small.png
+  uri:
+    -
+      value: 'public://pictures/2025-02/avatar_cropped_image_small.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 434994
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1738890731

@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 93b1f737-4a64-4fb6-ba76-67078a8f5bdb
+  bundle: basic
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'MidCamp 2024 Wednesday Schedule Nav'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  body:
+    -
+      value: "<p class=\"schedule__nav\"><a href=\"/2024/schedule/hybrid\">Hybrid</a> | <a href=\"/2024/schedule/thursday\">Sessions (Thu)</a> | <a href=\"/2024/training\">Training (Fri)</a> |&nbsp;<a href=\"/2024/schedule/contrib\">Contribution Day (Fri)</a></p>\r\n"
+      format: basic_html
+      summary: ''

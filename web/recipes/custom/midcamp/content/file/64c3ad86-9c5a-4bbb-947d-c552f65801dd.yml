@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 64c3ad86-9c5a-4bbb-947d-c552f65801dd
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: 'David Needham - Pantheon - cropped.jpg'
+  uri:
+    -
+      value: 'public://pictures/2018-01/David Needham - Pantheon - cropped.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 12190
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1515032013

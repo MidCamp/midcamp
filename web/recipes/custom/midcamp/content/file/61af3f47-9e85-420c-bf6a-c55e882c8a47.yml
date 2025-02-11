@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 61af3f47-9e85-420c-bf6a-c55e882c8a47
+  default_langcode: en
+  depends:
+    43653f40-febc-40e0-9a00-c4c80747ac88: user
+default:
+  uid:
+    -
+      entity: 43653f40-febc-40e0-9a00-c4c80747ac88
+  filename:
+    -
+      value: picture-117-1473442839.jpg
+  uri:
+    -
+      value: 'public://pictures/2018-01/picture-117-1473442839.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 8774
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1516922531

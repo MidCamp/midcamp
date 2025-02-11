@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 52df58e6-927b-44d8-bb6d-204558fb9859
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: pantheon-logo.png
+  uri:
+    -
+      value: 'public://2020-03/pantheon-logo.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 35591
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1583978591

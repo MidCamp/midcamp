@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 7196b4db-f2b6-401f-b3bb-de8e4597a317
+  default_langcode: en
+  depends:
+    d5244816-b788-4126-bdf5-243e4b0144f3: user
+default:
+  uid:
+    -
+      entity: d5244816-b788-4126-bdf5-243e4b0144f3
+  filename:
+    -
+      value: d17tya55_400x400.jpg
+  uri:
+    -
+      value: 'public://pictures/2018-12/d17tya55_400x400_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 32014
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1544633391

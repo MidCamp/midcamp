@@ -1,0 +1,69 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 6efc37fd-43c5-4cd8-8d5f-5bef80ad6b43
+  bundle: page
+  default_langcode: en
+  depends:
+    302f396f-b1da-474b-92a7-4192dee6e0ae: user
+    0c715b96-8782-46d3-8dd9-b6c076cea6bd: user
+    e1d16813-ded3-4fc6-976f-86ba736be49d: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: 302f396f-b1da-474b-92a7-4192dee6e0ae
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 0c715b96-8782-46d3-8dd9-b6c076cea6bd
+  title:
+    -
+      value: Accommodations
+  created:
+    -
+      value: 1737401189
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /2025/accommodations
+      langcode: en
+      pathauto: 1
+  field_event:
+    -
+      entity: e1d16813-ded3-4fc6-976f-86ba736be49d
+  field_page_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: cd7b0021-979c-4c5f-9e12-6600ad33ee9e
+          bundle: paragraphs_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1675458936
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_paragraph_text:
+            -
+              value: '<h2 dir="ltr">Hotels</h2><h3>Hotel Versey, 644 W. Diversey Pkwy (1.1 mi)</h3><p><a class="button" href="https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=CHILPUP&amp;groupCode=MOS&amp;arrivaldate=2025-05-19&amp;departuredate=2025-05-23&amp;cid=OM,WW,HILTONLINK,EN,DirectLink&amp;fromId=HILTONLINKDIRECT">Book a room at the Versey</a></p><p>We''ve negotiated a super special "you are awesome" rate for Hotel Versey (now a Hilton property)! <a href="https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=CHILPUP&amp;groupCode=MOS&amp;arrivaldate=2025-05-19&amp;departuredate=2025-05-23&amp;cid=OM,WW,HILTONLINK,EN,DirectLink&amp;fromId=HILTONLINKDIRECT">Book with our group code directly</a> or call and mention the "MOS" group rate. The group code will allow you to book a king bed room or two double beds room for dates between May 19 and 23, 2025. Get <a href="https://www.hotelversey.com/">more information about Hotel Versey</a>.</p><p>The room block will be held until <span>April 19th, 2025</span> for guests to book online. After that, the rooms will be released.</p><h3>Additional Hotel Discounts</h3><p>DePaul has <a href="https://resources.depaul.edu/demon-discounts/travel/Pages/hotels.aspx">discount agreements with other hotels in the area</a> (see the Lincoln Park section for nearby options). Some may be open to conference attendees, but some may require proof of DePaul student/staff/alumni status.</p><h2 dir="ltr">Shared Lodging</h2><p dir="ltr">In addition to hotels, shared rooms provide an affordable alternative:</p><ul><li><a href="http://www.getawayhostel.com/"><strong>Chicago Getaway Hostel</strong></a><strong>. 616 W Arlington Pl. (0.7 mi).</strong> Various shared room options starting at $25 per person.</li><li><a href="https://freehandhotels.com/chicago/rooms/"><strong>Freehand Chicago</strong></a><strong>. 19 E. Ohio. (3 mi, 13 minutes via CTA Red Line).</strong> Various shared room options starting at $43 per person in quads.</li><li><a href="https://www.airbnb.com/s/DePaul-University-Welcome-Center--North-Sheffield-Avenue--Chicago--IL--USA/homes?refinement_paths%5B%5D=%2Fhomes&amp;query=DePaul%20University%20Welcome%20Center%2C%20North%20Sheffield%20Avenue%2C%20Chicago%2C%20IL%2C%20USA&amp;allow_override%5B%5D=&amp;search_by_map=true&amp;checkin=2019-03-19&amp;checkout=2019-03-23&amp;s_tag=cJAXabbK"><strong>Airbnb</strong></a><strong> </strong>offers hundreds of affordable options in the area.</li></ul>'
+              format: basic_html

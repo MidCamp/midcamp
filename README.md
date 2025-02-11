@@ -19,6 +19,12 @@ Ensure you have an Amazee account with your [SSH keys loaded](http://dashboard.a
 Refer to [DDEV's documentation](https://ddev.readthedocs.io/en/latest/) for detailed information on configuration, customization and troubleshooting.
 
 1. Start your local environment with `ddev start`
+1. SSH into the container `ddev ssh`
+1. Go into the web folder `cd web`
+1. Apply midcamp's recipe `php core/scripts/drupal recipe recipes/custom/midcamp  -v`
+
+Or if you are trying to contribute back into the project.
+
 1. Run `ddev auth ssh` to load your ssh keys.
 1. Import your local database and files via:
     1. `ddev pull lagoon`

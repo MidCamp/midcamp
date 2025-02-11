@@ -1,0 +1,64 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 5942bb19-9e9f-4ec1-9557-4667a5b3babe
+  bundle: page
+  default_langcode: en
+  depends:
+    302f396f-b1da-474b-92a7-4192dee6e0ae: user
+default:
+  revision_uid:
+    -
+      entity: 302f396f-b1da-474b-92a7-4192dee6e0ae
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 302f396f-b1da-474b-92a7-4192dee6e0ae
+  title:
+    -
+      value: 'Convince Your Boss: Why You Should Attend MidCamp 2025'
+  created:
+    -
+      value: 1736487730
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /convince-your-boss
+      langcode: en
+      pathauto: 0
+  field_page_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 597ae93c-fe11-4774-9419-abca670e4fdb
+          bundle: paragraphs_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1736487737
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_paragraph_text:
+            -
+              value: '<p>MidCamp 2025 is your opportunity to stay ahead in the rapidly evolving world of open-source technology. To help you make the case for attending, we’ve prepared a customizable email template that highlights the key benefits and value this event brings. Use the email below to convince your boss why MidCamp 2025 is an investment worth making:</p><p><a class="button" href="https://docs.google.com/document/d/1WnFwJRH2Aa-WHOUDv1w63G_CvuIV6STxQJmFgGNvVrU/edit?usp=sharing">Customize and send</a></p><hr><p><strong>Email Template:</strong></p><p>Dear [Boss’s Name],</p><p>I hope this email finds you well! I’m reaching out to share an incredible opportunity that could directly benefit our team: attending <a href="https://www.midcamp.org/"><strong>MidCamp 2025</strong></a>, one of the premier events for tech professionals, open-source enthusiasts, and problem-solvers. Here’s why this conference is a must-attend for us:</p><h3>1. Strategic Insights at the Right Time</h3><p>MidCamp 2025 comes at a pivotal moment for the Drupal community. Following <a href="https://events.drupal.org/atlanta2025"><strong>DrupalCon Atlanta 2025</strong></a> and the highly anticipated <a href="https://celebratedrupal.org/"><strong>Drupal CMS Launch</strong></a> on January 15, 2025, attendees will benefit from exclusive insights into the latest strategic initiatives, including the innovative <a href="https://www.drupal.org/node/3486008"><strong>Experience Builder/Design System</strong></a>. This ensures we stay at the forefront of open-source technology advancements and can apply them effectively to our projects.</p><h3>2. Access to Industry Leaders</h3><p>The event provides unparalleled opportunities to learn from experts and innovators shaping the future of web development. <a href="https://dri.es/"><strong>Dries Buytaert</strong></a>, founder of Drupal, former CTO and CSO, <a href="https://dri.es/a-new-chapter-in-my-role-at-acquia">now Executive Chairman</a> of Acquia, will participate in a moderated a fireside chat, diving deep into 2025 community concerns and discussing the transformative impact of Drupal ecosystem. His visionary insights, along with opportunities to engage in a moderated Q&amp;A, will inspire forward-thinking strategies for our team.</p><h3>3. Practical Learning Opportunities</h3><p>With 7-8 comprehensive training sessions and 25 impactful workshops, MidCamp 2025 is designed for hands-on learning. Sessions cover everything from emerging technologies to best practices in development and design systems. This diverse agenda ensures I’ll gain both technical skills and actionable insights that align with our team’s goals.</p><h3>4. Networking and Collaboration</h3><p>MidCamp fosters an engaging environment to connect with peers, industry leaders, and potential collaborators. Whether through breakout sessions, unconference discussions, or lightning talks, I’ll build relationships and exchange ideas with professionals tackling similar challenges.</p><h3>5. Cost-Effective Professional Development</h3><p>With its affordable ticket tiers and early-bird pricing, MidCamp 2025 delivers exceptional value. Conveniently located at the <a href="https://www.midcamp.org/2025/about/venue"><strong>DePaul University Student Center</strong></a> in <strong>Chicago, Illinois</strong>, travel is straightforward, and out-of-town attendees can choose from a variety of partner hotels offering special rates. This combination of accessibility and affordability makes MidCamp an efficient investment in our team’s growth.</p><h3>6. Immediate ROI for Our Team</h3><p>By attending MidCamp 2025, I’ll bring back actionable knowledge and strategies to:</p><ul><li>Enhance our workflows with insights into cutting-edge tools and technologies.</li><li>Strengthen our alignment with Drupal’s latest initiatives.</li><li>Drive innovation and efficiency in our projects.</li></ul><h3>Next Steps</h3><p>If approved, I’ll take care of registration, coordinate my schedule to maximize relevant sessions, and compile a report of key takeaways for the team. This ensures we all benefit from the insights gained.</p><p>Let me know if you’d like to discuss further. I’m happy to provide additional details about the agenda and budget.</p><p>Thank you for considering this opportunity to invest in my professional development and our team’s success.</p><p>Best regards,<br>[Your Name]</p><hr><p><a class="button" href="https://docs.google.com/document/d/1WnFwJRH2Aa-WHOUDv1w63G_CvuIV6STxQJmFgGNvVrU/edit?usp=sharing">Customize and send</a></p><p>Feel free to customize this template to align with your specific goals and priorities. Let us know if you need further assistance or additional resources to make your case!</p>'
+              format: full_html

@@ -1,0 +1,69 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 92cea8ad-18a4-495c-a133-bdd0937fc232
+  bundle: page
+  default_langcode: en
+  depends:
+    302f396f-b1da-474b-92a7-4192dee6e0ae: user
+    0c715b96-8782-46d3-8dd9-b6c076cea6bd: user
+    e1d16813-ded3-4fc6-976f-86ba736be49d: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: 302f396f-b1da-474b-92a7-4192dee6e0ae
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 0c715b96-8782-46d3-8dd9-b6c076cea6bd
+  title:
+    -
+      value: Schedule
+  created:
+    -
+      value: 1732120732
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /2025/schedule
+      langcode: en
+      pathauto: 1
+  field_event:
+    -
+      entity: e1d16813-ded3-4fc6-976f-86ba736be49d
+  field_page_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: d66645ef-ca02-42bc-984d-13293177527b
+          bundle: paragraphs_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1732120737
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_paragraph_text:
+            -
+              value: '<h2>Before Camp</h2><h3>For Sponsors:</h3><ul><li><strong>Call for sponsors:</strong> Open now!</li><li><strong>Print deadline:</strong> mid-April, 2025</li></ul><h3>For Speakers:</h3><ul><li><a href="https://www.midcamp.org/2025/submit-session"><s><strong>Call for Proposals</strong></s></a><s><strong> Open:</strong> November 25, 2024</s></li><li><a href="https://www.drupal.org/community/events/midcamp-2025-session-proposal-workshop-2024-12-12"><s><strong>Session Proposal Workshop</strong></s></a><s><strong>:</strong> December 12, 2024</s><ul><li><s>This workshop will focus on preparing your session proposal.</s></li></ul></li><li><a href="https://www.drupal.org/community/events/midcamp-2025-last-chance-session-proposal-workshop-2025-01-07"><s><strong>Last Chance Session Proposal Workshop</strong></s></a><s><strong>:</strong> January 7, 2025</s><ul><li><s>This workshop will focus on preparing your session proposal.</s></li></ul></li><li><s><strong>Proposal Deadline:</strong> January 12, 2025</s></li><li><strong>Speakers Notified:</strong> (week of) February 17, 2025</li><li dir="ltr"><strong>Accepted Speaker Workshop:</strong> March TBD 2025<ul><li dir="ltr">This workshop will focus on preparing your session for presentation. It will be primarily for MidCamp presenters but we will also welcome folks who would like assistance with their DrupalCon presentations.</li></ul></li></ul><h3>For Attendees:</h3><ul><li><strong>Tickets go on sale:</strong> Early 2025</li><li><strong>Hotel block opens:</strong> Early 2025<br>&nbsp;</li></ul><h2>Camp!</h2><ul><li><strong>Tuesday, May 20, 2025 - Wednesday, May 21, 2025</strong><ul><li>Trainings, Sessions, Contrib, Hallway conversations, and more!</li></ul></li><li><strong>Thursday, May 22, 2025</strong><ul><li>Contribution - All are welcome and we''ll have special opportunities for first-time contributors.</li></ul></li></ul>'
+              format: basic_html

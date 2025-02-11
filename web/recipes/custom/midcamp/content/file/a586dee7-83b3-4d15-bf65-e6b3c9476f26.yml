@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: a586dee7-83b3-4d15-bf65-e6b3c9476f26
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: randy-new.png
+  uri:
+    -
+      value: 'public://pictures/2018-02/randy-new.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 85200
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1518725591

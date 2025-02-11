@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ce2026b1-27e7-4e4a-95e0-cb0b9af76299
+  default_langcode: en
+  depends:
+    0bc4265d-dc73-48c6-ba5f-57a914354243: user
+default:
+  uid:
+    -
+      entity: 0bc4265d-dc73-48c6-ba5f-57a914354243
+  filename:
+    -
+      value: carie-cropped-light.jpg
+  uri:
+    -
+      value: 'public://pictures/2018-11/carie-cropped-light.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 499287
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1542650653

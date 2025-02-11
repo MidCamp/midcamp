@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 90d01a90-0596-48f8-a2fc-f1cd4f39cbd4
+  bundle: location
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Room 324 (Hybrid Onsite)'
+  description:
+    -
+      value: "<p>This is a Hybrid location type where the speaker will present on-site and the session will be streamed remotely. Participants may either join remotely via the linked YouTube live stream or attend in person.</p>\r\n"
+      format: basic_html
+  weight:
+    -
+      value: 11
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_link:
+    -
+      uri: 'https://www.youtube.com/@midcamp'
+      title: 'Go to [term:name]'
+      options: {  }

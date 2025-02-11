@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: c8d81491-06a2-4af7-b2e3-b9c55b099440
+  default_langcode: en
+  depends:
+    efba198f-8ad6-464f-a9fc-2ccc4776be07: user
+default:
+  uid:
+    -
+      entity: efba198f-8ad6-464f-a9fc-2ccc4776be07
+  filename:
+    -
+      value: HS2LogoOnBlack.jpg
+  uri:
+    -
+      value: 'public://2018-02/HS2LogoOnBlack.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 13670
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1519314441

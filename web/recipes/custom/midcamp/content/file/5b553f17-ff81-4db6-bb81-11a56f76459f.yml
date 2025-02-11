@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5b553f17-ff81-4db6-bb81-11a56f76459f
+  default_langcode: en
+  depends:
+    74bce887-01c2-47e4-9601-afc4c0fe70a9: user
+default:
+  uid:
+    -
+      entity: 74bce887-01c2-47e4-9601-afc4c0fe70a9
+  filename:
+    -
+      value: Headshot2019_small.jpg
+  uri:
+    -
+      value: 'public://pictures/2025-01/Headshot2019_small.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 362124
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1736518897

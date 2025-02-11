@@ -1,0 +1,69 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b3df2b8e-cacb-433d-86a8-38fcd99cfca8
+  bundle: page
+  default_langcode: en
+  depends:
+    0c715b96-8782-46d3-8dd9-b6c076cea6bd: user
+    082d8990-e991-47c7-806a-9a8765d78021: user
+    e1d16813-ded3-4fc6-976f-86ba736be49d: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: 0c715b96-8782-46d3-8dd9-b6c076cea6bd
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 082d8990-e991-47c7-806a-9a8765d78021
+  title:
+    -
+      value: Tickets
+  created:
+    -
+      value: 1735336276
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /tickets
+      langcode: en
+      pathauto: 0
+  field_event:
+    -
+      entity: e1d16813-ded3-4fc6-976f-86ba736be49d
+  field_page_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 9a444e34-7841-4436-a0b6-646826a103c5
+          bundle: paragraphs_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1704948321
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_paragraph_text:
+            -
+              value: '<p>At MidCamp, we''re dedicated to creating an inclusive and accessible event for everyone passionate about Drupal. Our pricing model is designed to welcome all, from seasoned professionals to newcomers eager to learn.</p><p><strong>One Ticket, Many Options: Your Gateway to MidCamp 2025</strong></p><p><a class="button" href="https://ti.to/midcamp/2025"><strong>General Admission:</strong> $200</a></p><p><em>Enjoy two days packed with:</em></p><ul><li>25 high-quality sessions,</li><li>coffee, lunch, and maybe even snacks,&nbsp;</li><li>conversations with 100+ awesome Drupal-folks, and</li><li>evening socials that are as accessible and inclusive as we can make them.</li></ul><p><strong>But wait, there''s more!</strong> We understand that everyone''s situation is different. Choose from our range of discount codes to find the option that best suits you:</p><ol><li><strong>Early Bird Special - Code: THEWORM</strong><ul><li>Price: $50</li><li>Rewarding early birds who plan ahead, this special rate is our way of saying thanks for your early commitment to MidCamp.</li><li>Valid until April 15, 2025</li><li><a href="https://ti.to/midcamp/2025/discount/THEWORM">Get your tickets with Early Bird Discount pricing</a></li></ul></li><li><strong>Standard Discount - Code: MIDCAMP2025</strong><ul><li>Price: $100 (Our Recommended Standard Price)</li><li>For everyone keen to join, this discounted rate makes MidCamp more accessible while supporting the event''s quality and offerings.</li><li>Valid until one week prior to camp.</li><li><a href="https://ti.to/midcamp/2025/discount/MIDCAMP2025">Get your tickets with Standard Discount pricing</a></li></ul></li><li><strong>Standard Rate:</strong> No discount code is required.<ul><li>Price: $200</li><li>Available online until the event starts and at the door.</li><li>Our full-price ticket is ideal for attendees with generous professional development budgets and helps make up for the impact to our catering costs for folks who buy at the last minute.</li><li><a href="https://ti.to/midcamp/2025">Get your tickets at the Standard Rate</a></li></ul></li><li><strong>Expanded Learning Discount - Code: LEARN2DRUPAL</strong><ul><li>Price: $25</li><li>Open to students and anyone seeking to expand their Drupal knowledge.</li><li>At MidCamp, we believe in nurturing learning and growth. If you''re on a learning path, this rate is for you.</li><li><a href="https://ti.to/midcamp/2025/discount/LEARN2DRUPAL">Get your tickets with Expanded Learning Discount pricing</a></li></ul></li><li><strong>Community Support Discount - Code: DRUPALHUGS</strong><ul><li>Price: $0</li><li>For those facing financial challenges, between jobs, or any other reason that makes attending MidCamp a financial strain.</li><li>We''re here for you. If cost is a barrier, this option ensures you''re part of the MidCamp experience.</li><li><a href="https://ti.to/midcamp/2025/discount/DRUPALHUGS">Get your ticket with the Community Support Discount</a></li></ul></li></ol><p><strong>Contribution Day:</strong> Separate and always free! Remember to add a <a href="https://ti.to/midcamp/2025/with/7xvckf5d3zu">free Contribution Day ticket</a> to your order if you''ll be joining us on Friday for Contribution Day.</p><p><strong>At MidCamp, everyone is welcome.</strong> Choose the option that fits your situation, and join us for an unforgettable Drupal experience. We can''t wait to see you there!</p>'
+              format: basic_html

@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: c4f18ef1-f22d-47ba-8a63-d9cce18854a9
+  default_langcode: en
+  depends:
+    c6519cad-3630-415d-90db-b51f86753662: user
+default:
+  uid:
+    -
+      entity: c6519cad-3630-415d-90db-b51f86753662
+  filename:
+    -
+      value: 'ImageX logo 2024.png'
+  uri:
+    -
+      value: 'public://2024-03/ImageX logo 2024.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 27588
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1709858061

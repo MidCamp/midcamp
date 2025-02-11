@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: d22d2a9b-73a3-459c-a990-38216ad34342
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: 20171206_112302.jpg
+  uri:
+    -
+      value: 'public://pictures/2018-02/20171206_112302.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 493296
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1519312872

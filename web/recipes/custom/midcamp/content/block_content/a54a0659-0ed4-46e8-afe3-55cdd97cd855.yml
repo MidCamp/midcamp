@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: a54a0659-0ed4-46e8-afe3-55cdd97cd855
+  bundle: basic
+  default_langcode: en
+  depends:
+    055022ee-b859-4d9e-895a-1828aadd3256: user
+default:
+  revision_user:
+    -
+      entity: 055022ee-b859-4d9e-895a-1828aadd3256
+  revision_log:
+    -
+      value: 'changed tentative to Save the date'
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'MidCamp 2023'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  body:
+    -
+      value: "<div class=\"speaker-item__title button--center-container\">\r\n<h3>April 26-28, 2023 at the DePaul University Student Center.</h3>\r\n<!--h3>Join us on&nbsp;<a href=\"https://mid.camp/slack\">Slack</a>, mingle on <a href=\"https://gather.town/app/yOKkaWaSoHfJ1Rft/midcamp\">Gather.town</a>, and <a href=\"/2021/contribution-day\">check out today's schedule</a>.<br />\r\nUse <a href=\"https://www.midcamp.org/sites/default/files/2021-03/hatter21-pw-01.jpg\">the</a> <a href=\"https://www.midcamp.org/sites/default/files/2021-03/hatter21-pw-02.jpg\">code</a> <code>HATTER21</code></h3--></div>\r\n"
+      format: full_html
+      summary: ''

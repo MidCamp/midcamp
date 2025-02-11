@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 4d71cef2-cbef-405d-bd81-1ac4bf84ac80
+  default_langcode: en
+  depends:
+    24fc3758-833c-4625-85ad-e9f3b3c249d2: user
+default:
+  uid:
+    -
+      entity: 24fc3758-833c-4625-85ad-e9f3b3c249d2
+  filename:
+    -
+      value: hero-pink_0.png
+  uri:
+    -
+      value: 'public://2020-02/hero-pink_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 2597
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1582470201

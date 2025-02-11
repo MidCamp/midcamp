@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 0b6b0135-d3c7-4776-a129-1ff48309f972
+  default_langcode: en
+  depends:
+    93251eac-40bb-4ad6-87ac-7acd05bbc734: user
+default:
+  uid:
+    -
+      entity: 93251eac-40bb-4ad6-87ac-7acd05bbc734
+  filename:
+    -
+      value: esteemed-logo.png
+  uri:
+    -
+      value: 'public://2021-03/esteemed-logo.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 5591
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1616279816

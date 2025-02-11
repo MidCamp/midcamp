@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: cd07578f-8ae1-410b-adec-189c8dd6fa8a
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    498b8858-f43f-42f5-8d12-739e7925aa79: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: About
+  menu_name:
+    -
+      value: midcamp-2025-navigation
+  link:
+    -
+      target_uuid: 498b8858-f43f-42f5-8d12-739e7925aa79
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: -50
+  expanded:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true

@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 1ff8b7df-af95-45e9-94b6-3982e7accfbf
+  default_langcode: en
+  depends:
+    92acfac6-6e07-4676-8559-84d082c2572d: user
+default:
+  uid:
+    -
+      entity: 92acfac6-6e07-4676-8559-84d082c2572d
+  filename:
+    -
+      value: Vito_Rade_Photography_DB-BW-27-resizeDre_0.jpg
+  uri:
+    -
+      value: 'public://pictures/2019-12/Vito_Rade_Photography_DB-BW-27-resizeDre_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 367691
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1576092234

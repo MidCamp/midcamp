@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 4174ca3b-5f6d-43e3-9fca-f0a9431ab20d
+  default_langcode: en
+  depends:
+    b6c8fe15-4011-47b9-98f6-61c2d05d3520: user
+default:
+  uid:
+    -
+      entity: b6c8fe15-4011-47b9-98f6-61c2d05d3520
+  filename:
+    -
+      value: '18402242_1380513745362821_3311461474040473757_o (3).jpg'
+  uri:
+    -
+      value: 'public://pictures/2018-02/18402242_1380513745362821_3311461474040473757_o (3).jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 9307
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1518466689

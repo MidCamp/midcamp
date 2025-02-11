@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5cea6ea7-90f4-4e00-b1eb-d6c43aec6132
+  default_langcode: en
+  depends:
+    d5244816-b788-4126-bdf5-243e4b0144f3: user
+default:
+  uid:
+    -
+      entity: d5244816-b788-4126-bdf5-243e4b0144f3
+  filename:
+    -
+      value: palantirnet-logo-4c.png
+  uri:
+    -
+      value: 'public://2019-03/palantirnet-logo-4c.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 2329
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1552064580

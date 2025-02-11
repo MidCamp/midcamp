@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: a184e2ae-74cc-4088-b23c-65ae9a984496
+  default_langcode: en
+  depends:
+    0e0713e6-9e4e-4369-8303-a007ce2133b8: user
+default:
+  uid:
+    -
+      entity: 0e0713e6-9e4e-4369-8303-a007ce2133b8
+  filename:
+    -
+      value: '11 stacked.png'
+  uri:
+    -
+      value: 'public://2024-01/11 stacked.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 131560
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1704678254

@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: c7e13ec4-e002-42ad-aa85-3b122c03e548
+  default_langcode: en
+  depends:
+    f2f22662-513d-4d66-80f4-5d0b76251086: user
+default:
+  uid:
+    -
+      entity: f2f22662-513d-4d66-80f4-5d0b76251086
+  filename:
+    -
+      value: principal-logo.png
+  uri:
+    -
+      value: 'public://2023-02/principal-logo.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 14023
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1677266378

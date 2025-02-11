@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 386c496f-8595-4e6a-92d0-996ae9a3c665
+  default_langcode: en
+  depends:
+    5358c624-664c-4d13-98c1-633cbb50eafe: user
+default:
+  uid:
+    -
+      entity: 5358c624-664c-4d13-98c1-633cbb50eafe
+  filename:
+    -
+      value: bc.png
+  uri:
+    -
+      value: 'public://pictures/2018-02/bc.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 81165
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1518392355

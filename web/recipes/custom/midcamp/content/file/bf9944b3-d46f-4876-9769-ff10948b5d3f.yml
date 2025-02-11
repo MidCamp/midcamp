@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: bf9944b3-d46f-4876-9769-ff10948b5d3f
+  default_langcode: en
+  depends:
+    302f396f-b1da-474b-92a7-4192dee6e0ae: user
+default:
+  uid:
+    -
+      entity: 302f396f-b1da-474b-92a7-4192dee6e0ae
+  filename:
+    -
+      value: 'Hatter with blue spots frame.png'
+  uri:
+    -
+      value: 'public://pictures/2024-11/Hatter with blue spots frame.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 326594
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1732486724

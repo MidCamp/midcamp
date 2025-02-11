@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 2621bddd-db55-4fee-b292-efe64f69ed45
+  default_langcode: en
+  depends:
+    08ed977d-06dc-466a-b7c3-d4e373aa2f01: user
+default:
+  uid:
+    -
+      entity: 08ed977d-06dc-466a-b7c3-d4e373aa2f01
+  filename:
+    -
+      value: profile_crop.jpg
+  uri:
+    -
+      value: 'public://pictures/2018-12/profile_crop.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 317172
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1544060588

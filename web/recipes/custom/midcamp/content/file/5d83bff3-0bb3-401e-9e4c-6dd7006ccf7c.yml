@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5d83bff3-0bb3-401e-9e4c-6dd7006ccf7c
+  default_langcode: en
+  depends:
+    814d8e6e-4205-4d12-bbf7-f79de0f4b286: user
+default:
+  uid:
+    -
+      entity: 814d8e6e-4205-4d12-bbf7-f79de0f4b286
+  filename:
+    -
+      value: hatterforyou.jpg
+  uri:
+    -
+      value: 'public://pictures/2018-02/hatterforyou.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 158998
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1519269757

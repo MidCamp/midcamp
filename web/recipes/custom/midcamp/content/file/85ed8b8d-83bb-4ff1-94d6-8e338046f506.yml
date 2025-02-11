@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 85ed8b8d-83bb-4ff1-94d6-8e338046f506
+  default_langcode: en
+  depends:
+    ce8241cf-c0eb-4f18-b586-73125e767097: user
+default:
+  uid:
+    -
+      entity: ce8241cf-c0eb-4f18-b586-73125e767097
+  filename:
+    -
+      value: photo.jpg
+  uri:
+    -
+      value: 'public://pictures/2018-01/photo.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 8600
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1517240878

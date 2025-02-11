@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 3a9b97b7-dd10-4af6-ad9c-418707432f11
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    08dfbbe3-144b-4993-bba0-9bf78eab5600: menu_link_content
+    140a9174-5831-4c75-96e3-682dda5a3b5b: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Speaker Terms & Conditions'
+  menu_name:
+    -
+      value: midcamp-2025-navigation
+  link:
+    -
+      target_uuid: 140a9174-5831-4c75-96e3-682dda5a3b5b
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:08dfbbe3-144b-4993-bba0-9bf78eab5600'
+  revision_translation_affected:
+    -
+      value: true

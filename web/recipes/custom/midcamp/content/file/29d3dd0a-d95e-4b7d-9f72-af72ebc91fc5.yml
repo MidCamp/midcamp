@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 29d3dd0a-d95e-4b7d-9f72-af72ebc91fc5
+  default_langcode: en
+  depends:
+    b9fa28db-0d47-4be1-a0cb-b517716c0fb2: user
+default:
+  uid:
+    -
+      entity: b9fa28db-0d47-4be1-a0cb-b517716c0fb2
+  filename:
+    -
+      value: slack-photo-1.png
+  uri:
+    -
+      value: 'public://pictures/2023-02/slack-photo-1.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 313407
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1677082480

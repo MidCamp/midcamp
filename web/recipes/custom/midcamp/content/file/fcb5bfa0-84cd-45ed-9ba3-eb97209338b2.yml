@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: fcb5bfa0-84cd-45ed-9ba3-eb97209338b2
+  default_langcode: en
+  depends:
+    31ac905f-598a-4973-a519-7f30d5d703f8: user
+default:
+  uid:
+    -
+      entity: 31ac905f-598a-4973-a519-7f30d5d703f8
+  filename:
+    -
+      value: Smirk250px.jpg
+  uri:
+    -
+      value: 'public://pictures/2018-12/Smirk250px.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 78423
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1544638058

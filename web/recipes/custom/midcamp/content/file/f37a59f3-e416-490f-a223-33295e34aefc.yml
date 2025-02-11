@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f37a59f3-e416-490f-a223-33295e34aefc
+  default_langcode: en
+  depends:
+    845b4f1c-2f10-4c55-ad9a-378893385bf3: user
+default:
+  uid:
+    -
+      entity: 845b4f1c-2f10-4c55-ad9a-378893385bf3
+  filename:
+    -
+      value: AmyJune-asheville.jpg
+  uri:
+    -
+      value: 'public://pictures/2023-01/AmyJune-asheville.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 127918
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1674751513

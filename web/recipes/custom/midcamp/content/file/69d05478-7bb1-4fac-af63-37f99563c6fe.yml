@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 69d05478-7bb1-4fac-af63-37f99563c6fe
+  default_langcode: en
+  depends:
+    31e5216d-59d3-478b-a9ff-7103fb437a8e: user
+default:
+  uid:
+    -
+      entity: 31e5216d-59d3-478b-a9ff-7103fb437a8e
+  filename:
+    -
+      value: 20180411_drupalconprofile.jpeg
+  uri:
+    -
+      value: 'public://pictures/2019-02/20180411_drupalconprofile.jpeg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 45995
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1549221391

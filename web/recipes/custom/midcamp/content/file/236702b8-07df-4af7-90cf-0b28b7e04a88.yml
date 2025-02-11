@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 236702b8-07df-4af7-90cf-0b28b7e04a88
+  default_langcode: en
+  depends:
+    91190477-bc79-4c5a-99f4-27d120a7d99a: user
+default:
+  uid:
+    -
+      entity: 91190477-bc79-4c5a-99f4-27d120a7d99a
+  filename:
+    -
+      value: '3 - Daniel Ficker_065_sm.jpeg'
+  uri:
+    -
+      value: 'public://pictures/2023-01/3 - Daniel Ficker_065_sm.jpeg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 440352
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1674620394

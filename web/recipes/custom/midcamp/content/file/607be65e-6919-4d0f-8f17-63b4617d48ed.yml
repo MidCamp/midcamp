@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 607be65e-6919-4d0f-8f17-63b4617d48ed
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: BT_Logo_2017.png
+  uri:
+    -
+      value: 'public://2018-03/BT_Logo_2017.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 26288
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1520441468

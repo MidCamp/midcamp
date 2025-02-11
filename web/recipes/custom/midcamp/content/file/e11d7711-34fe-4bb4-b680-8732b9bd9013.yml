@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: e11d7711-34fe-4bb4-b680-8732b9bd9013
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: 'Michael Cannon - shaved - Profile.jpg'
+  uri:
+    -
+      value: 'public://pictures/2018-01/Michael Cannon - shaved - Profile.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 7427
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1516317628

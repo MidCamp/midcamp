@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 2315bec9-1a5a-47f7-a3b0-0077df606127
+  default_langcode: en
+  depends:
+    16d1c5aa-e922-4d03-9a92-873703bafefa: user
+default:
+  uid:
+    -
+      entity: 16d1c5aa-e922-4d03-9a92-873703bafefa
+  filename:
+    -
+      value: Burge.jpg
+  uri:
+    -
+      value: 'public://pictures/2020-01/Burge.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 283388
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1579043538

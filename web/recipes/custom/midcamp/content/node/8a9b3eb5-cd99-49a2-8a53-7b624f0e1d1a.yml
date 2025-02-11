@@ -1,0 +1,59 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 8a9b3eb5-cd99-49a2-8a53-7b624f0e1d1a
+  bundle: page
+  default_langcode: en
+  depends:
+    0c715b96-8782-46d3-8dd9-b6c076cea6bd: user
+    814d8e6e-4205-4d12-bbf7-f79de0f4b286: user
+default:
+  revision_uid:
+    -
+      entity: 0c715b96-8782-46d3-8dd9-b6c076cea6bd
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 814d8e6e-4205-4d12-bbf7-f79de0f4b286
+  title:
+    -
+      value: 'Topic Tracks'
+  created:
+    -
+      value: 1513370228
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  path:
+    -
+      alias: /topic-tracks
+      langcode: en
+      pathauto: 0
+  field_page_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 5c4c3941-a715-4a17-9dda-ce31a664bb44
+          bundle: paragraphs_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1513370287
+          behavior_settings:
+            -
+              value: {  }
+          field_paragraph_text:
+            -
+              value: "<h3>MidCamp aims to offer sessions for everyone in the Drupal community</h3>\r\n\r\n<h3>Site Building</h3>\r\n\r\n<p>The “site builder” audience creates websites using the Drupal UI and contributed modules. Presentations in this category should focus on what comes “out of the box” with Drupal, and less about what can be done with custom code.</p>\r\n\r\n<h3>Front End</h3>\r\n\r\n<p>The “front end” developer focuses on the presentation layer of a website; some topics might include HTML, CSS, Javascript, Accessibility, User Experience, Graphic Design. Drupal-specific topics including theming and Twig.</p>\r\n\r\n<h3>Back End</h3>\r\n\r\n<p>Focused on the functionality layer, a “back end” developer gets into the guts of a web application. For Drupal, this means PHP, databases, custom modules, migrations, and headless Drupal (or should the absence of a front end still be considered Front End?).</p>\r\n\r\n<h3>DevOps</h3>\r\n\r\n<p>Probably the least Drupal-specific, this area covers the technical and philosophical practices of deployment processes, servers, continuous integration, testing, etc.</p>\r\n\r\n<h3>End users / Content Admin</h3>\r\n\r\n<p>Content administrators could benefit from beginner-level sessions on the basic concepts of Drupal from the end user’s perspective, along with potentially more in-depth sessions on analytics, search engine optimization, and content marketing.</p>\r\n\r\n<h3>Business</h3>\r\n\r\n<p>We are very interested in sessions pertaining to how you run your Drupal focused business. How you market, manage, and deliver Drupal services and products should be the focus of these non-technical sessions.</p>\r\n\r\n<h3>Project Management</h3>\r\n\r\n<p>Possible topics on the project management&nbsp;side include building a team, planning/budgeting/estimating projects, resource allocation, project methodologies, or sharing processes.</p>\r\n\r\n<h3>Design</h3>\r\n\r\n<p>Designing for the web has evolved as our CMSes have. Topics focusing on designing in the browser, responsive and mobile first design, accessibility in design will be most welcome.</p>\r\n\r\n<h3>Community</h3>\r\n\r\n<p>A community session focuses more on the people that make all this happen. Could include lessons from other open-source projects, historical perspectives on the Drupal community, sprint/camp/user group planning tips and lessons learned.</p>\r\n"
+              format: basic_html

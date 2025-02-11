@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 16f32d51-048d-4689-8482-4c2c174a78cf
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: 18157994_10154581147496274_1076046316008694022_n.jpg
+  uri:
+    -
+      value: 'public://pictures/2018-01/18157994_10154581147496274_1076046316008694022_n.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 13651
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1516729198

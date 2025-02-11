@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 718a2f09-3a75-462a-9c04-3e21f78a81bb
+  bundle: basic
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'MidCamp 2020'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  body:
+    -
+      value: "<div class=\"speaker-item__title button--center-container\">\r\n<h3>Virtual MidCamp 2020 is a wrap!&nbsp;Join us on&nbsp;<a href=\"https://mid.camp/slack\">Slack</a> and catch all the videos on <a href=\"http://drupal.tv/curated-playlists/midcamp-2020\">Drupal.tv</a>! If you attended, please <a href=\"https://mid.camp/survey\">provide your feedback</a>.</h3>\r\n\r\n<h3>We will announce 2021 dates as soon as we can.&nbsp;<a href=\"https://t.co/k2Xm10l1Rs\">Sign up</a>&nbsp;for our mailing list to stay informed.</h3>\r\n</div>\r\n"
+      format: full_html
+      summary: ''

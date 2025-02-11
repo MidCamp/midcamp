@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: e1d16813-ded3-4fc6-976f-86ba736be49d
+  bundle: event
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'MidCamp 2025'
+  description:
+    -
+      value: '<p>MidCamp is the Midwest Drupal Camp—a three-day event that brings together developers, designers, strategists, and open-source enthusiasts from across the community.</p><p>This year, we’re thrilled to host an engaging lineup of sessions, hands-on trainings, and collaboration opportunities to share knowledge and connect with peers.</p><h2>2025 Sessions are Currently Being Reviewed!</h2><p>Keep checking back here and be sure to follow us on <a href="https://www.linkedin.com/company/midcamp">LinkedIn</a>, <a href="https://bsky.app/profile/midcamp.org">BlueSky</a>, <a href="https://fosstodon.org/@midcamp">Mastodon</a>, <a href="https://twitter.com/midwestcamp">X (formerly Twitter)</a>, or <a href="https://www.facebook.com/MidCamp/">Facebook</a> to see when the sessions are finalized! &nbsp;Session selection emails should go out the week of February 17, 2025. &nbsp;Not speaking? &nbsp;Remember to get your <a href="https://www.midcamp.org/tickets">tickets</a>, this will be a MidCamp to remember!</p><h2><strong>Join Us at MidCamp 2025!</strong></h2><p>Elevate your skills and connect with the Drupal community at MidCamp 2025, happening May 20-22 in Chicago. Need help securing approval to attend? Our <a href="https://www.midcamp.org/convince-your-boss">Convince Your Boss</a> guide offers compelling reasons to support your participation.</p><h2>Sponsorship Opportunities Available</h2><p>Help make MidCamp 2025 unforgettable! Explore our <a href="https://www.midcamp.org/2025/sponsor-midcamp">sponsor packages</a> to find the perfect way to support the event and showcase your brand. Join us in strengthening the Drupal ecosystem while gaining visibility with a highly engaged audience.</p><h2>Volunteer with Us!</h2><p>MidCamp thrives because of its amazing volunteers. Whether you''re new to Drupal or a long-time contributor, your help is invaluable. Interested in pitching in? Join our team and help shape the event!</p><h3>How to Join:</h3><p>Join the <code>#midcamp-organizers</code> channel on our Slack team: <a href="https://mid.camp/slack">https://mid.camp/slack</a></p><p>We’d love to have you on board!</p><h2>Learn More About the Event</h2><p>Curious about what’s happening at MidCamp 2025? Visit the <a href="https://www.midcamp.org/2025/schedule">event schedule</a> for details on key dates, sessions, and what to expect leading up to and during the camp.</p><p>&nbsp;</p>'
+      format: full_html
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /2025
+      langcode: en
+      pathauto: 0
+  field_banner_cta_anonymous:
+    -
+      uri: 'internal:/tickets'
+      title: 'Get your ticket'
+      options: {  }
+  field_banner_cta_authenticated:
+    -
+      uri: 'internal:/tickets'
+      title: 'Get your ticket'
+      options: {  }
+  field_date_has_time:
+    -
+      value: false
