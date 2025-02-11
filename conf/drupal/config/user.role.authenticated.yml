@@ -7,6 +7,7 @@ dependencies:
     - filter.format.restricted_html
     - filter.format.webform_default
     - node.type.topic
+    - node.type.training
   module:
     - comment
     - contact
@@ -32,6 +33,7 @@ permissions:
   - 'create field_social_post'
   - 'edit own field_social_post'
   - 'edit own topic content'
+  - 'edit own training content'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
