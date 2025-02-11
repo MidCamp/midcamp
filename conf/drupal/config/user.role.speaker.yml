@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - node.type.topic
+    - node.type.training
   module:
     - field_permissions
     - node
@@ -14,3 +15,4 @@ is_admin: null
 permissions:
   - 'edit own field_video'
   - 'edit own topic content'
+  - 'edit own training content'
