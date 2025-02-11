@@ -68,7 +68,7 @@
         "drupal/field_group": "^3.2",
         "drupal/field_permissions": "^1.1",
         "drupal/google_analytics": "^4.0",
-        "drupal/honeypot": "^2.1",
+        "drupal/honeypot": "2.1.4",
         "drupal/libraries": "^4.0",
         "drupal/linkicon": "^1.10",
         "drupal/mailchimp": "^3.0",
@@ -102,7 +102,11 @@
     },
     "extra": {
         "patches": {
+            "drupal/admin_toolbar": {
+                "3493798 - Compatibility issue: Route update.theme_install does not exist in Drupal 11.0.x & 10.4.x": "patches/admin_toolbar_3493798.patch"
+            },
             "drupal/mailchimp": {
+                "3505905 - Argument #2 ($array) must be of type array, null given in mailchimp_get_lists()": "patches/mailchimp_3454911.patch",
                 "Ensure missing API keys in lower environments don't break the site": "patches/mailchimp-prevent-wsod-missing-keys.patch"
             },
             "drupal/libraries": {
