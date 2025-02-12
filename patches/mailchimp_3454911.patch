@@ -1,0 +1,38 @@
+From 39f444c8a674bd9f5c17779f4893ec2ee7fe758e Mon Sep 17 00:00:00 2001
+From: Bernardo Martinez <49554-bernardm28@users.noreply.drupalcode.org>
+Date: Tue, 11 Feb 2025 19:51:37 +0000
+Subject: [PATCH] fixes bug on the main branch
+
+---
+ mailchimp.module | 12 +++++++-----
+ 1 file changed, 7 insertions(+), 5 deletions(-)
+
+diff --git a/mailchimp.module b/mailchimp.module
+index ceac71f9..38c0ad67 100644
+--- a/mailchimp.module
++++ b/mailchimp.module
+@@ -176,14 +176,16 @@ function mailchimp_get_lists(array $list_ids = [], $reset = FALSE) {
+   // Filter by given IDs.
+   if (!empty($list_ids)) {
+     $filtered_lists = [];
+-
+-    foreach ($list_ids as $id) {
+-      if (array_key_exists($id, $lists)) {
+-        $filtered_lists[$id] = $lists[$id];
++    
++    if(isset($lists)) {
++      foreach ($list_ids as $id) {
++        if (array_key_exists($id, $lists)) {
++          $filtered_lists[$id] = $lists[$id];
++        }
+       }
+     }
+-
+     return $filtered_lists;
++
+   }
+   else {
+     return $lists;
+-- 
+GitLab
+
