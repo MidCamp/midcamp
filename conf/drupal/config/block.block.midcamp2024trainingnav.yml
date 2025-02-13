@@ -12,7 +12,7 @@ dependencies:
 id: midcamp2024trainingnav
 theme: hatter
 region: content
-weight: -16
+weight: -18
 provider: null
 plugin: 'block_content:7ecf4c8c-cb41-41f2-9a9d-8b5fdd717ed1'
 settings:
