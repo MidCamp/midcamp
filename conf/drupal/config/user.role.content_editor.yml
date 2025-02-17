@@ -21,7 +21,6 @@ dependencies:
     - block_content
     - comment
     - contact
-    - editoria11y
     - field_permissions
     - field_ui
     - file
@@ -125,7 +124,6 @@ permissions:
   - 'edit terms in sponsor_packages'
   - 'edit terms in tags'
   - 'edit terms in topic_type'
-  - 'mark as hidden in editoria11y'
   - 'revert all revisions'
   - 'revert article revisions'
   - 'revert job revisions'
@@ -140,7 +138,6 @@ permissions:
   - 'use text format mailchimp_campaign'
   - 'view all revisions'
   - 'view article revisions'
-  - 'view editoria11y checker'
   - 'view job revisions'
   - 'view own field_captions'
   - 'view page revisions'

@@ -7,10 +7,10 @@ dependencies:
     - filter.format.restricted_html
     - filter.format.webform_default
     - node.type.topic
+    - node.type.training
   module:
     - comment
     - contact
-    - editoria11y
     - field_permissions
     - filter
     - media
@@ -33,7 +33,7 @@ permissions:
   - 'create field_social_post'
   - 'edit own field_social_post'
   - 'edit own topic content'
-  - 'mark as hidden in editoria11y'
+  - 'edit own training content'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
@@ -41,7 +41,6 @@ permissions:
   - 'use text format basic_html'
   - 'use text format restricted_html'
   - 'use text format webform_default'
-  - 'view editoria11y checker'
   - 'view field_accepted_confirmed'
   - 'view field_captions'
   - 'view field_feedback_form'

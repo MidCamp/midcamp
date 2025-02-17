@@ -1,0 +1,34 @@
+From e5620d5db677da3b7b38d36eb2fe6526bc52074d Mon Sep 17 00:00:00 2001
+From: Shivam-Innoraft <shivam.tiwari@innoraft.com>
+Date: Fri, 17 Jan 2025 00:01:49 +0530
+Subject: [PATCH] Fixed compatibility issue related to Drupal 10.4.x & 11.0.x
+
+---
+ admin_toolbar_tools/src/Plugin/Derivative/ExtraLinks.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/admin_toolbar_tools/src/Plugin/Derivative/ExtraLinks.php b/admin_toolbar_tools/src/Plugin/Derivative/ExtraLinks.php
+index baad5a9..3045323 100644
+--- a/admin_toolbar_tools/src/Plugin/Derivative/ExtraLinks.php
++++ b/admin_toolbar_tools/src/Plugin/Derivative/ExtraLinks.php
+@@ -486,7 +486,7 @@ class ExtraLinks extends DeriverBase implements ContainerDeriverInterface {
+ 
+     // If module Update Manager is enabled.
+     if ($this->moduleHandler->moduleExists('update')) {
+-      if (version_compare(\Drupal::VERSION, '11.0.0', '<')) {
++      if (version_compare(\Drupal::VERSION, '11.0.0', '<') && $this->routeExists('update.module_install')) {
+         $links['update.module_install'] = [
+           'title' => $this->t('Install new module'),
+           'route_name' => 'update.module_install',
+@@ -498,7 +498,7 @@ class ExtraLinks extends DeriverBase implements ContainerDeriverInterface {
+         'route_name' => 'update.module_update',
+         'parent' => 'system.modules_list',
+       ] + $base_plugin_definition;
+-      if (version_compare(\Drupal::VERSION, '11.0.0', '<')) {
++      if (version_compare(\Drupal::VERSION, '11.0.0', '<') && $this->routeExists('update.theme_install')) {
+         $links['update.theme_install'] = [
+           'title' => $this->t('Install new theme'),
+           'route_name' => 'update.theme_install',
+-- 
+GitLab
+

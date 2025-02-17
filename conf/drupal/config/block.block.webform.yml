@@ -12,7 +12,7 @@ dependencies:
 id: webform
 theme: hatter
 region: content
-weight: -1
+weight: -4
 provider: null
 plugin: webform_block
 settings:
@@ -23,6 +23,7 @@ settings:
   webform_id: 2023_birds_of_a_feather_bof_subm
   default_data: ''
   redirect: false
+  lazy: false
 visibility:
   'entity_bundle:webform_submission':
     id: 'entity_bundle:webform_submission'

@@ -12,7 +12,7 @@ dependencies:
 id: midcamp2024survey
 theme: hatter
 region: content
-weight: -31
+weight: 6
 provider: null
 plugin: 'block_content:701df378-7417-4c39-90c2-6bada9abdc14'
 settings:

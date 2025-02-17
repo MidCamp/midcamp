@@ -12,7 +12,7 @@ dependencies:
 id: views_block__training_block_2
 theme: hatter
 region: content
-weight: 4
+weight: 0
 provider: null
 plugin: 'views_block:training-block_2'
 settings:
