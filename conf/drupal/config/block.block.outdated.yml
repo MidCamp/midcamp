@@ -1,0 +1,30 @@
+uuid: d7797346-85a2-472f-a1ca-1b71dd7b4b98
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6883d5a2-42bc-4e5b-8719-2f7a42a63f43'
+  module:
+    - block_content
+    - system
+  theme:
+    - hatter
+id: outdated
+theme: hatter
+region: content
+weight: -13
+provider: null
+plugin: 'block_content:6883d5a2-42bc-4e5b-8719-2f7a42a63f43'
+settings:
+  id: 'block_content:6883d5a2-42bc-4e5b-8719-2f7a42a63f43'
+  label: Outdated
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/2018/*\r\n/2019/*\r\n/2020/*\r\n/2021/*\r\n/2022/*\r\n/2023/*\r\n/2024/*"
