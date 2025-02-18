@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 2fdc661d-f401-4d97-b1fd-a1c335dee169
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: 250x250-Andrew2-1024.jpg
+  uri:
+    -
+      value: 'public://pictures/2018-01/250x250-Andrew2-1024.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 9785
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1517266855

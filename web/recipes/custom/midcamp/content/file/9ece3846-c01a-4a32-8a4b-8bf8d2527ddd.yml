@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9ece3846-c01a-4a32-8a4b-8bf8d2527ddd
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: jsi.jpg
+  uri:
+    -
+      value: 'public://2019-11/jsi.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 9389
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1574872186

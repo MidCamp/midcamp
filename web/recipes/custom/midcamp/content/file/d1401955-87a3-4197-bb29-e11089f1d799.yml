@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: d1401955-87a3-4197-bb29-e11089f1d799
+  default_langcode: en
+  depends:
+    b013e5eb-966f-4d21-9392-7b6eafd55808: user
+default:
+  uid:
+    -
+      entity: b013e5eb-966f-4d21-9392-7b6eafd55808
+  filename:
+    -
+      value: electric-citizen-squarelogo-1518628049941.png
+  uri:
+    -
+      value: 'public://2018-12/electric-citizen-squarelogo-1518628049941.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 14325
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1544642509

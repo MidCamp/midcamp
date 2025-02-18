@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: fcc7ea64-24c3-4846-82ad-582fca8d2fdf
+  default_langcode: en
+  depends:
+    713e819e-d829-4373-b97e-3ee75a98285a: user
+default:
+  uid:
+    -
+      entity: 713e819e-d829-4373-b97e-3ee75a98285a
+  filename:
+    -
+      value: triplo-lg.png
+  uri:
+    -
+      value: 'public://2019-03/triplo-lg.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 21192
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1552885725

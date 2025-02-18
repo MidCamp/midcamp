@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 18a2e91a-1598-4c8c-9768-02ef4d609ca6
+  default_langcode: en
+  depends:
+    619c4a4c-40eb-4866-9ad0-bca5f79d6792: user
+default:
+  uid:
+    -
+      entity: 619c4a4c-40eb-4866-9ad0-bca5f79d6792
+  filename:
+    -
+      value: ePPicjbp_400x400.jpg
+  uri:
+    -
+      value: 'public://pictures/2018-02/ePPicjbp_400x400.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 9725
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1519060643

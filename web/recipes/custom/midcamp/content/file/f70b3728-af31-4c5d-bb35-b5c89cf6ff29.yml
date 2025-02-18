@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f70b3728-af31-4c5d-bb35-b5c89cf6ff29
+  default_langcode: en
+  depends:
+    0b1cd5cf-3621-4c8d-bf98-034bba8f6ea6: user
+default:
+  uid:
+    -
+      entity: 0b1cd5cf-3621-4c8d-bf98-034bba8f6ea6
+  filename:
+    -
+      value: Fatima--headshot-SM.jpeg
+  uri:
+    -
+      value: 'public://pictures/2021-03/Fatima--headshot-SM.jpeg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 98689
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1616567101

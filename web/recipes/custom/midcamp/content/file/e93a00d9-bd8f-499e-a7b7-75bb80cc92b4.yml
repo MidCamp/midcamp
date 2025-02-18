@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: e93a00d9-bd8f-499e-a7b7-75bb80cc92b4
+  default_langcode: en
+  depends:
+    32f7fbf2-56b0-4f7c-aed8-bbb37bed5010: user
+default:
+  uid:
+    -
+      entity: 32f7fbf2-56b0-4f7c-aed8-bbb37bed5010
+  filename:
+    -
+      value: 'hess_michael_5x7 (1).jpg'
+  uri:
+    -
+      value: 'public://2018-02/hess_michael_5x7 (1).jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 40919
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1519311535

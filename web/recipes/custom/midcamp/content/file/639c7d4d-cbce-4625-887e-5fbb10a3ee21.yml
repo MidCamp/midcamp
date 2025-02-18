@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 639c7d4d-cbce-4625-887e-5fbb10a3ee21
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: ben_headshot_cropped_turkey_strait.jpg
+  uri:
+    -
+      value: 'public://pictures/2018-01/ben_headshot_cropped_turkey_strait.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 7852
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1517024621

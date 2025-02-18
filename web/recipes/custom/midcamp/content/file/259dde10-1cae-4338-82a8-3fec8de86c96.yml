@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 259dde10-1cae-4338-82a8-3fec8de86c96
+  default_langcode: en
+  depends:
+    075ee3ba-3611-40ff-83c7-3564ad511ed6: user
+default:
+  uid:
+    -
+      entity: 075ee3ba-3611-40ff-83c7-3564ad511ed6
+  filename:
+    -
+      value: IMG_7341_sm.jpg
+  uri:
+    -
+      value: 'public://pictures/2025-01/IMG_7341_sm.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 414921
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1736883790

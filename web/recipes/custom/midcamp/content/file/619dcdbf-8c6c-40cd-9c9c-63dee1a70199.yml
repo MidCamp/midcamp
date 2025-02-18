@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 619dcdbf-8c6c-40cd-9c9c-63dee1a70199
+  default_langcode: en
+  depends:
+    338f18bd-5bdd-4bd2-bcf3-eddc361356fa: user
+default:
+  uid:
+    -
+      entity: 338f18bd-5bdd-4bd2-bcf3-eddc361356fa
+  filename:
+    -
+      value: 'Screen Shot 2023-03-29 at 4.58.46 PM.png'
+  uri:
+    -
+      value: 'public://pictures/2023-03/Screen Shot 2023-03-29 at 4.58.46 PM.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 360449
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1680183847

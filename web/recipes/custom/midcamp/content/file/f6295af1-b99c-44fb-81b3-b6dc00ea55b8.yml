@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f6295af1-b99c-44fb-81b3-b6dc00ea55b8
+  default_langcode: en
+  depends:
+    b9fa28db-0d47-4be1-a0cb-b517716c0fb2: user
+default:
+  uid:
+    -
+      entity: b9fa28db-0d47-4be1-a0cb-b517716c0fb2
+  filename:
+    -
+      value: 'Spry Horizontal Emerald CMYK.png'
+  uri:
+    -
+      value: 'public://2023-03/Spry Horizontal Emerald CMYK.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 9165
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1679929928

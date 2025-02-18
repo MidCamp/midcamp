@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 8f46ab0f-21f5-4a6b-aa8c-6ebb2a742423
+  default_langcode: en
+  depends:
+    75792dbd-fa20-4d0d-9c5f-4f7e7178d2f7: user
+default:
+  uid:
+    -
+      entity: 75792dbd-fa20-4d0d-9c5f-4f7e7178d2f7
+  filename:
+    -
+      value: Eric1-thumb_1.jpg
+  uri:
+    -
+      value: 'public://pictures/2018-02/Eric1-thumb_1.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 12160
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1518663319

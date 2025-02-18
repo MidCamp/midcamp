@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 14845e21-fb9f-43f8-9e16-96b1a5f4f614
+  default_langcode: en
+  depends:
+    48582117-7f75-481a-b20b-e93ab742e03e: user
+default:
+  uid:
+    -
+      entity: 48582117-7f75-481a-b20b-e93ab742e03e
+  filename:
+    -
+      value: 'Screen Shot 2019-12-18 at 3.47.53 PM.png'
+  uri:
+    -
+      value: 'public://pictures/2019-12/Screen Shot 2019-12-18 at 3.47.53 PM.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 255782
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1576705684

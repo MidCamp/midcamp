@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5bb6aedc-e477-4509-8d34-bc04b9f9ea0f
+  default_langcode: en
+  depends:
+    63dd0ad9-a581-4381-b8e4-6574280f4ddf: user
+default:
+  uid:
+    -
+      entity: 63dd0ad9-a581-4381-b8e4-6574280f4ddf
+  filename:
+    -
+      value: Jason-Want-250.jpg
+  uri:
+    -
+      value: 'public://pictures/2018-12/Jason-Want-250.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 140187
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1544641470

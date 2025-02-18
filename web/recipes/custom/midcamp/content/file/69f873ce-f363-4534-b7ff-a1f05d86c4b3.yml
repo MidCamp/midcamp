@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 69f873ce-f363-4534-b7ff-a1f05d86c4b3
+  default_langcode: en
+  depends:
+    20b28956-f5c0-45f3-aa90-8a3abc238f7d: user
+default:
+  uid:
+    -
+      entity: 20b28956-f5c0-45f3-aa90-8a3abc238f7d
+  filename:
+    -
+      value: Pantheon_Color_rev.png
+  uri:
+    -
+      value: 'public://2019-01/Pantheon_Color_rev.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 5469
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1547262189

@@ -1,0 +1,72 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 498b8858-f43f-42f5-8d12-739e7925aa79
+  bundle: page
+  default_langcode: en
+  depends:
+    055022ee-b859-4d9e-895a-1828aadd3256: user
+    302f396f-b1da-474b-92a7-4192dee6e0ae: user
+    e1d16813-ded3-4fc6-976f-86ba736be49d: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: 055022ee-b859-4d9e-895a-1828aadd3256
+  revision_log:
+    -
+      value: 'Changed date to May from March'
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 302f396f-b1da-474b-92a7-4192dee6e0ae
+  title:
+    -
+      value: 'About MidCamp 2025'
+  created:
+    -
+      value: 1714004366
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /2025/about
+      langcode: en
+      pathauto: 0
+  field_event:
+    -
+      entity: e1d16813-ded3-4fc6-976f-86ba736be49d
+  field_page_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 9127447e-0170-40fa-8900-66315351ac9a
+          bundle: paragraphs_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1668568409
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_paragraph_text:
+            -
+              value: '<p>MidCamp is happening on May 20-22, 2025. This Chicago-area event brings together designers, developers, users, and evaluators of the open source Drupal content management software.</p><p>Whether you’re an existing Drupal user, developer, designer, site builder, or are maybe just a little Drupal-curious, you won’t want to miss out on this unique event. MidCamp offers attendees the opportunity to increase their Drupal knowledge through networking, contribution sprints, training, and more.</p><p>MidCamp is organized by a broad network volunteers from the regional Drupal community, making it a true showcase for Drupal in the Midwest. MidCamp attracts speakers and attendees from around the country and the world, making it more than just another local event.</p>'
+              format: basic_html

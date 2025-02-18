@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 18cd1359-c257-401d-8ddc-6d1d89a568cc
+  default_langcode: en
+  depends:
+    2eb5f84e-9a1f-4a67-9e19-06e85136f745: user
+default:
+  uid:
+    -
+      entity: 2eb5f84e-9a1f-4a67-9e19-06e85136f745
+  filename:
+    -
+      value: th_headshot2.JPG
+  uri:
+    -
+      value: 'public://pictures/2025-01/th_headshot2.JPG'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 111308
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1736521630

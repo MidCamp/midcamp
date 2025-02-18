@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: bb7d4a10-7e20-4f24-91ef-0e2bafd2a250
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: Net2CommunityVertLogo.png
+  uri:
+    -
+      value: 'public://2018-02/Net2CommunityVertLogo.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 6948
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1519084835

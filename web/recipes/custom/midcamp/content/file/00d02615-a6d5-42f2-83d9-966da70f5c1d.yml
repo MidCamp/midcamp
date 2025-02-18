@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 00d02615-a6d5-42f2-83d9-966da70f5c1d
+  default_langcode: en
+  depends:
+    9ac3c097-bc0e-4c02-93e4-2e1e5d62ad5d: user
+default:
+  uid:
+    -
+      entity: 9ac3c097-bc0e-4c02-93e4-2e1e5d62ad5d
+  filename:
+    -
+      value: 'Social Media 800px.jpg'
+  uri:
+    -
+      value: 'public://pictures/2018-11/Social Media 800px.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 108563
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1542468461

@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: e1eb90c7-4b0d-4c9e-bcaa-c12aa4e94083
+  bundle: location
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Room 324 (Hybrid Block 2)'
+  weight:
+    -
+      value: 15
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_link:
+    -
+      uri: 'https://youtube.com/live/3gspyMJ8B80'
+      title: 'Go to [term:name]'
+      options: {  }

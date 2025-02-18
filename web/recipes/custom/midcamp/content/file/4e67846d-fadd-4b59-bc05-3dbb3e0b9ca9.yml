@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 4e67846d-fadd-4b59-bc05-3dbb3e0b9ca9
+  default_langcode: en
+  depends:
+    0c715b96-8782-46d3-8dd9-b6c076cea6bd: user
+default:
+  uid:
+    -
+      entity: 0c715b96-8782-46d3-8dd9-b6c076cea6bd
+  filename:
+    -
+      value: palantirnet_1.png
+  uri:
+    -
+      value: 'public://2020-02/palantirnet_1.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 5951
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1581957034

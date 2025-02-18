@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: db631186-51a3-4743-9cab-5bc0b7efd681
+  default_langcode: en
+  depends:
+    814d8e6e-4205-4d12-bbf7-f79de0f4b286: user
+default:
+  uid:
+    -
+      entity: 814d8e6e-4205-4d12-bbf7-f79de0f4b286
+  filename:
+    -
+      value: PlatformLogo-Blue.gif
+  uri:
+    -
+      value: 'public://2018-12/PlatformLogo-Blue.gif'
+  filemime:
+    -
+      value: image/gif
+  filesize:
+    -
+      value: 900
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1544807386
