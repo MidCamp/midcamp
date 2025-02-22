@@ -12,7 +12,7 @@ field_name: field_presenter_slides
 entity_type: node
 bundle: topic
 label: 'Presenter Slides'
-description: 'If slides exist for your session feel free to upload them when you submit. Otherwise you''re welcome to add them here after your talk.'
+description: "If slides exist for your session feel free to upload them when you submit. Otherwise you're welcome to add them here after your talk."
 required: false
 translatable: false
 default_value: {  }

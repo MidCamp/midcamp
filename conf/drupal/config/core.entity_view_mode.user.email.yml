@@ -6,5 +6,6 @@ dependencies:
     - user
 id: user.email
 label: Email
+description: ''
 targetEntityType: user
 cache: true

@@ -6,3 +6,4 @@ name: 'Sponsor Packages'
 vid: sponsor_packages
 description: 'Available 2018 MidCamp Sponsorship packages'
 weight: 0
+new_revision: false

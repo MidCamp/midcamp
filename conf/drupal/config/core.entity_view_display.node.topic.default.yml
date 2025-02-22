@@ -102,6 +102,7 @@ content:
     settings:
       timezone_override: America/Chicago
       format_type: day_and_time
+      from_to: both
       separator: '-'
     third_party_settings: {  }
     weight: 0

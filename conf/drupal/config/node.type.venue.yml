@@ -26,7 +26,7 @@ third_party_settings:
 name: Venue
 type: venue
 description: 'Use <em>venue</em> for a location hosting a camp.'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: false

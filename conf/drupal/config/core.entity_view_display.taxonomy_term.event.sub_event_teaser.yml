@@ -36,6 +36,7 @@ content:
     label: hidden
     settings:
       timezone_override: ''
+      from_to: both
       separator: '-'
     third_party_settings: {  }
     weight: 2
