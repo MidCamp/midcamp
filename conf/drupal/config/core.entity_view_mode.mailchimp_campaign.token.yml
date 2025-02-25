@@ -6,5 +6,6 @@ dependencies:
     - mailchimp_campaign
 id: mailchimp_campaign.token
 label: Token
+description: ''
 targetEntityType: mailchimp_campaign
 cache: true

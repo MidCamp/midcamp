@@ -24,7 +24,7 @@ third_party_settings:
 name: 'Topic Proposal'
 type: topic
 description: 'Use <em>topic</em> for individual session, keynote, BoF, etc.'
-help: ''
+help: null
 new_revision: false
 preview_mode: 0
 display_submitted: false

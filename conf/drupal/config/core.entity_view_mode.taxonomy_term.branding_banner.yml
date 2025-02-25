@@ -6,5 +6,6 @@ dependencies:
     - taxonomy
 id: taxonomy_term.branding_banner
 label: 'Branding Banner'
+description: ''
 targetEntityType: taxonomy_term
 cache: true

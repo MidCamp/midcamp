@@ -24,6 +24,8 @@ content:
     weight: 0
     region: content
 hidden:
+  field_event: true
+  field_meta_tags: true
   field_venue_events: true
   field_venue_paragraphs: true
   links: true

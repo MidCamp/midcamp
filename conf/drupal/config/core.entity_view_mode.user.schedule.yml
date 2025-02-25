@@ -6,5 +6,6 @@ dependencies:
     - user
 id: user.schedule
 label: Schedule
+description: ''
 targetEntityType: user
 cache: true

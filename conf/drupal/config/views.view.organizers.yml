@@ -225,7 +225,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
       tags: {  }
   attachment_1:
     id: attachment_1
@@ -339,7 +338,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
       tags: {  }
   attachment_2:
     id: attachment_2
@@ -453,7 +451,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
       tags: {  }
   attachment_3:
     id: attachment_3
@@ -567,7 +564,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
       tags: {  }
   attachment_4:
     id: attachment_4
@@ -681,7 +677,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
       tags: {  }
   page_1:
     id: page_1
@@ -696,7 +691,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
       tags: {  }
   page_2:
     id: page_2
@@ -787,7 +781,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
       tags: {  }
   page_3:
     id: page_3
@@ -879,7 +872,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
       tags: {  }
   page_4:
     id: page_4
@@ -1032,7 +1024,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
       tags: {  }
   page_5:
     id: page_5
@@ -1185,7 +1176,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
       tags: {  }
   page_6:
     id: page_6
@@ -1338,7 +1328,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
       tags: {  }
   page_7:
     id: page_7
@@ -1491,7 +1480,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
       tags: {  }
   page_8:
     id: page_8
@@ -1634,7 +1622,7 @@ display:
         type: normal
         title: Organizers
         description: ''
-        weight: -46
+        weight: -45
         expanded: false
         menu_name: midcamp-2025-navigation
         parent: 'menu_link_content:cd07578f-8ae1-410b-adec-189c8dd6fa8a'
@@ -1644,5 +1632,4 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
       tags: {  }

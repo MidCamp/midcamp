@@ -23,7 +23,7 @@ third_party_settings:
 name: Sponsor
 type: sponsor
 description: 'An individual or organization helping support MidCamp efforts.'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: false

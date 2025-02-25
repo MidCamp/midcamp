@@ -2387,7 +2387,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '{{ field_schedule_time_1  | split('' - '')[0] }}'
+            text: "{{ field_schedule_time_1  | split(' - ')[0] }}"
             make_link: false
             path: ''
             absolute: false

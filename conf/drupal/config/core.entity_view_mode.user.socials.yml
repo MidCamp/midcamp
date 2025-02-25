@@ -6,5 +6,6 @@ dependencies:
     - user
 id: user.socials
 label: Socials
+description: ''
 targetEntityType: user
 cache: true

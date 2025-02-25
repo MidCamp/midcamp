@@ -6,3 +6,4 @@ name: Event
 vid: event
 description: 'A hierarchical vocabulary for organizing events.'
 weight: 0
+new_revision: false
