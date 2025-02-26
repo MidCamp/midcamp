@@ -1,0 +1,18 @@
+name: 'Midcamp QuickStart'
+description: 'Demo content for Midcamp'
+type: 'Midcamp starter kit'
+install:
+  # An array of modules or themes to install, if they are not already.
+  # The system will detect if it is a theme or a module.
+  - seven
+  - hatter
+config:
+  actions:
+    system.site:
+      simpleConfigUpdate:
+        page:
+          front: '/2025'
+    system.theme:
+      simpleConfigUpdate:
+        default: hatter
+        admin: seven

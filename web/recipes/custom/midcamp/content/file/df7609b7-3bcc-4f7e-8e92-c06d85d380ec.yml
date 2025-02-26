@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: df7609b7-3bcc-4f7e-8e92-c06d85d380ec
+  default_langcode: en
+  depends:
+    713e819e-d829-4373-b97e-3ee75a98285a: user
+default:
+  uid:
+    -
+      entity: 713e819e-d829-4373-b97e-3ee75a98285a
+  filename:
+    -
+      value: tim.jpg
+  uri:
+    -
+      value: 'public://pictures/2019-03/tim.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 38044
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1552885663

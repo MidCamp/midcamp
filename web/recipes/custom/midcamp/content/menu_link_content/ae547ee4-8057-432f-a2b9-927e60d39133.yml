@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: ae547ee4-8057-432f-a2b9-927e60d39133
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    2e47778b-9b31-4dae-bb76-bef89d7eb506: menu_link_content
+    c62d8c88-06bd-49df-b4b7-6b3c79daf53a: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Sponsor
+  menu_name:
+    -
+      value: midcamp-2025-navigation
+  link:
+    -
+      target_uuid: c62d8c88-06bd-49df-b4b7-6b3c79daf53a
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: -50
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:2e47778b-9b31-4dae-bb76-bef89d7eb506'
+  revision_translation_affected:
+    -
+      value: true

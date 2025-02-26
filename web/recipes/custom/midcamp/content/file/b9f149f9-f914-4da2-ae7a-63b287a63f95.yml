@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b9f149f9-f914-4da2-ae7a-63b287a63f95
+  default_langcode: en
+  depends:
+    31e5216d-59d3-478b-a9ff-7103fb437a8e: user
+default:
+  uid:
+    -
+      entity: 31e5216d-59d3-478b-a9ff-7103fb437a8e
+  filename:
+    -
+      value: FibonacciWebStudio-400.png
+  uri:
+    -
+      value: 'public://2019-03/FibonacciWebStudio-400.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 32082
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1553140147

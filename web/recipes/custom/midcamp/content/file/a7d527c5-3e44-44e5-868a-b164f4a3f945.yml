@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: a7d527c5-3e44-44e5-868a-b164f4a3f945
+  default_langcode: en
+  depends:
+    f2f22662-513d-4d66-80f4-5d0b76251086: user
+default:
+  uid:
+    -
+      entity: f2f22662-513d-4d66-80f4-5d0b76251086
+  filename:
+    -
+      value: AndrewOlson-bounteous-2547-square.jpg
+  uri:
+    -
+      value: 'public://pictures/2021-02/AndrewOlson-bounteous-2547-square.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 51256
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1612540343

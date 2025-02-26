@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 1d2921fa-5ef0-4b38-8398-8c85723a92b0
+  default_langcode: en
+  depends:
+    263c6aa3-44d9-46c6-9f96-599c9a230676: user
+default:
+  uid:
+    -
+      entity: 263c6aa3-44d9-46c6-9f96-599c9a230676
+  filename:
+    -
+      value: ClarityPartners-stacked-rgb_1.png
+  uri:
+    -
+      value: 'public://2020-01/ClarityPartners-stacked-rgb_1.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 92034
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1578402605

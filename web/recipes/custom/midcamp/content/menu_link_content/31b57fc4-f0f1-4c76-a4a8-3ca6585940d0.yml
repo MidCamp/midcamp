@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 31b57fc4-f0f1-4c76-a4a8-3ca6585940d0
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    cd07578f-8ae1-410b-adec-189c8dd6fa8a: menu_link_content
+    0e1e4730-55ab-4afd-ac66-1091bfbdb403: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'By the Numbers'
+  menu_name:
+    -
+      value: midcamp-2025-navigation
+  link:
+    -
+      target_uuid: 0e1e4730-55ab-4afd-ac66-1091bfbdb403
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: -50
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:cd07578f-8ae1-410b-adec-189c8dd6fa8a'
+  revision_translation_affected:
+    -
+      value: true

@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 7e3840c0-eb8d-4737-aba6-c350a6116341
+  default_langcode: en
+  depends:
+    e41c083e-1eb7-42fa-bb7a-83d355b04759: user
+default:
+  uid:
+    -
+      entity: e41c083e-1eb7-42fa-bb7a-83d355b04759
+  filename:
+    -
+      value: me.png
+  uri:
+    -
+      value: 'public://pictures/2018-02/me.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 505384
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1519836025

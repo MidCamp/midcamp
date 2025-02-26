@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 4731c1a2-368a-4a98-8988-4a126c9cf6e8
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: bitmoji.png
+  uri:
+    -
+      value: 'public://pictures/2018-01/bitmoji.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 45894
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1517261498

@@ -1,0 +1,68 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: dc8c7f0d-4f48-4155-b6b6-bf47e27a7b95
+  bundle: page
+  default_langcode: en
+  depends:
+    0c715b96-8782-46d3-8dd9-b6c076cea6bd: user
+    e1d16813-ded3-4fc6-976f-86ba736be49d: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: 0c715b96-8782-46d3-8dd9-b6c076cea6bd
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 0c715b96-8782-46d3-8dd9-b6c076cea6bd
+  title:
+    -
+      value: 'Submit a Session'
+  created:
+    -
+      value: 1731362664
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /2025/submit-session
+      langcode: en
+      pathauto: 1
+  field_event:
+    -
+      entity: e1d16813-ded3-4fc6-976f-86ba736be49d
+  field_page_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 31f1b560-2e97-4c6b-b7a7-81047f5235ba
+          bundle: paragraphs_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1513824921
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_paragraph_text:
+            -
+              value: '<p>MidCamp is looking for community members just like you to speak to our Drupal audience! Sessions blocks are 60 minutes. We encourage presenters to leave roughly 15 minutes for Q&amp;A.</p><h3><strong>Important Dates:</strong></h3><ul><li><s><strong>Call for Proposals Open:</strong> November 25, 2024</s></li><li><a href="https://www.drupal.org/community/events/midcamp-2025-session-proposal-workshop-2024-12-12"><s><strong>Session Proposal Workshop</strong></s></a><s><strong>:</strong> December 12, 2024</s><ul><li><s>This workshop will focus on preparing your session proposal.</s></li></ul></li><li><a href="https://www.drupal.org/community/events/midcamp-2025-last-chance-session-proposal-workshop-2025-01-07"><s><strong>Last Chance Session Proposal Workshop</strong></s></a><s><strong>:</strong> January 7, 2025</s><ul><li><s>This workshop will focus on preparing your session proposal.</s></li></ul></li><li><s><strong>Proposal Deadline:</strong> January 12, 2025</s></li><li><strong>Speakers Notified:</strong> (week of) February 17, 2025</li><li dir="ltr"><strong>Accepted Speaker Workshop:</strong> March TBD 2025<ul><li dir="ltr">This workshop will focus on preparing your session for presentation. It will be primarily for MidCamp presenters but we will also welcome folks who would like assistance with their DrupalCon presentations.</li></ul></li><li dir="ltr"><span><strong>MidCamp: May 20-22, 2025</strong></span><ul><li dir="ltr"><span>Sessions will be presented Tuesday, May 20 or Wednesday, May 21, 2025.</span></li></ul></li></ul><p>Session submission is now closed. Thanks to everyone who submitted a session. We will be notifying speakers of their status in mid-February.</p><h3>The Details</h3><p>MidCamp is soliciting sessions geared toward beginner through advanced Drupal users, as well as end users and business owners. Please see our <a href="/topic-tracks">session tracks page</a> for full descriptions of the kinds of talks we are looking for, and view our <a href="/speaker-terms-and-conditions">speaker terms and conditions page</a> to see what you’re getting into.&nbsp;</p><h3><br>Session Guidelines</h3><ul><li>We encourage experienced speakers to submit talks for a beginner audience.</li><li>Use a format that works for you and your topic: formal talk, panel, short documentary, spoken word, musical, etc.</li><li>Sessions should be 45 minutes.</li><li>We prefer for sessions to be presented in English. If you need a translator, please mention that.</li><li>You are welcome to submit more than one talk, but speakers will usually only have one session selected. (Some might appear also on a panel.)</li><li>You may promote a project or organization you are working on if it is relevant, but please no sales pitches.</li><li>We prefer speakers to speak on issues affecting groups they belong to, instead of speaking to issues on another group''s behalf. (That is, a panel about "Women in Drupal" should be composed of women.)</li><li>Speakers are expected to follow our <a href="/code-conduct">code of conduct</a>.</li></ul><h3><br>Diversity of Speakers</h3><p>We''re committed to fostering diversity on all levels at MidCamp. You can help make MidCamp more diverse by volunteering to be part of the session selection team. Join the <a href="https://mid.camp/slack">MidCamp Slack</a> and help out. We will be making announcements there from time to time. We’re also on <a href="https://twitter.com/midwestcamp">X (formerly known as Twitter)</a> and <a href="https://fosstodon.org/@midcamp">Mastodon</a>.</p><p>We try to coordinate session submission and selection as early as possible in order to allow speakers to make arrangements to attend early. Regardless of your skill level or experience with Drupal development, if you have a session you''d like to present at MidCamp but need help getting to camp or arranging accommodation, <a href="mailto:info@midcamp.org">please let us know</a>.</p><h3><br>Selection</h3><p>We may have one keynote presenter who would be an invited speaker. All other speakers will go through the selection process. We are reaching out to individuals and groups for submissions, and we''d love if you did the same. We want you to submit a talk too.</p><p>MidCamp follows an anonymized session selection process. We believe blind selection will help remove subconscious biases from the selection process.</p><ul><li>A volunteer who is NOT on the selection team will anonymize and remove personally identifying information and gendered pronouns from abstracts/bios.</li><li>The team will make the first round of selections from the anonymized submissions.</li><li>A second round will then make sure we have not selected speakers multiple times (excluding panel participants).</li></ul><h3>Compensation</h3><p>Speakers will receive a free ticket to the event. Travel and accommodation costs can be prohibitive for speakers. If you have a session you''d like to present at MidCamp but need help getting to camp or arranging accommodation, <a href="mailto:info@midcamp.org">please let us know</a>. Need-based scholarships will be available. We are not yet able to pay speakers for their time.&nbsp;</p>'
+              format: basic_html

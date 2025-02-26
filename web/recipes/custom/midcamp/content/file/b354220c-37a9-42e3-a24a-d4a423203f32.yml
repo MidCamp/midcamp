@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b354220c-37a9-42e3-a24a-d4a423203f32
+  default_langcode: en
+  depends:
+    ca27dff3-df80-4ac2-8be8-ae91449b4a7c: user
+default:
+  uid:
+    -
+      entity: ca27dff3-df80-4ac2-8be8-ae91449b4a7c
+  filename:
+    -
+      value: avatar.jpg
+  uri:
+    -
+      value: 'public://pictures/2018-01/avatar.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 11314
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1515954709

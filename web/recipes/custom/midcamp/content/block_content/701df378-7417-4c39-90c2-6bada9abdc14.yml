@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 701df378-7417-4c39-90c2-6bada9abdc14
+  bundle: basic
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'MidCamp 2024 Survey'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  body:
+    -
+      value: "<div class=\"speaker-item__title button--center-container\">\r\n<h3>Something good, great, meh? <a href=\"/2024/survey\">Share your feedback</a>.</h3>\r\n</div>\r\n"
+      format: basic_html
+      summary: ''

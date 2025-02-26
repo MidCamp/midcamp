@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: b755dc25-5827-4aa0-a887-8d55a0271add
+  bundle: location
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Room 324 (Hybrid Remote)'
+  description:
+    -
+      value: "<p>This is a Hybrid location where the speaker will present remotely. &nbsp;The session will be displayed on a projector in the assigned room on-site. &nbsp;Participants may either join remotely via the linked Zoom or attend in person.</p>\r\n"
+      format: basic_html
+  weight:
+    -
+      value: 12
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_link:
+    -
+      uri: 'https://www.youtube.com/@midcamp'
+      title: 'Go to [term:name]'
+      options: {  }

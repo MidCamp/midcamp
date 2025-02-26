@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 850ac7bd-f00f-4fcc-a6f5-688a885df750
+  default_langcode: en
+  depends:
+    fd96e01c-c87a-478c-bc13-76834c543423: user
+default:
+  uid:
+    -
+      entity: fd96e01c-c87a-478c-bc13-76834c543423
+  filename:
+    -
+      value: margaretrailroad.jpeg
+  uri:
+    -
+      value: 'public://pictures/2021-03/margaretrailroad.jpeg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 76044
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1616521970

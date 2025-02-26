@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: dd39ad24-0867-4ab2-ba9a-9d8979c1a914
+  default_langcode: en
+  depends:
+    7cf8ec87-57ca-412a-a2ce-a52e21e3a95f: user
+default:
+  uid:
+    -
+      entity: 7cf8ec87-57ca-412a-a2ce-a52e21e3a95f
+  filename:
+    -
+      value: CAM19020.1_1.jpg
+  uri:
+    -
+      value: 'public://pictures/2023-01/CAM19020.1_1.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 309000
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1674572478

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: fb532e9e-4dae-4dbe-b8eb-7fe411fc8255
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: dan-portrait-square.jpg
+  uri:
+    -
+      value: 'public://pictures/2018-12/dan-portrait-square.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 86505
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1544636883

@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 2f35417b-1d83-40cb-a971-3683805002ae
+  bundle: basic
+  default_langcode: en
+  depends:
+    585b84eb-1b06-4584-bb18-47b23449af5d: user
+default:
+  revision_user:
+    -
+      entity: 585b84eb-1b06-4584-bb18-47b23449af5d
+  revision_log:
+    -
+      value: 'Added 2023 to list of archived years'
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Footer Branding'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  body:
+    -
+      value: "<h3 class=\"footer-title\"><a href=\"/\">MidCamp</a></h3>\r\n\r\n<div class=\"footer-description\">\r\n<p>Midwest Drupal Camp (MidCamp) is an annual event held in Chicago (virtual in 2020 &amp; 2021) that brings together people who use, develop, design, and support the Web’s leading content management platform, Drupal.</p>\r\n\r\n<p>For more information email us at <a href=\"mailto:info@midcamp.org\">info@midcamp.org</a>.</p>\r\n\r\n<p><a href=\"http://eepurl.com/c4vVIP\">Subscribe to our newsletter</a>.</p>\r\n\r\n<p>Thanks to&nbsp;<a href=\"http://amazee.io\">Amazee.io</a> for hosting our site.</p>\r\n\r\n<p>The Archives: <a href=\"https://midcamp.org/2024\">2024</a>&nbsp;<a href=\"https://midcamp.org/2023\">2023</a>&nbsp;<a href=\"https://www.midcamp.org/2021/article/midcamp-2022-canceled\">2022</a> <a href=\"https://midcamp.org/2021\">2021</a> <a href=\"https://midcamp.org/2020\">2020</a>&nbsp;<a href=\"https://midcamp.org/2019\">2019</a> <a href=\"https://midcamp.org/2018\">2018</a> <a href=\"http://2017.midcamp.org\">2017</a> <a href=\"http://2016.midcamp.org\">2016</a> <a href=\"http://2015.midcamp.org\">2015</a> <a href=\"http://2014.midcamp.org\">2014</a><br />\r\n&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n<a href=\"http://creativecommons.org/licenses/by/4.0/\" rel=\"license\"><img alt=\"Creative Commons License\" src=\"https://i.creativecommons.org/l/by/4.0/88x31.png\" style=\"border-width:0\" /></a><br />\r\nThis work is licensed under a <a href=\"http://creativecommons.org/licenses/by/4.0/\" rel=\"license\">Creative Commons Attribution 4.0 International License</a>.\r\n\r\n<p>&nbsp;</p>\r\n</div>\r\n"
+      format: full_html
+      summary: ''

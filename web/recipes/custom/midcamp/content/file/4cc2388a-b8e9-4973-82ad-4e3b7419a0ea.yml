@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 4cc2388a-b8e9-4973-82ad-4e3b7419a0ea
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: '2017-02-24 06.46.26 1457272044927609742_250635730.jpg'
+  uri:
+    -
+      value: 'public://pictures/2018-03/2017-02-24 06.46.26 1457272044927609742_250635730.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 155363
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1520351448

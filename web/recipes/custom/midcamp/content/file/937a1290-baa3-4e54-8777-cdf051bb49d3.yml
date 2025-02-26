@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 937a1290-baa3-4e54-8777-cdf051bb49d3
+  default_langcode: en
+  depends:
+    0c715b96-8782-46d3-8dd9-b6c076cea6bd: user
+default:
+  uid:
+    -
+      entity: 0c715b96-8782-46d3-8dd9-b6c076cea6bd
+  filename:
+    -
+      value: tytolearning.png
+  uri:
+    -
+      value: 'public://2021-03/tytolearning.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 36879
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1616035247

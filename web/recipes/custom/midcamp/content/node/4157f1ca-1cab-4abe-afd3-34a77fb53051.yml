@@ -1,0 +1,63 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 4157f1ca-1cab-4abe-afd3-34a77fb53051
+  bundle: page
+  default_langcode: en
+  depends:
+    302f396f-b1da-474b-92a7-4192dee6e0ae: user
+    e1d16813-ded3-4fc6-976f-86ba736be49d: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: 302f396f-b1da-474b-92a7-4192dee6e0ae
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 302f396f-b1da-474b-92a7-4192dee6e0ae
+  title:
+    -
+      value: Jobs
+  created:
+    -
+      value: 1738644304
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  path:
+    -
+      alias: /2025/jobs
+      langcode: en
+      pathauto: 1
+  field_event:
+    -
+      entity: e1d16813-ded3-4fc6-976f-86ba736be49d
+  field_page_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 1005514c-6b12-43f5-844c-93813da9c3e9
+          bundle: view
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1709397423
+          behavior_settings:
+            -
+              value: {  }
+          field_view:
+            -
+              target_id: jobs_board
+              display_id: page_1
+              data: 'a:5:{s:8:"argument";N;s:5:"limit";N;s:6:"offset";N;s:5:"pager";N;s:5:"title";N;}'

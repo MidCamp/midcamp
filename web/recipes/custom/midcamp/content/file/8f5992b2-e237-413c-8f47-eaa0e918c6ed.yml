@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 8f5992b2-e237-413c-8f47-eaa0e918c6ed
+  default_langcode: en
+  depends:
+    d57e891e-1e73-441b-93e5-ca8cd41d557e: user
+default:
+  uid:
+    -
+      entity: d57e891e-1e73-441b-93e5-ca8cd41d557e
+  filename:
+    -
+      value: agaric-logo-stacked.png
+  uri:
+    -
+      value: 'public://2018-12/agaric-logo-stacked.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 6012
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1544721296

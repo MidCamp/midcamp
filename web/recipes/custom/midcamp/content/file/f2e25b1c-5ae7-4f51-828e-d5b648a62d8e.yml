@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f2e25b1c-5ae7-4f51-828e-d5b648a62d8e
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: 'Chris Casual Thumbnail.jpg'
+  uri:
+    -
+      value: 'public://pictures/2018-01/Chris Casual Thumbnail.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 8039
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1516508777

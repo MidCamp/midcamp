@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: fd34778f-82f0-4930-a84d-fe6b7004e592
+  default_langcode: en
+  depends:
+    08ed977d-06dc-466a-b7c3-d4e373aa2f01: user
+default:
+  uid:
+    -
+      entity: 08ed977d-06dc-466a-b7c3-d4e373aa2f01
+  filename:
+    -
+      value: 'Chapter Three Overview.jpeg'
+  uri:
+    -
+      value: 'public://2024-03/Chapter Three Overview.jpeg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 5516
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1710629277

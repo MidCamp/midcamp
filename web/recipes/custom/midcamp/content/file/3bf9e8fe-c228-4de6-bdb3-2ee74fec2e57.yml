@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3bf9e8fe-c228-4de6-bdb3-2ee74fec2e57
+  default_langcode: en
+  depends:
+    a1193fee-d0ce-428f-a940-0b6a4eade8f3: user
+default:
+  uid:
+    -
+      entity: a1193fee-d0ce-428f-a940-0b6a4eade8f3
+  filename:
+    -
+      value: HorizontalwithOval-registered.png
+  uri:
+    -
+      value: 'public://2024-03/HorizontalwithOval-registered.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 127012
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1710632037

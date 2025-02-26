@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: bbb0026a-f258-4307-b798-ecd0092b7fae
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: brad.png
+  uri:
+    -
+      value: 'public://pictures/2018-01/brad.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 96225
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1516895553
