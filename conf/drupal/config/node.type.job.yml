@@ -23,7 +23,7 @@ third_party_settings:
 name: Job
 type: job
 description: 'Use <em>job</em> for posting job openings.'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: false

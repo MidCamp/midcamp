@@ -37,11 +37,13 @@ settings:
         - heading4
         - heading5
         - heading6
-    ckeditor5_style:
-      styles:
-        -
-          label: Button
-          element: '<a class="button">'
+    ckeditor5_imageResize:
+      allow_resize: true
+    ckeditor5_list:
+      properties:
+        reversed: false
+        startIndex: true
+      multiBlock: true
     ckeditor5_sourceEditing:
       allowed_tags:
         - '<cite>'
@@ -59,16 +61,10 @@ settings:
         - '<ul type>'
         - '<ol type>'
         - '<img data-entity-uuid data-entity-type>'
-    ckeditor5_list:
-      reversed: false
-      startIndex: true
-    ckeditor5_imageResize:
-      allow_resize: true
+    ckeditor5_style:
+      styles:
+        -
+          label: Button
+          element: '<a class="button">'
 image_upload:
   status: false
-  scheme: public
-  directory: inline-images
-  max_size: ''
-  max_dimensions:
-    width: 0
-    height: 0

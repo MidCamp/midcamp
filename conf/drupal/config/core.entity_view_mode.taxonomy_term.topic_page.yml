@@ -6,5 +6,6 @@ dependencies:
     - taxonomy
 id: taxonomy_term.topic_page
 label: 'Topic Page'
+description: ''
 targetEntityType: taxonomy_term
 cache: true

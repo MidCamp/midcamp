@@ -23,6 +23,7 @@ dependencies:
     - field.field.node.topic.field_video
     - node.type.topic
   module:
+    - datetime_range
     - text
     - user
 id: node.topic.teaser
@@ -36,7 +37,36 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 0
+    weight: 4
+    region: content
+  field_people:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: schedule
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_schedule_location:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: topic_page
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_schedule_time:
+    type: daterange_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: day_and_time
+      from_to: both
+      separator: to
+    third_party_settings: {  }
+    weight: 1
     region: content
   field_track:
     type: entity_reference_label
@@ -44,7 +74,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
 hidden:
   content_moderation_control: true
@@ -54,10 +84,7 @@ hidden:
   field_eyebrow: true
   field_feedback_form: true
   field_meta_tags: true
-  field_people: true
   field_presenter_slides: true
-  field_schedule_location: true
-  field_schedule_time: true
   field_session_length: true
   field_social_post: true
   field_topic_type: true

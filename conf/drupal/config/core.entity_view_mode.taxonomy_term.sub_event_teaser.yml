@@ -6,5 +6,6 @@ dependencies:
     - taxonomy
 id: taxonomy_term.sub_event_teaser
 label: 'Sub-Event Teaser'
+description: ''
 targetEntityType: taxonomy_term
 cache: true

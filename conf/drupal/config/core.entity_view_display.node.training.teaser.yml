@@ -32,3 +32,4 @@ hidden:
   field_people: true
   field_registration_link: true
   field_track: true
+  field_video: true

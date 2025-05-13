@@ -6,5 +6,6 @@ dependencies:
     - taxonomy
 id: taxonomy_term.map
 label: 'Event Venue Map'
+description: ''
 targetEntityType: taxonomy_term
 cache: true
