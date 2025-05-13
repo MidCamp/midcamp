@@ -260,7 +260,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -283,7 +282,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -426,7 +424,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -569,7 +566,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -712,7 +708,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -857,7 +852,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -1001,7 +995,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -1135,7 +1128,7 @@ display:
         type: normal
         title: News
         description: ''
-        weight: -49
+        weight: -47
         expanded: false
         menu_name: midcamp-2025-navigation
         parent: ''
@@ -1145,7 +1138,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
