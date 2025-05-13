@@ -1622,7 +1622,7 @@ display:
         type: normal
         title: Organizers
         description: ''
-        weight: -45
+        weight: -42
         expanded: false
         menu_name: midcamp-2025-navigation
         parent: 'menu_link_content:cd07578f-8ae1-410b-adec-189c8dd6fa8a'

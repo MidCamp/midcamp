@@ -117,7 +117,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Filter
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -2264,9 +2264,10 @@ display:
       path: 2025/accepted-sessions
       menu:
         type: normal
-        title: 'Accepted Sessions'
+        title: 'All Sessions'
         description: ''
-        weight: 0
+        weight: -43
+        enabled: true
         expanded: false
         menu_name: midcamp-2025-navigation
         parent: 'menu_link_content:08dfbbe3-144b-4993-bba0-9bf78eab5600'

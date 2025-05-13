@@ -22,9 +22,9 @@ third_party_settings:
     unpublish_enable: false
     unpublish_required: false
     unpublish_revision: false
-name: 'Training Proposal'
+name: 'Training Proposal [Deprecated]'
 type: training
-description: 'Use <em>training</em> for individual trainings with registration links.'
+description: 'Deprecated. Use <em>Topic</em> instead.'
 help: null
 new_revision: false
 preview_mode: 0
