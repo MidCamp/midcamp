@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 34f9c0fd-0abf-45e0-a51a-3125dddd52a2
+  default_langcode: en
+  depends:
+    a46601d9-e640-4685-9080-038e16432b9e: user
+default:
+  uid:
+    -
+      entity: a46601d9-e640-4685-9080-038e16432b9e
+  filename:
+    -
+      value: pmg-logo_0.jpg
+  uri:
+    -
+      value: 'public://2020-03/pmg-logo_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 63845
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1584547293

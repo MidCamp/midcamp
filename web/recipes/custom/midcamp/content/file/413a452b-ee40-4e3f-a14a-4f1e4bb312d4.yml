@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 413a452b-ee40-4e3f-a14a-4f1e4bb312d4
+  default_langcode: en
+  depends:
+    526a84d2-b400-4bbd-8187-9373a7323ed5: user
+default:
+  uid:
+    -
+      entity: 526a84d2-b400-4bbd-8187-9373a7323ed5
+  filename:
+    -
+      value: adtalem.png
+  uri:
+    -
+      value: 'public://2019-03/adtalem.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 5706
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1553011975

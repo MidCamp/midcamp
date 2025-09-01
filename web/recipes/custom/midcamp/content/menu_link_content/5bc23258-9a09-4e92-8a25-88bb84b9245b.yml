@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 5bc23258-9a09-4e92-8a25-88bb84b9245b
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    08dfbbe3-144b-4993-bba0-9bf78eab5600: menu_link_content
+    dc8c7f0d-4f48-4155-b6b6-bf47e27a7b95: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Submit a Session'
+  menu_name:
+    -
+      value: midcamp-2025-navigation
+  link:
+    -
+      target_uuid: dc8c7f0d-4f48-4155-b6b6-bf47e27a7b95
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:08dfbbe3-144b-4993-bba0-9bf78eab5600'
+  revision_translation_affected:
+    -
+      value: true

@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 4ba78128-a38e-49d9-8bcc-421e8ef54b24
+  default_langcode: en
+  depends:
+    082d8990-e991-47c7-806a-9a8765d78021: user
+default:
+  uid:
+    -
+      entity: 082d8990-e991-47c7-806a-9a8765d78021
+  filename:
+    -
+      value: profile_8-22-full-zoom.jpg
+  uri:
+    -
+      value: 'public://pictures/2023-01/profile_8-22-full-zoom.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 132359
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1674751180

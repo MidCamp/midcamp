@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 5c52ca9e-a134-4b87-903e-48020d8ec8e9
+  bundle: organization
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: lotofares08994
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

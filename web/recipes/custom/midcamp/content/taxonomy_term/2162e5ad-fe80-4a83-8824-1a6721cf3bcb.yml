@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 2162e5ad-fe80-4a83-8824-1a6721cf3bcb
+  bundle: topic_type
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Group item'
+  description:
+    -
+      value: "<p>To be used on the Schedule page for condensed view blocks for items like:</p>\r\n\r\n<ul>\r\n\t<li>Schedule Block</li>\r\n\t<li>Training Block</li>\r\n</ul>\r\n\r\n<p>This Topic Type should not be included on regular schedule views.</p>\r\n"
+      format: basic_html
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0

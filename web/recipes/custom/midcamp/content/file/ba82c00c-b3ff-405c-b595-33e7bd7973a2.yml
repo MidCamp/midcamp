@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ba82c00c-b3ff-405c-b595-33e7bd7973a2
+  default_langcode: en
+  depends:
+    afc2f8bb-95a6-4379-9ef0-10f20f6c1df5: user
+default:
+  uid:
+    -
+      entity: afc2f8bb-95a6-4379-9ef0-10f20f6c1df5
+  filename:
+    -
+      value: what.jpg
+  uri:
+    -
+      value: 'public://pictures/2019-12/what.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 90341
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1576482777

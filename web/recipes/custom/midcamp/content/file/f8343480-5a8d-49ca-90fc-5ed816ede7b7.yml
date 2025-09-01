@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f8343480-5a8d-49ca-90fc-5ed816ede7b7
+  default_langcode: en
+  depends:
+    93251eac-40bb-4ad6-87ac-7acd05bbc734: user
+default:
+  uid:
+    -
+      entity: 93251eac-40bb-4ad6-87ac-7acd05bbc734
+  filename:
+    -
+      value: mobert.png
+  uri:
+    -
+      value: 'public://pictures/2021-03/mobert.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 115451
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1616278137

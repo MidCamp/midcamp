@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: d5e5bd9f-d8ba-4ca2-a98a-e3808dda37a7
+  bundle: organization
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Bluespark
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0

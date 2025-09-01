@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3d2695fb-7156-4adb-94d5-d8e2925bdedc
+  default_langcode: en
+  depends:
+    7cf8ec87-57ca-412a-a2ce-a52e21e3a95f: user
+default:
+  uid:
+    -
+      entity: 7cf8ec87-57ca-412a-a2ce-a52e21e3a95f
+  filename:
+    -
+      value: b_glyph_Wave_0.png
+  uri:
+    -
+      value: 'public://2020-03/b_glyph_Wave_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 17970
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1584729804

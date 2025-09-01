@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 8c47f5be-3123-4ff3-adf6-e5e1c28b4039
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: sdfdf.jpg
+  uri:
+    -
+      value: 'public://pictures/2019-11/sdfdf.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 65720
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1574871914

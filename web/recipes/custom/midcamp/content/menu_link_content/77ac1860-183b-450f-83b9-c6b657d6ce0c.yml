@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 77ac1860-183b-450f-83b9-c6b657d6ce0c
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    cd07578f-8ae1-410b-adec-189c8dd6fa8a: menu_link_content
+    b3df2b8e-cacb-433d-86a8-38fcd99cfca8: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Tickets
+  menu_name:
+    -
+      value: midcamp-2025-navigation
+  link:
+    -
+      target_uuid: b3df2b8e-cacb-433d-86a8-38fcd99cfca8
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: -49
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:cd07578f-8ae1-410b-adec-189c8dd6fa8a'
+  revision_translation_affected:
+    -
+      value: true

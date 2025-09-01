@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 1ba432d3-8d29-4da7-a64d-24dcd177cca4
+  default_langcode: en
+  depends:
+    c4686193-67d0-4151-b2f4-86d56ec905a4: user
+default:
+  uid:
+    -
+      entity: c4686193-67d0-4151-b2f4-86d56ec905a4
+  filename:
+    -
+      value: IIM_profile_me.jpg
+  uri:
+    -
+      value: 'public://pictures/2018-02/IIM_profile_me.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 307538
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1519311007

@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 099aeaee-c893-4358-9381-ae04105f3e2a
+  default_langcode: en
+  depends:
+    c6519cad-3630-415d-90db-b51f86753662: user
+default:
+  uid:
+    -
+      entity: c6519cad-3630-415d-90db-b51f86753662
+  filename:
+    -
+      value: RosieGladden_ImageX.png
+  uri:
+    -
+      value: 'public://pictures/2024-03/RosieGladden_ImageX.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 294298
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1709858021

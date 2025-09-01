@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 7d3c99af-a639-4499-bd39-79b59ad48e6d
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: clarity-partners-consulting-logo.png
+  uri:
+    -
+      value: 'public://2018-03/clarity-partners-consulting-logo.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 12082
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1520146132

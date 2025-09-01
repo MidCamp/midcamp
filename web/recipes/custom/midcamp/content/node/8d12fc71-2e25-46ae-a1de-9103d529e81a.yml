@@ -1,0 +1,68 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 8d12fc71-2e25-46ae-a1de-9103d529e81a
+  bundle: page
+  default_langcode: en
+  depends:
+    f2f22662-513d-4d66-80f4-5d0b76251086: user
+    0c715b96-8782-46d3-8dd9-b6c076cea6bd: user
+default:
+  revision_uid:
+    -
+      entity: f2f22662-513d-4d66-80f4-5d0b76251086
+  revision_log:
+    -
+      value: '2025 updates for links and adjustments to contnet. Update to WCAG 2.2 commitment.'
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 0c715b96-8782-46d3-8dd9-b6c076cea6bd
+  title:
+    -
+      value: Accessibility
+  created:
+    -
+      value: 1682168141
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /accessibility
+      langcode: en
+      pathauto: 0
+  field_page_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 7952fb02-1ca7-4481-a543-07e6e62c168d
+          bundle: paragraphs_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1615760365
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_paragraph_text:
+            -
+              value: '<p>MidCamp is dedicated&nbsp;to an accessible, safe, inclusive, and welcoming conference experience for anyone who attends. Below, we are providing helpful information regarding the tools we are using for this event&nbsp;to make the MidCamp planning and attendee experience accessible. We encourage attendees who have specific accessibility related questions, or simply want to know more about the current arrangements, to <a href="mailto:info@midcamp.org">contact us</a>.</p><hr><h2>In-person Accessibility</h2><p>MidCamp''s venue has accessibility features that will accommodate most attendees. We use this <a href="https://github.com/A11YChi/Venue-Checklist">Venue Checklist</a> to ensure equal access for attendees. Detailed information is on <a href="/2025/about/venue">the Venue page</a>. We strive to provide ample signage and also use demarcated walking lanes that allow all attendees to more easily move throughout our spaces.</p><h3>Access Lanes</h3><p>MidCamp uses access lanes marked out with blue tape throughout the event. Please keep the access lanes clear so that there’s always a path through the room for people with disabilities and for everyone else at the event.</p><p>You can:</p><ul><li>move through the room in the access lanes</li></ul><p>You can’t:</p><ul><li>stop and chat in the access lanes</li><li>queue in the access lanes</li><li>place bags, furniture, power cables, or other obstructions in or across the access lanes</li></ul><p>Help maintain the access lanes if you can:</p><ul><li>politely remind your fellow attendees to not stop or queue in the access lanes</li><li>remove any obstructions you find in the access lanes</li></ul><p>If you need help maintaining the access lanes, ask a volunteer at the registration table.</p><p><em>(re-used with permission from </em><a href="https://adacamp.org/adacamp-toolkit/access-lanes/"><em>the&nbsp;AdaCamp Toolkit</em></a><em>)</em></p><p><a href="https://adacamp.org/adacamp-toolkit/access-lanes/">Learn more about walking lanes</a> or <a href="https://photos.google.com/share/AF1QipPKjvwzlKAayArXqGByeZT9pb0u3e4yz7R8y3YgZrbattSwqtpsjIMV4lxrN4mBVg?key=SDNDUUE1bTJ2a3IyV3lUUXFmOXpaM192N3FrU0Zn">view some example photos</a>.</p><hr><h2>Zoom</h2><p>Zoom is a popular video conferencing tool that we''ll use for MidCamp planning meetings, sessions, and conversations. Zoom has web interface that supports basic features, but we recommend <a href="https://zoom.us/download">you download&nbsp;the app</a> for full functionality.</p><p>Zoom has a detailed list of accessibility features that can be found on the Zoom website page titled&nbsp;<a href="https://zoom.us/accessibility">Zoom Accessibility Features</a>.</p><h3>Captioning</h3><p>MidCamp uses a combination of closed captioning and live transcription for all many meetings and sessions. <a href="https://support.zoom.us/hc/en-us/articles/207279736-Closed-captioning-and-live-transcription">Details about how to turn on and use closed captioning or live transcription can be found on the Zoom website.</a></p><hr><h2>Slack</h2><p><a href="https://slack.com/">Slack</a> is a a channel-based messaging platform with topic-specific rooms; robust search; and of course, emoji &amp; gifs. You can <a href="https://mid.camp/slack">request to join the MidCamp Slack</a>. Once you’re there, don’t be a lurker, join in! Look through the list of channels, ask questions, and explore.</p><p>If you’re not familiar with Slack, start by <a href="https://slack.com/resources/using-slack/your-quick-start-guide-to-slack">learning the basics</a>, <a href="https://slack.com/downloads">getting the app</a>, and <a href="https://slack.com/help/articles/204092246-Edit-your-profile">updating your profile</a>.</p><p>Use the Channel Browser to find interesting conversations. For MidCamp we’ll be hanging out in #general and a few other channels.</p><p>If you utilize assistive technologies, you may <a href="https://slack.com/help/articles/360000411963-Use-Slack-with-a-screen-reader">use Slack with a screen reader</a>, <a href="https://slack.com/help/articles/115003340723-Keyboard-accessibility-in-Slack-">read about keyboard accessibility in Slack</a>, and <a href="https://slack.com/help/articles/201374536-Slack-keyboard-shortcuts">review the keyboard shortcuts</a></p><hr><h2>Website</h2><p>To help us make the MidCamp website a positive place for everyone, we''ve been using the <a href="https://www.w3.org/TR/WCAG/">Web Content Accessibility Guidelines (WCAG) 2.2</a>. These guidelines explain how to make web content more accessible for people with disabilities, and user friendly for everyone.</p><p>The guidelines have three levels of accessibility (A, AA, and AAA). We’ve chosen <strong>Level AA </strong>as the target for the MidCamp website.</p><h3>How Are We Doing?</h3><p>In order to achieve our accessibility goal, we built our site in compliance with W3C standards for HTML and CSS. The site displays correctly in current browsers and using standards compliant HTML/CSS code means that future browsers will also display it correctly. We used codebases that are built with accessibility in mind.</p><p>We''re working diligently to achieve our goal of Level AA accessibility, but we realize some areas still need improving. <a href="https://www.drupal.org/project/midcamp/issues/3493435">We are currently performing an accessibility audit to identify issues and are working to address them over time.</a></p><p>We have added the <a href="https://www.drupal.org/project/editoria11y">Editoria11y module</a>. Editoria11y, which stands for "editorial accessibility ally", is an accessibility checker that allows MidCamp content editors to review pages directly within the Drupal interface, highlighting potential accessibility issues and suggesting fixes to make our website more accessible to users with disabilities; essentially acting as a real-time accessibility checker for editors while they create content.</p><p>We are continually seeking out solutions that will bring all areas of the site up to the same level of overall web accessibility. If you experience any difficulty in accessing the MidCamp website, please don’t hesitate to <a href="mailto:info@midcamp.org">contact us</a>.</p>'
+              format: full_html

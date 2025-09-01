@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 35d55f9a-b68d-4be8-bb6b-2b4062f44926
+  default_langcode: en
+  depends:
+    c7d14bc3-41de-441d-8380-bbffef539f8e: user
+default:
+  uid:
+    -
+      entity: c7d14bc3-41de-441d-8380-bbffef539f8e
+  filename:
+    -
+      value: fourkitchens-logomark-kitchenskelly-rgb-square-padded.png
+  uri:
+    -
+      value: 'public://pictures/2023-04/fourkitchens-logomark-kitchenskelly-rgb-square-padded.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 9503
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1681927830

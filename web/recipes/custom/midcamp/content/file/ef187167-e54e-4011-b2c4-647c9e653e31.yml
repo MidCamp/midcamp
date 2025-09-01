@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ef187167-e54e-4011-b2c4-647c9e653e31
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: 13417668_10154944939333312_4646249961139803946_n.jpg
+  uri:
+    -
+      value: 'public://pictures/2018-01/13417668_10154944939333312_4646249961139803946_n.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 7558
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1516988739

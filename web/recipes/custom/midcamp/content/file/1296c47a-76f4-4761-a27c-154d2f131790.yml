@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 1296c47a-76f4-4761-a27c-154d2f131790
+  default_langcode: en
+  depends:
+    31ac905f-598a-4973-a519-7f30d5d703f8: user
+default:
+  uid:
+    -
+      entity: 31ac905f-598a-4973-a519-7f30d5d703f8
+  filename:
+    -
+      value: newlogo-medium-square.png
+  uri:
+    -
+      value: 'public://2018-12/newlogo-medium-square.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 34408
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1544719196

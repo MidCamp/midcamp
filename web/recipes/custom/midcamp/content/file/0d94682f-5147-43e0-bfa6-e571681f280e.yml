@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 0d94682f-5147-43e0-bfa6-e571681f280e
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  filename:
+    -
+      value: IMG_9025_a.png
+  uri:
+    -
+      value: 'public://pictures/2018-02/IMG_9025_a.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 87585
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1518287392

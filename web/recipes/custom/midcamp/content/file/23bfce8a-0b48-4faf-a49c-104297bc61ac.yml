@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 23bfce8a-0b48-4faf-a49c-104297bc61ac
+  default_langcode: en
+  depends:
+    75d5a750-57b8-4786-a869-abfdc40ae1c5: user
+default:
+  uid:
+    -
+      entity: 75d5a750-57b8-4786-a869-abfdc40ae1c5
+  filename:
+    -
+      value: kermit_pantheor_500.png
+  uri:
+    -
+      value: 'public://pictures/2020-03/kermit_pantheor_500.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 523416
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1584080697

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: dfa746d0-2015-41db-a602-e769068602ab
+  bundle: sponsor_packages
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Community Sponsors'
+  weight:
+    -
+      value: 2
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /sponsor/package/community-sponsors
+      langcode: en
+      pathauto: 1

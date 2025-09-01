@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 0cc50f48-a353-480d-adf3-688c49ca882e
+  bundle: basic
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'MidCamp 2023 Hybrid Schedule Nav'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  body:
+    -
+      value: "<p class=\"schedule__nav\"><a href=\"/2023/schedule/wednesday\">All Wednesday</a> | <a href=\"/2023/schedule/thursday\">All Thursday</a> | <a href=\"/2023/schedule/friday\">Friday</a></p>\r\n"
+      format: basic_html
+      summary: ''
