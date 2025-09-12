@@ -20,17 +20,17 @@ categories: {  }
 elements: |-
   mastery_of_topic:
     '#type': radios
-    '#title': 'Please rate the speaker''s mastery of this topic.'
+    '#title': "Please rate the speaker's mastery of this topic."
     '#options': likert_five_scale
     '#options_display': side_by_side
   presentation_skills:
     '#type': radios
-    '#title': 'Please rate the speaker''s presentation skills.'
+    '#title': "Please rate the speaker's presentation skills."
     '#options': likert_five_scale
     '#options_display': side_by_side
   quality_of_slides:
     '#type': radios
-    '#title': 'Please rate the quality of speaker''s slides and visual aids.'
+    '#title': "Please rate the quality of speaker's slides and visual aids."
     '#options': likert_five_scale
     '#options_display': side_by_side
   learn_something:
