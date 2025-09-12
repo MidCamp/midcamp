@@ -27,4 +27,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/2018/*\r\n/2019/*\r\n/2020/*\r\n/2021/*\r\n/2022/*\r\n/2023/*\r\n/2024/*"
+    pages: "/2018\r\n/2019\r\n/2020\r\n/2021\r\n/2022\r\n/2023\r\n/2024\r\n/2025\r\n/2018/*\r\n/2019/*\r\n/2020/*\r\n/2021/*\r\n/2022/*\r\n/2023/*\r\n/2024/*\r\n/2025/*"
