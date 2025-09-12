@@ -109,6 +109,7 @@ content:
     label: above
     settings:
       source_entity: true
+      lazy: false
     third_party_settings: {  }
     weight: 9
     region: content
@@ -133,7 +134,7 @@ content:
     type: entity_reference_entity_view
     label: above
     settings:
-      view_mode: default
+      view_mode: topic_page
       link: false
     third_party_settings: {  }
     weight: 1
