@@ -16,3 +16,27 @@
 .schedule__teaser {
   margin-left: 1.5em;
 }
+
+.map__label {
+  background-color: #387B32;
+}
+
+.cta-link--yellow {
+  color: #EBE189;
+}
+
+.site-footer a:active,
+.site-footer a:focus,
+.site-footer a:hover {
+  color: #FFFFFF;
+}
+
+.social__item--footer a:active svg,
+.social__item--footer a:focus svg,
+.social__item--footer a:hover svg {
+  fill: #FFFFFF;
+}
+
+ul.menu a.is-active {
+  color: #FFFFFF;
+}
