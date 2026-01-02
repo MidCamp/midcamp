@@ -50,26 +50,6 @@ environments:
             tls-acme: 'false'
             insecure: Redirect
   production:
-    routes:
-      - varnish:
-        - "2018.midcamp.org":
-            tls-acme: 'false'
-            insecure: Redirect
-        - "2019.midcamp.org":
-            tls-acme: 'false'
-            insecure: Redirect
-        - "2020.midcamp.org":
-            tls-acme: 'false'
-            insecure: Redirect
-        - "o.midcamp.org":
-            tls-acme: 'false'
-            insecure: Redirect
-        - "midcamp.org":
-            tls-acme: 'false'
-            insecure: Redirect
-        - "www.midcamp.org":
-            tls-acme: 'false'
-            insecure: Redirect
     cronjobs:
       - name: drush cron
         schedule: "2 * * * *"
